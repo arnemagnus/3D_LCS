@@ -1,0 +1,47 @@
+\documentclass[a4paper,%
+12pt,%
+onecolumn,%
+twoside,%
+titlepage%
+]{report}
+
+\input{_setup_files/packages.tex}
+
+\addbibresource{bibliography/references.bib}
+\graphicspath{{./figures/}}
+
+\input{_setup_files/functions.tex}
+
+\begin{document}
+\urlstyle{same}
+% Title page
+\setcounter{page}{0}
+\input{titlepage/titlepage}
+
+% Front matter
+\begin{frontmatter}
+    \input{frontmatter/frontmatter}
+\end{frontmatter}
+
+% Main matter
+\begin{mainmatter}
+    \input{mainmatter/mainmatter}
+\end{mainmatter}
+
+%% Stuff to include
+%\input{remember_to_include_stuff/me.tex}
+
+% Bibliography
+\newpage
+% Ghost section necessary in order for the hyperref package to link properly
+\phantomsection
+\addcontentsline{toc}{chapter}{References}
+\printbibliography[title=References]
+
+% Back matter
+\clearpage
+\begin{backmatter}
+    \input{backmatter/backmatter}
+\end{backmatter}
+
+\end{document}
