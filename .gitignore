@@ -1,0 +1,35 @@
+# Python temporary files:
+__pycache__/
+*.pyc
+
+# Minted (Program code in LaTeX) temporary files:
+_minted*/
+
+# Jupyter notebook checkpoints:
+.ipynb_checkpoints/
+
+# Datadump files
+*.npy
+
+# Vim temporary/auxiliary files:
+*.fdb_latexmk
+*.fls
+*.bcf
+*.run.xml
+*.sav
+
+# LaTeX auxiliary files:
+*.log
+*.aux
+*.bbl
+*.blg
+*.out
+*.lof
+*.lot
+*.toc
+
+# Last-minute LaTeX stuff
+*.sty
+
+# Archive files:
+*.tar.gz
