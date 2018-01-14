@@ -1,1 +1,94 @@
 
+\frontmatter
+\thispagestyle{empty}
+\phantom{Blabla}
+\addtocounter{page}{-1}
+\newpage
+% First of all, the abstract
+\pdfbookmark[chapter]{Abstract}{abstract}
+\chapter*{Abstract}
+    \input{frontmatter/abstract}
+
+\newpage
+\thispagestyle{empty}
+\phantom{Blabla}
+%\addtocounter{page}{-1}
+\newpage
+
+% Second, abstract in Norwegian
+\pdfbookmark[chapter]{Sammendrag}{sammendrag}
+\chapter*{Sammendrag}
+    \input{frontmatter/sammendrag}
+
+\newpage
+\thispagestyle{empty}
+\phantom{Blabla}
+%\addtocounter{page}{-1}
+\newpage
+
+% Third, preface
+\pdfbookmark[chapter]{Preface}{preface}
+\chapter*{Preface}
+    \input{frontmatter/preface}
+
+\newpage
+\thispagestyle{empty}
+\phantom{Blabla}
+%\addtocounter{page}{-1}
+\newpage
+
+% Include chapters [0], sections [1] and subsections [2] in ToC
+\setcounter{tocdepth}{2}
+
+% ToC
+\phantomsection\pdfbookmark{Table of Contents}{tableofcontents}
+\tableofcontents
+%\newpage
+%\thispagestyle{empty}
+%\phantom{Blabla}
+%%\addtocounter{page}{-1}
+\newpage
+
+% LoF
+% Ghost section necessary in order for the hyperref package to link properly
+\phantomsection
+% Optional: Rename LoF
+%\renewcommand{\listfigurename}{List of Figures}
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+\newpage
+%\thispagestyle{empty}
+%\phantom{Blabla}
+%%%\addtocounter{page}{-1}
+%\newpage
+
+% LoT
+% Ghost section necessary in order for the hyperref package to link properly
+\phantomsection
+% Optional: Rename LoT
+%\renewcommand{\listtablename}{List of Tables}
+\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
+\newpage
+\thispagestyle{empty}
+\phantom{Blabla}
+%\addtocounter{page}{-1}
+\newpage
+
+% Optional: Notation
+% Ghost section necessary in order for the hyperref package to link properly
+\phantomsection
+\addcontentsline{toc}{chapter}{Notation}
+\chapter*{Notation}
+    \input{frontmatter/notation}
+
+\newpage
+\thispagestyle{empty}
+\phantom{Blabla}
+%\addtocounter{page}{-1}
+\newpage
+
+% Add spacing after last line of frontmatter in ToC.
+% Comment out if neither a list of figures, a list of tables nor a chapter
+% on notation is included
+\addtocontents{toc}{\protect\vspace{10pt}}
