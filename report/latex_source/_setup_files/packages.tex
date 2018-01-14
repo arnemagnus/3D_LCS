@@ -1,0 +1,206 @@
+% ---------------- %
+% Text-related packages
+% ---------------- %
+
+% Margins
+\usepackage[a4paper,margin=2.5cm]{geometry}
+
+% Typeset UTF-8 symbols:
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Typographical refinement
+\usepackage[activate={true,nocompatibility},% Let microtype do its magic
+%                                           % without trying to keep page breaks
+%                                           % etc.
+final=true,% Activate microtype even when in draft mode
+kerning=true,% Fixes kerning issues
+spacing=true,% Fixes spacing issues
+tracking=true,% Adds letter spacing for small caps
+shrink=30,% Characters are stretched or shrunk in order to improve justification
+stretch=30,% up to 3 %
+factor=0% Controls how much punctuation protrudes past the end of the line
+]{microtype}
+%\microtypecontext{spacing=french} % <-- No spacing found for Linux Libertine
+
+% Text spacing
+\usepackage[]{setspace}
+
+% Manage culturally-determined typographical, and other, rules:
+\usepackage[main=english,norsk]{babel}
+
+% Choose Libertine font:
+\usepackage[]{libertine}
+
+% Include author's affiliation
+\usepackage[]{authblk}
+
+% Typeset relevant quotations or sayings as epigraphs:
+\usepackage[]{epigraph}
+
+% Simple syntax for superscript 1st, 2nd, 3rd etc: \nth{#}
+\usepackage[super]{nth}
+
+% Paragraphs separated by blank lines rather than indentation
+\usepackage[parfill]{parskip}
+
+% Customize title/heading styles
+\usepackage[]{titlesec}
+
+% Control ToC, LoF, LoT etc.
+\usepackage[titles]{tocloft}
+
+% Verbatim
+\usepackage[]{verbatim}
+
+% Frame any object in the document
+\usepackage[]{framed}
+
+% Break lines in citations which do not fit on a single line
+\usepackage[]{breakcites}
+
+% Insert placeholder text
+\usepackage[]{lipsum}
+
+% Include the possibility of colored text
+\usepackage[]{color}
+
+% Include the possibility to strikethrough text
+\usepackage[normalem]{ulem}
+
+%
+% Float-related packages
+%
+
+% Interface for floating objects
+\usepackage[]{float}
+
+% Interface for stacked floating objects:
+\usepackage[]{subcaption}
+
+% Enhanced graphics support
+\usepackage[]{graphicx}
+
+% PGF files
+\usepackage[]{pgf}
+
+% PGF plots
+\usepackage[]{pgfplots}
+
+% Wrap text around figure
+\usepackage[]{wrapfig}
+
+% Extend array and tabular environments
+\usepackage[]{array}
+
+% Define math mode version of centered type column
+\newcolumntype{C}{>$c<$}
+
+% Rotation tools for floats. Default: Clockwise rotation
+\usepackage[figuresright]{rotating}
+
+% Format float captions any which way you want.
+% My preference:    No more than 90 % of the overall textwidth
+%                   Slightly smaller fontsize than the text otherwise
+%                   Label typeset in bold
+%                   Separate label from caption with colon
+\usepackage[%format={\fontsize{11}{13}\selectfont},%
+width=0.9\textwidth,%
+labelfont=bf,%
+labelsep=colon%
+]{caption}
+
+% Include entire (external) PDF pages in document
+\usepackage[]{pdfpages}
+
+% Better formatting for tables
+\usepackage[]{booktabs}
+
+
+%
+% Mathematical functions
+%
+
+% Necessary for most kinds of mathematical typesetting:
+\usepackage[]{amsmath,amssymb}
+
+% Package containing useful macros for typsetting vector calculus, linear
+% algebra etc.
+\usepackage[]{physics}
+
+% Typeset mathematical symbols in bold, useful when working with vectors,
+% tensors, etc.
+\usepackage[]{bm}
+
+% Necessary to write greek letters in upright in math mode, e.g. for vectors
+\usepackage[libertine]{newtxmath}
+
+% Clever typesetting of SI units
+\usepackage[]{siunitx}
+
+
+
+%
+% Reference-related packages
+%
+
+% Use biblatex for handling refernces
+\usepackage[backend=biber,%
+style=authoryear,%
+language=british,%
+dashed=false,%
+url=false,%
+doi=false,%
+eprint=false,%
+giveninits=true,%
+uniquename=init%
+]{biblatex}
+
+% Refer to all authors by their last name first
+\DeclareNameAlias{author}{last-first}
+
+% Ensure that quoted texts are typeset according to rules of main language
+\usepackage[]{csquotes}
+
+% Access a myriad of different coloring options for e.g. hyperref links
+\usepackage[]{xcolor}
+
+% Make all referrals hyperlinks (within the document)
+\usepackage[]{hyperref}
+\hypersetup{%
+%hidelinks=true,%
+colorlinks,%
+linkcolor={red!50!black},%
+citecolor={blue!50!black},%
+urlcolor={blue!80!black},%
+pdfauthor={Arne Magnus Tveita Løken},%
+pdftitle={Sensitivity to Numerical Integration Scheme in Calculation of Lagrangian Coherent Structures},%
+pdfsubject={Computational nonlinear physics},%
+pdfkeywords={Computational physics, Nonlinear dynamics, Lagrangian coherent structures, Numerical integration}%
+}
+
+% Hide hyperlinks upon printing, i.e., they are printed in the regular
+% text color (typically key)
+\usepackage[ocgcolorlinks]{ocgx2}
+
+% Bookmark organization for the hyperref package
+\usepackage[]{bookmark}
+
+% Clever referrals to objects (figures, tables, etc.)
+\usepackage[]{cleveref}
+
+% Use endash in a cleveref-range
+\newcommand{\crefrangeconjunction}{--}
+
+% Clever typesetting of theorems, definitions etc.
+\let\openbox\relax
+\usepackage[]{amsthm}
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}
+\crefname{thm}{theorem}{theorems}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}
+\crefname{defn}{definition}{definitions}
+
+\crefname{figure}{figure}{figures}
+\crefname{equation}{equation}{equations}
