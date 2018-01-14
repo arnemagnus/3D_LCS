@@ -41,14 +41,14 @@ factor=0% Controls how much punctuation protrudes past the end of the line
 % Simple syntax for superscript 1st, 2nd, 3rd etc: \nth{#}
 \usepackage[super]{nth}
 
-% Paragraphs separated by blank lines rather than indentation
-\usepackage[parfill]{parskip}
+%% Paragraphs separated by blank lines rather than indentation
+%\usepackage[parfill]{parskip}
 
 % Customize title/heading styles
 \usepackage[]{titlesec}
 
-% Control ToC, LoF, LoT etc.
-\usepackage[titles]{tocloft}
+%% Control ToC, LoF, LoT etc.
+%\usepackage[titles]{tocloft}
 
 % Verbatim
 \usepackage[]{verbatim}
@@ -156,6 +156,8 @@ giveninits=true,%
 uniquename=init%
 ]{biblatex}
 
+\defbibheading{bibliography}[\bibname]{\chapter*{#1}\markboth{#1}{#1}}
+\AtBeginDocument{\renewcommand{\bibname}{References}}
 % Refer to all authors by their last name first
 \DeclareNameAlias{author}{last-first}
 

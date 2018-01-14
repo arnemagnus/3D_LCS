@@ -2,8 +2,12 @@
 12pt,%
 onecolumn,%
 twoside,%
-titlepage%
-]{report}
+titlepage,%
+openright,%
+openbib
+]{memoir}
+
+\abnormalparskip{12pt}
 
 \input{_setup_files/packages.tex}
 
@@ -16,7 +20,6 @@ titlepage%
 \urlstyle{same}
 % Title page
 \setcounter{page}{0}
-\input{titlepage/titlepage}
 
 % Front matter
 \begin{frontmatter}
@@ -28,11 +31,10 @@ titlepage%
     \input{mainmatter/mainmatter}
 \end{mainmatter}
 
-%% Stuff to include
-%\input{remember_to_include_stuff/me.tex}
+
 
 % Bibliography
-\newpage
+\thispagestyle{simple}
 % Ghost section necessary in order for the hyperref package to link properly
 \phantomsection
 \addcontentsline{toc}{chapter}{References}

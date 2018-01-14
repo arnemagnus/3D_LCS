@@ -5,10 +5,10 @@
 % Specify colors
 \definecolor{gray80}{gray}{0.8}
 
-% Spacing
-\setstretch{1.1}
-\setlength{\parskip}{1.4em}
-\setlength{\parindent}{0em}
+%% Spacing
+%\setstretch{1.1}
+%\setlength{\parskip}{1.4em}
+%\setlength{\parindent}{0em}
 
 % Prettier unordered lists
 \newcommand{\sbt}{\,\begin{picture}(-1,1)(-1,-3)\circle*{2.2}\end{picture}\ }
@@ -104,42 +104,66 @@
 
 % Table of Contents:
 
+\renewcommand\printtoctitle[1]{\vspace{-15.25ex}\chapter*{#1}}
+
 \addto\captionsenglish{%
     \renewcommand{\contentsname}{Table of Contents}%
 }
 
-\renewcommand{\cftaftertoctitleskip}{6ex}
+\newlength{\aftertocskip}
+\setlength{\aftertocskip}{6ex}
+\renewcommand{\aftertoctitle}{\par\nobreak\vskip\aftertocskip}
+%\setlength{\cftaftertoctitleskip}{6ex}
 
 % Chapters:
-%\renewcommand{\cftbeforechapskip}{1pt}
-\renewcommand{\cftchappresnum}{\bfseries}
-\renewcommand{\cftchapfont}{\bfseries}
-\renewcommand{\cftchappagefont}{\bfseries}
-\renewcommand{\cftchapafterpnum}{\cftparfillskip}
+\renewcommand*{\cftchapterleader}{}
+\renewcommand*{\cftsectionleader}{}
+\renewcommand*{\cftsubsectionleader}{}
+\renewcommand{\cftchapterpagefont}{}
+\renewcommand*{\cftchapterformatpnum}[1]{~\textbullet~#1}
+\renewcommand*{\cftsectionformatpnum}[1]{~\textbullet~#1}
+\renewcommand*{\cftsubsectionformatpnum}[1]{~\textbullet~#1}
+\renewcommand{\cftchapterafterpnum}{\cftparfillskip}
+\renewcommand{\cftsectionafterpnum}{\cftparfillskip}
+\renewcommand{\cftsubsectionafterpnum}{\cftparfillskip}
+\setrmarg{3.55em plus 1fil}
+\setsecnumdepth{subsection}
+\maxsecnumdepth{subsection}
+\settocdepth{subsection}
+%%\renewcommand{\cftbeforechapskip}{1pt}
+%\renewcommand{\cftchappresnum}{\bfseries}
+%\renewcommand{\cftchapfont}{\bfseries}
+%\renewcommand{\cftchappagefont}{\bfseries}
+%\renewcommand{\cftchapafterpnum}{\cftparfillskip}
 
-% Sections:
-\renewcommand{\cftsecpresnum}{\scshape}
-\renewcommand{\cftsecfont}{\normalfont}
-\renewcommand{\cftsecpagefont}{\normalfont}
-\renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
-\renewcommand{\cftsecafterpnum}{\cftparfillskip}
+%% Sections:
+%\renewcommand{\cftsecpresnum}{\scshape}
+%\renewcommand{\cftsecfont}{\normalfont}
+%\renewcommand{\cftsecpagefont}{\normalfont}
+%\renewcommand{\cftsecleader}{\cftdotfill{\cftsecdotsep}}
+%\renewcommand{\cftsecafterpnum}{\cftparfillskip}
 
 
-% Subsections:
-\renewcommand{\cftsubsecpresnum}{\scshape}
-\renewcommand{\cftsubsecfont}{\normalfont}
-\renewcommand{\cftsubsecpagefont}{\normalfont}
-\renewcommand{\cftsubsecleader}{\cftdotfill{\cftsubsecdotsep}}
-\renewcommand{\cftsubsecafterpnum}{\cftparfillskip}
+%% Subsections:
+%\renewcommand{\cftsubsecpresnum}{\scshape}
+%\renewcommand{\cftsubsecfont}{\normalfont}
+%\renewcommand{\cftsubsecpagefont}{\normalfont}
+%\renewcommand{\cftsubsecleader}{\cftdotfill{\cftsubsecdotsep}}
+%\renewcommand{\cftsubsecafterpnum}{\cftparfillskip}
 
 % List of Figures:
+\renewcommand\printloftitle[1]{\vspace{-15.25ex}\chapter*{#1}}
+
 \addto\captionsenglish{%
     \renewcommand{\listfigurename}{List of Figures}%
 }
 
+
 \addtocontents{lof}{\vspace{6ex}}
 
 % List of Tables:
+\renewcommand\printlottitle[1]{\vspace{-15.25ex}\chapter*{#1}}
+
 \addto\captionsenglish{%
     \renewcommand{\listtablename}{List of Tables}%
 }

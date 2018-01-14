@@ -1,5 +1,5 @@
 \frontmatter
-\thispagestyle{empty}
+\pagestyle{plain}
 \phantom{Blabla}
 \addtocounter{page}{-1}
 \newpage
@@ -41,7 +41,7 @@
 
 % ToC
 \phantomsection\pdfbookmark{Table of Contents}{tableofcontents}
-\tableofcontents
+\tableofcontents*
 %\newpage
 %\thispagestyle{empty}
 %\phantom{Blabla}
@@ -54,8 +54,8 @@
 % Optional: Rename LoF
 %\renewcommand{\listfigurename}{List of Figures}
 \addcontentsline{toc}{chapter}{\listfigurename}
-\listoffigures
-\newpage
+\listoffigures*
+\cleartorecto
 %\thispagestyle{empty}
 %\phantom{Blabla}
 %%%\addtocounter{page}{-1}
@@ -67,12 +67,11 @@
 % Optional: Rename LoT
 %\renewcommand{\listtablename}{List of Tables}
 \addcontentsline{toc}{chapter}{\listtablename}
-\listoftables
-\newpage
-\thispagestyle{empty}
-\phantom{Blabla}
+\listoftables*
+\cleartorecto
+%\thispagestyle{empty}
+%\phantom{Blabla}
 %\addtocounter{page}{-1}
-\newpage
 
 % Optional: Notation
 % Ghost section necessary in order for the hyperref package to link properly
@@ -81,11 +80,11 @@
 \chapter*{Notation}
     \input{frontmatter/notation}
 
-\newpage
-\thispagestyle{empty}
-\phantom{Blabla}
+\cleartorecto
+%\thispagestyle{empty}
+%\phantom{Blabla}
 %\addtocounter{page}{-1}
-\newpage
+%\newpage
 
 % Add spacing after last line of frontmatter in ToC.
 % Comment out if neither a list of figures, a list of tables nor a chapter
