@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: splinter
+Version: 3.0
+Summary: A library for multivariate function approximation using splines
+Home-page: http://github.com/bgrimstad/splinter
+Author: Bjarne Grimstad and others
+Author-email: bjarne.grimstad@gmail.com
+License: MPL 2.0
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

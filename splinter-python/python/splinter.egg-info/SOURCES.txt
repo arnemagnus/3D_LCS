@@ -1,0 +1,14 @@
+setup.py
+splinter/__init__.py
+splinter/bspline.py
+splinter/bsplineboosting.py
+splinter/bsplinebuilder.py
+splinter/datatable.py
+splinter/function.py
+splinter/splinter.py
+splinter/utilities.py
+splinter.egg-info/PKG-INFO
+splinter.egg-info/SOURCES.txt
+splinter.egg-info/dependency_links.txt
+splinter.egg-info/not-zip-safe
+splinter.egg-info/top_level.txt
