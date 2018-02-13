@@ -6,7 +6,7 @@ titlepage,%
 openright%
 %openbib
 ]{memoir}
-
+%
 \abnormalparskip{12pt}
 
 \input{_setup_files/packages.tex}
@@ -34,9 +34,9 @@ openright%
 
 
 % Bibliography
-\thispagestyle{simple}
 % Ghost section necessary in order for the hyperref package to link properly
 \phantomsection
+\thispagestyle{chapter}
 \addcontentsline{toc}{chapter}{References}
 \printbibliography[title=References]
 

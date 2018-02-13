@@ -1,9 +1,10 @@
 \frontmatter
-\pagestyle{plain}
+%\pagestyle{plain}
 %\phantom{Blabla}
 %\addtocounter{page}{-1}
 %\newpage
 % First of all, the abstract
+\thispagestyle{firstchappage}
 \pdfbookmark[chapter]{Abstract}{abstract}
 \chapter*{Abstract}
     \input{frontmatter/abstract}
@@ -11,11 +12,13 @@
 \cleartorecto
 
 % Second, abstract in Norwegian
+\thispagestyle{firstchappage}
 \pdfbookmark[chapter]{Sammendrag}{sammendrag}
 \chapter*{Sammendrag}
     \input{frontmatter/sammendrag}
 
 \cleartorecto
+\thispagestyle{firstchappage}
 % Third, preface
 \pdfbookmark[chapter]{Preface}{preface}
 \chapter*{Preface}
@@ -64,6 +67,7 @@
 % Ghost section necessary in order for the hyperref package to link properly
 \phantomsection
 \addcontentsline{toc}{chapter}{Notation}
+\thispagestyle{firstchappage}
 \chapter*{Notation}
     \input{frontmatter/notation}
 

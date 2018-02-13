@@ -11,6 +11,8 @@
 \setlength{\parskip}{1.4em}
 \setlength{\parindent}{0em}
 
+% Margins set in accordance to guidelines set by NTNU grafisk senter
+% (i.e., minimum 2cm top, bottom, left and right in A4 format)
 \setlrmarginsandblock{3cm}{2.5cm}{*}
 \setulmarginsandblock{2.5cm}{2.5cm}{*}
 \checkandfixthelayout
@@ -20,6 +22,66 @@
 \renewcommand{\labelitemi}{\sbt}
 \renewcommand{\labelitemii}{\sbt}
 \renewcommand{\labelitemiii}{\sbt}
+
+
+%
+% Page format
+%
+
+%%% HEADER AND FOOTER
+
+\makepagestyle{standard} %Make standard pagestyle
+
+\makeatletter                 %Define standard pagestyle
+\makeevenfoot{standard}{\thepage}{}{} %
+\makeoddfoot{standard}{}{}{\thepage}  %
+\makeevenhead{standard}{\leftmark}{}{}
+\makeoddhead{standard}{}{}{\rightmark}
+\makeheadrule{standard}{\textwidth}{\normalrulethickness}
+\makeatother                  %
+
+\makeatletter
+\makepsmarks{standard}{
+\createmark{chapter}{both}{shownumber}{\@chapapp\ }{ \quad }
+\createmark{section}{right}{shownumber}{}{ \quad }
+\createplainmark{toc}{both}{\contentsname}
+\createplainmark{lof}{both}{\listfigurename}
+\createplainmark{lot}{both}{\listtablename}
+\createplainmark{bib}{both}{\bibname}
+\createplainmark{index}{both}{\indexname}
+\createplainmark{glossary}{both}{\glossaryname}
+   }
+\makeatother                               %
+
+
+\makepagestyle{firstchappage} %Make standard pagestyle for first page in chapter
+
+\makeatletter                 %Define standard pagestyle
+\makeevenfoot{firstchappage}{\thepage}{}{} %
+\makeoddfoot{firstchappage}{}{}{\thepage}  %
+\makeevenhead{firstchappage}{}{}{}
+\makeoddhead{firstchappage}{}{}{}
+%\makeheadrule{firstchappage}{0pt}{}
+\makeatother                  %
+
+\makeatletter
+\makepsmarks{firstchappage}{
+%\createmark{chapter}{both}{shownumber}{\@chapapp\ }{ \quad }
+%\createmark{section}{right}{shownumber}{}{ \quad }
+%\createplainmark{toc}{both}{\contentsname}
+%\createplainmark{lof}{both}{\listfigurename}
+%\createplainmark{lot}{both}{\listtablename}
+%\createplainmark{bib}{both}{\bibname}
+%\createplainmark{index}{both}{\indexname}
+%\createplainmark{glossary}{both}{\glossaryname}
+   }
+\makeatother                               %
+
+\nouppercaseheads
+\pagestyle{standard}               %Choosing pagestyle and chapter pagestyle
+\aliaspagestyle{chapter}{firstchappage}    %Change plain to standard if you want the header on pages with chapter headings
+\aliaspagestyle{chapter*}{firstchappage}
+
 
 %
 % Titlesec format options
@@ -116,21 +178,21 @@
 }
 
 \newlength{\aftertocskip}
-\setlength{\aftertocskip}{6ex}
+\setlength{\aftertocskip}{0ex}
 \renewcommand{\aftertoctitle}{\par\nobreak\vskip\aftertocskip}
-%\setlength{\cftaftertoctitleskip}{6ex}
 
 % Chapters:
-\renewcommand*{\cftchapterleader}{}
-\renewcommand*{\cftsectionleader}{}
-\renewcommand*{\cftsubsectionleader}{}
-\renewcommand{\cftchapterpagefont}{}
-\renewcommand*{\cftchapterformatpnum}[1]{~\textbullet~#1}
-\renewcommand*{\cftsectionformatpnum}[1]{~\textbullet~#1}
-\renewcommand*{\cftsubsectionformatpnum}[1]{~\textbullet~#1}
-\renewcommand{\cftchapterafterpnum}{\cftparfillskip}
-\renewcommand{\cftsectionafterpnum}{\cftparfillskip}
-\renewcommand{\cftsubsectionafterpnum}{\cftparfillskip}
+\renewcommand*{\cftchapterleader}{\hfill}
+%\renewcommand*{\cftchapterdotsep}{\cftdotsep}
+%\renewcommand*{\cftsectionleader}{\cftdotsep}
+%\renewcommand*{\cftsubsectionleader}{\cftdotfill}
+\renewcommand*{\cftchapterpagefont}{\normalfont}
+\renewcommand*{\cftchapterformatpnum}[1]{\bfseries{#1}}
+\renewcommand*{\cftsectionformatpnum}[1]{#1}
+\renewcommand*{\cftsubsectionformatpnum}[1]{#1}
+%\renewcommand{\cftchapterafterpnum}{\cftparfillskip}
+%\renewcommand{\cftsectionafterpnum}{\cftparfillskip}
+%\renewcommand{\cftsubsectionafterpnum}{\cftparfillskip}
 \setrmarg{3.55em plus 1fil}
 \setsecnumdepth{subsection}
 \maxsecnumdepth{subsection}
@@ -164,7 +226,7 @@
 }
 
 
-\addtocontents{lof}{\vspace{6ex}}
+\addtocontents{lof}{\vspace{-2ex}}
 
 % List of Tables:
 \renewcommand\printlottitle[1]{\vspace{-15.5ex}\chapter*{#1}}
@@ -173,7 +235,8 @@
     \renewcommand{\listtablename}{List of Tables}%
 }
 
-\addtocontents{lot}{\vspace{6ex}}
+\addtocontents{lot}{\vspace{-2ex}}
+
 %
 % "Function" definitions for front-, main- and backmatter
 %
