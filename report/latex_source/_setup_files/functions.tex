@@ -35,6 +35,7 @@
 \makeatletter                 %Define standard pagestyle
 \makeevenfoot{standard}{\thepage}{}{} %
 \makeoddfoot{standard}{}{}{\thepage}  %
+\makefootrule{standard}{\textwidth}{\normalrulethickness}{\footruleskip} % Remove footrule if footnotes are troublesome
 \makeevenhead{standard}{\leftmark}{}{}
 \makeoddhead{standard}{}{}{\rightmark}
 \makeheadrule{standard}{\textwidth}{\normalrulethickness}
@@ -59,9 +60,9 @@
 \makeatletter                 %Define standard pagestyle
 \makeevenfoot{firstchappage}{\thepage}{}{} %
 \makeoddfoot{firstchappage}{}{}{\thepage}  %
+\makefootrule{firstchappage}{\textwidth}{\normalrulethickness}{\footruleskip} % Remove footrule if footnotes are troublesome
 \makeevenhead{firstchappage}{}{}{}
 \makeoddhead{firstchappage}{}{}{}
-%\makeheadrule{firstchappage}{0pt}{}
 \makeatother                  %
 
 \makeatletter
