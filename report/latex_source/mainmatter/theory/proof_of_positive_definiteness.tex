@@ -1,0 +1,32 @@
+In three dimensions, the matrix $\mtrx{L}$ is defined as
+\input{mainmatter/theory/large_equations/definition_of_l_matrix}
+where the dependence of $\mtrx{L}$ and its constituent parts on $t$, $t_{0}$
+and $\vct{x}_{0}$ has been omitted for brevity. The distinction between
+so-called strong and weak hyperbolic LCSs is based upon whether or not
+$\mtrx{L}$ is positive definite
+\parencite{haller2010variational,farazmand2011erratum}. By Sylvester's
+theorem, a square matrix is positive definite if and only if all of the
+leading principal minors of $\mtrx{L}$ are positive. The term
+\emph{leading principal minors} is defined as follows
+\parencite{gilbert1991positive}:
+\begin{defn}[Principals of square matrices]
+    \label{def:leadingprincipalminor}
+    Let $\mtrx{A}$ be an $n\times{}n$ matrix. For $1\leq{}k\leq{}n$, the
+    $k^{\textnormal{th}}$ \emph{principal submatrix} of $\mtrx{A}$ is the $k\times{}k$
+    submatrix formed from the first $k$ rows and first $k$ columns of $\mtrx{A}$.
+    Its determinant is the $k^{\textnormal{th}}$ principal minor.
+\end{defn}
+Thus, in three dimensions, this amounts to the simultaneous fulfillment of the
+three requirements
+\begin{subequations}
+    \label{eq:positive_definiteness_of_l}
+    \begin{align}
+        \label{eq:principal_minor_one}
+        \vct{\nabla}^{2}\mtrx{C}\big[\vct{\xi}_{3},\vct{\xi}_{3},\vct{\xi}_{3},,\vct{\xi}_{3}\big] &> 0 \\
+        \label{eq:principal_minor_two}
+        2\dfrac{\lambda_{3}-\lambda_{1}}{\lambda_{1}\lambda_{3}}\vct{\nabla}^{2}\mtrx{C}\big[\vct{\xi}_{3},\vct{\xi}_{3},\vct{\xi}_{3},\vct{\xi}_{3}\big]  - 4\Big(\dfrac{\lambda_{3}-\lambda_{1}}{\lambda_{1}\lambda_{3}}\Big)^{2}\big\langle\vct{\xi}_{1},(\vct{\nabla}\vct{\xi}_{3})\vct{\xi}_{3}\big\rangle^{2} &> 0 \\
+        \label{eq:principal_minor_three}
+        \det(\mtrx{L}) &> 0
+    \end{align}
+\end{subequations}
+
