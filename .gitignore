@@ -33,3 +33,6 @@ _minted*/
 
 # Archive files:
 *.tar.gz
+
+# Locally compiled files
+*.so
