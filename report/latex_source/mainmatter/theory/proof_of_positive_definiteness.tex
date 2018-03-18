@@ -1,7 +1,7 @@
 In three dimensions, the matrix $\mtrx{L}$ is defined as
-\input{mainmatter/theory/large_equations/definition_of_l_matrix}
-where the dependence of $\mtrx{L}$ and its constituent parts on $t$, $t_{0}$
-and $\vct{x}_{0}$ has been omitted for brevity. The distinction between
+\input{mainmatter/theory/large_equations/definition_of_l_matrix}where the
+dependence of $\mtrx{L}$ and its constituent parts on $t$, $t_{0}$ and
+$\vct{x}_{0}$ has been omitted for brevity. The distinction between
 so-called strong and weak hyperbolic LCSs is based upon whether or not
 $\mtrx{L}$ is positive definite
 \parencite{haller2010variational,farazmand2011erratum}. By Sylvester's
@@ -16,17 +16,81 @@ leading principal minors of $\mtrx{L}$ are positive. The term
     submatrix formed from the first $k$ rows and first $k$ columns of $\mtrx{A}$.
     Its determinant is the $k^{\textnormal{th}}$ principal minor.
 \end{defn}
-Thus, in three dimensions, this amounts to the simultaneous fulfillment of the
-three requirements
+Thus, in three dimensions, the matrix $\mtrx{L}$ being positive definite
+amounts to the simultaneous fulfillment of the three requirements
 \begin{subequations}
     \label{eq:positive_definiteness_of_l}
     \begin{align}
         \label{eq:principal_minor_one}
-        \vct{\nabla}^{2}\mtrx{C}\big[\vct{\xi}_{3},\vct{\xi}_{3},\vct{\xi}_{3},,\vct{\xi}_{3}\big] &> 0 \\
+        \vct{\nabla}^{2}\mtrx{C}^{-1}\big[\vct{\xi}_{3},%
+                                          \vct{\xi}_{3},%
+                                          \vct{\xi}_{3},%
+                                          \vct{\xi}_{3}\big] &> 0, \\
         \label{eq:principal_minor_two}
-        2\dfrac{\lambda_{3}-\lambda_{1}}{\lambda_{1}\lambda_{3}}\vct{\nabla}^{2}\mtrx{C}\big[\vct{\xi}_{3},\vct{\xi}_{3},\vct{\xi}_{3},\vct{\xi}_{3}\big]  - 4\Big(\dfrac{\lambda_{3}-\lambda_{1}}{\lambda_{1}\lambda_{3}}\Big)^{2}\big\langle\vct{\xi}_{1},(\vct{\nabla}\vct{\xi}_{3})\vct{\xi}_{3}\big\rangle^{2} &> 0 \\
+        2\dfrac{\lambda_{3}-\lambda_{1}}{\lambda_{1}\lambda_{3}}%
+        \bigg\{\vct{\nabla}^{2}\mtrx{C}^{-1}\big[\vct{\xi}_{3},%
+                                              \vct{\xi}_{3},%
+                                              \vct{\xi}_{3},%
+                                              \vct{\xi}_{3}\big] %
+        -2\dfrac{\lambda_{3}-\lambda_{1}}{\lambda_{1}\lambda_{3}}%
+                \big\langle\vct{\xi}_{1},%
+                    (\vct{\nabla}\vct{\xi}_{3})\vct{\xi}_{3}\big\rangle^{2}\bigg\} &> 0, \\
         \label{eq:principal_minor_three}
-        \det(\mtrx{L}) &> 0
+        \det(\mtrx{L}) &> 0.
     \end{align}
 \end{subequations}
-
+By straightforward algebraic manipulations, the inequality
+\eqref{eq:principal_minor_three} is equivalent to
+\begin{equation}
+    \label{eq:determinant_inequality}
+    \begin{aligned}
+    4 \frac{(\lambda_{3}-\lambda_{2})(\lambda_{3}-\lambda_{1})}%
+           {\lambda_{1}\lambda_{2}\lambda_{3}^{2}}%
+           \bigg\{\vct{\nabla}^{2}\mtrx{C}^{-1}\big[\vct{\xi}_{3},%
+                                                  \vct{\xi}_{3},
+                                                  \vct{\xi}_{3},
+                                                  \vct{\xi}_{3}\big]
+                - \Big( &2\frac{\lambda_{3}-\lambda_{1}}{\lambda_{1}\lambda_{3}}%
+                        \big\langle\vct{\xi}_{1},%
+                        (\vct{\nabla}\vct{\xi}_{3})\vct{\xi}_{3}\big\rangle^{2}  \\%
+                      +  &2\frac{\lambda_{3}-\lambda_{2}}{\lambda_{2}\lambda_{3}}%
+                        \big\langle\vct{\xi}_{2},%
+                        (\vct{\nabla}\vct{\xi}_{3})\vct{\xi}_{3}\big\rangle^{2} %
+                   \Big)%
+           \bigg\} > 0.
+    \end{aligned}
+\end{equation}
+Now, we make use of the following result from \textcite{haller2010variational}:
+\begin{lemm}
+    At each point of a weak LCS in three dimensions, the following identity holds:
+    \begin{equation}
+        \label{eq:hess_inverse_cg_tensor_identity}
+        \begin{aligned}
+            \vct{\nabla}^{2}\mtrx{C}^{-1}\big[\vct{\xi}_{3},%
+                                              \vct{\xi}_{3},%
+                                              \vct{\xi}_{3},%
+                                              \vct{\xi}_{3}%
+                                          \big] %
+                = - \frac{1}{\lambda_{3}^{2}} %
+                          \big\langle\vct{\xi}_{3},%
+                              \vct{\nabla}^{2}\lambda_{3}\vct{\xi}_{3} %
+                          \big\rangle %
+                          &+ 2\frac{\lambda_{3}-\lambda_{1}}{\lambda_{1}\lambda_{3}}%
+                        \big\langle\vct{\xi}_{1},%
+                        (\vct{\nabla}\vct{\xi}_{3})\vct{\xi}_{3}\big\rangle^{2}  \\%
+                        &+  2\frac{\lambda_{3}-\lambda_{2}}{\lambda_{2}\lambda_{3}}%
+                        \big\langle\vct{\xi}_{2},%
+                        (\vct{\nabla}\vct{\xi}_{3})\vct{\xi}_{3}\big\rangle^{2}.
+        \end{aligned}
+    \end{equation}
+    \begin{proof}
+        See theorem 7 in \textcite{haller2010variational}.
+    \end{proof}
+\end{lemm}
+Using \cref{eq:hess_inverse_cg_tensor_identity} in conjunction with
+\cref{eq:determinant_inequality} and the relationships
+$0\leq\lambda_{1}\leq\lambda_{2}\leq\lambda_{3}$, the inequalities
+\eqref{eq:positive_definiteness_of_l} can be expressed as follows:
+\begin{subequations}
+    Foo
+\end{subequations}
