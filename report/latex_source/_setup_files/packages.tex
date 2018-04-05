@@ -78,6 +78,10 @@ factor=0% Controls how much punctuation protrudes past the end of the line
 % Interface for floating objects
 \usepackage[]{float}
 
+% TikZ stuff
+\usepackage{tikz}
+\usepackage[]{tikz-3dplot}
+
 % Interface for stacked floating objects:
 \usepackage[]{subcaption}
 
@@ -203,7 +207,8 @@ pdfkeywords={Computational physics, Nonlinear dynamics, Lagrangian coherent stru
 \theoremstyle{plain}
 \newtheorem{thm}{Theorem}
 \crefname{thm}{theorem}{theorems}
-\theoremstyle{definition}
+\newtheoremstyle{mydefinition}{\topsep}{\topsep}{\selectfont}{}{}{.}{\newline}{{\bfseries{\thmname{#1}\thmnumber{ #2}}}\emph{\thmnote{ (#3)}}}
+\theoremstyle{mydefinition}
 \newtheorem{defn}{Definition}
 \crefname{defn}{definition}{definitions}
 \theoremstyle{plain}
@@ -212,3 +217,4 @@ pdfkeywords={Computational physics, Nonlinear dynamics, Lagrangian coherent stru
 
 \crefname{figure}{figure}{figures}
 \crefname{equation}{equation}{equations}
+

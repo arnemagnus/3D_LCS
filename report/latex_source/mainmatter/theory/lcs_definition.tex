@@ -1,0 +1,143 @@
+\section[Definition of Lagrangian coherent structures for three-dimensional
+flows]{Definition of Lagrangian coherent structures for\\\phantom{2.2}
+three-dimensional flows}
+
+Lagrangian coherent structures (henceforth abbreviated to LCSs) can be described
+as time-evolving surfaces which shape coherent trajectory patterns in dynamical
+systems, defined over a finite time interval \parencite{haller2010variational}.
+There are three main types of LCSs, namely \emph{elliptic}, \emph{hyperbolic}
+and \emph{parabolic}. Rougly speaking, parabolic LCSs outline cores of jet-like
+trajectories, elliptic LCSs describe vortex boundaries, whereas hyperbolic LCSs
+are comprised of overall attractive or repelling manifolds. As such, hyperbolic
+LCSs practically act as organizing centers of observable tracer patterns
+\parencite{onu2015lcstool}. Because hyperbolic LCSs provide the most readily
+applicable insight in terms of forecasting flow in e.g.\ oceanic currents,
+such structures have been the focus of this project.
+
+\subsection{Hyperbolic LCSs}
+\label{sub:hyperbolic_lcss}
+
+The identification of LCSs for reliable forecasting requires sufficiency and
+necessity conditions, supported by mathematical theorems.
+\textcite{haller2010variational} derived a variational LCS theory based on
+the Cauchy-Green strain tensor, defined by \cref{eq:defn_cauchygreen}, from
+which the aforementioned conditions follow. The immediately relevant parts
+of \citeauthor{haller2010variational}'s theory are given in
+\cref{def:normal_repellence,def:repelling_lcs,def:attracting_lcs,%
+def:hyperbolic_lcs} \parencite{haller2010variational}.
+
+\begin{defn}[Normally repellent material surfaces]
+    \label{def:normal_repellence}
+    A \emph{normally repellent material surface} over the time interval
+    $[t_{0},t_{0}+T]$ is a compact material surface segment $\mathcal{M}(t)$
+    which is overall repelling, and on which the normal repulsion rate is
+    greater than the tangential repulsion rate.
+\end{defn}
+
+A \emph{material surface} is a smooth surface $\mathcal{M}(t_{0})$ at time $t_{0}$,
+which is advected by the flow map, given by \cref{eq:defn_flowmap}, into a
+dynamic material line
+$\mathcal{M}(t) = \vct{F}_{t_{0}}^{t}\big(\mathcal{M}(t_{0})\big)$. The
+required \emph{compactness} of the material surface segment signifies that, in
+some sense, it must be topologically well-behaved. That the material surface is
+\emph{overall repelling} means that nearby trajectories are repelled from,
+rather than attracted towards, the material surface. Lastly, requiring that the
+\emph{normal} repulsion rate is greater than the \emph{tangential} repulsion
+rate means that nearby trajectories are in fact driven away from the material
+surface, rather than being stretched along with it due to shear stress.
+
+\begin{defn}[Repelling LCS]
+    \label{def:repelling_lcs}
+    A \emph{repelling LCS} over the time interval $[t_{0},t_{0}+T]$ is a
+    normally repelling material surface $\mathcal{M}(t_{0})$ whose normal repulsion
+    admits a pointwise non-degenerate maximum relative to any nearby material
+    surface $\widehat{\mathcal{M}}(t_{0})$.
+\end{defn}
+
+\begin{defn}[Attracting LCS]
+    \label{def:attracting_lcs}
+    An \emph{attracting LCS} over the time interval $[t_{0},t_{0}+T]$ is defined
+    as a repelling LCS over the \emph{backward} time interval $[t_{0}+T,t_{0}]$.
+\end{defn}
+
+\begin{defn}[Hyperbolic LCS]
+    \label{def:hyperbolic_lcs}
+    A \emph{hyperbolic LCS} over the time interval $[t_{0},t_{0}+T]$ is a
+    \emph{repelling} or \emph{attracting} LCS over the same time interval.
+\end{defn}
+
+Note that the above definitions associate LCSs with the time interval $I$ over
+which the dynamical system under consideration is known, or, at the very least,
+where information regarding the behaviour of tracers, is sought. Generally,
+LCSs obtained over a time interval $I$ do not necessarily exist over different
+time intervals \parencite{farazmand2012computing}.
+
+For sufficiently smooth three-dimensional flow, the above definitions can be
+summarized as a set of mathematical existence criteria, based on the
+Cauchy-Green strain tensor
+\parencite{haller2010variational,farazmand2012computing,karrasch2012comment,%
+farazmand2011erratum}.
+These are given in \cref{thm:lcs_conditions}.
+
+\begin{thm}[Sufficient and necessary conditions for LCSs in
+    three-dimensional flows]
+    \label{thm:lcs_conditions}
+    Consider a compact material surface $\mathcal{M}(t)\subset\mathcal{U}$
+    evolving over the time interal $[t_{0},t_{0}+T]$. Then $\mathcal{M}(t)$
+    is a repelling LCS over $[t_{0},t_{0}+T]$ if and only if all of the
+    following holds for all initial conditions
+    $\vct{x}_{0}\in\mathcal{M}(t_{0})$:
+    \begin{subequations}
+        \label{eq:lcs_conditions}
+        \begin{align}
+            \label{eq:lcs_condition_a}
+            &\lambda_{2}(\vct{x}_{0}) \neq \lambda_{3}(\vct{x}_{0}) > 1,\\
+            \label{eq:lcs_condition_b}
+            &\Big\langle\vct{\xi}_{3}(\vct{x}_{0},%
+        \mtrx{H}_{\lambda_{3}}(\vct{x}_{0})\vct{\xi}_{3}(\vct{x}_{0})\Big\rangle
+        < 0,\\
+            \label{eq:lcs_condition_c}
+            &\vct{\xi}_{3}(\vct{x}_{0}) \perp \mathcal{M}(t_{0}),\\
+            \label{eq:lcs_condition_d}
+            & \big\langle\grad\lambda_{3}(\vct{x}_{0}),%
+        \vct{\xi}_{3}(\vct{x}_{0})\big\rangle = 0.
+        \end{align}
+    \end{subequations}
+\end{thm}
+
+In \cref{thm:lcs_conditions}, $\langle\mathord{\cdot},\mathord{\cdot}\rangle$
+denotes the Euclidean inner product, and $\mtrx{H}_{\lambda_{3}}$ denotes the
+Hessian matrix of the largest eigenvalues of the Cauchy-Green strain tensor
+field. Component-wise, the Hessian matrix of a general, smooth, scalar-valued
+function $f$ is defined as
+\begin{equation}
+    \label{eq:defn_hessian}
+    {(\mtrx{H}_{f})}_{i,j} = \pdv[2]{f}{x_{i}}{x_{j}},
+\end{equation}
+which, for our three-dimensional flow, reduces to kek
+\begingroup
+\setlength{\delimitershortfall}{0pt}
+\begin{equation}
+    \label{eq:hessian_3d}
+    \mtrx{H}_{f} = %
+    \begin{pmatrix}
+        \dfrac{\partial{}^{2}f}{\partial{}x^{2}} &
+        \dfrac{\partial{}^{2}f}{\partial{}x\partial{}y} &
+        \dfrac{\partial{}^{2}f}{\partial{}x\partial{}z} \\[2ex]
+        \dfrac{\partial{}^{2}f}{\partial{}y\partial{}x} &
+        \dfrac{\partial{}^{2}f}{\partial{}y^{2}} &
+        \dfrac{\partial{}^{2}f}{\partial{}y\partial{}z} \\[2ex]
+        \dfrac{\partial{}^{2}f}{\partial{}z\partial{}x} &
+        \dfrac{\partial{}^{2}f}{\partial{}z\partial{}y} &
+        \dfrac{\partial{}^{2}f}{\partial{}z^{2}}
+    \end{pmatrix}.
+\end{equation}
+\endgroup
+
+Condition~\eqref{eq:lcs_condition_a} ensures that the normal repulsion rate is
+larger than the tangential stretch due to shear strain along the LCS, in
+accordance with \cref{def:normal_repellence}. Conditions%
+~\eqref{eq:lcs_condition_c} and~\eqref{eq:lcs_condition_d} suffice to enforce
+that the normal repulsion rate attains a local extremum along the LCS, relative
+to all nearby material surfaces. Lastly, condition~\eqref{eq:lcs_condition_b}
+ensures that this is a strict local maximum.
