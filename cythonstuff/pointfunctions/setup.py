@@ -14,8 +14,8 @@ ext_modules = [ ]
 
 if use_cython:
     ext_modules += [
-        Extension(name = 'trivariatevectorlinearinterpolation',
-                    sources = ['trivariatevectorlinearinterpolation.pyx'],
+        Extension(name = 'auxiliarypointstuff',
+                    sources = ['auxiliarypointstuff.pyx'],
                     language = 'c++',
                   include_dirs = [numpy.get_include()],
                 ),
@@ -23,12 +23,12 @@ if use_cython:
     cmdclass.update({ 'build_ext': build_ext })
 else:
     ext_modules += [
-        Extension('trivariatevectorlinearinterpolation', ['trivariatevectorlinearinterpolation.cpp'],
+        Extension('auxiliarypointstuff', ['auxiliarypointstuff.c'],
                   include_dirs = [numpy.get_include()]),
     ]
 
 setup(
-    name = 'trivariatevectorlinearinterpolation',
+    name = 'auxiliarypointstuff',
     cmdclass = cmdclass,
     ext_modules = ext_modules,
 )
