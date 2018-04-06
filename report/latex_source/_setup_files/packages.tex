@@ -81,6 +81,54 @@ factor=0% Controls how much punctuation protrudes past the end of the line
 % TikZ stuff
 \usepackage{tikz}
 \usepackage[]{tikz-3dplot}
+\usetikzlibrary{calc,decorations,fit,positioning}
+\makeatletter
+\tikzset{
+  fitting node/.style={
+    inner sep=0pt,
+    fill=none,
+    draw=none,
+    reset transform,
+    fit={(\pgf@pathminx,\pgf@pathminy) (\pgf@pathmaxx,\pgf@pathmaxy)}
+  },
+  reset transform/.code={\pgftransformreset}
+}
+\makeatother
+% A simple empty decoration, that is used to ignore the last bit of the path
+\pgfdeclaredecoration{ignore}{final}
+{
+\state{final}{}
+}
+
+% Declare the actual decoration.
+\pgfdeclaremetadecoration{middle}{initial}{
+    \state{initial}[
+        width={0pt},
+        next state=middle
+    ]
+    {\decoration{moveto}}
+
+    \state{middle}[
+        width={\pgfdecorationsegmentlength*\pgfmetadecoratedpathlength},
+        next state=final
+    ]
+    {\decoration{curveto}}
+
+    \state{final}
+    {\decoration{ignore}}
+}
+
+% Create a key for easy access to the decoration
+\tikzset{middle segment/.style={decoration={middle},decorate, segment length=#1}}
+
+\def\getangle(#1)(#2)#3{%
+  \begingroup%
+    \pgftransformreset%
+    \pgfmathanglebetweenpoints{\pgfpointanchor{#1}{center}}{\pgfpointanchor{#2}{center}}%
+    \expandafter\xdef\csname angle#3\endcsname{\pgfmathresult}%
+  \endgroup%
+}
+
 
 % Interface for stacked floating objects:
 \usepackage[]{subcaption}
@@ -133,6 +181,8 @@ labelsep=colon%
 
 % Package containing useful macros for typsetting vector calculus, linear
 % algebra etc.
+\usepackage{mathtools}
+\usepackage{xparse}
 \usepackage[]{physics}
 
 % Typeset mathematical symbols in bold, useful when working with vectors,

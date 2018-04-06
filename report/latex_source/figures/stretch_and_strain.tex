@@ -97,8 +97,8 @@
     \path (orig_t0) + (10*\sx,0,0) coordinate (orig_t);
 
     \pgfmathsetmacro{\wou}{0} % Weight one; uno, dos, tres etc
-    \pgfmathsetmacro{\wod}{0.66}%{0.6}
-    \pgfmathsetmacro{\wot}{0.33}%{0.3}
+    \pgfmathsetmacro{\wod}{0.72}%{0.6}
+    \pgfmathsetmacro{\wot}{0.36}%{0.3}
 
     \pgfmathsetmacro{\wdu}{0.97}
     \pgfmathsetmacro{\wdd}{-0.24}
@@ -181,11 +181,11 @@
 
     % Draw strain vectors
     \path ($(orig_t) + 0.88*(o) - 0.88*(orig_t)$) coordinate (onef);
-    \draw[->, color = black!90,very thick] (orig_t) -- (onef) node [xshift=-10,yshift=-1] {$\vct{\xi}_{1}$};
+    \draw[->, color = black!90,very thick] (orig_t) -- (onef) node [xshift=-10,yshift=2,rotate=330.11102] {$\vct{\xi}_{1}$};
     \path ($(orig_t) + 0.651*(l) - 0.651*(orig_t)$) coordinate (twof);
-    \draw[->, color = black!90,very thick] (orig_t) -- (twof) node [below] {$\vct{\xi}_{2}$};
+    \draw[->, color = black!90,very thick] (orig_t) -- (twof) node [below,xshift=4,rotate=340.11102] {$\vct{\xi}_{2}$};
     \path ($(orig_t) + 0.433*(t) - 0.433*(orig_t)$) coordinate (threef);
-    \draw[->, color = black!90,very thick] (orig_t) -- (threef) node [xshift=6,yshift=5] {$\vct{\xi}_{3}$};
+    \draw[->, color = black!90,very thick] (orig_t) -- (threef) node [rotate=330.11102,xshift=3,yshift=7] {$\vct{\xi}_{3}$};
 \end{tikzpicture}
 
 

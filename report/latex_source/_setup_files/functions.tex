@@ -421,3 +421,19 @@
 % Define macro for RMS deviation
 \DeclareMathOperator{\rmsd}{RMSD}
 
+% Declare macro for display style (partial) derivatives (cf. physics package)
+\DeclareDocumentCommand\ddv{}{\displaystyle\derivative}
+\DeclareDocumentCommand\dpdv{}{\displaystyle\partialderivative}
+
+% Declare macro for (scalable) inner product notation
+\DeclarePairedDelimiterX{\inp}[2]{\langle}{\rangle}{#1, #2}
+
+% Declare environment for aligned, gathered math environments
+\newenvironment{nalign}{
+    \begin{equation}
+    \begin{aligned}
+}{
+    \end{aligned}
+    \end{equation}
+    \ignorespacesafterend
+}

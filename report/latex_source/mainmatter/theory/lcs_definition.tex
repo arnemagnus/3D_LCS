@@ -76,7 +76,7 @@ For sufficiently smooth three-dimensional flow, the above definitions can be
 summarized as a set of mathematical existence criteria, based on the
 Cauchy-Green strain tensor
 \parencite{haller2010variational,farazmand2012computing,karrasch2012comment,%
-farazmand2011erratum}.
+farazmand2012erratum}.
 These are given in \cref{thm:lcs_conditions}.
 
 \begin{thm}[Sufficient and necessary conditions for LCSs in
@@ -93,23 +93,21 @@ These are given in \cref{thm:lcs_conditions}.
             \label{eq:lcs_condition_a}
             &\lambda_{2}(\vct{x}_{0}) \neq \lambda_{3}(\vct{x}_{0}) > 1,\\
             \label{eq:lcs_condition_b}
-            &\Big\langle\vct{\xi}_{3}(\vct{x}_{0},%
-        \mtrx{H}_{\lambda_{3}}(\vct{x}_{0})\vct{\xi}_{3}(\vct{x}_{0})\Big\rangle
-        < 0,\\
+            &\inp[\Big]{\vct{\xi}_{3}(\vct{x}_{0})}%
+            {\mtrx{H}_{\lambda_{3}}(\vct{x}_{0})\vct{\xi}_{3}(\vct{x}_{0})} < 0 \\
             \label{eq:lcs_condition_c}
             &\vct{\xi}_{3}(\vct{x}_{0}) \perp \mathcal{M}(t_{0}),\\
             \label{eq:lcs_condition_d}
-            & \big\langle\grad\lambda_{3}(\vct{x}_{0}),%
-        \vct{\xi}_{3}(\vct{x}_{0})\big\rangle = 0.
+            &\inp[\big]{\grad\lambda_{3}(\vct{x}_{0})}%
+            {\vct{\xi}_{3}(\vct{x}_{0})} = 0.
         \end{align}
     \end{subequations}
 \end{thm}
 
-In \cref{thm:lcs_conditions}, $\langle\mathord{\cdot},\mathord{\cdot}\rangle$
-denotes the Euclidean inner product, and $\mtrx{H}_{\lambda_{3}}$ denotes the
-Hessian matrix of the largest eigenvalues of the Cauchy-Green strain tensor
-field. Component-wise, the Hessian matrix of a general, smooth, scalar-valued
-function $f$ is defined as
+In \cref{thm:lcs_conditions}, $\inp{\cdot}{\cdot}$ denotes the Euclidean inner
+product, and $\mtrx{H}_{\lambda_{3}}$ denotes the Hessian matrix of the largest
+eigenvalues of the Cauchy-Green strain tensor field. Component-wise, the Hessian
+matrix of a general, smooth, scalar-valued function $f$ is defined as
 \begin{equation}
     \label{eq:defn_hessian}
     {(\mtrx{H}_{f})}_{i,j} = \pdv[2]{f}{x_{i}}{x_{j}},
@@ -121,15 +119,9 @@ which, for our three-dimensional flow, reduces to
     \label{eq:hessian_3d}
     \mtrx{H}_{f} = %
     \begin{pmatrix}
-        \dfrac{\partial{}^{2}f}{\partial{}x^{2}} &
-        \dfrac{\partial{}^{2}f}{\partial{}x\partial{}y} &
-        \dfrac{\partial{}^{2}f}{\partial{}x\partial{}z} \\[2ex]
-        \dfrac{\partial{}^{2}f}{\partial{}y\partial{}x} &
-        \dfrac{\partial{}^{2}f}{\partial{}y^{2}} &
-        \dfrac{\partial{}^{2}f}{\partial{}y\partial{}z} \\[2ex]
-        \dfrac{\partial{}^{2}f}{\partial{}z\partial{}x} &
-        \dfrac{\partial{}^{2}f}{\partial{}z\partial{}y} &
-        \dfrac{\partial{}^{2}f}{\partial{}z^{2}}
+        \dpdv[2]{f}{x} & \dpdv{f}{x}{y} & \dpdv{f}{x}{z} \\[2ex]
+        \dpdv{f}{y}{x} & \dpdv[2]{f}{y} & \dpdv{f}{y}{z} \\[2ex]
+        \dpdv{f}{z}{x} & \dpdv{f}{z}{y} & \dpdv[2]{f}{z}
     \end{pmatrix}.
 \end{equation}
 \endgroup

@@ -1,0 +1,57 @@
+In order to identify LCSs in three-dimensional flow by means of geodesic level
+set approximations, a system which has been studied extensively in the
+literature was chosen. The system is a simple example of a fluid flow which can
+exhibit chaotic behaviour \parencite[p.204]{frisch1995turbulence}.
+
+\section{Arnold-Beltrami-Childress flow}
+\label{sec:abc_flow}
+
+The Arnold-Beltrami-Childress (hereafter abbreviated to ABC) flow is a
+three-dimensional incompressible velocity field which solves the Euler equations
+exactly. In terms of the Cartesian coordinate vector $\vct{x}=(x,y,z)$, the
+system can be expressed mathematically as
+\begin{equation}
+    \label{eq:abc_flow}
+    \dot{\vct{x}} = \vct{v}(t,\vct{x}) =%
+    \begin{pmatrix}
+        A\sin(z)+C\cos(y)\\
+        B\sin(x)+A\cos(z)\\
+        C\sin(y)+B\cos(x)
+    \end{pmatrix},
+\end{equation}
+where $A$, $B$ and $C$ are spatially invariant parameters which dictate the
+nature of the flow pattern. The inherent periodicity with regards to the
+Cartesian coordinates naturally leads to a domain of interest
+$\mathcal{U} = [0,\hspace{0.5ex}2\pi]^{3}$ with periodic boundary conditions
+imposed along all three Cartesian axes.
+
+For stationary flow, the parameter values
+\begin{equation}
+    \label{eq:abc_params_stationary}
+    A = \sqrt{3}, \quad B=\sqrt{2}, \quad C=1
+\end{equation}
+were used, as has been common in the literature, for instance in the article
+by \textcite{oettinger2016autonomous}, as these values are known for exhibiting
+chaotic trajectories \parencite{zhao1993chaotic}.
+
+\begin{framed}
+    Rundt her kan sikkert språket forbedres / brødtekst genereres.
+    Lar det være et problem for fremtidige A.
+\end{framed}
+
+In order to enforce chaotic behaviour, the parameters $A$, $B$ and $C$ can be
+modified to be temporally aperiodic as follows:
+\begin{nalign}
+    \label{eq:abc_params_nonstationary}
+        &A = \sqrt{3}, \\
+        &B = \sqrt{2}\big[1 + k_{0}\tanh(k_{1}t)\cos({(k_{2}t)}^{2})\big], \\
+        &C = 1 + k_{0}\tanh(k_{1}t)\sin({(k_{3}t)}^{2}),
+\end{nalign}
+where the parameter values
+\begin{equation}
+    \label{eq:abc_params_nonstationary_frequencies}
+    k_{0} = 0.3, \quad k_{1} = 0.5, \quad k_{2} = 1.5, \quad k_{3} = 1.8
+\end{equation}
+where used, like in \textcite{oettinger2016autonomous}.
+
+\parencite{krauskopf2003computing,krauskopf2005survey}
