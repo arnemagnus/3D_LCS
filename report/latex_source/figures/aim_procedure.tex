@@ -2,9 +2,9 @@
 
 \begin{tikzpicture}[tdplot_main_coords]
     % Macro for the unit vector scale (i.e., the length of the unit vectors)
-    \pgfmathsetmacro{\usclx}{1.85};
-    \pgfmathsetmacro{\uscly}{2.15};
-    \pgfmathsetmacro{\usclz}{1.35};
+    \pgfmathsetmacro{\usclx}{2.15};
+    \pgfmathsetmacro{\uscly}{2.35};
+    \pgfmathsetmacro{\usclz}{1.55};
 
     % Macro for the axes parallel to the unit vectors
     \pgfmathsetmacro{\asclx}{7}
@@ -57,7 +57,8 @@
 
     % Draw parallel component of aim vector
 	\getangle(r)(rpar)b;
-    \draw[->,thick] (r) -- (rpar) node[midway,below,rotate=\angleb]{$\vct{f}(\vct{r},\vct{r}_{\mathrm{aim}})$};
+    \draw[thick, stroke=black!90,dashed] (r) -- (rpar);
+    \draw[->,stroke=black!90,thick,middle segment = 0.3] (r) -- (rpar) node[midway,below left,rotate=\angleb]{$\vct{f}(\vct{r},\vct{r}_{\mathrm{aim}})$};
 
     % Draw aim point
     \draw[fill=gray!10,stroke=black!90] (ra) circle(2.5pt) node[right]{$\vct{r}_{\mathrm{aim}}$};
