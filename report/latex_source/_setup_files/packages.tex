@@ -81,7 +81,18 @@ factor=0% Controls how much punctuation protrudes past the end of the line
 % TikZ stuff
 \usepackage{tikz}
 \usepackage[]{tikz-3dplot}
-\usetikzlibrary{calc,decorations,fit,positioning}
+\usetikzlibrary{%
+    angles,%
+    arrows.meta,%
+    backgrounds,%
+    calc,%
+    decorations,%
+    fit,%
+    hobby,%
+    patterns,%
+    positioning,%
+    quotes
+}
 \makeatletter
 \tikzset{
   fitting node/.style={
