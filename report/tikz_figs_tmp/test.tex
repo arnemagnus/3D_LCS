@@ -3,7 +3,7 @@
 \usepackage{tikz-3dplot}
 \usepackage{libertine}
 \usepackage[libertine]{newtxmath}
-\usetikzlibrary{calc,decorations}
+\usetikzlibrary{calc,decorations,hobby}
 
 % A simple empty decoration, that is used to ignore the last bit of the path
 \pgfdeclaredecoration{ignore}{final}
@@ -41,74 +41,36 @@
 }
 
 \begin{document}
-\tdplotsetmaincoords{60}{20}
+\tdplotsetmaincoords{60}{120}
 
 \begin{tikzpicture}[tdplot_main_coords]
-    % Macro for the unit vector scale (i.e., the length of the unit vectors)
-    \pgfmathsetmacro{\usclx}{1.35};
-    \pgfmathsetmacro{\uscly}{1.35};
-    \pgfmathsetmacro{\usclz}{1.35};
+	\pgfmathsetmacro{\innerscl}{3}
+	\pgfmathsetmacro{\outerscl}{5}
+    \pgfmathsetmacro{\num}{18} % = Degree span / separation, outer for loop
 
-    % Macro for the axes parallel to the unit vectors
-    \pgfmathsetmacro{\asclx}{5}
-    \pgfmathsetmacro{\ascly}{5}
-    \pgfmathsetmacro{\asclz}{3}
+    % Inner geodesic level set
+    \foreach [count = \i] \a in {10,30,...,350}%
+    {%
+        \coordinate (i\i) at ( {\innerscl*cos(\a)} , {\innerscl*sin(\a)} , 0) ;
+    }%
+    \draw[stroke=black!80,thin,dashed] (i1) to [ curve through ={(i2) .. (i3) .. (i4) .. (i5) .. (i6) .. (i7) .. (i8) .. (i9) .. (i10) .. (i11) .. (i12) .. (i13) .. (i14) .. (i15) .. (i16) .. (i17) .. (i18)}] (i1);
+    \foreach \i in {1,...,\num}%
+    {%
+        \draw[stroke=black!80, fill=gray!60] (i\i) circle (3pt);
+    }%
 
-    % Macro for the vector separating origin point and aim point
-    \pgfmathsetmacro{\x}{0.78*\asclx}
-    \pgfmathsetmacro{\y}{0.64*\ascly}
-    \pgfmathsetmacro{\z}{0.78*\asclz}
+    % Outer geodesic level set
+    \foreach [count = \i] \a in {10,30,...,350}%
+    {%
+        \coordinate (o\i) at ( {\outerscl*cos(\a)} , {\outerscl*sin(\a)} , 0.2) ;
+    }%
+    \draw[stroke=black!80,thin,dashed] (o1) to [ curve through ={(o2) .. (o3) .. (o4) .. (o5) .. (o6) .. (o7) .. (o8) .. (o9) .. (o10) .. (o11) .. (o12) .. (o13) .. (o14) .. (o15) .. (o16) .. (o17) .. (o18)}] (o1);
+    \foreach \i in {1,...,\num}%
+    {%
+        \draw[stroke=black!80, fill=gray!60] (o\i) circle (3pt);
+    }%
 
-    % Set coordinates for origin point
-    \coordinate (r) at (0,0,0);
 
-    % Set coordinates for aiming point
-    \coordinate (ra) at ($(r) + (\x,\y,\z)$);
-
-    % Set coordinates for end points of unit vectors
-    \coordinate (xi1) at ($(r) + (\usclx,0,0)$);
-    \coordinate (xi2) at ($(r) + (0,\uscly,0)$);
-    \coordinate (xi3) at ($(r) + (0,0,\usclz)$);
-
-    % Set coordinates of orthogonal projection of aiming vector
-    \coordinate (rort) at ($(r) + (0,0,\z)$);
-
-    % Set coordinates of parallel projection of aiming vector
-    \coordinate (rpar) at ($(r) + (\x,\y,0)$);
-
-    % Shade plane spanned by xi1 and xi2
-    \draw[fill=gray!15,draw opacity = 0] (r) -- ($(r)+(\asclx,0,0)$) -- ($(r)+(\asclx,\ascly,0)$) -- ($(r)+(0,\ascly,0)$) -- cycle;
-
-    % Draw axes parallel to unit vectors
-    \draw[thin,color=gray!60] (r) -- ($(r) + (\asclx,0,0)$); % xi1
-    \draw[thin,color=gray!60] (r) -- ($(r) + (0,\ascly,0)$); % xi2
-    \draw[thin,color=gray!60] (r) -- ($(r) + (0,0,\asclz)$); % xi3
-
-    % Draw unit vectors
-	\getangle(r)(xi1)b;
-    \draw[->,very thick,color=black!90] (r) -- (xi1) node[midway,below,rotate=\angleb]{$\vec{\xi}_{1}(\vec{r})$};
-	\getangle(r)(xi2)b;
-    \draw[->,very thick,color=black!90] (r) -- (xi2) node[above,rotate=\angleb]{$\vec{\xi}_{2}(\vec{r})$};
-    \draw[->,very thick,color=black!90] (r) -- (xi3) node[midway,left]{$\vec{\xi}_{3}(\vec{r})$};
-
-    % Draw guide lines to orthogonal component of aim vector
-    \draw[thin, dashed,color=black!65] (ra) -- (rort);
-
-    % Draw guide lines to parallel component of aim vector
-    \draw[thin, dashed] (ra) -- (rpar);
-
-    % Draw nonmodified aim vector
-    \draw[->,thin,middle segment = 0.99] (r) -- (ra);
-
-    % Draw parallel component of aim vector
-	\getangle(r)(rpar)b;
-    \draw[->,thick] (r) -- (rpar) node[midway,below,rotate=\angleb]{$\vec{f}(\vec{r},\vec{r}_{\mathrm{aim}})$};
-
-    % Draw origin point
-    \draw[fill=white,stroke=black!90,fill opacity=1] (r) circle(2pt) node[below] {$\vec{r}$};
-
-    % Draw aim point
-    \draw[fill=gray!20,stroke=black!90] (ra) circle(2pt) node[right]{$\vec{r}_{\mathrm{aim}}$};
 
 \end{tikzpicture}
 
