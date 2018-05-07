@@ -9,9 +9,9 @@
 \usepackage[]{physics}
 % Macros for greek letters in roman style, in math mode
 \DeclareRobustCommand{\mathup}[1]{%
-\begingroup\changegreek\mathrm{#1}\endgroup}
+\begingroup\ensuremath\changegreek\mathrm{#1}\endgroup}
 \DeclareRobustCommand{\mathbfup}[1]{%
-\begingroup\changegreekbf\mathbf{#1}\endgroup}
+\begingroup\ensuremath\changegreek\bm{\mathrm{#1}}\endgroup}
 
 \makeatletter
 \def\changegreek{\@for\next:={%
@@ -19,23 +19,16 @@
         xi,pi,rho,sigma,tau,upsilon,phi,chi,psi,omega,varepsilon,varpi,%
     varrho,varsigma,varphi}%
 \do{\expandafter\let\csname\next\expandafter\endcsname\csname\next up\endcsname}}
-\def\changegreekbf{\@for\next:={%
-        alpha,beta,gamma,delta,epsilon,zeta,eta,theta,iota,kappa,lambda,mu,nu,%
-        xi,pi,rho,sigma,tau,upsilon,phi,chi,psi,omega,varepsilon,varpi,%
-    varrho,varsigma,varphi}%
-    \do{\expandafter\def\csname\next\expandafter\endcsname\expandafter{%
-\expandafter\bm\expandafter{\csname\next up\endcsname}}}}
 \makeatother
 
-% Define vectors in bold roman font
-\newcommand{\vct}[1]{\ensuremath{\mathbfup{#1}}}
+% Define vectors in bold, roman, lowercase font
+\newcommand{\vct}[1]{\ensuremath{\mathbfup{\MakeLowercase{#1}}}}
 
-% Define unit vectors in bold roman font, with hats
-\newcommand{\uvct}[1]{\ensuremath{\mathbfup{\hat{#1}}}}
+% Define unit vectors in bold, roman, lowercase font, with hats
+\newcommand{\uvct}[1]{\ensuremath{\mathbfup{\hat{\MakeLowercase{#1}}}}}
 
-% Define matrices in bold italic font
-\newcommand{\mtrx}[1]{\ensuremath{\bm{#1}}}
-
+% Define matrices in bold, roman, uppercase font
+\newcommand{\mtrx}[1]{\ensuremath{\mathbfup{\MakeUppercase{#1}}}}
 \usetikzlibrary{%
     angles,%
     arrows.meta,%
