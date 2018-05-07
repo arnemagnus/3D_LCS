@@ -153,12 +153,12 @@
 
     % Denote inner and outer parametrizations
     \node at ($(i3)!0.6!(i4)$) (innerpt) {};
-    \node [below left =6pt and 1pt of innerpt] (innermrk) {$\mathcal{C}_{i}$};
+    \node [below left =6pt and 1pt of innerpt] (innermrk) {$\mathcal{C}_{i-1}$};
 
     \draw[stroke=black!80] ($(innerpt)!0.7!(innermrk)$) to [out=30,in=-60] ($(innermrk)!0.9!(innerpt)$);
 
     \node at ($(o4)!0.6!(o5)$) (outerpt) {};
-    \node [below right=5pt and 1pt of outerpt] (outermrk) {$\mathcal{C}_{i+1}$};
+    \node [below right=5pt and 1pt of outerpt] (outermrk) {$\mathcal{C}_{i}$};
     \draw[stroke=black!80] ($(outerpt)!0.6!(outermrk)$) to [out=135,in=-70] ($(outermrk)!0.9!(outerpt)$);
 
 
