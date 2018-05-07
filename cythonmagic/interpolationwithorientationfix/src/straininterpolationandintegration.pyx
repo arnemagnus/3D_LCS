@@ -118,7 +118,7 @@ cdef class SplineInterpolator:
         else:
             ext = 0
         self.interp.init_interp(&x[0],&y[0],&z[0],&f[0],kx,ky,kz,x.shape[0],y.shape[0],z.shape[0],ext)
-    cdef void _ev_(self, double x, double y, double z, int kx, int ky, int kz, int kq, double*ret):
+    cdef void _ev_(self, double x, double y, double z, int kx, int ky, int kz, double*ret):
         ret[0] = self.interp.eval_interp(x,y,z,kx,ky,kz)
     def __dealoc__(self):
         if self.interp is not NULL:
@@ -484,9 +484,7 @@ cdef class CubicSpecialInterpolator(InterpolatorWithOrientationFix):
 
     """
     cdef:
-        ItpCont *itpx
-        ItpCont *itpy
-        ItpCont *itpz
+        SplineInterpolator itpx, itpy, itpz
         double[:,:,:,::1] xi_grid
         double[::1] x_grid, y_grid, z_grid
         double dx, dy, dz
@@ -514,9 +512,6 @@ cdef class CubicSpecialInterpolator(InterpolatorWithOrientationFix):
         double x_internal, y_internal, z_internal
 
     def __cinit__(self):
-        self.itpx = new ItpCont()
-        self.itpy = new ItpCont()
-        self.itpz = new ItpCont()
         self.x_cube = self._x_cube_
         self.y_cube = self._y_cube_
         self.z_cube = self._z_cube_
@@ -692,14 +687,14 @@ cdef class CubicSpecialInterpolator(InterpolatorWithOrientationFix):
                             for l in range(3):
                                 xi_cube[l,i+4*(j+4*k)] = tmp_xi[l]
 
-            self.itpx.init_interp(&x_cube[0],&y_cube[0],&z_cube[0],&xi_cube[0,0],self.kx,self.ky,self.kz,4,4,4,0)
-            self.itpy.init_interp(&x_cube[0],&y_cube[0],&z_cube[0],&xi_cube[1,0],self.kx,self.ky,self.kz,4,4,4,0)
-            self.itpz.init_interp(&x_cube[0],&y_cube[0],&z_cube[0],&xi_cube[2,0],self.kx,self.ky,self.kz,4,4,4,0)
+            self.itpx = SplineInterpolator(x_cube,y_cube,z_cube,xi_cube[0],self.kx,self.ky,self.kz,4,4,4,0)
+            self.itpy = SplineInterpolator(x_cube,y_cube,z_cube,xi_cube[1],self.kx,self.ky,self.kz,4,4,4,0)
+            self.itpz = SplineInterpolator(x_cube,y_cube,z_cube,xi_cube[2],self.kx,self.ky,self.kz,4,4,4,0)
             self.calibrated = True
         # Evaluate interpolation objects
-        xi[0] = self.itpx.eval_interp(x,y,z,0,0,0)
-        xi[1] = self.itpy.eval_interp(x,y,z,0,0,0)
-        xi[2] = self.itpz.eval_interp(x,y,z,0,0,0)
+        self.itpx._ev_(x,y,z,0,0,0,&xi[0])
+        self.itpy._ev_(x,y,z,0,0,0,&xi[1])
+        self.itpz._ev_(x,y,z,0,0,0,&xi[2])
         # Normalize results
         _cy_normalize_(xi)
 
@@ -787,12 +782,13 @@ cdef class CubicSpecialInterpolator(InterpolatorWithOrientationFix):
             self.sameaslast = True
 
     def __dealoc__(self):
-        if self.itpx is not NULL:
-            del self.itpx
-        if self.itpy is not NULL:
-            del self.itpy
-        if self.itpz is not NULL:
-            del self.itpz
+        pass
+        #if self.itpx is not NULL:
+        #    del self.itpx
+        #if self.itpy is not NULL:
+        #    del self.itpy
+        #if self.itpz is not NULL:
+        #    del self.itpz
 
 
 cdef class StrainDirectionGenerator:
