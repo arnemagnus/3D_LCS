@@ -46,3 +46,6 @@ notebooks/tor-fjord/*
 
 # Pseudohacky stuff
 bspline-fortran-arnes-mod/
+
+# Temporary build folders
+*/build/

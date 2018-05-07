@@ -67,29 +67,29 @@ cdef class NDCurveBSplineInterpolator:
         where each curve coordinate is parametrized as a function of
         a normalized pseudo-arclength parameter 0 <= s <= 1.
 
-        param: x -- (C-contiguous) NumPy array of shape (n_points, n_dim),
-                    containing the (Cartesian) coordinates of the pointwise
-                    parametrized curve.
-        OPTIONAL:
-        param: k          -- Interpolation order (along all abscissae), as an
-                             integer. Must satisfy 2 <= k <= n_points.
-                             Default: k = 4.
-        param: wraparound -- Boolean flag as to whether or not the parametrized
-                             curve should be configured such that s = 0 and
-                             s = 1 correspond to the same point in N-space.
-                             Default: wraparound = False.
-        param: pad_points -- Integer number of points to pad to either side
-                             of the list of points, in order to facilitate
-                             a smoother joint. Only really useful when
-                             wraparound is True, i.e., when emulating periodic
-                             boundary conditions. Default: pad_points = 0.
-        param: extrap     -- Boolean flag as to whether or not the interpolator
-                             should perform extrapolation when evaluated for
-                             0 < s or s > 1. Default: extrap = False.
-                             Note that extrapolation is generally not advised,
-                             particularly for high dimensionality and/or
-                             a large number of sampling points, as the
-                             B-spline may not yield sensible results.
+        Parameters
+        ----------
+        x : (npos,ndim) array-like
+           A (C-contiguous) NumPy array of shape (npos,ndim) and type
+           np.float64, containing the (Cartesian) coordinates of the pointwise
+           parametrized curve.
+        k : Integer, optional
+           Interpolation order (along all abscissae). Must satisfy
+           2 <= k <= npos. Default: k = 4.
+        wraparound : boolean, optional
+           Flag indicating whether or not the parametrized curve should be
+           configured such that s = 0 and s = 1 correspond to the same point.
+           Default: wraparound = False.
+        pad_points : integer, optional
+           Integer number of points to pad to either side of the points of the
+           curve. Intended to facilitate a smoother joint when wraparound is
+           True, i.e., when emulating periodic boundary conditions.
+           Default: pad_points = 0.
+        extrap : boolean, optional
+           Flag indicating whethe ror not the interpolation object should
+           allow extrapolation when evaluated for s < 0 or s > 1. Note that
+           extrapolation is generally not advised, as the results are
+           by no means guaranteed to be sensible. Default: extrap = False.
 
         The parameter s is readily available as a Python readonly memoryview.
         It can be extracted e.g. by means of a list comprehension, such as
@@ -121,7 +121,7 @@ cdef class NDCurveBSplineInterpolator:
         self.s = np.empty(npts)
 
         if k < 2 or k > npts + 2*pad_points:
-            raise RuntimeError('Impossible choice of interpolator order. See constructor docstring for details.')
+            raise ValueError('Impossible choice of interpolator order. See constructor docstring for details.')
 
         for i in range(self.ndim):
             self.c_classes[i] = new ItpCont()
@@ -167,7 +167,7 @@ cdef class NDCurveBSplineInterpolator:
             s_internal[npts+pad_points] = s_internal[npts+pad_points-1] + c_sqrt(diff2)
 
         if s_internal[s_internal.size()-1-pad_points] == 0:
-            raise RuntimeError('Spline interpolation of multiple instances of a single point leads to undefined behaviour. Attempt aborted.')
+            raise ValueError('Spline interpolation of multiple instances of a single point leads to undefined behaviour. Attempt aborted.')
         self.l = s_internal[s_internal.size()-pad_points-1]
         for j in range(s_internal.size() - 2*pad_points):
             s_internal[j+pad_points] /= s_internal[s_internal.size()-pad_points-1]
@@ -176,11 +176,11 @@ cdef class NDCurveBSplineInterpolator:
         if wraparound:
             for j in range(pad_points):
                 s_internal[pad_points-1-j] = s_internal[npts+pad_points-j-1] - 1
-                s_internal[s_internal.size() - 1 - j] = 1 + s_internal[2*pad_points-j]#s_internal[pad_points + j + 1]
+                s_internal[s_internal.size() - 1 - j] = 1 + s_internal[2*pad_points-j]
         else:
             for j in range(pad_points):
                 s_internal[pad_points-1-j] = s_internal[npts+pad_points-j-2] - 1
-                s_internal[s_internal.size() - 1 - j] = 1 + s_internal[2*pad_points-j]#s_internal[pad_points + j + 1]
+                s_internal[s_internal.size() - 1 - j] = 1 + s_internal[2*pad_points-j]
 
         if self.extrap:
             ext = 1
@@ -207,10 +207,15 @@ cdef class NDCurveBSplineInterpolator:
         value 's'. If extrapolation is not allowed (cf. constructor),
         evaluations for 0 < s or s > 1 will return zero.
 
-        param: s -- Parameter at which to evaluate the B-spline interpolant.
+        Parameters
+        ----------
+        s : double
+           Parameter at which to evaluate the B-spline interpolant.
 
-        return: vec -- (C-contiguous) NumPy array of shape (n_dim), containing
-                       the interpolated coordinates.
+        Returns
+        -------
+        vec : (ndim,), array-like
+           (C-contiguous) NumPy array containing the interpolated coordinates.
 
         """
         cdef:
@@ -221,7 +226,6 @@ cdef class NDCurveBSplineInterpolator:
         for i in range(self.ndim):
             self.ret[i] = self.c_classes[i].eval_interp(s,0)
         return np.array(self.ret,copy=True)
-#        return np.copy(self.ret)
 
     def __dealoc__(self):
         cdef:
