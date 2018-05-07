@@ -1210,6 +1210,8 @@ cdef class Dp87Strain:
 
         cdef:
             double[::1] pos_i = self.pos_i
+        if pos.shape[0] != 3:
+            raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')
         if not self.initialized:
             raise RuntimeError('Dormand-Prince 8(7) strain solver not'\
                     ' initialized with a StrainDirectionGenerator instance!')

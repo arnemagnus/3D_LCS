@@ -1,3 +1,19 @@
+"""
+This module contains Cython extension types which facilitate the approximation
+of manifolds defined as being everywhere orthogonal to stationary vector fields
+in R^3, by means of a slightly tweaked method of geodesic level sets.
+
+Extension types defined here:
+    SinusoidalField
+    SphericalField
+    AnalyticalDirectionGenerator
+    Dp87Analytical
+
+Version: 1.0
+
+"""
+
+
 cimport numpy as np
 import numpy as np
 
@@ -62,6 +78,8 @@ cdef void _cy_normalize_(double[::1] v):
         dscal(N,100,v,INCX)
     dscal(N,1/dnrm2(N,v,INCX),v,INCX)
 
+# Hidden superclass, mirroring a virtual superclass in C++.
+# Intended to be subclassed, and/or sent to other extension types defined below.
 @cython.internal
 cdef class CallableFunction:
     def __cinit__(self):
@@ -72,6 +90,19 @@ cdef class CallableFunction:
         pass
 
 cdef class SinusoidalField(CallableFunction):
+    """
+    A Cython extension type which allows for computation of a normal vector
+    field for a three-dimensional surface defined by
+       f(x,y,z) = A*sin(w_x*x)*sin(w_y*y) + (z - z_0) = 0
+    at any point in R^3.
+
+    Methods defined here:
+    SinusoidalField.__init__(freq_x,freq_y,ampl)
+    SinusoidalField.__call_(pos)
+
+    Version: 1.0
+
+    """
     cdef:
         double freq_x, freq_y, ampl
         double _ret_[3]
@@ -82,29 +113,88 @@ cdef class SinusoidalField(CallableFunction):
 
     def __init__(self, double freq_x = 1., double freq_y = 1.,
             double ampl = 1.):
+        """
+        SinusoidalField.__init__(freq_x,freq_y,ampl)
+
+        Constructor for a SinusoidalField instance.
+
+        Parameters
+        ----------
+        freq_x : double
+           (Angular) frequency of the sinusoidal field in the x-direction
+        freq_y : double
+           (Angular) frequency of the sinusoidal field in the y-direction
+        ampl :
+           Amplitude of the sinusoidal field.
+
+        """
         self.freq_x = freq_x
         self.freq_y = freq_y
         self.ampl = ampl
 
     @cython.initializedcheck(False)
-    def __call__(self, double[::1] x not None):
+    def __call__(self, double[::1] pos not None):
+        """
+        SinusoidalField.__call__(pos)
+
+        Evaluates the normal vector field at the coordinates specified by pos.
+
+        Parameters
+        ----------
+        pos : (3,) ndarray
+           A (C-contiguous) NumPy array containing the (Cartesian) coordinates
+           of the point in R^3 at which the vector field is to be evaluated.
+
+        Returns
+        -------
+        vec : (3,) ndarray
+           A (C-contiguous) NumPy array containing the unit normalized
+           normal vector at pos.
+
+        """
         cdef:
             double[::1] ret = self.ret_mv
-        self._ev_(x,ret)
+        self._ev_(pos,ret)
         return np.copy(ret)
 
 
     @cython.initializedcheck(False)
     @cython.boundscheck(False)
     @cython.wraparound(False)
-    cdef _ev_(self, double[::1] x, double[::1] &ret):
-        ret[0] = self.ampl*self.freq_x*c_cos(self.freq_x*x[0])*c_sin(self.freq_y*x[1])
-        ret[1] = self.ampl*self.freq_y*c_sin(self.freq_x*x[0])*c_cos(self.freq_y*x[1])
+    cdef _ev_(self, double[::1] pos, double[::1] &ret):
+        """
+        SinusoidalField._ev_(pos,ret)
+
+        The C-level function which actually evaluates the normal vector field.
+
+        Parameters
+        ----------
+        pos : (3,) memoryview, intent = in
+           A (C-contiguous) memoryview containing the (Cartesian) coordinates
+           of the point in R^3 at which the vector field is to be evaluated.
+        ret : (3,) memoryview, intent = out
+           A (C-contiguous) memoryview which, upon exit, contains the unit
+           normalized normal vector at pos.
+
+        """
+        ret[0] = self.ampl*self.freq_x*c_cos(self.freq_x*pos[0])*c_sin(self.freq_y*pos[1])
+        ret[1] = self.ampl*self.freq_y*c_sin(self.freq_x*pos[0])*c_cos(self.freq_y*pos[1])
         ret[2] = -1
         _cy_normalize_(ret)
 
 
 cdef class SphericalField(CallableFunction):
+    """
+    A Cython extension type which allows for computation of a purely radial
+    vector field in R^3.
+
+    Methods defined here:
+    SphericalField.__init__(origin)
+    SphericalField.__call_(pos)
+
+    Version: 1.0
+
+    """
     cdef:
         double _ret_[3]
         double[::1] ret_mv
@@ -115,35 +205,86 @@ cdef class SphericalField(CallableFunction):
         self.origin = self._orig_
     @cython.initializedcheck(False)
     def __init__(self, double[::1] origin not None):
+        """
+        SphericalField.__init__(freq_x,freq_y,ampl)
+
+        Constructor for a SphericalField instance.
+
+        Parameters
+        ----------
+        origin : (3,) ndarray
+           A (C-contiguous) NumPy array, containing the coordinates of
+           the origin of the radial field.
+
+        """
         if origin.shape[0] != 3:
-            raise RuntimeError('Don''t fuck with squirrels, Morty!')
+            raise ValueError('The spherical field is defined for R^3!')
         dcopy(3,origin,1,self.origin,1)
     @cython.initializedcheck(False)
-    def __call__(self, double[::1] x not None):
+    def __call__(self, double[::1] pos not None):
+        """
+        SphericalField.__call__(pos)
+
+        Evaluates the radial vector field at the coordinates specified by pos.
+
+        Parameters
+        ----------
+        pos : (3,) ndarray
+           A (C-contiguous) NumPy array containing the (Cartesian) coordinates
+           of the point in R^3 at which the vector field is to be evaluated.
+
+        Returns
+        -------
+        vec : (3,) ndarray
+           A (C-contiguous) NumPy array containing the unit normalized
+           radial vector at pos.
+
+        """
         cdef:
             double[::1] ret = self.ret_mv
-        self._ev_(x,ret)
+        self._ev_(pos,ret)
         return np.copy(ret)
     @cython.initializedcheck(False)
     @cython.boundscheck(False)
     @cython.wraparound(False)
-    cdef _ev_(self, double[::1] x, double[::1] &ret):
+    cdef _ev_(self, double[::1] pos, double[::1] &ret):
+        """
+        SphericalField._ev_(pos,ret)
+
+        The C-level function which evaluates the radial vector field at the
+        coordinates specified by pos.
+
+        Parameters
+        ----------
+        pos : (3,) memoryview
+           A (C-contiguous) double-type memoryview containing the (Cartesian)
+           coordinates of the point in R^3 at which the vector field is to be
+           evaluated.
+        vec : (3,) ndarray, intent= out
+           Upon exit: A (C-contiguous) double-type memoryview containing the
+           unit normalized radial vector at pos.
+
+        """
         dcopy(3,x,1,ret,1)
         daxpy(3,-1,self.origin,1,ret,1)
         _cy_normalize_(ret)
 
-cdef class AnalyticalAimAssister:
-    """A Cython extension type tailor-made for computing trajectories defined
-    to be pointwise orthogonal to two vectors in 3D.
+cdef class AnalyticalDirectionGenerator:
+    """
+    A Cython extension type intended to be used in conjunction with a
+    Dp87Analytical instance, whereupon the AnalyticalDirectionGenerator
+    provides "slopes" for the Dp87Analytical to generate trajectories.
 
     Methods defined here:
 
-    SplineAimAssister.__init__(CallableFunction f)
-    SplineAimAssister.set_tangential_vec(target)
-    SplineAimAssister.unset_target()
-    SplineAimAssister.__ev__(t,pos)
+    AnalyticalDirectionGenerator.__init__(f)
+    AnalyticalDirectionGenerator.set_tan_vec(tan_vec)
+    AnalyticalDirectionGenerator.unset_tan_vec()
+    AnalyticalDirectionGenerator.set_prev_vec(prev_vec)
+    AnalyticalDirectionGenerator.unset_prev_vec()
+    AnalyticalDirectionGenerator.__call__(pos)
 
-    Version: 0.2
+    Version: 1.0
 
     """
     cdef:
@@ -153,9 +294,8 @@ cdef class AnalyticalAimAssister:
         double[::1] prev_vec
         double _xi_[3]
         double[::1] xi
-        double _pos_[3]
-        double[::1] pos
-        double[::1] ret_mv
+        double _ret_[3]
+        double[::1] ret
         CallableFunction xi_fun
         bint initialized_tan_vec
         bint initialized_prev_vec
@@ -164,36 +304,39 @@ cdef class AnalyticalAimAssister:
         self.tan_vec = self._tan_vec_
         self.prev_vec = self._prev_vec_
         self.xi = self._xi_
-        self.pos = self._pos_
-        self.ret_mv = np.empty(3)
+        self.ret = self._ret_
 
     @cython.initializedcheck(False)
     @cython.wraparound(False)
     @cython.boundscheck(False)
-    def __init__(self, CallableFunction xi):
-        """SplineAimAssister(xi)
+    def __init__(self, CallableFunction f):
+        """
+        SplineDirectionGenerator.__init__(f)
 
-        Constructor for the trivariate B-spline aim assister extension type.
+        Constructor for a AnalyticalDirectionGenerator instance.
 
-        param: xi     -- A CallableFunction instance of the (normalized)
-                         vector field which locally defines the normal vector
-                         to the planes in which one is permitted to aim.
+        Parameters
+        ----------
+        f : SinusoidalField or SphericalField (as per version 1.0)
+           Extension type which generates an analytically known vector field.
 
         """
-        self.xi_fun = xi
+        self.xi_fun = f
 
     @cython.initializedcheck(False)
     @cython.wraparound(False)
     @cython.boundscheck(False)
-    cpdef void set_tan_vec(self, double[::1] tan_vec):
+    def set_tan_vec(self, double[::1] tan_vec not None):
+
+
         if tan_vec.shape[0] != 3:
-            raise RuntimeError('The interpolation-aiming routine is custom-built'\
+            raise ValueError('The interpolation-aiming routine is custom-built'\
                     +' for three dimensional data!')
         dcopy(3,tan_vec,1,self.tan_vec,1)
         self.initialized_tan_vec = True
 
-    cpdef void unset_tan_vec(self):
-        """SplineAimAssister.unset_target()
+    def unset_tan_vec(self):
+        """SplineDirectionGenerator.unset_target()
 
         Unsets the target. Useful in order to ensure that the target is always
         updated when it should be.
@@ -201,19 +344,16 @@ cdef class AnalyticalAimAssister:
         """
         self.initialized_tan_vec = False
 
-    @cython.initializedcheck(False)
-    @cython.wraparound(False)
-    @cython.boundscheck(False)
-    cpdef void set_prev_vec(self, double[::1] prev_vec):
+    def set_prev_vec(self, double[::1] prev_vec  not None):
         if prev_vec.shape[0] != 3:
-            raise RuntimeError('The interpolation-aiming routine is custom-built'\
+            raise ValueError('The interpolation-aiming routine is custom-built'\
                     +' for three dimensional data!')
         dcopy(3,prev_vec,1,self.prev_vec,1)
         _cy_normalize_(self.prev_vec)
         self.initialized_prev_vec = True
 
-    cpdef void unset_prev_vec(self):
-        """SplineAimAssister.unset_target()
+    def unset_prev_vec(self):
+        """SplineDirectionGenerator.unset_target()
 
         Unsets the target. Useful in order to ensure that the target is always
         updated when it should be.
@@ -225,39 +365,25 @@ cdef class AnalyticalAimAssister:
     @cython.initializedcheck(False)
     @cython.wraparound(False)
     @cython.boundscheck(False)
-    def __call__(self, double t, double[::1] pos not None):
+    def __call__(self, double[::1] pos not None):
         cdef:
-            double[::1] ret = self.ret_mv
-        self._ev_(t,pos,ret)
+            double[::1] ret = self.ret
+
+        if pos.shape[0] != 3:
+            raise ValueError('The aiming routine is custom-built'\
+                    +' for three dimensional data!')
+
+        if not (self.initialized_tan_vec and self.initialized_prev_vec):
+            raise RuntimeError('Aim assister not properly initialized!')
+        self._ev_(pos,ret)
         return np.copy(ret)
 
     @cython.initializedcheck(False)
     @cython.wraparound(False)
     @cython.boundscheck(False)
-    cdef _ev_(self, double t, double[::1] &pos_, double[::1] &ret):
-        """SplineAimAssister._ev_(pos)
-
-        This function facilitates C-level computations with as little Python
-        overhead as possible for related extension types (cf. Dp54BSpline).
-
-        param: pos -- Three-component (C-contiguous) NumPy array, containing
-                      the Cartesian coordinates at which an aiming direction
-                      is sought.
-
-        return: vec -- Three-component C-contiguous double memoryview,
-                       containing the aforementioned normalized vector
-                       projection.
-
-        """
+    cdef _ev_(self, double[::1] pos, double[::1] &ret):
         cdef:
-            double[::1] xi = self.xi, pos = self.pos
-        if pos_.shape[0] != 3:
-            raise RuntimeError('The aiming routine is custom-built'\
-                    +' for three dimensional data!')
-
-        if not (self.initialized_tan_vec and self.initialized_prev_vec):
-            raise RuntimeError('Aim assister not initialized!')
-        dcopy(3,pos_,1,pos,1)
+            double[::1] xi = self.xi
 
         self.xi_fun._ev_(pos, xi)
         if 1 - c_pow(ddot(3,xi,1,self.tan_vec,1),2) < 1e-10:
@@ -332,7 +458,7 @@ cdef class Dp87Analytical:
         double tmp, sc, err, h_opt
         readonly double atol, rtol
         double q
-        AnalyticalAimAssister f
+        AnalyticalDirectionGenerator f
         bint initialized
 
     def __cinit__(self):
@@ -413,12 +539,12 @@ cdef class Dp87Analytical:
     @cython.initializedcheck(False)
     @cython.wraparound(False)
     @cython.boundscheck(False)
-    def set_aim_assister(self, AnalyticalAimAssister direction_generator):
+    def set_aim_assister(self, AnalyticalDirectionGenerator direction_generator):
         """Dp87Analytical.set_aim_assister(direction_generator)
 
         Sets the aim assister. Must be called *before* Dp87Analytical.__call__.
 
-        param: direction_generator -- AnalyticalAimAssister instance,
+        param: direction_generator -- AnalyticalDirectionGenerator instance,
                                       initialized with a CallableFunction
                                       object as well as a target
 
@@ -477,9 +603,11 @@ cdef class Dp87Analytical:
 
         cdef:
             double[::1] pos_i = self.pos_i
+        if pos.shape[0] != 3:
+            raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')
         if not self.initialized:
-            raise RuntimeError('Dormand-Prince 8(7) linear solver not'\
-                    ' initialized with a AnalyticalAimAssister instance!')
+            raise RuntimeError('Dormand-Prince 8(7) solver not'\
+                    ' initialized with a AnalyticalDirectionGenerator instance!')
         dcopy(3,pos,1,pos_i,1)
         self._ev_(&t,pos_i,&h)
         return t, np.copy(self._pos_i_), h
