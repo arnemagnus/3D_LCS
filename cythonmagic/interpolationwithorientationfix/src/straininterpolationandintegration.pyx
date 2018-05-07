@@ -113,6 +113,19 @@ cdef class InterpolatorWithOrientationFix:
         pass
 
 cdef class LinearSpecialInterpolator(InterpolatorWithOrientationFix):
+    """
+    A Cython extension type which facilitates linear interpolation of
+    (stationary) vector fields in R^3, with a local orientation fix in order
+    to combat orientational discontinuities, with normalized results.
+    Periodic boundary conditions are assumed.
+
+    Methods defined here:
+    LinearSpecialInterpolator.__init__(x,y,z,xi)
+    LinearSpecialInterpolator.__call__(pos)
+
+    Version: 0.3
+
+    """
     cdef:
         double[:,:,:,::1] xi
         double x_min, x_max, y_min, y_max, z_min, z_max
@@ -140,7 +153,31 @@ cdef class LinearSpecialInterpolator(InterpolatorWithOrientationFix):
     @cython.boundscheck(False)
     def __init__(self, double[::1] x not None, double[::1] y not None,
                        double[::1] z not None, double[:,:,:,::1] xi not None):
+        """
+        LinearSpecialInterpolator.__init__(x,y,z,xi)
 
+        Constructor for a LinearSpecialInterpolator instance.
+
+        Parameters
+        ----------
+        x : (nx,) array-like
+           A (C-contiguous) NumPy array of type np.float64 and shape (nx,),
+           containing the sampling points along the x abscissa.
+           Must be strictly increasing.
+        y : (ny,) array-like
+           A (C-contiguous) NumPy array of type np.float64 and shape (ny,),
+           containing the sampling points along the y abscissa.
+           Must be strictly increasing.
+        z : (nz,) array-like
+           A (C-contiguous) NumPy array of type np.float64 and shape (nz,),
+           containing the sampling points along the z abscissa.
+           Must be strictly increasing.
+        xi : (nx,ny,nz,3) array-like
+           A (C-contiguous) NumPy array of type np.float64 and shape
+           (nx,ny,nz,3), containing the sampled vector field.
+           xi[i,j,k] should correspond to the sample at (x[i],y[j],z[k]).
+
+        """
         if (xi.shape[0] != x.shape[0] or xi.shape[1] != y.shape[0] or xi.shape[2] != z.shape[0]):
             raise ValueError('Array dimensions not aligned!')
 
@@ -167,6 +204,25 @@ cdef class LinearSpecialInterpolator(InterpolatorWithOrientationFix):
     @cython.boundscheck(False)
     @cython.wraparound(False)
     def __call__(self, double[::1] pos not None):
+        """
+        LinearSpecialInterpolator.__call__(pos)
+
+        Evaluates the linearly interpolated vector field with orientation
+        fix, at the coordinates specified by pos.
+
+        Parameters
+        ----------
+        pos : (3,) array-like
+           A (C-contiguous) NumPy array containing the (Cartesian) coordinates
+           of the point in R^3 at which the vector field is to be interpolated.
+
+        Returns
+        -------
+        xi : (3,) array-like
+           A (C-contiguous) NumPy array containing the normalized, interpolated
+           vector.
+
+        """
         if pos.shape[0] != 3:
             raise ValueError('The interpolation routine is custom-built'\
                     +' for three-dimensional data!')
@@ -178,6 +234,21 @@ cdef class LinearSpecialInterpolator(InterpolatorWithOrientationFix):
     @cython.wraparound(False)
     @cython.boundscheck(False)
     cdef void _interpolate_xi_(self, double[::1] pos, double[::1] &xi):
+        """
+        LinearSpecialInterpolator._interpolate_xi_(pos,xi)
+
+        The C-level function which performs the special interpolation.
+
+        Parameters
+        ----------
+        pos : (3,) array-like
+           A (C-contiguous) NumPy array containing the (Cartesian) coordinates
+           of the point in R^3 at which the vector field is to be interpolated.
+        xi : (3,) array-like, intent = out
+           A (C-contiguous) NumPy array containing the normalized, interpolated
+           vector.
+
+        """
         cdef:
             double x = self.x_internal, y = self.y_internal, z = self.z_internal
 
@@ -196,6 +267,28 @@ cdef class LinearSpecialInterpolator(InterpolatorWithOrientationFix):
     @cython.cdivision(True)
     @cython.boundscheck(False)
     cdef void _compute_indcs_and_wts_(self, double *x, double *y, double *z):
+        """
+        LinearSpecialInterpolator._compute_indcs_and_wts_(x,y,z)
+
+        The C-level function which determines the interpolation voxel
+        and weights along each abscissa.
+
+        Parameters
+        ----------
+        x : double, intent = inout
+           On entry, the x-coordinate at which an interpolated vector is sought.
+           On exit, the (normalized) interpolation weight along the x
+           abscissa within the interpolation voxel.
+        y : double, intent = inout
+           On entry, the y-coordinate at which an interpolated vector is sought.
+           On exit, the (normalized) interpolation weight along the y
+           abscissa within the interpolation voxel.
+        z : double, intent = inout
+           On entry, the z-coordinate at which an interpolated vector is sought.
+           On exit, the (normalized) interpolation weight along the z
+           abscissa within the interpolation voxel.
+
+        """
 
         x[0] = c_fmod((x[0]-self.x_min)/self.dx, self.nx)
         y[0] = c_fmod((y[0]-self.y_min)/self.dy, self.ny)
@@ -225,6 +318,15 @@ cdef class LinearSpecialInterpolator(InterpolatorWithOrientationFix):
     @cython.boundscheck(False)
     @cython.cdivision(True)
     cdef void _set_crnr_vcs_(self):
+        """
+        LinearSpecialInterpolator._set_crnr_vcs_()
+
+        The C-level function which identifies the vector values at the
+        corners of the interpolation voxel, generating local copies which
+        are corrected for orientational discontinuities prior to
+        linear interpolation.
+
+        """
         cdef:
             double[::1] xi_tmp = self.xia, xi_ref = self.xi_ref
             double[:,:,:,::1] xi = self.xi
@@ -276,6 +378,28 @@ cdef class LinearSpecialInterpolator(InterpolatorWithOrientationFix):
     @cython.wraparound(False)
     @cython.boundscheck(False)
     cdef void _compute_nrmd_wtd_sum_(self, double x, double y, double z, double[::1] &xi):
+        """
+        LinearSpecialInterpolator._compute_nrmd_wtd_sum_(x,y,z,xi)
+
+        The C-level function which computes the normalized, weighted sum
+        which generates the interpolated vector.
+
+        Parameters
+        ----------
+        x : double
+           The (normalized) interpolation weight along the x abscissa within the
+           interpolation voxel.
+        y : double
+           The (normalized) interpolation weight along the y abscissa within the
+           interpolation voxel.
+        z : double
+           The (normalized) interpolation weight along the z abscissa within the
+           interpolation voxel.
+        xi : (3,) memoryview, intent = out
+            On exit, the normalized, linearly interpolated vector, as a
+            (C-contiguous) memoryview of doubles.
+
+        """
         cdef:
             double[:,::1] xi_cube = self.xi_cube
         # LC along z-axis
@@ -312,6 +436,26 @@ cdef class LinearSpecialInterpolator(InterpolatorWithOrientationFix):
         pass
 
 cdef class CubicSpecialInterpolator(InterpolatorWithOrientationFix):
+    """
+    A Cython extension type which facilitates cubic B-spline interpolation of
+    (stationary) vector fields in R^3, with a local orientation fix in order
+    to combat orientational discontinuities, with normalized results.
+    Periodic boundary conditions are assumed.
+
+    NOTE: In order for this to function as intended (allowing for cubic
+          polylomial pieces, corresponding to a quartic spline), the
+          bspline-fortran source code must be slightly modified.
+          In particular, in the subroutine 'check_k', which is located withihn
+          bspline_sub_module.f90, the second condition of the if statement
+          must be changed from 'k >= n' to 'k > n'.
+
+    Methods defined here:
+    CubicSpecialInterpolator.__init__(x,y,z,xi)
+    CubicSpecialInterpolator.__call__(pos)
+
+    Version: 0.3
+
+    """
     cdef:
         ItpCont *itpx
         ItpCont *itpy
@@ -364,6 +508,37 @@ cdef class CubicSpecialInterpolator(InterpolatorWithOrientationFix):
     @cython.boundscheck(False)
     def __init__(self, double[::1] x not None, double[::1] y not None, double[::1] z not None, \
             double[:,:,:,::1] xi not None, int kx = 4, int ky = 4, int kz = 4):
+        """
+        CubicSpecialInterpolator.__init__(x,y,z,xi)
+
+        Constructor for a CubicSpecialInterpolator instance.
+
+        Parameters
+        ----------
+        x : (nx,) array-like
+           A (C-contiguous) NumPy array of type np.float64 and shape (nx,),
+           containing the sampling points along the x abscissa.
+           Must be strictly increasing.
+        y : (ny,) array-like
+           A (C-contiguous) NumPy array of type np.float64 and shape (ny,),
+           containing the sampling points along the y abscissa.
+           Must be strictly increasing.
+        z : (nz,) array-like
+           A (C-contiguous) NumPy array of type np.float64 and shape (nz,),
+           containing the sampling points along the z abscissa.
+           Must be strictly increasing.
+        xi : (nx,ny,nz,3) array-like
+           A (C-contiguous) NumPy array of type np.float64 and shape
+           (nx,ny,nz,3), containing the sampled vector field.
+           xi[i,j,k] should correspond to the sample at (x[i],y[j],z[k]).
+        kx : integer, optional
+           Spline order along the x abscissa. Default: kx = 4
+        ky : integer, optional
+           Spline order along the y abscissa. Default: ky = 4
+        kz : integer, optional
+           Spline order along the z abscissa. Default: kz = 4
+
+        """
         cdef:
             int i
         if(xi.shape[0] != x.shape[0] or xi.shape[1] != y.shape[0] or xi.shape[2] != z.shape[0]):
@@ -405,6 +580,25 @@ cdef class CubicSpecialInterpolator(InterpolatorWithOrientationFix):
     @cython.wraparound(False)
     @cython.boundscheck(False)
     def __call__(self, double[::1] pos not None):
+        """
+        CubicSpecialInterpolator.__call__(pos)
+
+        Evaluates the B-spline interpolated vector field with orientation
+        fix, at the coordinates specified by pos.
+
+        Parameters
+        ----------
+        pos : (3,) array-like
+           A (C-contiguous) NumPy array containing the (Cartesian) coordinates
+           of the point in R^3 at which the vector field is to be interpolated.
+
+        Returns
+        -------
+        xi : (3,) array-like
+           A (C-contiguous) NumPy array containing the normalized, interpolated
+           vector.
+
+        """
         if pos.shape[0] != 3:
             raise ValueError('The interpolation routine is custom-built'\
                     +' for three dimensional data')
@@ -416,6 +610,21 @@ cdef class CubicSpecialInterpolator(InterpolatorWithOrientationFix):
     @cython.boundscheck(False)
     @cython.wraparound(False)
     cdef void _interpolate_xi_(self, double[::1] pos, double[::1] &xi):
+        """
+        CubicSpecialInterpolator._interpolate_xi_(pos,xi)
+
+        The C-level function which performs the special interpolation.
+
+        Parameters
+        ----------
+        pos : (3,) array-like
+           A (C-contiguous) NumPy array containing the (Cartesian) coordinates
+           of the point in R^3 at which the vector field is to be interpolated.
+        xi : (3,) array-like, intent = out
+           A (C-contiguous) NumPy array containing the normalized, interpolated
+           vector.
+
+        """
         cdef:
             double x = self.x_internal, y = self.y_internal, z = self.z_internal
             int i, j, k,l
@@ -472,6 +681,21 @@ cdef class CubicSpecialInterpolator(InterpolatorWithOrientationFix):
     @cython.cdivision(True)
     @cython.initializedcheck(False)
     cdef void _set_voxel_indices_(self,double x, double y, double z):
+        """
+        CubicSpecialInterpolator._set_voxel_indices_(x,y,z)
+
+        The C-level function which determines the interpolation voxel.
+
+        Parameters
+        ----------
+        x : double
+           The x-coordinate at which an interpolated vector is sought.
+        y : double
+           The y-coordinate at which an interpolated vector is sought.
+        z : d ouble
+           The z-coordinate at which an interpolated vector is sought.
+
+        """
         cdef:
             int[::1] inds_x = self.inds_x, inds_y = self.inds_y, inds_z = self.inds_z
             int ind_x, ind_y, ind_z

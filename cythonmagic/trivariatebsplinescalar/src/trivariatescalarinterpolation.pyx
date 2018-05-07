@@ -64,6 +64,7 @@ cdef class ScalarTrivariateSpline:
     ScalarTrivariateSpline.hess(pos)
 
     Version: 0.1
+
     """
     cdef:
         Interpolator itp
@@ -251,55 +252,3 @@ cdef class ScalarTrivariateSpline:
         self.itp._ev_(pos[0],pos[1],pos[2],0,0,2,&tmp)
         hss[2,2] = tmp
         return np.copy(hss)
-
-## The following is a deprecated implementation of a B-spline interpolation
-## object for three-dimensional vector fields, designed with advection
-## based on model data. Its replacement, TrivectorQuadvariateSpline, enables
-## interpolation in time as well as along the spatial abscissa.
-##
-## Regardless, the implementation is kept for future reference.
-#cdef class VectorTrivariateSpline:
-#    cdef:
-#        Interpolator itpx, itpy, itpz
-#        double _vct_[3]
-#        double[::1] vct
-#        double _jcb_[3][3]
-#        double[:,::1] jcb
-#    def __cinit__(self):
-#        self.vct = self._vct_
-#        self.jcb = self._jcb_
-#    def __init__(self, double[::1] x, double[::1] y, double[::1] z, double[:,::1] f,
-#            int kx = 4, int ky = 4, int kz = 4, bint extrap = False):
-#        cdef:
-#            int nx = x.shape[0], ny = y.shape[0], nz = z.shape[0]
-#
-#        if f.shape[0] != 3 or nx*ny*nz != f.shape[1]:
-#            raise ValueError('Array dimensions not aligned!')
-#
-#        if (kx < 2 or kx > x.shape[0]) or (ky < 2 or ky > y.shape[0]) or (kz < 2 or kz > z.shape[0]):
-#            raise ValueError('Invalid interpolator order choice!')
-#
-#        self.itpx = Interpolator(x, y, z, f[0], kx, ky, kz, extrap)
-#        self.itpy = Interpolator(x, y, z, f[1], kx, ky, kz, extrap)
-#        self.itpz = Interpolator(x, y, z, f[2], kx, ky, kz, extrap)
-#
-#    def __call__(self, double[::1] pos):
-#        cdef:
-#            double[::1] vct = self.vct
-#        vct[0] = self.itpx._ev_(pos[0],pos[1],pos[2],0,0,0)
-#        vct[1] = self.itpy._ev_(pos[0],pos[1],pos[2],0,0,0)
-#        vct[2] = self.itpz._ev_(pos[0],pos[1],pos[2],0,0,0)
-#        return np.copy(vct)
-#    def jac(self, double[::1] pos):
-#        cdef:
-#            double[:,::1] jac = self.jac
-#        jac[0,0] = self.itpx._ev_(pos[0],pos[1],pos[2],1,0,0)
-#        jac[0,1] = self.itpx._ev_(pos[0],pos[1],pos[2],0,1,0)
-#        jac[0,2] = self.itpx._ev_(pos[0],pos[1],pos[2],0,0,1)
-#        jac[1,0] = self.itpy._ev_(pos[0],pos[1],pos[2],1,0,0)
-#        jac[1,1] = self.itpy._ev_(pos[0],pos[1],pos[2],0,1,0)
-#        jac[1,2] = self.itpy._ev_(pos[0],pos[1],pos[2],0,0,1)
-#        jac[2,0] = self.itpz._ev_(pos[0],pos[1],pos[2],1,0,0)
-#        jac[2,1] = self.itpz._ev_(pos[0],pos[1],pos[2],0,1,0)
-#        jac[2,2] = self.itpz._ev_(pos[0],pos[1],pos[2],0,0,1)
-#        return np.copy(jac)
