@@ -78,6 +78,14 @@ factor=0% Controls how much punctuation protrudes past the end of the line
 ]{microtype}
 \microtypecontext{spacing=nonfrench} % <-- No spacing found for Linux Libertine
 
+% PGF stuff
+\usepackage{pgfcache}
+
+\setpgfpreamble{%
+    \usepackage[]{amsmath}
+    \usepackage{libertine}
+    \usepackage[libertine]{newtxmath}
+}
 
 % TikZ stuff
 \usepackage{tikz}
@@ -144,17 +152,12 @@ factor=0% Controls how much punctuation protrudes past the end of the line
 
 
 \usetikzlibrary{external}
-\usepgfplotslibrary{external}
-\tikzexternalize[mode=list and make, prefix=./_tikzcache/]
-%\tikzset{external}
-% PGF stuff
-\usepackage{pgfcache}
+%\tikzset{external/system call={pdflatex \tikzexternalcheckshellescape -halt-on-error -interaction=nonstopmode -jobname "\image" "\texsource"},
+%external/optimize=false,
+%external/prefix=_tikzcache,
+%}
+%\tikzexternalize
 
-\setpgfpreamble{%
-    \usepackage[]{amsmath}
-    \usepackage{libertine}
-    \usepackage[libertine]{newtxmath}
-}
 % Interface for stacked floating objects:
 \usepackage[]{subcaption}
 
