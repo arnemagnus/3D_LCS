@@ -1,3 +1,30 @@
+"""
+This module contains Cython extension types which:
+1) Facilitate linear and cubic B-spline interpolation of vector fields in R^3,
+   with a twist indended to combat orientational discontinuities.
+2) Facilitate the approximation of three-dimensional manifolds defined
+   as being everywhere orthogonal to a (stationary) vector field, by means
+   of a slight modification of the method of geodesic level sets.
+
+The B-spline interpolation routines make use of the Bspline-Fortran library,
+which is available at
+    https://github.com/jacobwilliams/bspline-fortran
+
+Extension types defined here:
+    LinearSpecialInterpolator
+    CubicSpecialInterpolator
+    StrainDirectionGenerator
+    Dp87Strain
+
+Written by Arne Magnus T. Løken as part of my master's thesis work in physics
+at NTNU, spring 2018.
+
+Version: 1.0
+
+"""
+
+
+
 cimport cython
 cimport numpy as np
 import numpy as np
@@ -768,7 +795,23 @@ cdef class CubicSpecialInterpolator(InterpolatorWithOrientationFix):
             del self.itpz
 
 
-cdef class StrainAimAssister:
+cdef class StrainDirectionGenerator:
+    """
+    A Cython extension type intended to be used in conjunction with a
+    Dp87Strain instance, whereupon the StrainDirectionGenerator provides
+    "slopes" for the Dp87Strain to generate trajectories.
+
+    Methods defined here:
+    StrainDirectionGenerator.__init__(xi_itp)
+    StrainDirectionGenerator.set_tan_vec(tan_vec)
+    StrainDirectionGenerator.unset_tan_vec()
+    StrainDirectionGenerator.set_prev_vec(prev_vec)
+    StrainDirectionGenerator.unset_prev_vec()
+    StrainDirectionGenerator.__call__(pos)
+
+    Version: 1.0
+
+    """
     cdef:
         double _tan_vec_[3]
         double _prev_vec_[3]
@@ -790,12 +833,40 @@ cdef class StrainAimAssister:
     @cython.wraparound(False)
     @cython.boundscheck(False)
     def __init__(self, InterpolatorWithOrientationFix xi_itp):
+        """
+        StrainDirectionGenerator.__init__(xi_itp)
+
+        Constructor for a StrainDirectionGenerator instance.
+
+        Parameters
+        ----------
+        xi_itp : LinearSpecialInterpolator or CubicSpecialInterpolator
+           Special interpolation extension type which has been initialized
+           with the underlying vector field.
+
+        """
         self.xi_itp = xi_itp
 
     @cython.initializedcheck(False)
     @cython.wraparound(False)
     @cython.boundscheck(False)
     def set_tan_vec(self, double[::1] tan_vec not None):
+        """
+        StrainDirectionGenerator.set_tan_vec(tan_vec)
+
+        Function which sets the approximately tangent vector, to be used in
+        conjunction with the underlying vector field in order to
+        generate step directions in R^3.
+
+        Must be called prior to StrainDirectionGenerator.__call__.
+
+        Parameters
+        ----------
+        tan_vec : (3,) ndarray
+           A (C-contiguous) NumPy array, containing the (approximately) tangent
+           vector.
+
+        """
         if tan_vec.shape[0] != 3:
             raise ValueError('The interpolation-aiming routine is custom-built' \
                     + ' for three-dimensional data!')
@@ -805,12 +876,34 @@ cdef class StrainAimAssister:
         self.initialized_tan = True
 
     def unset_tan_vec(self):
+        """
+        StrainDirectionGenerator.unset_tan_vec()
+
+        Unsets the tangent vector.
+
+        """
         self.initialized_tan = False
 
     @cython.initializedcheck(False)
     @cython.wraparound(False)
     @cython.boundscheck(False)
     def set_prev_vec(self, double[::1] prev_vec not None):
+        """
+        StrainDirectionGenerator.set_prev_vec(prev_vec)
+
+        Function which sets the previous vector, which is used in order
+        to ensure that any trajectory does not instantaneously fold onto
+        itself in regions with strong orientational discontinuities.
+
+        Must be called prior to StrainDirectionGenerator.__call__.
+
+        Parameters
+        ----------
+        prev_vec : (3,) ndarray
+           A (C-contiguous) NumPy array, containing the (approximately) prevgent
+           vector.
+
+        """
         if prev_vec.shape[0] != 3:
             raise ValueError('The interpolation-aiming routine is custom-built' \
                     + ' for three-dimensional data!')
@@ -820,18 +913,42 @@ cdef class StrainAimAssister:
         self.initialized_prev = True
 
     def unset_prev_vec(self):
+        """
+        StrainDirectionGenerator.unset_prev_vec()
+
+        Unsets the previous vector.
+
+        """
         self.initialized_prev = False
 
     @cython.initializedcheck(False)
     @cython.wraparound(False)
     @cython.boundscheck(False)
-    def __call__(self, double t, double[::1] pos not None):
+    def __call__(self, double[::1] pos not None):
+        """
+        StrainDirectionGenerator.__call__(pos)
+
+        Generates a trajectory direction at pos, based upon the underlying
+        vector field and the pre-set tan_vec and prev_vec.
+
+        Parameters
+        ----------
+        pos : (3,) array-like
+           A (C-contiguous) NumPy array containing the (Cartesian) coordinates
+           of the point in R^3 at which a direction is sought.
+
+        Returns
+        -------
+        vec : (3,) ndarray
+           A (C-contiguous) NumPy array containing the normalized direction.
+
+        """
         if pos.shape[0] != 3:
             raise ValueError('The interpolation-aiming routine is custom-built' \
                     + ' for three dimensional data!')
 
         if not (self.initialized_tan and self.initialized_prev):
-            raise RuntimeError('Aim assister not initialized with target!')
+            raise RuntimeError('Aim assister not initialized with tan_vec and/or prev_vec!')
         self._ev_(pos,self.ret)
         return np.copy(self.ret)
 
@@ -839,6 +956,23 @@ cdef class StrainAimAssister:
     @cython.wraparound(False)
     @cython.boundscheck(False)
     cdef void _ev_(self, double[::1] pos, double[::1] &ret):
+        """
+        StrainDirectionGenerator._ev_(pos,ret)
+
+        The C-level function which actually generates the sought direction
+        at pos, based upon the underlying vector field and the pre-set tan_vec
+        and prev_vec.
+
+        Parameters
+        ----------
+        pos : (3,) array-like
+           A (C-contiguous) memoryview containing the (Cartesian) coordinates
+           of the point in R^3 at which a direction is sought.
+        ret : (3,) array-like, intent = out
+           Upon exit, a (C-contiguous) memoryview containing the normalized
+           direction.
+
+        """
         cdef:
             double[::1] xi = self.xi
 
@@ -856,6 +990,12 @@ cdef class StrainAimAssister:
 
 
 cdef class Dp87Strain:
+    """
+    A Cython extension type which generates trajectories in R^3 defined
+    as being orthogonal to a (stationary) vector field, by means of the
+    Dormand-Prince 8(7) adaptive timestep Runge-Kutta method.
+
+    """
     cdef:
         double fac, maxfac
         double _c_[12]
@@ -902,7 +1042,7 @@ cdef class Dp87Strain:
         double tmp, sc, err, h_opt
         double atol, rtol
         double q
-        StrainAimAssister f
+        StrainDirectionGenerator f
         bint initialized
 
     def __cinit__(self):
@@ -973,7 +1113,7 @@ cdef class Dp87Strain:
     @cython.initializedcheck(False)
     @cython.wraparound(False)
     @cython.boundscheck(False)
-    def set_aim_assister(self, StrainAimAssister direction_generator):
+    def set_aim_assister(self, StrainDirectionGenerator direction_generator):
         self.f = direction_generator
         self.initialized = True
 
@@ -991,7 +1131,7 @@ cdef class Dp87Strain:
             double[::1] pos_i = self.pos_i
         if not self.initialized:
             raise RuntimeError('Dormand-Prince 8(7) strain solver not'\
-                    ' initialized with a StrainAimAssister instance!')
+                    ' initialized with a StrainDirectionGenerator instance!')
         dcopy(3,pos,1,pos_i,1)
         self._ev_(&t,pos_i,&h)
         return t, np.copy(pos_i), h
