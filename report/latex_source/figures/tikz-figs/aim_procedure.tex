@@ -28,13 +28,13 @@
 \makeatother
 
 % Define vectors in bold roman font
-\newcommand{\vct}[1]{\ensuremath{\mathbfup{#1}}}
+\newcommand{\vct}[1]{\ensuremath{\mathbfup{\MakeLowercase{#1}}}}
 
 % Define unit vectors in bold roman font, with hats
-\newcommand{\uvct}[1]{\ensuremath{\mathbfup{\hat{#1}}}}
+\newcommand{\uvct}[1]{\ensuremath{\mathbfup{\hat{\MakeLowercase{#1}}}}}
 
 % Define matrices in bold italic font
-\newcommand{\mtrx}[1]{\ensuremath{\bm{#1}}}
+\newcommand{\mtrx}[1]{\ensuremath{\mathbfup{\MakeUppercase{#1}}}}
 
 \usetikzlibrary{%
     angles,%

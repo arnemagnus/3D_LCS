@@ -18,7 +18,7 @@ Letting $\vct{x}(t;t_{0},\vct{x}_{0})$ denote the trajectory of a tracer in
 the system given by \cref{eq:consideredflow}, the flow map is defined as
 \begin{equation}
     \label{eq:defn_flowmap}
-    \vct{F}_{t_{0}}^{t}(\vct{x}_{0}) = \vct{x}(t;t_{0},\vct{x}_{0}),
+    \vct{\phi}_{t_{0}}^{t}(\vct{x}_{0}) = \vct{x}(t;t_{0},\vct{x}_{0}),
 \end{equation}
 hence, the flow map describes the movement of tracers from one point in time
 to another mathematically. In general, the flow map is as smooth as the
@@ -28,12 +28,12 @@ right Cauchy-Green strain tensor field can be defined as
 \begin{equation}
     \label{eq:defn_cauchygreen}
     \mtrx{C}_{t_{0}}^{t}(\vct{x}_{0}) = %
-    \Big(\grad\vct{F}_{t_{0}}^{t}(\vct{x}_{0})\Big)^{\ast}%
-    \Big(\grad\vct{F}_{t_{0}}^{t}(\vct{x}_{0})\Big),
+    \Big(\grad\vct{\phi}_{t_{0}}^{t}(\vct{x}_{0})\Big)^{\ast}%
+    \Big(\grad\vct{\phi}_{t_{0}}^{t}(\vct{x}_{0})\Big),
 \end{equation}
-where $\grad\vct{F}_{t_{0}}^{t}$ denotes the Jacobian matrix of the flow
-map $\vct{F}_{t_{0}}^{t}$, and the asterisk refers to the adjoint operation,
-which, because the Jacobian $\grad\vct{F}_{t_{0}}^{t}$ is real-valued,
+where $\grad\vct{\phi}_{t_{0}}^{t}$ denotes the Jacobian matrix of the flow
+map $\vct{\phi}_{t_{0}}^{t}$, and the asterisk refers to the adjoint operation,
+which, because the Jacobian $\grad\vct{\phi}_{t_{0}}^{t}$ is real-valued,
 equates to matrix transposition. Component-wise, the Jacobian matrix of a
 general vector-valued function $\vct{f}$ is defined as
 \begin{equation}
@@ -79,11 +79,10 @@ $\vct{\xi}_{1}$ axis. This concept is shown in \cref{fig:stretch_and_strain}.
 \begin{figure}[htpb]
     \centering
     \resizebox{0.9\linewidth}{!}{\includestandalone{figures/tikz-figs/stretch_and_strain}}
-%    \input{figures/stretch_and_strain.tex}
     \caption[Geometric interpretation of the eigenvectors of the Cauchy-Green
     strain tensor]{Geometrix interpretation of the eigenvectors of the
     Cauchy-Green strain tensor. The central unit cell is stretched and deformed
-    under the flow map $\vct{F}_{t_{0}}^{t}(\vct{x}_{0})$. The local stretching
+    under the flow map $\vct{\phi}_{t_{0}}^{t}(\vct{x}_{0})$. The local stretching
     is the largest in the direction of $\vct{\xi}_{3}$, the eigenvector which
     corresponds to the largest eigenvalue, $\lambda_{3}$, of the Cauchy-Green
     strain tensor, defined in \cref{eq:cauchygreen_characteristics}. Along

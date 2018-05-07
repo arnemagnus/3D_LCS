@@ -28,13 +28,13 @@
 \makeatother
 
 % Define vectors in bold roman font
-\newcommand{\vct}[1]{\ensuremath{\mathbfup{#1}}}
+\newcommand{\vct}[1]{\ensuremath{\mathbfup{\MakeLowercase{#1}}}}
 
 % Define unit vectors in bold roman font, with hats
-\newcommand{\uvct}[1]{\ensuremath{\mathbfup{\hat{#1}}}}
+\newcommand{\uvct}[1]{\ensuremath{\mathbfup{\hat{\MakeLowercase{#1}}}}}
 
 % Define matrices in bold italic font
-\newcommand{\mtrx}[1]{\ensuremath{\bm{#1}}}
+\newcommand{\mtrx}[1]{\ensuremath{\mathbfup{\MakeUppercase{#1}}}}
 
 \usetikzlibrary{%
     angles,%
@@ -189,7 +189,7 @@
     % Draw arrow connecting initial and final states
     \path (orig_t0) + (3*\sx,0,0) coordinate (l);
     \path (orig_t0) + (7*\sx,0,0) coordinate (r);
-    \path (orig_t0) + (5*\sx,0,0) node[above] {$\vct{F}_{t_{0}}^{t}(\vct{x}_{0})$};
+    \path (orig_t0) + (5*\sx,0,0) node[above] {$\vct{\phi}_{t_{0}}^{t}(\vct{x}_{0})$};
     \draw[->, thick] (l) -- (r);
 
     %-------------------------------------------------------------------------%
