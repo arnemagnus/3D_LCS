@@ -28,6 +28,9 @@ _minted*/
 *.lot
 *.toc
 *.sty
+*.fmt
+*.auxlock
+*.bbl
 
 # Archive files:
 *.tar.gz
@@ -41,6 +44,7 @@ articles/
 # Large image files
 notebooks/final_results/*
 report/latex_source/figures/mpl-figs/*
+report/latex_source/figures/compiled-tikz-figs/*
 notebooks/ABC_flow/stuff/*
 notebooks/tor-fjord/*
 

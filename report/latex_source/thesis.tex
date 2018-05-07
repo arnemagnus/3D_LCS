@@ -1,0 +1,36 @@
+%&preamble
+
+\input{dynamic-preamble}
+
+%\input{_setup_files/dynamic-preamble}
+\begin{document}
+\urlstyle{same}
+% Title page
+\setcounter{page}{0}
+
+% Front matter
+\begin{frontmatter}
+    \input{frontmatter/frontmatter}
+\end{frontmatter}
+
+% Main matter
+\begin{mainmatter}
+    \input{mainmatter/mainmatter}
+\end{mainmatter}
+
+
+
+% Bibliography
+% Ghost section necessary in order for the hyperref package to link properly
+\phantomsection
+\thispagestyle{chapter}
+\addcontentsline{toc}{chapter}{References}
+\printbibliography[title=References]
+
+% Back matter
+\cleartorecto
+\begin{backmatter}
+    \input{backmatter/backmatter}
+\end{backmatter}
+
+\end{document}
