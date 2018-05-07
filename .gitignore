@@ -39,9 +39,9 @@ _minted*/
 articles/
 
 # Large image files
-*/final_results/
+final_results/*
 mpl-figs/*
-*/stuff/
+/stuff/*
 
 # Pseudohacky stuff
 bspline-fortran-arnes-mod/
