@@ -42,3 +42,6 @@ articles/
 */final_results/
 mpl-figs/*
 */stuff/
+
+# Pseudohacky stuff
+bspline-fortran-arnes-mod/
