@@ -47,11 +47,10 @@ articles/
 # Large image files
 notebooks/final_results/*
 report/latex_source/figures/mpl-figs/*
-report/latex_source/figures/compiled-tikz-figs/*
 notebooks/ABC_flow/stuff/*
 notebooks/tor-fjord/*
 report/latex_source/_pgfcache
-report/latex_source/_tikzcache
+report/latex_source/figures/tikz-figs/*.pdf
 
 # Pseudohacky stuff
 bspline-fortran-arnes-mod/
