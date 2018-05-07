@@ -48,4 +48,4 @@ notebooks/tor-fjord/*
 bspline-fortran-arnes-mod/
 
 # Temporary build folders
-*/build/
+*/build/*
