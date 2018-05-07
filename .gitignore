@@ -48,6 +48,7 @@ report/latex_source/figures/mpl-figs/*
 report/latex_source/figures/compiled-tikz-figs/*
 notebooks/ABC_flow/stuff/*
 notebooks/tor-fjord/*
+report/latex_source/_pgfcache
 
 # Pseudohacky stuff
 bspline-fortran-arnes-mod/
@@ -56,3 +57,6 @@ bspline-fortran-arnes-mod/
 cythonmagic/*/build/*
 cythonmagic/*/*.mod
 cythonmagic/*/src/*.html
+
+# Local LaTeX files
+*.sty
