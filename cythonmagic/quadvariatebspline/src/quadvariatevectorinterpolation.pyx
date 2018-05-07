@@ -123,19 +123,19 @@ cdef class TrivectorQuadvariateSpline:
         kt: integer, optional
             Interpolation order (= degree of polynomial pieces + 1) along the
             t abscissa. Default: kt = 4.
-            Must satisfy 2 < kt < nt
+            Must satisfy 2 <= kt < nt
         kx: integer, optional
             Interpolation order (= degree of polynomial pieces + 1) along the
             x abscissa. Default: kx = 4.
-            Must satisfy 2 < kx < nx
+            Must satisfy 2 <= kx < nx
         ky: integer, optional
             Interpolation order (= degree of polynomial pieces + 1) along the
             y abscissa. Default: ky = 4.
-            Must satisfy 2 < ky < ny
+            Must satisfy 2 <= ky < ny
         kz: integer, optional
             Interpolation order (= degree of polynomial pieces + 1) along the
             z abscissa. Default: kz = 4.
-            Must satisfy 2 < kz < nz
+            Must satisfy 2 <= kz < nz
         extrap : bool, optional
             Flag indicating whether or not extrapolation outside of the
             original sampling domain is allowed. If extrap is false and
