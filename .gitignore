@@ -42,6 +42,7 @@ articles/
 notebooks/final_results/*
 report/latex_source/figures/mpl-figs/*
 notebooks/ABC_flow/stuff/*
+notebooks/tor-fjord/*
 
 # Pseudohacky stuff
 bspline-fortran-arnes-mod/
