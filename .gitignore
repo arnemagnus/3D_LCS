@@ -47,5 +47,6 @@ notebooks/tor-fjord/*
 # Pseudohacky stuff
 bspline-fortran-arnes-mod/
 
-# Temporary build folders
+# Temporary build folders and files
 cythonmagic/*/build/*
+cythonmagic/*/*.mod
