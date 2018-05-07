@@ -110,7 +110,6 @@ def cy_in_plane(double[::1] pos_curr, double[::1] prev_point, double[::1] tan_ve
 
     Parameters
     ----------
-
     pos_curr : (3,) array_like
          Three-component (C-contiguous) NumPy array, containing
          the (Cartesian) coordinates of the point which may

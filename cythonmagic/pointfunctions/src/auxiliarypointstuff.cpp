@@ -808,7 +808,7 @@ static const char *__pyx_filename;
 
 
 static const char *__pyx_f[] = {
-  "auxiliarypointstuff.pyx",
+  "src/auxiliarypointstuff.pyx",
   "__init__.pxd",
   "stringsource",
   "type.pxd",
@@ -2266,16 +2266,16 @@ static const char __pyx_k_contiguous_and_direct[] = "<contiguous and direct>";
 static const char __pyx_k_cy_parallel_component[] = "cy_parallel_component";
 static const char __pyx_k_MemoryView_of_r_object[] = "<MemoryView of %r object>";
 static const char __pyx_k_MemoryView_of_r_at_0x_x[] = "<MemoryView of %r at 0x%x>";
-static const char __pyx_k_auxiliarypointstuff_pyx[] = "auxiliarypointstuff.pyx";
 static const char __pyx_k_contiguous_and_indirect[] = "<contiguous and indirect>";
 static const char __pyx_k_cy_orthogonal_component[] = "cy_orthogonal_component";
 static const char __pyx_k_Cannot_index_with_type_s[] = "Cannot index with type '%s'";
 static const char __pyx_k_Invalid_shape_in_axis_d_d[] = "Invalid shape in axis %d: %d.";
 static const char __pyx_k_itemsize_0_for_cython_array[] = "itemsize <= 0 for cython.array";
 static const char __pyx_k_ndarray_is_not_C_contiguous[] = "ndarray is not C contiguous";
+static const char __pyx_k_src_auxiliarypointstuff_pyx[] = "src/auxiliarypointstuff.pyx";
 static const char __pyx_k_unable_to_allocate_array_data[] = "unable to allocate array data.";
 static const char __pyx_k_strided_and_direct_or_indirect[] = "<strided and direct or indirect>";
-static const char __pyx_k_This_module_contains_a_set_of_C[] = "\nThis module contains a set of C-level functions intended to accelerate\nthe computation of geodesic level set approximations to invariant manifolds\nof vector fields in R^3.\n\nMethods defined here:\n\n    cy_normalize(v)\n    cy_in_plane(pos_curr,prev_point,tan_vec,prev_vec,plane_tol)\n    cy_parallel_component(u,v)\n    cy_orthogonal_component(u,v)\n    cy_cross_product(u,v)\n    cy_compute_pos_aim(prev_pos,dist,prev_prev_vec,tan_vec,ang_offset)\n    cy_norm2(u)\n    cy_min(a,b)\n\nWritten by Arne Magnus T. L\303\270ken as part of my master's thesis work in physics\nat NTNU, spring 2018.\n\n";
+static const char __pyx_k_This_module_contains_a_set_of_C[] = "\nThis module contains a set of C-level functions intended to accelerate\nthe computation of geodesic level set approximations to invariant manifolds\nof vector fields in R^3.\n\nMethods defined here:\n\n    cy_normalize(v)\n    cy_in_plane(pos_curr,prev_point,tan_vec,prev_vec,plane_tol)\n    cy_parallel_component(u,v)\n    cy_orthogonal_component(u,v)\n    cy_cross_product(u,v)\n    cy_compute_pos_aim(prev_pos,dist,prev_prev_vec,tan_vec,ang_offset)\n    cy_norm2(u)\n    cy_min(a,b)\n    cy_max(a,b)\n\nWritten by Arne Magnus T. L\303\270ken as part of my master's thesis work in physics\nat NTNU, spring 2018.\n\n";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
 static const char __pyx_k_unknown_dtype_code_in_numpy_pxd[] = "unknown dtype code in numpy.pxd (%d)";
 static const char __pyx_k_Buffer_view_does_not_expose_stri[] = "Buffer view does not expose strides";
@@ -2336,7 +2336,6 @@ static PyObject *__pyx_n_s_a;
 static PyObject *__pyx_n_s_allocate_buffer;
 static PyObject *__pyx_n_s_ang_offset;
 static PyObject *__pyx_n_s_auxiliarypointstuff;
-static PyObject *__pyx_kp_s_auxiliarypointstuff_pyx;
 static PyObject *__pyx_n_s_b;
 static PyObject *__pyx_n_s_base;
 static PyObject *__pyx_n_s_c;
@@ -2417,6 +2416,7 @@ static PyObject *__pyx_n_s_setstate;
 static PyObject *__pyx_n_s_setstate_cython;
 static PyObject *__pyx_n_s_shape;
 static PyObject *__pyx_n_s_size;
+static PyObject *__pyx_kp_s_src_auxiliarypointstuff_pyx;
 static PyObject *__pyx_n_s_start;
 static PyObject *__pyx_n_s_step;
 static PyObject *__pyx_n_s_stop;
@@ -2559,7 +2559,7 @@ static PyObject *__pyx_codeobj__55;
 static PyObject *__pyx_codeobj__62;
 /* Late includes */
 
-/* "auxiliarypointstuff.pyx":34
+/* "auxiliarypointstuff.pyx":35
  * @cython.initializedcheck(False)
  * @cython.boundscheck(False)
  * cdef void daxpy(int N, double alpha, double[::1] &x, int INCX, double[::1] &y, int INCY):             # <<<<<<<<<<<<<<
@@ -2573,7 +2573,7 @@ static void __pyx_f_19auxiliarypointstuff_daxpy(int __pyx_v_N, double __pyx_v_al
   Py_ssize_t __pyx_t_2;
   __Pyx_RefNannySetupContext("daxpy", 0);
 
-  /* "auxiliarypointstuff.pyx":36
+  /* "auxiliarypointstuff.pyx":37
  * cdef void daxpy(int N, double alpha, double[::1] &x, int INCX, double[::1] &y, int INCY):
  *     # y <- ax + y
  *     scp_daxpy(&N, &alpha, &x[0], &INCX, &y[0], &INCY)             # <<<<<<<<<<<<<<
@@ -2586,7 +2586,7 @@ static void __pyx_f_19auxiliarypointstuff_daxpy(int __pyx_v_N, double __pyx_v_al
   if (__pyx_t_2 < 0) __pyx_t_2 += __pyx_v_y.shape[0];
   __pyx_f_5scipy_6linalg_11cython_blas_daxpy((&__pyx_v_N), (&__pyx_v_alpha), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_1)) )))), (&__pyx_v_INCX), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y.data) + __pyx_t_2)) )))), (&__pyx_v_INCY));
 
-  /* "auxiliarypointstuff.pyx":34
+  /* "auxiliarypointstuff.pyx":35
  * @cython.initializedcheck(False)
  * @cython.boundscheck(False)
  * cdef void daxpy(int N, double alpha, double[::1] &x, int INCX, double[::1] &y, int INCY):             # <<<<<<<<<<<<<<
@@ -2598,7 +2598,7 @@ static void __pyx_f_19auxiliarypointstuff_daxpy(int __pyx_v_N, double __pyx_v_al
   __Pyx_RefNannyFinishContext();
 }
 
-/* "auxiliarypointstuff.pyx":40
+/* "auxiliarypointstuff.pyx":41
  * @cython.initializedcheck(False)
  * @cython.boundscheck(False)
  * cdef void dcopy(int N, double[::1] &x, int INCX, double[::1] &y, int INCY):             # <<<<<<<<<<<<<<
@@ -2612,7 +2612,7 @@ static void __pyx_f_19auxiliarypointstuff_dcopy(int __pyx_v_N, __Pyx_memviewslic
   Py_ssize_t __pyx_t_2;
   __Pyx_RefNannySetupContext("dcopy", 0);
 
-  /* "auxiliarypointstuff.pyx":42
+  /* "auxiliarypointstuff.pyx":43
  * cdef void dcopy(int N, double[::1] &x, int INCX, double[::1] &y, int INCY):
  *     # y <- x
  *     scp_dcopy(&N, &x[0], &INCX, &y[0], &INCY)             # <<<<<<<<<<<<<<
@@ -2625,7 +2625,7 @@ static void __pyx_f_19auxiliarypointstuff_dcopy(int __pyx_v_N, __Pyx_memviewslic
   if (__pyx_t_2 < 0) __pyx_t_2 += __pyx_v_y.shape[0];
   __pyx_f_5scipy_6linalg_11cython_blas_dcopy((&__pyx_v_N), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_1)) )))), (&__pyx_v_INCX), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y.data) + __pyx_t_2)) )))), (&__pyx_v_INCY));
 
-  /* "auxiliarypointstuff.pyx":40
+  /* "auxiliarypointstuff.pyx":41
  * @cython.initializedcheck(False)
  * @cython.boundscheck(False)
  * cdef void dcopy(int N, double[::1] &x, int INCX, double[::1] &y, int INCY):             # <<<<<<<<<<<<<<
@@ -2637,7 +2637,7 @@ static void __pyx_f_19auxiliarypointstuff_dcopy(int __pyx_v_N, __Pyx_memviewslic
   __Pyx_RefNannyFinishContext();
 }
 
-/* "auxiliarypointstuff.pyx":46
+/* "auxiliarypointstuff.pyx":47
  * @cython.initializedcheck(False)
  * @cython.boundscheck(False)
  * cdef double ddot(int N, double[::1] &x, int INCX, double[::1] &y, int INCY):             # <<<<<<<<<<<<<<
@@ -2652,7 +2652,7 @@ static double __pyx_f_19auxiliarypointstuff_ddot(int __pyx_v_N, __Pyx_memviewsli
   Py_ssize_t __pyx_t_2;
   __Pyx_RefNannySetupContext("ddot", 0);
 
-  /* "auxiliarypointstuff.pyx":48
+  /* "auxiliarypointstuff.pyx":49
  * cdef double ddot(int N, double[::1] &x, int INCX, double[::1] &y, int INCY):
  *     # return xT*y
  *     return scp_ddot(&N, &x[0], &INCX, &y[0], &INCY)             # <<<<<<<<<<<<<<
@@ -2666,7 +2666,7 @@ static double __pyx_f_19auxiliarypointstuff_ddot(int __pyx_v_N, __Pyx_memviewsli
   __pyx_r = __pyx_f_5scipy_6linalg_11cython_blas_ddot((&__pyx_v_N), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_1)) )))), (&__pyx_v_INCX), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y.data) + __pyx_t_2)) )))), (&__pyx_v_INCY));
   goto __pyx_L0;
 
-  /* "auxiliarypointstuff.pyx":46
+  /* "auxiliarypointstuff.pyx":47
  * @cython.initializedcheck(False)
  * @cython.boundscheck(False)
  * cdef double ddot(int N, double[::1] &x, int INCX, double[::1] &y, int INCY):             # <<<<<<<<<<<<<<
@@ -2680,7 +2680,7 @@ static double __pyx_f_19auxiliarypointstuff_ddot(int __pyx_v_N, __Pyx_memviewsli
   return __pyx_r;
 }
 
-/* "auxiliarypointstuff.pyx":52
+/* "auxiliarypointstuff.pyx":53
  * @cython.initializedcheck(False)
  * @cython.boundscheck(False)
  * cdef double dnrm2(int N, double[::1] &x, int INCX):             # <<<<<<<<<<<<<<
@@ -2694,7 +2694,7 @@ static double __pyx_f_19auxiliarypointstuff_dnrm2(int __pyx_v_N, __Pyx_memviewsl
   Py_ssize_t __pyx_t_1;
   __Pyx_RefNannySetupContext("dnrm2", 0);
 
-  /* "auxiliarypointstuff.pyx":54
+  /* "auxiliarypointstuff.pyx":55
  * cdef double dnrm2(int N, double[::1] &x, int INCX):
  *     # return (xT*t)**0.5
  *     return scp_dnrm2(&N, &x[0], &INCX)             # <<<<<<<<<<<<<<
@@ -2706,7 +2706,7 @@ static double __pyx_f_19auxiliarypointstuff_dnrm2(int __pyx_v_N, __Pyx_memviewsl
   __pyx_r = __pyx_f_5scipy_6linalg_11cython_blas_dnrm2((&__pyx_v_N), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_1)) )))), (&__pyx_v_INCX));
   goto __pyx_L0;
 
-  /* "auxiliarypointstuff.pyx":52
+  /* "auxiliarypointstuff.pyx":53
  * @cython.initializedcheck(False)
  * @cython.boundscheck(False)
  * cdef double dnrm2(int N, double[::1] &x, int INCX):             # <<<<<<<<<<<<<<
@@ -2720,7 +2720,7 @@ static double __pyx_f_19auxiliarypointstuff_dnrm2(int __pyx_v_N, __Pyx_memviewsl
   return __pyx_r;
 }
 
-/* "auxiliarypointstuff.pyx":58
+/* "auxiliarypointstuff.pyx":59
  * @cython.initializedcheck(False)
  * @cython.boundscheck(False)
  * cdef void dscal(int N, double alpha, double[::1] &x, int INCX):             # <<<<<<<<<<<<<<
@@ -2733,7 +2733,7 @@ static void __pyx_f_19auxiliarypointstuff_dscal(int __pyx_v_N, double __pyx_v_al
   Py_ssize_t __pyx_t_1;
   __Pyx_RefNannySetupContext("dscal", 0);
 
-  /* "auxiliarypointstuff.pyx":60
+  /* "auxiliarypointstuff.pyx":61
  * cdef void dscal(int N, double alpha, double[::1] &x, int INCX):
  *     # x <- alpha*x
  *     scp_dscal(&N, &alpha, &x[0], &INCX)             # <<<<<<<<<<<<<<
@@ -2744,7 +2744,7 @@ static void __pyx_f_19auxiliarypointstuff_dscal(int __pyx_v_N, double __pyx_v_al
   if (__pyx_t_1 < 0) __pyx_t_1 += __pyx_v_x.shape[0];
   __pyx_f_5scipy_6linalg_11cython_blas_dscal((&__pyx_v_N), (&__pyx_v_alpha), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_1)) )))), (&__pyx_v_INCX));
 
-  /* "auxiliarypointstuff.pyx":58
+  /* "auxiliarypointstuff.pyx":59
  * @cython.initializedcheck(False)
  * @cython.boundscheck(False)
  * cdef void dscal(int N, double alpha, double[::1] &x, int INCX):             # <<<<<<<<<<<<<<
@@ -2756,7 +2756,7 @@ static void __pyx_f_19auxiliarypointstuff_dscal(int __pyx_v_N, double __pyx_v_al
   __Pyx_RefNannyFinishContext();
 }
 
-/* "auxiliarypointstuff.pyx":64
+/* "auxiliarypointstuff.pyx":65
  * @cython.cdivision(True)
  * @cython.initializedcheck(False)
  * cdef void _cy_normalize_(double[::1] v):             # <<<<<<<<<<<<<<
@@ -2771,7 +2771,7 @@ static void __pyx_f_19auxiliarypointstuff__cy_normalize_(__Pyx_memviewslice __py
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("_cy_normalize_", 0);
 
-  /* "auxiliarypointstuff.pyx":67
+  /* "auxiliarypointstuff.pyx":68
  *     # v <- v / ||v||_2
  *     cdef:
  *         int N = v.shape[0]             # <<<<<<<<<<<<<<
@@ -2780,7 +2780,7 @@ static void __pyx_f_19auxiliarypointstuff__cy_normalize_(__Pyx_memviewslice __py
  */
   __pyx_v_N = (__pyx_v_v.shape[0]);
 
-  /* "auxiliarypointstuff.pyx":68
+  /* "auxiliarypointstuff.pyx":69
  *     cdef:
  *         int N = v.shape[0]
  *         int INCX = 1             # <<<<<<<<<<<<<<
@@ -2789,7 +2789,7 @@ static void __pyx_f_19auxiliarypointstuff__cy_normalize_(__Pyx_memviewslice __py
  */
   __pyx_v_INCX = 1;
 
-  /* "auxiliarypointstuff.pyx":69
+  /* "auxiliarypointstuff.pyx":70
  *         int N = v.shape[0]
  *         int INCX = 1
  *     while(dnrm2(N,v,INCX) < 0.0001):             # <<<<<<<<<<<<<<
@@ -2800,7 +2800,7 @@ static void __pyx_f_19auxiliarypointstuff__cy_normalize_(__Pyx_memviewslice __py
     __pyx_t_1 = ((__pyx_f_19auxiliarypointstuff_dnrm2(__pyx_v_N, __pyx_v_v, __pyx_v_INCX) < 0.0001) != 0);
     if (!__pyx_t_1) break;
 
-    /* "auxiliarypointstuff.pyx":70
+    /* "auxiliarypointstuff.pyx":71
  *         int INCX = 1
  *     while(dnrm2(N,v,INCX) < 0.0001):
  *         dscal(N,100,v,INCX)             # <<<<<<<<<<<<<<
@@ -2810,7 +2810,7 @@ static void __pyx_f_19auxiliarypointstuff__cy_normalize_(__Pyx_memviewslice __py
     __pyx_f_19auxiliarypointstuff_dscal(__pyx_v_N, 100.0, __pyx_v_v, __pyx_v_INCX);
   }
 
-  /* "auxiliarypointstuff.pyx":71
+  /* "auxiliarypointstuff.pyx":72
  *     while(dnrm2(N,v,INCX) < 0.0001):
  *         dscal(N,100,v,INCX)
  *     dscal(N,1/dnrm2(N,v,INCX),v,INCX)             # <<<<<<<<<<<<<<
@@ -2819,7 +2819,7 @@ static void __pyx_f_19auxiliarypointstuff__cy_normalize_(__Pyx_memviewslice __py
  */
   __pyx_f_19auxiliarypointstuff_dscal(__pyx_v_N, (1.0 / __pyx_f_19auxiliarypointstuff_dnrm2(__pyx_v_N, __pyx_v_v, __pyx_v_INCX)), __pyx_v_v, __pyx_v_INCX);
 
-  /* "auxiliarypointstuff.pyx":64
+  /* "auxiliarypointstuff.pyx":65
  * @cython.cdivision(True)
  * @cython.initializedcheck(False)
  * cdef void _cy_normalize_(double[::1] v):             # <<<<<<<<<<<<<<
@@ -2831,7 +2831,7 @@ static void __pyx_f_19auxiliarypointstuff__cy_normalize_(__Pyx_memviewslice __py
   __Pyx_RefNannyFinishContext();
 }
 
-/* "auxiliarypointstuff.pyx":75
+/* "auxiliarypointstuff.pyx":76
  * @cython.cdivision(False)
  * @cython.initializedcheck(False)
  * def cy_normalize(double[::1] v):             # <<<<<<<<<<<<<<
@@ -2849,7 +2849,7 @@ static PyObject *__pyx_pw_19auxiliarypointstuff_1cy_normalize(PyObject *__pyx_se
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("cy_normalize (wrapper)", 0);
   assert(__pyx_arg_v); {
-    __pyx_v_v = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_arg_v, PyBUF_WRITABLE); if (unlikely(!__pyx_v_v.memview)) __PYX_ERR(0, 75, __pyx_L3_error)
+    __pyx_v_v = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_arg_v, PyBUF_WRITABLE); if (unlikely(!__pyx_v_v.memview)) __PYX_ERR(0, 76, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -2878,7 +2878,7 @@ static PyObject *__pyx_pf_19auxiliarypointstuff_cy_normalize(CYTHON_UNUSED PyObj
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("cy_normalize", 0);
 
-  /* "auxiliarypointstuff.pyx":94
+  /* "auxiliarypointstuff.pyx":95
  *     cdef:
  *         double _ret_[3]
  *         double[::1] ret = _ret_             # <<<<<<<<<<<<<<
@@ -2887,21 +2887,21 @@ static PyObject *__pyx_pf_19auxiliarypointstuff_cy_normalize(CYTHON_UNUSED PyObj
  */
   __pyx_t_3 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_2 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_3 || !__pyx_t_2 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(0, 94, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3 || !__pyx_t_2 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(0, 95, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_1 = __pyx_array_new(__pyx_t_2, sizeof(double), PyBytes_AS_STRING(__pyx_t_3), (char *) "fortran", (char *) __pyx_v__ret_);
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 94, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 95, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_4 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_1), PyBUF_WRITABLE); if (unlikely(!__pyx_t_4.memview)) __PYX_ERR(0, 94, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_1), PyBUF_WRITABLE); if (unlikely(!__pyx_t_4.memview)) __PYX_ERR(0, 95, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_1)); __pyx_t_1 = 0;
   __pyx_v_ret = __pyx_t_4;
   __pyx_t_4.memview = NULL;
   __pyx_t_4.data = NULL;
 
-  /* "auxiliarypointstuff.pyx":95
+  /* "auxiliarypointstuff.pyx":96
  *         double _ret_[3]
  *         double[::1] ret = _ret_
  *     dcopy(3,v,1,ret,1)             # <<<<<<<<<<<<<<
@@ -2910,7 +2910,7 @@ static PyObject *__pyx_pf_19auxiliarypointstuff_cy_normalize(CYTHON_UNUSED PyObj
  */
   __pyx_f_19auxiliarypointstuff_dcopy(3, __pyx_v_v, 1, __pyx_v_ret, 1);
 
-  /* "auxiliarypointstuff.pyx":96
+  /* "auxiliarypointstuff.pyx":97
  *         double[::1] ret = _ret_
  *     dcopy(3,v,1,ret,1)
  *     _cy_normalize_(ret)             # <<<<<<<<<<<<<<
@@ -2919,7 +2919,7 @@ static PyObject *__pyx_pf_19auxiliarypointstuff_cy_normalize(CYTHON_UNUSED PyObj
  */
   __pyx_f_19auxiliarypointstuff__cy_normalize_(__pyx_v_ret);
 
-  /* "auxiliarypointstuff.pyx":97
+  /* "auxiliarypointstuff.pyx":98
  *     dcopy(3,v,1,ret,1)
  *     _cy_normalize_(ret)
  *     return np.copy(ret)             # <<<<<<<<<<<<<<
@@ -2927,12 +2927,12 @@ static PyObject *__pyx_pf_19auxiliarypointstuff_cy_normalize(CYTHON_UNUSED PyObj
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 97, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_copy); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 97, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_copy); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_ret, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 97, __pyx_L1_error)
+  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_ret, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_6 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
@@ -2945,14 +2945,14 @@ static PyObject *__pyx_pf_19auxiliarypointstuff_cy_normalize(CYTHON_UNUSED PyObj
     }
   }
   if (!__pyx_t_6) {
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 97, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_GOTREF(__pyx_t_3);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_2};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 97, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -2961,20 +2961,20 @@ static PyObject *__pyx_pf_19auxiliarypointstuff_cy_normalize(CYTHON_UNUSED PyObj
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_2};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 97, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     } else
     #endif
     {
-      __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 97, __pyx_L1_error)
+      __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 98, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_6); __pyx_t_6 = NULL;
       __Pyx_GIVEREF(__pyx_t_2);
       PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_t_2);
       __pyx_t_2 = 0;
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 97, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
@@ -2984,7 +2984,7 @@ static PyObject *__pyx_pf_19auxiliarypointstuff_cy_normalize(CYTHON_UNUSED PyObj
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "auxiliarypointstuff.pyx":75
+  /* "auxiliarypointstuff.pyx":76
  * @cython.cdivision(False)
  * @cython.initializedcheck(False)
  * def cy_normalize(double[::1] v):             # <<<<<<<<<<<<<<
@@ -3011,7 +3011,7 @@ static PyObject *__pyx_pf_19auxiliarypointstuff_cy_normalize(CYTHON_UNUSED PyObj
   return __pyx_r;
 }
 
-/* "auxiliarypointstuff.pyx":101
+/* "auxiliarypointstuff.pyx":102
  * 
  * @cython.initializedcheck(False)
  * def cy_in_plane(double[::1] pos_curr, double[::1] prev_point, double[::1] tan_vec, double[::1] prev_vec, double plane_tol):             # <<<<<<<<<<<<<<
@@ -3021,7 +3021,7 @@ static PyObject *__pyx_pf_19auxiliarypointstuff_cy_normalize(CYTHON_UNUSED PyObj
 
 /* Python wrapper */
 static PyObject *__pyx_pw_19auxiliarypointstuff_3cy_in_plane(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_19auxiliarypointstuff_2cy_in_plane[] = "\n    cy_in_plane(pos_curr,prev_point,tan_vec,prev_vec,plane_tol)\n\n    Determines whether or not 'pos_curr' lies within the half-plane defined\n    as being orthogonal to 'tan_vec', passing through 'prev_point' and\n    extending radially outwards from there, i.e., in the direction specified\n    by 'prev_vec', within the tolerance level plane_tol.\n\n    Parameters\n    ----------\n\n    pos_curr : (3,) array_like\n         Three-component (C-contiguous) NumPy array, containing\n         the (Cartesian) coordinates of the point which may\n         or may not be within the aforementioned half-plane\n    prev_point : (3,) array_like\n         Three-component (C-contiguous) NumPy array, containing\n         the (Cartesian) coordinates of the point at which\n         the aforementioned half-plane originates\n    tan_vec : (3,) array_like\n         Three-component (C-contiguous) NumPy array, containing\n         the components of a normalized (approximately) tangential\n         vector at prev_point\n    prev_vec : (3,) array_like\n         Three-component (C-contiguous) NumPy array, containing\n         the components of the (normalized) vector from prev_point to its\n         corresponding point in the previous geodesic level set\n    plane_tol : double\n          Double-precision float giving the tolerance level for\n          whether or not a point lies within a plane\n\n    Returns\n    -------\n    t_f : boolean\n          Boolean flag indicating whether or not the point lies within\n          the plane, subject to the prescribed tolerance level.\n\n    ";
+static char __pyx_doc_19auxiliarypointstuff_2cy_in_plane[] = "\n    cy_in_plane(pos_curr,prev_point,tan_vec,prev_vec,plane_tol)\n\n    Determines whether or not 'pos_curr' lies within the half-plane defined\n    as being orthogonal to 'tan_vec', passing through 'prev_point' and\n    extending radially outwards from there, i.e., in the direction specified\n    by 'prev_vec', within the tolerance level plane_tol.\n\n    Parameters\n    ----------\n    pos_curr : (3,) array_like\n         Three-component (C-contiguous) NumPy array, containing\n         the (Cartesian) coordinates of the point which may\n         or may not be within the aforementioned half-plane\n    prev_point : (3,) array_like\n         Three-component (C-contiguous) NumPy array, containing\n         the (Cartesian) coordinates of the point at which\n         the aforementioned half-plane originates\n    tan_vec : (3,) array_like\n         Three-component (C-contiguous) NumPy array, containing\n         the components of a normalized (approximately) tangential\n         vector at prev_point\n    prev_vec : (3,) array_like\n         Three-component (C-contiguous) NumPy array, containing\n         the components of the (normalized) vector from prev_point to its\n         corresponding point in the previous geodesic level set\n    plane_tol : double\n          Double-precision float giving the tolerance level for\n          whether or not a point lies within a plane\n\n    Returns\n    -------\n    t_f : boolean\n          Boolean flag indicating whether or not the point lies within\n          the plane, subject to the prescribed tolerance level.\n\n    ";
 static PyMethodDef __pyx_mdef_19auxiliarypointstuff_3cy_in_plane = {"cy_in_plane", (PyCFunction)__pyx_pw_19auxiliarypointstuff_3cy_in_plane, METH_VARARGS|METH_KEYWORDS, __pyx_doc_19auxiliarypointstuff_2cy_in_plane};
 static PyObject *__pyx_pw_19auxiliarypointstuff_3cy_in_plane(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_pos_curr = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -3061,29 +3061,29 @@ static PyObject *__pyx_pw_19auxiliarypointstuff_3cy_in_plane(PyObject *__pyx_sel
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_prev_point)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cy_in_plane", 1, 5, 5, 1); __PYX_ERR(0, 101, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cy_in_plane", 1, 5, 5, 1); __PYX_ERR(0, 102, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_tan_vec)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cy_in_plane", 1, 5, 5, 2); __PYX_ERR(0, 101, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cy_in_plane", 1, 5, 5, 2); __PYX_ERR(0, 102, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_prev_vec)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cy_in_plane", 1, 5, 5, 3); __PYX_ERR(0, 101, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cy_in_plane", 1, 5, 5, 3); __PYX_ERR(0, 102, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
         if (likely((values[4] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_plane_tol)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("cy_in_plane", 1, 5, 5, 4); __PYX_ERR(0, 101, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("cy_in_plane", 1, 5, 5, 4); __PYX_ERR(0, 102, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cy_in_plane") < 0)) __PYX_ERR(0, 101, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cy_in_plane") < 0)) __PYX_ERR(0, 102, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 5) {
       goto __pyx_L5_argtuple_error;
@@ -3094,15 +3094,15 @@ static PyObject *__pyx_pw_19auxiliarypointstuff_3cy_in_plane(PyObject *__pyx_sel
       values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
       values[4] = PyTuple_GET_ITEM(__pyx_args, 4);
     }
-    __pyx_v_pos_curr = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos_curr.memview)) __PYX_ERR(0, 101, __pyx_L3_error)
-    __pyx_v_prev_point = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_prev_point.memview)) __PYX_ERR(0, 101, __pyx_L3_error)
-    __pyx_v_tan_vec = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[2], PyBUF_WRITABLE); if (unlikely(!__pyx_v_tan_vec.memview)) __PYX_ERR(0, 101, __pyx_L3_error)
-    __pyx_v_prev_vec = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_prev_vec.memview)) __PYX_ERR(0, 101, __pyx_L3_error)
-    __pyx_v_plane_tol = __pyx_PyFloat_AsDouble(values[4]); if (unlikely((__pyx_v_plane_tol == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 101, __pyx_L3_error)
+    __pyx_v_pos_curr = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos_curr.memview)) __PYX_ERR(0, 102, __pyx_L3_error)
+    __pyx_v_prev_point = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_prev_point.memview)) __PYX_ERR(0, 102, __pyx_L3_error)
+    __pyx_v_tan_vec = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[2], PyBUF_WRITABLE); if (unlikely(!__pyx_v_tan_vec.memview)) __PYX_ERR(0, 102, __pyx_L3_error)
+    __pyx_v_prev_vec = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_prev_vec.memview)) __PYX_ERR(0, 102, __pyx_L3_error)
+    __pyx_v_plane_tol = __pyx_PyFloat_AsDouble(values[4]); if (unlikely((__pyx_v_plane_tol == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 102, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("cy_in_plane", 1, 5, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 101, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("cy_in_plane", 1, 5, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 102, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("auxiliarypointstuff.cy_in_plane", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3213,7 +3213,7 @@ static PyObject *__pyx_pf_19auxiliarypointstuff_2cy_in_plane(CYTHON_UNUSED PyObj
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "auxiliarypointstuff.pyx":101
+  /* "auxiliarypointstuff.pyx":102
  * 
  * @cython.initializedcheck(False)
  * def cy_in_plane(double[::1] pos_curr, double[::1] prev_point, double[::1] tan_vec, double[::1] prev_vec, double plane_tol):             # <<<<<<<<<<<<<<
@@ -21433,7 +21433,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_allocate_buffer, __pyx_k_allocate_buffer, sizeof(__pyx_k_allocate_buffer), 0, 0, 1, 1},
   {&__pyx_n_s_ang_offset, __pyx_k_ang_offset, sizeof(__pyx_k_ang_offset), 0, 0, 1, 1},
   {&__pyx_n_s_auxiliarypointstuff, __pyx_k_auxiliarypointstuff, sizeof(__pyx_k_auxiliarypointstuff), 0, 0, 1, 1},
-  {&__pyx_kp_s_auxiliarypointstuff_pyx, __pyx_k_auxiliarypointstuff_pyx, sizeof(__pyx_k_auxiliarypointstuff_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_b, __pyx_k_b, sizeof(__pyx_k_b), 0, 0, 1, 1},
   {&__pyx_n_s_base, __pyx_k_base, sizeof(__pyx_k_base), 0, 0, 1, 1},
   {&__pyx_n_s_c, __pyx_k_c, sizeof(__pyx_k_c), 0, 0, 1, 1},
@@ -21514,6 +21513,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_setstate_cython, __pyx_k_setstate_cython, sizeof(__pyx_k_setstate_cython), 0, 0, 1, 1},
   {&__pyx_n_s_shape, __pyx_k_shape, sizeof(__pyx_k_shape), 0, 0, 1, 1},
   {&__pyx_n_s_size, __pyx_k_size, sizeof(__pyx_k_size), 0, 0, 1, 1},
+  {&__pyx_kp_s_src_auxiliarypointstuff_pyx, __pyx_k_src_auxiliarypointstuff_pyx, sizeof(__pyx_k_src_auxiliarypointstuff_pyx), 0, 0, 1, 0},
   {&__pyx_n_s_start, __pyx_k_start, sizeof(__pyx_k_start), 0, 0, 1, 1},
   {&__pyx_n_s_step, __pyx_k_step, sizeof(__pyx_k_step), 0, 0, 1, 1},
   {&__pyx_n_s_stop, __pyx_k_stop, sizeof(__pyx_k_stop), 0, 0, 1, 1},
@@ -21879,29 +21879,29 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__30);
   __Pyx_GIVEREF(__pyx_tuple__30);
 
-  /* "auxiliarypointstuff.pyx":75
+  /* "auxiliarypointstuff.pyx":76
  * @cython.cdivision(False)
  * @cython.initializedcheck(False)
  * def cy_normalize(double[::1] v):             # <<<<<<<<<<<<<<
  *     """
  *     cy_normalize(v)
  */
-  __pyx_tuple__36 = PyTuple_Pack(4, __pyx_n_s_v, __pyx_n_s_v, __pyx_n_s_ret, __pyx_n_s_ret_2); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_tuple__36 = PyTuple_Pack(4, __pyx_n_s_v, __pyx_n_s_v, __pyx_n_s_ret, __pyx_n_s_ret_2); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__36);
   __Pyx_GIVEREF(__pyx_tuple__36);
-  __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_auxiliarypointstuff_pyx, __pyx_n_s_cy_normalize, 75, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_auxiliarypointstuff_pyx, __pyx_n_s_cy_normalize, 76, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 76, __pyx_L1_error)
 
-  /* "auxiliarypointstuff.pyx":101
+  /* "auxiliarypointstuff.pyx":102
  * 
  * @cython.initializedcheck(False)
  * def cy_in_plane(double[::1] pos_curr, double[::1] prev_point, double[::1] tan_vec, double[::1] prev_vec, double plane_tol):             # <<<<<<<<<<<<<<
  *     """
  *     cy_in_plane(pos_curr,prev_point,tan_vec,prev_vec,plane_tol)
  */
-  __pyx_tuple__38 = PyTuple_Pack(7, __pyx_n_s_pos_curr, __pyx_n_s_prev_point, __pyx_n_s_tan_vec, __pyx_n_s_prev_vec, __pyx_n_s_plane_tol, __pyx_n_s_tmp, __pyx_n_s_tmp_2); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 101, __pyx_L1_error)
+  __pyx_tuple__38 = PyTuple_Pack(7, __pyx_n_s_pos_curr, __pyx_n_s_prev_point, __pyx_n_s_tan_vec, __pyx_n_s_prev_vec, __pyx_n_s_plane_tol, __pyx_n_s_tmp, __pyx_n_s_tmp_2); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 102, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__38);
   __Pyx_GIVEREF(__pyx_tuple__38);
-  __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(5, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_auxiliarypointstuff_pyx, __pyx_n_s_cy_in_plane, 101, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(0, 101, __pyx_L1_error)
+  __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(5, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_auxiliarypointstuff_pyx, __pyx_n_s_cy_in_plane, 102, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(0, 102, __pyx_L1_error)
 
   /* "auxiliarypointstuff.pyx":151
  * @cython.initializedcheck(False)
@@ -21913,7 +21913,7 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__40 = PyTuple_Pack(4, __pyx_n_s_u, __pyx_n_s_v, __pyx_n_s_ret, __pyx_n_s_ret_2); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(0, 151, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__40);
   __Pyx_GIVEREF(__pyx_tuple__40);
-  __pyx_codeobj__41 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__40, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_auxiliarypointstuff_pyx, __pyx_n_s_cy_parallel_component, 151, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__41)) __PYX_ERR(0, 151, __pyx_L1_error)
+  __pyx_codeobj__41 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__40, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_auxiliarypointstuff_pyx, __pyx_n_s_cy_parallel_component, 151, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__41)) __PYX_ERR(0, 151, __pyx_L1_error)
 
   /* "auxiliarypointstuff.pyx":191
  * @cython.initializedcheck(False)
@@ -21925,7 +21925,7 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__42 = PyTuple_Pack(2, __pyx_n_s_u, __pyx_n_s_v); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(0, 191, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__42);
   __Pyx_GIVEREF(__pyx_tuple__42);
-  __pyx_codeobj__43 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__42, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_auxiliarypointstuff_pyx, __pyx_n_s_cy_dot, 191, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__43)) __PYX_ERR(0, 191, __pyx_L1_error)
+  __pyx_codeobj__43 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__42, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_auxiliarypointstuff_pyx, __pyx_n_s_cy_dot, 191, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__43)) __PYX_ERR(0, 191, __pyx_L1_error)
 
   /* "auxiliarypointstuff.pyx":216
  * 
@@ -21937,7 +21937,7 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__44 = PyTuple_Pack(4, __pyx_n_s_u, __pyx_n_s_v, __pyx_n_s_ret, __pyx_n_s_ret_2); if (unlikely(!__pyx_tuple__44)) __PYX_ERR(0, 216, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__44);
   __Pyx_GIVEREF(__pyx_tuple__44);
-  __pyx_codeobj__45 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__44, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_auxiliarypointstuff_pyx, __pyx_n_s_cy_orthogonal_component, 216, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__45)) __PYX_ERR(0, 216, __pyx_L1_error)
+  __pyx_codeobj__45 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__44, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_auxiliarypointstuff_pyx, __pyx_n_s_cy_orthogonal_component, 216, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__45)) __PYX_ERR(0, 216, __pyx_L1_error)
 
   /* "auxiliarypointstuff.pyx":258
  * @cython.wraparound(False)
@@ -21949,7 +21949,7 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__46 = PyTuple_Pack(4, __pyx_n_s_u, __pyx_n_s_v, __pyx_n_s_ret, __pyx_n_s_ret_2); if (unlikely(!__pyx_tuple__46)) __PYX_ERR(0, 258, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__46);
   __Pyx_GIVEREF(__pyx_tuple__46);
-  __pyx_codeobj__47 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__46, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_auxiliarypointstuff_pyx, __pyx_n_s_cy_cross_product, 258, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__47)) __PYX_ERR(0, 258, __pyx_L1_error)
+  __pyx_codeobj__47 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__46, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_auxiliarypointstuff_pyx, __pyx_n_s_cy_cross_product, 258, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__47)) __PYX_ERR(0, 258, __pyx_L1_error)
 
   /* "auxiliarypointstuff.pyx":297
  * 
@@ -21961,7 +21961,7 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__48 = PyTuple_Pack(13, __pyx_n_s_prev_pos, __pyx_n_s_dist, __pyx_n_s_prev_prev_vec, __pyx_n_s_tan_vec, __pyx_n_s_ang_offset, __pyx_n_s_ret, __pyx_n_s_up, __pyx_n_s_out, __pyx_n_s_tmp, __pyx_n_s_ret_2, __pyx_n_s_up_2, __pyx_n_s_out_2, __pyx_n_s_tmp_2); if (unlikely(!__pyx_tuple__48)) __PYX_ERR(0, 297, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__48);
   __Pyx_GIVEREF(__pyx_tuple__48);
-  __pyx_codeobj__49 = (PyObject*)__Pyx_PyCode_New(5, 0, 13, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__48, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_auxiliarypointstuff_pyx, __pyx_n_s_cy_compute_pos_aim, 297, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__49)) __PYX_ERR(0, 297, __pyx_L1_error)
+  __pyx_codeobj__49 = (PyObject*)__Pyx_PyCode_New(5, 0, 13, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__48, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_auxiliarypointstuff_pyx, __pyx_n_s_cy_compute_pos_aim, 297, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__49)) __PYX_ERR(0, 297, __pyx_L1_error)
 
   /* "auxiliarypointstuff.pyx":355
  * 
@@ -21973,7 +21973,7 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__50 = PyTuple_Pack(4, __pyx_n_s_u, __pyx_n_s_u, __pyx_n_s_N, __pyx_n_s_INCX); if (unlikely(!__pyx_tuple__50)) __PYX_ERR(0, 355, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__50);
   __Pyx_GIVEREF(__pyx_tuple__50);
-  __pyx_codeobj__51 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__50, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_auxiliarypointstuff_pyx, __pyx_n_s_cy_norm2, 355, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__51)) __PYX_ERR(0, 355, __pyx_L1_error)
+  __pyx_codeobj__51 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__50, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_auxiliarypointstuff_pyx, __pyx_n_s_cy_norm2, 355, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__51)) __PYX_ERR(0, 355, __pyx_L1_error)
 
   /* "auxiliarypointstuff.pyx":379
  * 
@@ -21985,7 +21985,7 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__52 = PyTuple_Pack(2, __pyx_n_s_a, __pyx_n_s_b); if (unlikely(!__pyx_tuple__52)) __PYX_ERR(0, 379, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__52);
   __Pyx_GIVEREF(__pyx_tuple__52);
-  __pyx_codeobj__53 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__52, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_auxiliarypointstuff_pyx, __pyx_n_s_cy_min, 379, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__53)) __PYX_ERR(0, 379, __pyx_L1_error)
+  __pyx_codeobj__53 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__52, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_auxiliarypointstuff_pyx, __pyx_n_s_cy_min, 379, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__53)) __PYX_ERR(0, 379, __pyx_L1_error)
 
   /* "auxiliarypointstuff.pyx":402
  *     return a
@@ -21997,7 +21997,7 @@ static int __Pyx_InitCachedConstants(void) {
   __pyx_tuple__54 = PyTuple_Pack(2, __pyx_n_s_a, __pyx_n_s_b); if (unlikely(!__pyx_tuple__54)) __PYX_ERR(0, 402, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__54);
   __Pyx_GIVEREF(__pyx_tuple__54);
-  __pyx_codeobj__55 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__54, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_auxiliarypointstuff_pyx, __pyx_n_s_cy_max, 402, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__55)) __PYX_ERR(0, 402, __pyx_L1_error)
+  __pyx_codeobj__55 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__54, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_src_auxiliarypointstuff_pyx, __pyx_n_s_cy_max, 402, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__55)) __PYX_ERR(0, 402, __pyx_L1_error)
 
   /* "View.MemoryView":285
  *         return self.name
@@ -22397,40 +22397,40 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "auxiliarypointstuff.pyx":25
+  /* "auxiliarypointstuff.pyx":26
  * 
  * cimport numpy as np
  * import numpy as np             # <<<<<<<<<<<<<<
  * 
  * from scipy.linalg.cython_blas cimport ddot as scp_ddot, dnrm2 as scp_dnrm2, daxpy as scp_daxpy, dcopy as scp_dcopy, dscal as scp_dscal
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 25, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 25, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "auxiliarypointstuff.pyx":75
+  /* "auxiliarypointstuff.pyx":76
  * @cython.cdivision(False)
  * @cython.initializedcheck(False)
  * def cy_normalize(double[::1] v):             # <<<<<<<<<<<<<<
  *     """
  *     cy_normalize(v)
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_19auxiliarypointstuff_1cy_normalize, NULL, __pyx_n_s_auxiliarypointstuff); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_19auxiliarypointstuff_1cy_normalize, NULL, __pyx_n_s_auxiliarypointstuff); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cy_normalize, __pyx_t_1) < 0) __PYX_ERR(0, 75, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cy_normalize, __pyx_t_1) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "auxiliarypointstuff.pyx":101
+  /* "auxiliarypointstuff.pyx":102
  * 
  * @cython.initializedcheck(False)
  * def cy_in_plane(double[::1] pos_curr, double[::1] prev_point, double[::1] tan_vec, double[::1] prev_vec, double plane_tol):             # <<<<<<<<<<<<<<
  *     """
  *     cy_in_plane(pos_curr,prev_point,tan_vec,prev_vec,plane_tol)
  */
-  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_19auxiliarypointstuff_3cy_in_plane, NULL, __pyx_n_s_auxiliarypointstuff); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 101, __pyx_L1_error)
+  __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_19auxiliarypointstuff_3cy_in_plane, NULL, __pyx_n_s_auxiliarypointstuff); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cy_in_plane, __pyx_t_1) < 0) __PYX_ERR(0, 101, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cy_in_plane, __pyx_t_1) < 0) __PYX_ERR(0, 102, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "auxiliarypointstuff.pyx":151
