@@ -185,15 +185,12 @@ cdef class TrivectorQuadvariateSpline:
 
         """
         cdef:
-            double tmp
             double[::1] vct = self.vct
-        self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
-        vct[0] = tmp
-        self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
-        vct[1] = tmp
-        self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
-        vct[2] = tmp
+        self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&vct[0])
+        self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&vct[1])
+        self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&vct[2])
         return np.copy(vct)
+
     @cython.initializedcheck(False)
     @cython.wraparound(False)
     @cython.boundscheck(False)
@@ -221,27 +218,17 @@ cdef class TrivectorQuadvariateSpline:
 
         """
         cdef:
-            double tmp
             double[:,::1] jcb = self.jcb
-        self.itpx._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
-        jcb[0,0] = tmp
-        self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
-        jcb[0,1] = tmp
-        self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)
-        jcb[0,2] = tmp
+        self.itpx._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&jcb[0,0])
+        self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&jcb[0,1])
+        self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&jcb[0,2])
 
-        self.itpy._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
-        jcb[1,0] = tmp
-        self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
-        jcb[1,1] = tmp
-        self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)
-        jcb[1,2] = tmp
+        self.itpy._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&jcb[1,0])
+        self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&jcb[1,1])
+        self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&jcb[1,2])
 
-        self.itpz._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
-        jcb[2,0] = tmp
-        self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
-        jcb[2,1] = tmp
-        self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)
-        jcb[2,2] = tmp
+        self.itpz._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&jcb[2,0])
+        self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&jcb[2,1])
+        self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&jcb[2,2])
 
         return np.copy(jcb)

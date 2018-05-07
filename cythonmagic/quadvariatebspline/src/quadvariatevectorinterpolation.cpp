@@ -3920,7 +3920,6 @@ static PyObject *__pyx_pw_30quadvariatevectorinterpolation_26TrivectorQuadvariat
 }
 
 static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariateSpline_4__call__(struct __pyx_obj_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline *__pyx_v_self, double __pyx_v_t, __Pyx_memviewslice __pyx_v_pos) {
-  double __pyx_v_tmp;
   __Pyx_memviewslice __pyx_v_vct = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -3944,12 +3943,12 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   PyObject *__pyx_t_18 = NULL;
   __Pyx_RefNannySetupContext("__call__", 0);
 
-  /* "quadvariatevectorinterpolation.pyx":189
+  /* "quadvariatevectorinterpolation.pyx":188
+ *         """
  *         cdef:
- *             double tmp
  *             double[::1] vct = self.vct             # <<<<<<<<<<<<<<
- *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
- *         vct[0] = tmp
+ *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&vct[0])
+ *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&vct[1])
  */
   __pyx_t_1 = __pyx_v_self->vct;
   __PYX_INC_MEMVIEW(&__pyx_t_1, 1);
@@ -3957,86 +3956,59 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "quadvariatevectorinterpolation.pyx":190
- *             double tmp
+  /* "quadvariatevectorinterpolation.pyx":189
+ *         cdef:
  *             double[::1] vct = self.vct
- *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)             # <<<<<<<<<<<<<<
- *         vct[0] = tmp
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
+ *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&vct[0])             # <<<<<<<<<<<<<<
+ *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&vct[1])
+ *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&vct[2])
  */
   __pyx_t_2 = 0;
   __pyx_t_3 = 1;
   __pyx_t_4 = 2;
-  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpx->__pyx_vtab)->_ev_(__pyx_v_self->itpx, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_2)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_3)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_4)) ))), 0, 0, 0, 0, (&__pyx_v_tmp));
-
-  /* "quadvariatevectorinterpolation.pyx":191
- *             double[::1] vct = self.vct
- *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
- *         vct[0] = tmp             # <<<<<<<<<<<<<<
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
- *         vct[1] = tmp
- */
   __pyx_t_5 = 0;
-  *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_vct.data) + __pyx_t_5)) )) = __pyx_v_tmp;
+  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpx->__pyx_vtab)->_ev_(__pyx_v_self->itpx, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_2)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_3)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_4)) ))), 0, 0, 0, 0, (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_vct.data) + __pyx_t_5)) )))));
 
-  /* "quadvariatevectorinterpolation.pyx":192
- *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
- *         vct[0] = tmp
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)             # <<<<<<<<<<<<<<
- *         vct[1] = tmp
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
+  /* "quadvariatevectorinterpolation.pyx":190
+ *             double[::1] vct = self.vct
+ *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&vct[0])
+ *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&vct[1])             # <<<<<<<<<<<<<<
+ *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&vct[2])
+ *         return np.copy(vct)
  */
   __pyx_t_6 = 0;
   __pyx_t_7 = 1;
   __pyx_t_8 = 2;
-  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpy->__pyx_vtab)->_ev_(__pyx_v_self->itpy, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_6)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_7)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_8)) ))), 0, 0, 0, 0, (&__pyx_v_tmp));
-
-  /* "quadvariatevectorinterpolation.pyx":193
- *         vct[0] = tmp
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
- *         vct[1] = tmp             # <<<<<<<<<<<<<<
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
- *         vct[2] = tmp
- */
   __pyx_t_9 = 1;
-  *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_vct.data) + __pyx_t_9)) )) = __pyx_v_tmp;
+  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpy->__pyx_vtab)->_ev_(__pyx_v_self->itpy, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_6)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_7)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_8)) ))), 0, 0, 0, 0, (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_vct.data) + __pyx_t_9)) )))));
 
-  /* "quadvariatevectorinterpolation.pyx":194
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
- *         vct[1] = tmp
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)             # <<<<<<<<<<<<<<
- *         vct[2] = tmp
+  /* "quadvariatevectorinterpolation.pyx":191
+ *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&vct[0])
+ *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&vct[1])
+ *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&vct[2])             # <<<<<<<<<<<<<<
  *         return np.copy(vct)
+ * 
  */
   __pyx_t_10 = 0;
   __pyx_t_11 = 1;
   __pyx_t_12 = 2;
-  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpz->__pyx_vtab)->_ev_(__pyx_v_self->itpz, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_10)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_11)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_12)) ))), 0, 0, 0, 0, (&__pyx_v_tmp));
-
-  /* "quadvariatevectorinterpolation.pyx":195
- *         vct[1] = tmp
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
- *         vct[2] = tmp             # <<<<<<<<<<<<<<
- *         return np.copy(vct)
- *     @cython.initializedcheck(False)
- */
   __pyx_t_13 = 2;
-  *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_vct.data) + __pyx_t_13)) )) = __pyx_v_tmp;
+  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpz->__pyx_vtab)->_ev_(__pyx_v_self->itpz, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_10)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_11)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_12)) ))), 0, 0, 0, 0, (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_vct.data) + __pyx_t_13)) )))));
 
-  /* "quadvariatevectorinterpolation.pyx":196
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
- *         vct[2] = tmp
+  /* "quadvariatevectorinterpolation.pyx":192
+ *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&vct[1])
+ *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&vct[2])
  *         return np.copy(vct)             # <<<<<<<<<<<<<<
+ * 
  *     @cython.initializedcheck(False)
- *     @cython.wraparound(False)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_15 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 196, __pyx_L1_error)
+  __pyx_t_15 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_15);
-  __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_t_15, __pyx_n_s_copy); if (unlikely(!__pyx_t_16)) __PYX_ERR(1, 196, __pyx_L1_error)
+  __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_t_15, __pyx_n_s_copy); if (unlikely(!__pyx_t_16)) __PYX_ERR(1, 192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_16);
   __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
-  __pyx_t_15 = __pyx_memoryview_fromslice(__pyx_v_vct, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 196, __pyx_L1_error)
+  __pyx_t_15 = __pyx_memoryview_fromslice(__pyx_v_vct, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 192, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_15);
   __pyx_t_17 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_16))) {
@@ -4049,14 +4021,14 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
     }
   }
   if (!__pyx_t_17) {
-    __pyx_t_14 = __Pyx_PyObject_CallOneArg(__pyx_t_16, __pyx_t_15); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 196, __pyx_L1_error)
+    __pyx_t_14 = __Pyx_PyObject_CallOneArg(__pyx_t_16, __pyx_t_15); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 192, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
     __Pyx_GOTREF(__pyx_t_14);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_16)) {
       PyObject *__pyx_temp[2] = {__pyx_t_17, __pyx_t_15};
-      __pyx_t_14 = __Pyx_PyFunction_FastCall(__pyx_t_16, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 196, __pyx_L1_error)
+      __pyx_t_14 = __Pyx_PyFunction_FastCall(__pyx_t_16, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 192, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_17); __pyx_t_17 = 0;
       __Pyx_GOTREF(__pyx_t_14);
       __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
@@ -4065,20 +4037,20 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_16)) {
       PyObject *__pyx_temp[2] = {__pyx_t_17, __pyx_t_15};
-      __pyx_t_14 = __Pyx_PyCFunction_FastCall(__pyx_t_16, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 196, __pyx_L1_error)
+      __pyx_t_14 = __Pyx_PyCFunction_FastCall(__pyx_t_16, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 192, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_17); __pyx_t_17 = 0;
       __Pyx_GOTREF(__pyx_t_14);
       __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
     } else
     #endif
     {
-      __pyx_t_18 = PyTuple_New(1+1); if (unlikely(!__pyx_t_18)) __PYX_ERR(1, 196, __pyx_L1_error)
+      __pyx_t_18 = PyTuple_New(1+1); if (unlikely(!__pyx_t_18)) __PYX_ERR(1, 192, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_18);
       __Pyx_GIVEREF(__pyx_t_17); PyTuple_SET_ITEM(__pyx_t_18, 0, __pyx_t_17); __pyx_t_17 = NULL;
       __Pyx_GIVEREF(__pyx_t_15);
       PyTuple_SET_ITEM(__pyx_t_18, 0+1, __pyx_t_15);
       __pyx_t_15 = 0;
-      __pyx_t_14 = __Pyx_PyObject_Call(__pyx_t_16, __pyx_t_18, NULL); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 196, __pyx_L1_error)
+      __pyx_t_14 = __Pyx_PyObject_Call(__pyx_t_16, __pyx_t_18, NULL); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 192, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_14);
       __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
     }
@@ -4114,7 +4086,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   return __pyx_r;
 }
 
-/* "quadvariatevectorinterpolation.pyx":200
+/* "quadvariatevectorinterpolation.pyx":197
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def jac(self, double t, double[::1] pos):             # <<<<<<<<<<<<<<
@@ -4154,11 +4126,11 @@ static PyObject *__pyx_pw_30quadvariatevectorinterpolation_26TrivectorQuadvariat
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_pos)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("jac", 1, 2, 2, 1); __PYX_ERR(1, 200, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("jac", 1, 2, 2, 1); __PYX_ERR(1, 197, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "jac") < 0)) __PYX_ERR(1, 200, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "jac") < 0)) __PYX_ERR(1, 197, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -4166,12 +4138,12 @@ static PyObject *__pyx_pw_30quadvariatevectorinterpolation_26TrivectorQuadvariat
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_t = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_t == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 200, __pyx_L3_error)
-    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 200, __pyx_L3_error)
+    __pyx_v_t = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_t == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 197, __pyx_L3_error)
+    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 197, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("jac", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 200, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("jac", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 197, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("quadvariatevectorinterpolation.TrivectorQuadvariateSpline.jac", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -4185,7 +4157,6 @@ static PyObject *__pyx_pw_30quadvariatevectorinterpolation_26TrivectorQuadvariat
 }
 
 static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariateSpline_6jac(struct __pyx_obj_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline *__pyx_v_self, double __pyx_v_t, __Pyx_memviewslice __pyx_v_pos) {
-  double __pyx_v_tmp;
   __Pyx_memviewslice __pyx_v_jcb = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -4242,12 +4213,12 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   PyObject *__pyx_t_51 = NULL;
   __Pyx_RefNannySetupContext("jac", 0);
 
-  /* "quadvariatevectorinterpolation.pyx":225
+  /* "quadvariatevectorinterpolation.pyx":221
+ *         """
  *         cdef:
- *             double tmp
  *             double[:,::1] jcb = self.jcb             # <<<<<<<<<<<<<<
- *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
- *         jcb[0,0] = tmp
+ *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&jcb[0,0])
+ *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&jcb[0,1])
  */
   __pyx_t_1 = __pyx_v_self->jcb;
   __PYX_INC_MEMVIEW(&__pyx_t_1, 1);
@@ -4255,225 +4226,144 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "quadvariatevectorinterpolation.pyx":226
- *             double tmp
+  /* "quadvariatevectorinterpolation.pyx":222
+ *         cdef:
  *             double[:,::1] jcb = self.jcb
- *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)             # <<<<<<<<<<<<<<
- *         jcb[0,0] = tmp
- *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
+ *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&jcb[0,0])             # <<<<<<<<<<<<<<
+ *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&jcb[0,1])
+ *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&jcb[0,2])
  */
   __pyx_t_2 = 0;
   __pyx_t_3 = 1;
   __pyx_t_4 = 2;
-  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpx->__pyx_vtab)->_ev_(__pyx_v_self->itpx, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_2)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_3)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_4)) ))), 0, 1, 0, 0, (&__pyx_v_tmp));
-
-  /* "quadvariatevectorinterpolation.pyx":227
- *             double[:,::1] jcb = self.jcb
- *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
- *         jcb[0,0] = tmp             # <<<<<<<<<<<<<<
- *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
- *         jcb[0,1] = tmp
- */
   __pyx_t_5 = 0;
   __pyx_t_6 = 0;
-  *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_5 * __pyx_v_jcb.strides[0]) )) + __pyx_t_6)) )) = __pyx_v_tmp;
+  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpx->__pyx_vtab)->_ev_(__pyx_v_self->itpx, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_2)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_3)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_4)) ))), 0, 1, 0, 0, (&(*((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_5 * __pyx_v_jcb.strides[0]) )) + __pyx_t_6)) )))));
 
-  /* "quadvariatevectorinterpolation.pyx":228
- *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
- *         jcb[0,0] = tmp
- *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)             # <<<<<<<<<<<<<<
- *         jcb[0,1] = tmp
- *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)
+  /* "quadvariatevectorinterpolation.pyx":223
+ *             double[:,::1] jcb = self.jcb
+ *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&jcb[0,0])
+ *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&jcb[0,1])             # <<<<<<<<<<<<<<
+ *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&jcb[0,2])
+ * 
  */
   __pyx_t_7 = 0;
   __pyx_t_8 = 1;
   __pyx_t_9 = 2;
-  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpx->__pyx_vtab)->_ev_(__pyx_v_self->itpx, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_7)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_8)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_9)) ))), 0, 0, 1, 0, (&__pyx_v_tmp));
-
-  /* "quadvariatevectorinterpolation.pyx":229
- *         jcb[0,0] = tmp
- *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
- *         jcb[0,1] = tmp             # <<<<<<<<<<<<<<
- *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)
- *         jcb[0,2] = tmp
- */
   __pyx_t_10 = 0;
   __pyx_t_11 = 1;
-  *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_10 * __pyx_v_jcb.strides[0]) )) + __pyx_t_11)) )) = __pyx_v_tmp;
+  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpx->__pyx_vtab)->_ev_(__pyx_v_self->itpx, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_7)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_8)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_9)) ))), 0, 0, 1, 0, (&(*((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_10 * __pyx_v_jcb.strides[0]) )) + __pyx_t_11)) )))));
 
-  /* "quadvariatevectorinterpolation.pyx":230
- *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
- *         jcb[0,1] = tmp
- *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)             # <<<<<<<<<<<<<<
- *         jcb[0,2] = tmp
+  /* "quadvariatevectorinterpolation.pyx":224
+ *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&jcb[0,0])
+ *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&jcb[0,1])
+ *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&jcb[0,2])             # <<<<<<<<<<<<<<
  * 
+ *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&jcb[1,0])
  */
   __pyx_t_12 = 0;
   __pyx_t_13 = 1;
   __pyx_t_14 = 2;
-  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpx->__pyx_vtab)->_ev_(__pyx_v_self->itpx, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_12)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_13)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_14)) ))), 0, 0, 0, 1, (&__pyx_v_tmp));
-
-  /* "quadvariatevectorinterpolation.pyx":231
- *         jcb[0,1] = tmp
- *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)
- *         jcb[0,2] = tmp             # <<<<<<<<<<<<<<
- * 
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
- */
   __pyx_t_15 = 0;
   __pyx_t_16 = 2;
-  *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_15 * __pyx_v_jcb.strides[0]) )) + __pyx_t_16)) )) = __pyx_v_tmp;
+  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpx->__pyx_vtab)->_ev_(__pyx_v_self->itpx, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_12)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_13)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_14)) ))), 0, 0, 0, 1, (&(*((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_15 * __pyx_v_jcb.strides[0]) )) + __pyx_t_16)) )))));
 
-  /* "quadvariatevectorinterpolation.pyx":233
- *         jcb[0,2] = tmp
+  /* "quadvariatevectorinterpolation.pyx":226
+ *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&jcb[0,2])
  * 
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)             # <<<<<<<<<<<<<<
- *         jcb[1,0] = tmp
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
+ *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&jcb[1,0])             # <<<<<<<<<<<<<<
+ *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&jcb[1,1])
+ *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&jcb[1,2])
  */
   __pyx_t_17 = 0;
   __pyx_t_18 = 1;
   __pyx_t_19 = 2;
-  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpy->__pyx_vtab)->_ev_(__pyx_v_self->itpy, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_17)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_18)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_19)) ))), 0, 1, 0, 0, (&__pyx_v_tmp));
-
-  /* "quadvariatevectorinterpolation.pyx":234
- * 
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
- *         jcb[1,0] = tmp             # <<<<<<<<<<<<<<
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
- *         jcb[1,1] = tmp
- */
   __pyx_t_20 = 1;
   __pyx_t_21 = 0;
-  *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_20 * __pyx_v_jcb.strides[0]) )) + __pyx_t_21)) )) = __pyx_v_tmp;
+  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpy->__pyx_vtab)->_ev_(__pyx_v_self->itpy, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_17)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_18)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_19)) ))), 0, 1, 0, 0, (&(*((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_20 * __pyx_v_jcb.strides[0]) )) + __pyx_t_21)) )))));
 
-  /* "quadvariatevectorinterpolation.pyx":235
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
- *         jcb[1,0] = tmp
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)             # <<<<<<<<<<<<<<
- *         jcb[1,1] = tmp
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)
+  /* "quadvariatevectorinterpolation.pyx":227
+ * 
+ *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&jcb[1,0])
+ *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&jcb[1,1])             # <<<<<<<<<<<<<<
+ *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&jcb[1,2])
+ * 
  */
   __pyx_t_22 = 0;
   __pyx_t_23 = 1;
   __pyx_t_24 = 2;
-  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpy->__pyx_vtab)->_ev_(__pyx_v_self->itpy, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_22)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_23)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_24)) ))), 0, 0, 1, 0, (&__pyx_v_tmp));
-
-  /* "quadvariatevectorinterpolation.pyx":236
- *         jcb[1,0] = tmp
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
- *         jcb[1,1] = tmp             # <<<<<<<<<<<<<<
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)
- *         jcb[1,2] = tmp
- */
   __pyx_t_25 = 1;
   __pyx_t_26 = 1;
-  *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_25 * __pyx_v_jcb.strides[0]) )) + __pyx_t_26)) )) = __pyx_v_tmp;
+  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpy->__pyx_vtab)->_ev_(__pyx_v_self->itpy, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_22)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_23)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_24)) ))), 0, 0, 1, 0, (&(*((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_25 * __pyx_v_jcb.strides[0]) )) + __pyx_t_26)) )))));
 
-  /* "quadvariatevectorinterpolation.pyx":237
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
- *         jcb[1,1] = tmp
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)             # <<<<<<<<<<<<<<
- *         jcb[1,2] = tmp
+  /* "quadvariatevectorinterpolation.pyx":228
+ *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&jcb[1,0])
+ *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&jcb[1,1])
+ *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&jcb[1,2])             # <<<<<<<<<<<<<<
  * 
+ *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&jcb[2,0])
  */
   __pyx_t_27 = 0;
   __pyx_t_28 = 1;
   __pyx_t_29 = 2;
-  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpy->__pyx_vtab)->_ev_(__pyx_v_self->itpy, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_27)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_28)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_29)) ))), 0, 0, 0, 1, (&__pyx_v_tmp));
-
-  /* "quadvariatevectorinterpolation.pyx":238
- *         jcb[1,1] = tmp
- *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)
- *         jcb[1,2] = tmp             # <<<<<<<<<<<<<<
- * 
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
- */
   __pyx_t_30 = 1;
   __pyx_t_31 = 2;
-  *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_30 * __pyx_v_jcb.strides[0]) )) + __pyx_t_31)) )) = __pyx_v_tmp;
+  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpy->__pyx_vtab)->_ev_(__pyx_v_self->itpy, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_27)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_28)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_29)) ))), 0, 0, 0, 1, (&(*((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_30 * __pyx_v_jcb.strides[0]) )) + __pyx_t_31)) )))));
 
-  /* "quadvariatevectorinterpolation.pyx":240
- *         jcb[1,2] = tmp
+  /* "quadvariatevectorinterpolation.pyx":230
+ *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&jcb[1,2])
  * 
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)             # <<<<<<<<<<<<<<
- *         jcb[2,0] = tmp
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
+ *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&jcb[2,0])             # <<<<<<<<<<<<<<
+ *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&jcb[2,1])
+ *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&jcb[2,2])
  */
   __pyx_t_32 = 0;
   __pyx_t_33 = 1;
   __pyx_t_34 = 2;
-  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpz->__pyx_vtab)->_ev_(__pyx_v_self->itpz, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_32)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_33)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_34)) ))), 0, 1, 0, 0, (&__pyx_v_tmp));
-
-  /* "quadvariatevectorinterpolation.pyx":241
- * 
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
- *         jcb[2,0] = tmp             # <<<<<<<<<<<<<<
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
- *         jcb[2,1] = tmp
- */
   __pyx_t_35 = 2;
   __pyx_t_36 = 0;
-  *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_35 * __pyx_v_jcb.strides[0]) )) + __pyx_t_36)) )) = __pyx_v_tmp;
+  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpz->__pyx_vtab)->_ev_(__pyx_v_self->itpz, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_32)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_33)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_34)) ))), 0, 1, 0, 0, (&(*((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_35 * __pyx_v_jcb.strides[0]) )) + __pyx_t_36)) )))));
 
-  /* "quadvariatevectorinterpolation.pyx":242
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
- *         jcb[2,0] = tmp
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)             # <<<<<<<<<<<<<<
- *         jcb[2,1] = tmp
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)
+  /* "quadvariatevectorinterpolation.pyx":231
+ * 
+ *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&jcb[2,0])
+ *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&jcb[2,1])             # <<<<<<<<<<<<<<
+ *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&jcb[2,2])
+ * 
  */
   __pyx_t_37 = 0;
   __pyx_t_38 = 1;
   __pyx_t_39 = 2;
-  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpz->__pyx_vtab)->_ev_(__pyx_v_self->itpz, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_37)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_38)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_39)) ))), 0, 0, 1, 0, (&__pyx_v_tmp));
-
-  /* "quadvariatevectorinterpolation.pyx":243
- *         jcb[2,0] = tmp
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
- *         jcb[2,1] = tmp             # <<<<<<<<<<<<<<
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)
- *         jcb[2,2] = tmp
- */
   __pyx_t_40 = 2;
   __pyx_t_41 = 1;
-  *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_40 * __pyx_v_jcb.strides[0]) )) + __pyx_t_41)) )) = __pyx_v_tmp;
+  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpz->__pyx_vtab)->_ev_(__pyx_v_self->itpz, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_37)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_38)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_39)) ))), 0, 0, 1, 0, (&(*((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_40 * __pyx_v_jcb.strides[0]) )) + __pyx_t_41)) )))));
 
-  /* "quadvariatevectorinterpolation.pyx":244
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
- *         jcb[2,1] = tmp
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)             # <<<<<<<<<<<<<<
- *         jcb[2,2] = tmp
+  /* "quadvariatevectorinterpolation.pyx":232
+ *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&jcb[2,0])
+ *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&jcb[2,1])
+ *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&jcb[2,2])             # <<<<<<<<<<<<<<
  * 
+ *         return np.copy(jcb)
  */
   __pyx_t_42 = 0;
   __pyx_t_43 = 1;
   __pyx_t_44 = 2;
-  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpz->__pyx_vtab)->_ev_(__pyx_v_self->itpz, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_42)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_43)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_44)) ))), 0, 0, 0, 1, (&__pyx_v_tmp));
-
-  /* "quadvariatevectorinterpolation.pyx":245
- *         jcb[2,1] = tmp
- *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)
- *         jcb[2,2] = tmp             # <<<<<<<<<<<<<<
- * 
- *         return np.copy(jcb)
- */
   __pyx_t_45 = 2;
   __pyx_t_46 = 2;
-  *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_45 * __pyx_v_jcb.strides[0]) )) + __pyx_t_46)) )) = __pyx_v_tmp;
+  ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpz->__pyx_vtab)->_ev_(__pyx_v_self->itpz, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_42)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_43)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_44)) ))), 0, 0, 0, 1, (&(*((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_45 * __pyx_v_jcb.strides[0]) )) + __pyx_t_46)) )))));
 
-  /* "quadvariatevectorinterpolation.pyx":247
- *         jcb[2,2] = tmp
+  /* "quadvariatevectorinterpolation.pyx":234
+ *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&jcb[2,2])
  * 
  *         return np.copy(jcb)             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_48 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_48)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __pyx_t_48 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_48)) __PYX_ERR(1, 234, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_48);
-  __pyx_t_49 = __Pyx_PyObject_GetAttrStr(__pyx_t_48, __pyx_n_s_copy); if (unlikely(!__pyx_t_49)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __pyx_t_49 = __Pyx_PyObject_GetAttrStr(__pyx_t_48, __pyx_n_s_copy); if (unlikely(!__pyx_t_49)) __PYX_ERR(1, 234, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_49);
   __Pyx_DECREF(__pyx_t_48); __pyx_t_48 = 0;
-  __pyx_t_48 = __pyx_memoryview_fromslice(__pyx_v_jcb, 2, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_48)) __PYX_ERR(1, 247, __pyx_L1_error)
+  __pyx_t_48 = __pyx_memoryview_fromslice(__pyx_v_jcb, 2, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_48)) __PYX_ERR(1, 234, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_48);
   __pyx_t_50 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_49))) {
@@ -4486,14 +4376,14 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
     }
   }
   if (!__pyx_t_50) {
-    __pyx_t_47 = __Pyx_PyObject_CallOneArg(__pyx_t_49, __pyx_t_48); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 247, __pyx_L1_error)
+    __pyx_t_47 = __Pyx_PyObject_CallOneArg(__pyx_t_49, __pyx_t_48); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 234, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_48); __pyx_t_48 = 0;
     __Pyx_GOTREF(__pyx_t_47);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_49)) {
       PyObject *__pyx_temp[2] = {__pyx_t_50, __pyx_t_48};
-      __pyx_t_47 = __Pyx_PyFunction_FastCall(__pyx_t_49, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 247, __pyx_L1_error)
+      __pyx_t_47 = __Pyx_PyFunction_FastCall(__pyx_t_49, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 234, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_50); __pyx_t_50 = 0;
       __Pyx_GOTREF(__pyx_t_47);
       __Pyx_DECREF(__pyx_t_48); __pyx_t_48 = 0;
@@ -4502,20 +4392,20 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_49)) {
       PyObject *__pyx_temp[2] = {__pyx_t_50, __pyx_t_48};
-      __pyx_t_47 = __Pyx_PyCFunction_FastCall(__pyx_t_49, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 247, __pyx_L1_error)
+      __pyx_t_47 = __Pyx_PyCFunction_FastCall(__pyx_t_49, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 234, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_50); __pyx_t_50 = 0;
       __Pyx_GOTREF(__pyx_t_47);
       __Pyx_DECREF(__pyx_t_48); __pyx_t_48 = 0;
     } else
     #endif
     {
-      __pyx_t_51 = PyTuple_New(1+1); if (unlikely(!__pyx_t_51)) __PYX_ERR(1, 247, __pyx_L1_error)
+      __pyx_t_51 = PyTuple_New(1+1); if (unlikely(!__pyx_t_51)) __PYX_ERR(1, 234, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_51);
       __Pyx_GIVEREF(__pyx_t_50); PyTuple_SET_ITEM(__pyx_t_51, 0, __pyx_t_50); __pyx_t_50 = NULL;
       __Pyx_GIVEREF(__pyx_t_48);
       PyTuple_SET_ITEM(__pyx_t_51, 0+1, __pyx_t_48);
       __pyx_t_48 = 0;
-      __pyx_t_47 = __Pyx_PyObject_Call(__pyx_t_49, __pyx_t_51, NULL); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 247, __pyx_L1_error)
+      __pyx_t_47 = __Pyx_PyObject_Call(__pyx_t_49, __pyx_t_51, NULL); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 234, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_47);
       __Pyx_DECREF(__pyx_t_51); __pyx_t_51 = 0;
     }
@@ -4525,7 +4415,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_47 = 0;
   goto __pyx_L0;
 
-  /* "quadvariatevectorinterpolation.pyx":200
+  /* "quadvariatevectorinterpolation.pyx":197
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def jac(self, double t, double[::1] pos):             # <<<<<<<<<<<<<<

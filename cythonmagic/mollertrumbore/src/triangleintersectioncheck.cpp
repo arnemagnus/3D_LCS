@@ -4713,7 +4713,7 @@ static int __pyx_f_25triangleintersectioncheck_21MollerTrumboreChecker_intersect
 
     /* "triangleintersectioncheck.pyx":292
  *             # Check if vectors from aforementioned vertices of triangle b
- *             # have opposing directions
+ *             # to the proposed intersection point have opposing directions
  *             dcopy(3,isect_pt,1,sepvec_1,1)             # <<<<<<<<<<<<<<
  *             daxpy(3,-1,b.vertex0,1,sepvec_1,1)
  *             dcopy(3,isect_pt,1,sepvec_2,1)
@@ -4721,7 +4721,7 @@ static int __pyx_f_25triangleintersectioncheck_21MollerTrumboreChecker_intersect
     __pyx_f_25triangleintersectioncheck_dcopy(3, __pyx_v_isect_pt, 1, __pyx_v_sepvec_1, 1);
 
     /* "triangleintersectioncheck.pyx":293
- *             # have opposing directions
+ *             # to the proposed intersection point have opposing directions
  *             dcopy(3,isect_pt,1,sepvec_1,1)
  *             daxpy(3,-1,b.vertex0,1,sepvec_1,1)             # <<<<<<<<<<<<<<
  *             dcopy(3,isect_pt,1,sepvec_2,1)
@@ -4815,7 +4815,7 @@ static int __pyx_f_25triangleintersectioncheck_21MollerTrumboreChecker_intersect
 
     /* "triangleintersectioncheck.pyx":309
  *             # Check if vectors from aforementioned vertices of triangle b
- *             # have opposing directions
+ *             # to the proposed intersection point have opposing directions
  *             dcopy(3,isect_pt,1,sepvec_1,1)             # <<<<<<<<<<<<<<
  *             daxpy(3,-1,b.vertex0,1,sepvec_1,1)
  *             dcopy(3,isect_pt,1,sepvec_2,1)
@@ -4823,7 +4823,7 @@ static int __pyx_f_25triangleintersectioncheck_21MollerTrumboreChecker_intersect
     __pyx_f_25triangleintersectioncheck_dcopy(3, __pyx_v_isect_pt, 1, __pyx_v_sepvec_1, 1);
 
     /* "triangleintersectioncheck.pyx":310
- *             # have opposing directions
+ *             # to the proposed intersection point have opposing directions
  *             dcopy(3,isect_pt,1,sepvec_1,1)
  *             daxpy(3,-1,b.vertex0,1,sepvec_1,1)             # <<<<<<<<<<<<<<
  *             dcopy(3,isect_pt,1,sepvec_2,1)
@@ -4926,7 +4926,7 @@ static int __pyx_f_25triangleintersectioncheck_21MollerTrumboreChecker_intersect
 
     /* "triangleintersectioncheck.pyx":326
  *             # Check if vectors from aforementioned vertices of triangle b
- *             # have opposing directions
+ *             # to the proposed intersection point have opposing directions
  *             dcopy(3,isect_pt,1,sepvec_1,1)             # <<<<<<<<<<<<<<
  *             daxpy(3,-1,b.vertex1,1,sepvec_1,1)
  *             dcopy(3,isect_pt,1,sepvec_2,1)
@@ -4934,7 +4934,7 @@ static int __pyx_f_25triangleintersectioncheck_21MollerTrumboreChecker_intersect
     __pyx_f_25triangleintersectioncheck_dcopy(3, __pyx_v_isect_pt, 1, __pyx_v_sepvec_1, 1);
 
     /* "triangleintersectioncheck.pyx":327
- *             # have opposing directions
+ *             # to the proposed intersection point have opposing directions
  *             dcopy(3,isect_pt,1,sepvec_1,1)
  *             daxpy(3,-1,b.vertex1,1,sepvec_1,1)             # <<<<<<<<<<<<<<
  *             dcopy(3,isect_pt,1,sepvec_2,1)
