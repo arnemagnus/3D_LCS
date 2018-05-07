@@ -927,7 +927,7 @@ typedef struct {
 } __Pyx_BufFmt_Context;
 
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":730
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":730
  * # in Cython to enable them only on the right systems.
  * 
  * ctypedef npy_int8       int8_t             # <<<<<<<<<<<<<<
@@ -936,7 +936,7 @@ typedef struct {
  */
 typedef npy_int8 __pyx_t_5numpy_int8_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":731
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":731
  * 
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t             # <<<<<<<<<<<<<<
@@ -945,7 +945,7 @@ typedef npy_int8 __pyx_t_5numpy_int8_t;
  */
 typedef npy_int16 __pyx_t_5numpy_int16_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":732
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":732
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t             # <<<<<<<<<<<<<<
@@ -954,7 +954,7 @@ typedef npy_int16 __pyx_t_5numpy_int16_t;
  */
 typedef npy_int32 __pyx_t_5numpy_int32_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":733
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":733
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t
  * ctypedef npy_int64      int64_t             # <<<<<<<<<<<<<<
@@ -963,7 +963,7 @@ typedef npy_int32 __pyx_t_5numpy_int32_t;
  */
 typedef npy_int64 __pyx_t_5numpy_int64_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":737
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":737
  * #ctypedef npy_int128     int128_t
  * 
  * ctypedef npy_uint8      uint8_t             # <<<<<<<<<<<<<<
@@ -972,7 +972,7 @@ typedef npy_int64 __pyx_t_5numpy_int64_t;
  */
 typedef npy_uint8 __pyx_t_5numpy_uint8_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":738
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":738
  * 
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t             # <<<<<<<<<<<<<<
@@ -981,7 +981,7 @@ typedef npy_uint8 __pyx_t_5numpy_uint8_t;
  */
 typedef npy_uint16 __pyx_t_5numpy_uint16_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":739
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":739
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t             # <<<<<<<<<<<<<<
@@ -990,7 +990,7 @@ typedef npy_uint16 __pyx_t_5numpy_uint16_t;
  */
 typedef npy_uint32 __pyx_t_5numpy_uint32_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":740
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":740
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t
  * ctypedef npy_uint64     uint64_t             # <<<<<<<<<<<<<<
@@ -999,7 +999,7 @@ typedef npy_uint32 __pyx_t_5numpy_uint32_t;
  */
 typedef npy_uint64 __pyx_t_5numpy_uint64_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":744
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":744
  * #ctypedef npy_uint128    uint128_t
  * 
  * ctypedef npy_float32    float32_t             # <<<<<<<<<<<<<<
@@ -1008,7 +1008,7 @@ typedef npy_uint64 __pyx_t_5numpy_uint64_t;
  */
 typedef npy_float32 __pyx_t_5numpy_float32_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":745
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":745
  * 
  * ctypedef npy_float32    float32_t
  * ctypedef npy_float64    float64_t             # <<<<<<<<<<<<<<
@@ -1017,7 +1017,7 @@ typedef npy_float32 __pyx_t_5numpy_float32_t;
  */
 typedef npy_float64 __pyx_t_5numpy_float64_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":754
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":754
  * # The int types are mapped a bit surprising --
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t             # <<<<<<<<<<<<<<
@@ -1026,7 +1026,7 @@ typedef npy_float64 __pyx_t_5numpy_float64_t;
  */
 typedef npy_long __pyx_t_5numpy_int_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":755
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":755
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t             # <<<<<<<<<<<<<<
@@ -1035,7 +1035,7 @@ typedef npy_long __pyx_t_5numpy_int_t;
  */
 typedef npy_longlong __pyx_t_5numpy_long_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":756
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":756
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t
  * ctypedef npy_longlong   longlong_t             # <<<<<<<<<<<<<<
@@ -1044,7 +1044,7 @@ typedef npy_longlong __pyx_t_5numpy_long_t;
  */
 typedef npy_longlong __pyx_t_5numpy_longlong_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":758
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":758
  * ctypedef npy_longlong   longlong_t
  * 
  * ctypedef npy_ulong      uint_t             # <<<<<<<<<<<<<<
@@ -1053,7 +1053,7 @@ typedef npy_longlong __pyx_t_5numpy_longlong_t;
  */
 typedef npy_ulong __pyx_t_5numpy_uint_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":759
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":759
  * 
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t             # <<<<<<<<<<<<<<
@@ -1062,7 +1062,7 @@ typedef npy_ulong __pyx_t_5numpy_uint_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":760
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":760
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t
  * ctypedef npy_ulonglong  ulonglong_t             # <<<<<<<<<<<<<<
@@ -1071,7 +1071,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":762
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":762
  * ctypedef npy_ulonglong  ulonglong_t
  * 
  * ctypedef npy_intp       intp_t             # <<<<<<<<<<<<<<
@@ -1080,7 +1080,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
  */
 typedef npy_intp __pyx_t_5numpy_intp_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":763
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":763
  * 
  * ctypedef npy_intp       intp_t
  * ctypedef npy_uintp      uintp_t             # <<<<<<<<<<<<<<
@@ -1089,7 +1089,7 @@ typedef npy_intp __pyx_t_5numpy_intp_t;
  */
 typedef npy_uintp __pyx_t_5numpy_uintp_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":765
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":765
  * ctypedef npy_uintp      uintp_t
  * 
  * ctypedef npy_double     float_t             # <<<<<<<<<<<<<<
@@ -1098,7 +1098,7 @@ typedef npy_uintp __pyx_t_5numpy_uintp_t;
  */
 typedef npy_double __pyx_t_5numpy_float_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":766
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":766
  * 
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t             # <<<<<<<<<<<<<<
@@ -1107,7 +1107,7 @@ typedef npy_double __pyx_t_5numpy_float_t;
  */
 typedef npy_double __pyx_t_5numpy_double_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":767
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":767
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t
  * ctypedef npy_longdouble longdouble_t             # <<<<<<<<<<<<<<
@@ -1163,14 +1163,14 @@ struct __pyx_obj_33straininterpolationandintegration_SplineInterpolator;
 struct __pyx_obj_33straininterpolationandintegration_InterpolatorWithOrientationFix;
 struct __pyx_obj_33straininterpolationandintegration_LinearSpecialInterpolator;
 struct __pyx_obj_33straininterpolationandintegration_CubicSpecialInterpolator;
-struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister;
+struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator;
 struct __pyx_obj_33straininterpolationandintegration_Dp87Strain;
 struct __pyx_array_obj;
 struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
 struct __pyx_memoryviewslice_obj;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":769
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":769
  * ctypedef npy_longdouble longdouble_t
  * 
  * ctypedef npy_cfloat      cfloat_t             # <<<<<<<<<<<<<<
@@ -1179,7 +1179,7 @@ struct __pyx_memoryviewslice_obj;
  */
 typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":770
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":770
  * 
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t             # <<<<<<<<<<<<<<
@@ -1188,7 +1188,7 @@ typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":771
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":771
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t
  * ctypedef npy_clongdouble clongdouble_t             # <<<<<<<<<<<<<<
@@ -1197,7 +1197,7 @@ typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
  */
 typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":773
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":773
  * ctypedef npy_clongdouble clongdouble_t
  * 
  * ctypedef npy_cdouble     complex_t             # <<<<<<<<<<<<<<
@@ -1206,7 +1206,7 @@ typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_complex_t;
 
-/* "straininterpolationandintegration.pyx":78
+/* "straininterpolationandintegration.pyx":105
  * # In-house wrapper for the bspline-3d Fortran class
  * @cython.internal
  * cdef class SplineInterpolator:             # <<<<<<<<<<<<<<
@@ -1220,7 +1220,7 @@ struct __pyx_obj_33straininterpolationandintegration_SplineInterpolator {
 };
 
 
-/* "straininterpolationandintegration.pyx":104
+/* "straininterpolationandintegration.pyx":131
  * # below.
  * @cython.internal
  * cdef class InterpolatorWithOrientationFix:             # <<<<<<<<<<<<<<
@@ -1233,12 +1233,12 @@ struct __pyx_obj_33straininterpolationandintegration_InterpolatorWithOrientation
 };
 
 
-/* "straininterpolationandintegration.pyx":115
+/* "straininterpolationandintegration.pyx":142
  *         pass
  * 
  * cdef class LinearSpecialInterpolator(InterpolatorWithOrientationFix):             # <<<<<<<<<<<<<<
- *     cdef:
- *         double[:,:,:,::1] xi
+ *     """
+ *     A Cython extension type which facilitates linear interpolation of
  */
 struct __pyx_obj_33straininterpolationandintegration_LinearSpecialInterpolator {
   struct __pyx_obj_33straininterpolationandintegration_InterpolatorWithOrientationFix __pyx_base;
@@ -1275,12 +1275,12 @@ struct __pyx_obj_33straininterpolationandintegration_LinearSpecialInterpolator {
 };
 
 
-/* "straininterpolationandintegration.pyx":314
+/* "straininterpolationandintegration.pyx":465
  *         pass
  * 
  * cdef class CubicSpecialInterpolator(InterpolatorWithOrientationFix):             # <<<<<<<<<<<<<<
- *     cdef:
- *         ItpCont *itpx
+ *     """
+ *     A Cython extension type which facilitates cubic B-spline interpolation of
  */
 struct __pyx_obj_33straininterpolationandintegration_CubicSpecialInterpolator {
   struct __pyx_obj_33straininterpolationandintegration_InterpolatorWithOrientationFix __pyx_base;
@@ -1330,16 +1330,16 @@ struct __pyx_obj_33straininterpolationandintegration_CubicSpecialInterpolator {
 };
 
 
-/* "straininterpolationandintegration.pyx":547
+/* "straininterpolationandintegration.pyx":798
  * 
  * 
- * cdef class StrainAimAssister:             # <<<<<<<<<<<<<<
- *     cdef:
- *         double _tan_vec_[3]
+ * cdef class StrainDirectionGenerator:             # <<<<<<<<<<<<<<
+ *     """
+ *     A Cython extension type intended to be used in conjunction with a
  */
-struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister {
+struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator {
   PyObject_HEAD
-  struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister *__pyx_vtab;
+  struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_vtab;
   double _tan_vec_[3];
   double _prev_vec_[3];
   double _xi_[3];
@@ -1354,12 +1354,12 @@ struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister {
 };
 
 
-/* "straininterpolationandintegration.pyx":634
+/* "straininterpolationandintegration.pyx":992
  * 
  * 
  * cdef class Dp87Strain:             # <<<<<<<<<<<<<<
- *     cdef:
- *         double fac, maxfac
+ *     """
+ *     A Cython extension type which generates trajectories in R^3 defined
  */
 struct __pyx_obj_33straininterpolationandintegration_Dp87Strain {
   PyObject_HEAD
@@ -1438,8 +1438,9 @@ struct __pyx_obj_33straininterpolationandintegration_Dp87Strain {
   double h_opt;
   double atol;
   double rtol;
+  double hmax;
   double q;
-  struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *f;
+  struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *f;
   int initialized;
 };
 
@@ -1522,7 +1523,7 @@ struct __pyx_memoryviewslice_obj {
 
 
 
-/* "straininterpolationandintegration.pyx":78
+/* "straininterpolationandintegration.pyx":105
  * # In-house wrapper for the bspline-3d Fortran class
  * @cython.internal
  * cdef class SplineInterpolator:             # <<<<<<<<<<<<<<
@@ -1536,7 +1537,7 @@ struct __pyx_vtabstruct_33straininterpolationandintegration_SplineInterpolator {
 static struct __pyx_vtabstruct_33straininterpolationandintegration_SplineInterpolator *__pyx_vtabptr_33straininterpolationandintegration_SplineInterpolator;
 
 
-/* "straininterpolationandintegration.pyx":104
+/* "straininterpolationandintegration.pyx":131
  * # below.
  * @cython.internal
  * cdef class InterpolatorWithOrientationFix:             # <<<<<<<<<<<<<<
@@ -1550,12 +1551,12 @@ struct __pyx_vtabstruct_33straininterpolationandintegration_InterpolatorWithOrie
 static struct __pyx_vtabstruct_33straininterpolationandintegration_InterpolatorWithOrientationFix *__pyx_vtabptr_33straininterpolationandintegration_InterpolatorWithOrientationFix;
 
 
-/* "straininterpolationandintegration.pyx":115
+/* "straininterpolationandintegration.pyx":142
  *         pass
  * 
  * cdef class LinearSpecialInterpolator(InterpolatorWithOrientationFix):             # <<<<<<<<<<<<<<
- *     cdef:
- *         double[:,:,:,::1] xi
+ *     """
+ *     A Cython extension type which facilitates linear interpolation of
  */
 
 struct __pyx_vtabstruct_33straininterpolationandintegration_LinearSpecialInterpolator {
@@ -1567,12 +1568,12 @@ struct __pyx_vtabstruct_33straininterpolationandintegration_LinearSpecialInterpo
 static struct __pyx_vtabstruct_33straininterpolationandintegration_LinearSpecialInterpolator *__pyx_vtabptr_33straininterpolationandintegration_LinearSpecialInterpolator;
 
 
-/* "straininterpolationandintegration.pyx":314
+/* "straininterpolationandintegration.pyx":465
  *         pass
  * 
  * cdef class CubicSpecialInterpolator(InterpolatorWithOrientationFix):             # <<<<<<<<<<<<<<
- *     cdef:
- *         ItpCont *itpx
+ *     """
+ *     A Cython extension type which facilitates cubic B-spline interpolation of
  */
 
 struct __pyx_vtabstruct_33straininterpolationandintegration_CubicSpecialInterpolator {
@@ -1582,26 +1583,26 @@ struct __pyx_vtabstruct_33straininterpolationandintegration_CubicSpecialInterpol
 static struct __pyx_vtabstruct_33straininterpolationandintegration_CubicSpecialInterpolator *__pyx_vtabptr_33straininterpolationandintegration_CubicSpecialInterpolator;
 
 
-/* "straininterpolationandintegration.pyx":547
+/* "straininterpolationandintegration.pyx":798
  * 
  * 
- * cdef class StrainAimAssister:             # <<<<<<<<<<<<<<
- *     cdef:
- *         double _tan_vec_[3]
+ * cdef class StrainDirectionGenerator:             # <<<<<<<<<<<<<<
+ *     """
+ *     A Cython extension type intended to be used in conjunction with a
  */
 
-struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister {
-  void (*_ev_)(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *, __Pyx_memviewslice, __Pyx_memviewslice &);
+struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator {
+  void (*_ev_)(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *, __Pyx_memviewslice, __Pyx_memviewslice &);
 };
-static struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister *__pyx_vtabptr_33straininterpolationandintegration_StrainAimAssister;
+static struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_vtabptr_33straininterpolationandintegration_StrainDirectionGenerator;
 
 
-/* "straininterpolationandintegration.pyx":634
+/* "straininterpolationandintegration.pyx":992
  * 
  * 
  * cdef class Dp87Strain:             # <<<<<<<<<<<<<<
- *     cdef:
- *         double fac, maxfac
+ *     """
+ *     A Cython extension type which generates trajectories in R^3 defined
  */
 
 struct __pyx_vtabstruct_33straininterpolationandintegration_Dp87Strain {
@@ -2429,7 +2430,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
 static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpolator__compute_nrmd_wtd_sum_(struct __pyx_obj_33straininterpolationandintegration_LinearSpecialInterpolator *__pyx_v_self, double __pyx_v_x, double __pyx_v_y, double __pyx_v_z, __Pyx_memviewslice &__pyx_v_xi); /* proto*/
 static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolator__interpolate_xi_(struct __pyx_obj_33straininterpolationandintegration_CubicSpecialInterpolator *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos, __Pyx_memviewslice &__pyx_v_xi); /* proto*/
 static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolator__set_voxel_indices_(struct __pyx_obj_33straininterpolationandintegration_CubicSpecialInterpolator *__pyx_v_self, double __pyx_v_x, double __pyx_v_y, double __pyx_v_z); /* proto*/
-static void __pyx_f_33straininterpolationandintegration_17StrainAimAssister__ev_(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos, __Pyx_memviewslice &__pyx_v_ret); /* proto*/
+static void __pyx_f_33straininterpolationandintegration_24StrainDirectionGenerator__ev_(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos, __Pyx_memviewslice &__pyx_v_ret); /* proto*/
 static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self, double *__pyx_v_t, __Pyx_memviewslice __pyx_v_pos, double *__pyx_v_h); /* proto*/
 static PyObject *__pyx_array_get_memview(struct __pyx_array_obj *__pyx_v_self); /* proto*/
 static char *__pyx_memoryview_get_item_pointer(struct __pyx_memoryview_obj *__pyx_v_self, PyObject *__pyx_v_index); /* proto*/
@@ -2490,7 +2491,7 @@ static PyTypeObject *__pyx_ptype_33straininterpolationandintegration_SplineInter
 static PyTypeObject *__pyx_ptype_33straininterpolationandintegration_InterpolatorWithOrientationFix = 0;
 static PyTypeObject *__pyx_ptype_33straininterpolationandintegration_LinearSpecialInterpolator = 0;
 static PyTypeObject *__pyx_ptype_33straininterpolationandintegration_CubicSpecialInterpolator = 0;
-static PyTypeObject *__pyx_ptype_33straininterpolationandintegration_StrainAimAssister = 0;
+static PyTypeObject *__pyx_ptype_33straininterpolationandintegration_StrainDirectionGenerator = 0;
 static PyTypeObject *__pyx_ptype_33straininterpolationandintegration_Dp87Strain = 0;
 static PyTypeObject *__pyx_array_type = 0;
 static PyTypeObject *__pyx_MemviewEnum_type = 0;
@@ -2578,11 +2579,11 @@ static const char __pyx_k_T[] = "T{";
   static const char __pyx_k_kz[] = "kz";
   static const char __pyx_k_np[] = "np";
   static const char __pyx_k_xi[] = "xi";
-  static const char __pyx_k__49[] = "^";
-  static const char __pyx_k__50[] = "";
-  static const char __pyx_k__51[] = ":";
-static const char __pyx_k__52[] = "}";
-static const char __pyx_k__53[] = ",";
+  static const char __pyx_k__50[] = "^";
+  static const char __pyx_k__51[] = "";
+  static const char __pyx_k__52[] = ":";
+static const char __pyx_k__53[] = "}";
+static const char __pyx_k__54[] = ",";
 static const char __pyx_k_new[] = "__new__";
 static const char __pyx_k_obj[] = "obj";
 static const char __pyx_k_pos[] = "pos";
@@ -2590,6 +2591,7 @@ static const char __pyx_k_atol[] = "atol";
 static const char __pyx_k_base[] = "base";
 static const char __pyx_k_copy[] = "copy";
 static const char __pyx_k_dict[] = "__dict__";
+static const char __pyx_k_hmax[] = "hmax";
 static const char __pyx_k_join[] = "join";
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_mode[] = "mode";
@@ -2667,14 +2669,15 @@ static const char __pyx_k_for_three_dimensional_data_3[] = " for three dimension
 static const char __pyx_k_unable_to_allocate_array_data[] = "unable to allocate array data.";
 static const char __pyx_k_pyx_unpickle_InterpolatorWithO[] = "__pyx_unpickle_InterpolatorWithOrientationFix";
 static const char __pyx_k_strided_and_direct_or_indirect[] = "<strided and direct or indirect>";
+static const char __pyx_k_This_module_contains_Cython_ext[] = "\nThis module contains Cython extension types which:\n1) Facilitate linear and cubic B-spline interpolation of vector fields in R^3,\n   with a twist indended to combat orientational discontinuities.\n2) Facilitate the approximation of three-dimensional manifolds defined\n   as being everywhere orthogonal to a (stationary) vector field, by means\n   of a slight modification of the method of geodesic level sets.\n\nThe B-spline interpolation routines make use of the Bspline-Fortran library,\nwhich is available at\n    https://github.com/jacobwilliams/bspline-fortran\n\nExtension types defined here:\n    LinearSpecialInterpolator\n    CubicSpecialInterpolator\n    StrainDirectionGenerator\n    Dp87Strain\n\nWritten by Arne Magnus T. L\303\270ken as part of my master's thesis work in physics\nat NTNU, spring 2018.\n\nVersion: 1.0\n\n";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
 static const char __pyx_k_unknown_dtype_code_in_numpy_pxd[] = "unknown dtype code in numpy.pxd (%d)";
-static const char __pyx_k_Aim_assister_not_initialized_wit[] = "Aim assister not initialized with target!";
+static const char __pyx_k_Aim_assister_not_initialized_wit[] = "Aim assister not initialized with tan_vec and/or prev_vec!";
 static const char __pyx_k_Buffer_view_does_not_expose_stri[] = "Buffer view does not expose strides";
 static const char __pyx_k_Can_only_create_a_buffer_that_is[] = "Can only create a buffer that is contiguous in memory.";
 static const char __pyx_k_Cannot_assign_to_read_only_memor[] = "Cannot assign to read-only memoryview";
 static const char __pyx_k_Cannot_create_writable_memory_vi[] = "Cannot create writable memory view from read-only memoryview";
-static const char __pyx_k_Dormand_Prince_8_7_strain_solver[] = "Dormand-Prince 8(7) strain solver not initialized with a StrainAimAssister instance!";
+static const char __pyx_k_Dormand_Prince_8_7_strain_solver[] = "Dormand-Prince 8(7) strain solver not initialized with a StrainDirectionGenerator instance!";
 static const char __pyx_k_Empty_shape_tuple_for_cython_arr[] = "Empty shape tuple for cython.array";
 static const char __pyx_k_Format_string_allocated_too_shor[] = "Format string allocated too short, see comment in numpy.pxd";
 static const char __pyx_k_Incompatible_checksums_s_vs_0xb0[] = "Incompatible checksums (%s vs 0xb068931 = (name))";
@@ -2688,6 +2691,7 @@ static const char __pyx_k_Out_of_bounds_on_buffer_access_a[] = "Out of bounds on
 static const char __pyx_k_The_interpolation_aiming_routine[] = "The interpolation-aiming routine is custom-built";
 static const char __pyx_k_The_interpolation_routine_is_cus[] = "The interpolation routine is custom-built";
 static const char __pyx_k_The_interpolator_routine_is_cust[] = "The interpolator routine is custom-built for three-dimensional data!";
+static const char __pyx_k_The_trajectory_generating_routin[] = "The trajectory generating routine is custom-built for three-dimensional data!";
 static const char __pyx_k_Unable_to_convert_item_to_object[] = "Unable to convert item to object";
 static const char __pyx_k_got_differing_extents_in_dimensi[] = "got differing extents in dimension %d (got %d and %d)";
 static const char __pyx_k_ndarray_is_not_Fortran_contiguou[] = "ndarray is not Fortran contiguous";
@@ -2732,15 +2736,16 @@ static PyObject *__pyx_kp_s_The_interpolation_aiming_routine;
 static PyObject *__pyx_kp_s_The_interpolation_routine_is_cus;
 static PyObject *__pyx_kp_s_The_interpolator_routine_is_cust;
 static PyObject *__pyx_kp_s_The_interpolator_routine_is_cust_2;
+static PyObject *__pyx_kp_s_The_trajectory_generating_routin;
 static PyObject *__pyx_n_s_TypeError;
 static PyObject *__pyx_kp_s_Unable_to_convert_item_to_object;
 static PyObject *__pyx_n_s_ValueError;
 static PyObject *__pyx_n_s_View_MemoryView;
-static PyObject *__pyx_kp_b__49;
 static PyObject *__pyx_kp_b__50;
 static PyObject *__pyx_kp_b__51;
 static PyObject *__pyx_kp_b__52;
-static PyObject *__pyx_kp_u__53;
+static PyObject *__pyx_kp_b__53;
+static PyObject *__pyx_kp_u__54;
 static PyObject *__pyx_n_s_allocate_buffer;
 static PyObject *__pyx_n_s_atol;
 static PyObject *__pyx_n_s_base;
@@ -2768,6 +2773,7 @@ static PyObject *__pyx_n_u_fortran;
 static PyObject *__pyx_n_s_getstate;
 static PyObject *__pyx_kp_s_got_differing_extents_in_dimensi;
 static PyObject *__pyx_n_s_h;
+static PyObject *__pyx_n_s_hmax;
 static PyObject *__pyx_n_s_id;
 static PyObject *__pyx_n_s_import;
 static PyObject *__pyx_n_s_itemsize;
@@ -2855,20 +2861,20 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
 static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolator_6__dealoc__(struct __pyx_obj_33straininterpolationandintegration_CubicSpecialInterpolator *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolator_8__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_33straininterpolationandintegration_CubicSpecialInterpolator *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolator_10__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_33straininterpolationandintegration_CubicSpecialInterpolator *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static int __pyx_pf_33straininterpolationandintegration_17StrainAimAssister___cinit__(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self); /* proto */
-static int __pyx_pf_33straininterpolationandintegration_17StrainAimAssister_2__init__(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self, struct __pyx_obj_33straininterpolationandintegration_InterpolatorWithOrientationFix *__pyx_v_xi_itp); /* proto */
-static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssister_4set_tan_vec(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self, __Pyx_memviewslice __pyx_v_tan_vec); /* proto */
-static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssister_6unset_tan_vec(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssister_8set_prev_vec(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self, __Pyx_memviewslice __pyx_v_prev_vec); /* proto */
-static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssister_10unset_prev_vec(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssister_12__call__(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self, CYTHON_UNUSED double __pyx_v_t, __Pyx_memviewslice __pyx_v_pos); /* proto */
-static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssister_14__dealoc__(CYTHON_UNUSED struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssister_16__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssister_18__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static int __pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator___cinit__(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self); /* proto */
+static int __pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_2__init__(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self, struct __pyx_obj_33straininterpolationandintegration_InterpolatorWithOrientationFix *__pyx_v_xi_itp); /* proto */
+static PyObject *__pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_4set_tan_vec(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self, __Pyx_memviewslice __pyx_v_tan_vec); /* proto */
+static PyObject *__pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_6unset_tan_vec(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_8set_prev_vec(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self, __Pyx_memviewslice __pyx_v_prev_vec); /* proto */
+static PyObject *__pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_10unset_prev_vec(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_12__call__(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos); /* proto */
+static PyObject *__pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_14__dealoc__(CYTHON_UNUSED struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_16__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_18__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self); /* proto */
-static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain_2__init__(struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self, double __pyx_v_atol, double __pyx_v_rtol); /* proto */
-static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_4set_aim_assister(struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self, struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_direction_generator); /* proto */
-static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_6unset_aim_assister(struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self); /* proto */
+static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain_2__init__(struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self, double __pyx_v_atol, double __pyx_v_rtol, double __pyx_v_hmax); /* proto */
+static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_4set_direction_generator(struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self, struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_direction_generator); /* proto */
+static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_6unset_direction_generator(struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_8__call__(struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self, double __pyx_v_t, __Pyx_memviewslice __pyx_v_pos, double __pyx_v_h); /* proto */
 static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_10__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_12__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
@@ -2921,7 +2927,7 @@ static PyObject *__pyx_tp_new_33straininterpolationandintegration_SplineInterpol
 static PyObject *__pyx_tp_new_33straininterpolationandintegration_InterpolatorWithOrientationFix(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_33straininterpolationandintegration_LinearSpecialInterpolator(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_33straininterpolationandintegration_CubicSpecialInterpolator(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_33straininterpolationandintegration_StrainAimAssister(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_33straininterpolationandintegration_StrainDirectionGenerator(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_33straininterpolationandintegration_Dp87Strain(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_array(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_Enum(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
@@ -2941,9 +2947,9 @@ static PyObject *__pyx_tuple__6;
 static PyObject *__pyx_tuple__7;
 static PyObject *__pyx_tuple__8;
 static PyObject *__pyx_tuple__9;
-static PyObject *__pyx_slice__43;
 static PyObject *__pyx_slice__44;
 static PyObject *__pyx_slice__45;
+static PyObject *__pyx_slice__46;
 static PyObject *__pyx_tuple__10;
 static PyObject *__pyx_tuple__11;
 static PyObject *__pyx_tuple__12;
@@ -2977,21 +2983,22 @@ static PyObject *__pyx_tuple__39;
 static PyObject *__pyx_tuple__40;
 static PyObject *__pyx_tuple__41;
 static PyObject *__pyx_tuple__42;
-static PyObject *__pyx_tuple__46;
+static PyObject *__pyx_tuple__43;
 static PyObject *__pyx_tuple__47;
 static PyObject *__pyx_tuple__48;
-static PyObject *__pyx_tuple__54;
-static PyObject *__pyx_tuple__56;
+static PyObject *__pyx_tuple__49;
+static PyObject *__pyx_tuple__55;
 static PyObject *__pyx_tuple__57;
 static PyObject *__pyx_tuple__58;
 static PyObject *__pyx_tuple__59;
 static PyObject *__pyx_tuple__60;
 static PyObject *__pyx_tuple__61;
-static PyObject *__pyx_codeobj__55;
-static PyObject *__pyx_codeobj__62;
+static PyObject *__pyx_tuple__62;
+static PyObject *__pyx_codeobj__56;
+static PyObject *__pyx_codeobj__63;
 /* Late includes */
 
-/* "straininterpolationandintegration.pyx":15
+/* "straininterpolationandintegration.pyx":42
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * cdef void daxpy(int N, double alpha, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:             # <<<<<<<<<<<<<<
@@ -3003,7 +3010,7 @@ static void __pyx_f_33straininterpolationandintegration_daxpy(int __pyx_v_N, dou
   Py_ssize_t __pyx_t_1;
   Py_ssize_t __pyx_t_2;
 
-  /* "straininterpolationandintegration.pyx":17
+  /* "straininterpolationandintegration.pyx":44
  * cdef void daxpy(int N, double alpha, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:
  *     # y <- ax + y
  *     scp_daxpy(&N, &alpha, &x[0], &INCX, &y[0], &INCY)             # <<<<<<<<<<<<<<
@@ -3014,7 +3021,7 @@ static void __pyx_f_33straininterpolationandintegration_daxpy(int __pyx_v_N, dou
   __pyx_t_2 = 0;
   __pyx_f_5scipy_6linalg_11cython_blas_daxpy((&__pyx_v_N), (&__pyx_v_alpha), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_1)) )))), (&__pyx_v_INCX), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y.data) + __pyx_t_2)) )))), (&__pyx_v_INCY));
 
-  /* "straininterpolationandintegration.pyx":15
+  /* "straininterpolationandintegration.pyx":42
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * cdef void daxpy(int N, double alpha, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:             # <<<<<<<<<<<<<<
@@ -3025,7 +3032,7 @@ static void __pyx_f_33straininterpolationandintegration_daxpy(int __pyx_v_N, dou
   /* function exit code */
 }
 
-/* "straininterpolationandintegration.pyx":22
+/* "straininterpolationandintegration.pyx":49
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * cdef void dcopy(int N, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:             # <<<<<<<<<<<<<<
@@ -3037,7 +3044,7 @@ static void __pyx_f_33straininterpolationandintegration_dcopy(int __pyx_v_N, __P
   Py_ssize_t __pyx_t_1;
   Py_ssize_t __pyx_t_2;
 
-  /* "straininterpolationandintegration.pyx":24
+  /* "straininterpolationandintegration.pyx":51
  * cdef void dcopy(int N, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:
  *     # y <- x
  *     scp_dcopy(&N, &x[0], &INCX, &y[0], &INCY)             # <<<<<<<<<<<<<<
@@ -3048,7 +3055,7 @@ static void __pyx_f_33straininterpolationandintegration_dcopy(int __pyx_v_N, __P
   __pyx_t_2 = 0;
   __pyx_f_5scipy_6linalg_11cython_blas_dcopy((&__pyx_v_N), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_1)) )))), (&__pyx_v_INCX), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y.data) + __pyx_t_2)) )))), (&__pyx_v_INCY));
 
-  /* "straininterpolationandintegration.pyx":22
+  /* "straininterpolationandintegration.pyx":49
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * cdef void dcopy(int N, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:             # <<<<<<<<<<<<<<
@@ -3059,7 +3066,7 @@ static void __pyx_f_33straininterpolationandintegration_dcopy(int __pyx_v_N, __P
   /* function exit code */
 }
 
-/* "straininterpolationandintegration.pyx":29
+/* "straininterpolationandintegration.pyx":56
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * cdef double ddot(int N, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:             # <<<<<<<<<<<<<<
@@ -3072,7 +3079,7 @@ static double __pyx_f_33straininterpolationandintegration_ddot(int __pyx_v_N, __
   Py_ssize_t __pyx_t_1;
   Py_ssize_t __pyx_t_2;
 
-  /* "straininterpolationandintegration.pyx":31
+  /* "straininterpolationandintegration.pyx":58
  * cdef double ddot(int N, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:
  *     # return xT*y
  *     return scp_ddot(&N, &x[0], &INCX, &y[0], &INCY)             # <<<<<<<<<<<<<<
@@ -3084,7 +3091,7 @@ static double __pyx_f_33straininterpolationandintegration_ddot(int __pyx_v_N, __
   __pyx_r = __pyx_f_5scipy_6linalg_11cython_blas_ddot((&__pyx_v_N), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_1)) )))), (&__pyx_v_INCX), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y.data) + __pyx_t_2)) )))), (&__pyx_v_INCY));
   goto __pyx_L0;
 
-  /* "straininterpolationandintegration.pyx":29
+  /* "straininterpolationandintegration.pyx":56
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * cdef double ddot(int N, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:             # <<<<<<<<<<<<<<
@@ -3097,7 +3104,7 @@ static double __pyx_f_33straininterpolationandintegration_ddot(int __pyx_v_N, __
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":36
+/* "straininterpolationandintegration.pyx":63
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * cdef double dnrm2(int N, double[::1] &x, int INCX) nogil:             # <<<<<<<<<<<<<<
@@ -3109,7 +3116,7 @@ static double __pyx_f_33straininterpolationandintegration_dnrm2(int __pyx_v_N, _
   double __pyx_r;
   Py_ssize_t __pyx_t_1;
 
-  /* "straininterpolationandintegration.pyx":38
+  /* "straininterpolationandintegration.pyx":65
  * cdef double dnrm2(int N, double[::1] &x, int INCX) nogil:
  *     # return (xT*t)**0.5
  *     return scp_dnrm2(&N, &x[0], &INCX)             # <<<<<<<<<<<<<<
@@ -3120,7 +3127,7 @@ static double __pyx_f_33straininterpolationandintegration_dnrm2(int __pyx_v_N, _
   __pyx_r = __pyx_f_5scipy_6linalg_11cython_blas_dnrm2((&__pyx_v_N), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_1)) )))), (&__pyx_v_INCX));
   goto __pyx_L0;
 
-  /* "straininterpolationandintegration.pyx":36
+  /* "straininterpolationandintegration.pyx":63
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * cdef double dnrm2(int N, double[::1] &x, int INCX) nogil:             # <<<<<<<<<<<<<<
@@ -3133,7 +3140,7 @@ static double __pyx_f_33straininterpolationandintegration_dnrm2(int __pyx_v_N, _
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":43
+/* "straininterpolationandintegration.pyx":70
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * cdef void dscal(int N, double alpha, double[::1] &x, int INCX) nogil:             # <<<<<<<<<<<<<<
@@ -3144,7 +3151,7 @@ static double __pyx_f_33straininterpolationandintegration_dnrm2(int __pyx_v_N, _
 static void __pyx_f_33straininterpolationandintegration_dscal(int __pyx_v_N, double __pyx_v_alpha, __Pyx_memviewslice &__pyx_v_x, int __pyx_v_INCX) {
   Py_ssize_t __pyx_t_1;
 
-  /* "straininterpolationandintegration.pyx":45
+  /* "straininterpolationandintegration.pyx":72
  * cdef void dscal(int N, double alpha, double[::1] &x, int INCX) nogil:
  *     # x <- alpha*x
  *     scp_dscal(&N, &alpha, &x[0], &INCX)             # <<<<<<<<<<<<<<
@@ -3154,7 +3161,7 @@ static void __pyx_f_33straininterpolationandintegration_dscal(int __pyx_v_N, dou
   __pyx_t_1 = 0;
   __pyx_f_5scipy_6linalg_11cython_blas_dscal((&__pyx_v_N), (&__pyx_v_alpha), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_1)) )))), (&__pyx_v_INCX));
 
-  /* "straininterpolationandintegration.pyx":43
+  /* "straininterpolationandintegration.pyx":70
  * @cython.boundscheck(False)
  * @cython.wraparound(False)
  * cdef void dscal(int N, double alpha, double[::1] &x, int INCX) nogil:             # <<<<<<<<<<<<<<
@@ -3165,7 +3172,7 @@ static void __pyx_f_33straininterpolationandintegration_dscal(int __pyx_v_N, dou
   /* function exit code */
 }
 
-/* "straininterpolationandintegration.pyx":50
+/* "straininterpolationandintegration.pyx":77
  * @cython.wraparound(False)
  * @cython.boundscheck(False)
  * cdef void _cy_cross_product_(double[::1] u, double[::1] v, double[::1] &ret):             # <<<<<<<<<<<<<<
@@ -3192,7 +3199,7 @@ static void __pyx_f_33straininterpolationandintegration__cy_cross_product_(__Pyx
   Py_ssize_t __pyx_t_15;
   __Pyx_RefNannySetupContext("_cy_cross_product_", 0);
 
-  /* "straininterpolationandintegration.pyx":52
+  /* "straininterpolationandintegration.pyx":79
  * cdef void _cy_cross_product_(double[::1] u, double[::1] v, double[::1] &ret):
  *     # ret = u x v
  *     ret[0] = u[1]*v[2]-u[2]*v[1]             # <<<<<<<<<<<<<<
@@ -3206,7 +3213,7 @@ static void __pyx_f_33straininterpolationandintegration__cy_cross_product_(__Pyx
   __pyx_t_5 = 0;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_ret.data) + __pyx_t_5)) )) = (((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_u.data) + __pyx_t_1)) ))) * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_v.data) + __pyx_t_2)) )))) - ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_u.data) + __pyx_t_3)) ))) * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_v.data) + __pyx_t_4)) )))));
 
-  /* "straininterpolationandintegration.pyx":53
+  /* "straininterpolationandintegration.pyx":80
  *     # ret = u x v
  *     ret[0] = u[1]*v[2]-u[2]*v[1]
  *     ret[1] = -(u[0]*v[2]-u[2]*v[0])             # <<<<<<<<<<<<<<
@@ -3220,7 +3227,7 @@ static void __pyx_f_33straininterpolationandintegration__cy_cross_product_(__Pyx
   __pyx_t_10 = 1;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_ret.data) + __pyx_t_10)) )) = (-(((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_u.data) + __pyx_t_6)) ))) * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_v.data) + __pyx_t_7)) )))) - ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_u.data) + __pyx_t_8)) ))) * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_v.data) + __pyx_t_9)) ))))));
 
-  /* "straininterpolationandintegration.pyx":54
+  /* "straininterpolationandintegration.pyx":81
  *     ret[0] = u[1]*v[2]-u[2]*v[1]
  *     ret[1] = -(u[0]*v[2]-u[2]*v[0])
  *     ret[2] = u[0]*v[1]-u[1]*v[0]             # <<<<<<<<<<<<<<
@@ -3234,7 +3241,7 @@ static void __pyx_f_33straininterpolationandintegration__cy_cross_product_(__Pyx
   __pyx_t_15 = 2;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_ret.data) + __pyx_t_15)) )) = (((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_u.data) + __pyx_t_11)) ))) * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_v.data) + __pyx_t_12)) )))) - ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_u.data) + __pyx_t_13)) ))) * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_v.data) + __pyx_t_14)) )))));
 
-  /* "straininterpolationandintegration.pyx":50
+  /* "straininterpolationandintegration.pyx":77
  * @cython.wraparound(False)
  * @cython.boundscheck(False)
  * cdef void _cy_cross_product_(double[::1] u, double[::1] v, double[::1] &ret):             # <<<<<<<<<<<<<<
@@ -3246,7 +3253,7 @@ static void __pyx_f_33straininterpolationandintegration__cy_cross_product_(__Pyx
   __Pyx_RefNannyFinishContext();
 }
 
-/* "straininterpolationandintegration.pyx":58
+/* "straininterpolationandintegration.pyx":85
  * @cython.cdivision(True)
  * @cython.initializedcheck(False)
  * cdef void _cy_normalize_(double[::1] v):             # <<<<<<<<<<<<<<
@@ -3261,7 +3268,7 @@ static void __pyx_f_33straininterpolationandintegration__cy_normalize_(__Pyx_mem
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("_cy_normalize_", 0);
 
-  /* "straininterpolationandintegration.pyx":61
+  /* "straininterpolationandintegration.pyx":88
  *     # v <- v / ||v||_2
  *     cdef:
  *         int N = v.shape[0]             # <<<<<<<<<<<<<<
@@ -3270,7 +3277,7 @@ static void __pyx_f_33straininterpolationandintegration__cy_normalize_(__Pyx_mem
  */
   __pyx_v_N = (__pyx_v_v.shape[0]);
 
-  /* "straininterpolationandintegration.pyx":62
+  /* "straininterpolationandintegration.pyx":89
  *     cdef:
  *         int N = v.shape[0]
  *         int INCX = 1             # <<<<<<<<<<<<<<
@@ -3279,7 +3286,7 @@ static void __pyx_f_33straininterpolationandintegration__cy_normalize_(__Pyx_mem
  */
   __pyx_v_INCX = 1;
 
-  /* "straininterpolationandintegration.pyx":63
+  /* "straininterpolationandintegration.pyx":90
  *         int N = v.shape[0]
  *         int INCX = 1
  *     while(dnrm2(N,v,INCX) < 0.0001):             # <<<<<<<<<<<<<<
@@ -3290,7 +3297,7 @@ static void __pyx_f_33straininterpolationandintegration__cy_normalize_(__Pyx_mem
     __pyx_t_1 = ((__pyx_f_33straininterpolationandintegration_dnrm2(__pyx_v_N, __pyx_v_v, __pyx_v_INCX) < 0.0001) != 0);
     if (!__pyx_t_1) break;
 
-    /* "straininterpolationandintegration.pyx":64
+    /* "straininterpolationandintegration.pyx":91
  *         int INCX = 1
  *     while(dnrm2(N,v,INCX) < 0.0001):
  *         dscal(N,100,v,INCX)             # <<<<<<<<<<<<<<
@@ -3300,7 +3307,7 @@ static void __pyx_f_33straininterpolationandintegration__cy_normalize_(__Pyx_mem
     __pyx_f_33straininterpolationandintegration_dscal(__pyx_v_N, 100.0, __pyx_v_v, __pyx_v_INCX);
   }
 
-  /* "straininterpolationandintegration.pyx":65
+  /* "straininterpolationandintegration.pyx":92
  *     while(dnrm2(N,v,INCX) < 0.0001):
  *         dscal(N,100,v,INCX)
  *     dscal(N,1/dnrm2(N,v,INCX),v,INCX)             # <<<<<<<<<<<<<<
@@ -3309,7 +3316,7 @@ static void __pyx_f_33straininterpolationandintegration__cy_normalize_(__Pyx_mem
  */
   __pyx_f_33straininterpolationandintegration_dscal(__pyx_v_N, (1.0 / __pyx_f_33straininterpolationandintegration_dnrm2(__pyx_v_N, __pyx_v_v, __pyx_v_INCX)), __pyx_v_v, __pyx_v_INCX);
 
-  /* "straininterpolationandintegration.pyx":58
+  /* "straininterpolationandintegration.pyx":85
  * @cython.cdivision(True)
  * @cython.initializedcheck(False)
  * cdef void _cy_normalize_(double[::1] v):             # <<<<<<<<<<<<<<
@@ -3321,7 +3328,7 @@ static void __pyx_f_33straininterpolationandintegration__cy_normalize_(__Pyx_mem
   __Pyx_RefNannyFinishContext();
 }
 
-/* "straininterpolationandintegration.pyx":84
+/* "straininterpolationandintegration.pyx":111
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __cinit__(self, double[::1] x, double[::1] y, double[::1] z, double[::1] f,             # <<<<<<<<<<<<<<
@@ -3378,47 +3385,47 @@ static int __pyx_pw_33straininterpolationandintegration_18SplineInterpolator_1__
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_y)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 8, 8, 1); __PYX_ERR(1, 84, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 8, 8, 1); __PYX_ERR(1, 111, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_z)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 8, 8, 2); __PYX_ERR(1, 84, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 8, 8, 2); __PYX_ERR(1, 111, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_f)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 8, 8, 3); __PYX_ERR(1, 84, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 8, 8, 3); __PYX_ERR(1, 111, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
         if (likely((values[4] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_kx)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 8, 8, 4); __PYX_ERR(1, 84, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 8, 8, 4); __PYX_ERR(1, 111, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  5:
         if (likely((values[5] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_ky)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 8, 8, 5); __PYX_ERR(1, 84, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 8, 8, 5); __PYX_ERR(1, 111, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  6:
         if (likely((values[6] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_kz)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 8, 8, 6); __PYX_ERR(1, 84, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 8, 8, 6); __PYX_ERR(1, 111, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  7:
         if (likely((values[7] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_extrap)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 8, 8, 7); __PYX_ERR(1, 84, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 8, 8, 7); __PYX_ERR(1, 111, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 84, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 111, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 8) {
       goto __pyx_L5_argtuple_error;
@@ -3432,18 +3439,18 @@ static int __pyx_pw_33straininterpolationandintegration_18SplineInterpolator_1__
       values[6] = PyTuple_GET_ITEM(__pyx_args, 6);
       values[7] = PyTuple_GET_ITEM(__pyx_args, 7);
     }
-    __pyx_v_x = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 84, __pyx_L3_error)
-    __pyx_v_y = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_y.memview)) __PYX_ERR(1, 84, __pyx_L3_error)
-    __pyx_v_z = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[2], PyBUF_WRITABLE); if (unlikely(!__pyx_v_z.memview)) __PYX_ERR(1, 84, __pyx_L3_error)
-    __pyx_v_f = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_f.memview)) __PYX_ERR(1, 84, __pyx_L3_error)
-    __pyx_v_kx = __Pyx_PyInt_As_int(values[4]); if (unlikely((__pyx_v_kx == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 85, __pyx_L3_error)
-    __pyx_v_ky = __Pyx_PyInt_As_int(values[5]); if (unlikely((__pyx_v_ky == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 85, __pyx_L3_error)
-    __pyx_v_kz = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_kz == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 85, __pyx_L3_error)
-    __pyx_v_extrap = __Pyx_PyObject_IsTrue(values[7]); if (unlikely((__pyx_v_extrap == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 85, __pyx_L3_error)
+    __pyx_v_x = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 111, __pyx_L3_error)
+    __pyx_v_y = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_y.memview)) __PYX_ERR(1, 111, __pyx_L3_error)
+    __pyx_v_z = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[2], PyBUF_WRITABLE); if (unlikely(!__pyx_v_z.memview)) __PYX_ERR(1, 111, __pyx_L3_error)
+    __pyx_v_f = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_f.memview)) __PYX_ERR(1, 111, __pyx_L3_error)
+    __pyx_v_kx = __Pyx_PyInt_As_int(values[4]); if (unlikely((__pyx_v_kx == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 112, __pyx_L3_error)
+    __pyx_v_ky = __Pyx_PyInt_As_int(values[5]); if (unlikely((__pyx_v_ky == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 112, __pyx_L3_error)
+    __pyx_v_kz = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_kz == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 112, __pyx_L3_error)
+    __pyx_v_extrap = __Pyx_PyObject_IsTrue(values[7]); if (unlikely((__pyx_v_extrap == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 112, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 8, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 84, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 8, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 111, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("straininterpolationandintegration.SplineInterpolator.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3468,7 +3475,7 @@ static int __pyx_pf_33straininterpolationandintegration_18SplineInterpolator___c
   Py_ssize_t __pyx_t_6;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "straininterpolationandintegration.pyx":88
+  /* "straininterpolationandintegration.pyx":115
  *         cdef:
  *             int ext
  *         self.interp = new ItpCont()             # <<<<<<<<<<<<<<
@@ -3479,11 +3486,11 @@ static int __pyx_pf_33straininterpolationandintegration_18SplineInterpolator___c
     __pyx_t_1 = new ItpCont();
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(1, 88, __pyx_L1_error)
+    __PYX_ERR(1, 115, __pyx_L1_error)
   }
   __pyx_v_self->interp = __pyx_t_1;
 
-  /* "straininterpolationandintegration.pyx":89
+  /* "straininterpolationandintegration.pyx":116
  *             int ext
  *         self.interp = new ItpCont()
  *         if extrap:             # <<<<<<<<<<<<<<
@@ -3493,7 +3500,7 @@ static int __pyx_pf_33straininterpolationandintegration_18SplineInterpolator___c
   __pyx_t_2 = (__pyx_v_extrap != 0);
   if (__pyx_t_2) {
 
-    /* "straininterpolationandintegration.pyx":90
+    /* "straininterpolationandintegration.pyx":117
  *         self.interp = new ItpCont()
  *         if extrap:
  *             ext = 1             # <<<<<<<<<<<<<<
@@ -3502,7 +3509,7 @@ static int __pyx_pf_33straininterpolationandintegration_18SplineInterpolator___c
  */
     __pyx_v_ext = 1;
 
-    /* "straininterpolationandintegration.pyx":89
+    /* "straininterpolationandintegration.pyx":116
  *             int ext
  *         self.interp = new ItpCont()
  *         if extrap:             # <<<<<<<<<<<<<<
@@ -3512,7 +3519,7 @@ static int __pyx_pf_33straininterpolationandintegration_18SplineInterpolator___c
     goto __pyx_L3;
   }
 
-  /* "straininterpolationandintegration.pyx":92
+  /* "straininterpolationandintegration.pyx":119
  *             ext = 1
  *         else:
  *             ext = 0             # <<<<<<<<<<<<<<
@@ -3524,7 +3531,7 @@ static int __pyx_pf_33straininterpolationandintegration_18SplineInterpolator___c
   }
   __pyx_L3:;
 
-  /* "straininterpolationandintegration.pyx":93
+  /* "straininterpolationandintegration.pyx":120
  *         else:
  *             ext = 0
  *         self.interp.init_interp(&x[0],&y[0],&z[0],&f[0],kx,ky,kz,x.shape[0],y.shape[0],z.shape[0],ext)             # <<<<<<<<<<<<<<
@@ -3539,10 +3546,10 @@ static int __pyx_pf_33straininterpolationandintegration_18SplineInterpolator___c
     __pyx_v_self->interp->init_interp((&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_3)) )))), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y.data) + __pyx_t_4)) )))), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_z.data) + __pyx_t_5)) )))), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_f.data) + __pyx_t_6)) )))), __pyx_v_kx, __pyx_v_ky, __pyx_v_kz, (__pyx_v_x.shape[0]), (__pyx_v_y.shape[0]), (__pyx_v_z.shape[0]), __pyx_v_ext);
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(1, 93, __pyx_L1_error)
+    __PYX_ERR(1, 120, __pyx_L1_error)
   }
 
-  /* "straininterpolationandintegration.pyx":84
+  /* "straininterpolationandintegration.pyx":111
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __cinit__(self, double[::1] x, double[::1] y, double[::1] z, double[::1] f,             # <<<<<<<<<<<<<<
@@ -3565,7 +3572,7 @@ static int __pyx_pf_33straininterpolationandintegration_18SplineInterpolator___c
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":94
+/* "straininterpolationandintegration.pyx":121
  *             ext = 0
  *         self.interp.init_interp(&x[0],&y[0],&z[0],&f[0],kx,ky,kz,x.shape[0],y.shape[0],z.shape[0],ext)
  *     cdef void _ev_(self, double x, double y, double z, int kx, int ky, int kz, int kq, double*ret):             # <<<<<<<<<<<<<<
@@ -3578,7 +3585,7 @@ static void __pyx_f_33straininterpolationandintegration_18SplineInterpolator__ev
   double __pyx_t_1;
   __Pyx_RefNannySetupContext("_ev_", 0);
 
-  /* "straininterpolationandintegration.pyx":95
+  /* "straininterpolationandintegration.pyx":122
  *         self.interp.init_interp(&x[0],&y[0],&z[0],&f[0],kx,ky,kz,x.shape[0],y.shape[0],z.shape[0],ext)
  *     cdef void _ev_(self, double x, double y, double z, int kx, int ky, int kz, int kq, double*ret):
  *         ret[0] = self.interp.eval_interp(x,y,z,kx,ky,kz)             # <<<<<<<<<<<<<<
@@ -3589,11 +3596,11 @@ static void __pyx_f_33straininterpolationandintegration_18SplineInterpolator__ev
     __pyx_t_1 = __pyx_v_self->interp->eval_interp(__pyx_v_x, __pyx_v_y, __pyx_v_z, __pyx_v_kx, __pyx_v_ky, __pyx_v_kz);
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(1, 95, __pyx_L1_error)
+    __PYX_ERR(1, 122, __pyx_L1_error)
   }
   (__pyx_v_ret[0]) = __pyx_t_1;
 
-  /* "straininterpolationandintegration.pyx":94
+  /* "straininterpolationandintegration.pyx":121
  *             ext = 0
  *         self.interp.init_interp(&x[0],&y[0],&z[0],&f[0],kx,ky,kz,x.shape[0],y.shape[0],z.shape[0],ext)
  *     cdef void _ev_(self, double x, double y, double z, int kx, int ky, int kz, int kq, double*ret):             # <<<<<<<<<<<<<<
@@ -3609,7 +3616,7 @@ static void __pyx_f_33straininterpolationandintegration_18SplineInterpolator__ev
   __Pyx_RefNannyFinishContext();
 }
 
-/* "straininterpolationandintegration.pyx":96
+/* "straininterpolationandintegration.pyx":123
  *     cdef void _ev_(self, double x, double y, double z, int kx, int ky, int kz, int kq, double*ret):
  *         ret[0] = self.interp.eval_interp(x,y,z,kx,ky,kz)
  *     def __dealoc__(self):             # <<<<<<<<<<<<<<
@@ -3636,7 +3643,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_18SplineInterpolat
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealoc__", 0);
 
-  /* "straininterpolationandintegration.pyx":97
+  /* "straininterpolationandintegration.pyx":124
  *         ret[0] = self.interp.eval_interp(x,y,z,kx,ky,kz)
  *     def __dealoc__(self):
  *         if self.interp is not NULL:             # <<<<<<<<<<<<<<
@@ -3646,7 +3653,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_18SplineInterpolat
   __pyx_t_1 = ((__pyx_v_self->interp != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "straininterpolationandintegration.pyx":98
+    /* "straininterpolationandintegration.pyx":125
  *     def __dealoc__(self):
  *         if self.interp is not NULL:
  *             del self.interp             # <<<<<<<<<<<<<<
@@ -3655,7 +3662,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_18SplineInterpolat
  */
     delete __pyx_v_self->interp;
 
-    /* "straininterpolationandintegration.pyx":97
+    /* "straininterpolationandintegration.pyx":124
  *         ret[0] = self.interp.eval_interp(x,y,z,kx,ky,kz)
  *     def __dealoc__(self):
  *         if self.interp is not NULL:             # <<<<<<<<<<<<<<
@@ -3664,7 +3671,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_18SplineInterpolat
  */
   }
 
-  /* "straininterpolationandintegration.pyx":96
+  /* "straininterpolationandintegration.pyx":123
  *     cdef void _ev_(self, double x, double y, double z, int kx, int ky, int kz, int kq, double*ret):
  *         ret[0] = self.interp.eval_interp(x,y,z,kx,ky,kz)
  *     def __dealoc__(self):             # <<<<<<<<<<<<<<
@@ -3786,7 +3793,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_18SplineInterpolat
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":105
+/* "straininterpolationandintegration.pyx":132
  * @cython.internal
  * cdef class InterpolatorWithOrientationFix:
  *     def __init__(self, double[::1] x not None, double[::1] y not None, double[::1] z not None,             # <<<<<<<<<<<<<<
@@ -3840,41 +3847,41 @@ static int __pyx_pw_33straininterpolationandintegration_30InterpolatorWithOrient
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_y)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 7, 7, 1); __PYX_ERR(1, 105, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 1, 7, 7, 1); __PYX_ERR(1, 132, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_z)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 7, 7, 2); __PYX_ERR(1, 105, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 1, 7, 7, 2); __PYX_ERR(1, 132, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_xi)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 7, 7, 3); __PYX_ERR(1, 105, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 1, 7, 7, 3); __PYX_ERR(1, 132, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
         if (likely((values[4] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_kx)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 7, 7, 4); __PYX_ERR(1, 105, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 1, 7, 7, 4); __PYX_ERR(1, 132, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  5:
         if (likely((values[5] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_ky)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 7, 7, 5); __PYX_ERR(1, 105, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 1, 7, 7, 5); __PYX_ERR(1, 132, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  6:
         if (likely((values[6] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_kz)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 7, 7, 6); __PYX_ERR(1, 105, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 1, 7, 7, 6); __PYX_ERR(1, 132, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 105, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 132, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 7) {
       goto __pyx_L5_argtuple_error;
@@ -3887,33 +3894,33 @@ static int __pyx_pw_33straininterpolationandintegration_30InterpolatorWithOrient
       values[5] = PyTuple_GET_ITEM(__pyx_args, 5);
       values[6] = PyTuple_GET_ITEM(__pyx_args, 6);
     }
-    __pyx_v_x = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 105, __pyx_L3_error)
-    __pyx_v_y = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_y.memview)) __PYX_ERR(1, 105, __pyx_L3_error)
-    __pyx_v_z = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[2], PyBUF_WRITABLE); if (unlikely(!__pyx_v_z.memview)) __PYX_ERR(1, 105, __pyx_L3_error)
-    __pyx_v_xi = __Pyx_PyObject_to_MemoryviewSlice_d_d_d_dc_double(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_xi.memview)) __PYX_ERR(1, 106, __pyx_L3_error)
-    __pyx_v_kx = __Pyx_PyInt_As_int(values[4]); if (unlikely((__pyx_v_kx == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 106, __pyx_L3_error)
-    __pyx_v_ky = __Pyx_PyInt_As_int(values[5]); if (unlikely((__pyx_v_ky == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 106, __pyx_L3_error)
-    __pyx_v_kz = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_kz == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 106, __pyx_L3_error)
+    __pyx_v_x = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 132, __pyx_L3_error)
+    __pyx_v_y = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_y.memview)) __PYX_ERR(1, 132, __pyx_L3_error)
+    __pyx_v_z = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[2], PyBUF_WRITABLE); if (unlikely(!__pyx_v_z.memview)) __PYX_ERR(1, 132, __pyx_L3_error)
+    __pyx_v_xi = __Pyx_PyObject_to_MemoryviewSlice_d_d_d_dc_double(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_xi.memview)) __PYX_ERR(1, 133, __pyx_L3_error)
+    __pyx_v_kx = __Pyx_PyInt_As_int(values[4]); if (unlikely((__pyx_v_kx == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 133, __pyx_L3_error)
+    __pyx_v_ky = __Pyx_PyInt_As_int(values[5]); if (unlikely((__pyx_v_ky == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 133, __pyx_L3_error)
+    __pyx_v_kz = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_kz == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 133, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 1, 7, 7, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 105, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 1, 7, 7, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 132, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("straininterpolationandintegration.InterpolatorWithOrientationFix.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(((PyObject *)__pyx_v_x.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "x"); __PYX_ERR(1, 105, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "x"); __PYX_ERR(1, 132, __pyx_L1_error)
   }
   if (unlikely(((PyObject *)__pyx_v_y.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "y"); __PYX_ERR(1, 105, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "y"); __PYX_ERR(1, 132, __pyx_L1_error)
   }
   if (unlikely(((PyObject *)__pyx_v_z.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "z"); __PYX_ERR(1, 105, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "z"); __PYX_ERR(1, 132, __pyx_L1_error)
   }
   if (unlikely(((PyObject *)__pyx_v_xi.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "xi"); __PYX_ERR(1, 106, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "xi"); __PYX_ERR(1, 133, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_33straininterpolationandintegration_30InterpolatorWithOrientationFix___init__(((struct __pyx_obj_33straininterpolationandintegration_InterpolatorWithOrientationFix *)__pyx_v_self), __pyx_v_x, __pyx_v_y, __pyx_v_z, __pyx_v_xi, __pyx_v_kx, __pyx_v_ky, __pyx_v_kz);
 
@@ -3941,7 +3948,7 @@ static int __pyx_pf_33straininterpolationandintegration_30InterpolatorWithOrient
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":108
+/* "straininterpolationandintegration.pyx":135
  *                        double[:,:,:,::1] xi not None, int kx, int ky, int kz):
  *         pass
  *     def __call__(self, double[::1] pos not None):             # <<<<<<<<<<<<<<
@@ -3975,25 +3982,25 @@ static PyObject *__pyx_pw_33straininterpolationandintegration_30InterpolatorWith
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 108, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 135, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
     }
-    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 108, __pyx_L3_error)
+    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 135, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 108, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 135, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("straininterpolationandintegration.InterpolatorWithOrientationFix.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(((PyObject *)__pyx_v_pos.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "pos"); __PYX_ERR(1, 108, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "pos"); __PYX_ERR(1, 135, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_33straininterpolationandintegration_30InterpolatorWithOrientationFix_2__call__(((struct __pyx_obj_33straininterpolationandintegration_InterpolatorWithOrientationFix *)__pyx_v_self), __pyx_v_pos);
 
@@ -4019,7 +4026,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_30InterpolatorWith
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":110
+/* "straininterpolationandintegration.pyx":137
  *     def __call__(self, double[::1] pos not None):
  *         pass
  *     cdef void _interpolate_xi_(self, double[::1] pos, double[::1] &ret):             # <<<<<<<<<<<<<<
@@ -4035,7 +4042,7 @@ static void __pyx_f_33straininterpolationandintegration_30InterpolatorWithOrient
   __Pyx_RefNannyFinishContext();
 }
 
-/* "straininterpolationandintegration.pyx":112
+/* "straininterpolationandintegration.pyx":139
  *     cdef void _interpolate_xi_(self, double[::1] pos, double[::1] &ret):
  *         pass
  *     def __dealoc__(self):             # <<<<<<<<<<<<<<
@@ -4349,7 +4356,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_30InterpolatorWith
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":132
+/* "straininterpolationandintegration.pyx":172
  *         double x_internal, y_internal, z_internal
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -4385,7 +4392,7 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
   __Pyx_memviewslice __pyx_t_7 = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "straininterpolationandintegration.pyx":133
+  /* "straininterpolationandintegration.pyx":173
  * 
  *     def __cinit__(self):
  *         self.xia = self._xia_             # <<<<<<<<<<<<<<
@@ -4395,26 +4402,26 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_1 = __pyx_v_self->_xia_;
   if (!__pyx_t_1) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 133, __pyx_L1_error)
+    __PYX_ERR(1, 173, __pyx_L1_error)
   }
   __pyx_t_4 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_3 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 133, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_2 = __pyx_array_new(__pyx_t_3, sizeof(double), PyBytes_AS_STRING(__pyx_t_4), (char *) "fortran", (char *) __pyx_t_1);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 133, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 133, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 173, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->xia, 0);
   __pyx_v_self->xia = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":134
+  /* "straininterpolationandintegration.pyx":174
  *     def __cinit__(self):
  *         self.xia = self._xia_
  *         self.xi_ref = self._xi_ref_             # <<<<<<<<<<<<<<
@@ -4424,26 +4431,26 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_1 = __pyx_v_self->_xi_ref_;
   if (!__pyx_t_1) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 134, __pyx_L1_error)
+    __PYX_ERR(1, 174, __pyx_L1_error)
   }
   __pyx_t_3 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_4 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 134, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 174, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_2 = __pyx_array_new(__pyx_t_4, sizeof(double), PyBytes_AS_STRING(__pyx_t_3), (char *) "fortran", (char *) __pyx_t_1);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 134, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 174, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 134, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 174, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->xi_ref, 0);
   __pyx_v_self->xi_ref = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":135
+  /* "straininterpolationandintegration.pyx":175
  *         self.xia = self._xia_
  *         self.xi_ref = self._xi_ref_
  *         self.xi_cube = self._xi_cube_             # <<<<<<<<<<<<<<
@@ -4453,26 +4460,26 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_6 = __pyx_v_self->_xi_cube_;
   if (!__pyx_t_6) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 135, __pyx_L1_error)
+    __PYX_ERR(1, 175, __pyx_L1_error)
   }
   __pyx_t_4 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_3 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)8), ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 135, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_2 = __pyx_array_new(__pyx_t_3, sizeof(double), PyBytes_AS_STRING(__pyx_t_4), (char *) "c", (char *) __pyx_t_6);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 135, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 135, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 175, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->xi_cube, 0);
   __pyx_v_self->xi_cube = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":136
+  /* "straininterpolationandintegration.pyx":176
  *         self.xi_ref = self._xi_ref_
  *         self.xi_cube = self._xi_cube_
  *         self.ret = self._ret_             # <<<<<<<<<<<<<<
@@ -4482,26 +4489,26 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_1 = __pyx_v_self->_ret_;
   if (!__pyx_t_1) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 136, __pyx_L1_error)
+    __PYX_ERR(1, 176, __pyx_L1_error)
   }
   __pyx_t_3 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_4 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 136, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 176, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_2 = __pyx_array_new(__pyx_t_4, sizeof(double), PyBytes_AS_STRING(__pyx_t_3), (char *) "fortran", (char *) __pyx_t_1);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 136, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 176, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 136, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 176, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->ret, 0);
   __pyx_v_self->ret = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":132
+  /* "straininterpolationandintegration.pyx":172
  *         double x_internal, y_internal, z_internal
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -4525,16 +4532,20 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":141
+/* "straininterpolationandintegration.pyx":181
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __init__(self, double[::1] x not None, double[::1] y not None,             # <<<<<<<<<<<<<<
  *                        double[::1] z not None, double[:,:,:,::1] xi not None):
- * 
+ *         """
  */
 
 /* Python wrapper */
 static int __pyx_pw_33straininterpolationandintegration_25LinearSpecialInterpolator_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_33straininterpolationandintegration_25LinearSpecialInterpolator_2__init__[] = "\n        LinearSpecialInterpolator.__init__(x,y,z,xi)\n\n        Constructor for a LinearSpecialInterpolator instance.\n\n        Parameters\n        ----------\n        x : (nx,) array-like\n           A (C-contiguous) NumPy array of type np.float64 and shape (nx,),\n           containing the sampling points along the x abscissa.\n           Must be strictly increasing.\n        y : (ny,) array-like\n           A (C-contiguous) NumPy array of type np.float64 and shape (ny,),\n           containing the sampling points along the y abscissa.\n           Must be strictly increasing.\n        z : (nz,) array-like\n           A (C-contiguous) NumPy array of type np.float64 and shape (nz,),\n           containing the sampling points along the z abscissa.\n           Must be strictly increasing.\n        xi : (nx,ny,nz,3) array-like\n           A (C-contiguous) NumPy array of type np.float64 and shape\n           (nx,ny,nz,3), containing the sampled vector field.\n           xi[i,j,k] should correspond to the sample at (x[i],y[j],z[k]).\n\n        ";
+#if CYTHON_COMPILING_IN_CPYTHON
+struct wrapperbase __pyx_wrapperbase_33straininterpolationandintegration_25LinearSpecialInterpolator_2__init__;
+#endif
 static int __pyx_pw_33straininterpolationandintegration_25LinearSpecialInterpolator_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_x = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_y = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -4570,23 +4581,23 @@ static int __pyx_pw_33straininterpolationandintegration_25LinearSpecialInterpola
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_y)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 4, 4, 1); __PYX_ERR(1, 141, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 1, 4, 4, 1); __PYX_ERR(1, 181, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_z)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 4, 4, 2); __PYX_ERR(1, 141, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 1, 4, 4, 2); __PYX_ERR(1, 181, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_xi)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 4, 4, 3); __PYX_ERR(1, 141, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 1, 4, 4, 3); __PYX_ERR(1, 181, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 141, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 181, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 4) {
       goto __pyx_L5_argtuple_error;
@@ -4596,30 +4607,30 @@ static int __pyx_pw_33straininterpolationandintegration_25LinearSpecialInterpola
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
       values[3] = PyTuple_GET_ITEM(__pyx_args, 3);
     }
-    __pyx_v_x = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 141, __pyx_L3_error)
-    __pyx_v_y = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_y.memview)) __PYX_ERR(1, 141, __pyx_L3_error)
-    __pyx_v_z = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[2], PyBUF_WRITABLE); if (unlikely(!__pyx_v_z.memview)) __PYX_ERR(1, 142, __pyx_L3_error)
-    __pyx_v_xi = __Pyx_PyObject_to_MemoryviewSlice_d_d_d_dc_double(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_xi.memview)) __PYX_ERR(1, 142, __pyx_L3_error)
+    __pyx_v_x = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 181, __pyx_L3_error)
+    __pyx_v_y = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_y.memview)) __PYX_ERR(1, 181, __pyx_L3_error)
+    __pyx_v_z = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[2], PyBUF_WRITABLE); if (unlikely(!__pyx_v_z.memview)) __PYX_ERR(1, 182, __pyx_L3_error)
+    __pyx_v_xi = __Pyx_PyObject_to_MemoryviewSlice_d_d_d_dc_double(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_xi.memview)) __PYX_ERR(1, 182, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 141, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 1, 4, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 181, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("straininterpolationandintegration.LinearSpecialInterpolator.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(((PyObject *)__pyx_v_x.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "x"); __PYX_ERR(1, 141, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "x"); __PYX_ERR(1, 181, __pyx_L1_error)
   }
   if (unlikely(((PyObject *)__pyx_v_y.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "y"); __PYX_ERR(1, 141, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "y"); __PYX_ERR(1, 181, __pyx_L1_error)
   }
   if (unlikely(((PyObject *)__pyx_v_z.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "z"); __PYX_ERR(1, 142, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "z"); __PYX_ERR(1, 182, __pyx_L1_error)
   }
   if (unlikely(((PyObject *)__pyx_v_xi.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "xi"); __PYX_ERR(1, 142, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "xi"); __PYX_ERR(1, 182, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpolator_2__init__(((struct __pyx_obj_33straininterpolationandintegration_LinearSpecialInterpolator *)__pyx_v_self), __pyx_v_x, __pyx_v_y, __pyx_v_z, __pyx_v_xi);
 
@@ -4656,9 +4667,9 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
   int __pyx_t_19;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "straininterpolationandintegration.pyx":144
- *                        double[::1] z not None, double[:,:,:,::1] xi not None):
+  /* "straininterpolationandintegration.pyx":208
  * 
+ *         """
  *         if (xi.shape[0] != x.shape[0] or xi.shape[1] != y.shape[0] or xi.shape[2] != z.shape[0]):             # <<<<<<<<<<<<<<
  *             raise ValueError('Array dimensions not aligned!')
  * 
@@ -4680,29 +4691,29 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_L4_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "straininterpolationandintegration.pyx":145
- * 
+    /* "straininterpolationandintegration.pyx":209
+ *         """
  *         if (xi.shape[0] != x.shape[0] or xi.shape[1] != y.shape[0] or xi.shape[2] != z.shape[0]):
  *             raise ValueError('Array dimensions not aligned!')             # <<<<<<<<<<<<<<
  * 
  *         if xi.shape[3] != 3:
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 145, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 209, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 145, __pyx_L1_error)
+    __PYX_ERR(1, 209, __pyx_L1_error)
 
-    /* "straininterpolationandintegration.pyx":144
- *                        double[::1] z not None, double[:,:,:,::1] xi not None):
+    /* "straininterpolationandintegration.pyx":208
  * 
+ *         """
  *         if (xi.shape[0] != x.shape[0] or xi.shape[1] != y.shape[0] or xi.shape[2] != z.shape[0]):             # <<<<<<<<<<<<<<
  *             raise ValueError('Array dimensions not aligned!')
  * 
  */
   }
 
-  /* "straininterpolationandintegration.pyx":147
+  /* "straininterpolationandintegration.pyx":211
  *             raise ValueError('Array dimensions not aligned!')
  * 
  *         if xi.shape[3] != 3:             # <<<<<<<<<<<<<<
@@ -4712,20 +4723,20 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_1 = (((__pyx_v_xi.shape[3]) != 3) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "straininterpolationandintegration.pyx":148
+    /* "straininterpolationandintegration.pyx":212
  * 
  *         if xi.shape[3] != 3:
  *             raise ValueError('The interpolator routine is custom-built for three-dimensional data!')             # <<<<<<<<<<<<<<
  * 
  *         # Enforcing periodic BC by not including the sampling points along the
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 148, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 212, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 148, __pyx_L1_error)
+    __PYX_ERR(1, 212, __pyx_L1_error)
 
-    /* "straininterpolationandintegration.pyx":147
+    /* "straininterpolationandintegration.pyx":211
  *             raise ValueError('Array dimensions not aligned!')
  * 
  *         if xi.shape[3] != 3:             # <<<<<<<<<<<<<<
@@ -4734,7 +4745,7 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
  */
   }
 
-  /* "straininterpolationandintegration.pyx":152
+  /* "straininterpolationandintegration.pyx":216
  *         # Enforcing periodic BC by not including the sampling points along the
  *         # last rows and columns:
  *         self.nx = x.shape[0] - 1             # <<<<<<<<<<<<<<
@@ -4743,7 +4754,7 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
  */
   __pyx_v_self->nx = ((__pyx_v_x.shape[0]) - 1);
 
-  /* "straininterpolationandintegration.pyx":153
+  /* "straininterpolationandintegration.pyx":217
  *         # last rows and columns:
  *         self.nx = x.shape[0] - 1
  *         self.ny = y.shape[0] - 1             # <<<<<<<<<<<<<<
@@ -4752,7 +4763,7 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
  */
   __pyx_v_self->ny = ((__pyx_v_y.shape[0]) - 1);
 
-  /* "straininterpolationandintegration.pyx":154
+  /* "straininterpolationandintegration.pyx":218
  *         self.nx = x.shape[0] - 1
  *         self.ny = y.shape[0] - 1
  *         self.nz = z.shape[0] - 1             # <<<<<<<<<<<<<<
@@ -4761,7 +4772,7 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
  */
   __pyx_v_self->nz = ((__pyx_v_z.shape[0]) - 1);
 
-  /* "straininterpolationandintegration.pyx":156
+  /* "straininterpolationandintegration.pyx":220
  *         self.nz = z.shape[0] - 1
  * 
  *         self.x_min, self.x_max = x[0], x[self.nx-1]             # <<<<<<<<<<<<<<
@@ -4775,7 +4786,7 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_v_self->x_min = __pyx_t_5;
   __pyx_v_self->x_max = __pyx_t_7;
 
-  /* "straininterpolationandintegration.pyx":157
+  /* "straininterpolationandintegration.pyx":221
  * 
  *         self.x_min, self.x_max = x[0], x[self.nx-1]
  *         self.y_min, self.y_max = y[0], y[self.ny-1]             # <<<<<<<<<<<<<<
@@ -4789,7 +4800,7 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_v_self->y_min = __pyx_t_7;
   __pyx_v_self->y_max = __pyx_t_5;
 
-  /* "straininterpolationandintegration.pyx":158
+  /* "straininterpolationandintegration.pyx":222
  *         self.x_min, self.x_max = x[0], x[self.nx-1]
  *         self.y_min, self.y_max = y[0], y[self.ny-1]
  *         self.z_min, self.z_max = z[0], z[self.nz-1]             # <<<<<<<<<<<<<<
@@ -4803,7 +4814,7 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_v_self->z_min = __pyx_t_5;
   __pyx_v_self->z_max = __pyx_t_7;
 
-  /* "straininterpolationandintegration.pyx":160
+  /* "straininterpolationandintegration.pyx":224
  *         self.z_min, self.z_max = z[0], z[self.nz-1]
  * 
  *         self.dx = x[1] - x[0]             # <<<<<<<<<<<<<<
@@ -4814,7 +4825,7 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_13 = 0;
   __pyx_v_self->dx = ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_12)) ))) - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_13)) ))));
 
-  /* "straininterpolationandintegration.pyx":161
+  /* "straininterpolationandintegration.pyx":225
  * 
  *         self.dx = x[1] - x[0]
  *         self.dy = y[1] - y[0]             # <<<<<<<<<<<<<<
@@ -4825,7 +4836,7 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_15 = 0;
   __pyx_v_self->dy = ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y.data) + __pyx_t_14)) ))) - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y.data) + __pyx_t_15)) ))));
 
-  /* "straininterpolationandintegration.pyx":162
+  /* "straininterpolationandintegration.pyx":226
  *         self.dx = x[1] - x[0]
  *         self.dy = y[1] - y[0]
  *         self.dz = z[1] - z[0]             # <<<<<<<<<<<<<<
@@ -4836,7 +4847,7 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_17 = 0;
   __pyx_v_self->dz = ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_z.data) + __pyx_t_16)) ))) - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_z.data) + __pyx_t_17)) ))));
 
-  /* "straininterpolationandintegration.pyx":164
+  /* "straininterpolationandintegration.pyx":228
  *         self.dz = z[1] - z[0]
  * 
  *         self.xi = xi[:self.nx, :self.ny, :self.nz, :]             # <<<<<<<<<<<<<<
@@ -4861,7 +4872,7 @@ static int __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpola
     0,
     1) < 0))
 {
-    __PYX_ERR(1, 164, __pyx_L1_error)
+    __PYX_ERR(1, 228, __pyx_L1_error)
 }
 
 if (unlikely(__pyx_memoryview_slice_memviewslice(
@@ -4878,7 +4889,7 @@ if (unlikely(__pyx_memoryview_slice_memviewslice(
     0,
     1) < 0))
 {
-    __PYX_ERR(1, 164, __pyx_L1_error)
+    __PYX_ERR(1, 228, __pyx_L1_error)
 }
 
 if (unlikely(__pyx_memoryview_slice_memviewslice(
@@ -4895,7 +4906,7 @@ if (unlikely(__pyx_memoryview_slice_memviewslice(
     0,
     1) < 0))
 {
-    __PYX_ERR(1, 164, __pyx_L1_error)
+    __PYX_ERR(1, 228, __pyx_L1_error)
 }
 
 __pyx_t_18.shape[3] = __pyx_v_xi.shape[3];
@@ -4907,12 +4918,12 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->xi, 0);
   __pyx_t_18.memview = NULL;
   __pyx_t_18.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":141
+  /* "straininterpolationandintegration.pyx":181
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __init__(self, double[::1] x not None, double[::1] y not None,             # <<<<<<<<<<<<<<
  *                        double[::1] z not None, double[:,:,:,::1] xi not None):
- * 
+ *         """
  */
 
   /* function exit code */
@@ -4932,16 +4943,20 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->xi, 0);
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":169
+/* "straininterpolationandintegration.pyx":233
  *     @cython.boundscheck(False)
  *     @cython.wraparound(False)
  *     def __call__(self, double[::1] pos not None):             # <<<<<<<<<<<<<<
- *         if pos.shape[0] != 3:
- *             raise ValueError('The interpolation routine is custom-built'\
+ *         """
+ *         LinearSpecialInterpolator.__call__(pos)
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_33straininterpolationandintegration_25LinearSpecialInterpolator_5__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_33straininterpolationandintegration_25LinearSpecialInterpolator_4__call__[] = "\n        LinearSpecialInterpolator.__call__(pos)\n\n        Evaluates the linearly interpolated vector field with orientation\n        fix, at the coordinates specified by pos.\n\n        Parameters\n        ----------\n        pos : (3,) array-like\n           A (C-contiguous) NumPy array containing the (Cartesian) coordinates\n           of the point in R^3 at which the vector field is to be interpolated.\n\n        Returns\n        -------\n        xi : (3,) array-like\n           A (C-contiguous) NumPy array containing the normalized, interpolated\n           vector.\n\n        ";
+#if CYTHON_COMPILING_IN_CPYTHON
+struct wrapperbase __pyx_wrapperbase_33straininterpolationandintegration_25LinearSpecialInterpolator_4__call__;
+#endif
 static PyObject *__pyx_pw_33straininterpolationandintegration_25LinearSpecialInterpolator_5__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_pos = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_r = 0;
@@ -4966,25 +4981,25 @@ static PyObject *__pyx_pw_33straininterpolationandintegration_25LinearSpecialInt
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 169, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 233, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
     }
-    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 169, __pyx_L3_error)
+    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 233, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 169, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 233, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("straininterpolationandintegration.LinearSpecialInterpolator.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(((PyObject *)__pyx_v_pos.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "pos"); __PYX_ERR(1, 169, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "pos"); __PYX_ERR(1, 233, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_33straininterpolationandintegration_25LinearSpecialInterpolator_4__call__(((struct __pyx_obj_33straininterpolationandintegration_LinearSpecialInterpolator *)__pyx_v_self), __pyx_v_pos);
 
@@ -5008,9 +5023,9 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_25LinearSpecialInt
   PyObject *__pyx_t_6 = NULL;
   __Pyx_RefNannySetupContext("__call__", 0);
 
-  /* "straininterpolationandintegration.pyx":170
- *     @cython.wraparound(False)
- *     def __call__(self, double[::1] pos not None):
+  /* "straininterpolationandintegration.pyx":253
+ * 
+ *         """
  *         if pos.shape[0] != 3:             # <<<<<<<<<<<<<<
  *             raise ValueError('The interpolation routine is custom-built'\
  *                     +' for three-dimensional data!')
@@ -5018,40 +5033,40 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_25LinearSpecialInt
   __pyx_t_1 = (((__pyx_v_pos.shape[0]) != 3) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "straininterpolationandintegration.pyx":172
+    /* "straininterpolationandintegration.pyx":255
  *         if pos.shape[0] != 3:
  *             raise ValueError('The interpolation routine is custom-built'\
  *                     +' for three-dimensional data!')             # <<<<<<<<<<<<<<
  *         self._interpolate_xi_(pos,self.ret)
  *         return np.copy(self.ret)
  */
-    __pyx_t_2 = PyNumber_Add(__pyx_kp_s_The_interpolation_routine_is_cus, __pyx_kp_s_for_three_dimensional_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 172, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_Add(__pyx_kp_s_The_interpolation_routine_is_cus, __pyx_kp_s_for_three_dimensional_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 255, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
 
-    /* "straininterpolationandintegration.pyx":171
- *     def __call__(self, double[::1] pos not None):
+    /* "straininterpolationandintegration.pyx":254
+ *         """
  *         if pos.shape[0] != 3:
  *             raise ValueError('The interpolation routine is custom-built'\             # <<<<<<<<<<<<<<
  *                     +' for three-dimensional data!')
  *         self._interpolate_xi_(pos,self.ret)
  */
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 171, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 254, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 171, __pyx_L1_error)
+    __PYX_ERR(1, 254, __pyx_L1_error)
 
-    /* "straininterpolationandintegration.pyx":170
- *     @cython.wraparound(False)
- *     def __call__(self, double[::1] pos not None):
+    /* "straininterpolationandintegration.pyx":253
+ * 
+ *         """
  *         if pos.shape[0] != 3:             # <<<<<<<<<<<<<<
  *             raise ValueError('The interpolation routine is custom-built'\
  *                     +' for three-dimensional data!')
  */
   }
 
-  /* "straininterpolationandintegration.pyx":173
+  /* "straininterpolationandintegration.pyx":256
  *             raise ValueError('The interpolation routine is custom-built'\
  *                     +' for three-dimensional data!')
  *         self._interpolate_xi_(pos,self.ret)             # <<<<<<<<<<<<<<
@@ -5060,7 +5075,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_25LinearSpecialInt
  */
   ((struct __pyx_vtabstruct_33straininterpolationandintegration_LinearSpecialInterpolator *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._interpolate_xi_(((struct __pyx_obj_33straininterpolationandintegration_InterpolatorWithOrientationFix *)__pyx_v_self), __pyx_v_pos, __pyx_v_self->ret);
 
-  /* "straininterpolationandintegration.pyx":174
+  /* "straininterpolationandintegration.pyx":257
  *                     +' for three-dimensional data!')
  *         self._interpolate_xi_(pos,self.ret)
  *         return np.copy(self.ret)             # <<<<<<<<<<<<<<
@@ -5068,12 +5083,12 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_25LinearSpecialInt
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 174, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 257, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_copy); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 174, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_copy); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 257, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_self->ret, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 174, __pyx_L1_error)
+  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_self->ret, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 257, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_5 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
@@ -5086,14 +5101,14 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_25LinearSpecialInt
     }
   }
   if (!__pyx_t_5) {
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 174, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 257, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_GOTREF(__pyx_t_3);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_2};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 174, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 257, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -5102,20 +5117,20 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_25LinearSpecialInt
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_2};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 174, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 257, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     } else
     #endif
     {
-      __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 174, __pyx_L1_error)
+      __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 257, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_5); __pyx_t_5 = NULL;
       __Pyx_GIVEREF(__pyx_t_2);
       PyTuple_SET_ITEM(__pyx_t_6, 0+1, __pyx_t_2);
       __pyx_t_2 = 0;
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 174, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 257, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     }
@@ -5125,12 +5140,12 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_25LinearSpecialInt
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "straininterpolationandintegration.pyx":169
+  /* "straininterpolationandintegration.pyx":233
  *     @cython.boundscheck(False)
  *     @cython.wraparound(False)
  *     def __call__(self, double[::1] pos not None):             # <<<<<<<<<<<<<<
- *         if pos.shape[0] != 3:
- *             raise ValueError('The interpolation routine is custom-built'\
+ *         """
+ *         LinearSpecialInterpolator.__call__(pos)
  */
 
   /* function exit code */
@@ -5149,12 +5164,12 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_25LinearSpecialInt
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":180
+/* "straininterpolationandintegration.pyx":263
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     cdef void _interpolate_xi_(self, double[::1] pos, double[::1] &xi):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double x = self.x_internal, y = self.y_internal, z = self.z_internal
+ *         """
+ *         LinearSpecialInterpolator._interpolate_xi_(pos,xi)
  */
 
 static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpolator__interpolate_xi_(struct __pyx_obj_33straininterpolationandintegration_LinearSpecialInterpolator *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos, __Pyx_memviewslice &__pyx_v_xi) {
@@ -5168,8 +5183,8 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
   Py_ssize_t __pyx_t_4;
   __Pyx_RefNannySetupContext("_interpolate_xi_", 0);
 
-  /* "straininterpolationandintegration.pyx":182
- *     cdef void _interpolate_xi_(self, double[::1] pos, double[::1] &xi):
+  /* "straininterpolationandintegration.pyx":280
+ *         """
  *         cdef:
  *             double x = self.x_internal, y = self.y_internal, z = self.z_internal             # <<<<<<<<<<<<<<
  * 
@@ -5182,7 +5197,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_1 = __pyx_v_self->z_internal;
   __pyx_v_z = __pyx_t_1;
 
-  /* "straininterpolationandintegration.pyx":184
+  /* "straininterpolationandintegration.pyx":282
  *             double x = self.x_internal, y = self.y_internal, z = self.z_internal
  * 
  *         x = pos[0]             # <<<<<<<<<<<<<<
@@ -5192,7 +5207,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_2 = 0;
   __pyx_v_x = (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_2)) )));
 
-  /* "straininterpolationandintegration.pyx":185
+  /* "straininterpolationandintegration.pyx":283
  * 
  *         x = pos[0]
  *         y = pos[1]             # <<<<<<<<<<<<<<
@@ -5202,7 +5217,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_3 = 1;
   __pyx_v_y = (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_3)) )));
 
-  /* "straininterpolationandintegration.pyx":186
+  /* "straininterpolationandintegration.pyx":284
  *         x = pos[0]
  *         y = pos[1]
  *         z = pos[2]             # <<<<<<<<<<<<<<
@@ -5212,7 +5227,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_4 = 2;
   __pyx_v_z = (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_4)) )));
 
-  /* "straininterpolationandintegration.pyx":188
+  /* "straininterpolationandintegration.pyx":286
  *         z = pos[2]
  * 
  *         self._compute_indcs_and_wts_(&x,&y,&z)             # <<<<<<<<<<<<<<
@@ -5221,7 +5236,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
  */
   ((struct __pyx_vtabstruct_33straininterpolationandintegration_LinearSpecialInterpolator *)__pyx_v_self->__pyx_base.__pyx_vtab)->_compute_indcs_and_wts_(__pyx_v_self, (&__pyx_v_x), (&__pyx_v_y), (&__pyx_v_z));
 
-  /* "straininterpolationandintegration.pyx":190
+  /* "straininterpolationandintegration.pyx":288
  *         self._compute_indcs_and_wts_(&x,&y,&z)
  * 
  *         self._set_crnr_vcs_()             # <<<<<<<<<<<<<<
@@ -5230,7 +5245,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
  */
   ((struct __pyx_vtabstruct_33straininterpolationandintegration_LinearSpecialInterpolator *)__pyx_v_self->__pyx_base.__pyx_vtab)->_set_crnr_vcs_(__pyx_v_self);
 
-  /* "straininterpolationandintegration.pyx":192
+  /* "straininterpolationandintegration.pyx":290
  *         self._set_crnr_vcs_()
  * 
  *         self._compute_nrmd_wtd_sum_(x,y,z,xi)             # <<<<<<<<<<<<<<
@@ -5239,24 +5254,24 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
  */
   ((struct __pyx_vtabstruct_33straininterpolationandintegration_LinearSpecialInterpolator *)__pyx_v_self->__pyx_base.__pyx_vtab)->_compute_nrmd_wtd_sum_(__pyx_v_self, __pyx_v_x, __pyx_v_y, __pyx_v_z, __pyx_v_xi);
 
-  /* "straininterpolationandintegration.pyx":180
+  /* "straininterpolationandintegration.pyx":263
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     cdef void _interpolate_xi_(self, double[::1] pos, double[::1] &xi):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double x = self.x_internal, y = self.y_internal, z = self.z_internal
+ *         """
+ *         LinearSpecialInterpolator._interpolate_xi_(pos,xi)
  */
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
 }
 
-/* "straininterpolationandintegration.pyx":198
+/* "straininterpolationandintegration.pyx":296
  *     @cython.cdivision(True)
  *     @cython.boundscheck(False)
  *     cdef void _compute_indcs_and_wts_(self, double *x, double *y, double *z):             # <<<<<<<<<<<<<<
- * 
- *         x[0] = c_fmod((x[0]-self.x_min)/self.dx, self.nx)
+ *         """
+ *         LinearSpecialInterpolator._compute_indcs_and_wts_(x,y,z)
  */
 
 static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpolator__compute_indcs_and_wts_(struct __pyx_obj_33straininterpolationandintegration_LinearSpecialInterpolator *__pyx_v_self, double *__pyx_v_x, double *__pyx_v_y, double *__pyx_v_z) {
@@ -5265,8 +5280,8 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
   long __pyx_t_2;
   __Pyx_RefNannySetupContext("_compute_indcs_and_wts_", 0);
 
-  /* "straininterpolationandintegration.pyx":200
- *     cdef void _compute_indcs_and_wts_(self, double *x, double *y, double *z):
+  /* "straininterpolationandintegration.pyx":320
+ *         """
  * 
  *         x[0] = c_fmod((x[0]-self.x_min)/self.dx, self.nx)             # <<<<<<<<<<<<<<
  *         y[0] = c_fmod((y[0]-self.y_min)/self.dy, self.ny)
@@ -5274,7 +5289,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
  */
   (__pyx_v_x[0]) = fmod((((__pyx_v_x[0]) - __pyx_v_self->x_min) / __pyx_v_self->dx), __pyx_v_self->nx);
 
-  /* "straininterpolationandintegration.pyx":201
+  /* "straininterpolationandintegration.pyx":321
  * 
  *         x[0] = c_fmod((x[0]-self.x_min)/self.dx, self.nx)
  *         y[0] = c_fmod((y[0]-self.y_min)/self.dy, self.ny)             # <<<<<<<<<<<<<<
@@ -5283,7 +5298,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
  */
   (__pyx_v_y[0]) = fmod((((__pyx_v_y[0]) - __pyx_v_self->y_min) / __pyx_v_self->dy), __pyx_v_self->ny);
 
-  /* "straininterpolationandintegration.pyx":202
+  /* "straininterpolationandintegration.pyx":322
  *         x[0] = c_fmod((x[0]-self.x_min)/self.dx, self.nx)
  *         y[0] = c_fmod((y[0]-self.y_min)/self.dy, self.ny)
  *         z[0] = c_fmod((z[0]-self.z_min)/self.dz, self.nz)             # <<<<<<<<<<<<<<
@@ -5292,7 +5307,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
  */
   (__pyx_v_z[0]) = fmod((((__pyx_v_z[0]) - __pyx_v_self->z_min) / __pyx_v_self->dz), __pyx_v_self->nz);
 
-  /* "straininterpolationandintegration.pyx":204
+  /* "straininterpolationandintegration.pyx":324
  *         z[0] = c_fmod((z[0]-self.z_min)/self.dz, self.nz)
  * 
  *         while x[0] < 0:             # <<<<<<<<<<<<<<
@@ -5303,7 +5318,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
     __pyx_t_1 = (((__pyx_v_x[0]) < 0.0) != 0);
     if (!__pyx_t_1) break;
 
-    /* "straininterpolationandintegration.pyx":205
+    /* "straininterpolationandintegration.pyx":325
  * 
  *         while x[0] < 0:
  *             x[0] += self.nx             # <<<<<<<<<<<<<<
@@ -5314,7 +5329,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
     (__pyx_v_x[__pyx_t_2]) = ((__pyx_v_x[__pyx_t_2]) + __pyx_v_self->nx);
   }
 
-  /* "straininterpolationandintegration.pyx":206
+  /* "straininterpolationandintegration.pyx":326
  *         while x[0] < 0:
  *             x[0] += self.nx
  *         while y[0] < 0:             # <<<<<<<<<<<<<<
@@ -5325,7 +5340,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
     __pyx_t_1 = (((__pyx_v_y[0]) < 0.0) != 0);
     if (!__pyx_t_1) break;
 
-    /* "straininterpolationandintegration.pyx":207
+    /* "straininterpolationandintegration.pyx":327
  *             x[0] += self.nx
  *         while y[0] < 0:
  *             y[0] += self.ny             # <<<<<<<<<<<<<<
@@ -5336,7 +5351,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
     (__pyx_v_y[__pyx_t_2]) = ((__pyx_v_y[__pyx_t_2]) + __pyx_v_self->ny);
   }
 
-  /* "straininterpolationandintegration.pyx":208
+  /* "straininterpolationandintegration.pyx":328
  *         while y[0] < 0:
  *             y[0] += self.ny
  *         while z[0] < 0:             # <<<<<<<<<<<<<<
@@ -5347,7 +5362,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
     __pyx_t_1 = (((__pyx_v_z[0]) < 0.0) != 0);
     if (!__pyx_t_1) break;
 
-    /* "straininterpolationandintegration.pyx":209
+    /* "straininterpolationandintegration.pyx":329
  *             y[0] += self.ny
  *         while z[0] < 0:
  *             z[0] += self.nz             # <<<<<<<<<<<<<<
@@ -5358,7 +5373,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
     (__pyx_v_z[__pyx_t_2]) = ((__pyx_v_z[__pyx_t_2]) + __pyx_v_self->nz);
   }
 
-  /* "straininterpolationandintegration.pyx":211
+  /* "straininterpolationandintegration.pyx":331
  *             z[0] += self.nz
  * 
  *         self.ind_x = int(c_floor(x[0]))             # <<<<<<<<<<<<<<
@@ -5367,7 +5382,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
  */
   __pyx_v_self->ind_x = ((int)floor((__pyx_v_x[0])));
 
-  /* "straininterpolationandintegration.pyx":212
+  /* "straininterpolationandintegration.pyx":332
  * 
  *         self.ind_x = int(c_floor(x[0]))
  *         self.ind_y = int(c_floor(y[0]))             # <<<<<<<<<<<<<<
@@ -5376,7 +5391,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
  */
   __pyx_v_self->ind_y = ((int)floor((__pyx_v_y[0])));
 
-  /* "straininterpolationandintegration.pyx":213
+  /* "straininterpolationandintegration.pyx":333
  *         self.ind_x = int(c_floor(x[0]))
  *         self.ind_y = int(c_floor(y[0]))
  *         self.ind_z = int(c_floor(z[0]))             # <<<<<<<<<<<<<<
@@ -5385,7 +5400,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
  */
   __pyx_v_self->ind_z = ((int)floor((__pyx_v_z[0])));
 
-  /* "straininterpolationandintegration.pyx":215
+  /* "straininterpolationandintegration.pyx":335
  *         self.ind_z = int(c_floor(z[0]))
  * 
  *         x[0] -= self.ind_x             # <<<<<<<<<<<<<<
@@ -5395,7 +5410,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_2 = 0;
   (__pyx_v_x[__pyx_t_2]) = ((__pyx_v_x[__pyx_t_2]) - __pyx_v_self->ind_x);
 
-  /* "straininterpolationandintegration.pyx":216
+  /* "straininterpolationandintegration.pyx":336
  * 
  *         x[0] -= self.ind_x
  *         y[0] -= self.ind_y             # <<<<<<<<<<<<<<
@@ -5405,7 +5420,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_2 = 0;
   (__pyx_v_y[__pyx_t_2]) = ((__pyx_v_y[__pyx_t_2]) - __pyx_v_self->ind_y);
 
-  /* "straininterpolationandintegration.pyx":217
+  /* "straininterpolationandintegration.pyx":337
  *         x[0] -= self.ind_x
  *         y[0] -= self.ind_y
  *         z[0] -= self.ind_z             # <<<<<<<<<<<<<<
@@ -5415,7 +5430,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_2 = 0;
   (__pyx_v_z[__pyx_t_2]) = ((__pyx_v_z[__pyx_t_2]) - __pyx_v_self->ind_z);
 
-  /* "straininterpolationandintegration.pyx":219
+  /* "straininterpolationandintegration.pyx":339
  *         z[0] -= self.ind_z
  * 
  *         self.ind_xp1 = int((self.ind_x+1)%self.nx)             # <<<<<<<<<<<<<<
@@ -5424,7 +5439,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
  */
   __pyx_v_self->ind_xp1 = ((int)((__pyx_v_self->ind_x + 1) % __pyx_v_self->nx));
 
-  /* "straininterpolationandintegration.pyx":220
+  /* "straininterpolationandintegration.pyx":340
  * 
  *         self.ind_xp1 = int((self.ind_x+1)%self.nx)
  *         self.ind_yp1 = int((self.ind_y+1)%self.ny)             # <<<<<<<<<<<<<<
@@ -5433,7 +5448,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
  */
   __pyx_v_self->ind_yp1 = ((int)((__pyx_v_self->ind_y + 1) % __pyx_v_self->ny));
 
-  /* "straininterpolationandintegration.pyx":221
+  /* "straininterpolationandintegration.pyx":341
  *         self.ind_xp1 = int((self.ind_x+1)%self.nx)
  *         self.ind_yp1 = int((self.ind_y+1)%self.ny)
  *         self.ind_zp1 = int((self.ind_z+1)%self.nz)             # <<<<<<<<<<<<<<
@@ -5442,24 +5457,24 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
  */
   __pyx_v_self->ind_zp1 = ((int)((__pyx_v_self->ind_z + 1) % __pyx_v_self->nz));
 
-  /* "straininterpolationandintegration.pyx":198
+  /* "straininterpolationandintegration.pyx":296
  *     @cython.cdivision(True)
  *     @cython.boundscheck(False)
  *     cdef void _compute_indcs_and_wts_(self, double *x, double *y, double *z):             # <<<<<<<<<<<<<<
- * 
- *         x[0] = c_fmod((x[0]-self.x_min)/self.dx, self.nx)
+ *         """
+ *         LinearSpecialInterpolator._compute_indcs_and_wts_(x,y,z)
  */
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
 }
 
-/* "straininterpolationandintegration.pyx":227
+/* "straininterpolationandintegration.pyx":347
  *     @cython.boundscheck(False)
  *     @cython.cdivision(True)
  *     cdef void _set_crnr_vcs_(self):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double[::1] xi_tmp = self.xia, xi_ref = self.xi_ref
+ *         """
+ *         LinearSpecialInterpolator._set_crnr_vcs_()
  */
 
 static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpolator__set_crnr_vcs_(struct __pyx_obj_33straininterpolationandintegration_LinearSpecialInterpolator *__pyx_v_self) {
@@ -5474,8 +5489,8 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
   int __pyx_t_4;
   __Pyx_RefNannySetupContext("_set_crnr_vcs_", 0);
 
-  /* "straininterpolationandintegration.pyx":229
- *     cdef void _set_crnr_vcs_(self):
+  /* "straininterpolationandintegration.pyx":358
+ *         """
  *         cdef:
  *             double[::1] xi_tmp = self.xia, xi_ref = self.xi_ref             # <<<<<<<<<<<<<<
  *             double[:,:,:,::1] xi = self.xi
@@ -5492,7 +5507,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":230
+  /* "straininterpolationandintegration.pyx":359
  *         cdef:
  *             double[::1] xi_tmp = self.xia, xi_ref = self.xi_ref
  *             double[:,:,:,::1] xi = self.xi             # <<<<<<<<<<<<<<
@@ -5505,7 +5520,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_2.memview = NULL;
   __pyx_t_2.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":231
+  /* "straininterpolationandintegration.pyx":360
  *             double[::1] xi_tmp = self.xia, xi_ref = self.xi_ref
  *             double[:,:,:,::1] xi = self.xi
  *             double[:,::1] xi_cube = self.xi_cube             # <<<<<<<<<<<<<<
@@ -5518,7 +5533,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_3.memview = NULL;
   __pyx_t_3.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":233
+  /* "straininterpolationandintegration.pyx":362
  *             double[:,::1] xi_cube = self.xi_cube
  * 
  *         dcopy(3,xi[self.ind_x,self.ind_y,self.ind_z],1,xi_ref,1)             # <<<<<<<<<<<<<<
@@ -5536,7 +5551,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 233, __pyx_L1_error)
+        __PYX_ERR(1, 362, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5549,7 +5564,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 1)");
-        __PYX_ERR(1, 233, __pyx_L1_error)
+        __PYX_ERR(1, 362, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5562,7 +5577,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 2)");
-        __PYX_ERR(1, 233, __pyx_L1_error)
+        __PYX_ERR(1, 362, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5576,7 +5591,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_re
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":235
+  /* "straininterpolationandintegration.pyx":364
  *         dcopy(3,xi[self.ind_x,self.ind_y,self.ind_z],1,xi_ref,1)
  * 
  *         dcopy(3,xi[self.ind_x,self.ind_y,self.ind_z],1,xi_tmp,1)             # <<<<<<<<<<<<<<
@@ -5594,7 +5609,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_re
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 235, __pyx_L1_error)
+        __PYX_ERR(1, 364, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5607,7 +5622,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_re
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 1)");
-        __PYX_ERR(1, 235, __pyx_L1_error)
+        __PYX_ERR(1, 364, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5620,7 +5635,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_re
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 2)");
-        __PYX_ERR(1, 235, __pyx_L1_error)
+        __PYX_ERR(1, 364, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5634,7 +5649,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":236
+  /* "straininterpolationandintegration.pyx":365
  * 
  *         dcopy(3,xi[self.ind_x,self.ind_y,self.ind_z],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -5644,7 +5659,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
   __pyx_t_4 = ((__pyx_f_33straininterpolationandintegration_ddot(3, __pyx_v_xi_tmp, 1, __pyx_v_xi_ref, 1) < 0.0) != 0);
   if (__pyx_t_4) {
 
-    /* "straininterpolationandintegration.pyx":237
+    /* "straininterpolationandintegration.pyx":366
  *         dcopy(3,xi[self.ind_x,self.ind_y,self.ind_z],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:
  *             dscal(3,-1,xi_tmp,1)             # <<<<<<<<<<<<<<
@@ -5653,7 +5668,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
  */
     __pyx_f_33straininterpolationandintegration_dscal(3, -1.0, __pyx_v_xi_tmp, 1);
 
-    /* "straininterpolationandintegration.pyx":236
+    /* "straininterpolationandintegration.pyx":365
  * 
  *         dcopy(3,xi[self.ind_x,self.ind_y,self.ind_z],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -5662,7 +5677,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
  */
   }
 
-  /* "straininterpolationandintegration.pyx":238
+  /* "straininterpolationandintegration.pyx":367
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:
  *             dscal(3,-1,xi_tmp,1)
  *         dcopy(3,xi_tmp,1,xi_cube[0],1)             # <<<<<<<<<<<<<<
@@ -5680,7 +5695,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 238, __pyx_L1_error)
+        __PYX_ERR(1, 367, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5694,7 +5709,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":240
+  /* "straininterpolationandintegration.pyx":369
  *         dcopy(3,xi_tmp,1,xi_cube[0],1)
  * 
  *         dcopy(3,self.xi[self.ind_xp1,self.ind_y,self.ind_z],1,xi_tmp,1)             # <<<<<<<<<<<<<<
@@ -5712,7 +5727,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 240, __pyx_L1_error)
+        __PYX_ERR(1, 369, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5725,7 +5740,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 1)");
-        __PYX_ERR(1, 240, __pyx_L1_error)
+        __PYX_ERR(1, 369, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5738,7 +5753,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 2)");
-        __PYX_ERR(1, 240, __pyx_L1_error)
+        __PYX_ERR(1, 369, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5752,7 +5767,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":241
+  /* "straininterpolationandintegration.pyx":370
  * 
  *         dcopy(3,self.xi[self.ind_xp1,self.ind_y,self.ind_z],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -5762,7 +5777,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
   __pyx_t_4 = ((__pyx_f_33straininterpolationandintegration_ddot(3, __pyx_v_xi_tmp, 1, __pyx_v_xi_ref, 1) < 0.0) != 0);
   if (__pyx_t_4) {
 
-    /* "straininterpolationandintegration.pyx":242
+    /* "straininterpolationandintegration.pyx":371
  *         dcopy(3,self.xi[self.ind_xp1,self.ind_y,self.ind_z],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:
  *             dscal(3,-1,xi_tmp,1)             # <<<<<<<<<<<<<<
@@ -5771,7 +5786,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
  */
     __pyx_f_33straininterpolationandintegration_dscal(3, -1.0, __pyx_v_xi_tmp, 1);
 
-    /* "straininterpolationandintegration.pyx":241
+    /* "straininterpolationandintegration.pyx":370
  * 
  *         dcopy(3,self.xi[self.ind_xp1,self.ind_y,self.ind_z],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -5780,7 +5795,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
  */
   }
 
-  /* "straininterpolationandintegration.pyx":243
+  /* "straininterpolationandintegration.pyx":372
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:
  *             dscal(3,-1,xi_tmp,1)
  *         dcopy(3,xi_tmp,1,xi_cube[1],1)             # <<<<<<<<<<<<<<
@@ -5798,7 +5813,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 243, __pyx_L1_error)
+        __PYX_ERR(1, 372, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5812,7 +5827,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":245
+  /* "straininterpolationandintegration.pyx":374
  *         dcopy(3,xi_tmp,1,xi_cube[1],1)
  * 
  *         dcopy(3,self.xi[self.ind_x,self.ind_yp1,self.ind_z],1,xi_tmp,1)             # <<<<<<<<<<<<<<
@@ -5830,7 +5845,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 245, __pyx_L1_error)
+        __PYX_ERR(1, 374, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5843,7 +5858,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 1)");
-        __PYX_ERR(1, 245, __pyx_L1_error)
+        __PYX_ERR(1, 374, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5856,7 +5871,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 2)");
-        __PYX_ERR(1, 245, __pyx_L1_error)
+        __PYX_ERR(1, 374, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5870,7 +5885,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":246
+  /* "straininterpolationandintegration.pyx":375
  * 
  *         dcopy(3,self.xi[self.ind_x,self.ind_yp1,self.ind_z],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -5880,7 +5895,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
   __pyx_t_4 = ((__pyx_f_33straininterpolationandintegration_ddot(3, __pyx_v_xi_tmp, 1, __pyx_v_xi_ref, 1) < 0.0) != 0);
   if (__pyx_t_4) {
 
-    /* "straininterpolationandintegration.pyx":247
+    /* "straininterpolationandintegration.pyx":376
  *         dcopy(3,self.xi[self.ind_x,self.ind_yp1,self.ind_z],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:
  *             dscal(3,-1,xi_tmp,1)             # <<<<<<<<<<<<<<
@@ -5889,7 +5904,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
  */
     __pyx_f_33straininterpolationandintegration_dscal(3, -1.0, __pyx_v_xi_tmp, 1);
 
-    /* "straininterpolationandintegration.pyx":246
+    /* "straininterpolationandintegration.pyx":375
  * 
  *         dcopy(3,self.xi[self.ind_x,self.ind_yp1,self.ind_z],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -5898,7 +5913,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
  */
   }
 
-  /* "straininterpolationandintegration.pyx":248
+  /* "straininterpolationandintegration.pyx":377
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:
  *             dscal(3,-1,xi_tmp,1)
  *         dcopy(3,xi_tmp,1,xi_cube[2],1)             # <<<<<<<<<<<<<<
@@ -5916,7 +5931,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 248, __pyx_L1_error)
+        __PYX_ERR(1, 377, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5930,7 +5945,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":250
+  /* "straininterpolationandintegration.pyx":379
  *         dcopy(3,xi_tmp,1,xi_cube[2],1)
  * 
  *         dcopy(3,self.xi[self.ind_xp1,self.ind_yp1,self.ind_z],1,xi_tmp,1)             # <<<<<<<<<<<<<<
@@ -5948,7 +5963,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 250, __pyx_L1_error)
+        __PYX_ERR(1, 379, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5961,7 +5976,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 1)");
-        __PYX_ERR(1, 250, __pyx_L1_error)
+        __PYX_ERR(1, 379, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5974,7 +5989,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 2)");
-        __PYX_ERR(1, 250, __pyx_L1_error)
+        __PYX_ERR(1, 379, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -5988,7 +6003,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":251
+  /* "straininterpolationandintegration.pyx":380
  * 
  *         dcopy(3,self.xi[self.ind_xp1,self.ind_yp1,self.ind_z],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -5998,7 +6013,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
   __pyx_t_4 = ((__pyx_f_33straininterpolationandintegration_ddot(3, __pyx_v_xi_tmp, 1, __pyx_v_xi_ref, 1) < 0.0) != 0);
   if (__pyx_t_4) {
 
-    /* "straininterpolationandintegration.pyx":252
+    /* "straininterpolationandintegration.pyx":381
  *         dcopy(3,self.xi[self.ind_xp1,self.ind_yp1,self.ind_z],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:
  *             dscal(3,-1,xi_tmp,1)             # <<<<<<<<<<<<<<
@@ -6007,7 +6022,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
  */
     __pyx_f_33straininterpolationandintegration_dscal(3, -1.0, __pyx_v_xi_tmp, 1);
 
-    /* "straininterpolationandintegration.pyx":251
+    /* "straininterpolationandintegration.pyx":380
  * 
  *         dcopy(3,self.xi[self.ind_xp1,self.ind_yp1,self.ind_z],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -6016,7 +6031,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
  */
   }
 
-  /* "straininterpolationandintegration.pyx":253
+  /* "straininterpolationandintegration.pyx":382
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:
  *             dscal(3,-1,xi_tmp,1)
  *         dcopy(3,xi_tmp,1,xi_cube[3],1)             # <<<<<<<<<<<<<<
@@ -6034,7 +6049,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 253, __pyx_L1_error)
+        __PYX_ERR(1, 382, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6048,7 +6063,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":255
+  /* "straininterpolationandintegration.pyx":384
  *         dcopy(3,xi_tmp,1,xi_cube[3],1)
  * 
  *         dcopy(3,self.xi[self.ind_x,self.ind_y,self.ind_zp1],1,xi_tmp,1)             # <<<<<<<<<<<<<<
@@ -6066,7 +6081,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 255, __pyx_L1_error)
+        __PYX_ERR(1, 384, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6079,7 +6094,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 1)");
-        __PYX_ERR(1, 255, __pyx_L1_error)
+        __PYX_ERR(1, 384, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6092,7 +6107,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 2)");
-        __PYX_ERR(1, 255, __pyx_L1_error)
+        __PYX_ERR(1, 384, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6106,7 +6121,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":256
+  /* "straininterpolationandintegration.pyx":385
  * 
  *         dcopy(3,self.xi[self.ind_x,self.ind_y,self.ind_zp1],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -6116,7 +6131,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
   __pyx_t_4 = ((__pyx_f_33straininterpolationandintegration_ddot(3, __pyx_v_xi_tmp, 1, __pyx_v_xi_ref, 1) < 0.0) != 0);
   if (__pyx_t_4) {
 
-    /* "straininterpolationandintegration.pyx":257
+    /* "straininterpolationandintegration.pyx":386
  *         dcopy(3,self.xi[self.ind_x,self.ind_y,self.ind_zp1],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:
  *             dscal(3,-1,xi_tmp,1)             # <<<<<<<<<<<<<<
@@ -6125,7 +6140,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
  */
     __pyx_f_33straininterpolationandintegration_dscal(3, -1.0, __pyx_v_xi_tmp, 1);
 
-    /* "straininterpolationandintegration.pyx":256
+    /* "straininterpolationandintegration.pyx":385
  * 
  *         dcopy(3,self.xi[self.ind_x,self.ind_y,self.ind_zp1],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -6134,7 +6149,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
  */
   }
 
-  /* "straininterpolationandintegration.pyx":258
+  /* "straininterpolationandintegration.pyx":387
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:
  *             dscal(3,-1,xi_tmp,1)
  *         dcopy(3,xi_tmp,1,xi_cube[4],1)             # <<<<<<<<<<<<<<
@@ -6152,7 +6167,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 258, __pyx_L1_error)
+        __PYX_ERR(1, 387, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6166,7 +6181,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":260
+  /* "straininterpolationandintegration.pyx":389
  *         dcopy(3,xi_tmp,1,xi_cube[4],1)
  * 
  *         dcopy(3,self.xi[self.ind_xp1,self.ind_y,self.ind_zp1],1,xi_tmp,1)             # <<<<<<<<<<<<<<
@@ -6184,7 +6199,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 260, __pyx_L1_error)
+        __PYX_ERR(1, 389, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6197,7 +6212,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 1)");
-        __PYX_ERR(1, 260, __pyx_L1_error)
+        __PYX_ERR(1, 389, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6210,7 +6225,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 2)");
-        __PYX_ERR(1, 260, __pyx_L1_error)
+        __PYX_ERR(1, 389, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6224,7 +6239,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":261
+  /* "straininterpolationandintegration.pyx":390
  * 
  *         dcopy(3,self.xi[self.ind_xp1,self.ind_y,self.ind_zp1],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -6234,7 +6249,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
   __pyx_t_4 = ((__pyx_f_33straininterpolationandintegration_ddot(3, __pyx_v_xi_tmp, 1, __pyx_v_xi_ref, 1) < 0.0) != 0);
   if (__pyx_t_4) {
 
-    /* "straininterpolationandintegration.pyx":262
+    /* "straininterpolationandintegration.pyx":391
  *         dcopy(3,self.xi[self.ind_xp1,self.ind_y,self.ind_zp1],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:
  *             dscal(3,-1,xi_tmp,1)             # <<<<<<<<<<<<<<
@@ -6243,7 +6258,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
  */
     __pyx_f_33straininterpolationandintegration_dscal(3, -1.0, __pyx_v_xi_tmp, 1);
 
-    /* "straininterpolationandintegration.pyx":261
+    /* "straininterpolationandintegration.pyx":390
  * 
  *         dcopy(3,self.xi[self.ind_xp1,self.ind_y,self.ind_zp1],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -6252,7 +6267,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
  */
   }
 
-  /* "straininterpolationandintegration.pyx":263
+  /* "straininterpolationandintegration.pyx":392
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:
  *             dscal(3,-1,xi_tmp,1)
  *         dcopy(3,xi_tmp,1,xi_cube[5],1)             # <<<<<<<<<<<<<<
@@ -6270,7 +6285,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 263, __pyx_L1_error)
+        __PYX_ERR(1, 392, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6284,7 +6299,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":265
+  /* "straininterpolationandintegration.pyx":394
  *         dcopy(3,xi_tmp,1,xi_cube[5],1)
  * 
  *         dcopy(3,self.xi[self.ind_x,self.ind_yp1,self.ind_zp1],1,xi_tmp,1)             # <<<<<<<<<<<<<<
@@ -6302,7 +6317,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 265, __pyx_L1_error)
+        __PYX_ERR(1, 394, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6315,7 +6330,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 1)");
-        __PYX_ERR(1, 265, __pyx_L1_error)
+        __PYX_ERR(1, 394, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6328,7 +6343,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 2)");
-        __PYX_ERR(1, 265, __pyx_L1_error)
+        __PYX_ERR(1, 394, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6342,7 +6357,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":266
+  /* "straininterpolationandintegration.pyx":395
  * 
  *         dcopy(3,self.xi[self.ind_x,self.ind_yp1,self.ind_zp1],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -6352,7 +6367,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
   __pyx_t_4 = ((__pyx_f_33straininterpolationandintegration_ddot(3, __pyx_v_xi_tmp, 1, __pyx_v_xi_ref, 1) < 0.0) != 0);
   if (__pyx_t_4) {
 
-    /* "straininterpolationandintegration.pyx":267
+    /* "straininterpolationandintegration.pyx":396
  *         dcopy(3,self.xi[self.ind_x,self.ind_yp1,self.ind_zp1],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:
  *             dscal(3,-1,xi_tmp,1)             # <<<<<<<<<<<<<<
@@ -6361,7 +6376,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
  */
     __pyx_f_33straininterpolationandintegration_dscal(3, -1.0, __pyx_v_xi_tmp, 1);
 
-    /* "straininterpolationandintegration.pyx":266
+    /* "straininterpolationandintegration.pyx":395
  * 
  *         dcopy(3,self.xi[self.ind_x,self.ind_yp1,self.ind_zp1],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -6370,7 +6385,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
  */
   }
 
-  /* "straininterpolationandintegration.pyx":268
+  /* "straininterpolationandintegration.pyx":397
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:
  *             dscal(3,-1,xi_tmp,1)
  *         dcopy(3,xi_tmp,1,xi_cube[6],1)             # <<<<<<<<<<<<<<
@@ -6388,7 +6403,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 268, __pyx_L1_error)
+        __PYX_ERR(1, 397, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6402,7 +6417,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":270
+  /* "straininterpolationandintegration.pyx":399
  *         dcopy(3,xi_tmp,1,xi_cube[6],1)
  * 
  *         dcopy(3,self.xi[self.ind_xp1,self.ind_yp1,self.ind_zp1],1,xi_tmp,1)             # <<<<<<<<<<<<<<
@@ -6420,7 +6435,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 270, __pyx_L1_error)
+        __PYX_ERR(1, 399, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6433,7 +6448,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 1)");
-        __PYX_ERR(1, 270, __pyx_L1_error)
+        __PYX_ERR(1, 399, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6446,7 +6461,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 2)");
-        __PYX_ERR(1, 270, __pyx_L1_error)
+        __PYX_ERR(1, 399, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6460,7 +6475,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":271
+  /* "straininterpolationandintegration.pyx":400
  * 
  *         dcopy(3,self.xi[self.ind_xp1,self.ind_yp1,self.ind_zp1],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -6470,7 +6485,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
   __pyx_t_4 = ((__pyx_f_33straininterpolationandintegration_ddot(3, __pyx_v_xi_tmp, 1, __pyx_v_xi_ref, 1) < 0.0) != 0);
   if (__pyx_t_4) {
 
-    /* "straininterpolationandintegration.pyx":272
+    /* "straininterpolationandintegration.pyx":401
  *         dcopy(3,self.xi[self.ind_xp1,self.ind_yp1,self.ind_zp1],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:
  *             dscal(3,-1,xi_tmp,1)             # <<<<<<<<<<<<<<
@@ -6479,7 +6494,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
  */
     __pyx_f_33straininterpolationandintegration_dscal(3, -1.0, __pyx_v_xi_tmp, 1);
 
-    /* "straininterpolationandintegration.pyx":271
+    /* "straininterpolationandintegration.pyx":400
  * 
  *         dcopy(3,self.xi[self.ind_xp1,self.ind_yp1,self.ind_zp1],1,xi_tmp,1)
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -6488,7 +6503,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
  */
   }
 
-  /* "straininterpolationandintegration.pyx":273
+  /* "straininterpolationandintegration.pyx":402
  *         if ddot(3,xi_tmp,1,xi_ref,1) < 0:
  *             dscal(3,-1,xi_tmp,1)
  *         dcopy(3,xi_tmp,1,xi_cube[7],1)             # <<<<<<<<<<<<<<
@@ -6506,7 +6521,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_1, 1, __pyx_v_xi_tm
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 273, __pyx_L1_error)
+        __PYX_ERR(1, 402, __pyx_L1_error)
     }
         __pyx_t_1.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6520,12 +6535,12 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":227
+  /* "straininterpolationandintegration.pyx":347
  *     @cython.boundscheck(False)
  *     @cython.cdivision(True)
  *     cdef void _set_crnr_vcs_(self):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double[::1] xi_tmp = self.xia, xi_ref = self.xi_ref
+ *         """
+ *         LinearSpecialInterpolator._set_crnr_vcs_()
  */
 
   /* function exit code */
@@ -6543,12 +6558,12 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_xi_tmp, 1, __pyx_t_
   __Pyx_RefNannyFinishContext();
 }
 
-/* "straininterpolationandintegration.pyx":278
+/* "straininterpolationandintegration.pyx":407
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     cdef void _compute_nrmd_wtd_sum_(self, double x, double y, double z, double[::1] &xi):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double[:,::1] xi_cube = self.xi_cube
+ *         """
+ *         LinearSpecialInterpolator._compute_nrmd_wtd_sum_(x,y,z,xi)
  */
 
 static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpolator__compute_nrmd_wtd_sum_(struct __pyx_obj_33straininterpolationandintegration_LinearSpecialInterpolator *__pyx_v_self, double __pyx_v_x, double __pyx_v_y, double __pyx_v_z, __Pyx_memviewslice &__pyx_v_xi) {
@@ -6559,8 +6574,8 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
   __Pyx_memviewslice __pyx_t_3 = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_RefNannySetupContext("_compute_nrmd_wtd_sum_", 0);
 
-  /* "straininterpolationandintegration.pyx":280
- *     cdef void _compute_nrmd_wtd_sum_(self, double x, double y, double z, double[::1] &xi):
+  /* "straininterpolationandintegration.pyx":431
+ *         """
  *         cdef:
  *             double[:,::1] xi_cube = self.xi_cube             # <<<<<<<<<<<<<<
  *         # LC along z-axis
@@ -6572,7 +6587,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":282
+  /* "straininterpolationandintegration.pyx":433
  *             double[:,::1] xi_cube = self.xi_cube
  *         # LC along z-axis
  *         dscal(3,1-z,xi_cube[0],1)             # <<<<<<<<<<<<<<
@@ -6590,7 +6605,7 @@ static void __pyx_f_33straininterpolationandintegration_25LinearSpecialInterpola
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 282, __pyx_L1_error)
+        __PYX_ERR(1, 433, __pyx_L1_error)
     }
         __pyx_t_2.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6604,7 +6619,7 @@ __pyx_f_33straininterpolationandintegration_dscal(3, (1.0 - __pyx_v_z), __pyx_t_
   __pyx_t_2.memview = NULL;
   __pyx_t_2.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":283
+  /* "straininterpolationandintegration.pyx":434
  *         # LC along z-axis
  *         dscal(3,1-z,xi_cube[0],1)
  *         daxpy(3,z,xi_cube[4],1,xi_cube[0],1)             # <<<<<<<<<<<<<<
@@ -6622,7 +6637,7 @@ __pyx_f_33straininterpolationandintegration_dscal(3, (1.0 - __pyx_v_z), __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 283, __pyx_L1_error)
+        __PYX_ERR(1, 434, __pyx_L1_error)
     }
         __pyx_t_2.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6642,7 +6657,7 @@ __pyx_t_3.data = __pyx_v_xi_cube.data;
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 283, __pyx_L1_error)
+        __PYX_ERR(1, 434, __pyx_L1_error)
     }
         __pyx_t_3.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6659,7 +6674,7 @@ __pyx_f_33straininterpolationandintegration_daxpy(3, __pyx_v_z, __pyx_t_2, 1, __
   __pyx_t_3.memview = NULL;
   __pyx_t_3.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":285
+  /* "straininterpolationandintegration.pyx":436
  *         daxpy(3,z,xi_cube[4],1,xi_cube[0],1)
  * 
  *         dscal(3,1-z,xi_cube[1],1)             # <<<<<<<<<<<<<<
@@ -6677,7 +6692,7 @@ __pyx_f_33straininterpolationandintegration_daxpy(3, __pyx_v_z, __pyx_t_2, 1, __
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 285, __pyx_L1_error)
+        __PYX_ERR(1, 436, __pyx_L1_error)
     }
         __pyx_t_3.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6691,7 +6706,7 @@ __pyx_f_33straininterpolationandintegration_dscal(3, (1.0 - __pyx_v_z), __pyx_t_
   __pyx_t_3.memview = NULL;
   __pyx_t_3.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":286
+  /* "straininterpolationandintegration.pyx":437
  * 
  *         dscal(3,1-z,xi_cube[1],1)
  *         daxpy(3,z,xi_cube[5],1,xi_cube[1],1)             # <<<<<<<<<<<<<<
@@ -6709,7 +6724,7 @@ __pyx_f_33straininterpolationandintegration_dscal(3, (1.0 - __pyx_v_z), __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 286, __pyx_L1_error)
+        __PYX_ERR(1, 437, __pyx_L1_error)
     }
         __pyx_t_3.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6729,7 +6744,7 @@ __pyx_t_2.data = __pyx_v_xi_cube.data;
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 286, __pyx_L1_error)
+        __PYX_ERR(1, 437, __pyx_L1_error)
     }
         __pyx_t_2.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6746,7 +6761,7 @@ __pyx_f_33straininterpolationandintegration_daxpy(3, __pyx_v_z, __pyx_t_3, 1, __
   __pyx_t_2.memview = NULL;
   __pyx_t_2.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":288
+  /* "straininterpolationandintegration.pyx":439
  *         daxpy(3,z,xi_cube[5],1,xi_cube[1],1)
  * 
  *         dscal(3,1-z,xi_cube[2],1)             # <<<<<<<<<<<<<<
@@ -6764,7 +6779,7 @@ __pyx_f_33straininterpolationandintegration_daxpy(3, __pyx_v_z, __pyx_t_3, 1, __
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 288, __pyx_L1_error)
+        __PYX_ERR(1, 439, __pyx_L1_error)
     }
         __pyx_t_2.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6778,7 +6793,7 @@ __pyx_f_33straininterpolationandintegration_dscal(3, (1.0 - __pyx_v_z), __pyx_t_
   __pyx_t_2.memview = NULL;
   __pyx_t_2.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":289
+  /* "straininterpolationandintegration.pyx":440
  * 
  *         dscal(3,1-z,xi_cube[2],1)
  *         daxpy(3,z,xi_cube[6],1,xi_cube[2],1)             # <<<<<<<<<<<<<<
@@ -6796,7 +6811,7 @@ __pyx_f_33straininterpolationandintegration_dscal(3, (1.0 - __pyx_v_z), __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 289, __pyx_L1_error)
+        __PYX_ERR(1, 440, __pyx_L1_error)
     }
         __pyx_t_2.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6816,7 +6831,7 @@ __pyx_t_3.data = __pyx_v_xi_cube.data;
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 289, __pyx_L1_error)
+        __PYX_ERR(1, 440, __pyx_L1_error)
     }
         __pyx_t_3.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6833,7 +6848,7 @@ __pyx_f_33straininterpolationandintegration_daxpy(3, __pyx_v_z, __pyx_t_2, 1, __
   __pyx_t_3.memview = NULL;
   __pyx_t_3.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":291
+  /* "straininterpolationandintegration.pyx":442
  *         daxpy(3,z,xi_cube[6],1,xi_cube[2],1)
  * 
  *         dscal(3,1-z,xi_cube[3],1)             # <<<<<<<<<<<<<<
@@ -6851,7 +6866,7 @@ __pyx_f_33straininterpolationandintegration_daxpy(3, __pyx_v_z, __pyx_t_2, 1, __
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 291, __pyx_L1_error)
+        __PYX_ERR(1, 442, __pyx_L1_error)
     }
         __pyx_t_3.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6865,7 +6880,7 @@ __pyx_f_33straininterpolationandintegration_dscal(3, (1.0 - __pyx_v_z), __pyx_t_
   __pyx_t_3.memview = NULL;
   __pyx_t_3.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":292
+  /* "straininterpolationandintegration.pyx":443
  * 
  *         dscal(3,1-z,xi_cube[3],1)
  *         daxpy(3,z,xi_cube[7],1,xi_cube[3],1)             # <<<<<<<<<<<<<<
@@ -6883,7 +6898,7 @@ __pyx_f_33straininterpolationandintegration_dscal(3, (1.0 - __pyx_v_z), __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 292, __pyx_L1_error)
+        __PYX_ERR(1, 443, __pyx_L1_error)
     }
         __pyx_t_3.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6903,7 +6918,7 @@ __pyx_t_2.data = __pyx_v_xi_cube.data;
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 292, __pyx_L1_error)
+        __PYX_ERR(1, 443, __pyx_L1_error)
     }
         __pyx_t_2.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6920,7 +6935,7 @@ __pyx_f_33straininterpolationandintegration_daxpy(3, __pyx_v_z, __pyx_t_3, 1, __
   __pyx_t_2.memview = NULL;
   __pyx_t_2.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":295
+  /* "straininterpolationandintegration.pyx":446
  * 
  *         # LC along y-axis
  *         dscal(3,1-y,xi_cube[0],1)             # <<<<<<<<<<<<<<
@@ -6938,7 +6953,7 @@ __pyx_f_33straininterpolationandintegration_daxpy(3, __pyx_v_z, __pyx_t_3, 1, __
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 295, __pyx_L1_error)
+        __PYX_ERR(1, 446, __pyx_L1_error)
     }
         __pyx_t_2.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6952,7 +6967,7 @@ __pyx_f_33straininterpolationandintegration_dscal(3, (1.0 - __pyx_v_y), __pyx_t_
   __pyx_t_2.memview = NULL;
   __pyx_t_2.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":296
+  /* "straininterpolationandintegration.pyx":447
  *         # LC along y-axis
  *         dscal(3,1-y,xi_cube[0],1)
  *         daxpy(3,y,xi_cube[2],1,xi_cube[0],1)             # <<<<<<<<<<<<<<
@@ -6970,7 +6985,7 @@ __pyx_f_33straininterpolationandintegration_dscal(3, (1.0 - __pyx_v_y), __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 296, __pyx_L1_error)
+        __PYX_ERR(1, 447, __pyx_L1_error)
     }
         __pyx_t_2.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -6990,7 +7005,7 @@ __pyx_t_3.data = __pyx_v_xi_cube.data;
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 296, __pyx_L1_error)
+        __PYX_ERR(1, 447, __pyx_L1_error)
     }
         __pyx_t_3.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -7007,7 +7022,7 @@ __pyx_f_33straininterpolationandintegration_daxpy(3, __pyx_v_y, __pyx_t_2, 1, __
   __pyx_t_3.memview = NULL;
   __pyx_t_3.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":298
+  /* "straininterpolationandintegration.pyx":449
  *         daxpy(3,y,xi_cube[2],1,xi_cube[0],1)
  * 
  *         dscal(3,1-y,xi_cube[1],1)             # <<<<<<<<<<<<<<
@@ -7025,7 +7040,7 @@ __pyx_f_33straininterpolationandintegration_daxpy(3, __pyx_v_y, __pyx_t_2, 1, __
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 298, __pyx_L1_error)
+        __PYX_ERR(1, 449, __pyx_L1_error)
     }
         __pyx_t_3.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -7039,7 +7054,7 @@ __pyx_f_33straininterpolationandintegration_dscal(3, (1.0 - __pyx_v_y), __pyx_t_
   __pyx_t_3.memview = NULL;
   __pyx_t_3.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":299
+  /* "straininterpolationandintegration.pyx":450
  * 
  *         dscal(3,1-y,xi_cube[1],1)
  *         daxpy(3,y,xi_cube[3],1,xi_cube[1],1)             # <<<<<<<<<<<<<<
@@ -7057,7 +7072,7 @@ __pyx_f_33straininterpolationandintegration_dscal(3, (1.0 - __pyx_v_y), __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 299, __pyx_L1_error)
+        __PYX_ERR(1, 450, __pyx_L1_error)
     }
         __pyx_t_3.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -7077,7 +7092,7 @@ __pyx_t_2.data = __pyx_v_xi_cube.data;
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 299, __pyx_L1_error)
+        __PYX_ERR(1, 450, __pyx_L1_error)
     }
         __pyx_t_2.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -7094,7 +7109,7 @@ __pyx_f_33straininterpolationandintegration_daxpy(3, __pyx_v_y, __pyx_t_3, 1, __
   __pyx_t_2.memview = NULL;
   __pyx_t_2.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":302
+  /* "straininterpolationandintegration.pyx":453
  * 
  *         # LC along x-axis
  *         dscal(3,1-x,xi_cube[0],1)             # <<<<<<<<<<<<<<
@@ -7112,7 +7127,7 @@ __pyx_f_33straininterpolationandintegration_daxpy(3, __pyx_v_y, __pyx_t_3, 1, __
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 302, __pyx_L1_error)
+        __PYX_ERR(1, 453, __pyx_L1_error)
     }
         __pyx_t_2.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -7126,7 +7141,7 @@ __pyx_f_33straininterpolationandintegration_dscal(3, (1.0 - __pyx_v_x), __pyx_t_
   __pyx_t_2.memview = NULL;
   __pyx_t_2.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":303
+  /* "straininterpolationandintegration.pyx":454
  *         # LC along x-axis
  *         dscal(3,1-x,xi_cube[0],1)
  *         daxpy(3,x,xi_cube[1],1,xi_cube[0],1)             # <<<<<<<<<<<<<<
@@ -7144,7 +7159,7 @@ __pyx_f_33straininterpolationandintegration_dscal(3, (1.0 - __pyx_v_x), __pyx_t_
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 303, __pyx_L1_error)
+        __PYX_ERR(1, 454, __pyx_L1_error)
     }
         __pyx_t_2.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -7164,7 +7179,7 @@ __pyx_t_3.data = __pyx_v_xi_cube.data;
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 303, __pyx_L1_error)
+        __PYX_ERR(1, 454, __pyx_L1_error)
     }
         __pyx_t_3.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -7181,7 +7196,7 @@ __pyx_f_33straininterpolationandintegration_daxpy(3, __pyx_v_x, __pyx_t_2, 1, __
   __pyx_t_3.memview = NULL;
   __pyx_t_3.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":306
+  /* "straininterpolationandintegration.pyx":457
  * 
  *         # Assign to output
  *         dcopy(3,xi_cube[0],1,xi,1)             # <<<<<<<<<<<<<<
@@ -7199,7 +7214,7 @@ __pyx_f_33straininterpolationandintegration_daxpy(3, __pyx_v_x, __pyx_t_2, 1, __
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 306, __pyx_L1_error)
+        __PYX_ERR(1, 457, __pyx_L1_error)
     }
         __pyx_t_3.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -7213,7 +7228,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_xi, 1
   __pyx_t_3.memview = NULL;
   __pyx_t_3.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":309
+  /* "straininterpolationandintegration.pyx":460
  * 
  *         # Normalize output
  *         _cy_normalize_(xi)             # <<<<<<<<<<<<<<
@@ -7222,12 +7237,12 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_xi, 1
  */
   __pyx_f_33straininterpolationandintegration__cy_normalize_(__pyx_v_xi);
 
-  /* "straininterpolationandintegration.pyx":278
+  /* "straininterpolationandintegration.pyx":407
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     cdef void _compute_nrmd_wtd_sum_(self, double x, double y, double z, double[::1] &xi):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double[:,::1] xi_cube = self.xi_cube
+ *         """
+ *         LinearSpecialInterpolator._compute_nrmd_wtd_sum_(x,y,z,xi)
  */
 
   /* function exit code */
@@ -7242,7 +7257,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_xi, 1
   __Pyx_RefNannyFinishContext();
 }
 
-/* "straininterpolationandintegration.pyx":311
+/* "straininterpolationandintegration.pyx":462
  *         _cy_normalize_(xi)
  * 
  *     def __dealoc__(self):             # <<<<<<<<<<<<<<
@@ -7382,7 +7397,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_25LinearSpecialInt
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":345
+/* "straininterpolationandintegration.pyx":516
  *         double x_internal, y_internal, z_internal
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -7421,7 +7436,7 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
   __Pyx_memviewslice __pyx_t_10 = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "straininterpolationandintegration.pyx":346
+  /* "straininterpolationandintegration.pyx":517
  * 
  *     def __cinit__(self):
  *         self.itpx = new ItpCont()             # <<<<<<<<<<<<<<
@@ -7432,11 +7447,11 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_1 = new ItpCont();
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(1, 346, __pyx_L1_error)
+    __PYX_ERR(1, 517, __pyx_L1_error)
   }
   __pyx_v_self->itpx = __pyx_t_1;
 
-  /* "straininterpolationandintegration.pyx":347
+  /* "straininterpolationandintegration.pyx":518
  *     def __cinit__(self):
  *         self.itpx = new ItpCont()
  *         self.itpy = new ItpCont()             # <<<<<<<<<<<<<<
@@ -7447,11 +7462,11 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_1 = new ItpCont();
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(1, 347, __pyx_L1_error)
+    __PYX_ERR(1, 518, __pyx_L1_error)
   }
   __pyx_v_self->itpy = __pyx_t_1;
 
-  /* "straininterpolationandintegration.pyx":348
+  /* "straininterpolationandintegration.pyx":519
  *         self.itpx = new ItpCont()
  *         self.itpy = new ItpCont()
  *         self.itpz = new ItpCont()             # <<<<<<<<<<<<<<
@@ -7462,11 +7477,11 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_1 = new ItpCont();
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(1, 348, __pyx_L1_error)
+    __PYX_ERR(1, 519, __pyx_L1_error)
   }
   __pyx_v_self->itpz = __pyx_t_1;
 
-  /* "straininterpolationandintegration.pyx":349
+  /* "straininterpolationandintegration.pyx":520
  *         self.itpy = new ItpCont()
  *         self.itpz = new ItpCont()
  *         self.x_cube = self._x_cube_             # <<<<<<<<<<<<<<
@@ -7476,26 +7491,26 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_2 = __pyx_v_self->_x_cube_;
   if (!__pyx_t_2) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 349, __pyx_L1_error)
+    __PYX_ERR(1, 520, __pyx_L1_error)
   }
   __pyx_t_5 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_4 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)4));
-  if (unlikely(!__pyx_t_5 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_5))) __PYX_ERR(1, 349, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_5))) __PYX_ERR(1, 520, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_3 = __pyx_array_new(__pyx_t_4, sizeof(double), PyBytes_AS_STRING(__pyx_t_5), (char *) "fortran", (char *) __pyx_t_2);
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 349, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 520, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 349, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 520, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_3)); __pyx_t_3 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->x_cube, 0);
   __pyx_v_self->x_cube = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":350
+  /* "straininterpolationandintegration.pyx":521
  *         self.itpz = new ItpCont()
  *         self.x_cube = self._x_cube_
  *         self.y_cube = self._y_cube_             # <<<<<<<<<<<<<<
@@ -7505,26 +7520,26 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_2 = __pyx_v_self->_y_cube_;
   if (!__pyx_t_2) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 350, __pyx_L1_error)
+    __PYX_ERR(1, 521, __pyx_L1_error)
   }
   __pyx_t_4 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_5 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)4));
-  if (unlikely(!__pyx_t_4 || !__pyx_t_5 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 350, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4 || !__pyx_t_5 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 521, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_3 = __pyx_array_new(__pyx_t_5, sizeof(double), PyBytes_AS_STRING(__pyx_t_4), (char *) "fortran", (char *) __pyx_t_2);
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 350, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 521, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 350, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 521, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_3)); __pyx_t_3 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->y_cube, 0);
   __pyx_v_self->y_cube = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":351
+  /* "straininterpolationandintegration.pyx":522
  *         self.x_cube = self._x_cube_
  *         self.y_cube = self._y_cube_
  *         self.z_cube = self._z_cube_             # <<<<<<<<<<<<<<
@@ -7534,26 +7549,26 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_2 = __pyx_v_self->_z_cube_;
   if (!__pyx_t_2) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 351, __pyx_L1_error)
+    __PYX_ERR(1, 522, __pyx_L1_error)
   }
   __pyx_t_5 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_4 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)4));
-  if (unlikely(!__pyx_t_5 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_5))) __PYX_ERR(1, 351, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_5))) __PYX_ERR(1, 522, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_3 = __pyx_array_new(__pyx_t_4, sizeof(double), PyBytes_AS_STRING(__pyx_t_5), (char *) "fortran", (char *) __pyx_t_2);
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 351, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 522, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 351, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 522, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_3)); __pyx_t_3 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->z_cube, 0);
   __pyx_v_self->z_cube = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":352
+  /* "straininterpolationandintegration.pyx":523
  *         self.y_cube = self._y_cube_
  *         self.z_cube = self._z_cube_
  *         self.inds_x = self._inds_x_             # <<<<<<<<<<<<<<
@@ -7563,26 +7578,26 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_7 = __pyx_v_self->_inds_x_;
   if (!__pyx_t_7) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 352, __pyx_L1_error)
+    __PYX_ERR(1, 523, __pyx_L1_error)
   }
   __pyx_t_4 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_int);
   __pyx_t_5 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)4));
-  if (unlikely(!__pyx_t_4 || !__pyx_t_5 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 352, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4 || !__pyx_t_5 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 523, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_3 = __pyx_array_new(__pyx_t_5, sizeof(int), PyBytes_AS_STRING(__pyx_t_4), (char *) "fortran", (char *) __pyx_t_7);
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 352, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 523, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_int(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 352, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_int(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 523, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_3)); __pyx_t_3 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->inds_x, 0);
   __pyx_v_self->inds_x = __pyx_t_8;
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":353
+  /* "straininterpolationandintegration.pyx":524
  *         self.z_cube = self._z_cube_
  *         self.inds_x = self._inds_x_
  *         self.inds_y = self._inds_y_             # <<<<<<<<<<<<<<
@@ -7592,26 +7607,26 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_7 = __pyx_v_self->_inds_y_;
   if (!__pyx_t_7) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 353, __pyx_L1_error)
+    __PYX_ERR(1, 524, __pyx_L1_error)
   }
   __pyx_t_5 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_int);
   __pyx_t_4 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)4));
-  if (unlikely(!__pyx_t_5 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_5))) __PYX_ERR(1, 353, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_5))) __PYX_ERR(1, 524, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_3 = __pyx_array_new(__pyx_t_4, sizeof(int), PyBytes_AS_STRING(__pyx_t_5), (char *) "fortran", (char *) __pyx_t_7);
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 353, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 524, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_int(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 353, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_int(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 524, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_3)); __pyx_t_3 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->inds_y, 0);
   __pyx_v_self->inds_y = __pyx_t_8;
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":354
+  /* "straininterpolationandintegration.pyx":525
  *         self.inds_x = self._inds_x_
  *         self.inds_y = self._inds_y_
  *         self.inds_z = self._inds_z_             # <<<<<<<<<<<<<<
@@ -7621,26 +7636,26 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_7 = __pyx_v_self->_inds_z_;
   if (!__pyx_t_7) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 354, __pyx_L1_error)
+    __PYX_ERR(1, 525, __pyx_L1_error)
   }
   __pyx_t_4 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_int);
   __pyx_t_5 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)4));
-  if (unlikely(!__pyx_t_4 || !__pyx_t_5 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 354, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4 || !__pyx_t_5 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 525, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_3 = __pyx_array_new(__pyx_t_5, sizeof(int), PyBytes_AS_STRING(__pyx_t_4), (char *) "fortran", (char *) __pyx_t_7);
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 354, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 525, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_int(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 354, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_to_MemoryviewSlice_dc_int(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_8.memview)) __PYX_ERR(1, 525, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_3)); __pyx_t_3 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->inds_z, 0);
   __pyx_v_self->inds_z = __pyx_t_8;
   __pyx_t_8.memview = NULL;
   __pyx_t_8.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":355
+  /* "straininterpolationandintegration.pyx":526
  *         self.inds_y = self._inds_y_
  *         self.inds_z = self._inds_z_
  *         self.xi_cube = self._xi_cube_             # <<<<<<<<<<<<<<
@@ -7650,26 +7665,26 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_9 = __pyx_v_self->_xi_cube_;
   if (!__pyx_t_9) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 355, __pyx_L1_error)
+    __PYX_ERR(1, 526, __pyx_L1_error)
   }
   __pyx_t_5 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_4 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3), ((Py_ssize_t)64));
-  if (unlikely(!__pyx_t_5 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_5))) __PYX_ERR(1, 355, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_5))) __PYX_ERR(1, 526, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_3 = __pyx_array_new(__pyx_t_4, sizeof(double), PyBytes_AS_STRING(__pyx_t_5), (char *) "c", (char *) __pyx_t_9);
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 355, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 526, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_10 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_double(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_10.memview)) __PYX_ERR(1, 355, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_double(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_10.memview)) __PYX_ERR(1, 526, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_3)); __pyx_t_3 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->xi_cube, 0);
   __pyx_v_self->xi_cube = __pyx_t_10;
   __pyx_t_10.memview = NULL;
   __pyx_t_10.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":356
+  /* "straininterpolationandintegration.pyx":527
  *         self.inds_z = self._inds_z_
  *         self.xi_cube = self._xi_cube_
  *         self.tmp = self._tmp_             # <<<<<<<<<<<<<<
@@ -7679,26 +7694,26 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_2 = __pyx_v_self->_tmp_;
   if (!__pyx_t_2) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 356, __pyx_L1_error)
+    __PYX_ERR(1, 527, __pyx_L1_error)
   }
   __pyx_t_4 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_5 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_4 || !__pyx_t_5 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 356, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4 || !__pyx_t_5 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 527, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_3 = __pyx_array_new(__pyx_t_5, sizeof(double), PyBytes_AS_STRING(__pyx_t_4), (char *) "fortran", (char *) __pyx_t_2);
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 356, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 527, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 356, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 527, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_3)); __pyx_t_3 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->tmp, 0);
   __pyx_v_self->tmp = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":357
+  /* "straininterpolationandintegration.pyx":528
  *         self.xi_cube = self._xi_cube_
  *         self.tmp = self._tmp_
  *         self.xi_ref = self._xi_ref_             # <<<<<<<<<<<<<<
@@ -7708,26 +7723,26 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_2 = __pyx_v_self->_xi_ref_;
   if (!__pyx_t_2) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 357, __pyx_L1_error)
+    __PYX_ERR(1, 528, __pyx_L1_error)
   }
   __pyx_t_5 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_4 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_5 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_5))) __PYX_ERR(1, 357, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_5))) __PYX_ERR(1, 528, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_3 = __pyx_array_new(__pyx_t_4, sizeof(double), PyBytes_AS_STRING(__pyx_t_5), (char *) "fortran", (char *) __pyx_t_2);
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 357, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 528, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 357, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 528, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_3)); __pyx_t_3 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->xi_ref, 0);
   __pyx_v_self->xi_ref = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":358
+  /* "straininterpolationandintegration.pyx":529
  *         self.tmp = self._tmp_
  *         self.xi_ref = self._xi_ref_
  *         self.calibrated = False             # <<<<<<<<<<<<<<
@@ -7736,7 +7751,7 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
  */
   __pyx_v_self->calibrated = 0;
 
-  /* "straininterpolationandintegration.pyx":359
+  /* "straininterpolationandintegration.pyx":530
  *         self.xi_ref = self._xi_ref_
  *         self.calibrated = False
  *         self.ret = self._ret_             # <<<<<<<<<<<<<<
@@ -7746,26 +7761,26 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_2 = __pyx_v_self->_ret_;
   if (!__pyx_t_2) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 359, __pyx_L1_error)
+    __PYX_ERR(1, 530, __pyx_L1_error)
   }
   __pyx_t_4 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_5 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_4 || !__pyx_t_5 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 359, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4 || !__pyx_t_5 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 530, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_3 = __pyx_array_new(__pyx_t_5, sizeof(double), PyBytes_AS_STRING(__pyx_t_4), (char *) "fortran", (char *) __pyx_t_2);
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 359, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 530, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 359, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_3), PyBUF_WRITABLE); if (unlikely(!__pyx_t_6.memview)) __PYX_ERR(1, 530, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_3)); __pyx_t_3 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->ret, 0);
   __pyx_v_self->ret = __pyx_t_6;
   __pyx_t_6.memview = NULL;
   __pyx_t_6.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":360
+  /* "straininterpolationandintegration.pyx":531
  *         self.calibrated = False
  *         self.ret = self._ret_
  *         self.sameaslast = False             # <<<<<<<<<<<<<<
@@ -7774,7 +7789,7 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
  */
   __pyx_v_self->sameaslast = 0;
 
-  /* "straininterpolationandintegration.pyx":345
+  /* "straininterpolationandintegration.pyx":516
  *         double x_internal, y_internal, z_internal
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -7799,16 +7814,20 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":365
+/* "straininterpolationandintegration.pyx":536
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __init__(self, double[::1] x not None, double[::1] y not None, double[::1] z not None, \             # <<<<<<<<<<<<<<
  *             double[:,:,:,::1] xi not None, int kx = 4, int ky = 4, int kz = 4):
- *         cdef:
+ *         """
  */
 
 /* Python wrapper */
 static int __pyx_pw_33straininterpolationandintegration_24CubicSpecialInterpolator_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_33straininterpolationandintegration_24CubicSpecialInterpolator_2__init__[] = "\n        CubicSpecialInterpolator.__init__(x,y,z,xi)\n\n        Constructor for a CubicSpecialInterpolator instance.\n\n        Parameters\n        ----------\n        x : (nx,) array-like\n           A (C-contiguous) NumPy array of type np.float64 and shape (nx,),\n           containing the sampling points along the x abscissa.\n           Must be strictly increasing.\n        y : (ny,) array-like\n           A (C-contiguous) NumPy array of type np.float64 and shape (ny,),\n           containing the sampling points along the y abscissa.\n           Must be strictly increasing.\n        z : (nz,) array-like\n           A (C-contiguous) NumPy array of type np.float64 and shape (nz,),\n           containing the sampling points along the z abscissa.\n           Must be strictly increasing.\n        xi : (nx,ny,nz,3) array-like\n           A (C-contiguous) NumPy array of type np.float64 and shape\n           (nx,ny,nz,3), containing the sampled vector field.\n           xi[i,j,k] should correspond to the sample at (x[i],y[j],z[k]).\n        kx : integer, optional\n           Spline order along the x abscissa. Default: kx = 4\n        ky : integer, optional\n           Spline order along the y abscissa. Default: ky = 4\n        kz : integer, optional\n           Spline order along the z abscissa. Default: kz = 4\n\n        ";
+#if CYTHON_COMPILING_IN_CPYTHON
+struct wrapperbase __pyx_wrapperbase_33straininterpolationandintegration_24CubicSpecialInterpolator_2__init__;
+#endif
 static int __pyx_pw_33straininterpolationandintegration_24CubicSpecialInterpolator_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_x = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_y = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -7853,19 +7872,19 @@ static int __pyx_pw_33straininterpolationandintegration_24CubicSpecialInterpolat
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_y)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 4, 7, 1); __PYX_ERR(1, 365, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 4, 7, 1); __PYX_ERR(1, 536, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_z)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 4, 7, 2); __PYX_ERR(1, 365, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 4, 7, 2); __PYX_ERR(1, 536, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_xi)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 4, 7, 3); __PYX_ERR(1, 365, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 4, 7, 3); __PYX_ERR(1, 536, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
@@ -7887,7 +7906,7 @@ static int __pyx_pw_33straininterpolationandintegration_24CubicSpecialInterpolat
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 365, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 536, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -7905,45 +7924,45 @@ static int __pyx_pw_33straininterpolationandintegration_24CubicSpecialInterpolat
         default: goto __pyx_L5_argtuple_error;
       }
     }
-    __pyx_v_x = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 365, __pyx_L3_error)
-    __pyx_v_y = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_y.memview)) __PYX_ERR(1, 365, __pyx_L3_error)
-    __pyx_v_z = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[2], PyBUF_WRITABLE); if (unlikely(!__pyx_v_z.memview)) __PYX_ERR(1, 365, __pyx_L3_error)
-    __pyx_v_xi = __Pyx_PyObject_to_MemoryviewSlice_d_d_d_dc_double(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_xi.memview)) __PYX_ERR(1, 366, __pyx_L3_error)
+    __pyx_v_x = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 536, __pyx_L3_error)
+    __pyx_v_y = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_y.memview)) __PYX_ERR(1, 536, __pyx_L3_error)
+    __pyx_v_z = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[2], PyBUF_WRITABLE); if (unlikely(!__pyx_v_z.memview)) __PYX_ERR(1, 536, __pyx_L3_error)
+    __pyx_v_xi = __Pyx_PyObject_to_MemoryviewSlice_d_d_d_dc_double(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_xi.memview)) __PYX_ERR(1, 537, __pyx_L3_error)
     if (values[4]) {
-      __pyx_v_kx = __Pyx_PyInt_As_int(values[4]); if (unlikely((__pyx_v_kx == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 366, __pyx_L3_error)
+      __pyx_v_kx = __Pyx_PyInt_As_int(values[4]); if (unlikely((__pyx_v_kx == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 537, __pyx_L3_error)
     } else {
       __pyx_v_kx = ((int)4);
     }
     if (values[5]) {
-      __pyx_v_ky = __Pyx_PyInt_As_int(values[5]); if (unlikely((__pyx_v_ky == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 366, __pyx_L3_error)
+      __pyx_v_ky = __Pyx_PyInt_As_int(values[5]); if (unlikely((__pyx_v_ky == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 537, __pyx_L3_error)
     } else {
       __pyx_v_ky = ((int)4);
     }
     if (values[6]) {
-      __pyx_v_kz = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_kz == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 366, __pyx_L3_error)
+      __pyx_v_kz = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_kz == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 537, __pyx_L3_error)
     } else {
       __pyx_v_kz = ((int)4);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 0, 4, 7, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 365, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 4, 7, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 536, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("straininterpolationandintegration.CubicSpecialInterpolator.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(((PyObject *)__pyx_v_x.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "x"); __PYX_ERR(1, 365, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "x"); __PYX_ERR(1, 536, __pyx_L1_error)
   }
   if (unlikely(((PyObject *)__pyx_v_y.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "y"); __PYX_ERR(1, 365, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "y"); __PYX_ERR(1, 536, __pyx_L1_error)
   }
   if (unlikely(((PyObject *)__pyx_v_z.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "z"); __PYX_ERR(1, 365, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "z"); __PYX_ERR(1, 536, __pyx_L1_error)
   }
   if (unlikely(((PyObject *)__pyx_v_xi.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "xi"); __PYX_ERR(1, 366, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "xi"); __PYX_ERR(1, 537, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolator_2__init__(((struct __pyx_obj_33straininterpolationandintegration_CubicSpecialInterpolator *)__pyx_v_self), __pyx_v_x, __pyx_v_y, __pyx_v_z, __pyx_v_xi, __pyx_v_kx, __pyx_v_ky, __pyx_v_kz);
 
@@ -7977,7 +7996,7 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
   __Pyx_memviewslice __pyx_t_15 = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "straininterpolationandintegration.pyx":369
+  /* "straininterpolationandintegration.pyx":571
  *         cdef:
  *             int i
  *         if(xi.shape[0] != x.shape[0] or xi.shape[1] != y.shape[0] or xi.shape[2] != z.shape[0]):             # <<<<<<<<<<<<<<
@@ -8001,20 +8020,20 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_L4_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "straininterpolationandintegration.pyx":370
+    /* "straininterpolationandintegration.pyx":572
  *             int i
  *         if(xi.shape[0] != x.shape[0] or xi.shape[1] != y.shape[0] or xi.shape[2] != z.shape[0]):
  *             raise ValueError('Array dimensions not aligned!')             # <<<<<<<<<<<<<<
  *         if (x.shape[0] < 4 or y.shape[0] < 4 or z.shape[0] < 4):
  *             raise ValueError('Insufficient amount of data points to perform cubic interpolation!')
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 370, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 572, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 370, __pyx_L1_error)
+    __PYX_ERR(1, 572, __pyx_L1_error)
 
-    /* "straininterpolationandintegration.pyx":369
+    /* "straininterpolationandintegration.pyx":571
  *         cdef:
  *             int i
  *         if(xi.shape[0] != x.shape[0] or xi.shape[1] != y.shape[0] or xi.shape[2] != z.shape[0]):             # <<<<<<<<<<<<<<
@@ -8023,7 +8042,7 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
  */
   }
 
-  /* "straininterpolationandintegration.pyx":371
+  /* "straininterpolationandintegration.pyx":573
  *         if(xi.shape[0] != x.shape[0] or xi.shape[1] != y.shape[0] or xi.shape[2] != z.shape[0]):
  *             raise ValueError('Array dimensions not aligned!')
  *         if (x.shape[0] < 4 or y.shape[0] < 4 or z.shape[0] < 4):             # <<<<<<<<<<<<<<
@@ -8047,20 +8066,20 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_L8_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "straininterpolationandintegration.pyx":372
+    /* "straininterpolationandintegration.pyx":574
  *             raise ValueError('Array dimensions not aligned!')
  *         if (x.shape[0] < 4 or y.shape[0] < 4 or z.shape[0] < 4):
  *             raise ValueError('Insufficient amount of data points to perform cubic interpolation!')             # <<<<<<<<<<<<<<
  *         if(xi.shape[3] != 3):
  *             raise ValueError('The interpolator routine is custom-built for three dimensional data!')
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__8, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 372, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__8, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 574, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 372, __pyx_L1_error)
+    __PYX_ERR(1, 574, __pyx_L1_error)
 
-    /* "straininterpolationandintegration.pyx":371
+    /* "straininterpolationandintegration.pyx":573
  *         if(xi.shape[0] != x.shape[0] or xi.shape[1] != y.shape[0] or xi.shape[2] != z.shape[0]):
  *             raise ValueError('Array dimensions not aligned!')
  *         if (x.shape[0] < 4 or y.shape[0] < 4 or z.shape[0] < 4):             # <<<<<<<<<<<<<<
@@ -8069,7 +8088,7 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
  */
   }
 
-  /* "straininterpolationandintegration.pyx":373
+  /* "straininterpolationandintegration.pyx":575
  *         if (x.shape[0] < 4 or y.shape[0] < 4 or z.shape[0] < 4):
  *             raise ValueError('Insufficient amount of data points to perform cubic interpolation!')
  *         if(xi.shape[3] != 3):             # <<<<<<<<<<<<<<
@@ -8079,20 +8098,20 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_1 = (((__pyx_v_xi.shape[3]) != 3) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "straininterpolationandintegration.pyx":374
+    /* "straininterpolationandintegration.pyx":576
  *             raise ValueError('Insufficient amount of data points to perform cubic interpolation!')
  *         if(xi.shape[3] != 3):
  *             raise ValueError('The interpolator routine is custom-built for three dimensional data!')             # <<<<<<<<<<<<<<
  * 
  *         if (kx < 2 or kx > 4) or (ky < 2 or ky > 4) or (kz < 2 or kz > 4):
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__9, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 374, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__9, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 576, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 374, __pyx_L1_error)
+    __PYX_ERR(1, 576, __pyx_L1_error)
 
-    /* "straininterpolationandintegration.pyx":373
+    /* "straininterpolationandintegration.pyx":575
  *         if (x.shape[0] < 4 or y.shape[0] < 4 or z.shape[0] < 4):
  *             raise ValueError('Insufficient amount of data points to perform cubic interpolation!')
  *         if(xi.shape[3] != 3):             # <<<<<<<<<<<<<<
@@ -8101,7 +8120,7 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
  */
   }
 
-  /* "straininterpolationandintegration.pyx":376
+  /* "straininterpolationandintegration.pyx":578
  *             raise ValueError('The interpolator routine is custom-built for three dimensional data!')
  * 
  *         if (kx < 2 or kx > 4) or (ky < 2 or ky > 4) or (kz < 2 or kz > 4):             # <<<<<<<<<<<<<<
@@ -8143,20 +8162,20 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_L13_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "straininterpolationandintegration.pyx":377
+    /* "straininterpolationandintegration.pyx":579
  * 
  *         if (kx < 2 or kx > 4) or (ky < 2 or ky > 4) or (kz < 2 or kz > 4):
  *             raise ValueError('Invalid choice of interpolator order!')             # <<<<<<<<<<<<<<
  *         # Enforcing periodic BC by not including the sampling points along
  *         # the last rows and columns
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 377, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 579, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 377, __pyx_L1_error)
+    __PYX_ERR(1, 579, __pyx_L1_error)
 
-    /* "straininterpolationandintegration.pyx":376
+    /* "straininterpolationandintegration.pyx":578
  *             raise ValueError('The interpolator routine is custom-built for three dimensional data!')
  * 
  *         if (kx < 2 or kx > 4) or (ky < 2 or ky > 4) or (kz < 2 or kz > 4):             # <<<<<<<<<<<<<<
@@ -8165,7 +8184,7 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
  */
   }
 
-  /* "straininterpolationandintegration.pyx":380
+  /* "straininterpolationandintegration.pyx":582
  *         # Enforcing periodic BC by not including the sampling points along
  *         # the last rows and columns
  *         self.nx = x.shape[0]-1             # <<<<<<<<<<<<<<
@@ -8174,7 +8193,7 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
  */
   __pyx_v_self->nx = ((__pyx_v_x.shape[0]) - 1);
 
-  /* "straininterpolationandintegration.pyx":381
+  /* "straininterpolationandintegration.pyx":583
  *         # the last rows and columns
  *         self.nx = x.shape[0]-1
  *         self.ny = y.shape[0]-1             # <<<<<<<<<<<<<<
@@ -8183,7 +8202,7 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
  */
   __pyx_v_self->ny = ((__pyx_v_y.shape[0]) - 1);
 
-  /* "straininterpolationandintegration.pyx":382
+  /* "straininterpolationandintegration.pyx":584
  *         self.nx = x.shape[0]-1
  *         self.ny = y.shape[0]-1
  *         self.nz = z.shape[0]-1             # <<<<<<<<<<<<<<
@@ -8192,7 +8211,7 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
  */
   __pyx_v_self->nz = ((__pyx_v_z.shape[0]) - 1);
 
-  /* "straininterpolationandintegration.pyx":384
+  /* "straininterpolationandintegration.pyx":586
  *         self.nz = z.shape[0]-1
  * 
  *         self.x_grid = x[:self.nx]             # <<<<<<<<<<<<<<
@@ -8217,7 +8236,7 @@ static int __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolat
     0,
     1) < 0))
 {
-    __PYX_ERR(1, 384, __pyx_L1_error)
+    __PYX_ERR(1, 586, __pyx_L1_error)
 }
 
 __PYX_XDEC_MEMVIEW(&__pyx_v_self->x_grid, 0);
@@ -8225,7 +8244,7 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->x_grid, 0);
   __pyx_t_4.memview = NULL;
   __pyx_t_4.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":385
+  /* "straininterpolationandintegration.pyx":587
  * 
  *         self.x_grid = x[:self.nx]
  *         self.y_grid = y[:self.ny]             # <<<<<<<<<<<<<<
@@ -8250,7 +8269,7 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->x_grid, 0);
     0,
     1) < 0))
 {
-    __PYX_ERR(1, 385, __pyx_L1_error)
+    __PYX_ERR(1, 587, __pyx_L1_error)
 }
 
 __PYX_XDEC_MEMVIEW(&__pyx_v_self->y_grid, 0);
@@ -8258,7 +8277,7 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->y_grid, 0);
   __pyx_t_4.memview = NULL;
   __pyx_t_4.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":386
+  /* "straininterpolationandintegration.pyx":588
  *         self.x_grid = x[:self.nx]
  *         self.y_grid = y[:self.ny]
  *         self.z_grid = z[:self.nz]             # <<<<<<<<<<<<<<
@@ -8283,7 +8302,7 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->y_grid, 0);
     0,
     1) < 0))
 {
-    __PYX_ERR(1, 386, __pyx_L1_error)
+    __PYX_ERR(1, 588, __pyx_L1_error)
 }
 
 __PYX_XDEC_MEMVIEW(&__pyx_v_self->z_grid, 0);
@@ -8291,7 +8310,7 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->z_grid, 0);
   __pyx_t_4.memview = NULL;
   __pyx_t_4.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":388
+  /* "straininterpolationandintegration.pyx":590
  *         self.z_grid = z[:self.nz]
  * 
  *         self.dx = x[1]-x[0]             # <<<<<<<<<<<<<<
@@ -8302,7 +8321,7 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->z_grid, 0);
   __pyx_t_7 = 0;
   __pyx_v_self->dx = ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_6)) ))) - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_7)) ))));
 
-  /* "straininterpolationandintegration.pyx":389
+  /* "straininterpolationandintegration.pyx":591
  * 
  *         self.dx = x[1]-x[0]
  *         self.dy = y[1]-y[0]             # <<<<<<<<<<<<<<
@@ -8313,7 +8332,7 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->z_grid, 0);
   __pyx_t_9 = 0;
   __pyx_v_self->dy = ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y.data) + __pyx_t_8)) ))) - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y.data) + __pyx_t_9)) ))));
 
-  /* "straininterpolationandintegration.pyx":390
+  /* "straininterpolationandintegration.pyx":592
  *         self.dx = x[1]-x[0]
  *         self.dy = y[1]-y[0]
  *         self.dz = z[1]-z[0]             # <<<<<<<<<<<<<<
@@ -8324,7 +8343,7 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->z_grid, 0);
   __pyx_t_11 = 0;
   __pyx_v_self->dz = ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_z.data) + __pyx_t_10)) ))) - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_z.data) + __pyx_t_11)) ))));
 
-  /* "straininterpolationandintegration.pyx":393
+  /* "straininterpolationandintegration.pyx":595
  * 
  *         # Set local coordinates for interpolation within any given 4x4x4 voxel
  *         for i in range(4):             # <<<<<<<<<<<<<<
@@ -8334,7 +8353,7 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->z_grid, 0);
   for (__pyx_t_5 = 0; __pyx_t_5 < 4; __pyx_t_5+=1) {
     __pyx_v_i = __pyx_t_5;
 
-    /* "straininterpolationandintegration.pyx":394
+    /* "straininterpolationandintegration.pyx":596
  *         # Set local coordinates for interpolation within any given 4x4x4 voxel
  *         for i in range(4):
  *             self.x_cube[i] = (i-1)*self.dx             # <<<<<<<<<<<<<<
@@ -8344,7 +8363,7 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->z_grid, 0);
     __pyx_t_12 = __pyx_v_i;
     *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->x_cube.data) + __pyx_t_12)) )) = ((__pyx_v_i - 1) * __pyx_v_self->dx);
 
-    /* "straininterpolationandintegration.pyx":395
+    /* "straininterpolationandintegration.pyx":597
  *         for i in range(4):
  *             self.x_cube[i] = (i-1)*self.dx
  *             self.y_cube[i] = (i-1)*self.dy             # <<<<<<<<<<<<<<
@@ -8354,7 +8373,7 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->z_grid, 0);
     __pyx_t_13 = __pyx_v_i;
     *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->y_cube.data) + __pyx_t_13)) )) = ((__pyx_v_i - 1) * __pyx_v_self->dy);
 
-    /* "straininterpolationandintegration.pyx":396
+    /* "straininterpolationandintegration.pyx":598
  *             self.x_cube[i] = (i-1)*self.dx
  *             self.y_cube[i] = (i-1)*self.dy
  *             self.z_cube[i] = (i-1)*self.dz             # <<<<<<<<<<<<<<
@@ -8365,7 +8384,7 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->z_grid, 0);
     *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->z_cube.data) + __pyx_t_14)) )) = ((__pyx_v_i - 1) * __pyx_v_self->dz);
   }
 
-  /* "straininterpolationandintegration.pyx":398
+  /* "straininterpolationandintegration.pyx":600
  *             self.z_cube[i] = (i-1)*self.dz
  * 
  *         self.xi_grid = xi[:self.nx,:self.ny,:self.nz,:]             # <<<<<<<<<<<<<<
@@ -8390,7 +8409,7 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->z_grid, 0);
     0,
     1) < 0))
 {
-    __PYX_ERR(1, 398, __pyx_L1_error)
+    __PYX_ERR(1, 600, __pyx_L1_error)
 }
 
 if (unlikely(__pyx_memoryview_slice_memviewslice(
@@ -8407,7 +8426,7 @@ if (unlikely(__pyx_memoryview_slice_memviewslice(
     0,
     1) < 0))
 {
-    __PYX_ERR(1, 398, __pyx_L1_error)
+    __PYX_ERR(1, 600, __pyx_L1_error)
 }
 
 if (unlikely(__pyx_memoryview_slice_memviewslice(
@@ -8424,7 +8443,7 @@ if (unlikely(__pyx_memoryview_slice_memviewslice(
     0,
     1) < 0))
 {
-    __PYX_ERR(1, 398, __pyx_L1_error)
+    __PYX_ERR(1, 600, __pyx_L1_error)
 }
 
 __pyx_t_15.shape[3] = __pyx_v_xi.shape[3];
@@ -8436,7 +8455,7 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->xi_grid, 0);
   __pyx_t_15.memview = NULL;
   __pyx_t_15.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":400
+  /* "straininterpolationandintegration.pyx":602
  *         self.xi_grid = xi[:self.nx,:self.ny,:self.nz,:]
  * 
  *         self.kx = kx             # <<<<<<<<<<<<<<
@@ -8445,7 +8464,7 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->xi_grid, 0);
  */
   __pyx_v_self->kx = __pyx_v_kx;
 
-  /* "straininterpolationandintegration.pyx":401
+  /* "straininterpolationandintegration.pyx":603
  * 
  *         self.kx = kx
  *         self.ky = ky             # <<<<<<<<<<<<<<
@@ -8454,7 +8473,7 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->xi_grid, 0);
  */
   __pyx_v_self->ky = __pyx_v_ky;
 
-  /* "straininterpolationandintegration.pyx":402
+  /* "straininterpolationandintegration.pyx":604
  *         self.kx = kx
  *         self.ky = ky
  *         self.kz = kz             # <<<<<<<<<<<<<<
@@ -8463,12 +8482,12 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->xi_grid, 0);
  */
   __pyx_v_self->kz = __pyx_v_kz;
 
-  /* "straininterpolationandintegration.pyx":365
+  /* "straininterpolationandintegration.pyx":536
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __init__(self, double[::1] x not None, double[::1] y not None, double[::1] z not None, \             # <<<<<<<<<<<<<<
  *             double[:,:,:,::1] xi not None, int kx = 4, int ky = 4, int kz = 4):
- *         cdef:
+ *         """
  */
 
   /* function exit code */
@@ -8489,16 +8508,20 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_self->xi_grid, 0);
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":407
+/* "straininterpolationandintegration.pyx":609
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __call__(self, double[::1] pos not None):             # <<<<<<<<<<<<<<
- *         if pos.shape[0] != 3:
- *             raise ValueError('The interpolation routine is custom-built'\
+ *         """
+ *         CubicSpecialInterpolator.__call__(pos)
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_33straininterpolationandintegration_24CubicSpecialInterpolator_5__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_33straininterpolationandintegration_24CubicSpecialInterpolator_4__call__[] = "\n        CubicSpecialInterpolator.__call__(pos)\n\n        Evaluates the B-spline interpolated vector field with orientation\n        fix, at the coordinates specified by pos.\n\n        Parameters\n        ----------\n        pos : (3,) array-like\n           A (C-contiguous) NumPy array containing the (Cartesian) coordinates\n           of the point in R^3 at which the vector field is to be interpolated.\n\n        Returns\n        -------\n        xi : (3,) array-like\n           A (C-contiguous) NumPy array containing the normalized, interpolated\n           vector.\n\n        ";
+#if CYTHON_COMPILING_IN_CPYTHON
+struct wrapperbase __pyx_wrapperbase_33straininterpolationandintegration_24CubicSpecialInterpolator_4__call__;
+#endif
 static PyObject *__pyx_pw_33straininterpolationandintegration_24CubicSpecialInterpolator_5__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_pos = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_r = 0;
@@ -8523,25 +8546,25 @@ static PyObject *__pyx_pw_33straininterpolationandintegration_24CubicSpecialInte
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 407, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 609, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
     }
-    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 407, __pyx_L3_error)
+    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 609, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 407, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 609, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("straininterpolationandintegration.CubicSpecialInterpolator.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(((PyObject *)__pyx_v_pos.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "pos"); __PYX_ERR(1, 407, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "pos"); __PYX_ERR(1, 609, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_33straininterpolationandintegration_24CubicSpecialInterpolator_4__call__(((struct __pyx_obj_33straininterpolationandintegration_CubicSpecialInterpolator *)__pyx_v_self), __pyx_v_pos);
 
@@ -8565,9 +8588,9 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
   PyObject *__pyx_t_6 = NULL;
   __Pyx_RefNannySetupContext("__call__", 0);
 
-  /* "straininterpolationandintegration.pyx":408
- *     @cython.boundscheck(False)
- *     def __call__(self, double[::1] pos not None):
+  /* "straininterpolationandintegration.pyx":629
+ * 
+ *         """
  *         if pos.shape[0] != 3:             # <<<<<<<<<<<<<<
  *             raise ValueError('The interpolation routine is custom-built'\
  *                     +' for three dimensional data')
@@ -8575,40 +8598,40 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
   __pyx_t_1 = (((__pyx_v_pos.shape[0]) != 3) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "straininterpolationandintegration.pyx":410
+    /* "straininterpolationandintegration.pyx":631
  *         if pos.shape[0] != 3:
  *             raise ValueError('The interpolation routine is custom-built'\
  *                     +' for three dimensional data')             # <<<<<<<<<<<<<<
  *         self._interpolate_xi_(pos,self.ret)
  *         return np.copy(self.ret)
  */
-    __pyx_t_2 = PyNumber_Add(__pyx_kp_s_The_interpolation_routine_is_cus, __pyx_kp_s_for_three_dimensional_data_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 410, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_Add(__pyx_kp_s_The_interpolation_routine_is_cus, __pyx_kp_s_for_three_dimensional_data_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 631, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
 
-    /* "straininterpolationandintegration.pyx":409
- *     def __call__(self, double[::1] pos not None):
+    /* "straininterpolationandintegration.pyx":630
+ *         """
  *         if pos.shape[0] != 3:
  *             raise ValueError('The interpolation routine is custom-built'\             # <<<<<<<<<<<<<<
  *                     +' for three dimensional data')
  *         self._interpolate_xi_(pos,self.ret)
  */
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 409, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 630, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 409, __pyx_L1_error)
+    __PYX_ERR(1, 630, __pyx_L1_error)
 
-    /* "straininterpolationandintegration.pyx":408
- *     @cython.boundscheck(False)
- *     def __call__(self, double[::1] pos not None):
+    /* "straininterpolationandintegration.pyx":629
+ * 
+ *         """
  *         if pos.shape[0] != 3:             # <<<<<<<<<<<<<<
  *             raise ValueError('The interpolation routine is custom-built'\
  *                     +' for three dimensional data')
  */
   }
 
-  /* "straininterpolationandintegration.pyx":411
+  /* "straininterpolationandintegration.pyx":632
  *             raise ValueError('The interpolation routine is custom-built'\
  *                     +' for three dimensional data')
  *         self._interpolate_xi_(pos,self.ret)             # <<<<<<<<<<<<<<
@@ -8617,7 +8640,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
  */
   ((struct __pyx_vtabstruct_33straininterpolationandintegration_CubicSpecialInterpolator *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._interpolate_xi_(((struct __pyx_obj_33straininterpolationandintegration_InterpolatorWithOrientationFix *)__pyx_v_self), __pyx_v_pos, __pyx_v_self->ret);
 
-  /* "straininterpolationandintegration.pyx":412
+  /* "straininterpolationandintegration.pyx":633
  *                     +' for three dimensional data')
  *         self._interpolate_xi_(pos,self.ret)
  *         return np.copy(self.ret)             # <<<<<<<<<<<<<<
@@ -8625,12 +8648,12 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 412, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 633, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_copy); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 412, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_copy); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 633, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_self->ret, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 412, __pyx_L1_error)
+  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_self->ret, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 633, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_5 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
@@ -8643,14 +8666,14 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
     }
   }
   if (!__pyx_t_5) {
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 412, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 633, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_GOTREF(__pyx_t_3);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_2};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 412, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 633, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -8659,20 +8682,20 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_2};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 412, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 633, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     } else
     #endif
     {
-      __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 412, __pyx_L1_error)
+      __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 633, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_5); __pyx_t_5 = NULL;
       __Pyx_GIVEREF(__pyx_t_2);
       PyTuple_SET_ITEM(__pyx_t_6, 0+1, __pyx_t_2);
       __pyx_t_2 = 0;
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 412, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 633, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     }
@@ -8682,12 +8705,12 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "straininterpolationandintegration.pyx":407
+  /* "straininterpolationandintegration.pyx":609
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __call__(self, double[::1] pos not None):             # <<<<<<<<<<<<<<
- *         if pos.shape[0] != 3:
- *             raise ValueError('The interpolation routine is custom-built'\
+ *         """
+ *         CubicSpecialInterpolator.__call__(pos)
  */
 
   /* function exit code */
@@ -8706,12 +8729,12 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":418
+/* "straininterpolationandintegration.pyx":639
  *     @cython.boundscheck(False)
  *     @cython.wraparound(False)
  *     cdef void _interpolate_xi_(self, double[::1] pos, double[::1] &xi):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double x = self.x_internal, y = self.y_internal, z = self.z_internal
+ *         """
+ *         CubicSpecialInterpolator._interpolate_xi_(pos,xi)
  */
 
 static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolator__interpolate_xi_(struct __pyx_obj_33straininterpolationandintegration_CubicSpecialInterpolator *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos, __Pyx_memviewslice &__pyx_v_xi) {
@@ -8805,8 +8828,8 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   Py_ssize_t __pyx_t_70;
   __Pyx_RefNannySetupContext("_interpolate_xi_", 0);
 
-  /* "straininterpolationandintegration.pyx":420
- *     cdef void _interpolate_xi_(self, double[::1] pos, double[::1] &xi):
+  /* "straininterpolationandintegration.pyx":656
+ *         """
  *         cdef:
  *             double x = self.x_internal, y = self.y_internal, z = self.z_internal             # <<<<<<<<<<<<<<
  *             int i, j, k,l
@@ -8819,7 +8842,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_1 = __pyx_v_self->z_internal;
   __pyx_v_z = __pyx_t_1;
 
-  /* "straininterpolationandintegration.pyx":422
+  /* "straininterpolationandintegration.pyx":658
  *             double x = self.x_internal, y = self.y_internal, z = self.z_internal
  *             int i, j, k,l
  *             int[::1] inds_x = self.inds_x, inds_y = self.inds_y, inds_z = self.inds_z             # <<<<<<<<<<<<<<
@@ -8842,7 +8865,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_2.memview = NULL;
   __pyx_t_2.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":423
+  /* "straininterpolationandintegration.pyx":659
  *             int i, j, k,l
  *             int[::1] inds_x = self.inds_x, inds_y = self.inds_y, inds_z = self.inds_z
  *             double[::1] x_cube = self.x_cube, y_cube = self.y_cube, z_cube = self.z_cube             # <<<<<<<<<<<<<<
@@ -8865,7 +8888,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_3.memview = NULL;
   __pyx_t_3.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":424
+  /* "straininterpolationandintegration.pyx":660
  *             int[::1] inds_x = self.inds_x, inds_y = self.inds_y, inds_z = self.inds_z
  *             double[::1] x_cube = self.x_cube, y_cube = self.y_cube, z_cube = self.z_cube
  *             double[:,::1] xi_cube = self.xi_cube             # <<<<<<<<<<<<<<
@@ -8878,7 +8901,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_4.memview = NULL;
   __pyx_t_4.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":425
+  /* "straininterpolationandintegration.pyx":661
  *             double[::1] x_cube = self.x_cube, y_cube = self.y_cube, z_cube = self.z_cube
  *             double[:,::1] xi_cube = self.xi_cube
  *             double[:,:,:,::1] xi_grid = self.xi_grid             # <<<<<<<<<<<<<<
@@ -8891,7 +8914,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":426
+  /* "straininterpolationandintegration.pyx":662
  *             double[:,::1] xi_cube = self.xi_cube
  *             double[:,:,:,::1] xi_grid = self.xi_grid
  *             double[::1] tmp_xi = self.tmp, xi_ref = self.xi_ref             # <<<<<<<<<<<<<<
@@ -8909,7 +8932,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_3.memview = NULL;
   __pyx_t_3.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":427
+  /* "straininterpolationandintegration.pyx":663
  *             double[:,:,:,::1] xi_grid = self.xi_grid
  *             double[::1] tmp_xi = self.tmp, xi_ref = self.xi_ref
  *         x, y, z = pos[0], pos[1], pos[2]             # <<<<<<<<<<<<<<
@@ -8926,7 +8949,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_v_y = __pyx_t_8;
   __pyx_v_z = __pyx_t_10;
 
-  /* "straininterpolationandintegration.pyx":428
+  /* "straininterpolationandintegration.pyx":664
  *             double[::1] tmp_xi = self.tmp, xi_ref = self.xi_ref
  *         x, y, z = pos[0], pos[1], pos[2]
  *         while x < self.x_grid[0]:             # <<<<<<<<<<<<<<
@@ -8938,7 +8961,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_12 = ((__pyx_v_x < (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->x_grid.data) + __pyx_t_11)) )))) != 0);
     if (!__pyx_t_12) break;
 
-    /* "straininterpolationandintegration.pyx":429
+    /* "straininterpolationandintegration.pyx":665
  *         x, y, z = pos[0], pos[1], pos[2]
  *         while x < self.x_grid[0]:
  *             x += self.x_grid[self.nx-1] - self.x_grid[0]             # <<<<<<<<<<<<<<
@@ -8950,7 +8973,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_v_x = (__pyx_v_x + ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->x_grid.data) + __pyx_t_13)) ))) - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->x_grid.data) + __pyx_t_14)) )))));
   }
 
-  /* "straininterpolationandintegration.pyx":430
+  /* "straininterpolationandintegration.pyx":666
  *         while x < self.x_grid[0]:
  *             x += self.x_grid[self.nx-1] - self.x_grid[0]
  *         while y < self.y_grid[0]:             # <<<<<<<<<<<<<<
@@ -8962,7 +8985,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_12 = ((__pyx_v_y < (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->y_grid.data) + __pyx_t_15)) )))) != 0);
     if (!__pyx_t_12) break;
 
-    /* "straininterpolationandintegration.pyx":431
+    /* "straininterpolationandintegration.pyx":667
  *             x += self.x_grid[self.nx-1] - self.x_grid[0]
  *         while y < self.y_grid[0]:
  *             y += self.y_grid[self.ny-1] - self.y_grid[0]             # <<<<<<<<<<<<<<
@@ -8974,7 +8997,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_v_y = (__pyx_v_y + ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->y_grid.data) + __pyx_t_16)) ))) - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->y_grid.data) + __pyx_t_17)) )))));
   }
 
-  /* "straininterpolationandintegration.pyx":432
+  /* "straininterpolationandintegration.pyx":668
  *         while y < self.y_grid[0]:
  *             y += self.y_grid[self.ny-1] - self.y_grid[0]
  *         while z < self.z_grid[0]:             # <<<<<<<<<<<<<<
@@ -8986,7 +9009,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_12 = ((__pyx_v_z < (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->z_grid.data) + __pyx_t_18)) )))) != 0);
     if (!__pyx_t_12) break;
 
-    /* "straininterpolationandintegration.pyx":433
+    /* "straininterpolationandintegration.pyx":669
  *             y += self.y_grid[self.ny-1] - self.y_grid[0]
  *         while z < self.z_grid[0]:
  *             z += self.z_grid[self.nz-1] - self.z_grid[0]             # <<<<<<<<<<<<<<
@@ -8998,7 +9021,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_v_z = (__pyx_v_z + ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->z_grid.data) + __pyx_t_19)) ))) - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->z_grid.data) + __pyx_t_20)) )))));
   }
 
-  /* "straininterpolationandintegration.pyx":435
+  /* "straininterpolationandintegration.pyx":671
  *             z += self.z_grid[self.nz-1] - self.z_grid[0]
  * 
  *         while x > self.x_grid[self.nx-1]:             # <<<<<<<<<<<<<<
@@ -9010,7 +9033,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_12 = ((__pyx_v_x > (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->x_grid.data) + __pyx_t_21)) )))) != 0);
     if (!__pyx_t_12) break;
 
-    /* "straininterpolationandintegration.pyx":436
+    /* "straininterpolationandintegration.pyx":672
  * 
  *         while x > self.x_grid[self.nx-1]:
  *             x -= (self.x_grid[self.nx-1]-self.x_grid[0])             # <<<<<<<<<<<<<<
@@ -9022,7 +9045,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_v_x = (__pyx_v_x - ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->x_grid.data) + __pyx_t_22)) ))) - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->x_grid.data) + __pyx_t_23)) )))));
   }
 
-  /* "straininterpolationandintegration.pyx":437
+  /* "straininterpolationandintegration.pyx":673
  *         while x > self.x_grid[self.nx-1]:
  *             x -= (self.x_grid[self.nx-1]-self.x_grid[0])
  *         while y > self.y_grid[self.ny-1]:             # <<<<<<<<<<<<<<
@@ -9034,7 +9057,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_12 = ((__pyx_v_y > (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->y_grid.data) + __pyx_t_24)) )))) != 0);
     if (!__pyx_t_12) break;
 
-    /* "straininterpolationandintegration.pyx":438
+    /* "straininterpolationandintegration.pyx":674
  *             x -= (self.x_grid[self.nx-1]-self.x_grid[0])
  *         while y > self.y_grid[self.ny-1]:
  *             y -= (self.y_grid[self.ny-1]-self.y_grid[0])             # <<<<<<<<<<<<<<
@@ -9046,7 +9069,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_v_y = (__pyx_v_y - ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->y_grid.data) + __pyx_t_25)) ))) - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->y_grid.data) + __pyx_t_26)) )))));
   }
 
-  /* "straininterpolationandintegration.pyx":439
+  /* "straininterpolationandintegration.pyx":675
  *         while y > self.y_grid[self.ny-1]:
  *             y -= (self.y_grid[self.ny-1]-self.y_grid[0])
  *         while z > self.z_grid[self.nz-1]:             # <<<<<<<<<<<<<<
@@ -9058,7 +9081,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_12 = ((__pyx_v_z > (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->z_grid.data) + __pyx_t_27)) )))) != 0);
     if (!__pyx_t_12) break;
 
-    /* "straininterpolationandintegration.pyx":440
+    /* "straininterpolationandintegration.pyx":676
  *             y -= (self.y_grid[self.ny-1]-self.y_grid[0])
  *         while z > self.z_grid[self.nz-1]:
  *             z -= (self.z_grid[self.nz-1]-self.z_grid[0])             # <<<<<<<<<<<<<<
@@ -9070,7 +9093,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_v_z = (__pyx_v_z - ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->z_grid.data) + __pyx_t_28)) ))) - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->z_grid.data) + __pyx_t_29)) )))));
   }
 
-  /* "straininterpolationandintegration.pyx":442
+  /* "straininterpolationandintegration.pyx":678
  *             z -= (self.z_grid[self.nz-1]-self.z_grid[0])
  * 
  *         self._set_voxel_indices_(x,y,z)             # <<<<<<<<<<<<<<
@@ -9079,7 +9102,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
  */
   ((struct __pyx_vtabstruct_33straininterpolationandintegration_CubicSpecialInterpolator *)__pyx_v_self->__pyx_base.__pyx_vtab)->_set_voxel_indices_(__pyx_v_self, __pyx_v_x, __pyx_v_y, __pyx_v_z);
 
-  /* "straininterpolationandintegration.pyx":443
+  /* "straininterpolationandintegration.pyx":679
  * 
  *         self._set_voxel_indices_(x,y,z)
  *         x -= self.x_grid[inds_x[1]]             # <<<<<<<<<<<<<<
@@ -9090,7 +9113,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_31 = (*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_x.data) + __pyx_t_30)) )));
   __pyx_v_x = (__pyx_v_x - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->x_grid.data) + __pyx_t_31)) ))));
 
-  /* "straininterpolationandintegration.pyx":444
+  /* "straininterpolationandintegration.pyx":680
  *         self._set_voxel_indices_(x,y,z)
  *         x -= self.x_grid[inds_x[1]]
  *         y -= self.y_grid[inds_y[1]]             # <<<<<<<<<<<<<<
@@ -9101,7 +9124,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_33 = (*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_y.data) + __pyx_t_32)) )));
   __pyx_v_y = (__pyx_v_y - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->y_grid.data) + __pyx_t_33)) ))));
 
-  /* "straininterpolationandintegration.pyx":445
+  /* "straininterpolationandintegration.pyx":681
  *         x -= self.x_grid[inds_x[1]]
  *         y -= self.y_grid[inds_y[1]]
  *         z -= self.z_grid[inds_z[1]]             # <<<<<<<<<<<<<<
@@ -9112,7 +9135,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_35 = (*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_z.data) + __pyx_t_34)) )));
   __pyx_v_z = (__pyx_v_z - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->z_grid.data) + __pyx_t_35)) ))));
 
-  /* "straininterpolationandintegration.pyx":446
+  /* "straininterpolationandintegration.pyx":682
  *         y -= self.y_grid[inds_y[1]]
  *         z -= self.z_grid[inds_z[1]]
  *         if not (self.sameaslast and self.calibrated):             # <<<<<<<<<<<<<<
@@ -9131,7 +9154,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_36 = ((!__pyx_t_12) != 0);
   if (__pyx_t_36) {
 
-    /* "straininterpolationandintegration.pyx":447
+    /* "straininterpolationandintegration.pyx":683
  *         z -= self.z_grid[inds_z[1]]
  *         if not (self.sameaslast and self.calibrated):
  *             dcopy(3,xi_grid[inds_x[0],inds_y[0],inds_z[0]],1,xi_ref,1)             # <<<<<<<<<<<<<<
@@ -9152,7 +9175,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 447, __pyx_L1_error)
+        __PYX_ERR(1, 683, __pyx_L1_error)
     }
         __pyx_t_3.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -9165,7 +9188,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 1)");
-        __PYX_ERR(1, 447, __pyx_L1_error)
+        __PYX_ERR(1, 683, __pyx_L1_error)
     }
         __pyx_t_3.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -9178,7 +9201,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 2)");
-        __PYX_ERR(1, 447, __pyx_L1_error)
+        __PYX_ERR(1, 683, __pyx_L1_error)
     }
         __pyx_t_3.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -9192,7 +9215,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_xi_re
     __pyx_t_3.memview = NULL;
     __pyx_t_3.data = NULL;
 
-    /* "straininterpolationandintegration.pyx":448
+    /* "straininterpolationandintegration.pyx":684
  *         if not (self.sameaslast and self.calibrated):
  *             dcopy(3,xi_grid[inds_x[0],inds_y[0],inds_z[0]],1,xi_ref,1)
  *             for k in range(4):             # <<<<<<<<<<<<<<
@@ -9202,7 +9225,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_xi_re
     for (__pyx_t_40 = 0; __pyx_t_40 < 4; __pyx_t_40+=1) {
       __pyx_v_k = __pyx_t_40;
 
-      /* "straininterpolationandintegration.pyx":449
+      /* "straininterpolationandintegration.pyx":685
  *             dcopy(3,xi_grid[inds_x[0],inds_y[0],inds_z[0]],1,xi_ref,1)
  *             for k in range(4):
  *                 for j in range(4):             # <<<<<<<<<<<<<<
@@ -9212,7 +9235,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_xi_re
       for (__pyx_t_41 = 0; __pyx_t_41 < 4; __pyx_t_41+=1) {
         __pyx_v_j = __pyx_t_41;
 
-        /* "straininterpolationandintegration.pyx":450
+        /* "straininterpolationandintegration.pyx":686
  *             for k in range(4):
  *                 for j in range(4):
  *                     for i in range(4):             # <<<<<<<<<<<<<<
@@ -9222,7 +9245,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_xi_re
         for (__pyx_t_42 = 0; __pyx_t_42 < 4; __pyx_t_42+=1) {
           __pyx_v_i = __pyx_t_42;
 
-          /* "straininterpolationandintegration.pyx":451
+          /* "straininterpolationandintegration.pyx":687
  *                 for j in range(4):
  *                     for i in range(4):
  *                         dcopy(3,xi_grid[inds_x[i],inds_y[j],inds_z[k]],1,tmp_xi,1)             # <<<<<<<<<<<<<<
@@ -9243,7 +9266,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_xi_re
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 451, __pyx_L1_error)
+        __PYX_ERR(1, 687, __pyx_L1_error)
     }
         __pyx_t_3.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -9256,7 +9279,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_xi_re
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 1)");
-        __PYX_ERR(1, 451, __pyx_L1_error)
+        __PYX_ERR(1, 687, __pyx_L1_error)
     }
         __pyx_t_3.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -9269,7 +9292,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_xi_re
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 2)");
-        __PYX_ERR(1, 451, __pyx_L1_error)
+        __PYX_ERR(1, 687, __pyx_L1_error)
     }
         __pyx_t_3.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -9283,7 +9306,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_tmp_x
           __pyx_t_3.memview = NULL;
           __pyx_t_3.data = NULL;
 
-          /* "straininterpolationandintegration.pyx":452
+          /* "straininterpolationandintegration.pyx":688
  *                     for i in range(4):
  *                         dcopy(3,xi_grid[inds_x[i],inds_y[j],inds_z[k]],1,tmp_xi,1)
  *                         if ddot(3,tmp_xi,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -9293,7 +9316,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_tmp_x
           __pyx_t_36 = ((__pyx_f_33straininterpolationandintegration_ddot(3, __pyx_v_tmp_xi, 1, __pyx_v_xi_ref, 1) < 0.0) != 0);
           if (__pyx_t_36) {
 
-            /* "straininterpolationandintegration.pyx":453
+            /* "straininterpolationandintegration.pyx":689
  *                         dcopy(3,xi_grid[inds_x[i],inds_y[j],inds_z[k]],1,tmp_xi,1)
  *                         if ddot(3,tmp_xi,1,xi_ref,1) < 0:
  *                             for l in range(3):             # <<<<<<<<<<<<<<
@@ -9303,7 +9326,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_tmp_x
             for (__pyx_t_46 = 0; __pyx_t_46 < 3; __pyx_t_46+=1) {
               __pyx_v_l = __pyx_t_46;
 
-              /* "straininterpolationandintegration.pyx":454
+              /* "straininterpolationandintegration.pyx":690
  *                         if ddot(3,tmp_xi,1,xi_ref,1) < 0:
  *                             for l in range(3):
  *                                 xi_cube[l,i+4*(j+4*k)] = -tmp_xi[l]             # <<<<<<<<<<<<<<
@@ -9316,7 +9339,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_tmp_x
               *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_xi_cube.data + __pyx_t_48 * __pyx_v_xi_cube.strides[0]) )) + __pyx_t_49)) )) = (-(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_tmp_xi.data) + __pyx_t_47)) ))));
             }
 
-            /* "straininterpolationandintegration.pyx":452
+            /* "straininterpolationandintegration.pyx":688
  *                     for i in range(4):
  *                         dcopy(3,xi_grid[inds_x[i],inds_y[j],inds_z[k]],1,tmp_xi,1)
  *                         if ddot(3,tmp_xi,1,xi_ref,1) < 0:             # <<<<<<<<<<<<<<
@@ -9326,7 +9349,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_tmp_x
             goto __pyx_L24;
           }
 
-          /* "straininterpolationandintegration.pyx":456
+          /* "straininterpolationandintegration.pyx":692
  *                                 xi_cube[l,i+4*(j+4*k)] = -tmp_xi[l]
  *                         else:
  *                             for l in range(3):             # <<<<<<<<<<<<<<
@@ -9337,7 +9360,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_tmp_x
             for (__pyx_t_46 = 0; __pyx_t_46 < 3; __pyx_t_46+=1) {
               __pyx_v_l = __pyx_t_46;
 
-              /* "straininterpolationandintegration.pyx":457
+              /* "straininterpolationandintegration.pyx":693
  *                         else:
  *                             for l in range(3):
  *                                 xi_cube[l,i+4*(j+4*k)] = tmp_xi[l]             # <<<<<<<<<<<<<<
@@ -9355,7 +9378,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_tmp_x
       }
     }
 
-    /* "straininterpolationandintegration.pyx":459
+    /* "straininterpolationandintegration.pyx":695
  *                                 xi_cube[l,i+4*(j+4*k)] = tmp_xi[l]
  * 
  *             self.itpx.init_interp(&x_cube[0],&y_cube[0],&z_cube[0],&xi_cube[0,0],self.kx,self.ky,self.kz,4,4,4,0)             # <<<<<<<<<<<<<<
@@ -9371,10 +9394,10 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_tmp_x
       __pyx_v_self->itpx->init_interp((&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x_cube.data) + __pyx_t_53)) )))), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y_cube.data) + __pyx_t_54)) )))), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_z_cube.data) + __pyx_t_55)) )))), (&(*((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_xi_cube.data + __pyx_t_56 * __pyx_v_xi_cube.strides[0]) )) + __pyx_t_57)) )))), __pyx_v_self->kx, __pyx_v_self->ky, __pyx_v_self->kz, 4, 4, 4, 0);
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 459, __pyx_L1_error)
+      __PYX_ERR(1, 695, __pyx_L1_error)
     }
 
-    /* "straininterpolationandintegration.pyx":460
+    /* "straininterpolationandintegration.pyx":696
  * 
  *             self.itpx.init_interp(&x_cube[0],&y_cube[0],&z_cube[0],&xi_cube[0,0],self.kx,self.ky,self.kz,4,4,4,0)
  *             self.itpy.init_interp(&x_cube[0],&y_cube[0],&z_cube[0],&xi_cube[1,0],self.kx,self.ky,self.kz,4,4,4,0)             # <<<<<<<<<<<<<<
@@ -9390,10 +9413,10 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_tmp_x
       __pyx_v_self->itpy->init_interp((&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x_cube.data) + __pyx_t_58)) )))), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y_cube.data) + __pyx_t_59)) )))), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_z_cube.data) + __pyx_t_60)) )))), (&(*((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_xi_cube.data + __pyx_t_61 * __pyx_v_xi_cube.strides[0]) )) + __pyx_t_62)) )))), __pyx_v_self->kx, __pyx_v_self->ky, __pyx_v_self->kz, 4, 4, 4, 0);
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 460, __pyx_L1_error)
+      __PYX_ERR(1, 696, __pyx_L1_error)
     }
 
-    /* "straininterpolationandintegration.pyx":461
+    /* "straininterpolationandintegration.pyx":697
  *             self.itpx.init_interp(&x_cube[0],&y_cube[0],&z_cube[0],&xi_cube[0,0],self.kx,self.ky,self.kz,4,4,4,0)
  *             self.itpy.init_interp(&x_cube[0],&y_cube[0],&z_cube[0],&xi_cube[1,0],self.kx,self.ky,self.kz,4,4,4,0)
  *             self.itpz.init_interp(&x_cube[0],&y_cube[0],&z_cube[0],&xi_cube[2,0],self.kx,self.ky,self.kz,4,4,4,0)             # <<<<<<<<<<<<<<
@@ -9409,10 +9432,10 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_tmp_x
       __pyx_v_self->itpz->init_interp((&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x_cube.data) + __pyx_t_63)) )))), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y_cube.data) + __pyx_t_64)) )))), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_z_cube.data) + __pyx_t_65)) )))), (&(*((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_xi_cube.data + __pyx_t_66 * __pyx_v_xi_cube.strides[0]) )) + __pyx_t_67)) )))), __pyx_v_self->kx, __pyx_v_self->ky, __pyx_v_self->kz, 4, 4, 4, 0);
     } catch(...) {
       __Pyx_CppExn2PyErr();
-      __PYX_ERR(1, 461, __pyx_L1_error)
+      __PYX_ERR(1, 697, __pyx_L1_error)
     }
 
-    /* "straininterpolationandintegration.pyx":462
+    /* "straininterpolationandintegration.pyx":698
  *             self.itpy.init_interp(&x_cube[0],&y_cube[0],&z_cube[0],&xi_cube[1,0],self.kx,self.ky,self.kz,4,4,4,0)
  *             self.itpz.init_interp(&x_cube[0],&y_cube[0],&z_cube[0],&xi_cube[2,0],self.kx,self.ky,self.kz,4,4,4,0)
  *             self.calibrated = True             # <<<<<<<<<<<<<<
@@ -9421,7 +9444,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_tmp_x
  */
     __pyx_v_self->calibrated = 1;
 
-    /* "straininterpolationandintegration.pyx":446
+    /* "straininterpolationandintegration.pyx":682
  *         y -= self.y_grid[inds_y[1]]
  *         z -= self.z_grid[inds_z[1]]
  *         if not (self.sameaslast and self.calibrated):             # <<<<<<<<<<<<<<
@@ -9430,7 +9453,7 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_tmp_x
  */
   }
 
-  /* "straininterpolationandintegration.pyx":464
+  /* "straininterpolationandintegration.pyx":700
  *             self.calibrated = True
  *         # Evaluate interpolation objects
  *         xi[0] = self.itpx.eval_interp(x,y,z,0,0,0)             # <<<<<<<<<<<<<<
@@ -9441,12 +9464,12 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_tmp_x
     __pyx_t_10 = __pyx_v_self->itpx->eval_interp(__pyx_v_x, __pyx_v_y, __pyx_v_z, 0, 0, 0);
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(1, 464, __pyx_L1_error)
+    __PYX_ERR(1, 700, __pyx_L1_error)
   }
   __pyx_t_68 = 0;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_xi.data) + __pyx_t_68)) )) = __pyx_t_10;
 
-  /* "straininterpolationandintegration.pyx":465
+  /* "straininterpolationandintegration.pyx":701
  *         # Evaluate interpolation objects
  *         xi[0] = self.itpx.eval_interp(x,y,z,0,0,0)
  *         xi[1] = self.itpy.eval_interp(x,y,z,0,0,0)             # <<<<<<<<<<<<<<
@@ -9457,12 +9480,12 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_tmp_x
     __pyx_t_10 = __pyx_v_self->itpy->eval_interp(__pyx_v_x, __pyx_v_y, __pyx_v_z, 0, 0, 0);
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(1, 465, __pyx_L1_error)
+    __PYX_ERR(1, 701, __pyx_L1_error)
   }
   __pyx_t_69 = 1;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_xi.data) + __pyx_t_69)) )) = __pyx_t_10;
 
-  /* "straininterpolationandintegration.pyx":466
+  /* "straininterpolationandintegration.pyx":702
  *         xi[0] = self.itpx.eval_interp(x,y,z,0,0,0)
  *         xi[1] = self.itpy.eval_interp(x,y,z,0,0,0)
  *         xi[2] = self.itpz.eval_interp(x,y,z,0,0,0)             # <<<<<<<<<<<<<<
@@ -9473,12 +9496,12 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_tmp_x
     __pyx_t_10 = __pyx_v_self->itpz->eval_interp(__pyx_v_x, __pyx_v_y, __pyx_v_z, 0, 0, 0);
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(1, 466, __pyx_L1_error)
+    __PYX_ERR(1, 702, __pyx_L1_error)
   }
   __pyx_t_70 = 2;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_xi.data) + __pyx_t_70)) )) = __pyx_t_10;
 
-  /* "straininterpolationandintegration.pyx":468
+  /* "straininterpolationandintegration.pyx":704
  *         xi[2] = self.itpz.eval_interp(x,y,z,0,0,0)
  *         # Normalize results
  *         _cy_normalize_(xi)             # <<<<<<<<<<<<<<
@@ -9487,12 +9510,12 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_tmp_x
  */
   __pyx_f_33straininterpolationandintegration__cy_normalize_(__pyx_v_xi);
 
-  /* "straininterpolationandintegration.pyx":418
+  /* "straininterpolationandintegration.pyx":639
  *     @cython.boundscheck(False)
  *     @cython.wraparound(False)
  *     cdef void _interpolate_xi_(self, double[::1] pos, double[::1] &xi):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double x = self.x_internal, y = self.y_internal, z = self.z_internal
+ *         """
+ *         CubicSpecialInterpolator._interpolate_xi_(pos,xi)
  */
 
   /* function exit code */
@@ -9517,12 +9540,12 @@ __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_t_3, 1, __pyx_v_tmp_x
   __Pyx_RefNannyFinishContext();
 }
 
-/* "straininterpolationandintegration.pyx":474
+/* "straininterpolationandintegration.pyx":710
  *     @cython.cdivision(True)
  *     @cython.initializedcheck(False)
  *     cdef void _set_voxel_indices_(self,double x, double y, double z):             # <<<<<<<<<<<<<<
- *         cdef:
- *             int[::1] inds_x = self.inds_x, inds_y = self.inds_y, inds_z = self.inds_z
+ *         """
+ *         CubicSpecialInterpolator._set_voxel_indices_(x,y,z)
  */
 
 static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolator__set_voxel_indices_(struct __pyx_obj_33straininterpolationandintegration_CubicSpecialInterpolator *__pyx_v_self, double __pyx_v_x, double __pyx_v_y, double __pyx_v_z) {
@@ -9574,8 +9597,8 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   Py_ssize_t __pyx_t_39;
   __Pyx_RefNannySetupContext("_set_voxel_indices_", 0);
 
-  /* "straininterpolationandintegration.pyx":476
- *     cdef void _set_voxel_indices_(self,double x, double y, double z):
+  /* "straininterpolationandintegration.pyx":727
+ *         """
  *         cdef:
  *             int[::1] inds_x = self.inds_x, inds_y = self.inds_y, inds_z = self.inds_z             # <<<<<<<<<<<<<<
  *             int ind_x, ind_y, ind_z
@@ -9597,7 +9620,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":479
+  /* "straininterpolationandintegration.pyx":730
  *             int ind_x, ind_y, ind_z
  * 
  *         x = c_fmod((x-self.x_grid[0])/(self.dx),self.nx)             # <<<<<<<<<<<<<<
@@ -9607,7 +9630,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_2 = 0;
   __pyx_v_x = fmod(((__pyx_v_x - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->x_grid.data) + __pyx_t_2)) )))) / __pyx_v_self->dx), __pyx_v_self->nx);
 
-  /* "straininterpolationandintegration.pyx":480
+  /* "straininterpolationandintegration.pyx":731
  * 
  *         x = c_fmod((x-self.x_grid[0])/(self.dx),self.nx)
  *         y = c_fmod((y-self.y_grid[0])/(self.dy),self.ny)             # <<<<<<<<<<<<<<
@@ -9617,7 +9640,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_3 = 0;
   __pyx_v_y = fmod(((__pyx_v_y - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->y_grid.data) + __pyx_t_3)) )))) / __pyx_v_self->dy), __pyx_v_self->ny);
 
-  /* "straininterpolationandintegration.pyx":481
+  /* "straininterpolationandintegration.pyx":732
  *         x = c_fmod((x-self.x_grid[0])/(self.dx),self.nx)
  *         y = c_fmod((y-self.y_grid[0])/(self.dy),self.ny)
  *         z = c_fmod((z-self.z_grid[0])/(self.dz),self.nz)             # <<<<<<<<<<<<<<
@@ -9627,7 +9650,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_4 = 0;
   __pyx_v_z = fmod(((__pyx_v_z - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_self->z_grid.data) + __pyx_t_4)) )))) / __pyx_v_self->dz), __pyx_v_self->nz);
 
-  /* "straininterpolationandintegration.pyx":483
+  /* "straininterpolationandintegration.pyx":734
  *         z = c_fmod((z-self.z_grid[0])/(self.dz),self.nz)
  * 
  *         while x < 0:             # <<<<<<<<<<<<<<
@@ -9638,7 +9661,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_5 = ((__pyx_v_x < 0.0) != 0);
     if (!__pyx_t_5) break;
 
-    /* "straininterpolationandintegration.pyx":484
+    /* "straininterpolationandintegration.pyx":735
  * 
  *         while x < 0:
  *             x += self.nx             # <<<<<<<<<<<<<<
@@ -9648,7 +9671,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_v_x = (__pyx_v_x + __pyx_v_self->nx);
   }
 
-  /* "straininterpolationandintegration.pyx":485
+  /* "straininterpolationandintegration.pyx":736
  *         while x < 0:
  *             x += self.nx
  *         while y < 0:             # <<<<<<<<<<<<<<
@@ -9659,7 +9682,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_5 = ((__pyx_v_y < 0.0) != 0);
     if (!__pyx_t_5) break;
 
-    /* "straininterpolationandintegration.pyx":486
+    /* "straininterpolationandintegration.pyx":737
  *             x += self.nx
  *         while y < 0:
  *             y += self.ny             # <<<<<<<<<<<<<<
@@ -9669,7 +9692,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_v_y = (__pyx_v_y + __pyx_v_self->ny);
   }
 
-  /* "straininterpolationandintegration.pyx":487
+  /* "straininterpolationandintegration.pyx":738
  *         while y < 0:
  *             y += self.ny
  *         while z < 0:             # <<<<<<<<<<<<<<
@@ -9680,7 +9703,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_5 = ((__pyx_v_z < 0.0) != 0);
     if (!__pyx_t_5) break;
 
-    /* "straininterpolationandintegration.pyx":488
+    /* "straininterpolationandintegration.pyx":739
  *             y += self.ny
  *         while z < 0:
  *             z += self.nz             # <<<<<<<<<<<<<<
@@ -9690,7 +9713,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_v_z = (__pyx_v_z + __pyx_v_self->nz);
   }
 
-  /* "straininterpolationandintegration.pyx":490
+  /* "straininterpolationandintegration.pyx":741
  *             z += self.nz
  * 
  *         ind_x = int(c_floor(x))             # <<<<<<<<<<<<<<
@@ -9699,7 +9722,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
  */
   __pyx_v_ind_x = ((int)floor(__pyx_v_x));
 
-  /* "straininterpolationandintegration.pyx":491
+  /* "straininterpolationandintegration.pyx":742
  * 
  *         ind_x = int(c_floor(x))
  *         ind_y = int(c_floor(y))             # <<<<<<<<<<<<<<
@@ -9708,7 +9731,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
  */
   __pyx_v_ind_y = ((int)floor(__pyx_v_y));
 
-  /* "straininterpolationandintegration.pyx":492
+  /* "straininterpolationandintegration.pyx":743
  *         ind_x = int(c_floor(x))
  *         ind_y = int(c_floor(y))
  *         ind_z = int(c_floor(z))             # <<<<<<<<<<<<<<
@@ -9717,7 +9740,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
  */
   __pyx_v_ind_z = ((int)floor(__pyx_v_z));
 
-  /* "straininterpolationandintegration.pyx":494
+  /* "straininterpolationandintegration.pyx":745
  *         ind_z = int(c_floor(z))
  * 
  *         if not self.calibrated or (self.inds_x[1] != ind_x or self.inds_y[1] != ind_y             # <<<<<<<<<<<<<<
@@ -9738,7 +9761,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     goto __pyx_L10_bool_binop_done;
   }
 
-  /* "straininterpolationandintegration.pyx":495
+  /* "straininterpolationandintegration.pyx":746
  * 
  *         if not self.calibrated or (self.inds_x[1] != ind_x or self.inds_y[1] != ind_y
  *                                     or self.inds_z[1] != ind_z):             # <<<<<<<<<<<<<<
@@ -9747,7 +9770,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
  */
   __pyx_t_8 = 1;
 
-  /* "straininterpolationandintegration.pyx":494
+  /* "straininterpolationandintegration.pyx":745
  *         ind_z = int(c_floor(z))
  * 
  *         if not self.calibrated or (self.inds_x[1] != ind_x or self.inds_y[1] != ind_y             # <<<<<<<<<<<<<<
@@ -9761,7 +9784,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     goto __pyx_L10_bool_binop_done;
   }
 
-  /* "straininterpolationandintegration.pyx":495
+  /* "straininterpolationandintegration.pyx":746
  * 
  *         if not self.calibrated or (self.inds_x[1] != ind_x or self.inds_y[1] != ind_y
  *                                     or self.inds_z[1] != ind_z):             # <<<<<<<<<<<<<<
@@ -9773,7 +9796,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   __pyx_t_5 = __pyx_t_6;
   __pyx_L10_bool_binop_done:;
 
-  /* "straininterpolationandintegration.pyx":494
+  /* "straininterpolationandintegration.pyx":745
  *         ind_z = int(c_floor(z))
  * 
  *         if not self.calibrated or (self.inds_x[1] != ind_x or self.inds_y[1] != ind_y             # <<<<<<<<<<<<<<
@@ -9782,7 +9805,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
  */
   if (__pyx_t_5) {
 
-    /* "straininterpolationandintegration.pyx":497
+    /* "straininterpolationandintegration.pyx":748
  *                                     or self.inds_z[1] != ind_z):
  * 
  *             inds_x[1] = ind_x             # <<<<<<<<<<<<<<
@@ -9792,7 +9815,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_10 = 1;
     *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_x.data) + __pyx_t_10)) )) = __pyx_v_ind_x;
 
-    /* "straininterpolationandintegration.pyx":498
+    /* "straininterpolationandintegration.pyx":749
  * 
  *             inds_x[1] = ind_x
  *             inds_y[1] = ind_y             # <<<<<<<<<<<<<<
@@ -9802,7 +9825,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_11 = 1;
     *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_y.data) + __pyx_t_11)) )) = __pyx_v_ind_y;
 
-    /* "straininterpolationandintegration.pyx":499
+    /* "straininterpolationandintegration.pyx":750
  *             inds_x[1] = ind_x
  *             inds_y[1] = ind_y
  *             inds_z[1] = ind_z             # <<<<<<<<<<<<<<
@@ -9812,7 +9835,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_12 = 1;
     *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_z.data) + __pyx_t_12)) )) = __pyx_v_ind_z;
 
-    /* "straininterpolationandintegration.pyx":501
+    /* "straininterpolationandintegration.pyx":752
  *             inds_z[1] = ind_z
  * 
  *             inds_x[0] = (ind_x-1)%(self.nx)             # <<<<<<<<<<<<<<
@@ -9822,7 +9845,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_13 = 0;
     *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_x.data) + __pyx_t_13)) )) = ((__pyx_v_ind_x - 1) % __pyx_v_self->nx);
 
-    /* "straininterpolationandintegration.pyx":502
+    /* "straininterpolationandintegration.pyx":753
  * 
  *             inds_x[0] = (ind_x-1)%(self.nx)
  *             inds_x[2] = (ind_x+1)%(self.nx)             # <<<<<<<<<<<<<<
@@ -9832,7 +9855,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_14 = 2;
     *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_x.data) + __pyx_t_14)) )) = ((__pyx_v_ind_x + 1) % __pyx_v_self->nx);
 
-    /* "straininterpolationandintegration.pyx":503
+    /* "straininterpolationandintegration.pyx":754
  *             inds_x[0] = (ind_x-1)%(self.nx)
  *             inds_x[2] = (ind_x+1)%(self.nx)
  *             inds_x[3] = (ind_x+2)%(self.nx)             # <<<<<<<<<<<<<<
@@ -9842,7 +9865,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_15 = 3;
     *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_x.data) + __pyx_t_15)) )) = ((__pyx_v_ind_x + 2) % __pyx_v_self->nx);
 
-    /* "straininterpolationandintegration.pyx":505
+    /* "straininterpolationandintegration.pyx":756
  *             inds_x[3] = (ind_x+2)%(self.nx)
  * 
  *             while inds_x[0] < 0:             # <<<<<<<<<<<<<<
@@ -9854,7 +9877,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       __pyx_t_5 = (((*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_x.data) + __pyx_t_16)) ))) < 0) != 0);
       if (!__pyx_t_5) break;
 
-      /* "straininterpolationandintegration.pyx":506
+      /* "straininterpolationandintegration.pyx":757
  * 
  *             while inds_x[0] < 0:
  *                 inds_x[0] += self.nx             # <<<<<<<<<<<<<<
@@ -9865,7 +9888,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_x.data) + __pyx_t_17)) )) += __pyx_v_self->nx;
     }
 
-    /* "straininterpolationandintegration.pyx":507
+    /* "straininterpolationandintegration.pyx":758
  *             while inds_x[0] < 0:
  *                 inds_x[0] += self.nx
  *             while inds_x[2] < 0:             # <<<<<<<<<<<<<<
@@ -9877,7 +9900,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       __pyx_t_5 = (((*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_x.data) + __pyx_t_18)) ))) < 0) != 0);
       if (!__pyx_t_5) break;
 
-      /* "straininterpolationandintegration.pyx":508
+      /* "straininterpolationandintegration.pyx":759
  *                 inds_x[0] += self.nx
  *             while inds_x[2] < 0:
  *                 inds_x[2] += self.nx             # <<<<<<<<<<<<<<
@@ -9888,7 +9911,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_x.data) + __pyx_t_19)) )) += __pyx_v_self->nx;
     }
 
-    /* "straininterpolationandintegration.pyx":509
+    /* "straininterpolationandintegration.pyx":760
  *             while inds_x[2] < 0:
  *                 inds_x[2] += self.nx
  *             while inds_x[3] < 0:             # <<<<<<<<<<<<<<
@@ -9900,7 +9923,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       __pyx_t_5 = (((*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_x.data) + __pyx_t_20)) ))) < 0) != 0);
       if (!__pyx_t_5) break;
 
-      /* "straininterpolationandintegration.pyx":510
+      /* "straininterpolationandintegration.pyx":761
  *                 inds_x[2] += self.nx
  *             while inds_x[3] < 0:
  *                 inds_x[3] += self.nx             # <<<<<<<<<<<<<<
@@ -9911,7 +9934,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_x.data) + __pyx_t_21)) )) += __pyx_v_self->nx;
     }
 
-    /* "straininterpolationandintegration.pyx":512
+    /* "straininterpolationandintegration.pyx":763
  *                 inds_x[3] += self.nx
  * 
  *             inds_y[0] = (ind_y-1)%(self.ny)             # <<<<<<<<<<<<<<
@@ -9921,7 +9944,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_22 = 0;
     *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_y.data) + __pyx_t_22)) )) = ((__pyx_v_ind_y - 1) % __pyx_v_self->ny);
 
-    /* "straininterpolationandintegration.pyx":513
+    /* "straininterpolationandintegration.pyx":764
  * 
  *             inds_y[0] = (ind_y-1)%(self.ny)
  *             inds_y[2] = (ind_y+1)%(self.ny)             # <<<<<<<<<<<<<<
@@ -9931,7 +9954,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_23 = 2;
     *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_y.data) + __pyx_t_23)) )) = ((__pyx_v_ind_y + 1) % __pyx_v_self->ny);
 
-    /* "straininterpolationandintegration.pyx":514
+    /* "straininterpolationandintegration.pyx":765
  *             inds_y[0] = (ind_y-1)%(self.ny)
  *             inds_y[2] = (ind_y+1)%(self.ny)
  *             inds_y[3] = (ind_y+2)%(self.ny)             # <<<<<<<<<<<<<<
@@ -9941,7 +9964,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_24 = 3;
     *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_y.data) + __pyx_t_24)) )) = ((__pyx_v_ind_y + 2) % __pyx_v_self->ny);
 
-    /* "straininterpolationandintegration.pyx":516
+    /* "straininterpolationandintegration.pyx":767
  *             inds_y[3] = (ind_y+2)%(self.ny)
  * 
  *             while inds_y[0] < 0:             # <<<<<<<<<<<<<<
@@ -9953,7 +9976,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       __pyx_t_5 = (((*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_y.data) + __pyx_t_25)) ))) < 0) != 0);
       if (!__pyx_t_5) break;
 
-      /* "straininterpolationandintegration.pyx":517
+      /* "straininterpolationandintegration.pyx":768
  * 
  *             while inds_y[0] < 0:
  *                 inds_y[0] += self.ny             # <<<<<<<<<<<<<<
@@ -9964,7 +9987,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_y.data) + __pyx_t_26)) )) += __pyx_v_self->ny;
     }
 
-    /* "straininterpolationandintegration.pyx":518
+    /* "straininterpolationandintegration.pyx":769
  *             while inds_y[0] < 0:
  *                 inds_y[0] += self.ny
  *             while inds_y[2] < 0:             # <<<<<<<<<<<<<<
@@ -9976,7 +9999,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       __pyx_t_5 = (((*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_y.data) + __pyx_t_27)) ))) < 0) != 0);
       if (!__pyx_t_5) break;
 
-      /* "straininterpolationandintegration.pyx":519
+      /* "straininterpolationandintegration.pyx":770
  *                 inds_y[0] += self.ny
  *             while inds_y[2] < 0:
  *                 inds_y[2] += self.ny             # <<<<<<<<<<<<<<
@@ -9987,7 +10010,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_y.data) + __pyx_t_28)) )) += __pyx_v_self->ny;
     }
 
-    /* "straininterpolationandintegration.pyx":520
+    /* "straininterpolationandintegration.pyx":771
  *             while inds_y[2] < 0:
  *                 inds_y[2] += self.ny
  *             while inds_y[3] < 0:             # <<<<<<<<<<<<<<
@@ -9999,7 +10022,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       __pyx_t_5 = (((*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_y.data) + __pyx_t_29)) ))) < 0) != 0);
       if (!__pyx_t_5) break;
 
-      /* "straininterpolationandintegration.pyx":521
+      /* "straininterpolationandintegration.pyx":772
  *                 inds_y[2] += self.ny
  *             while inds_y[3] < 0:
  *                 inds_y[3] += self.ny             # <<<<<<<<<<<<<<
@@ -10010,7 +10033,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_y.data) + __pyx_t_30)) )) += __pyx_v_self->ny;
     }
 
-    /* "straininterpolationandintegration.pyx":523
+    /* "straininterpolationandintegration.pyx":774
  *                 inds_y[3] += self.ny
  * 
  *             inds_z[0] = (ind_z-1)%(self.nz)             # <<<<<<<<<<<<<<
@@ -10020,7 +10043,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_31 = 0;
     *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_z.data) + __pyx_t_31)) )) = ((__pyx_v_ind_z - 1) % __pyx_v_self->nz);
 
-    /* "straininterpolationandintegration.pyx":524
+    /* "straininterpolationandintegration.pyx":775
  * 
  *             inds_z[0] = (ind_z-1)%(self.nz)
  *             inds_z[2] = (ind_z+1)%(self.nz)             # <<<<<<<<<<<<<<
@@ -10030,7 +10053,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_32 = 2;
     *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_z.data) + __pyx_t_32)) )) = ((__pyx_v_ind_z + 1) % __pyx_v_self->nz);
 
-    /* "straininterpolationandintegration.pyx":525
+    /* "straininterpolationandintegration.pyx":776
  *             inds_z[0] = (ind_z-1)%(self.nz)
  *             inds_z[2] = (ind_z+1)%(self.nz)
  *             inds_z[3] = (ind_z+2)%(self.nz)             # <<<<<<<<<<<<<<
@@ -10040,7 +10063,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     __pyx_t_33 = 3;
     *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_z.data) + __pyx_t_33)) )) = ((__pyx_v_ind_z + 2) % __pyx_v_self->nz);
 
-    /* "straininterpolationandintegration.pyx":527
+    /* "straininterpolationandintegration.pyx":778
  *             inds_z[3] = (ind_z+2)%(self.nz)
  * 
  *             while inds_z[0] < 0:             # <<<<<<<<<<<<<<
@@ -10052,7 +10075,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       __pyx_t_5 = (((*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_z.data) + __pyx_t_34)) ))) < 0) != 0);
       if (!__pyx_t_5) break;
 
-      /* "straininterpolationandintegration.pyx":528
+      /* "straininterpolationandintegration.pyx":779
  * 
  *             while inds_z[0] < 0:
  *                 inds_z[0] += self.nz             # <<<<<<<<<<<<<<
@@ -10063,7 +10086,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_z.data) + __pyx_t_35)) )) += __pyx_v_self->nz;
     }
 
-    /* "straininterpolationandintegration.pyx":529
+    /* "straininterpolationandintegration.pyx":780
  *             while inds_z[0] < 0:
  *                 inds_z[0] += self.nz
  *             while inds_z[2] < 0:             # <<<<<<<<<<<<<<
@@ -10075,7 +10098,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       __pyx_t_5 = (((*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_z.data) + __pyx_t_36)) ))) < 0) != 0);
       if (!__pyx_t_5) break;
 
-      /* "straininterpolationandintegration.pyx":530
+      /* "straininterpolationandintegration.pyx":781
  *                 inds_z[0] += self.nz
  *             while inds_z[2] < 0:
  *                 inds_z[2] += self.nz             # <<<<<<<<<<<<<<
@@ -10086,7 +10109,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_z.data) + __pyx_t_37)) )) += __pyx_v_self->nz;
     }
 
-    /* "straininterpolationandintegration.pyx":531
+    /* "straininterpolationandintegration.pyx":782
  *             while inds_z[2] < 0:
  *                 inds_z[2] += self.nz
  *             while inds_z[3] < 0:             # <<<<<<<<<<<<<<
@@ -10098,7 +10121,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       __pyx_t_5 = (((*((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_z.data) + __pyx_t_38)) ))) < 0) != 0);
       if (!__pyx_t_5) break;
 
-      /* "straininterpolationandintegration.pyx":532
+      /* "straininterpolationandintegration.pyx":783
  *                 inds_z[2] += self.nz
  *             while inds_z[3] < 0:
  *                 inds_z[3] += self.nz             # <<<<<<<<<<<<<<
@@ -10109,7 +10132,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
       *((int *) ( /* dim=0 */ ((char *) (((int *) __pyx_v_inds_z.data) + __pyx_t_39)) )) += __pyx_v_self->nz;
     }
 
-    /* "straininterpolationandintegration.pyx":534
+    /* "straininterpolationandintegration.pyx":785
  *                 inds_z[3] += self.nz
  * 
  *             self.sameaslast = False             # <<<<<<<<<<<<<<
@@ -10118,7 +10141,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
  */
     __pyx_v_self->sameaslast = 0;
 
-    /* "straininterpolationandintegration.pyx":494
+    /* "straininterpolationandintegration.pyx":745
  *         ind_z = int(c_floor(z))
  * 
  *         if not self.calibrated or (self.inds_x[1] != ind_x or self.inds_y[1] != ind_y             # <<<<<<<<<<<<<<
@@ -10128,7 +10151,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
     goto __pyx_L9;
   }
 
-  /* "straininterpolationandintegration.pyx":536
+  /* "straininterpolationandintegration.pyx":787
  *             self.sameaslast = False
  *         else:
  *             self.sameaslast = True             # <<<<<<<<<<<<<<
@@ -10140,12 +10163,12 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   }
   __pyx_L9:;
 
-  /* "straininterpolationandintegration.pyx":474
+  /* "straininterpolationandintegration.pyx":710
  *     @cython.cdivision(True)
  *     @cython.initializedcheck(False)
  *     cdef void _set_voxel_indices_(self,double x, double y, double z):             # <<<<<<<<<<<<<<
- *         cdef:
- *             int[::1] inds_x = self.inds_x, inds_y = self.inds_y, inds_z = self.inds_z
+ *         """
+ *         CubicSpecialInterpolator._set_voxel_indices_(x,y,z)
  */
 
   /* function exit code */
@@ -10155,7 +10178,7 @@ static void __pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolat
   __Pyx_RefNannyFinishContext();
 }
 
-/* "straininterpolationandintegration.pyx":538
+/* "straininterpolationandintegration.pyx":789
  *             self.sameaslast = True
  * 
  *     def __dealoc__(self):             # <<<<<<<<<<<<<<
@@ -10182,7 +10205,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealoc__", 0);
 
-  /* "straininterpolationandintegration.pyx":539
+  /* "straininterpolationandintegration.pyx":790
  * 
  *     def __dealoc__(self):
  *         if self.itpx is not NULL:             # <<<<<<<<<<<<<<
@@ -10192,7 +10215,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
   __pyx_t_1 = ((__pyx_v_self->itpx != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "straininterpolationandintegration.pyx":540
+    /* "straininterpolationandintegration.pyx":791
  *     def __dealoc__(self):
  *         if self.itpx is not NULL:
  *             del self.itpx             # <<<<<<<<<<<<<<
@@ -10201,7 +10224,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
  */
     delete __pyx_v_self->itpx;
 
-    /* "straininterpolationandintegration.pyx":539
+    /* "straininterpolationandintegration.pyx":790
  * 
  *     def __dealoc__(self):
  *         if self.itpx is not NULL:             # <<<<<<<<<<<<<<
@@ -10210,7 +10233,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
  */
   }
 
-  /* "straininterpolationandintegration.pyx":541
+  /* "straininterpolationandintegration.pyx":792
  *         if self.itpx is not NULL:
  *             del self.itpx
  *         if self.itpy is not NULL:             # <<<<<<<<<<<<<<
@@ -10220,7 +10243,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
   __pyx_t_1 = ((__pyx_v_self->itpy != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "straininterpolationandintegration.pyx":542
+    /* "straininterpolationandintegration.pyx":793
  *             del self.itpx
  *         if self.itpy is not NULL:
  *             del self.itpy             # <<<<<<<<<<<<<<
@@ -10229,7 +10252,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
  */
     delete __pyx_v_self->itpy;
 
-    /* "straininterpolationandintegration.pyx":541
+    /* "straininterpolationandintegration.pyx":792
  *         if self.itpx is not NULL:
  *             del self.itpx
  *         if self.itpy is not NULL:             # <<<<<<<<<<<<<<
@@ -10238,7 +10261,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
  */
   }
 
-  /* "straininterpolationandintegration.pyx":543
+  /* "straininterpolationandintegration.pyx":794
  *         if self.itpy is not NULL:
  *             del self.itpy
  *         if self.itpz is not NULL:             # <<<<<<<<<<<<<<
@@ -10248,7 +10271,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
   __pyx_t_1 = ((__pyx_v_self->itpz != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "straininterpolationandintegration.pyx":544
+    /* "straininterpolationandintegration.pyx":795
  *             del self.itpy
  *         if self.itpz is not NULL:
  *             del self.itpz             # <<<<<<<<<<<<<<
@@ -10257,7 +10280,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
  */
     delete __pyx_v_self->itpz;
 
-    /* "straininterpolationandintegration.pyx":543
+    /* "straininterpolationandintegration.pyx":794
  *         if self.itpy is not NULL:
  *             del self.itpy
  *         if self.itpz is not NULL:             # <<<<<<<<<<<<<<
@@ -10266,7 +10289,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
  */
   }
 
-  /* "straininterpolationandintegration.pyx":538
+  /* "straininterpolationandintegration.pyx":789
  *             self.sameaslast = True
  * 
  *     def __dealoc__(self):             # <<<<<<<<<<<<<<
@@ -10388,7 +10411,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":557
+/* "straininterpolationandintegration.pyx":824
  *         bint initialized_tan, initialized_prev
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -10397,22 +10420,22 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_24CubicSpecialInte
  */
 
 /* Python wrapper */
-static int __pyx_pw_33straininterpolationandintegration_17StrainAimAssister_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_33straininterpolationandintegration_17StrainAimAssister_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__cinit__ (wrapper)", 0);
   if (unlikely(PyTuple_GET_SIZE(__pyx_args) > 0)) {
     __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 0, 0, PyTuple_GET_SIZE(__pyx_args)); return -1;}
   if (unlikely(__pyx_kwds) && unlikely(PyDict_Size(__pyx_kwds) > 0) && unlikely(!__Pyx_CheckKeywordStrings(__pyx_kwds, "__cinit__", 0))) return -1;
-  __pyx_r = __pyx_pf_33straininterpolationandintegration_17StrainAimAssister___cinit__(((struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self));
+  __pyx_r = __pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator___cinit__(((struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_33straininterpolationandintegration_17StrainAimAssister___cinit__(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self) {
+static int __pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator___cinit__(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   double *__pyx_t_1;
@@ -10422,7 +10445,7 @@ static int __pyx_pf_33straininterpolationandintegration_17StrainAimAssister___ci
   __Pyx_memviewslice __pyx_t_5 = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "straininterpolationandintegration.pyx":558
+  /* "straininterpolationandintegration.pyx":825
  * 
  *     def __cinit__(self):
  *         self.tan_vec = self._tan_vec_             # <<<<<<<<<<<<<<
@@ -10432,26 +10455,26 @@ static int __pyx_pf_33straininterpolationandintegration_17StrainAimAssister___ci
   __pyx_t_1 = __pyx_v_self->_tan_vec_;
   if (!__pyx_t_1) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 558, __pyx_L1_error)
+    __PYX_ERR(1, 825, __pyx_L1_error)
   }
   __pyx_t_4 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_3 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 558, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 825, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_2 = __pyx_array_new(__pyx_t_3, sizeof(double), PyBytes_AS_STRING(__pyx_t_4), (char *) "fortran", (char *) __pyx_t_1);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 558, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 825, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 558, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 825, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->tan_vec, 0);
   __pyx_v_self->tan_vec = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":559
+  /* "straininterpolationandintegration.pyx":826
  *     def __cinit__(self):
  *         self.tan_vec = self._tan_vec_
  *         self.prev_vec = self._prev_vec_             # <<<<<<<<<<<<<<
@@ -10461,26 +10484,26 @@ static int __pyx_pf_33straininterpolationandintegration_17StrainAimAssister___ci
   __pyx_t_1 = __pyx_v_self->_prev_vec_;
   if (!__pyx_t_1) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 559, __pyx_L1_error)
+    __PYX_ERR(1, 826, __pyx_L1_error)
   }
   __pyx_t_3 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_4 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 559, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 826, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_2 = __pyx_array_new(__pyx_t_4, sizeof(double), PyBytes_AS_STRING(__pyx_t_3), (char *) "fortran", (char *) __pyx_t_1);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 559, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 826, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 559, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 826, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->prev_vec, 0);
   __pyx_v_self->prev_vec = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":560
+  /* "straininterpolationandintegration.pyx":827
  *         self.tan_vec = self._tan_vec_
  *         self.prev_vec = self._prev_vec_
  *         self.xi = self._xi_             # <<<<<<<<<<<<<<
@@ -10490,26 +10513,26 @@ static int __pyx_pf_33straininterpolationandintegration_17StrainAimAssister___ci
   __pyx_t_1 = __pyx_v_self->_xi_;
   if (!__pyx_t_1) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 560, __pyx_L1_error)
+    __PYX_ERR(1, 827, __pyx_L1_error)
   }
   __pyx_t_4 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_3 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 560, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 827, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_2 = __pyx_array_new(__pyx_t_3, sizeof(double), PyBytes_AS_STRING(__pyx_t_4), (char *) "fortran", (char *) __pyx_t_1);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 560, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 827, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 560, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 827, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->xi, 0);
   __pyx_v_self->xi = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":561
+  /* "straininterpolationandintegration.pyx":828
  *         self.prev_vec = self._prev_vec_
  *         self.xi = self._xi_
  *         self.ret = self._ret_             # <<<<<<<<<<<<<<
@@ -10519,26 +10542,26 @@ static int __pyx_pf_33straininterpolationandintegration_17StrainAimAssister___ci
   __pyx_t_1 = __pyx_v_self->_ret_;
   if (!__pyx_t_1) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 561, __pyx_L1_error)
+    __PYX_ERR(1, 828, __pyx_L1_error)
   }
   __pyx_t_3 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_4 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 561, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 828, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_2 = __pyx_array_new(__pyx_t_4, sizeof(double), PyBytes_AS_STRING(__pyx_t_3), (char *) "fortran", (char *) __pyx_t_1);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 561, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 828, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 561, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 828, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->ret, 0);
   __pyx_v_self->ret = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":562
+  /* "straininterpolationandintegration.pyx":829
  *         self.xi = self._xi_
  *         self.ret = self._ret_
  *         self.initialized_tan = False             # <<<<<<<<<<<<<<
@@ -10547,7 +10570,7 @@ static int __pyx_pf_33straininterpolationandintegration_17StrainAimAssister___ci
  */
   __pyx_v_self->initialized_tan = 0;
 
-  /* "straininterpolationandintegration.pyx":563
+  /* "straininterpolationandintegration.pyx":830
  *         self.ret = self._ret_
  *         self.initialized_tan = False
  *         self.initialized_prev = False             # <<<<<<<<<<<<<<
@@ -10556,7 +10579,7 @@ static int __pyx_pf_33straininterpolationandintegration_17StrainAimAssister___ci
  */
   __pyx_v_self->initialized_prev = 0;
 
-  /* "straininterpolationandintegration.pyx":557
+  /* "straininterpolationandintegration.pyx":824
  *         bint initialized_tan, initialized_prev
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -10572,24 +10595,28 @@ static int __pyx_pf_33straininterpolationandintegration_17StrainAimAssister___ci
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __PYX_XDEC_MEMVIEW(&__pyx_t_5, 1);
-  __Pyx_AddTraceback("straininterpolationandintegration.StrainAimAssister.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("straininterpolationandintegration.StrainDirectionGenerator.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":568
+/* "straininterpolationandintegration.pyx":835
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __init__(self, InterpolatorWithOrientationFix xi_itp):             # <<<<<<<<<<<<<<
- *         self.xi_itp = xi_itp
- * 
+ *         """
+ *         StrainDirectionGenerator.__init__(xi_itp)
  */
 
 /* Python wrapper */
-static int __pyx_pw_33straininterpolationandintegration_17StrainAimAssister_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_33straininterpolationandintegration_17StrainAimAssister_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_33straininterpolationandintegration_24StrainDirectionGenerator_2__init__[] = "\n        StrainDirectionGenerator.__init__(xi_itp)\n\n        Constructor for a StrainDirectionGenerator instance.\n\n        Parameters\n        ----------\n        xi_itp : LinearSpecialInterpolator or CubicSpecialInterpolator\n           Special interpolation extension type which has been initialized\n           with the underlying vector field.\n\n        ";
+#if CYTHON_COMPILING_IN_CPYTHON
+struct wrapperbase __pyx_wrapperbase_33straininterpolationandintegration_24StrainDirectionGenerator_2__init__;
+#endif
+static int __pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   struct __pyx_obj_33straininterpolationandintegration_InterpolatorWithOrientationFix *__pyx_v_xi_itp = 0;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
@@ -10613,7 +10640,7 @@ static int __pyx_pw_33straininterpolationandintegration_17StrainAimAssister_3__i
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 568, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 835, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
@@ -10624,14 +10651,14 @@ static int __pyx_pw_33straininterpolationandintegration_17StrainAimAssister_3__i
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 568, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 835, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("straininterpolationandintegration.StrainAimAssister.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("straininterpolationandintegration.StrainDirectionGenerator.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_xi_itp), __pyx_ptype_33straininterpolationandintegration_InterpolatorWithOrientationFix, 1, "xi_itp", 0))) __PYX_ERR(1, 568, __pyx_L1_error)
-  __pyx_r = __pyx_pf_33straininterpolationandintegration_17StrainAimAssister_2__init__(((struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self), __pyx_v_xi_itp);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_xi_itp), __pyx_ptype_33straininterpolationandintegration_InterpolatorWithOrientationFix, 1, "xi_itp", 0))) __PYX_ERR(1, 835, __pyx_L1_error)
+  __pyx_r = __pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_2__init__(((struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self), __pyx_v_xi_itp);
 
   /* function exit code */
   goto __pyx_L0;
@@ -10642,14 +10669,14 @@ static int __pyx_pw_33straininterpolationandintegration_17StrainAimAssister_3__i
   return __pyx_r;
 }
 
-static int __pyx_pf_33straininterpolationandintegration_17StrainAimAssister_2__init__(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self, struct __pyx_obj_33straininterpolationandintegration_InterpolatorWithOrientationFix *__pyx_v_xi_itp) {
+static int __pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_2__init__(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self, struct __pyx_obj_33straininterpolationandintegration_InterpolatorWithOrientationFix *__pyx_v_xi_itp) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "straininterpolationandintegration.pyx":569
- *     @cython.boundscheck(False)
- *     def __init__(self, InterpolatorWithOrientationFix xi_itp):
+  /* "straininterpolationandintegration.pyx":848
+ * 
+ *         """
  *         self.xi_itp = xi_itp             # <<<<<<<<<<<<<<
  * 
  *     @cython.initializedcheck(False)
@@ -10660,12 +10687,12 @@ static int __pyx_pf_33straininterpolationandintegration_17StrainAimAssister_2__i
   __Pyx_DECREF(((PyObject *)__pyx_v_self->xi_itp));
   __pyx_v_self->xi_itp = __pyx_v_xi_itp;
 
-  /* "straininterpolationandintegration.pyx":568
+  /* "straininterpolationandintegration.pyx":835
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __init__(self, InterpolatorWithOrientationFix xi_itp):             # <<<<<<<<<<<<<<
- *         self.xi_itp = xi_itp
- * 
+ *         """
+ *         StrainDirectionGenerator.__init__(xi_itp)
  */
 
   /* function exit code */
@@ -10674,34 +10701,35 @@ static int __pyx_pf_33straininterpolationandintegration_17StrainAimAssister_2__i
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":574
+/* "straininterpolationandintegration.pyx":853
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def set_tan_vec(self, double[::1] tan_vec not None):             # <<<<<<<<<<<<<<
- *         if tan_vec.shape[0] != 3:
- *             raise ValueError('The interpolation-aiming routine is custom-built' \
+ *         """
+ *         StrainDirectionGenerator.set_tan_vec(tan_vec)
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_5set_tan_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_tan_vec); /*proto*/
-static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_5set_tan_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_tan_vec) {
+static PyObject *__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_5set_tan_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_tan_vec); /*proto*/
+static char __pyx_doc_33straininterpolationandintegration_24StrainDirectionGenerator_4set_tan_vec[] = "\n        StrainDirectionGenerator.set_tan_vec(tan_vec)\n\n        Function which sets the approximately tangent vector, to be used in\n        conjunction with the underlying vector field in order to\n        generate step directions in R^3.\n\n        Must be called prior to StrainDirectionGenerator.__call__.\n\n        Parameters\n        ----------\n        tan_vec : (3,) ndarray\n           A (C-contiguous) NumPy array, containing the (approximately) tangent\n           vector.\n\n        ";
+static PyObject *__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_5set_tan_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_tan_vec) {
   __Pyx_memviewslice __pyx_v_tan_vec = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("set_tan_vec (wrapper)", 0);
   assert(__pyx_arg_tan_vec); {
-    __pyx_v_tan_vec = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_arg_tan_vec, PyBUF_WRITABLE); if (unlikely(!__pyx_v_tan_vec.memview)) __PYX_ERR(1, 574, __pyx_L3_error)
+    __pyx_v_tan_vec = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_arg_tan_vec, PyBUF_WRITABLE); if (unlikely(!__pyx_v_tan_vec.memview)) __PYX_ERR(1, 853, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("straininterpolationandintegration.StrainAimAssister.set_tan_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("straininterpolationandintegration.StrainDirectionGenerator.set_tan_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(((PyObject *)__pyx_v_tan_vec.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "tan_vec"); __PYX_ERR(1, 574, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "tan_vec"); __PYX_ERR(1, 853, __pyx_L1_error)
   }
-  __pyx_r = __pyx_pf_33straininterpolationandintegration_17StrainAimAssister_4set_tan_vec(((struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self), __pyx_v_tan_vec);
+  __pyx_r = __pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_4set_tan_vec(((struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self), __pyx_v_tan_vec);
 
   /* function exit code */
   goto __pyx_L0;
@@ -10712,7 +10740,7 @@ static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssiste
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssister_4set_tan_vec(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self, __Pyx_memviewslice __pyx_v_tan_vec) {
+static PyObject *__pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_4set_tan_vec(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self, __Pyx_memviewslice __pyx_v_tan_vec) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -10720,9 +10748,9 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("set_tan_vec", 0);
 
-  /* "straininterpolationandintegration.pyx":575
- *     @cython.boundscheck(False)
- *     def set_tan_vec(self, double[::1] tan_vec not None):
+  /* "straininterpolationandintegration.pyx":870
+ * 
+ *         """
  *         if tan_vec.shape[0] != 3:             # <<<<<<<<<<<<<<
  *             raise ValueError('The interpolation-aiming routine is custom-built' \
  *                     + ' for three-dimensional data!')
@@ -10730,40 +10758,40 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   __pyx_t_1 = (((__pyx_v_tan_vec.shape[0]) != 3) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "straininterpolationandintegration.pyx":577
+    /* "straininterpolationandintegration.pyx":872
  *         if tan_vec.shape[0] != 3:
  *             raise ValueError('The interpolation-aiming routine is custom-built' \
  *                     + ' for three-dimensional data!')             # <<<<<<<<<<<<<<
  * 
  *         dcopy(3,tan_vec,1,self.tan_vec,1)
  */
-    __pyx_t_2 = PyNumber_Add(__pyx_kp_s_The_interpolation_aiming_routine, __pyx_kp_s_for_three_dimensional_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 577, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_Add(__pyx_kp_s_The_interpolation_aiming_routine, __pyx_kp_s_for_three_dimensional_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 872, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
 
-    /* "straininterpolationandintegration.pyx":576
- *     def set_tan_vec(self, double[::1] tan_vec not None):
+    /* "straininterpolationandintegration.pyx":871
+ *         """
  *         if tan_vec.shape[0] != 3:
  *             raise ValueError('The interpolation-aiming routine is custom-built' \             # <<<<<<<<<<<<<<
  *                     + ' for three-dimensional data!')
  * 
  */
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 576, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 871, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 576, __pyx_L1_error)
+    __PYX_ERR(1, 871, __pyx_L1_error)
 
-    /* "straininterpolationandintegration.pyx":575
- *     @cython.boundscheck(False)
- *     def set_tan_vec(self, double[::1] tan_vec not None):
+    /* "straininterpolationandintegration.pyx":870
+ * 
+ *         """
  *         if tan_vec.shape[0] != 3:             # <<<<<<<<<<<<<<
  *             raise ValueError('The interpolation-aiming routine is custom-built' \
  *                     + ' for three-dimensional data!')
  */
   }
 
-  /* "straininterpolationandintegration.pyx":579
+  /* "straininterpolationandintegration.pyx":874
  *                     + ' for three-dimensional data!')
  * 
  *         dcopy(3,tan_vec,1,self.tan_vec,1)             # <<<<<<<<<<<<<<
@@ -10772,7 +10800,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
  */
   __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_tan_vec, 1, __pyx_v_self->tan_vec, 1);
 
-  /* "straininterpolationandintegration.pyx":580
+  /* "straininterpolationandintegration.pyx":875
  * 
  *         dcopy(3,tan_vec,1,self.tan_vec,1)
  *         _cy_normalize_(self.tan_vec)             # <<<<<<<<<<<<<<
@@ -10781,7 +10809,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
  */
   __pyx_f_33straininterpolationandintegration__cy_normalize_(__pyx_v_self->tan_vec);
 
-  /* "straininterpolationandintegration.pyx":581
+  /* "straininterpolationandintegration.pyx":876
  *         dcopy(3,tan_vec,1,self.tan_vec,1)
  *         _cy_normalize_(self.tan_vec)
  *         self.initialized_tan = True             # <<<<<<<<<<<<<<
@@ -10790,12 +10818,12 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
  */
   __pyx_v_self->initialized_tan = 1;
 
-  /* "straininterpolationandintegration.pyx":574
+  /* "straininterpolationandintegration.pyx":853
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def set_tan_vec(self, double[::1] tan_vec not None):             # <<<<<<<<<<<<<<
- *         if tan_vec.shape[0] != 3:
- *             raise ValueError('The interpolation-aiming routine is custom-built' \
+ *         """
+ *         StrainDirectionGenerator.set_tan_vec(tan_vec)
  */
 
   /* function exit code */
@@ -10804,7 +10832,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("straininterpolationandintegration.StrainAimAssister.set_tan_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("straininterpolationandintegration.StrainDirectionGenerator.set_tan_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_tan_vec, 1);
@@ -10813,47 +10841,48 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":583
+/* "straininterpolationandintegration.pyx":878
  *         self.initialized_tan = True
  * 
  *     def unset_tan_vec(self):             # <<<<<<<<<<<<<<
- *         self.initialized_tan = False
- * 
+ *         """
+ *         StrainDirectionGenerator.unset_tan_vec()
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_7unset_tan_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_7unset_tan_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_7unset_tan_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_33straininterpolationandintegration_24StrainDirectionGenerator_6unset_tan_vec[] = "\n        StrainDirectionGenerator.unset_tan_vec()\n\n        Unsets the tangent vector.\n\n        ";
+static PyObject *__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_7unset_tan_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("unset_tan_vec (wrapper)", 0);
-  __pyx_r = __pyx_pf_33straininterpolationandintegration_17StrainAimAssister_6unset_tan_vec(((struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self));
+  __pyx_r = __pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_6unset_tan_vec(((struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssister_6unset_tan_vec(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self) {
+static PyObject *__pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_6unset_tan_vec(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("unset_tan_vec", 0);
 
-  /* "straininterpolationandintegration.pyx":584
+  /* "straininterpolationandintegration.pyx":885
  * 
- *     def unset_tan_vec(self):
+ *         """
  *         self.initialized_tan = False             # <<<<<<<<<<<<<<
  * 
  *     @cython.initializedcheck(False)
  */
   __pyx_v_self->initialized_tan = 0;
 
-  /* "straininterpolationandintegration.pyx":583
+  /* "straininterpolationandintegration.pyx":878
  *         self.initialized_tan = True
  * 
  *     def unset_tan_vec(self):             # <<<<<<<<<<<<<<
- *         self.initialized_tan = False
- * 
+ *         """
+ *         StrainDirectionGenerator.unset_tan_vec()
  */
 
   /* function exit code */
@@ -10863,34 +10892,35 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":589
+/* "straininterpolationandintegration.pyx":890
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def set_prev_vec(self, double[::1] prev_vec not None):             # <<<<<<<<<<<<<<
- *         if prev_vec.shape[0] != 3:
- *             raise ValueError('The interpolation-aiming routine is custom-built' \
+ *         """
+ *         StrainDirectionGenerator.set_prev_vec(prev_vec)
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_9set_prev_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_prev_vec); /*proto*/
-static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_9set_prev_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_prev_vec) {
+static PyObject *__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_9set_prev_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_prev_vec); /*proto*/
+static char __pyx_doc_33straininterpolationandintegration_24StrainDirectionGenerator_8set_prev_vec[] = "\n        StrainDirectionGenerator.set_prev_vec(prev_vec)\n\n        Function which sets the previous vector, which is used in order\n        to ensure that any trajectory does not instantaneously fold onto\n        itself in regions with strong orientational discontinuities.\n\n        Must be called prior to StrainDirectionGenerator.__call__.\n\n        Parameters\n        ----------\n        prev_vec : (3,) ndarray\n           A (C-contiguous) NumPy array, containing the (approximately) prevgent\n           vector.\n\n        ";
+static PyObject *__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_9set_prev_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_prev_vec) {
   __Pyx_memviewslice __pyx_v_prev_vec = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("set_prev_vec (wrapper)", 0);
   assert(__pyx_arg_prev_vec); {
-    __pyx_v_prev_vec = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_arg_prev_vec, PyBUF_WRITABLE); if (unlikely(!__pyx_v_prev_vec.memview)) __PYX_ERR(1, 589, __pyx_L3_error)
+    __pyx_v_prev_vec = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_arg_prev_vec, PyBUF_WRITABLE); if (unlikely(!__pyx_v_prev_vec.memview)) __PYX_ERR(1, 890, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
-  __Pyx_AddTraceback("straininterpolationandintegration.StrainAimAssister.set_prev_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("straininterpolationandintegration.StrainDirectionGenerator.set_prev_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(((PyObject *)__pyx_v_prev_vec.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "prev_vec"); __PYX_ERR(1, 589, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "prev_vec"); __PYX_ERR(1, 890, __pyx_L1_error)
   }
-  __pyx_r = __pyx_pf_33straininterpolationandintegration_17StrainAimAssister_8set_prev_vec(((struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self), __pyx_v_prev_vec);
+  __pyx_r = __pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_8set_prev_vec(((struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self), __pyx_v_prev_vec);
 
   /* function exit code */
   goto __pyx_L0;
@@ -10901,7 +10931,7 @@ static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssiste
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssister_8set_prev_vec(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self, __Pyx_memviewslice __pyx_v_prev_vec) {
+static PyObject *__pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_8set_prev_vec(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self, __Pyx_memviewslice __pyx_v_prev_vec) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -10909,9 +10939,9 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   PyObject *__pyx_t_3 = NULL;
   __Pyx_RefNannySetupContext("set_prev_vec", 0);
 
-  /* "straininterpolationandintegration.pyx":590
- *     @cython.boundscheck(False)
- *     def set_prev_vec(self, double[::1] prev_vec not None):
+  /* "straininterpolationandintegration.pyx":907
+ * 
+ *         """
  *         if prev_vec.shape[0] != 3:             # <<<<<<<<<<<<<<
  *             raise ValueError('The interpolation-aiming routine is custom-built' \
  *                     + ' for three-dimensional data!')
@@ -10919,40 +10949,40 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   __pyx_t_1 = (((__pyx_v_prev_vec.shape[0]) != 3) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "straininterpolationandintegration.pyx":592
+    /* "straininterpolationandintegration.pyx":909
  *         if prev_vec.shape[0] != 3:
  *             raise ValueError('The interpolation-aiming routine is custom-built' \
  *                     + ' for three-dimensional data!')             # <<<<<<<<<<<<<<
  * 
  *         dcopy(3,prev_vec,1,self.prev_vec,1)
  */
-    __pyx_t_2 = PyNumber_Add(__pyx_kp_s_The_interpolation_aiming_routine, __pyx_kp_s_for_three_dimensional_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 592, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_Add(__pyx_kp_s_The_interpolation_aiming_routine, __pyx_kp_s_for_three_dimensional_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 909, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
 
-    /* "straininterpolationandintegration.pyx":591
- *     def set_prev_vec(self, double[::1] prev_vec not None):
+    /* "straininterpolationandintegration.pyx":908
+ *         """
  *         if prev_vec.shape[0] != 3:
  *             raise ValueError('The interpolation-aiming routine is custom-built' \             # <<<<<<<<<<<<<<
  *                     + ' for three-dimensional data!')
  * 
  */
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 591, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 908, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 591, __pyx_L1_error)
+    __PYX_ERR(1, 908, __pyx_L1_error)
 
-    /* "straininterpolationandintegration.pyx":590
- *     @cython.boundscheck(False)
- *     def set_prev_vec(self, double[::1] prev_vec not None):
+    /* "straininterpolationandintegration.pyx":907
+ * 
+ *         """
  *         if prev_vec.shape[0] != 3:             # <<<<<<<<<<<<<<
  *             raise ValueError('The interpolation-aiming routine is custom-built' \
  *                     + ' for three-dimensional data!')
  */
   }
 
-  /* "straininterpolationandintegration.pyx":594
+  /* "straininterpolationandintegration.pyx":911
  *                     + ' for three-dimensional data!')
  * 
  *         dcopy(3,prev_vec,1,self.prev_vec,1)             # <<<<<<<<<<<<<<
@@ -10961,7 +10991,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
  */
   __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_prev_vec, 1, __pyx_v_self->prev_vec, 1);
 
-  /* "straininterpolationandintegration.pyx":595
+  /* "straininterpolationandintegration.pyx":912
  * 
  *         dcopy(3,prev_vec,1,self.prev_vec,1)
  *         _cy_normalize_(self.prev_vec)             # <<<<<<<<<<<<<<
@@ -10970,7 +11000,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
  */
   __pyx_f_33straininterpolationandintegration__cy_normalize_(__pyx_v_self->prev_vec);
 
-  /* "straininterpolationandintegration.pyx":596
+  /* "straininterpolationandintegration.pyx":913
  *         dcopy(3,prev_vec,1,self.prev_vec,1)
  *         _cy_normalize_(self.prev_vec)
  *         self.initialized_prev = True             # <<<<<<<<<<<<<<
@@ -10979,12 +11009,12 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
  */
   __pyx_v_self->initialized_prev = 1;
 
-  /* "straininterpolationandintegration.pyx":589
+  /* "straininterpolationandintegration.pyx":890
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def set_prev_vec(self, double[::1] prev_vec not None):             # <<<<<<<<<<<<<<
- *         if prev_vec.shape[0] != 3:
- *             raise ValueError('The interpolation-aiming routine is custom-built' \
+ *         """
+ *         StrainDirectionGenerator.set_prev_vec(prev_vec)
  */
 
   /* function exit code */
@@ -10993,7 +11023,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_AddTraceback("straininterpolationandintegration.StrainAimAssister.set_prev_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("straininterpolationandintegration.StrainDirectionGenerator.set_prev_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_prev_vec, 1);
@@ -11002,47 +11032,48 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":598
+/* "straininterpolationandintegration.pyx":915
  *         self.initialized_prev = True
  * 
  *     def unset_prev_vec(self):             # <<<<<<<<<<<<<<
- *         self.initialized_prev = False
- * 
+ *         """
+ *         StrainDirectionGenerator.unset_prev_vec()
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_11unset_prev_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_11unset_prev_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_11unset_prev_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_33straininterpolationandintegration_24StrainDirectionGenerator_10unset_prev_vec[] = "\n        StrainDirectionGenerator.unset_prev_vec()\n\n        Unsets the previous vector.\n\n        ";
+static PyObject *__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_11unset_prev_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("unset_prev_vec (wrapper)", 0);
-  __pyx_r = __pyx_pf_33straininterpolationandintegration_17StrainAimAssister_10unset_prev_vec(((struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self));
+  __pyx_r = __pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_10unset_prev_vec(((struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssister_10unset_prev_vec(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self) {
+static PyObject *__pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_10unset_prev_vec(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("unset_prev_vec", 0);
 
-  /* "straininterpolationandintegration.pyx":599
+  /* "straininterpolationandintegration.pyx":922
  * 
- *     def unset_prev_vec(self):
+ *         """
  *         self.initialized_prev = False             # <<<<<<<<<<<<<<
  * 
  *     @cython.initializedcheck(False)
  */
   __pyx_v_self->initialized_prev = 0;
 
-  /* "straininterpolationandintegration.pyx":598
+  /* "straininterpolationandintegration.pyx":915
  *         self.initialized_prev = True
  * 
  *     def unset_prev_vec(self):             # <<<<<<<<<<<<<<
- *         self.initialized_prev = False
- * 
+ *         """
+ *         StrainDirectionGenerator.unset_prev_vec()
  */
 
   /* function exit code */
@@ -11052,31 +11083,32 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":604
+/* "straininterpolationandintegration.pyx":927
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
- *     def __call__(self, double t, double[::1] pos not None):             # <<<<<<<<<<<<<<
- *         if pos.shape[0] != 3:
- *             raise ValueError('The interpolation-aiming routine is custom-built' \
+ *     def __call__(self, double[::1] pos not None):             # <<<<<<<<<<<<<<
+ *         """
+ *         StrainDirectionGenerator.__call__(pos)
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_13__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_13__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
-  CYTHON_UNUSED double __pyx_v_t;
+static PyObject *__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_13__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_33straininterpolationandintegration_24StrainDirectionGenerator_12__call__[] = "\n        StrainDirectionGenerator.__call__(pos)\n\n        Generates a trajectory direction at pos, based upon the underlying\n        vector field and the pre-set tan_vec and prev_vec.\n\n        Parameters\n        ----------\n        pos : (3,) array-like\n           A (C-contiguous) NumPy array containing the (Cartesian) coordinates\n           of the point in R^3 at which a direction is sought.\n\n        Returns\n        -------\n        vec : (3,) ndarray\n           A (C-contiguous) NumPy array containing the normalized direction.\n\n        ";
+#if CYTHON_COMPILING_IN_CPYTHON
+struct wrapperbase __pyx_wrapperbase_33straininterpolationandintegration_24StrainDirectionGenerator_12__call__;
+#endif
+static PyObject *__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_13__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_pos = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__call__ (wrapper)", 0);
   {
-    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_t,&__pyx_n_s_pos,0};
-    PyObject* values[2] = {0,0};
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_pos,0};
+    PyObject* values[1] = {0};
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
       switch (pos_args) {
-        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
-        CYTHON_FALLTHROUGH;
         case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
         CYTHON_FALLTHROUGH;
         case  0: break;
@@ -11085,39 +11117,31 @@ static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssiste
       kw_args = PyDict_Size(__pyx_kwds);
       switch (pos_args) {
         case  0:
-        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_t)) != 0)) kw_args--;
+        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_pos)) != 0)) kw_args--;
         else goto __pyx_L5_argtuple_error;
-        CYTHON_FALLTHROUGH;
-        case  1:
-        if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_pos)) != 0)) kw_args--;
-        else {
-          __Pyx_RaiseArgtupleInvalid("__call__", 1, 2, 2, 1); __PYX_ERR(1, 604, __pyx_L3_error)
-        }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 604, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 927, __pyx_L3_error)
       }
-    } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
+    } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
-      values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_t = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_t == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 604, __pyx_L3_error)
-    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 604, __pyx_L3_error)
+    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 927, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__call__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 604, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 927, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("straininterpolationandintegration.StrainAimAssister.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("straininterpolationandintegration.StrainDirectionGenerator.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(((PyObject *)__pyx_v_pos.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "pos"); __PYX_ERR(1, 604, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "pos"); __PYX_ERR(1, 927, __pyx_L1_error)
   }
-  __pyx_r = __pyx_pf_33straininterpolationandintegration_17StrainAimAssister_12__call__(((struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self), __pyx_v_t, __pyx_v_pos);
+  __pyx_r = __pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_12__call__(((struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self), __pyx_v_pos);
 
   /* function exit code */
   goto __pyx_L0;
@@ -11128,7 +11152,7 @@ static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssiste
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssister_12__call__(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self, CYTHON_UNUSED double __pyx_v_t, __Pyx_memviewslice __pyx_v_pos) {
+static PyObject *__pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_12__call__(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -11140,9 +11164,9 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   PyObject *__pyx_t_7 = NULL;
   __Pyx_RefNannySetupContext("__call__", 0);
 
-  /* "straininterpolationandintegration.pyx":605
- *     @cython.boundscheck(False)
- *     def __call__(self, double t, double[::1] pos not None):
+  /* "straininterpolationandintegration.pyx":946
+ * 
+ *         """
  *         if pos.shape[0] != 3:             # <<<<<<<<<<<<<<
  *             raise ValueError('The interpolation-aiming routine is custom-built' \
  *                     + ' for three dimensional data!')
@@ -11150,44 +11174,44 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   __pyx_t_1 = (((__pyx_v_pos.shape[0]) != 3) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "straininterpolationandintegration.pyx":607
+    /* "straininterpolationandintegration.pyx":948
  *         if pos.shape[0] != 3:
  *             raise ValueError('The interpolation-aiming routine is custom-built' \
  *                     + ' for three dimensional data!')             # <<<<<<<<<<<<<<
  * 
  *         if not (self.initialized_tan and self.initialized_prev):
  */
-    __pyx_t_2 = PyNumber_Add(__pyx_kp_s_The_interpolation_aiming_routine, __pyx_kp_s_for_three_dimensional_data_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 607, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_Add(__pyx_kp_s_The_interpolation_aiming_routine, __pyx_kp_s_for_three_dimensional_data_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 948, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
 
-    /* "straininterpolationandintegration.pyx":606
- *     def __call__(self, double t, double[::1] pos not None):
+    /* "straininterpolationandintegration.pyx":947
+ *         """
  *         if pos.shape[0] != 3:
  *             raise ValueError('The interpolation-aiming routine is custom-built' \             # <<<<<<<<<<<<<<
  *                     + ' for three dimensional data!')
  * 
  */
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 606, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 947, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 606, __pyx_L1_error)
+    __PYX_ERR(1, 947, __pyx_L1_error)
 
-    /* "straininterpolationandintegration.pyx":605
- *     @cython.boundscheck(False)
- *     def __call__(self, double t, double[::1] pos not None):
+    /* "straininterpolationandintegration.pyx":946
+ * 
+ *         """
  *         if pos.shape[0] != 3:             # <<<<<<<<<<<<<<
  *             raise ValueError('The interpolation-aiming routine is custom-built' \
  *                     + ' for three dimensional data!')
  */
   }
 
-  /* "straininterpolationandintegration.pyx":609
+  /* "straininterpolationandintegration.pyx":950
  *                     + ' for three dimensional data!')
  * 
  *         if not (self.initialized_tan and self.initialized_prev):             # <<<<<<<<<<<<<<
- *             raise RuntimeError('Aim assister not initialized with target!')
+ *             raise RuntimeError('Aim assister not initialized with tan_vec and/or prev_vec!')
  *         self._ev_(pos,self.ret)
  */
   __pyx_t_4 = (__pyx_v_self->initialized_tan != 0);
@@ -11202,51 +11226,51 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   __pyx_t_4 = ((!__pyx_t_1) != 0);
   if (unlikely(__pyx_t_4)) {
 
-    /* "straininterpolationandintegration.pyx":610
+    /* "straininterpolationandintegration.pyx":951
  * 
  *         if not (self.initialized_tan and self.initialized_prev):
- *             raise RuntimeError('Aim assister not initialized with target!')             # <<<<<<<<<<<<<<
+ *             raise RuntimeError('Aim assister not initialized with tan_vec and/or prev_vec!')             # <<<<<<<<<<<<<<
  *         self._ev_(pos,self.ret)
  *         return np.copy(self.ret)
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__13, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 610, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__13, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 951, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 610, __pyx_L1_error)
+    __PYX_ERR(1, 951, __pyx_L1_error)
 
-    /* "straininterpolationandintegration.pyx":609
+    /* "straininterpolationandintegration.pyx":950
  *                     + ' for three dimensional data!')
  * 
  *         if not (self.initialized_tan and self.initialized_prev):             # <<<<<<<<<<<<<<
- *             raise RuntimeError('Aim assister not initialized with target!')
+ *             raise RuntimeError('Aim assister not initialized with tan_vec and/or prev_vec!')
  *         self._ev_(pos,self.ret)
  */
   }
 
-  /* "straininterpolationandintegration.pyx":611
+  /* "straininterpolationandintegration.pyx":952
  *         if not (self.initialized_tan and self.initialized_prev):
- *             raise RuntimeError('Aim assister not initialized with target!')
+ *             raise RuntimeError('Aim assister not initialized with tan_vec and/or prev_vec!')
  *         self._ev_(pos,self.ret)             # <<<<<<<<<<<<<<
  *         return np.copy(self.ret)
  * 
  */
-  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self->__pyx_vtab)->_ev_(__pyx_v_self, __pyx_v_pos, __pyx_v_self->ret);
+  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self->__pyx_vtab)->_ev_(__pyx_v_self, __pyx_v_pos, __pyx_v_self->ret);
 
-  /* "straininterpolationandintegration.pyx":612
- *             raise RuntimeError('Aim assister not initialized with target!')
+  /* "straininterpolationandintegration.pyx":953
+ *             raise RuntimeError('Aim assister not initialized with tan_vec and/or prev_vec!')
  *         self._ev_(pos,self.ret)
  *         return np.copy(self.ret)             # <<<<<<<<<<<<<<
  * 
  *     @cython.initializedcheck(False)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 612, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 953, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_copy); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 612, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_copy); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 953, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_self->ret, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 612, __pyx_L1_error)
+  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_self->ret, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 953, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_6 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
@@ -11259,14 +11283,14 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
     }
   }
   if (!__pyx_t_6) {
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 612, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 953, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_GOTREF(__pyx_t_3);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_2};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 612, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 953, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -11275,20 +11299,20 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[2] = {__pyx_t_6, __pyx_t_2};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 612, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 953, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     } else
     #endif
     {
-      __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 612, __pyx_L1_error)
+      __pyx_t_7 = PyTuple_New(1+1); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 953, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_6); __pyx_t_6 = NULL;
       __Pyx_GIVEREF(__pyx_t_2);
       PyTuple_SET_ITEM(__pyx_t_7, 0+1, __pyx_t_2);
       __pyx_t_2 = 0;
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 612, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_7, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 953, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
@@ -11298,12 +11322,12 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "straininterpolationandintegration.pyx":604
+  /* "straininterpolationandintegration.pyx":927
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
- *     def __call__(self, double t, double[::1] pos not None):             # <<<<<<<<<<<<<<
- *         if pos.shape[0] != 3:
- *             raise ValueError('The interpolation-aiming routine is custom-built' \
+ *     def __call__(self, double[::1] pos not None):             # <<<<<<<<<<<<<<
+ *         """
+ *         StrainDirectionGenerator.__call__(pos)
  */
 
   /* function exit code */
@@ -11313,7 +11337,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
-  __Pyx_AddTraceback("straininterpolationandintegration.StrainAimAssister.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("straininterpolationandintegration.StrainDirectionGenerator.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_pos, 1);
@@ -11322,23 +11346,23 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":617
+/* "straininterpolationandintegration.pyx":958
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     cdef void _ev_(self, double[::1] pos, double[::1] &ret):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double[::1] xi = self.xi
+ *         """
+ *         StrainDirectionGenerator._ev_(pos,ret)
  */
 
-static void __pyx_f_33straininterpolationandintegration_17StrainAimAssister__ev_(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos, __Pyx_memviewslice &__pyx_v_ret) {
+static void __pyx_f_33straininterpolationandintegration_24StrainDirectionGenerator__ev_(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos, __Pyx_memviewslice &__pyx_v_ret) {
   __Pyx_memviewslice __pyx_v_xi = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_RefNannyDeclarations
   __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
   int __pyx_t_2;
   __Pyx_RefNannySetupContext("_ev_", 0);
 
-  /* "straininterpolationandintegration.pyx":619
- *     cdef void _ev_(self, double[::1] pos, double[::1] &ret):
+  /* "straininterpolationandintegration.pyx":977
+ *         """
  *         cdef:
  *             double[::1] xi = self.xi             # <<<<<<<<<<<<<<
  * 
@@ -11350,7 +11374,7 @@ static void __pyx_f_33straininterpolationandintegration_17StrainAimAssister__ev_
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":621
+  /* "straininterpolationandintegration.pyx":979
  *             double[::1] xi = self.xi
  * 
  *         self.xi_itp._interpolate_xi_(pos, xi)             # <<<<<<<<<<<<<<
@@ -11359,7 +11383,7 @@ static void __pyx_f_33straininterpolationandintegration_17StrainAimAssister__ev_
  */
   ((struct __pyx_vtabstruct_33straininterpolationandintegration_InterpolatorWithOrientationFix *)__pyx_v_self->xi_itp->__pyx_vtab)->_interpolate_xi_(__pyx_v_self->xi_itp, __pyx_v_pos, __pyx_v_xi);
 
-  /* "straininterpolationandintegration.pyx":622
+  /* "straininterpolationandintegration.pyx":980
  * 
  *         self.xi_itp._interpolate_xi_(pos, xi)
  *         if 1 - c_pow(ddot(3,xi,1,self.tan_vec,1),2) < 1e-8:             # <<<<<<<<<<<<<<
@@ -11369,7 +11393,7 @@ static void __pyx_f_33straininterpolationandintegration_17StrainAimAssister__ev_
   __pyx_t_2 = (((1.0 - pow(__pyx_f_33straininterpolationandintegration_ddot(3, __pyx_v_xi, 1, __pyx_v_self->tan_vec, 1), 2.0)) < 1e-8) != 0);
   if (__pyx_t_2) {
 
-    /* "straininterpolationandintegration.pyx":623
+    /* "straininterpolationandintegration.pyx":981
  *         self.xi_itp._interpolate_xi_(pos, xi)
  *         if 1 - c_pow(ddot(3,xi,1,self.tan_vec,1),2) < 1e-8:
  *             dcopy(3,self.prev_vec,1,ret,1)             # <<<<<<<<<<<<<<
@@ -11378,7 +11402,7 @@ static void __pyx_f_33straininterpolationandintegration_17StrainAimAssister__ev_
  */
     __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_self->prev_vec, 1, __pyx_v_ret, 1);
 
-    /* "straininterpolationandintegration.pyx":622
+    /* "straininterpolationandintegration.pyx":980
  * 
  *         self.xi_itp._interpolate_xi_(pos, xi)
  *         if 1 - c_pow(ddot(3,xi,1,self.tan_vec,1),2) < 1e-8:             # <<<<<<<<<<<<<<
@@ -11388,7 +11412,7 @@ static void __pyx_f_33straininterpolationandintegration_17StrainAimAssister__ev_
     goto __pyx_L3;
   }
 
-  /* "straininterpolationandintegration.pyx":625
+  /* "straininterpolationandintegration.pyx":983
  *             dcopy(3,self.prev_vec,1,ret,1)
  *         else:
  *             _cy_cross_product_(xi,self.tan_vec,ret)             # <<<<<<<<<<<<<<
@@ -11400,7 +11424,7 @@ static void __pyx_f_33straininterpolationandintegration_17StrainAimAssister__ev_
   }
   __pyx_L3:;
 
-  /* "straininterpolationandintegration.pyx":626
+  /* "straininterpolationandintegration.pyx":984
  *         else:
  *             _cy_cross_product_(xi,self.tan_vec,ret)
  *         _cy_normalize_(ret)             # <<<<<<<<<<<<<<
@@ -11409,7 +11433,7 @@ static void __pyx_f_33straininterpolationandintegration_17StrainAimAssister__ev_
  */
   __pyx_f_33straininterpolationandintegration__cy_normalize_(__pyx_v_ret);
 
-  /* "straininterpolationandintegration.pyx":627
+  /* "straininterpolationandintegration.pyx":985
  *             _cy_cross_product_(xi,self.tan_vec,ret)
  *         _cy_normalize_(ret)
  *         if ddot(3,ret,1,self.prev_vec,1) < 0:             # <<<<<<<<<<<<<<
@@ -11419,7 +11443,7 @@ static void __pyx_f_33straininterpolationandintegration_17StrainAimAssister__ev_
   __pyx_t_2 = ((__pyx_f_33straininterpolationandintegration_ddot(3, __pyx_v_ret, 1, __pyx_v_self->prev_vec, 1) < 0.0) != 0);
   if (__pyx_t_2) {
 
-    /* "straininterpolationandintegration.pyx":628
+    /* "straininterpolationandintegration.pyx":986
  *         _cy_normalize_(ret)
  *         if ddot(3,ret,1,self.prev_vec,1) < 0:
  *             dscal(3,-1,ret,1)             # <<<<<<<<<<<<<<
@@ -11428,7 +11452,7 @@ static void __pyx_f_33straininterpolationandintegration_17StrainAimAssister__ev_
  */
     __pyx_f_33straininterpolationandintegration_dscal(3, -1.0, __pyx_v_ret, 1);
 
-    /* "straininterpolationandintegration.pyx":627
+    /* "straininterpolationandintegration.pyx":985
  *             _cy_cross_product_(xi,self.tan_vec,ret)
  *         _cy_normalize_(ret)
  *         if ddot(3,ret,1,self.prev_vec,1) < 0:             # <<<<<<<<<<<<<<
@@ -11437,12 +11461,12 @@ static void __pyx_f_33straininterpolationandintegration_17StrainAimAssister__ev_
  */
   }
 
-  /* "straininterpolationandintegration.pyx":617
+  /* "straininterpolationandintegration.pyx":958
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     cdef void _ev_(self, double[::1] pos, double[::1] &ret):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double[::1] xi = self.xi
+ *         """
+ *         StrainDirectionGenerator._ev_(pos,ret)
  */
 
   /* function exit code */
@@ -11450,7 +11474,7 @@ static void __pyx_f_33straininterpolationandintegration_17StrainAimAssister__ev_
   __Pyx_RefNannyFinishContext();
 }
 
-/* "straininterpolationandintegration.pyx":630
+/* "straininterpolationandintegration.pyx":988
  *             dscal(3,-1,ret,1)
  * 
  *     def __dealoc__(self):             # <<<<<<<<<<<<<<
@@ -11459,19 +11483,19 @@ static void __pyx_f_33straininterpolationandintegration_17StrainAimAssister__ev_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_15__dealoc__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_15__dealoc__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_15__dealoc__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_15__dealoc__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealoc__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_33straininterpolationandintegration_17StrainAimAssister_14__dealoc__(((struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self));
+  __pyx_r = __pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_14__dealoc__(((struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssister_14__dealoc__(CYTHON_UNUSED struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self) {
+static PyObject *__pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_14__dealoc__(CYTHON_UNUSED struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealoc__", 0);
@@ -11490,19 +11514,19 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_17__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_17__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_17__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_17__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_33straininterpolationandintegration_17StrainAimAssister_16__reduce_cython__(((struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self));
+  __pyx_r = __pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_16__reduce_cython__(((struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssister_16__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self) {
+static PyObject *__pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_16__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -11529,7 +11553,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("straininterpolationandintegration.StrainAimAssister.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("straininterpolationandintegration.StrainDirectionGenerator.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -11544,19 +11568,19 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_19__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_19__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_19__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_19__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_33straininterpolationandintegration_17StrainAimAssister_18__setstate_cython__(((struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_18__setstate_cython__(((struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssister_18__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_33straininterpolationandintegration_24StrainDirectionGenerator_18__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -11583,14 +11607,14 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_17StrainAimAssiste
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("straininterpolationandintegration.StrainAimAssister.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("straininterpolationandintegration.StrainDirectionGenerator.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":684
+/* "straininterpolationandintegration.pyx":1060
  *         bint initialized
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -11639,7 +11663,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __Pyx_memviewslice __pyx_t_20 = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "straininterpolationandintegration.pyx":685
+  /* "straininterpolationandintegration.pyx":1061
  * 
  *     def __cinit__(self):
  *         self._c_  = [0.05555555555555555556, 0.08333333333333333333, 0.125, 0.3125, 0.375, 0.1475, 0.465, 0.56486545138225957359, 0.65, 0.92465627764050444674, 1., 1.]             # <<<<<<<<<<<<<<
@@ -11660,7 +11684,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_1[11] = 1.;
   memcpy(&(__pyx_v_self->_c_[0]), __pyx_t_1, sizeof(__pyx_v_self->_c_[0]) * (12));
 
-  /* "straininterpolationandintegration.pyx":686
+  /* "straininterpolationandintegration.pyx":1062
  *     def __cinit__(self):
  *         self._c_  = [0.05555555555555555556, 0.08333333333333333333, 0.125, 0.3125, 0.375, 0.1475, 0.465, 0.56486545138225957359, 0.65, 0.92465627764050444674, 1., 1.]
  *         self._a1_ = [0.05555555555555555556]             # <<<<<<<<<<<<<<
@@ -11670,7 +11694,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_2[0] = 0.05555555555555555556;
   memcpy(&(__pyx_v_self->_a1_[0]), __pyx_t_2, sizeof(__pyx_v_self->_a1_[0]) * (1));
 
-  /* "straininterpolationandintegration.pyx":687
+  /* "straininterpolationandintegration.pyx":1063
  *         self._c_  = [0.05555555555555555556, 0.08333333333333333333, 0.125, 0.3125, 0.375, 0.1475, 0.465, 0.56486545138225957359, 0.65, 0.92465627764050444674, 1., 1.]
  *         self._a1_ = [0.05555555555555555556]
  *         self._a2_ = [0.0208333333333333333, 0.0625]             # <<<<<<<<<<<<<<
@@ -11681,7 +11705,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_3[1] = 0.0625;
   memcpy(&(__pyx_v_self->_a2_[0]), __pyx_t_3, sizeof(__pyx_v_self->_a2_[0]) * (2));
 
-  /* "straininterpolationandintegration.pyx":688
+  /* "straininterpolationandintegration.pyx":1064
  *         self._a1_ = [0.05555555555555555556]
  *         self._a2_ = [0.0208333333333333333, 0.0625]
  *         self._a3_ = [0.03125, 0., 0.09375]             # <<<<<<<<<<<<<<
@@ -11693,7 +11717,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_4[2] = 0.09375;
   memcpy(&(__pyx_v_self->_a3_[0]), __pyx_t_4, sizeof(__pyx_v_self->_a3_[0]) * (3));
 
-  /* "straininterpolationandintegration.pyx":689
+  /* "straininterpolationandintegration.pyx":1065
  *         self._a2_ = [0.0208333333333333333, 0.0625]
  *         self._a3_ = [0.03125, 0., 0.09375]
  *         self._a4_ = [0.3125, 0., -1.17185, 1.17185]             # <<<<<<<<<<<<<<
@@ -11706,7 +11730,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_5[3] = 1.17185;
   memcpy(&(__pyx_v_self->_a4_[0]), __pyx_t_5, sizeof(__pyx_v_self->_a4_[0]) * (4));
 
-  /* "straininterpolationandintegration.pyx":690
+  /* "straininterpolationandintegration.pyx":1066
  *         self._a3_ = [0.03125, 0., 0.09375]
  *         self._a4_ = [0.3125, 0., -1.17185, 1.17185]
  *         self._a5_ = [0.0375, 0., 0., 0.1875, 0.15]             # <<<<<<<<<<<<<<
@@ -11720,7 +11744,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_6[4] = 0.15;
   memcpy(&(__pyx_v_self->_a5_[0]), __pyx_t_6, sizeof(__pyx_v_self->_a5_[0]) * (5));
 
-  /* "straininterpolationandintegration.pyx":691
+  /* "straininterpolationandintegration.pyx":1067
  *         self._a4_ = [0.3125, 0., -1.17185, 1.17185]
  *         self._a5_ = [0.0375, 0., 0., 0.1875, 0.15]
  *         self._a6_ = [0.04791013711111111111, 0., 0., 0.11224871277777777777, -0.02550567377777777777, 0.012846823888888888]             # <<<<<<<<<<<<<<
@@ -11735,7 +11759,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_7[5] = 0.012846823888888888;
   memcpy(&(__pyx_v_self->_a6_[0]), __pyx_t_7, sizeof(__pyx_v_self->_a6_[0]) * (6));
 
-  /* "straininterpolationandintegration.pyx":692
+  /* "straininterpolationandintegration.pyx":1068
  *         self._a5_ = [0.0375, 0., 0., 0.1875, 0.15]
  *         self._a6_ = [0.04791013711111111111, 0., 0., 0.11224871277777777777, -0.02550567377777777777, 0.012846823888888888]
  *         self._a7_ = [0.016917989787292281, 0., 0., 0.387848278486043169, 0.035977369851500327, 0.196970214215666060, -0.172713852340501838]             # <<<<<<<<<<<<<<
@@ -11751,7 +11775,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_8[6] = -0.172713852340501838;
   memcpy(&(__pyx_v_self->_a7_[0]), __pyx_t_8, sizeof(__pyx_v_self->_a7_[0]) * (7));
 
-  /* "straininterpolationandintegration.pyx":693
+  /* "straininterpolationandintegration.pyx":1069
  *         self._a6_ = [0.04791013711111111111, 0., 0., 0.11224871277777777777, -0.02550567377777777777, 0.012846823888888888]
  *         self._a7_ = [0.016917989787292281, 0., 0., 0.387848278486043169, 0.035977369851500327, 0.196970214215666060, -0.172713852340501838]
  *         self._a8_ = [0.069095753359192300, 0., 0., -0.63424797672885411, -0.16119757522460408, 0.138650309458825255, 0.940928614035756269, 0.211636326481943981]             # <<<<<<<<<<<<<<
@@ -11768,7 +11792,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_9[7] = 0.211636326481943981;
   memcpy(&(__pyx_v_self->_a8_[0]), __pyx_t_9, sizeof(__pyx_v_self->_a8_[0]) * (8));
 
-  /* "straininterpolationandintegration.pyx":694
+  /* "straininterpolationandintegration.pyx":1070
  *         self._a7_ = [0.016917989787292281, 0., 0., 0.387848278486043169, 0.035977369851500327, 0.196970214215666060, -0.172713852340501838]
  *         self._a8_ = [0.069095753359192300, 0., 0., -0.63424797672885411, -0.16119757522460408, 0.138650309458825255, 0.940928614035756269, 0.211636326481943981]
  *         self._a9_ = [0.183556996839045385, 0., 0., -2.46876808431559245, -0.29128688781630045, -0.02647302023311737, 2.847838764192800449, 0.281387331469849792, 0.123744899863314657]             # <<<<<<<<<<<<<<
@@ -11786,7 +11810,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_10[8] = 0.123744899863314657;
   memcpy(&(__pyx_v_self->_a9_[0]), __pyx_t_10, sizeof(__pyx_v_self->_a9_[0]) * (9));
 
-  /* "straininterpolationandintegration.pyx":695
+  /* "straininterpolationandintegration.pyx":1071
  *         self._a8_ = [0.069095753359192300, 0., 0., -0.63424797672885411, -0.16119757522460408, 0.138650309458825255, 0.940928614035756269, 0.211636326481943981]
  *         self._a9_ = [0.183556996839045385, 0., 0., -2.46876808431559245, -0.29128688781630045, -0.02647302023311737, 2.847838764192800449, 0.281387331469849792, 0.123744899863314657]
  *         self._a10_ = [-1.21542481739588805, 0., 0., 16.672608665945772432, 0.915741828416817960, -6.05660580435747094, -16.00357359415617811, 14.849303086297662557, -13.371575735289849318, 5.134182648179637933]             # <<<<<<<<<<<<<<
@@ -11805,7 +11829,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_11[9] = 5.134182648179637933;
   memcpy(&(__pyx_v_self->_a10_[0]), __pyx_t_11, sizeof(__pyx_v_self->_a10_[0]) * (10));
 
-  /* "straininterpolationandintegration.pyx":696
+  /* "straininterpolationandintegration.pyx":1072
  *         self._a9_ = [0.183556996839045385, 0., 0., -2.46876808431559245, -0.29128688781630045, -0.02647302023311737, 2.847838764192800449, 0.281387331469849792, 0.123744899863314657]
  *         self._a10_ = [-1.21542481739588805, 0., 0., 16.672608665945772432, 0.915741828416817960, -6.05660580435747094, -16.00357359415617811, 14.849303086297662557, -13.371575735289849318, 5.134182648179637933]
  *         self._a11_ = [0.258860916438264283, 0., 0., -4.774485785489205112, -0.435093013777032509, -3.049483332072241509, 5.577920039936099117, 6.155831589861040689, -5.062104586736938370, 2.193926173180679061, 0.134627998659334941]             # <<<<<<<<<<<<<<
@@ -11825,7 +11849,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_12[10] = 0.134627998659334941;
   memcpy(&(__pyx_v_self->_a11_[0]), __pyx_t_12, sizeof(__pyx_v_self->_a11_[0]) * (11));
 
-  /* "straininterpolationandintegration.pyx":697
+  /* "straininterpolationandintegration.pyx":1073
  *         self._a10_ = [-1.21542481739588805, 0., 0., 16.672608665945772432, 0.915741828416817960, -6.05660580435747094, -16.00357359415617811, 14.849303086297662557, -13.371575735289849318, 5.134182648179637933]
  *         self._a11_ = [0.258860916438264283, 0., 0., -4.774485785489205112, -0.435093013777032509, -3.049483332072241509, 5.577920039936099117, 6.155831589861040689, -5.062104586736938370, 2.193926173180679061, 0.134627998659334941]
  *         self._a12_ = [0.822427599626507477, 0., 0.,  -11.658673257277664283, -0.757622116690936195, 0.713973588159581527, 12.075774986890056739, -2.127659113920402656, 1.990166207048955418, -0.234286471544040292, 0.175898577707942265, 0.  ]             # <<<<<<<<<<<<<<
@@ -11846,7 +11870,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_13[11] = 0.;
   memcpy(&(__pyx_v_self->_a12_[0]), __pyx_t_13, sizeof(__pyx_v_self->_a12_[0]) * (12));
 
-  /* "straininterpolationandintegration.pyx":699
+  /* "straininterpolationandintegration.pyx":1075
  *         self._a12_ = [0.822427599626507477, 0., 0.,  -11.658673257277664283, -0.757622116690936195, 0.713973588159581527, 12.075774986890056739, -2.127659113920402656, 1.990166207048955418, -0.234286471544040292, 0.175898577707942265, 0.  ]
  * 
  *         self._b7_ = [ 0.0295532136763534969, 0., 0., 0., 0., -0.8286062764877970397, 0.3112409000511183279, 2.4673451905998869819, -2.5469416518419087391, 1.4435485836767752403, 0.0794155958811272872, 0.0444444444444444444, 0. ]             # <<<<<<<<<<<<<<
@@ -11868,7 +11892,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_14[12] = 0.;
   memcpy(&(__pyx_v_self->_b7_[0]), __pyx_t_14, sizeof(__pyx_v_self->_b7_[0]) * (13));
 
-  /* "straininterpolationandintegration.pyx":700
+  /* "straininterpolationandintegration.pyx":1076
  * 
  *         self._b7_ = [ 0.0295532136763534969, 0., 0., 0., 0., -0.8286062764877970397, 0.3112409000511183279, 2.4673451905998869819, -2.5469416518419087391, 1.4435485836767752403, 0.0794155958811272872, 0.0444444444444444444, 0. ]
  *         self._b8_ = [ 0.0417474911415302462, 0., 0., 0., 0., -0.0554523286112393089, 0.2393128072011800970, 0.7035106694034430230, -0.7597596138144609298, 0.6605630309222863414, 0.1581874825101233355, -0.2381095387528628044, 0.25]             # <<<<<<<<<<<<<<
@@ -11890,7 +11914,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_15[12] = 0.25;
   memcpy(&(__pyx_v_self->_b8_[0]), __pyx_t_15, sizeof(__pyx_v_self->_b8_[0]) * (13));
 
-  /* "straininterpolationandintegration.pyx":703
+  /* "straininterpolationandintegration.pyx":1079
  * 
  * 
  *         self.c = self._c_             # <<<<<<<<<<<<<<
@@ -11900,26 +11924,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_c_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 703, __pyx_L1_error)
+    __PYX_ERR(1, 1079, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)12));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 703, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 1079, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 703, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1079, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 703, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1079, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->c, 0);
   __pyx_v_self->c = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":704
+  /* "straininterpolationandintegration.pyx":1080
  * 
  *         self.c = self._c_
  *         self.a1 = self._a1_             # <<<<<<<<<<<<<<
@@ -11929,26 +11953,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_a1_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 704, __pyx_L1_error)
+    __PYX_ERR(1, 1080, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)1));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 704, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 1080, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 704, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1080, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 704, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1080, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a1, 0);
   __pyx_v_self->a1 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":705
+  /* "straininterpolationandintegration.pyx":1081
  *         self.c = self._c_
  *         self.a1 = self._a1_
  *         self.a2 = self._a2_             # <<<<<<<<<<<<<<
@@ -11958,26 +11982,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_a2_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 705, __pyx_L1_error)
+    __PYX_ERR(1, 1081, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)2));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 705, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 1081, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 705, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1081, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 705, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1081, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a2, 0);
   __pyx_v_self->a2 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":706
+  /* "straininterpolationandintegration.pyx":1082
  *         self.a1 = self._a1_
  *         self.a2 = self._a2_
  *         self.a3 = self._a3_             # <<<<<<<<<<<<<<
@@ -11987,26 +12011,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_a3_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 706, __pyx_L1_error)
+    __PYX_ERR(1, 1082, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 706, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 1082, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 706, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1082, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 706, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1082, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a3, 0);
   __pyx_v_self->a3 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":707
+  /* "straininterpolationandintegration.pyx":1083
  *         self.a2 = self._a2_
  *         self.a3 = self._a3_
  *         self.a4 = self._a4_             # <<<<<<<<<<<<<<
@@ -12016,26 +12040,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_a4_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 707, __pyx_L1_error)
+    __PYX_ERR(1, 1083, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)4));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 707, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 1083, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 707, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1083, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 707, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1083, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a4, 0);
   __pyx_v_self->a4 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":708
+  /* "straininterpolationandintegration.pyx":1084
  *         self.a3 = self._a3_
  *         self.a4 = self._a4_
  *         self.a5 = self._a5_             # <<<<<<<<<<<<<<
@@ -12045,26 +12069,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_a5_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 708, __pyx_L1_error)
+    __PYX_ERR(1, 1084, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)5));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 708, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 1084, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 708, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1084, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 708, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1084, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a5, 0);
   __pyx_v_self->a5 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":709
+  /* "straininterpolationandintegration.pyx":1085
  *         self.a4 = self._a4_
  *         self.a5 = self._a5_
  *         self.a6 = self._a6_             # <<<<<<<<<<<<<<
@@ -12074,26 +12098,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_a6_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 709, __pyx_L1_error)
+    __PYX_ERR(1, 1085, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)6));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 709, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 1085, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 709, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1085, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 709, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1085, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a6, 0);
   __pyx_v_self->a6 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":710
+  /* "straininterpolationandintegration.pyx":1086
  *         self.a5 = self._a5_
  *         self.a6 = self._a6_
  *         self.a7 = self._a7_             # <<<<<<<<<<<<<<
@@ -12103,26 +12127,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_a7_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 710, __pyx_L1_error)
+    __PYX_ERR(1, 1086, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)7));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 710, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 1086, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 710, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1086, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 710, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1086, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a7, 0);
   __pyx_v_self->a7 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":711
+  /* "straininterpolationandintegration.pyx":1087
  *         self.a6 = self._a6_
  *         self.a7 = self._a7_
  *         self.a8 = self._a8_             # <<<<<<<<<<<<<<
@@ -12132,26 +12156,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_a8_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 711, __pyx_L1_error)
+    __PYX_ERR(1, 1087, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)8));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 711, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 1087, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 711, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1087, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 711, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1087, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a8, 0);
   __pyx_v_self->a8 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":712
+  /* "straininterpolationandintegration.pyx":1088
  *         self.a7 = self._a7_
  *         self.a8 = self._a8_
  *         self.a9 = self._a9_             # <<<<<<<<<<<<<<
@@ -12161,26 +12185,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_a9_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 712, __pyx_L1_error)
+    __PYX_ERR(1, 1088, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)9));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 712, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 1088, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 712, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1088, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 712, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1088, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a9, 0);
   __pyx_v_self->a9 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":713
+  /* "straininterpolationandintegration.pyx":1089
  *         self.a8 = self._a8_
  *         self.a9 = self._a9_
  *         self.a10 = self._a10_             # <<<<<<<<<<<<<<
@@ -12190,26 +12214,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_a10_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 713, __pyx_L1_error)
+    __PYX_ERR(1, 1089, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)10));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 713, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 1089, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 713, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1089, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 713, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1089, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a10, 0);
   __pyx_v_self->a10 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":714
+  /* "straininterpolationandintegration.pyx":1090
  *         self.a9 = self._a9_
  *         self.a10 = self._a10_
  *         self.a11 = self._a11_             # <<<<<<<<<<<<<<
@@ -12219,26 +12243,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_a11_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 714, __pyx_L1_error)
+    __PYX_ERR(1, 1090, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)11));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 714, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 1090, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 714, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1090, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 714, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1090, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a11, 0);
   __pyx_v_self->a11 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":715
+  /* "straininterpolationandintegration.pyx":1091
  *         self.a10 = self._a10_
  *         self.a11 = self._a11_
  *         self.a12 = self._a12_             # <<<<<<<<<<<<<<
@@ -12248,26 +12272,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_a12_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 715, __pyx_L1_error)
+    __PYX_ERR(1, 1091, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)12));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 715, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 1091, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 715, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1091, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 715, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1091, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a12, 0);
   __pyx_v_self->a12 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":716
+  /* "straininterpolationandintegration.pyx":1092
  *         self.a11 = self._a11_
  *         self.a12 = self._a12_
  *         self.b7 = self._b7_             # <<<<<<<<<<<<<<
@@ -12277,26 +12301,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_b7_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 716, __pyx_L1_error)
+    __PYX_ERR(1, 1092, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)13));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 716, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 1092, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 716, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1092, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 716, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1092, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->b7, 0);
   __pyx_v_self->b7 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":717
+  /* "straininterpolationandintegration.pyx":1093
  *         self.a12 = self._a12_
  *         self.b7 = self._b7_
  *         self.b8 = self._b8_             # <<<<<<<<<<<<<<
@@ -12306,26 +12330,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_b8_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 717, __pyx_L1_error)
+    __PYX_ERR(1, 1093, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)13));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 717, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 1093, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 717, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1093, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 717, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1093, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->b8, 0);
   __pyx_v_self->b8 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":718
+  /* "straininterpolationandintegration.pyx":1094
  *         self.b7 = self._b7_
  *         self.b8 = self._b8_
  *         self.x7 = self._x7_             # <<<<<<<<<<<<<<
@@ -12335,26 +12359,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_x7_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 718, __pyx_L1_error)
+    __PYX_ERR(1, 1094, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 718, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 1094, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 718, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1094, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 718, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1094, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->x7, 0);
   __pyx_v_self->x7 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":719
+  /* "straininterpolationandintegration.pyx":1095
  *         self.b8 = self._b8_
  *         self.x7 = self._x7_
  *         self.x8 = self._x8_             # <<<<<<<<<<<<<<
@@ -12364,26 +12388,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_x8_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 719, __pyx_L1_error)
+    __PYX_ERR(1, 1095, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 719, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 1095, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 719, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1095, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 719, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1095, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->x8, 0);
   __pyx_v_self->x8 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":721
+  /* "straininterpolationandintegration.pyx":1097
  *         self.x8 = self._x8_
  * 
  *         self.k1 = self._k1_             # <<<<<<<<<<<<<<
@@ -12393,26 +12417,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_k1_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 721, __pyx_L1_error)
+    __PYX_ERR(1, 1097, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 721, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 1097, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 721, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1097, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 721, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1097, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k1, 0);
   __pyx_v_self->k1 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":722
+  /* "straininterpolationandintegration.pyx":1098
  * 
  *         self.k1 = self._k1_
  *         self.k2 = self._k2_             # <<<<<<<<<<<<<<
@@ -12422,26 +12446,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_k2_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 722, __pyx_L1_error)
+    __PYX_ERR(1, 1098, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 722, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 1098, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 722, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1098, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 722, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1098, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k2, 0);
   __pyx_v_self->k2 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":723
+  /* "straininterpolationandintegration.pyx":1099
  *         self.k1 = self._k1_
  *         self.k2 = self._k2_
  *         self.k3 = self._k3_             # <<<<<<<<<<<<<<
@@ -12451,26 +12475,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_k3_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 723, __pyx_L1_error)
+    __PYX_ERR(1, 1099, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 723, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 1099, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 723, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1099, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 723, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1099, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k3, 0);
   __pyx_v_self->k3 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":724
+  /* "straininterpolationandintegration.pyx":1100
  *         self.k2 = self._k2_
  *         self.k3 = self._k3_
  *         self.k4 = self._k4_             # <<<<<<<<<<<<<<
@@ -12480,26 +12504,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_k4_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 724, __pyx_L1_error)
+    __PYX_ERR(1, 1100, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 724, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 1100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 724, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 724, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1100, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k4, 0);
   __pyx_v_self->k4 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":725
+  /* "straininterpolationandintegration.pyx":1101
  *         self.k3 = self._k3_
  *         self.k4 = self._k4_
  *         self.k5 = self._k5_             # <<<<<<<<<<<<<<
@@ -12509,26 +12533,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_k5_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 725, __pyx_L1_error)
+    __PYX_ERR(1, 1101, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 725, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 1101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 725, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 725, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1101, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k5, 0);
   __pyx_v_self->k5 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":726
+  /* "straininterpolationandintegration.pyx":1102
  *         self.k4 = self._k4_
  *         self.k5 = self._k5_
  *         self.k6 = self._k6_             # <<<<<<<<<<<<<<
@@ -12538,26 +12562,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_k6_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 726, __pyx_L1_error)
+    __PYX_ERR(1, 1102, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 726, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 1102, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 726, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1102, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 726, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1102, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k6, 0);
   __pyx_v_self->k6 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":727
+  /* "straininterpolationandintegration.pyx":1103
  *         self.k5 = self._k5_
  *         self.k6 = self._k6_
  *         self.k7 = self._k7_             # <<<<<<<<<<<<<<
@@ -12567,26 +12591,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_k7_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 727, __pyx_L1_error)
+    __PYX_ERR(1, 1103, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 727, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 1103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 727, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 727, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1103, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k7, 0);
   __pyx_v_self->k7 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":728
+  /* "straininterpolationandintegration.pyx":1104
  *         self.k6 = self._k6_
  *         self.k7 = self._k7_
  *         self.k8 = self._k8_             # <<<<<<<<<<<<<<
@@ -12596,26 +12620,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_k8_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 728, __pyx_L1_error)
+    __PYX_ERR(1, 1104, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 728, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 1104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 728, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1104, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 728, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1104, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k8, 0);
   __pyx_v_self->k8 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":729
+  /* "straininterpolationandintegration.pyx":1105
  *         self.k7 = self._k7_
  *         self.k8 = self._k8_
  *         self.k9 = self._k9_             # <<<<<<<<<<<<<<
@@ -12625,26 +12649,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_k9_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 729, __pyx_L1_error)
+    __PYX_ERR(1, 1105, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 729, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 1105, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 729, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1105, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 729, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1105, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k9, 0);
   __pyx_v_self->k9 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":730
+  /* "straininterpolationandintegration.pyx":1106
  *         self.k8 = self._k8_
  *         self.k9 = self._k9_
  *         self.k10 = self._k10_             # <<<<<<<<<<<<<<
@@ -12654,26 +12678,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_k10_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 730, __pyx_L1_error)
+    __PYX_ERR(1, 1106, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 730, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 1106, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 730, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1106, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 730, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1106, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k10, 0);
   __pyx_v_self->k10 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":731
+  /* "straininterpolationandintegration.pyx":1107
  *         self.k9 = self._k9_
  *         self.k10 = self._k10_
  *         self.k11 = self._k11_             # <<<<<<<<<<<<<<
@@ -12683,26 +12707,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_k11_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 731, __pyx_L1_error)
+    __PYX_ERR(1, 1107, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 731, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 1107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 731, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 731, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1107, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k11, 0);
   __pyx_v_self->k11 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":732
+  /* "straininterpolationandintegration.pyx":1108
  *         self.k10 = self._k10_
  *         self.k11 = self._k11_
  *         self.k12 = self._k12_             # <<<<<<<<<<<<<<
@@ -12712,26 +12736,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_k12_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 732, __pyx_L1_error)
+    __PYX_ERR(1, 1108, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 732, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 1108, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 732, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1108, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 732, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1108, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k12, 0);
   __pyx_v_self->k12 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":733
+  /* "straininterpolationandintegration.pyx":1109
  *         self.k11 = self._k11_
  *         self.k12 = self._k12_
  *         self.k13 = self._k13_             # <<<<<<<<<<<<<<
@@ -12741,26 +12765,26 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_k13_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 733, __pyx_L1_error)
+    __PYX_ERR(1, 1109, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 733, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 1109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 733, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 733, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1109, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k13, 0);
   __pyx_v_self->k13 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":734
+  /* "straininterpolationandintegration.pyx":1110
  *         self.k12 = self._k12_
  *         self.k13 = self._k13_
  *         self.k_tmp = self._k_tmp_             # <<<<<<<<<<<<<<
@@ -12770,65 +12794,74 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   __pyx_t_16 = __pyx_v_self->_k_tmp_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 734, __pyx_L1_error)
+    __PYX_ERR(1, 1110, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 734, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 1110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 734, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1110, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 734, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1110, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k_tmp, 0);
   __pyx_v_self->k_tmp = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":736
+  /* "straininterpolationandintegration.pyx":1112
  *         self.k_tmp = self._k_tmp_
  * 
  *         self.pos_i = self._pos_i_             # <<<<<<<<<<<<<<
  * 
- *         self.fac = 0.8
+ *         self.hmax = 10.
  */
   __pyx_t_16 = __pyx_v_self->_pos_i_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 736, __pyx_L1_error)
+    __PYX_ERR(1, 1112, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 736, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 1112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 736, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 1112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 736, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 1112, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->pos_i, 0);
   __pyx_v_self->pos_i = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":738
+  /* "straininterpolationandintegration.pyx":1114
  *         self.pos_i = self._pos_i_
  * 
+ *         self.hmax = 10.             # <<<<<<<<<<<<<<
+ *         self.fac = 0.8
+ *         self.maxfac = 2.0
+ */
+  __pyx_v_self->hmax = 10.;
+
+  /* "straininterpolationandintegration.pyx":1115
+ * 
+ *         self.hmax = 10.
  *         self.fac = 0.8             # <<<<<<<<<<<<<<
  *         self.maxfac = 2.0
  *         self.q = 7.
  */
   __pyx_v_self->fac = 0.8;
 
-  /* "straininterpolationandintegration.pyx":739
- * 
+  /* "straininterpolationandintegration.pyx":1116
+ *         self.hmax = 10.
  *         self.fac = 0.8
  *         self.maxfac = 2.0             # <<<<<<<<<<<<<<
  *         self.q = 7.
@@ -12836,7 +12869,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
  */
   __pyx_v_self->maxfac = 2.0;
 
-  /* "straininterpolationandintegration.pyx":740
+  /* "straininterpolationandintegration.pyx":1117
  *         self.fac = 0.8
  *         self.maxfac = 2.0
  *         self.q = 7.             # <<<<<<<<<<<<<<
@@ -12845,7 +12878,7 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
  */
   __pyx_v_self->q = 7.;
 
-  /* "straininterpolationandintegration.pyx":684
+  /* "straininterpolationandintegration.pyx":1060
  *         bint initialized
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -12868,29 +12901,36 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain___cinit__(s
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":745
+/* "straininterpolationandintegration.pyx":1122
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
- *     def __init__(self, double atol, double rtol):             # <<<<<<<<<<<<<<
- *         self.atol = atol
- *         self.rtol = rtol
+ *     def __init__(self, double atol, double rtol, double hmax = 10.):             # <<<<<<<<<<<<<<
+ *         """
+ *         Dp87Strain.__init__(atol,rtol,hmax)
  */
 
 /* Python wrapper */
 static int __pyx_pw_33straininterpolationandintegration_10Dp87Strain_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_33straininterpolationandintegration_10Dp87Strain_2__init__[] = "\n        Dp87Strain.__init__(atol,rtol,hmax)\n\n        Constructor for a Dp87Strain instance.\n\n        Parameters\n        ----------\n        atol : double\n           Absolute tolerance used in the dynamic timestep update\n        rtol : double\n           Relative tolerance used in the dynamic timestep update\n        hmax : double, optional\n           Largest allowed timestep, as a fallback option in the event\n           that the dynamic timestep update would otherwise suggest an\n           infinitely large step. Default: hmax = 10.\n\n        ";
+#if CYTHON_COMPILING_IN_CPYTHON
+struct wrapperbase __pyx_wrapperbase_33straininterpolationandintegration_10Dp87Strain_2__init__;
+#endif
 static int __pyx_pw_33straininterpolationandintegration_10Dp87Strain_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   double __pyx_v_atol;
   double __pyx_v_rtol;
+  double __pyx_v_hmax;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__init__ (wrapper)", 0);
   {
-    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_atol,&__pyx_n_s_rtol,0};
-    PyObject* values[2] = {0,0};
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_atol,&__pyx_n_s_rtol,&__pyx_n_s_hmax,0};
+    PyObject* values[3] = {0,0,0};
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
       switch (pos_args) {
+        case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+        CYTHON_FALLTHROUGH;
         case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
         CYTHON_FALLTHROUGH;
         case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
@@ -12907,65 +12947,89 @@ static int __pyx_pw_33straininterpolationandintegration_10Dp87Strain_3__init__(P
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_rtol)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 2, 2, 1); __PYX_ERR(1, 745, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 2, 3, 1); __PYX_ERR(1, 1122, __pyx_L3_error)
+        }
+        CYTHON_FALLTHROUGH;
+        case  2:
+        if (kw_args > 0) {
+          PyObject* value = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_hmax);
+          if (value) { values[2] = value; kw_args--; }
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 745, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 1122, __pyx_L3_error)
       }
-    } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
-      goto __pyx_L5_argtuple_error;
     } else {
-      values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
-      values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+      switch (PyTuple_GET_SIZE(__pyx_args)) {
+        case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+        CYTHON_FALLTHROUGH;
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        break;
+        default: goto __pyx_L5_argtuple_error;
+      }
     }
-    __pyx_v_atol = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_atol == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 745, __pyx_L3_error)
-    __pyx_v_rtol = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_rtol == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 745, __pyx_L3_error)
+    __pyx_v_atol = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_atol == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 1122, __pyx_L3_error)
+    __pyx_v_rtol = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_rtol == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 1122, __pyx_L3_error)
+    if (values[2]) {
+      __pyx_v_hmax = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_hmax == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 1122, __pyx_L3_error)
+    } else {
+      __pyx_v_hmax = ((double)10.);
+    }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 745, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 1122, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("straininterpolationandintegration.Dp87Strain.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_33straininterpolationandintegration_10Dp87Strain_2__init__(((struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *)__pyx_v_self), __pyx_v_atol, __pyx_v_rtol);
+  __pyx_r = __pyx_pf_33straininterpolationandintegration_10Dp87Strain_2__init__(((struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *)__pyx_v_self), __pyx_v_atol, __pyx_v_rtol, __pyx_v_hmax);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain_2__init__(struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self, double __pyx_v_atol, double __pyx_v_rtol) {
+static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain_2__init__(struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self, double __pyx_v_atol, double __pyx_v_rtol, double __pyx_v_hmax) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "straininterpolationandintegration.pyx":746
- *     @cython.boundscheck(False)
- *     def __init__(self, double atol, double rtol):
+  /* "straininterpolationandintegration.pyx":1140
+ * 
+ *         """
  *         self.atol = atol             # <<<<<<<<<<<<<<
  *         self.rtol = rtol
- * 
+ *         self.hmax = hmax
  */
   __pyx_v_self->atol = __pyx_v_atol;
 
-  /* "straininterpolationandintegration.pyx":747
- *     def __init__(self, double atol, double rtol):
+  /* "straininterpolationandintegration.pyx":1141
+ *         """
  *         self.atol = atol
  *         self.rtol = rtol             # <<<<<<<<<<<<<<
+ *         self.hmax = hmax
  * 
- *     @cython.initializedcheck(False)
  */
   __pyx_v_self->rtol = __pyx_v_rtol;
 
-  /* "straininterpolationandintegration.pyx":745
- *     @cython.wraparound(False)
- *     @cython.boundscheck(False)
- *     def __init__(self, double atol, double rtol):             # <<<<<<<<<<<<<<
+  /* "straininterpolationandintegration.pyx":1142
  *         self.atol = atol
  *         self.rtol = rtol
+ *         self.hmax = hmax             # <<<<<<<<<<<<<<
+ * 
+ *     @cython.initializedcheck(False)
+ */
+  __pyx_v_self->hmax = __pyx_v_hmax;
+
+  /* "straininterpolationandintegration.pyx":1122
+ *     @cython.wraparound(False)
+ *     @cython.boundscheck(False)
+ *     def __init__(self, double atol, double rtol, double hmax = 10.):             # <<<<<<<<<<<<<<
+ *         """
+ *         Dp87Strain.__init__(atol,rtol,hmax)
  */
 
   /* function exit code */
@@ -12974,22 +13038,23 @@ static int __pyx_pf_33straininterpolationandintegration_10Dp87Strain_2__init__(s
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":752
+/* "straininterpolationandintegration.pyx":1147
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
- *     def set_aim_assister(self, StrainAimAssister direction_generator):             # <<<<<<<<<<<<<<
- *         self.f = direction_generator
- *         self.initialized = True
+ *     def set_direction_generator(self, StrainDirectionGenerator direction_generator):             # <<<<<<<<<<<<<<
+ *         """
+ *         Dp87Strain.set_direction_generator(direction_generator)
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_33straininterpolationandintegration_10Dp87Strain_5set_aim_assister(PyObject *__pyx_v_self, PyObject *__pyx_v_direction_generator); /*proto*/
-static PyObject *__pyx_pw_33straininterpolationandintegration_10Dp87Strain_5set_aim_assister(PyObject *__pyx_v_self, PyObject *__pyx_v_direction_generator) {
+static PyObject *__pyx_pw_33straininterpolationandintegration_10Dp87Strain_5set_direction_generator(PyObject *__pyx_v_self, PyObject *__pyx_v_direction_generator); /*proto*/
+static char __pyx_doc_33straininterpolationandintegration_10Dp87Strain_4set_direction_generator[] = "\n        Dp87Strain.set_direction_generator(direction_generator)\n\n        Function which sets the StrainDirectionGenerator instance, to be\n        used in order to generate trajectories.\n\n        Must be called prior to Dp87Strain.__call__.\n\n        Parameters\n        ----------\n        direction_generator : StrainDirectionGenerator\n           A (properly initialized, cf. constructor and other methods of a)\n           StrainDirectionGenerator instance.\n\n        ";
+static PyObject *__pyx_pw_33straininterpolationandintegration_10Dp87Strain_5set_direction_generator(PyObject *__pyx_v_self, PyObject *__pyx_v_direction_generator) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("set_aim_assister (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_direction_generator), __pyx_ptype_33straininterpolationandintegration_StrainAimAssister, 1, "direction_generator", 0))) __PYX_ERR(1, 752, __pyx_L1_error)
-  __pyx_r = __pyx_pf_33straininterpolationandintegration_10Dp87Strain_4set_aim_assister(((struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *)__pyx_v_self), ((struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_direction_generator));
+  __Pyx_RefNannySetupContext("set_direction_generator (wrapper)", 0);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_direction_generator), __pyx_ptype_33straininterpolationandintegration_StrainDirectionGenerator, 1, "direction_generator", 0))) __PYX_ERR(1, 1147, __pyx_L1_error)
+  __pyx_r = __pyx_pf_33straininterpolationandintegration_10Dp87Strain_4set_direction_generator(((struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *)__pyx_v_self), ((struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_direction_generator));
 
   /* function exit code */
   goto __pyx_L0;
@@ -13000,14 +13065,14 @@ static PyObject *__pyx_pw_33straininterpolationandintegration_10Dp87Strain_5set_
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_4set_aim_assister(struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self, struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *__pyx_v_direction_generator) {
+static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_4set_direction_generator(struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self, struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *__pyx_v_direction_generator) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("set_aim_assister", 0);
+  __Pyx_RefNannySetupContext("set_direction_generator", 0);
 
-  /* "straininterpolationandintegration.pyx":753
- *     @cython.boundscheck(False)
- *     def set_aim_assister(self, StrainAimAssister direction_generator):
+  /* "straininterpolationandintegration.pyx":1163
+ * 
+ *         """
  *         self.f = direction_generator             # <<<<<<<<<<<<<<
  *         self.initialized = True
  * 
@@ -13018,8 +13083,8 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_4set_
   __Pyx_DECREF(((PyObject *)__pyx_v_self->f));
   __pyx_v_self->f = __pyx_v_direction_generator;
 
-  /* "straininterpolationandintegration.pyx":754
- *     def set_aim_assister(self, StrainAimAssister direction_generator):
+  /* "straininterpolationandintegration.pyx":1164
+ *         """
  *         self.f = direction_generator
  *         self.initialized = True             # <<<<<<<<<<<<<<
  * 
@@ -13027,12 +13092,12 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_4set_
  */
   __pyx_v_self->initialized = 1;
 
-  /* "straininterpolationandintegration.pyx":752
+  /* "straininterpolationandintegration.pyx":1147
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
- *     def set_aim_assister(self, StrainAimAssister direction_generator):             # <<<<<<<<<<<<<<
- *         self.f = direction_generator
- *         self.initialized = True
+ *     def set_direction_generator(self, StrainDirectionGenerator direction_generator):             # <<<<<<<<<<<<<<
+ *         """
+ *         Dp87Strain.set_direction_generator(direction_generator)
  */
 
   /* function exit code */
@@ -13042,47 +13107,48 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_4set_
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":759
+/* "straininterpolationandintegration.pyx":1169
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
- *     def unset_aim_assister(self):             # <<<<<<<<<<<<<<
- *         self.initialized = False
- * 
+ *     def unset_direction_generator(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Dp87Strain.unset_direction_generator()
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_33straininterpolationandintegration_10Dp87Strain_7unset_aim_assister(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_33straininterpolationandintegration_10Dp87Strain_7unset_aim_assister(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_33straininterpolationandintegration_10Dp87Strain_7unset_direction_generator(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_33straininterpolationandintegration_10Dp87Strain_6unset_direction_generator[] = "\n        Dp87Strain.unset_direction_generator()\n\n        Unsets the direction generator.\n\n        ";
+static PyObject *__pyx_pw_33straininterpolationandintegration_10Dp87Strain_7unset_direction_generator(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("unset_aim_assister (wrapper)", 0);
-  __pyx_r = __pyx_pf_33straininterpolationandintegration_10Dp87Strain_6unset_aim_assister(((struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *)__pyx_v_self));
+  __Pyx_RefNannySetupContext("unset_direction_generator (wrapper)", 0);
+  __pyx_r = __pyx_pf_33straininterpolationandintegration_10Dp87Strain_6unset_direction_generator(((struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_6unset_aim_assister(struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self) {
+static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_6unset_direction_generator(struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("unset_aim_assister", 0);
+  __Pyx_RefNannySetupContext("unset_direction_generator", 0);
 
-  /* "straininterpolationandintegration.pyx":760
- *     @cython.boundscheck(False)
- *     def unset_aim_assister(self):
+  /* "straininterpolationandintegration.pyx":1176
+ * 
+ *         """
  *         self.initialized = False             # <<<<<<<<<<<<<<
  * 
  *     @cython.initializedcheck(False)
  */
   __pyx_v_self->initialized = 0;
 
-  /* "straininterpolationandintegration.pyx":759
+  /* "straininterpolationandintegration.pyx":1169
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
- *     def unset_aim_assister(self):             # <<<<<<<<<<<<<<
- *         self.initialized = False
- * 
+ *     def unset_direction_generator(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         Dp87Strain.unset_direction_generator()
  */
 
   /* function exit code */
@@ -13092,16 +13158,20 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_6unse
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":765
+/* "straininterpolationandintegration.pyx":1181
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __call__(self, double t, double[::1] pos not None, double h):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double[::1] pos_i = self.pos_i
+ *         """
+ *         Dp87Strain.__call__(t,pos,h)
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_33straininterpolationandintegration_10Dp87Strain_9__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_33straininterpolationandintegration_10Dp87Strain_8__call__[] = "\n        Dp87Strain.__call__(t,pos,h)\n\n        The function which attempts a step forwards in (pseudo)time along\n        the current trajectory.\n\n        Parameters\n        ----------\n        t : double\n           Current (pseudo)time level\n        pos : (3,) ndarray\n           A (C-contiguous) NumPy array containing the current (Cartesian)\n           coordinates.\n        h : double\n           Current (pseudo)time step\n\n        Returns\n        -------\n        _t : double\n           If the attempted step is rejected, _t = t\n           If the attempted step is accepted, _t = t + h\n        _pos : (3,) ndarray\n           If the attempted step is rejected, _pos = pos\n           If the attempted step is accepted, _pos =/= pos\n        _h : double\n           Updated (pseudo)time step.\n\n        ";
+#if CYTHON_COMPILING_IN_CPYTHON
+struct wrapperbase __pyx_wrapperbase_33straininterpolationandintegration_10Dp87Strain_8__call__;
+#endif
 static PyObject *__pyx_pw_33straininterpolationandintegration_10Dp87Strain_9__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   double __pyx_v_t;
   __Pyx_memviewslice __pyx_v_pos = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -13134,17 +13204,17 @@ static PyObject *__pyx_pw_33straininterpolationandintegration_10Dp87Strain_9__ca
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_pos)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__call__", 1, 3, 3, 1); __PYX_ERR(1, 765, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__call__", 1, 3, 3, 1); __PYX_ERR(1, 1181, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_h)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__call__", 1, 3, 3, 2); __PYX_ERR(1, 765, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__call__", 1, 3, 3, 2); __PYX_ERR(1, 1181, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 765, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 1181, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -13153,20 +13223,20 @@ static PyObject *__pyx_pw_33straininterpolationandintegration_10Dp87Strain_9__ca
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
     }
-    __pyx_v_t = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_t == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 765, __pyx_L3_error)
-    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 765, __pyx_L3_error)
-    __pyx_v_h = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_h == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 765, __pyx_L3_error)
+    __pyx_v_t = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_t == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 1181, __pyx_L3_error)
+    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 1181, __pyx_L3_error)
+    __pyx_v_h = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_h == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 1181, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__call__", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 765, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__call__", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 1181, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("straininterpolationandintegration.Dp87Strain.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(((PyObject *)__pyx_v_pos.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "pos"); __PYX_ERR(1, 765, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "pos"); __PYX_ERR(1, 1181, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_33straininterpolationandintegration_10Dp87Strain_8__call__(((struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *)__pyx_v_self), __pyx_v_t, __pyx_v_pos, __pyx_v_h);
 
@@ -13193,12 +13263,12 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_8__ca
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("__call__", 0);
 
-  /* "straininterpolationandintegration.pyx":767
- *     def __call__(self, double t, double[::1] pos not None, double h):
+  /* "straininterpolationandintegration.pyx":1212
+ * 
  *         cdef:
  *             double[::1] pos_i = self.pos_i             # <<<<<<<<<<<<<<
- *         if not self.initialized:
- *             raise RuntimeError('Dormand-Prince 8(7) strain solver not'\
+ *         if pos.shape[0] != 3:
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')
  */
   __pyx_t_1 = __pyx_v_self->pos_i;
   __PYX_INC_MEMVIEW(&__pyx_t_1, 1);
@@ -13206,49 +13276,81 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_8__ca
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":768
+  /* "straininterpolationandintegration.pyx":1213
  *         cdef:
  *             double[::1] pos_i = self.pos_i
+ *         if pos.shape[0] != 3:             # <<<<<<<<<<<<<<
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')
+ *         if not self.initialized:
+ */
+  __pyx_t_2 = (((__pyx_v_pos.shape[0]) != 3) != 0);
+  if (unlikely(__pyx_t_2)) {
+
+    /* "straininterpolationandintegration.pyx":1214
+ *             double[::1] pos_i = self.pos_i
+ *         if pos.shape[0] != 3:
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')             # <<<<<<<<<<<<<<
+ *         if not self.initialized:
+ *             raise RuntimeError('Dormand-Prince 8(7) strain solver not'\
+ */
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__16, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1214, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_Raise(__pyx_t_3, 0, 0, 0);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __PYX_ERR(1, 1214, __pyx_L1_error)
+
+    /* "straininterpolationandintegration.pyx":1213
+ *         cdef:
+ *             double[::1] pos_i = self.pos_i
+ *         if pos.shape[0] != 3:             # <<<<<<<<<<<<<<
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')
+ *         if not self.initialized:
+ */
+  }
+
+  /* "straininterpolationandintegration.pyx":1215
+ *         if pos.shape[0] != 3:
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')
  *         if not self.initialized:             # <<<<<<<<<<<<<<
  *             raise RuntimeError('Dormand-Prince 8(7) strain solver not'\
- *                     ' initialized with a StrainAimAssister instance!')
+ *                     ' initialized with a StrainDirectionGenerator instance!')
  */
   __pyx_t_2 = ((!(__pyx_v_self->initialized != 0)) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "straininterpolationandintegration.pyx":769
- *             double[::1] pos_i = self.pos_i
+    /* "straininterpolationandintegration.pyx":1216
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')
  *         if not self.initialized:
  *             raise RuntimeError('Dormand-Prince 8(7) strain solver not'\             # <<<<<<<<<<<<<<
- *                     ' initialized with a StrainAimAssister instance!')
+ *                     ' initialized with a StrainDirectionGenerator instance!')
  *         dcopy(3,pos,1,pos_i,1)
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__16, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 769, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__17, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1216, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 769, __pyx_L1_error)
+    __PYX_ERR(1, 1216, __pyx_L1_error)
 
-    /* "straininterpolationandintegration.pyx":768
- *         cdef:
- *             double[::1] pos_i = self.pos_i
+    /* "straininterpolationandintegration.pyx":1215
+ *         if pos.shape[0] != 3:
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')
  *         if not self.initialized:             # <<<<<<<<<<<<<<
  *             raise RuntimeError('Dormand-Prince 8(7) strain solver not'\
- *                     ' initialized with a StrainAimAssister instance!')
+ *                     ' initialized with a StrainDirectionGenerator instance!')
  */
   }
 
-  /* "straininterpolationandintegration.pyx":771
+  /* "straininterpolationandintegration.pyx":1218
  *             raise RuntimeError('Dormand-Prince 8(7) strain solver not'\
- *                     ' initialized with a StrainAimAssister instance!')
+ *                     ' initialized with a StrainDirectionGenerator instance!')
  *         dcopy(3,pos,1,pos_i,1)             # <<<<<<<<<<<<<<
  *         self._ev_(&t,pos_i,&h)
  *         return t, np.copy(pos_i), h
  */
   __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_pos, 1, __pyx_v_pos_i, 1);
 
-  /* "straininterpolationandintegration.pyx":772
- *                     ' initialized with a StrainAimAssister instance!')
+  /* "straininterpolationandintegration.pyx":1219
+ *                     ' initialized with a StrainDirectionGenerator instance!')
  *         dcopy(3,pos,1,pos_i,1)
  *         self._ev_(&t,pos_i,&h)             # <<<<<<<<<<<<<<
  *         return t, np.copy(pos_i), h
@@ -13256,7 +13358,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_8__ca
  */
   ((struct __pyx_vtabstruct_33straininterpolationandintegration_Dp87Strain *)__pyx_v_self->__pyx_vtab)->_ev_(__pyx_v_self, (&__pyx_v_t), __pyx_v_pos_i, (&__pyx_v_h));
 
-  /* "straininterpolationandintegration.pyx":773
+  /* "straininterpolationandintegration.pyx":1220
  *         dcopy(3,pos,1,pos_i,1)
  *         self._ev_(&t,pos_i,&h)
  *         return t, np.copy(pos_i), h             # <<<<<<<<<<<<<<
@@ -13264,14 +13366,14 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_8__ca
  *     @cython.initializedcheck(False)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_3 = PyFloat_FromDouble(__pyx_v_t); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 773, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble(__pyx_v_t); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 1220, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 773, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1220, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_copy); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 773, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_copy); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 1220, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_pos_i, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 773, __pyx_L1_error)
+  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_pos_i, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 1220, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
@@ -13284,14 +13386,14 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_8__ca
     }
   }
   if (!__pyx_t_7) {
-    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 773, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1220, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_4);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_6)) {
       PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_t_5};
-      __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 773, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1220, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -13300,28 +13402,28 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_8__ca
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
       PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_t_5};
-      __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 773, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1220, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else
     #endif
     {
-      __pyx_t_8 = PyTuple_New(1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 773, __pyx_L1_error)
+      __pyx_t_8 = PyTuple_New(1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 1220, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_7); __pyx_t_7 = NULL;
       __Pyx_GIVEREF(__pyx_t_5);
       PyTuple_SET_ITEM(__pyx_t_8, 0+1, __pyx_t_5);
       __pyx_t_5 = 0;
-      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 773, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 1220, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = PyFloat_FromDouble(__pyx_v_h); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 773, __pyx_L1_error)
+  __pyx_t_6 = PyFloat_FromDouble(__pyx_v_h); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 1220, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 773, __pyx_L1_error)
+  __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 1220, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_3);
@@ -13336,12 +13438,12 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_8__ca
   __pyx_t_8 = 0;
   goto __pyx_L0;
 
-  /* "straininterpolationandintegration.pyx":765
+  /* "straininterpolationandintegration.pyx":1181
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __call__(self, double t, double[::1] pos not None, double h):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double[::1] pos_i = self.pos_i
+ *         """
+ *         Dp87Strain.__call__(t,pos,h)
  */
 
   /* function exit code */
@@ -13363,12 +13465,12 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_8__ca
   return __pyx_r;
 }
 
-/* "straininterpolationandintegration.pyx":779
+/* "straininterpolationandintegration.pyx":1226
  *     @cython.boundscheck(False)
  *     @cython.cdivision(True)
  *     cdef void _ev_(self, double *t, double[::1] pos, double *h):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double[::1] k1 = self.k1, k2 = self.k2, k3 = self.k3, k4 = self.k4, k5 = self.k5, k6 = self.k6, k7 = self.k7, k8 = self.k8, k9 = self.k9, k10 = self.k10, k11 = self.k11, k12 = self.k12, k13 = self.k13, k_tmp = self.k_tmp
+ *         """
+ *         Dp87Strain._ev_(t,pos,h)
  */
 
 static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *__pyx_v_self, double *__pyx_v_t, __Pyx_memviewslice __pyx_v_pos, double *__pyx_v_h) {
@@ -13527,8 +13629,8 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   double __pyx_t_120;
   __Pyx_RefNannySetupContext("_ev_", 0);
 
-  /* "straininterpolationandintegration.pyx":781
- *     cdef void _ev_(self, double *t, double[::1] pos, double *h):
+  /* "straininterpolationandintegration.pyx":1256
+ *         """
  *         cdef:
  *             double[::1] k1 = self.k1, k2 = self.k2, k3 = self.k3, k4 = self.k4, k5 = self.k5, k6 = self.k6, k7 = self.k7, k8 = self.k8, k9 = self.k9, k10 = self.k10, k11 = self.k11, k12 = self.k12, k13 = self.k13, k_tmp = self.k_tmp             # <<<<<<<<<<<<<<
  *             double[::1] x7 = self.x7, x8 = self.x8
@@ -13605,7 +13707,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":782
+  /* "straininterpolationandintegration.pyx":1257
  *         cdef:
  *             double[::1] k1 = self.k1, k2 = self.k2, k3 = self.k3, k4 = self.k4, k5 = self.k5, k6 = self.k6, k7 = self.k7, k8 = self.k8, k9 = self.k9, k10 = self.k10, k11 = self.k11, k12 = self.k12, k13 = self.k13, k_tmp = self.k_tmp
  *             double[::1] x7 = self.x7, x8 = self.x8             # <<<<<<<<<<<<<<
@@ -13623,7 +13725,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":783
+  /* "straininterpolationandintegration.pyx":1258
  *             double[::1] k1 = self.k1, k2 = self.k2, k3 = self.k3, k4 = self.k4, k5 = self.k5, k6 = self.k6, k7 = self.k7, k8 = self.k8, k9 = self.k9, k10 = self.k10, k11 = self.k11, k12 = self.k12, k13 = self.k13, k_tmp = self.k_tmp
  *             double[::1] x7 = self.x7, x8 = self.x8
  *             double[::1] b7 = self.b7, b8 = self.b8             # <<<<<<<<<<<<<<
@@ -13641,7 +13743,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":784
+  /* "straininterpolationandintegration.pyx":1259
  *             double[::1] x7 = self.x7, x8 = self.x8
  *             double[::1] b7 = self.b7, b8 = self.b8
  *             double[::1] a1 = self.a1, a2 = self.a2, a3 = self.a3, a4 = self.a4, a5 = self.a5, a6 = self.a6, a7 = self.a7, a8 = self.a8, a9 = self.a9, a10 = self.a10, a11 = self.a11, a12 = self.a12, a13 = self.a13             # <<<<<<<<<<<<<<
@@ -13714,16 +13816,16 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "straininterpolationandintegration.pyx":787
+  /* "straininterpolationandintegration.pyx":1262
  *             int i
  * 
  *         self.f._ev_(pos,k1)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a1[0]*h[0],k1,1,k_tmp,1)
  */
-  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_pos, __pyx_v_k1);
+  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_pos, __pyx_v_k1);
 
-  /* "straininterpolationandintegration.pyx":788
+  /* "straininterpolationandintegration.pyx":1263
  * 
  *         self.f._ev_(pos,k1)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13732,7 +13834,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":789
+  /* "straininterpolationandintegration.pyx":1264
  *         self.f._ev_(pos,k1)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a1[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13742,16 +13844,16 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_2 = 0;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a1.data) + __pyx_t_2)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":791
+  /* "straininterpolationandintegration.pyx":1266
  *         daxpy(3,a1[0]*h[0],k1,1,k_tmp,1)
  * 
  *         self.f._ev_(k_tmp,k2)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a2[0]*h[0],k1,1,k_tmp,1)
  */
-  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k2);
+  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k2);
 
-  /* "straininterpolationandintegration.pyx":792
+  /* "straininterpolationandintegration.pyx":1267
  * 
  *         self.f._ev_(k_tmp,k2)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13760,7 +13862,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":793
+  /* "straininterpolationandintegration.pyx":1268
  *         self.f._ev_(k_tmp,k2)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a2[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13770,7 +13872,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_3 = 0;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a2.data) + __pyx_t_3)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":794
+  /* "straininterpolationandintegration.pyx":1269
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a2[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a2[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13780,16 +13882,16 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_4 = 1;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a2.data) + __pyx_t_4)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":796
+  /* "straininterpolationandintegration.pyx":1271
  *         daxpy(3,a2[1]*h[0],k2,1,k_tmp,1)
  * 
  *         self.f._ev_(k_tmp,k3)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a3[0]*h[0],k1,1,k_tmp,1)
  */
-  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k3);
+  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k3);
 
-  /* "straininterpolationandintegration.pyx":797
+  /* "straininterpolationandintegration.pyx":1272
  * 
  *         self.f._ev_(k_tmp,k3)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13798,7 +13900,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":798
+  /* "straininterpolationandintegration.pyx":1273
  *         self.f._ev_(k_tmp,k3)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a3[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13808,7 +13910,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_5 = 0;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a3.data) + __pyx_t_5)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":799
+  /* "straininterpolationandintegration.pyx":1274
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a3[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a3[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13818,7 +13920,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_6 = 1;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a3.data) + __pyx_t_6)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":800
+  /* "straininterpolationandintegration.pyx":1275
  *         daxpy(3,a3[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a3[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a3[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13828,16 +13930,16 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_7 = 2;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a3.data) + __pyx_t_7)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":802
+  /* "straininterpolationandintegration.pyx":1277
  *         daxpy(3,a3[2]*h[0],k3,1,k_tmp,1)
  * 
  *         self.f._ev_(k_tmp,k4)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a4[0]*h[0],k1,1,k_tmp,1)
  */
-  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k4);
+  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k4);
 
-  /* "straininterpolationandintegration.pyx":803
+  /* "straininterpolationandintegration.pyx":1278
  * 
  *         self.f._ev_(k_tmp,k4)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13846,7 +13948,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":804
+  /* "straininterpolationandintegration.pyx":1279
  *         self.f._ev_(k_tmp,k4)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a4[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13856,7 +13958,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_8 = 0;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a4.data) + __pyx_t_8)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":805
+  /* "straininterpolationandintegration.pyx":1280
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a4[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a4[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13866,7 +13968,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_9 = 1;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a4.data) + __pyx_t_9)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":806
+  /* "straininterpolationandintegration.pyx":1281
  *         daxpy(3,a4[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a4[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a4[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13876,7 +13978,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_10 = 2;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a4.data) + __pyx_t_10)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":807
+  /* "straininterpolationandintegration.pyx":1282
  *         daxpy(3,a4[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a4[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a4[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13886,16 +13988,16 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_11 = 3;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a4.data) + __pyx_t_11)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":809
+  /* "straininterpolationandintegration.pyx":1284
  *         daxpy(3,a4[3]*h[0],k4,1,k_tmp,1)
  * 
  *         self.f._ev_(k_tmp,k5)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a5[0]*h[0],k1,1,k_tmp,1)
  */
-  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k5);
+  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k5);
 
-  /* "straininterpolationandintegration.pyx":810
+  /* "straininterpolationandintegration.pyx":1285
  * 
  *         self.f._ev_(k_tmp,k5)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13904,7 +14006,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":811
+  /* "straininterpolationandintegration.pyx":1286
  *         self.f._ev_(k_tmp,k5)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a5[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13914,7 +14016,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_12 = 0;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a5.data) + __pyx_t_12)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":812
+  /* "straininterpolationandintegration.pyx":1287
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a5[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a5[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13924,7 +14026,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_13 = 1;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a5.data) + __pyx_t_13)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":813
+  /* "straininterpolationandintegration.pyx":1288
  *         daxpy(3,a5[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a5[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a5[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13934,7 +14036,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_14 = 2;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a5.data) + __pyx_t_14)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":814
+  /* "straininterpolationandintegration.pyx":1289
  *         daxpy(3,a5[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a5[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a5[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13944,7 +14046,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_15 = 3;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a5.data) + __pyx_t_15)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":815
+  /* "straininterpolationandintegration.pyx":1290
  *         daxpy(3,a5[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a5[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a5[4]*h[0],k5,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13954,16 +14056,16 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_16 = 4;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a5.data) + __pyx_t_16)) ))) * (__pyx_v_h[0])), __pyx_v_k5, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":817
+  /* "straininterpolationandintegration.pyx":1292
  *         daxpy(3,a5[4]*h[0],k5,1,k_tmp,1)
  * 
  *         self.f._ev_(k_tmp,k6)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a6[0]*h[0],k1,1,k_tmp,1)
  */
-  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k6);
+  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k6);
 
-  /* "straininterpolationandintegration.pyx":818
+  /* "straininterpolationandintegration.pyx":1293
  * 
  *         self.f._ev_(k_tmp,k6)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13972,7 +14074,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":819
+  /* "straininterpolationandintegration.pyx":1294
  *         self.f._ev_(k_tmp,k6)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a6[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13982,7 +14084,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_17 = 0;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a6.data) + __pyx_t_17)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":820
+  /* "straininterpolationandintegration.pyx":1295
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a6[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a6[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -13992,7 +14094,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_18 = 1;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a6.data) + __pyx_t_18)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":821
+  /* "straininterpolationandintegration.pyx":1296
  *         daxpy(3,a6[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a6[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a6[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14002,7 +14104,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_19 = 2;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a6.data) + __pyx_t_19)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":822
+  /* "straininterpolationandintegration.pyx":1297
  *         daxpy(3,a6[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a6[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a6[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14012,7 +14114,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_20 = 3;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a6.data) + __pyx_t_20)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":823
+  /* "straininterpolationandintegration.pyx":1298
  *         daxpy(3,a6[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a6[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a6[4]*h[0],k5,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14022,7 +14124,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_21 = 4;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a6.data) + __pyx_t_21)) ))) * (__pyx_v_h[0])), __pyx_v_k5, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":824
+  /* "straininterpolationandintegration.pyx":1299
  *         daxpy(3,a6[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a6[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a6[5]*h[0],k6,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14032,16 +14134,16 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_22 = 5;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a6.data) + __pyx_t_22)) ))) * (__pyx_v_h[0])), __pyx_v_k6, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":826
+  /* "straininterpolationandintegration.pyx":1301
  *         daxpy(3,a6[5]*h[0],k6,1,k_tmp,1)
  * 
  *         self.f._ev_(k_tmp,k7)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a7[0]*h[0],k1,1,k_tmp,1)
  */
-  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k7);
+  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k7);
 
-  /* "straininterpolationandintegration.pyx":827
+  /* "straininterpolationandintegration.pyx":1302
  * 
  *         self.f._ev_(k_tmp,k7)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14050,7 +14152,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":828
+  /* "straininterpolationandintegration.pyx":1303
  *         self.f._ev_(k_tmp,k7)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a7[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14060,7 +14162,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_23 = 0;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a7.data) + __pyx_t_23)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":829
+  /* "straininterpolationandintegration.pyx":1304
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a7[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a7[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14070,7 +14172,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_24 = 1;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a7.data) + __pyx_t_24)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":830
+  /* "straininterpolationandintegration.pyx":1305
  *         daxpy(3,a7[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a7[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a7[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14080,7 +14182,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_25 = 2;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a7.data) + __pyx_t_25)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":831
+  /* "straininterpolationandintegration.pyx":1306
  *         daxpy(3,a7[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a7[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a7[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14090,7 +14192,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_26 = 3;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a7.data) + __pyx_t_26)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":832
+  /* "straininterpolationandintegration.pyx":1307
  *         daxpy(3,a7[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a7[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a7[4]*h[0],k5,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14100,7 +14202,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_27 = 4;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a7.data) + __pyx_t_27)) ))) * (__pyx_v_h[0])), __pyx_v_k5, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":833
+  /* "straininterpolationandintegration.pyx":1308
  *         daxpy(3,a7[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a7[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a7[5]*h[0],k6,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14110,7 +14212,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_28 = 5;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a7.data) + __pyx_t_28)) ))) * (__pyx_v_h[0])), __pyx_v_k6, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":834
+  /* "straininterpolationandintegration.pyx":1309
  *         daxpy(3,a7[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a7[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a7[6]*h[0],k7,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14120,16 +14222,16 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_29 = 6;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a7.data) + __pyx_t_29)) ))) * (__pyx_v_h[0])), __pyx_v_k7, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":836
+  /* "straininterpolationandintegration.pyx":1311
  *         daxpy(3,a7[6]*h[0],k7,1,k_tmp,1)
  * 
  *         self.f._ev_(k_tmp,k8)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a8[0]*h[0],k1,1,k_tmp,1)
  */
-  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k8);
+  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k8);
 
-  /* "straininterpolationandintegration.pyx":837
+  /* "straininterpolationandintegration.pyx":1312
  * 
  *         self.f._ev_(k_tmp,k8)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14138,7 +14240,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":838
+  /* "straininterpolationandintegration.pyx":1313
  *         self.f._ev_(k_tmp,k8)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a8[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14148,7 +14250,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_30 = 0;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a8.data) + __pyx_t_30)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":839
+  /* "straininterpolationandintegration.pyx":1314
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a8[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a8[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14158,7 +14260,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_31 = 1;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a8.data) + __pyx_t_31)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":840
+  /* "straininterpolationandintegration.pyx":1315
  *         daxpy(3,a8[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a8[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a8[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14168,7 +14270,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_32 = 2;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a8.data) + __pyx_t_32)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":841
+  /* "straininterpolationandintegration.pyx":1316
  *         daxpy(3,a8[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a8[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a8[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14178,7 +14280,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_33 = 3;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a8.data) + __pyx_t_33)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":842
+  /* "straininterpolationandintegration.pyx":1317
  *         daxpy(3,a8[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a8[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a8[4]*h[0],k5,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14188,7 +14290,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_34 = 4;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a8.data) + __pyx_t_34)) ))) * (__pyx_v_h[0])), __pyx_v_k5, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":843
+  /* "straininterpolationandintegration.pyx":1318
  *         daxpy(3,a8[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a8[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a8[5]*h[0],k6,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14198,7 +14300,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_35 = 5;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a8.data) + __pyx_t_35)) ))) * (__pyx_v_h[0])), __pyx_v_k6, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":844
+  /* "straininterpolationandintegration.pyx":1319
  *         daxpy(3,a8[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a8[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a8[6]*h[0],k7,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14208,7 +14310,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_36 = 6;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a8.data) + __pyx_t_36)) ))) * (__pyx_v_h[0])), __pyx_v_k7, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":845
+  /* "straininterpolationandintegration.pyx":1320
  *         daxpy(3,a8[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a8[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a8[7]*h[0],k8,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14218,16 +14320,16 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_37 = 7;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a8.data) + __pyx_t_37)) ))) * (__pyx_v_h[0])), __pyx_v_k8, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":847
+  /* "straininterpolationandintegration.pyx":1322
  *         daxpy(3,a8[7]*h[0],k8,1,k_tmp,1)
  * 
  *         self.f._ev_(k_tmp,k9)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a9[0]*h[0],k1,1,k_tmp,1)
  */
-  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k9);
+  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k9);
 
-  /* "straininterpolationandintegration.pyx":848
+  /* "straininterpolationandintegration.pyx":1323
  * 
  *         self.f._ev_(k_tmp,k9)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14236,7 +14338,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":849
+  /* "straininterpolationandintegration.pyx":1324
  *         self.f._ev_(k_tmp,k9)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a9[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14246,7 +14348,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_38 = 0;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_38)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":850
+  /* "straininterpolationandintegration.pyx":1325
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a9[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a9[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14256,7 +14358,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_39 = 1;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_39)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":851
+  /* "straininterpolationandintegration.pyx":1326
  *         daxpy(3,a9[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a9[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a9[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14266,7 +14368,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_40 = 2;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_40)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":852
+  /* "straininterpolationandintegration.pyx":1327
  *         daxpy(3,a9[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a9[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a9[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14276,7 +14378,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_41 = 3;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_41)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":853
+  /* "straininterpolationandintegration.pyx":1328
  *         daxpy(3,a9[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a9[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a9[4]*h[0],k5,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14286,7 +14388,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_42 = 4;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_42)) ))) * (__pyx_v_h[0])), __pyx_v_k5, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":854
+  /* "straininterpolationandintegration.pyx":1329
  *         daxpy(3,a9[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a9[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a9[5]*h[0],k6,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14296,7 +14398,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_43 = 5;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_43)) ))) * (__pyx_v_h[0])), __pyx_v_k6, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":855
+  /* "straininterpolationandintegration.pyx":1330
  *         daxpy(3,a9[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a9[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a9[6]*h[0],k7,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14306,7 +14408,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_44 = 6;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_44)) ))) * (__pyx_v_h[0])), __pyx_v_k7, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":856
+  /* "straininterpolationandintegration.pyx":1331
  *         daxpy(3,a9[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a9[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a9[7]*h[0],k8,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14316,7 +14418,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_45 = 7;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_45)) ))) * (__pyx_v_h[0])), __pyx_v_k8, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":857
+  /* "straininterpolationandintegration.pyx":1332
  *         daxpy(3,a9[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a9[7]*h[0],k8,1,k_tmp,1)
  *         daxpy(3,a9[8]*h[0],k9,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14326,16 +14428,16 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_46 = 8;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_46)) ))) * (__pyx_v_h[0])), __pyx_v_k9, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":859
+  /* "straininterpolationandintegration.pyx":1334
  *         daxpy(3,a9[8]*h[0],k9,1,k_tmp,1)
  * 
  *         self.f._ev_(k_tmp,k10)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a10[0]*h[0],k1,1,k_tmp,1)
  */
-  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k10);
+  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k10);
 
-  /* "straininterpolationandintegration.pyx":860
+  /* "straininterpolationandintegration.pyx":1335
  * 
  *         self.f._ev_(k_tmp,k10)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14344,7 +14446,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":861
+  /* "straininterpolationandintegration.pyx":1336
  *         self.f._ev_(k_tmp,k10)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a10[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14354,7 +14456,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_47 = 0;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_47)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":862
+  /* "straininterpolationandintegration.pyx":1337
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a10[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a10[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14364,7 +14466,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_48 = 1;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_48)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":863
+  /* "straininterpolationandintegration.pyx":1338
  *         daxpy(3,a10[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a10[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a10[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14374,7 +14476,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_49 = 2;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_49)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":864
+  /* "straininterpolationandintegration.pyx":1339
  *         daxpy(3,a10[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a10[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a10[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14384,7 +14486,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_50 = 3;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_50)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":865
+  /* "straininterpolationandintegration.pyx":1340
  *         daxpy(3,a10[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a10[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a10[4]*h[0],k5,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14394,7 +14496,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_51 = 4;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_51)) ))) * (__pyx_v_h[0])), __pyx_v_k5, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":866
+  /* "straininterpolationandintegration.pyx":1341
  *         daxpy(3,a10[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a10[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a10[5]*h[0],k6,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14404,7 +14506,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_52 = 5;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_52)) ))) * (__pyx_v_h[0])), __pyx_v_k6, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":867
+  /* "straininterpolationandintegration.pyx":1342
  *         daxpy(3,a10[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a10[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a10[6]*h[0],k7,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14414,7 +14516,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_53 = 6;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_53)) ))) * (__pyx_v_h[0])), __pyx_v_k7, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":868
+  /* "straininterpolationandintegration.pyx":1343
  *         daxpy(3,a10[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a10[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a10[7]*h[0],k8,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14424,7 +14526,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_54 = 7;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_54)) ))) * (__pyx_v_h[0])), __pyx_v_k8, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":869
+  /* "straininterpolationandintegration.pyx":1344
  *         daxpy(3,a10[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a10[7]*h[0],k8,1,k_tmp,1)
  *         daxpy(3,a10[8]*h[0],k9,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14434,7 +14536,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_55 = 8;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_55)) ))) * (__pyx_v_h[0])), __pyx_v_k9, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":870
+  /* "straininterpolationandintegration.pyx":1345
  *         daxpy(3,a10[7]*h[0],k8,1,k_tmp,1)
  *         daxpy(3,a10[8]*h[0],k9,1,k_tmp,1)
  *         daxpy(3,a10[9]*h[0],k10,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14444,16 +14546,16 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_56 = 9;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_56)) ))) * (__pyx_v_h[0])), __pyx_v_k10, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":872
+  /* "straininterpolationandintegration.pyx":1347
  *         daxpy(3,a10[9]*h[0],k10,1,k_tmp,1)
  * 
  *         self.f._ev_(k_tmp,k11)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a11[0]*h[0],k1,1,k_tmp,1)
  */
-  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k11);
+  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k11);
 
-  /* "straininterpolationandintegration.pyx":873
+  /* "straininterpolationandintegration.pyx":1348
  * 
  *         self.f._ev_(k_tmp,k11)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14462,7 +14564,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":874
+  /* "straininterpolationandintegration.pyx":1349
  *         self.f._ev_(k_tmp,k11)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a11[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14472,7 +14574,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_57 = 0;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_57)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":875
+  /* "straininterpolationandintegration.pyx":1350
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a11[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a11[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14482,7 +14584,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_58 = 1;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_58)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":876
+  /* "straininterpolationandintegration.pyx":1351
  *         daxpy(3,a11[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a11[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a11[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14492,7 +14594,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_59 = 2;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_59)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":877
+  /* "straininterpolationandintegration.pyx":1352
  *         daxpy(3,a11[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a11[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a11[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14502,7 +14604,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_60 = 3;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_60)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":878
+  /* "straininterpolationandintegration.pyx":1353
  *         daxpy(3,a11[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a11[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a11[4]*h[0],k5,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14512,7 +14614,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_61 = 4;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_61)) ))) * (__pyx_v_h[0])), __pyx_v_k5, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":879
+  /* "straininterpolationandintegration.pyx":1354
  *         daxpy(3,a11[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a11[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a11[5]*h[0],k6,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14522,7 +14624,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_62 = 5;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_62)) ))) * (__pyx_v_h[0])), __pyx_v_k6, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":880
+  /* "straininterpolationandintegration.pyx":1355
  *         daxpy(3,a11[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a11[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a11[6]*h[0],k7,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14532,7 +14634,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_63 = 6;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_63)) ))) * (__pyx_v_h[0])), __pyx_v_k7, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":881
+  /* "straininterpolationandintegration.pyx":1356
  *         daxpy(3,a11[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a11[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a11[7]*h[0],k8,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14542,7 +14644,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_64 = 7;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_64)) ))) * (__pyx_v_h[0])), __pyx_v_k8, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":882
+  /* "straininterpolationandintegration.pyx":1357
  *         daxpy(3,a11[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a11[7]*h[0],k8,1,k_tmp,1)
  *         daxpy(3,a11[8]*h[0],k9,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14552,7 +14654,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_65 = 8;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_65)) ))) * (__pyx_v_h[0])), __pyx_v_k9, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":883
+  /* "straininterpolationandintegration.pyx":1358
  *         daxpy(3,a11[7]*h[0],k8,1,k_tmp,1)
  *         daxpy(3,a11[8]*h[0],k9,1,k_tmp,1)
  *         daxpy(3,a11[9]*h[0],k10,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14562,7 +14664,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_66 = 9;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_66)) ))) * (__pyx_v_h[0])), __pyx_v_k10, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":884
+  /* "straininterpolationandintegration.pyx":1359
  *         daxpy(3,a11[8]*h[0],k9,1,k_tmp,1)
  *         daxpy(3,a11[9]*h[0],k10,1,k_tmp,1)
  *         daxpy(3,a11[10]*h[0],k11,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14572,16 +14674,16 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_67 = 10;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_67)) ))) * (__pyx_v_h[0])), __pyx_v_k11, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":886
+  /* "straininterpolationandintegration.pyx":1361
  *         daxpy(3,a11[10]*h[0],k11,1,k_tmp,1)
  * 
  *         self.f._ev_(k_tmp,k12)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a12[0]*h[0],k1,1,k_tmp,1)
  */
-  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k12);
+  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k12);
 
-  /* "straininterpolationandintegration.pyx":887
+  /* "straininterpolationandintegration.pyx":1362
  * 
  *         self.f._ev_(k_tmp,k12)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14590,7 +14692,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":888
+  /* "straininterpolationandintegration.pyx":1363
  *         self.f._ev_(k_tmp,k12)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a12[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14600,7 +14702,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_68 = 0;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_68)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":889
+  /* "straininterpolationandintegration.pyx":1364
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a12[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a12[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14610,7 +14712,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_69 = 1;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_69)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":890
+  /* "straininterpolationandintegration.pyx":1365
  *         daxpy(3,a12[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a12[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a12[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14620,7 +14722,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_70 = 2;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_70)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":891
+  /* "straininterpolationandintegration.pyx":1366
  *         daxpy(3,a12[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a12[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a12[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14630,7 +14732,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_71 = 3;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_71)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":892
+  /* "straininterpolationandintegration.pyx":1367
  *         daxpy(3,a12[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a12[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a12[4]*h[0],k5,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14640,7 +14742,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_72 = 4;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_72)) ))) * (__pyx_v_h[0])), __pyx_v_k5, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":893
+  /* "straininterpolationandintegration.pyx":1368
  *         daxpy(3,a12[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a12[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a12[5]*h[0],k6,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14650,7 +14752,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_73 = 5;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_73)) ))) * (__pyx_v_h[0])), __pyx_v_k6, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":894
+  /* "straininterpolationandintegration.pyx":1369
  *         daxpy(3,a12[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a12[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a12[6]*h[0],k7,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14660,7 +14762,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_74 = 6;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_74)) ))) * (__pyx_v_h[0])), __pyx_v_k7, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":895
+  /* "straininterpolationandintegration.pyx":1370
  *         daxpy(3,a12[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a12[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a12[7]*h[0],k8,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14670,7 +14772,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_75 = 7;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_75)) ))) * (__pyx_v_h[0])), __pyx_v_k8, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":896
+  /* "straininterpolationandintegration.pyx":1371
  *         daxpy(3,a12[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a12[7]*h[0],k8,1,k_tmp,1)
  *         daxpy(3,a12[8]*h[0],k9,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14680,7 +14782,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_76 = 8;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_76)) ))) * (__pyx_v_h[0])), __pyx_v_k9, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":897
+  /* "straininterpolationandintegration.pyx":1372
  *         daxpy(3,a12[7]*h[0],k8,1,k_tmp,1)
  *         daxpy(3,a12[8]*h[0],k9,1,k_tmp,1)
  *         daxpy(3,a12[9]*h[0],k10,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14690,7 +14792,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_77 = 9;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_77)) ))) * (__pyx_v_h[0])), __pyx_v_k10, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":898
+  /* "straininterpolationandintegration.pyx":1373
  *         daxpy(3,a12[8]*h[0],k9,1,k_tmp,1)
  *         daxpy(3,a12[9]*h[0],k10,1,k_tmp,1)
  *         daxpy(3,a12[10]*h[0],k11,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14700,7 +14802,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_78 = 10;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_78)) ))) * (__pyx_v_h[0])), __pyx_v_k11, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":899
+  /* "straininterpolationandintegration.pyx":1374
  *         daxpy(3,a12[9]*h[0],k10,1,k_tmp,1)
  *         daxpy(3,a12[10]*h[0],k11,1,k_tmp,1)
  *         daxpy(3,a12[11]*h[0],k12,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -14710,16 +14812,16 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_79 = 11;
   __pyx_f_33straininterpolationandintegration_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_79)) ))) * (__pyx_v_h[0])), __pyx_v_k12, 1, __pyx_v_k_tmp, 1);
 
-  /* "straininterpolationandintegration.pyx":901
+  /* "straininterpolationandintegration.pyx":1376
  *         daxpy(3,a12[11]*h[0],k12,1,k_tmp,1)
  * 
  *         self.f._ev_(k_tmp,k13)             # <<<<<<<<<<<<<<
  * 
  *         dscal(3,0,x7,1)
  */
-  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k13);
+  ((struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k13);
 
-  /* "straininterpolationandintegration.pyx":903
+  /* "straininterpolationandintegration.pyx":1378
  *         self.f._ev_(k_tmp,k13)
  * 
  *         dscal(3,0,x7,1)             # <<<<<<<<<<<<<<
@@ -14728,7 +14830,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_dscal(3, 0.0, __pyx_v_x7, 1);
 
-  /* "straininterpolationandintegration.pyx":904
+  /* "straininterpolationandintegration.pyx":1379
  * 
  *         dscal(3,0,x7,1)
  *         dscal(3,0,x8,1)             # <<<<<<<<<<<<<<
@@ -14737,7 +14839,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_dscal(3, 0.0, __pyx_v_x8, 1);
 
-  /* "straininterpolationandintegration.pyx":906
+  /* "straininterpolationandintegration.pyx":1381
  *         dscal(3,0,x8,1)
  * 
  *         daxpy(3,b7[0],k1,1,x7,1)             # <<<<<<<<<<<<<<
@@ -14747,7 +14849,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_80 = 0;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_80)) ))), __pyx_v_k1, 1, __pyx_v_x7, 1);
 
-  /* "straininterpolationandintegration.pyx":907
+  /* "straininterpolationandintegration.pyx":1382
  * 
  *         daxpy(3,b7[0],k1,1,x7,1)
  *         daxpy(3,b7[1],k2,1,x7,1)             # <<<<<<<<<<<<<<
@@ -14757,7 +14859,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_81 = 1;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_81)) ))), __pyx_v_k2, 1, __pyx_v_x7, 1);
 
-  /* "straininterpolationandintegration.pyx":908
+  /* "straininterpolationandintegration.pyx":1383
  *         daxpy(3,b7[0],k1,1,x7,1)
  *         daxpy(3,b7[1],k2,1,x7,1)
  *         daxpy(3,b7[2],k3,1,x7,1)             # <<<<<<<<<<<<<<
@@ -14767,7 +14869,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_82 = 2;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_82)) ))), __pyx_v_k3, 1, __pyx_v_x7, 1);
 
-  /* "straininterpolationandintegration.pyx":909
+  /* "straininterpolationandintegration.pyx":1384
  *         daxpy(3,b7[1],k2,1,x7,1)
  *         daxpy(3,b7[2],k3,1,x7,1)
  *         daxpy(3,b7[3],k4,1,x7,1)             # <<<<<<<<<<<<<<
@@ -14777,7 +14879,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_83 = 3;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_83)) ))), __pyx_v_k4, 1, __pyx_v_x7, 1);
 
-  /* "straininterpolationandintegration.pyx":910
+  /* "straininterpolationandintegration.pyx":1385
  *         daxpy(3,b7[2],k3,1,x7,1)
  *         daxpy(3,b7[3],k4,1,x7,1)
  *         daxpy(3,b7[4],k5,1,x7,1)             # <<<<<<<<<<<<<<
@@ -14787,7 +14889,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_84 = 4;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_84)) ))), __pyx_v_k5, 1, __pyx_v_x7, 1);
 
-  /* "straininterpolationandintegration.pyx":911
+  /* "straininterpolationandintegration.pyx":1386
  *         daxpy(3,b7[3],k4,1,x7,1)
  *         daxpy(3,b7[4],k5,1,x7,1)
  *         daxpy(3,b7[5],k6,1,x7,1)             # <<<<<<<<<<<<<<
@@ -14797,7 +14899,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_85 = 5;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_85)) ))), __pyx_v_k6, 1, __pyx_v_x7, 1);
 
-  /* "straininterpolationandintegration.pyx":912
+  /* "straininterpolationandintegration.pyx":1387
  *         daxpy(3,b7[4],k5,1,x7,1)
  *         daxpy(3,b7[5],k6,1,x7,1)
  *         daxpy(3,b7[6],k7,1,x7,1)             # <<<<<<<<<<<<<<
@@ -14807,7 +14909,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_86 = 6;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_86)) ))), __pyx_v_k7, 1, __pyx_v_x7, 1);
 
-  /* "straininterpolationandintegration.pyx":913
+  /* "straininterpolationandintegration.pyx":1388
  *         daxpy(3,b7[5],k6,1,x7,1)
  *         daxpy(3,b7[6],k7,1,x7,1)
  *         daxpy(3,b7[7],k8,1,x7,1)             # <<<<<<<<<<<<<<
@@ -14817,7 +14919,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_87 = 7;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_87)) ))), __pyx_v_k8, 1, __pyx_v_x7, 1);
 
-  /* "straininterpolationandintegration.pyx":914
+  /* "straininterpolationandintegration.pyx":1389
  *         daxpy(3,b7[6],k7,1,x7,1)
  *         daxpy(3,b7[7],k8,1,x7,1)
  *         daxpy(3,b7[8],k9,1,x7,1)             # <<<<<<<<<<<<<<
@@ -14827,7 +14929,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_88 = 8;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_88)) ))), __pyx_v_k9, 1, __pyx_v_x7, 1);
 
-  /* "straininterpolationandintegration.pyx":915
+  /* "straininterpolationandintegration.pyx":1390
  *         daxpy(3,b7[7],k8,1,x7,1)
  *         daxpy(3,b7[8],k9,1,x7,1)
  *         daxpy(3,b7[9],k10,1,x7,1)             # <<<<<<<<<<<<<<
@@ -14837,7 +14939,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_89 = 9;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_89)) ))), __pyx_v_k10, 1, __pyx_v_x7, 1);
 
-  /* "straininterpolationandintegration.pyx":916
+  /* "straininterpolationandintegration.pyx":1391
  *         daxpy(3,b7[8],k9,1,x7,1)
  *         daxpy(3,b7[9],k10,1,x7,1)
  *         daxpy(3,b7[10],k11,1,x7,1)             # <<<<<<<<<<<<<<
@@ -14847,7 +14949,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_90 = 10;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_90)) ))), __pyx_v_k11, 1, __pyx_v_x7, 1);
 
-  /* "straininterpolationandintegration.pyx":917
+  /* "straininterpolationandintegration.pyx":1392
  *         daxpy(3,b7[9],k10,1,x7,1)
  *         daxpy(3,b7[10],k11,1,x7,1)
  *         daxpy(3,b7[11],k12,1,x7,1)             # <<<<<<<<<<<<<<
@@ -14857,7 +14959,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_91 = 11;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_91)) ))), __pyx_v_k12, 1, __pyx_v_x7, 1);
 
-  /* "straininterpolationandintegration.pyx":918
+  /* "straininterpolationandintegration.pyx":1393
  *         daxpy(3,b7[10],k11,1,x7,1)
  *         daxpy(3,b7[11],k12,1,x7,1)
  *         daxpy(3,b7[12],k13,1,x7,1)             # <<<<<<<<<<<<<<
@@ -14867,7 +14969,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_92 = 12;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_92)) ))), __pyx_v_k13, 1, __pyx_v_x7, 1);
 
-  /* "straininterpolationandintegration.pyx":920
+  /* "straininterpolationandintegration.pyx":1395
  *         daxpy(3,b7[12],k13,1,x7,1)
  * 
  *         dscal(3,h[0],x7,1)             # <<<<<<<<<<<<<<
@@ -14876,7 +14978,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_dscal(3, (__pyx_v_h[0]), __pyx_v_x7, 1);
 
-  /* "straininterpolationandintegration.pyx":921
+  /* "straininterpolationandintegration.pyx":1396
  * 
  *         dscal(3,h[0],x7,1)
  *         daxpy(3,1,pos,1,x7,1)             # <<<<<<<<<<<<<<
@@ -14885,7 +14987,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_daxpy(3, 1.0, __pyx_v_pos, 1, __pyx_v_x7, 1);
 
-  /* "straininterpolationandintegration.pyx":923
+  /* "straininterpolationandintegration.pyx":1398
  *         daxpy(3,1,pos,1,x7,1)
  * 
  *         daxpy(3,b8[0],k1,1,x8,1)             # <<<<<<<<<<<<<<
@@ -14895,7 +14997,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_93 = 0;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_93)) ))), __pyx_v_k1, 1, __pyx_v_x8, 1);
 
-  /* "straininterpolationandintegration.pyx":924
+  /* "straininterpolationandintegration.pyx":1399
  * 
  *         daxpy(3,b8[0],k1,1,x8,1)
  *         daxpy(3,b8[1],k2,1,x8,1)             # <<<<<<<<<<<<<<
@@ -14905,7 +15007,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_94 = 1;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_94)) ))), __pyx_v_k2, 1, __pyx_v_x8, 1);
 
-  /* "straininterpolationandintegration.pyx":925
+  /* "straininterpolationandintegration.pyx":1400
  *         daxpy(3,b8[0],k1,1,x8,1)
  *         daxpy(3,b8[1],k2,1,x8,1)
  *         daxpy(3,b8[2],k3,1,x8,1)             # <<<<<<<<<<<<<<
@@ -14915,7 +15017,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_95 = 2;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_95)) ))), __pyx_v_k3, 1, __pyx_v_x8, 1);
 
-  /* "straininterpolationandintegration.pyx":926
+  /* "straininterpolationandintegration.pyx":1401
  *         daxpy(3,b8[1],k2,1,x8,1)
  *         daxpy(3,b8[2],k3,1,x8,1)
  *         daxpy(3,b8[3],k4,1,x8,1)             # <<<<<<<<<<<<<<
@@ -14925,7 +15027,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_96 = 3;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_96)) ))), __pyx_v_k4, 1, __pyx_v_x8, 1);
 
-  /* "straininterpolationandintegration.pyx":927
+  /* "straininterpolationandintegration.pyx":1402
  *         daxpy(3,b8[2],k3,1,x8,1)
  *         daxpy(3,b8[3],k4,1,x8,1)
  *         daxpy(3,b8[4],k5,1,x8,1)             # <<<<<<<<<<<<<<
@@ -14935,7 +15037,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_97 = 4;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_97)) ))), __pyx_v_k5, 1, __pyx_v_x8, 1);
 
-  /* "straininterpolationandintegration.pyx":928
+  /* "straininterpolationandintegration.pyx":1403
  *         daxpy(3,b8[3],k4,1,x8,1)
  *         daxpy(3,b8[4],k5,1,x8,1)
  *         daxpy(3,b8[5],k6,1,x8,1)             # <<<<<<<<<<<<<<
@@ -14945,7 +15047,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_98 = 5;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_98)) ))), __pyx_v_k6, 1, __pyx_v_x8, 1);
 
-  /* "straininterpolationandintegration.pyx":929
+  /* "straininterpolationandintegration.pyx":1404
  *         daxpy(3,b8[4],k5,1,x8,1)
  *         daxpy(3,b8[5],k6,1,x8,1)
  *         daxpy(3,b8[6],k7,1,x8,1)             # <<<<<<<<<<<<<<
@@ -14955,7 +15057,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_99 = 6;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_99)) ))), __pyx_v_k7, 1, __pyx_v_x8, 1);
 
-  /* "straininterpolationandintegration.pyx":930
+  /* "straininterpolationandintegration.pyx":1405
  *         daxpy(3,b8[5],k6,1,x8,1)
  *         daxpy(3,b8[6],k7,1,x8,1)
  *         daxpy(3,b8[7],k8,1,x8,1)             # <<<<<<<<<<<<<<
@@ -14965,7 +15067,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_100 = 7;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_100)) ))), __pyx_v_k8, 1, __pyx_v_x8, 1);
 
-  /* "straininterpolationandintegration.pyx":931
+  /* "straininterpolationandintegration.pyx":1406
  *         daxpy(3,b8[6],k7,1,x8,1)
  *         daxpy(3,b8[7],k8,1,x8,1)
  *         daxpy(3,b8[8],k9,1,x8,1)             # <<<<<<<<<<<<<<
@@ -14975,7 +15077,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_101 = 8;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_101)) ))), __pyx_v_k9, 1, __pyx_v_x8, 1);
 
-  /* "straininterpolationandintegration.pyx":932
+  /* "straininterpolationandintegration.pyx":1407
  *         daxpy(3,b8[7],k8,1,x8,1)
  *         daxpy(3,b8[8],k9,1,x8,1)
  *         daxpy(3,b8[9],k10,1,x8,1)             # <<<<<<<<<<<<<<
@@ -14985,7 +15087,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_102 = 9;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_102)) ))), __pyx_v_k10, 1, __pyx_v_x8, 1);
 
-  /* "straininterpolationandintegration.pyx":933
+  /* "straininterpolationandintegration.pyx":1408
  *         daxpy(3,b8[8],k9,1,x8,1)
  *         daxpy(3,b8[9],k10,1,x8,1)
  *         daxpy(3,b8[10],k11,1,x8,1)             # <<<<<<<<<<<<<<
@@ -14995,7 +15097,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_103 = 10;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_103)) ))), __pyx_v_k11, 1, __pyx_v_x8, 1);
 
-  /* "straininterpolationandintegration.pyx":934
+  /* "straininterpolationandintegration.pyx":1409
  *         daxpy(3,b8[9],k10,1,x8,1)
  *         daxpy(3,b8[10],k11,1,x8,1)
  *         daxpy(3,b8[11],k12,1,x8,1)             # <<<<<<<<<<<<<<
@@ -15005,7 +15107,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_104 = 11;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_104)) ))), __pyx_v_k12, 1, __pyx_v_x8, 1);
 
-  /* "straininterpolationandintegration.pyx":935
+  /* "straininterpolationandintegration.pyx":1410
  *         daxpy(3,b8[10],k11,1,x8,1)
  *         daxpy(3,b8[11],k12,1,x8,1)
  *         daxpy(3,b8[12],k13,1,x8,1)             # <<<<<<<<<<<<<<
@@ -15015,7 +15117,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_105 = 12;
   __pyx_f_33straininterpolationandintegration_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_105)) ))), __pyx_v_k13, 1, __pyx_v_x8, 1);
 
-  /* "straininterpolationandintegration.pyx":937
+  /* "straininterpolationandintegration.pyx":1412
  *         daxpy(3,b8[12],k13,1,x8,1)
  * 
  *         dscal(3,h[0],x8,1)             # <<<<<<<<<<<<<<
@@ -15024,7 +15126,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_dscal(3, (__pyx_v_h[0]), __pyx_v_x8, 1);
 
-  /* "straininterpolationandintegration.pyx":938
+  /* "straininterpolationandintegration.pyx":1413
  * 
  *         dscal(3,h[0],x8,1)
  *         daxpy(3,1,pos,1,x8,1)             # <<<<<<<<<<<<<<
@@ -15033,7 +15135,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
   __pyx_f_33straininterpolationandintegration_daxpy(3, 1.0, __pyx_v_pos, 1, __pyx_v_x8, 1);
 
-  /* "straininterpolationandintegration.pyx":940
+  /* "straininterpolationandintegration.pyx":1415
  *         daxpy(3,1,pos,1,x8,1)
  * 
  *         if c_fabs(x8[0]) < c_fabs(x8[0]):             # <<<<<<<<<<<<<<
@@ -15045,7 +15147,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_108 = ((fabs((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x8.data) + __pyx_t_106)) )))) < fabs((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x8.data) + __pyx_t_107)) ))))) != 0);
   if (__pyx_t_108) {
 
-    /* "straininterpolationandintegration.pyx":941
+    /* "straininterpolationandintegration.pyx":1416
  * 
  *         if c_fabs(x8[0]) < c_fabs(x8[0]):
  *             self.sc = self.atol + c_fabs(x7[0])*self.rtol             # <<<<<<<<<<<<<<
@@ -15055,7 +15157,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
     __pyx_t_109 = 0;
     __pyx_v_self->sc = (__pyx_v_self->atol + (fabs((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x7.data) + __pyx_t_109)) )))) * __pyx_v_self->rtol));
 
-    /* "straininterpolationandintegration.pyx":940
+    /* "straininterpolationandintegration.pyx":1415
  *         daxpy(3,1,pos,1,x8,1)
  * 
  *         if c_fabs(x8[0]) < c_fabs(x8[0]):             # <<<<<<<<<<<<<<
@@ -15065,7 +15167,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
     goto __pyx_L3;
   }
 
-  /* "straininterpolationandintegration.pyx":943
+  /* "straininterpolationandintegration.pyx":1418
  *             self.sc = self.atol + c_fabs(x7[0])*self.rtol
  *         else:
  *             self.sc = self.atol + c_fabs(x8[0])*self.rtol             # <<<<<<<<<<<<<<
@@ -15078,7 +15180,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   }
   __pyx_L3:;
 
-  /* "straininterpolationandintegration.pyx":945
+  /* "straininterpolationandintegration.pyx":1420
  *             self.sc = self.atol + c_fabs(x8[0])*self.rtol
  * 
  *         self.err = c_fabs(x7[0]-x8[0])/self.sc             # <<<<<<<<<<<<<<
@@ -15089,7 +15191,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_112 = 0;
   __pyx_v_self->err = (fabs(((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x7.data) + __pyx_t_111)) ))) - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x8.data) + __pyx_t_112)) ))))) / __pyx_v_self->sc);
 
-  /* "straininterpolationandintegration.pyx":946
+  /* "straininterpolationandintegration.pyx":1421
  * 
  *         self.err = c_fabs(x7[0]-x8[0])/self.sc
  *         for i in range(1,3):             # <<<<<<<<<<<<<<
@@ -15099,7 +15201,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   for (__pyx_t_113 = 1; __pyx_t_113 < 3; __pyx_t_113+=1) {
     __pyx_v_i = __pyx_t_113;
 
-    /* "straininterpolationandintegration.pyx":947
+    /* "straininterpolationandintegration.pyx":1422
  *         self.err = c_fabs(x7[0]-x8[0])/self.sc
  *         for i in range(1,3):
  *             if c_fabs(x7[i]) < c_fabs(x8[i]):             # <<<<<<<<<<<<<<
@@ -15111,7 +15213,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
     __pyx_t_108 = ((fabs((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x7.data) + __pyx_t_114)) )))) < fabs((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x8.data) + __pyx_t_115)) ))))) != 0);
     if (__pyx_t_108) {
 
-      /* "straininterpolationandintegration.pyx":948
+      /* "straininterpolationandintegration.pyx":1423
  *         for i in range(1,3):
  *             if c_fabs(x7[i]) < c_fabs(x8[i]):
  *                 self.sc = self.atol + c_fabs(x7[i])*self.rtol             # <<<<<<<<<<<<<<
@@ -15121,7 +15223,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
       __pyx_t_116 = __pyx_v_i;
       __pyx_v_self->sc = (__pyx_v_self->atol + (fabs((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x7.data) + __pyx_t_116)) )))) * __pyx_v_self->rtol));
 
-      /* "straininterpolationandintegration.pyx":947
+      /* "straininterpolationandintegration.pyx":1422
  *         self.err = c_fabs(x7[0]-x8[0])/self.sc
  *         for i in range(1,3):
  *             if c_fabs(x7[i]) < c_fabs(x8[i]):             # <<<<<<<<<<<<<<
@@ -15131,7 +15233,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
       goto __pyx_L6;
     }
 
-    /* "straininterpolationandintegration.pyx":950
+    /* "straininterpolationandintegration.pyx":1425
  *                 self.sc = self.atol + c_fabs(x7[i])*self.rtol
  *             else:
  *                 self.sc = self.atol + c_fabs(x8[i])*self.rtol             # <<<<<<<<<<<<<<
@@ -15144,7 +15246,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
     }
     __pyx_L6:;
 
-    /* "straininterpolationandintegration.pyx":952
+    /* "straininterpolationandintegration.pyx":1427
  *                 self.sc = self.atol + c_fabs(x8[i])*self.rtol
  * 
  *             self.tmp = c_fabs(x7[i]-x8[i])/self.sc             # <<<<<<<<<<<<<<
@@ -15155,7 +15257,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
     __pyx_t_119 = __pyx_v_i;
     __pyx_v_self->tmp = (fabs(((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x7.data) + __pyx_t_118)) ))) - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x8.data) + __pyx_t_119)) ))))) / __pyx_v_self->sc);
 
-    /* "straininterpolationandintegration.pyx":954
+    /* "straininterpolationandintegration.pyx":1429
  *             self.tmp = c_fabs(x7[i]-x8[i])/self.sc
  * 
  *             if self.tmp > self.err:             # <<<<<<<<<<<<<<
@@ -15165,7 +15267,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
     __pyx_t_108 = ((__pyx_v_self->tmp > __pyx_v_self->err) != 0);
     if (__pyx_t_108) {
 
-      /* "straininterpolationandintegration.pyx":955
+      /* "straininterpolationandintegration.pyx":1430
  * 
  *             if self.tmp > self.err:
  *                 self.err = self.tmp             # <<<<<<<<<<<<<<
@@ -15175,7 +15277,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
       __pyx_t_120 = __pyx_v_self->tmp;
       __pyx_v_self->err = __pyx_t_120;
 
-      /* "straininterpolationandintegration.pyx":954
+      /* "straininterpolationandintegration.pyx":1429
  *             self.tmp = c_fabs(x7[i]-x8[i])/self.sc
  * 
  *             if self.tmp > self.err:             # <<<<<<<<<<<<<<
@@ -15185,37 +15287,37 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
     }
   }
 
-  /* "straininterpolationandintegration.pyx":957
+  /* "straininterpolationandintegration.pyx":1432
  *                 self.err = self.tmp
  * 
  *         if self.err == 0:             # <<<<<<<<<<<<<<
- *             self.h_opt = c_copysign(10,h[0])
+ *             self.h_opt = c_copysign(self.hmax,h[0])
  *         else:
  */
   __pyx_t_108 = ((__pyx_v_self->err == 0.0) != 0);
   if (__pyx_t_108) {
 
-    /* "straininterpolationandintegration.pyx":958
+    /* "straininterpolationandintegration.pyx":1433
  * 
  *         if self.err == 0:
- *             self.h_opt = c_copysign(10,h[0])             # <<<<<<<<<<<<<<
+ *             self.h_opt = c_copysign(self.hmax,h[0])             # <<<<<<<<<<<<<<
  *         else:
  *             self.h_opt = h[0]*c_pow((1/self.err),1/(self.q+1))
  */
-    __pyx_v_self->h_opt = copysign(10.0, (__pyx_v_h[0]));
+    __pyx_v_self->h_opt = copysign(__pyx_v_self->hmax, (__pyx_v_h[0]));
 
-    /* "straininterpolationandintegration.pyx":957
+    /* "straininterpolationandintegration.pyx":1432
  *                 self.err = self.tmp
  * 
  *         if self.err == 0:             # <<<<<<<<<<<<<<
- *             self.h_opt = c_copysign(10,h[0])
+ *             self.h_opt = c_copysign(self.hmax,h[0])
  *         else:
  */
     goto __pyx_L8;
   }
 
-  /* "straininterpolationandintegration.pyx":960
- *             self.h_opt = c_copysign(10,h[0])
+  /* "straininterpolationandintegration.pyx":1435
+ *             self.h_opt = c_copysign(self.hmax,h[0])
  *         else:
  *             self.h_opt = h[0]*c_pow((1/self.err),1/(self.q+1))             # <<<<<<<<<<<<<<
  * 
@@ -15226,7 +15328,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   }
   __pyx_L8:;
 
-  /* "straininterpolationandintegration.pyx":962
+  /* "straininterpolationandintegration.pyx":1437
  *             self.h_opt = h[0]*c_pow((1/self.err),1/(self.q+1))
  * 
  *         if self.err < 1:             # <<<<<<<<<<<<<<
@@ -15236,7 +15338,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   __pyx_t_108 = ((__pyx_v_self->err < 1.0) != 0);
   if (__pyx_t_108) {
 
-    /* "straininterpolationandintegration.pyx":963
+    /* "straininterpolationandintegration.pyx":1438
  * 
  *         if self.err < 1:
  *             t[0] = t[0] + h[0]             # <<<<<<<<<<<<<<
@@ -15245,7 +15347,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
     (__pyx_v_t[0]) = ((__pyx_v_t[0]) + (__pyx_v_h[0]));
 
-    /* "straininterpolationandintegration.pyx":964
+    /* "straininterpolationandintegration.pyx":1439
  *         if self.err < 1:
  *             t[0] = t[0] + h[0]
  *             dcopy(3,x8,1,pos,1)             # <<<<<<<<<<<<<<
@@ -15254,7 +15356,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
     __pyx_f_33straininterpolationandintegration_dcopy(3, __pyx_v_x8, 1, __pyx_v_pos, 1);
 
-    /* "straininterpolationandintegration.pyx":965
+    /* "straininterpolationandintegration.pyx":1440
  *             t[0] = t[0] + h[0]
  *             dcopy(3,x8,1,pos,1)
  *             if self.maxfac*h[0] < self.fac*self.h_opt:             # <<<<<<<<<<<<<<
@@ -15264,7 +15366,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
     __pyx_t_108 = (((__pyx_v_self->maxfac * (__pyx_v_h[0])) < (__pyx_v_self->fac * __pyx_v_self->h_opt)) != 0);
     if (__pyx_t_108) {
 
-      /* "straininterpolationandintegration.pyx":966
+      /* "straininterpolationandintegration.pyx":1441
  *             dcopy(3,x8,1,pos,1)
  *             if self.maxfac*h[0] < self.fac*self.h_opt:
  *                 h[0] = self.maxfac*h[0]             # <<<<<<<<<<<<<<
@@ -15273,7 +15375,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
  */
       (__pyx_v_h[0]) = (__pyx_v_self->maxfac * (__pyx_v_h[0]));
 
-      /* "straininterpolationandintegration.pyx":965
+      /* "straininterpolationandintegration.pyx":1440
  *             t[0] = t[0] + h[0]
  *             dcopy(3,x8,1,pos,1)
  *             if self.maxfac*h[0] < self.fac*self.h_opt:             # <<<<<<<<<<<<<<
@@ -15283,7 +15385,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
       goto __pyx_L10;
     }
 
-    /* "straininterpolationandintegration.pyx":968
+    /* "straininterpolationandintegration.pyx":1443
  *                 h[0] = self.maxfac*h[0]
  *             else:
  *                 h[0] = self.fac*self.h_opt             # <<<<<<<<<<<<<<
@@ -15295,7 +15397,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
     }
     __pyx_L10:;
 
-    /* "straininterpolationandintegration.pyx":962
+    /* "straininterpolationandintegration.pyx":1437
  *             self.h_opt = h[0]*c_pow((1/self.err),1/(self.q+1))
  * 
  *         if self.err < 1:             # <<<<<<<<<<<<<<
@@ -15305,7 +15407,7 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
     goto __pyx_L9;
   }
 
-  /* "straininterpolationandintegration.pyx":970
+  /* "straininterpolationandintegration.pyx":1445
  *                 h[0] = self.fac*self.h_opt
  *         else:
  *             h[0] = self.fac*self.h_opt             # <<<<<<<<<<<<<<
@@ -15315,12 +15417,12 @@ static void __pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_(struct
   }
   __pyx_L9:;
 
-  /* "straininterpolationandintegration.pyx":779
+  /* "straininterpolationandintegration.pyx":1226
  *     @cython.boundscheck(False)
  *     @cython.cdivision(True)
  *     cdef void _ev_(self, double *t, double[::1] pos, double *h):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double[::1] k1 = self.k1, k2 = self.k2, k3 = self.k3, k4 = self.k4, k5 = self.k5, k6 = self.k6, k7 = self.k7, k8 = self.k8, k9 = self.k9, k10 = self.k10, k11 = self.k11, k12 = self.k12, k13 = self.k13, k_tmp = self.k_tmp
+ *         """
+ *         Dp87Strain._ev_(t,pos,h)
  */
 
   /* function exit code */
@@ -15389,7 +15491,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_10__r
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__17, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__18, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_Raise(__pyx_t_1, 0, 0, 0);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -15442,7 +15544,7 @@ static PyObject *__pyx_pf_33straininterpolationandintegration_10Dp87Strain_12__s
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")             # <<<<<<<<<<<<<<
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__18, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__19, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_Raise(__pyx_t_1, 0, 0, 0);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -15924,7 +16026,7 @@ static PyObject *__pyx_f_33straininterpolationandintegration___pyx_unpickle_Inte
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":215
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":215
  *         # experimental exception made for __getbuffer__ and __releasebuffer__
  *         # -- the details of this may change.
  *         def __getbuffer__(ndarray self, Py_buffer* info, int flags):             # <<<<<<<<<<<<<<
@@ -15972,7 +16074,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_v_info->obj = Py_None; __Pyx_INCREF(Py_None);
   __Pyx_GIVEREF(__pyx_v_info->obj);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":222
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":222
  * 
  *             cdef int i, ndim
  *             cdef int endian_detector = 1             # <<<<<<<<<<<<<<
@@ -15981,7 +16083,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_endian_detector = 1;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":223
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":223
  *             cdef int i, ndim
  *             cdef int endian_detector = 1
  *             cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)             # <<<<<<<<<<<<<<
@@ -15990,7 +16092,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_little_endian = ((((char *)(&__pyx_v_endian_detector))[0]) != 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":225
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":225
  *             cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)
  * 
  *             ndim = PyArray_NDIM(self)             # <<<<<<<<<<<<<<
@@ -15999,7 +16101,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_ndim = PyArray_NDIM(__pyx_v_self);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":227
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":227
  *             ndim = PyArray_NDIM(self)
  * 
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -16013,7 +16115,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     goto __pyx_L4_bool_binop_done;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":228
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":228
  * 
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_C_CONTIGUOUS)):             # <<<<<<<<<<<<<<
@@ -16024,7 +16126,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_t_1 = __pyx_t_2;
   __pyx_L4_bool_binop_done:;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":227
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":227
  *             ndim = PyArray_NDIM(self)
  * 
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -16033,20 +16135,20 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   if (unlikely(__pyx_t_1)) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":229
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":229
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_C_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not C contiguous")             # <<<<<<<<<<<<<<
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__19, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 229, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__20, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 229, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __PYX_ERR(2, 229, __pyx_L1_error)
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":227
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":227
  *             ndim = PyArray_NDIM(self)
  * 
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -16055,7 +16157,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":231
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":231
  *                 raise ValueError(u"ndarray is not C contiguous")
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -16069,7 +16171,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     goto __pyx_L7_bool_binop_done;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":232
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":232
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_F_CONTIGUOUS)):             # <<<<<<<<<<<<<<
@@ -16080,7 +16182,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_t_1 = __pyx_t_2;
   __pyx_L7_bool_binop_done:;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":231
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":231
  *                 raise ValueError(u"ndarray is not C contiguous")
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -16089,20 +16191,20 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   if (unlikely(__pyx_t_1)) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":233
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":233
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_F_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not Fortran contiguous")             # <<<<<<<<<<<<<<
  * 
  *             info.buf = PyArray_DATA(self)
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__20, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 233, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__21, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 233, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __PYX_ERR(2, 233, __pyx_L1_error)
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":231
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":231
  *                 raise ValueError(u"ndarray is not C contiguous")
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -16111,7 +16213,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":235
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":235
  *                 raise ValueError(u"ndarray is not Fortran contiguous")
  * 
  *             info.buf = PyArray_DATA(self)             # <<<<<<<<<<<<<<
@@ -16120,7 +16222,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->buf = PyArray_DATA(__pyx_v_self);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":236
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":236
  * 
  *             info.buf = PyArray_DATA(self)
  *             info.ndim = ndim             # <<<<<<<<<<<<<<
@@ -16129,7 +16231,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->ndim = __pyx_v_ndim;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":237
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":237
  *             info.buf = PyArray_DATA(self)
  *             info.ndim = ndim
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
@@ -16139,7 +16241,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_t_1 = (((sizeof(npy_intp)) != (sizeof(Py_ssize_t))) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":240
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":240
  *                 # Allocate new buffer for strides and shape info.
  *                 # This is allocated as one block, strides first.
  *                 info.strides = <Py_ssize_t*>PyObject_Malloc(sizeof(Py_ssize_t) * 2 * <size_t>ndim)             # <<<<<<<<<<<<<<
@@ -16148,7 +16250,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     __pyx_v_info->strides = ((Py_ssize_t *)PyObject_Malloc((((sizeof(Py_ssize_t)) * 2) * ((size_t)__pyx_v_ndim))));
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":241
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":241
  *                 # This is allocated as one block, strides first.
  *                 info.strides = <Py_ssize_t*>PyObject_Malloc(sizeof(Py_ssize_t) * 2 * <size_t>ndim)
  *                 info.shape = info.strides + ndim             # <<<<<<<<<<<<<<
@@ -16157,7 +16259,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     __pyx_v_info->shape = (__pyx_v_info->strides + __pyx_v_ndim);
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":242
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":242
  *                 info.strides = <Py_ssize_t*>PyObject_Malloc(sizeof(Py_ssize_t) * 2 * <size_t>ndim)
  *                 info.shape = info.strides + ndim
  *                 for i in range(ndim):             # <<<<<<<<<<<<<<
@@ -16169,7 +16271,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_5; __pyx_t_6+=1) {
       __pyx_v_i = __pyx_t_6;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":243
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":243
  *                 info.shape = info.strides + ndim
  *                 for i in range(ndim):
  *                     info.strides[i] = PyArray_STRIDES(self)[i]             # <<<<<<<<<<<<<<
@@ -16178,7 +16280,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
       (__pyx_v_info->strides[__pyx_v_i]) = (PyArray_STRIDES(__pyx_v_self)[__pyx_v_i]);
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":244
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":244
  *                 for i in range(ndim):
  *                     info.strides[i] = PyArray_STRIDES(self)[i]
  *                     info.shape[i] = PyArray_DIMS(self)[i]             # <<<<<<<<<<<<<<
@@ -16188,7 +16290,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       (__pyx_v_info->shape[__pyx_v_i]) = (PyArray_DIMS(__pyx_v_self)[__pyx_v_i]);
     }
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":237
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":237
  *             info.buf = PyArray_DATA(self)
  *             info.ndim = ndim
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
@@ -16198,7 +16300,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     goto __pyx_L9;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":246
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":246
  *                     info.shape[i] = PyArray_DIMS(self)[i]
  *             else:
  *                 info.strides = <Py_ssize_t*>PyArray_STRIDES(self)             # <<<<<<<<<<<<<<
@@ -16208,7 +16310,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   /*else*/ {
     __pyx_v_info->strides = ((Py_ssize_t *)PyArray_STRIDES(__pyx_v_self));
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":247
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":247
  *             else:
  *                 info.strides = <Py_ssize_t*>PyArray_STRIDES(self)
  *                 info.shape = <Py_ssize_t*>PyArray_DIMS(self)             # <<<<<<<<<<<<<<
@@ -16219,7 +16321,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   }
   __pyx_L9:;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":248
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":248
  *                 info.strides = <Py_ssize_t*>PyArray_STRIDES(self)
  *                 info.shape = <Py_ssize_t*>PyArray_DIMS(self)
  *             info.suboffsets = NULL             # <<<<<<<<<<<<<<
@@ -16228,7 +16330,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->suboffsets = NULL;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":249
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":249
  *                 info.shape = <Py_ssize_t*>PyArray_DIMS(self)
  *             info.suboffsets = NULL
  *             info.itemsize = PyArray_ITEMSIZE(self)             # <<<<<<<<<<<<<<
@@ -16237,7 +16339,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->itemsize = PyArray_ITEMSIZE(__pyx_v_self);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":250
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":250
  *             info.suboffsets = NULL
  *             info.itemsize = PyArray_ITEMSIZE(self)
  *             info.readonly = not PyArray_ISWRITEABLE(self)             # <<<<<<<<<<<<<<
@@ -16246,7 +16348,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->readonly = (!(PyArray_ISWRITEABLE(__pyx_v_self) != 0));
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":253
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":253
  * 
  *             cdef int t
  *             cdef char* f = NULL             # <<<<<<<<<<<<<<
@@ -16255,7 +16357,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_f = NULL;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":254
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":254
  *             cdef int t
  *             cdef char* f = NULL
  *             cdef dtype descr = self.descr             # <<<<<<<<<<<<<<
@@ -16267,7 +16369,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_v_descr = ((PyArray_Descr *)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":257
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":257
  *             cdef int offset
  * 
  *             info.obj = self             # <<<<<<<<<<<<<<
@@ -16280,7 +16382,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __Pyx_DECREF(__pyx_v_info->obj);
   __pyx_v_info->obj = ((PyObject *)__pyx_v_self);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":259
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":259
  *             info.obj = self
  * 
  *             if not PyDataType_HASFIELDS(descr):             # <<<<<<<<<<<<<<
@@ -16290,7 +16392,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_t_1 = ((!(PyDataType_HASFIELDS(__pyx_v_descr) != 0)) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":260
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":260
  * 
  *             if not PyDataType_HASFIELDS(descr):
  *                 t = descr.type_num             # <<<<<<<<<<<<<<
@@ -16300,7 +16402,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __pyx_t_4 = __pyx_v_descr->type_num;
     __pyx_v_t = __pyx_t_4;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":261
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":261
  *             if not PyDataType_HASFIELDS(descr):
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -16320,7 +16422,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     }
     __pyx_L15_next_or:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":262
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":262
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or
  *                     (descr.byteorder == c'<' and not little_endian)):             # <<<<<<<<<<<<<<
@@ -16337,7 +16439,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __pyx_t_1 = __pyx_t_2;
     __pyx_L14_bool_binop_done:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":261
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":261
  *             if not PyDataType_HASFIELDS(descr):
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -16346,20 +16448,20 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     if (unlikely(__pyx_t_1)) {
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":263
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":263
  *                 if ((descr.byteorder == c'>' and little_endian) or
  *                     (descr.byteorder == c'<' and not little_endian)):
  *                     raise ValueError(u"Non-native byte order not supported")             # <<<<<<<<<<<<<<
  *                 if   t == NPY_BYTE:        f = "b"
  *                 elif t == NPY_UBYTE:       f = "B"
  */
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__21, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 263, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__22, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 263, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_Raise(__pyx_t_3, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __PYX_ERR(2, 263, __pyx_L1_error)
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":261
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":261
  *             if not PyDataType_HASFIELDS(descr):
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -16368,7 +16470,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     }
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":264
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":264
  *                     (descr.byteorder == c'<' and not little_endian)):
  *                     raise ValueError(u"Non-native byte order not supported")
  *                 if   t == NPY_BYTE:        f = "b"             # <<<<<<<<<<<<<<
@@ -16380,7 +16482,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"b");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":265
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":265
  *                     raise ValueError(u"Non-native byte order not supported")
  *                 if   t == NPY_BYTE:        f = "b"
  *                 elif t == NPY_UBYTE:       f = "B"             # <<<<<<<<<<<<<<
@@ -16391,7 +16493,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"B");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":266
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":266
  *                 if   t == NPY_BYTE:        f = "b"
  *                 elif t == NPY_UBYTE:       f = "B"
  *                 elif t == NPY_SHORT:       f = "h"             # <<<<<<<<<<<<<<
@@ -16402,7 +16504,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"h");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":267
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":267
  *                 elif t == NPY_UBYTE:       f = "B"
  *                 elif t == NPY_SHORT:       f = "h"
  *                 elif t == NPY_USHORT:      f = "H"             # <<<<<<<<<<<<<<
@@ -16413,7 +16515,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"H");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":268
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":268
  *                 elif t == NPY_SHORT:       f = "h"
  *                 elif t == NPY_USHORT:      f = "H"
  *                 elif t == NPY_INT:         f = "i"             # <<<<<<<<<<<<<<
@@ -16424,7 +16526,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"i");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":269
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":269
  *                 elif t == NPY_USHORT:      f = "H"
  *                 elif t == NPY_INT:         f = "i"
  *                 elif t == NPY_UINT:        f = "I"             # <<<<<<<<<<<<<<
@@ -16435,7 +16537,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"I");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":270
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":270
  *                 elif t == NPY_INT:         f = "i"
  *                 elif t == NPY_UINT:        f = "I"
  *                 elif t == NPY_LONG:        f = "l"             # <<<<<<<<<<<<<<
@@ -16446,7 +16548,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"l");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":271
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":271
  *                 elif t == NPY_UINT:        f = "I"
  *                 elif t == NPY_LONG:        f = "l"
  *                 elif t == NPY_ULONG:       f = "L"             # <<<<<<<<<<<<<<
@@ -16457,7 +16559,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"L");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":272
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":272
  *                 elif t == NPY_LONG:        f = "l"
  *                 elif t == NPY_ULONG:       f = "L"
  *                 elif t == NPY_LONGLONG:    f = "q"             # <<<<<<<<<<<<<<
@@ -16468,7 +16570,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"q");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":273
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":273
  *                 elif t == NPY_ULONG:       f = "L"
  *                 elif t == NPY_LONGLONG:    f = "q"
  *                 elif t == NPY_ULONGLONG:   f = "Q"             # <<<<<<<<<<<<<<
@@ -16479,7 +16581,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"Q");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":274
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":274
  *                 elif t == NPY_LONGLONG:    f = "q"
  *                 elif t == NPY_ULONGLONG:   f = "Q"
  *                 elif t == NPY_FLOAT:       f = "f"             # <<<<<<<<<<<<<<
@@ -16490,7 +16592,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"f");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":275
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":275
  *                 elif t == NPY_ULONGLONG:   f = "Q"
  *                 elif t == NPY_FLOAT:       f = "f"
  *                 elif t == NPY_DOUBLE:      f = "d"             # <<<<<<<<<<<<<<
@@ -16501,7 +16603,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"d");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":276
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":276
  *                 elif t == NPY_FLOAT:       f = "f"
  *                 elif t == NPY_DOUBLE:      f = "d"
  *                 elif t == NPY_LONGDOUBLE:  f = "g"             # <<<<<<<<<<<<<<
@@ -16512,7 +16614,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"g");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":277
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":277
  *                 elif t == NPY_DOUBLE:      f = "d"
  *                 elif t == NPY_LONGDOUBLE:  f = "g"
  *                 elif t == NPY_CFLOAT:      f = "Zf"             # <<<<<<<<<<<<<<
@@ -16523,7 +16625,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"Zf");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":278
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":278
  *                 elif t == NPY_LONGDOUBLE:  f = "g"
  *                 elif t == NPY_CFLOAT:      f = "Zf"
  *                 elif t == NPY_CDOUBLE:     f = "Zd"             # <<<<<<<<<<<<<<
@@ -16534,7 +16636,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"Zd");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":279
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":279
  *                 elif t == NPY_CFLOAT:      f = "Zf"
  *                 elif t == NPY_CDOUBLE:     f = "Zd"
  *                 elif t == NPY_CLONGDOUBLE: f = "Zg"             # <<<<<<<<<<<<<<
@@ -16545,7 +16647,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"Zg");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":280
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":280
  *                 elif t == NPY_CDOUBLE:     f = "Zd"
  *                 elif t == NPY_CLONGDOUBLE: f = "Zg"
  *                 elif t == NPY_OBJECT:      f = "O"             # <<<<<<<<<<<<<<
@@ -16557,7 +16659,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       default:
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":282
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":282
  *                 elif t == NPY_OBJECT:      f = "O"
  *                 else:
  *                     raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)             # <<<<<<<<<<<<<<
@@ -16578,7 +16680,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
     }
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":283
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":283
  *                 else:
  *                     raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)
  *                 info.format = f             # <<<<<<<<<<<<<<
@@ -16587,7 +16689,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     __pyx_v_info->format = __pyx_v_f;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":284
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":284
  *                     raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)
  *                 info.format = f
  *                 return             # <<<<<<<<<<<<<<
@@ -16597,7 +16699,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __pyx_r = 0;
     goto __pyx_L0;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":259
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":259
  *             info.obj = self
  * 
  *             if not PyDataType_HASFIELDS(descr):             # <<<<<<<<<<<<<<
@@ -16606,7 +16708,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":286
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":286
  *                 return
  *             else:
  *                 info.format = <char*>PyObject_Malloc(_buffer_format_string_len)             # <<<<<<<<<<<<<<
@@ -16616,7 +16718,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   /*else*/ {
     __pyx_v_info->format = ((char *)PyObject_Malloc(0xFF));
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":287
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":287
  *             else:
  *                 info.format = <char*>PyObject_Malloc(_buffer_format_string_len)
  *                 info.format[0] = c'^' # Native data types, manual alignment             # <<<<<<<<<<<<<<
@@ -16625,7 +16727,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     (__pyx_v_info->format[0]) = '^';
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":288
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":288
  *                 info.format = <char*>PyObject_Malloc(_buffer_format_string_len)
  *                 info.format[0] = c'^' # Native data types, manual alignment
  *                 offset = 0             # <<<<<<<<<<<<<<
@@ -16634,7 +16736,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     __pyx_v_offset = 0;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":289
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":289
  *                 info.format[0] = c'^' # Native data types, manual alignment
  *                 offset = 0
  *                 f = _util_dtypestring(descr, info.format + 1,             # <<<<<<<<<<<<<<
@@ -16644,7 +16746,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __pyx_t_8 = __pyx_f_5numpy__util_dtypestring(__pyx_v_descr, (__pyx_v_info->format + 1), (__pyx_v_info->format + 0xFF), (&__pyx_v_offset)); if (unlikely(__pyx_t_8 == ((char *)NULL))) __PYX_ERR(2, 289, __pyx_L1_error)
     __pyx_v_f = __pyx_t_8;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":292
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":292
  *                                       info.format + _buffer_format_string_len,
  *                                       &offset)
  *                 f[0] = c'\0' # Terminate format string             # <<<<<<<<<<<<<<
@@ -16654,7 +16756,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     (__pyx_v_f[0]) = '\x00';
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":215
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":215
  *         # experimental exception made for __getbuffer__ and __releasebuffer__
  *         # -- the details of this may change.
  *         def __getbuffer__(ndarray self, Py_buffer* info, int flags):             # <<<<<<<<<<<<<<
@@ -16686,7 +16788,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":294
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":294
  *                 f[0] = c'\0' # Terminate format string
  * 
  *         def __releasebuffer__(ndarray self, Py_buffer* info):             # <<<<<<<<<<<<<<
@@ -16710,7 +16812,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__releasebuffer__", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":295
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":295
  * 
  *         def __releasebuffer__(ndarray self, Py_buffer* info):
  *             if PyArray_HASFIELDS(self):             # <<<<<<<<<<<<<<
@@ -16720,7 +16822,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
   __pyx_t_1 = (PyArray_HASFIELDS(__pyx_v_self) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":296
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":296
  *         def __releasebuffer__(ndarray self, Py_buffer* info):
  *             if PyArray_HASFIELDS(self):
  *                 PyObject_Free(info.format)             # <<<<<<<<<<<<<<
@@ -16729,7 +16831,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
  */
     PyObject_Free(__pyx_v_info->format);
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":295
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":295
  * 
  *         def __releasebuffer__(ndarray self, Py_buffer* info):
  *             if PyArray_HASFIELDS(self):             # <<<<<<<<<<<<<<
@@ -16738,7 +16840,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
  */
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":297
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":297
  *             if PyArray_HASFIELDS(self):
  *                 PyObject_Free(info.format)
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
@@ -16748,7 +16850,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
   __pyx_t_1 = (((sizeof(npy_intp)) != (sizeof(Py_ssize_t))) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":298
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":298
  *                 PyObject_Free(info.format)
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):
  *                 PyObject_Free(info.strides)             # <<<<<<<<<<<<<<
@@ -16757,7 +16859,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
  */
     PyObject_Free(__pyx_v_info->strides);
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":297
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":297
  *             if PyArray_HASFIELDS(self):
  *                 PyObject_Free(info.format)
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
@@ -16766,7 +16868,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
  */
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":294
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":294
  *                 f[0] = c'\0' # Terminate format string
  * 
  *         def __releasebuffer__(ndarray self, Py_buffer* info):             # <<<<<<<<<<<<<<
@@ -16778,7 +16880,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
   __Pyx_RefNannyFinishContext();
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":775
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":775
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -16792,7 +16894,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew1", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":776
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":776
  * 
  * cdef inline object PyArray_MultiIterNew1(a):
  *     return PyArray_MultiIterNew(1, <void*>a)             # <<<<<<<<<<<<<<
@@ -16806,7 +16908,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":775
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":775
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -16825,7 +16927,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":778
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":778
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -16839,7 +16941,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew2", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":779
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":779
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)             # <<<<<<<<<<<<<<
@@ -16853,7 +16955,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":778
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":778
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -16872,7 +16974,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":781
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":781
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -16886,7 +16988,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew3", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":782
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":782
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)             # <<<<<<<<<<<<<<
@@ -16900,7 +17002,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":781
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":781
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -16919,7 +17021,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":784
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":784
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -16933,7 +17035,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew4", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":785
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":785
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)             # <<<<<<<<<<<<<<
@@ -16947,7 +17049,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":784
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":784
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -16966,7 +17068,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":787
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":787
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -16980,7 +17082,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew5", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":788
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":788
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)             # <<<<<<<<<<<<<<
@@ -16994,7 +17096,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":787
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":787
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -17013,7 +17115,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":790
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":790
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -17027,7 +17129,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("PyDataType_SHAPE", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":791
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":791
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -17037,7 +17139,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   __pyx_t_1 = (PyDataType_HASSUBARRAY(__pyx_v_d) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":792
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":792
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):
  *         return <tuple>d.subarray.shape             # <<<<<<<<<<<<<<
@@ -17049,7 +17151,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     __pyx_r = ((PyObject*)__pyx_v_d->subarray->shape);
     goto __pyx_L0;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":791
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":791
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -17058,7 +17160,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
  */
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":794
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":794
  *         return <tuple>d.subarray.shape
  *     else:
  *         return ()             # <<<<<<<<<<<<<<
@@ -17072,7 +17174,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     goto __pyx_L0;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":790
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":790
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -17087,7 +17189,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":796
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":796
  *         return ()
  * 
  * cdef inline char* _util_dtypestring(dtype descr, char* f, char* end, int* offset) except NULL:             # <<<<<<<<<<<<<<
@@ -17116,7 +17218,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   char *__pyx_t_9;
   __Pyx_RefNannySetupContext("_util_dtypestring", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":801
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":801
  * 
  *     cdef dtype child
  *     cdef int endian_detector = 1             # <<<<<<<<<<<<<<
@@ -17125,7 +17227,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
   __pyx_v_endian_detector = 1;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":802
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":802
  *     cdef dtype child
  *     cdef int endian_detector = 1
  *     cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)             # <<<<<<<<<<<<<<
@@ -17134,7 +17236,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
   __pyx_v_little_endian = ((((char *)(&__pyx_v_endian_detector))[0]) != 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":805
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":805
  *     cdef tuple fields
  * 
  *     for childname in descr.names:             # <<<<<<<<<<<<<<
@@ -17157,7 +17259,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __Pyx_XDECREF_SET(__pyx_v_childname, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":806
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":806
  * 
  *     for childname in descr.names:
  *         fields = descr.fields[childname]             # <<<<<<<<<<<<<<
@@ -17174,7 +17276,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __Pyx_XDECREF_SET(__pyx_v_fields, ((PyObject*)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":807
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":807
  *     for childname in descr.names:
  *         fields = descr.fields[childname]
  *         child, new_offset = fields             # <<<<<<<<<<<<<<
@@ -17209,7 +17311,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __Pyx_XDECREF_SET(__pyx_v_new_offset, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":809
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":809
  *         child, new_offset = fields
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:             # <<<<<<<<<<<<<<
@@ -17226,20 +17328,20 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_6 = ((((__pyx_v_end - __pyx_v_f) - ((int)__pyx_t_5)) < 15) != 0);
     if (unlikely(__pyx_t_6)) {
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":810
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":810
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")             # <<<<<<<<<<<<<<
  * 
  *         if ((child.byteorder == c'>' and little_endian) or
  */
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__22, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 810, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__23, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 810, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_Raise(__pyx_t_3, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __PYX_ERR(2, 810, __pyx_L1_error)
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":809
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":809
  *         child, new_offset = fields
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:             # <<<<<<<<<<<<<<
@@ -17248,7 +17350,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
     }
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":812
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":812
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
  * 
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -17268,7 +17370,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     }
     __pyx_L8_next_or:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":813
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":813
  * 
  *         if ((child.byteorder == c'>' and little_endian) or
  *             (child.byteorder == c'<' and not little_endian)):             # <<<<<<<<<<<<<<
@@ -17285,7 +17387,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_6 = __pyx_t_7;
     __pyx_L7_bool_binop_done:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":812
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":812
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
  * 
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -17294,20 +17396,20 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
     if (unlikely(__pyx_t_6)) {
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":814
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":814
  *         if ((child.byteorder == c'>' and little_endian) or
  *             (child.byteorder == c'<' and not little_endian)):
  *             raise ValueError(u"Non-native byte order not supported")             # <<<<<<<<<<<<<<
  *             # One could encode it in the format string and have Cython
  *             # complain instead, BUT: < and > in format strings also imply
  */
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__23, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 814, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__24, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(2, 814, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_Raise(__pyx_t_3, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __PYX_ERR(2, 814, __pyx_L1_error)
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":812
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":812
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
  * 
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -17316,7 +17418,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
     }
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":824
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":824
  * 
  *         # Output padding bytes
  *         while offset[0] < new_offset:             # <<<<<<<<<<<<<<
@@ -17332,7 +17434,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       if (!__pyx_t_6) break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":825
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":825
  *         # Output padding bytes
  *         while offset[0] < new_offset:
  *             f[0] = 120 # "x"; pad byte             # <<<<<<<<<<<<<<
@@ -17341,7 +17443,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       (__pyx_v_f[0]) = 0x78;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":826
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":826
  *         while offset[0] < new_offset:
  *             f[0] = 120 # "x"; pad byte
  *             f += 1             # <<<<<<<<<<<<<<
@@ -17350,7 +17452,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       __pyx_v_f = (__pyx_v_f + 1);
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":827
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":827
  *             f[0] = 120 # "x"; pad byte
  *             f += 1
  *             offset[0] += 1             # <<<<<<<<<<<<<<
@@ -17361,7 +17463,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       (__pyx_v_offset[__pyx_t_8]) = ((__pyx_v_offset[__pyx_t_8]) + 1);
     }
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":829
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":829
  *             offset[0] += 1
  * 
  *         offset[0] += child.itemsize             # <<<<<<<<<<<<<<
@@ -17371,7 +17473,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_8 = 0;
     (__pyx_v_offset[__pyx_t_8]) = ((__pyx_v_offset[__pyx_t_8]) + __pyx_v_child->elsize);
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":831
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":831
  *         offset[0] += child.itemsize
  * 
  *         if not PyDataType_HASFIELDS(child):             # <<<<<<<<<<<<<<
@@ -17381,7 +17483,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_6 = ((!(PyDataType_HASFIELDS(__pyx_v_child) != 0)) != 0);
     if (__pyx_t_6) {
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":832
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":832
  * 
  *         if not PyDataType_HASFIELDS(child):
  *             t = child.type_num             # <<<<<<<<<<<<<<
@@ -17393,7 +17495,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_XDECREF_SET(__pyx_v_t, __pyx_t_4);
       __pyx_t_4 = 0;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":833
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":833
  *         if not PyDataType_HASFIELDS(child):
  *             t = child.type_num
  *             if end - f < 5:             # <<<<<<<<<<<<<<
@@ -17403,20 +17505,20 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __pyx_t_6 = (((__pyx_v_end - __pyx_v_f) < 5) != 0);
       if (unlikely(__pyx_t_6)) {
 
-        /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":834
+        /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":834
  *             t = child.type_num
  *             if end - f < 5:
  *                 raise RuntimeError(u"Format string allocated too short.")             # <<<<<<<<<<<<<<
  * 
  *             # Until ticket #99 is fixed, use integers to avoid warnings
  */
-        __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__24, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(2, 834, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__25, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(2, 834, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_Raise(__pyx_t_4, 0, 0, 0);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __PYX_ERR(2, 834, __pyx_L1_error)
 
-        /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":833
+        /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":833
  *         if not PyDataType_HASFIELDS(child):
  *             t = child.type_num
  *             if end - f < 5:             # <<<<<<<<<<<<<<
@@ -17425,7 +17527,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":837
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":837
  * 
  *             # Until ticket #99 is fixed, use integers to avoid warnings
  *             if   t == NPY_BYTE:        f[0] =  98 #"b"             # <<<<<<<<<<<<<<
@@ -17443,7 +17545,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":838
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":838
  *             # Until ticket #99 is fixed, use integers to avoid warnings
  *             if   t == NPY_BYTE:        f[0] =  98 #"b"
  *             elif t == NPY_UBYTE:       f[0] =  66 #"B"             # <<<<<<<<<<<<<<
@@ -17461,7 +17563,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":839
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":839
  *             if   t == NPY_BYTE:        f[0] =  98 #"b"
  *             elif t == NPY_UBYTE:       f[0] =  66 #"B"
  *             elif t == NPY_SHORT:       f[0] = 104 #"h"             # <<<<<<<<<<<<<<
@@ -17479,7 +17581,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":840
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":840
  *             elif t == NPY_UBYTE:       f[0] =  66 #"B"
  *             elif t == NPY_SHORT:       f[0] = 104 #"h"
  *             elif t == NPY_USHORT:      f[0] =  72 #"H"             # <<<<<<<<<<<<<<
@@ -17497,7 +17599,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":841
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":841
  *             elif t == NPY_SHORT:       f[0] = 104 #"h"
  *             elif t == NPY_USHORT:      f[0] =  72 #"H"
  *             elif t == NPY_INT:         f[0] = 105 #"i"             # <<<<<<<<<<<<<<
@@ -17515,7 +17617,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":842
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":842
  *             elif t == NPY_USHORT:      f[0] =  72 #"H"
  *             elif t == NPY_INT:         f[0] = 105 #"i"
  *             elif t == NPY_UINT:        f[0] =  73 #"I"             # <<<<<<<<<<<<<<
@@ -17533,7 +17635,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":843
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":843
  *             elif t == NPY_INT:         f[0] = 105 #"i"
  *             elif t == NPY_UINT:        f[0] =  73 #"I"
  *             elif t == NPY_LONG:        f[0] = 108 #"l"             # <<<<<<<<<<<<<<
@@ -17551,7 +17653,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":844
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":844
  *             elif t == NPY_UINT:        f[0] =  73 #"I"
  *             elif t == NPY_LONG:        f[0] = 108 #"l"
  *             elif t == NPY_ULONG:       f[0] = 76  #"L"             # <<<<<<<<<<<<<<
@@ -17569,7 +17671,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":845
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":845
  *             elif t == NPY_LONG:        f[0] = 108 #"l"
  *             elif t == NPY_ULONG:       f[0] = 76  #"L"
  *             elif t == NPY_LONGLONG:    f[0] = 113 #"q"             # <<<<<<<<<<<<<<
@@ -17587,7 +17689,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":846
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":846
  *             elif t == NPY_ULONG:       f[0] = 76  #"L"
  *             elif t == NPY_LONGLONG:    f[0] = 113 #"q"
  *             elif t == NPY_ULONGLONG:   f[0] = 81  #"Q"             # <<<<<<<<<<<<<<
@@ -17605,7 +17707,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":847
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":847
  *             elif t == NPY_LONGLONG:    f[0] = 113 #"q"
  *             elif t == NPY_ULONGLONG:   f[0] = 81  #"Q"
  *             elif t == NPY_FLOAT:       f[0] = 102 #"f"             # <<<<<<<<<<<<<<
@@ -17623,7 +17725,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":848
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":848
  *             elif t == NPY_ULONGLONG:   f[0] = 81  #"Q"
  *             elif t == NPY_FLOAT:       f[0] = 102 #"f"
  *             elif t == NPY_DOUBLE:      f[0] = 100 #"d"             # <<<<<<<<<<<<<<
@@ -17641,7 +17743,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":849
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":849
  *             elif t == NPY_FLOAT:       f[0] = 102 #"f"
  *             elif t == NPY_DOUBLE:      f[0] = 100 #"d"
  *             elif t == NPY_LONGDOUBLE:  f[0] = 103 #"g"             # <<<<<<<<<<<<<<
@@ -17659,7 +17761,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":850
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":850
  *             elif t == NPY_DOUBLE:      f[0] = 100 #"d"
  *             elif t == NPY_LONGDOUBLE:  f[0] = 103 #"g"
  *             elif t == NPY_CFLOAT:      f[0] = 90; f[1] = 102; f += 1 # Zf             # <<<<<<<<<<<<<<
@@ -17679,7 +17781,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":851
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":851
  *             elif t == NPY_LONGDOUBLE:  f[0] = 103 #"g"
  *             elif t == NPY_CFLOAT:      f[0] = 90; f[1] = 102; f += 1 # Zf
  *             elif t == NPY_CDOUBLE:     f[0] = 90; f[1] = 100; f += 1 # Zd             # <<<<<<<<<<<<<<
@@ -17699,7 +17801,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":852
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":852
  *             elif t == NPY_CFLOAT:      f[0] = 90; f[1] = 102; f += 1 # Zf
  *             elif t == NPY_CDOUBLE:     f[0] = 90; f[1] = 100; f += 1 # Zd
  *             elif t == NPY_CLONGDOUBLE: f[0] = 90; f[1] = 103; f += 1 # Zg             # <<<<<<<<<<<<<<
@@ -17719,7 +17821,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":853
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":853
  *             elif t == NPY_CDOUBLE:     f[0] = 90; f[1] = 100; f += 1 # Zd
  *             elif t == NPY_CLONGDOUBLE: f[0] = 90; f[1] = 103; f += 1 # Zg
  *             elif t == NPY_OBJECT:      f[0] = 79 #"O"             # <<<<<<<<<<<<<<
@@ -17737,7 +17839,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":855
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":855
  *             elif t == NPY_OBJECT:      f[0] = 79 #"O"
  *             else:
  *                 raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)             # <<<<<<<<<<<<<<
@@ -17756,7 +17858,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       }
       __pyx_L15:;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":856
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":856
  *             else:
  *                 raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)
  *             f += 1             # <<<<<<<<<<<<<<
@@ -17765,7 +17867,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       __pyx_v_f = (__pyx_v_f + 1);
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":831
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":831
  *         offset[0] += child.itemsize
  * 
  *         if not PyDataType_HASFIELDS(child):             # <<<<<<<<<<<<<<
@@ -17775,7 +17877,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       goto __pyx_L13;
     }
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":860
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":860
  *             # Cython ignores struct boundary information ("T{...}"),
  *             # so don't output it
  *             f = _util_dtypestring(child, f, end, offset)             # <<<<<<<<<<<<<<
@@ -17788,7 +17890,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     }
     __pyx_L13:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":805
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":805
  *     cdef tuple fields
  * 
  *     for childname in descr.names:             # <<<<<<<<<<<<<<
@@ -17798,7 +17900,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":861
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":861
  *             # so don't output it
  *             f = _util_dtypestring(child, f, end, offset)
  *     return f             # <<<<<<<<<<<<<<
@@ -17808,7 +17910,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   __pyx_r = __pyx_v_f;
   goto __pyx_L0;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":796
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":796
  *         return ()
  * 
  * cdef inline char* _util_dtypestring(dtype descr, char* f, char* end, int* offset) except NULL:             # <<<<<<<<<<<<<<
@@ -17833,7 +17935,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":977
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":977
  * 
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -17848,7 +17950,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   int __pyx_t_2;
   __Pyx_RefNannySetupContext("set_array_base", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":979
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":979
  * cdef inline void set_array_base(ndarray arr, object base):
  *      cdef PyObject* baseptr
  *      if base is None:             # <<<<<<<<<<<<<<
@@ -17859,7 +17961,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":980
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":980
  *      cdef PyObject* baseptr
  *      if base is None:
  *          baseptr = NULL             # <<<<<<<<<<<<<<
@@ -17868,7 +17970,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
     __pyx_v_baseptr = NULL;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":979
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":979
  * cdef inline void set_array_base(ndarray arr, object base):
  *      cdef PyObject* baseptr
  *      if base is None:             # <<<<<<<<<<<<<<
@@ -17878,7 +17980,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
     goto __pyx_L3;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":982
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":982
  *          baseptr = NULL
  *      else:
  *          Py_INCREF(base) # important to do this before decref below!             # <<<<<<<<<<<<<<
@@ -17888,7 +17990,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   /*else*/ {
     Py_INCREF(__pyx_v_base);
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":983
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":983
  *      else:
  *          Py_INCREF(base) # important to do this before decref below!
  *          baseptr = <PyObject*>base             # <<<<<<<<<<<<<<
@@ -17899,7 +18001,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   }
   __pyx_L3:;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":984
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":984
  *          Py_INCREF(base) # important to do this before decref below!
  *          baseptr = <PyObject*>base
  *      Py_XDECREF(arr.base)             # <<<<<<<<<<<<<<
@@ -17908,7 +18010,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   Py_XDECREF(__pyx_v_arr->base);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":985
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":985
  *          baseptr = <PyObject*>base
  *      Py_XDECREF(arr.base)
  *      arr.base = baseptr             # <<<<<<<<<<<<<<
@@ -17917,7 +18019,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   __pyx_v_arr->base = __pyx_v_baseptr;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":977
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":977
  * 
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -17929,7 +18031,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyFinishContext();
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":987
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":987
  *      arr.base = baseptr
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -17943,7 +18045,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("get_array_base", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":988
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":988
  * 
  * cdef inline object get_array_base(ndarray arr):
  *     if arr.base is NULL:             # <<<<<<<<<<<<<<
@@ -17953,7 +18055,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_t_1 = ((__pyx_v_arr->base == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":989
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":989
  * cdef inline object get_array_base(ndarray arr):
  *     if arr.base is NULL:
  *         return None             # <<<<<<<<<<<<<<
@@ -17964,7 +18066,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":988
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":988
  * 
  * cdef inline object get_array_base(ndarray arr):
  *     if arr.base is NULL:             # <<<<<<<<<<<<<<
@@ -17973,7 +18075,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":991
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":991
  *         return None
  *     else:
  *         return <object>arr.base             # <<<<<<<<<<<<<<
@@ -17987,7 +18089,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     goto __pyx_L0;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":987
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":987
  *      arr.base = baseptr
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -18002,7 +18104,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":996
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":996
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -18023,7 +18125,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("import_array", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":997
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":997
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -18039,7 +18141,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":998
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":998
  * cdef inline int import_array() except -1:
  *     try:
  *         _import_array()             # <<<<<<<<<<<<<<
@@ -18048,7 +18150,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  */
       __pyx_t_4 = _import_array(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 998, __pyx_L3_error)
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":997
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":997
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -18062,7 +18164,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":999
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":999
  *     try:
  *         _import_array()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -18077,14 +18179,14 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1000
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1000
  *         _import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
  * 
  * cdef inline int import_umath() except -1:
  */
-      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_ImportError, __pyx_tuple__25, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(2, 1000, __pyx_L5_except_error)
+      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_ImportError, __pyx_tuple__26, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(2, 1000, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_Raise(__pyx_t_8, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -18093,7 +18195,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":997
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":997
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -18108,7 +18210,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":996
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":996
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -18131,7 +18233,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1002
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1002
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -18152,7 +18254,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("import_umath", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1003
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1003
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -18168,7 +18270,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1004
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1004
  * cdef inline int import_umath() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -18177,7 +18279,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 1004, __pyx_L3_error)
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1003
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1003
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -18191,7 +18293,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1005
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1005
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -18206,14 +18308,14 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1006
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1006
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
  * 
  * cdef inline int import_ufunc() except -1:
  */
-      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_ImportError, __pyx_tuple__26, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(2, 1006, __pyx_L5_except_error)
+      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_ImportError, __pyx_tuple__27, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(2, 1006, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_Raise(__pyx_t_8, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -18222,7 +18324,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1003
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1003
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -18237,7 +18339,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1002
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1002
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -18260,7 +18362,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1008
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1008
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -18281,7 +18383,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("import_ufunc", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1009
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1009
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -18297,7 +18399,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1010
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1010
  * cdef inline int import_ufunc() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -18306,7 +18408,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 1010, __pyx_L3_error)
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1009
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1009
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -18320,7 +18422,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1011
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1011
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -18334,12 +18436,12 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1012
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1012
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
  */
-      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_ImportError, __pyx_tuple__27, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(2, 1012, __pyx_L5_except_error)
+      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_builtin_ImportError, __pyx_tuple__28, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(2, 1012, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_Raise(__pyx_t_8, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -18348,7 +18450,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1009
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1009
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -18363,7 +18465,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1008
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1008
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -18583,7 +18685,7 @@ static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __
  * 
  *         if itemsize <= 0:
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__28, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__29, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -18615,7 +18717,7 @@ static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __
  * 
  *         if not isinstance(format, bytes):
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__29, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 135, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__30, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 135, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -18650,7 +18752,7 @@ static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __
  */
     __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_format, __pyx_n_s_encode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 138, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__30, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__31, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 138, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF_SET(__pyx_v_format, __pyx_t_5);
@@ -18730,7 +18832,7 @@ static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __
  * 
  * 
  */
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_MemoryError, __pyx_tuple__31, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 147, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_MemoryError, __pyx_tuple__32, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 147, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_Raise(__pyx_t_5, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -19004,7 +19106,7 @@ static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __
  * 
  *             if self.dtype_is_object:
  */
-      __pyx_t_10 = __Pyx_PyObject_Call(__pyx_builtin_MemoryError, __pyx_tuple__32, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 175, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_Call(__pyx_builtin_MemoryError, __pyx_tuple__33, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 175, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_Raise(__pyx_t_10, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
@@ -19245,7 +19347,7 @@ static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array_2__getbuffer__(stru
  *         info.buf = self.data
  *         info.len = self.len
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__33, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 191, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__34, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 191, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -19961,7 +20063,7 @@ static PyObject *__pyx_pf___pyx_array___reduce_cython__(CYTHON_UNUSED struct __p
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__34, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__35, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_Raise(__pyx_t_1, 0, 0, 0);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -20014,7 +20116,7 @@ static PyObject *__pyx_pf___pyx_array_2__setstate_cython__(CYTHON_UNUSED struct 
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")             # <<<<<<<<<<<<<<
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__35, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__36, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_Raise(__pyx_t_1, 0, 0, 0);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -21658,7 +21760,7 @@ static int __pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_6__setit
  * 
  *         have_slices, index = _unellipsify(index, self.view.ndim)
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__36, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 413, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__37, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 413, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -22685,7 +22787,7 @@ static PyObject *__pyx_memoryview_convert_item_to_object(struct __pyx_memoryview
  *         else:
  *             if len(self.view.format) == 1:
  */
-      __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__37, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 490, __pyx_L5_except_error)
+      __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__38, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 490, __pyx_L5_except_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_Raise(__pyx_t_6, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -23041,7 +23143,7 @@ static int __pyx_memoryview___pyx_pf_15View_dot_MemoryView_10memoryview_8__getbu
  * 
  *         if flags & PyBUF_STRIDES:
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__38, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 515, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__39, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 515, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -23581,7 +23683,7 @@ static PyObject *__pyx_pf_15View_dot_MemoryView_10memoryview_7strides___get__(st
  * 
  *         return tuple([stride for stride in self.view.strides[:self.view.ndim]])
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__39, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 565, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__40, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -23695,7 +23797,7 @@ static PyObject *__pyx_pf_15View_dot_MemoryView_10memoryview_10suboffsets___get_
     __Pyx_XDECREF(__pyx_r);
     __pyx_t_2 = __Pyx_PyInt_From_int(__pyx_v_self->view.ndim); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 572, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = PyNumber_Multiply(__pyx_tuple__40, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 572, __pyx_L1_error)
+    __pyx_t_3 = PyNumber_Multiply(__pyx_tuple__41, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 572, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_r = __pyx_t_3;
@@ -24696,7 +24798,7 @@ static PyObject *__pyx_pf___pyx_memoryview___reduce_cython__(CYTHON_UNUSED struc
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__41, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__42, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_Raise(__pyx_t_1, 0, 0, 0);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -24749,7 +24851,7 @@ static PyObject *__pyx_pf___pyx_memoryview_2__setstate_cython__(CYTHON_UNUSED st
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")             # <<<<<<<<<<<<<<
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__42, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__43, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_Raise(__pyx_t_1, 0, 0, 0);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -25100,9 +25202,9 @@ static PyObject *_unellipsify(PyObject *__pyx_v_index, int __pyx_v_ndim) {
         __Pyx_GOTREF(__pyx_t_7);
         { Py_ssize_t __pyx_temp;
           for (__pyx_temp=0; __pyx_temp < ((__pyx_v_ndim - __pyx_t_8) + 1); __pyx_temp++) {
-            __Pyx_INCREF(__pyx_slice__43);
-            __Pyx_GIVEREF(__pyx_slice__43);
-            PyList_SET_ITEM(__pyx_t_7, __pyx_temp, __pyx_slice__43);
+            __Pyx_INCREF(__pyx_slice__44);
+            __Pyx_GIVEREF(__pyx_slice__44);
+            PyList_SET_ITEM(__pyx_t_7, __pyx_temp, __pyx_slice__44);
           }
         }
         __pyx_t_9 = __Pyx_PyList_Extend(__pyx_v_result, __pyx_t_7); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 677, __pyx_L1_error)
@@ -25135,7 +25237,7 @@ static PyObject *_unellipsify(PyObject *__pyx_v_index, int __pyx_v_ndim) {
  *         else:
  */
       /*else*/ {
-        __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_result, __pyx_slice__44); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 680, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyList_Append(__pyx_v_result, __pyx_slice__45); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 680, __pyx_L1_error)
       }
       __pyx_L7:;
 
@@ -25275,9 +25377,9 @@ static PyObject *_unellipsify(PyObject *__pyx_v_index, int __pyx_v_ndim) {
     __Pyx_GOTREF(__pyx_t_3);
     { Py_ssize_t __pyx_temp;
       for (__pyx_temp=0; __pyx_temp < __pyx_v_nslices; __pyx_temp++) {
-        __Pyx_INCREF(__pyx_slice__45);
-        __Pyx_GIVEREF(__pyx_slice__45);
-        PyList_SET_ITEM(__pyx_t_3, __pyx_temp, __pyx_slice__45);
+        __Pyx_INCREF(__pyx_slice__46);
+        __Pyx_GIVEREF(__pyx_slice__46);
+        PyList_SET_ITEM(__pyx_t_3, __pyx_temp, __pyx_slice__46);
       }
     }
     __pyx_t_9 = __Pyx_PyList_Extend(__pyx_v_result, __pyx_t_3); if (unlikely(__pyx_t_9 == ((int)-1))) __PYX_ERR(0, 691, __pyx_L1_error)
@@ -25401,7 +25503,7 @@ static PyObject *assert_direct_dimensions(Py_ssize_t *__pyx_v_suboffsets, int __
  * 
  * 
  */
-      __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__46, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 698, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__47, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 698, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_Raise(__pyx_t_5, 0, 0, 0);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -27564,7 +27666,7 @@ static PyObject *__pyx_pf___pyx_memoryviewslice___reduce_cython__(CYTHON_UNUSED 
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__47, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__48, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_Raise(__pyx_t_1, 0, 0, 0);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -27617,7 +27719,7 @@ static PyObject *__pyx_pf___pyx_memoryviewslice_2__setstate_cython__(CYTHON_UNUS
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")             # <<<<<<<<<<<<<<
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__48, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__49, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_Raise(__pyx_t_1, 0, 0, 0);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -31385,8 +31487,8 @@ static PyObject *__pyx_format_from_typeinfo(__Pyx_TypeInfo *__pyx_v_type) {
  *         else:
  *             alignment = b''
  */
-      __Pyx_INCREF(__pyx_kp_b__49);
-      __pyx_v_alignment = __pyx_kp_b__49;
+      __Pyx_INCREF(__pyx_kp_b__50);
+      __pyx_v_alignment = __pyx_kp_b__50;
 
       /* "BufferFormatFromTypeInfo":1467
  *         assert type.fields != NULL and type.fields.type != NULL
@@ -31406,8 +31508,8 @@ static PyObject *__pyx_format_from_typeinfo(__Pyx_TypeInfo *__pyx_v_type) {
  *         parts = [b"T{"]
  */
     /*else*/ {
-      __Pyx_INCREF(__pyx_kp_b__50);
-      __pyx_v_alignment = __pyx_kp_b__50;
+      __Pyx_INCREF(__pyx_kp_b__51);
+      __pyx_v_alignment = __pyx_kp_b__51;
     }
     __pyx_L6:;
 
@@ -31466,7 +31568,7 @@ static PyObject *__pyx_format_from_typeinfo(__Pyx_TypeInfo *__pyx_v_type) {
  *             field += 1
  * 
  */
-      __pyx_t_3 = PyNumber_Add(__pyx_v_part, __pyx_kp_b__51); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1477, __pyx_L1_error)
+      __pyx_t_3 = PyNumber_Add(__pyx_v_part, __pyx_kp_b__52); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1477, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __pyx_t_5 = __Pyx_PyBytes_FromString(__pyx_v_field->name); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1477, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
@@ -31474,7 +31576,7 @@ static PyObject *__pyx_format_from_typeinfo(__Pyx_TypeInfo *__pyx_v_type) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_5 = PyNumber_Add(__pyx_t_6, __pyx_kp_b__51); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1477, __pyx_L1_error)
+      __pyx_t_5 = PyNumber_Add(__pyx_t_6, __pyx_kp_b__52); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1477, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_t_7 = __Pyx_PyList_Append(__pyx_v_parts, __pyx_t_5); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 1477, __pyx_L1_error)
@@ -31499,7 +31601,7 @@ static PyObject *__pyx_format_from_typeinfo(__Pyx_TypeInfo *__pyx_v_type) {
  */
     __pyx_t_5 = __Pyx_PyBytes_Join(__pyx_v_alignment, __pyx_v_parts); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 1480, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = PyNumber_Add(__pyx_t_5, __pyx_kp_b__52); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1480, __pyx_L1_error)
+    __pyx_t_6 = PyNumber_Add(__pyx_t_5, __pyx_kp_b__53); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1480, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     if (!(likely(PyBytes_CheckExact(__pyx_t_6))||((__pyx_t_6) == Py_None)||(PyErr_Format(PyExc_TypeError, "Expected %.16s, got %.200s", "bytes", Py_TYPE(__pyx_t_6)->tp_name), 0))) __PYX_ERR(0, 1480, __pyx_L1_error)
@@ -31567,7 +31669,7 @@ static PyObject *__pyx_format_from_typeinfo(__Pyx_TypeInfo *__pyx_v_type) {
  *         else:
  *             result = fmt.string
  */
-      __pyx_t_6 = PyUnicode_Join(__pyx_kp_u__53, __pyx_v_extents); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1485, __pyx_L1_error)
+      __pyx_t_6 = PyUnicode_Join(__pyx_kp_u__54, __pyx_v_extents); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 1485, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __pyx_t_3 = PyUnicode_Format(__pyx_kp_u_s, __pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 1485, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
@@ -31902,7 +32004,7 @@ static PyTypeObject __pyx_type_33straininterpolationandintegration_LinearSpecial
   0, /*tp_setattro*/
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE, /*tp_flags*/
-  0, /*tp_doc*/
+  "\n    A Cython extension type which facilitates linear interpolation of\n    (stationary) vector fields in R^3, with a local orientation fix in order\n    to combat orientational discontinuities, with normalized results.\n    Periodic boundary conditions are assumed.\n\n    Methods defined here:\n    LinearSpecialInterpolator.__init__(x,y,z,xi)\n    LinearSpecialInterpolator.__call__(pos)\n\n    Version: 0.3\n\n    ", /*tp_doc*/
   0, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
@@ -32036,7 +32138,7 @@ static PyTypeObject __pyx_type_33straininterpolationandintegration_CubicSpecialI
   0, /*tp_setattro*/
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE, /*tp_flags*/
-  0, /*tp_doc*/
+  "\n    A Cython extension type which facilitates cubic B-spline interpolation of\n    (stationary) vector fields in R^3, with a local orientation fix in order\n    to combat orientational discontinuities, with normalized results.\n    Periodic boundary conditions are assumed.\n\n    NOTE: In order for this to function as intended (allowing for cubic\n          polylomial pieces, corresponding to a quartic spline), the\n          bspline-fortran source code must be slightly modified.\n          In particular, in the subroutine 'check_k', which is located withihn\n          bspline_sub_module.f90, the second condition of the if statement\n          must be changed from 'k >= n' to 'k > n'.\n\n    Methods defined here:\n    CubicSpecialInterpolator.__init__(x,y,z,xi)\n    CubicSpecialInterpolator.__call__(pos)\n\n    Version: 0.3\n\n    ", /*tp_doc*/
   0, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
@@ -32067,10 +32169,10 @@ static PyTypeObject __pyx_type_33straininterpolationandintegration_CubicSpecialI
   0, /*tp_finalize*/
   #endif
 };
-static struct __pyx_vtabstruct_33straininterpolationandintegration_StrainAimAssister __pyx_vtable_33straininterpolationandintegration_StrainAimAssister;
+static struct __pyx_vtabstruct_33straininterpolationandintegration_StrainDirectionGenerator __pyx_vtable_33straininterpolationandintegration_StrainDirectionGenerator;
 
-static PyObject *__pyx_tp_new_33straininterpolationandintegration_StrainAimAssister(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
-  struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *p;
+static PyObject *__pyx_tp_new_33straininterpolationandintegration_StrainDirectionGenerator(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+  struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -32078,8 +32180,8 @@ static PyObject *__pyx_tp_new_33straininterpolationandintegration_StrainAimAssis
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *)o);
-  p->__pyx_vtab = __pyx_vtabptr_33straininterpolationandintegration_StrainAimAssister;
+  p = ((struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *)o);
+  p->__pyx_vtab = __pyx_vtabptr_33straininterpolationandintegration_StrainDirectionGenerator;
   p->xi_itp = ((struct __pyx_obj_33straininterpolationandintegration_InterpolatorWithOrientationFix *)Py_None); Py_INCREF(Py_None);
   p->tan_vec.data = NULL;
   p->tan_vec.memview = NULL;
@@ -32089,15 +32191,15 @@ static PyObject *__pyx_tp_new_33straininterpolationandintegration_StrainAimAssis
   p->xi.memview = NULL;
   p->ret.data = NULL;
   p->ret.memview = NULL;
-  if (unlikely(__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_1__cinit__(o, __pyx_empty_tuple, NULL) < 0)) goto bad;
+  if (unlikely(__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_1__cinit__(o, __pyx_empty_tuple, NULL) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_33straininterpolationandintegration_StrainAimAssister(PyObject *o) {
-  struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *p = (struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *)o;
+static void __pyx_tp_dealloc_33straininterpolationandintegration_StrainDirectionGenerator(PyObject *o) {
+  struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *p = (struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && !_PyGC_FINALIZED(o)) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -32112,41 +32214,41 @@ static void __pyx_tp_dealloc_33straininterpolationandintegration_StrainAimAssist
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static int __pyx_tp_traverse_33straininterpolationandintegration_StrainAimAssister(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_33straininterpolationandintegration_StrainDirectionGenerator(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *p = (struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *)o;
+  struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *p = (struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *)o;
   if (p->xi_itp) {
     e = (*v)(((PyObject *)p->xi_itp), a); if (e) return e;
   }
   return 0;
 }
 
-static int __pyx_tp_clear_33straininterpolationandintegration_StrainAimAssister(PyObject *o) {
+static int __pyx_tp_clear_33straininterpolationandintegration_StrainDirectionGenerator(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *p = (struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *)o;
+  struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *p = (struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *)o;
   tmp = ((PyObject*)p->xi_itp);
   p->xi_itp = ((struct __pyx_obj_33straininterpolationandintegration_InterpolatorWithOrientationFix *)Py_None); Py_INCREF(Py_None);
   Py_XDECREF(tmp);
   return 0;
 }
 
-static PyMethodDef __pyx_methods_33straininterpolationandintegration_StrainAimAssister[] = {
-  {"set_tan_vec", (PyCFunction)__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_5set_tan_vec, METH_O, 0},
-  {"unset_tan_vec", (PyCFunction)__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_7unset_tan_vec, METH_NOARGS, 0},
-  {"set_prev_vec", (PyCFunction)__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_9set_prev_vec, METH_O, 0},
-  {"unset_prev_vec", (PyCFunction)__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_11unset_prev_vec, METH_NOARGS, 0},
-  {"__dealoc__", (PyCFunction)__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_15__dealoc__, METH_NOARGS, 0},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_17__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_33straininterpolationandintegration_17StrainAimAssister_19__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_33straininterpolationandintegration_StrainDirectionGenerator[] = {
+  {"set_tan_vec", (PyCFunction)__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_5set_tan_vec, METH_O, __pyx_doc_33straininterpolationandintegration_24StrainDirectionGenerator_4set_tan_vec},
+  {"unset_tan_vec", (PyCFunction)__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_7unset_tan_vec, METH_NOARGS, __pyx_doc_33straininterpolationandintegration_24StrainDirectionGenerator_6unset_tan_vec},
+  {"set_prev_vec", (PyCFunction)__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_9set_prev_vec, METH_O, __pyx_doc_33straininterpolationandintegration_24StrainDirectionGenerator_8set_prev_vec},
+  {"unset_prev_vec", (PyCFunction)__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_11unset_prev_vec, METH_NOARGS, __pyx_doc_33straininterpolationandintegration_24StrainDirectionGenerator_10unset_prev_vec},
+  {"__dealoc__", (PyCFunction)__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_15__dealoc__, METH_NOARGS, 0},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_17__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_19__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_33straininterpolationandintegration_StrainAimAssister = {
+static PyTypeObject __pyx_type_33straininterpolationandintegration_StrainDirectionGenerator = {
   PyVarObject_HEAD_INIT(0, 0)
-  "straininterpolationandintegration.StrainAimAssister", /*tp_name*/
-  sizeof(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister), /*tp_basicsize*/
+  "straininterpolationandintegration.StrainDirectionGenerator", /*tp_name*/
+  sizeof(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_33straininterpolationandintegration_StrainAimAssister, /*tp_dealloc*/
+  __pyx_tp_dealloc_33straininterpolationandintegration_StrainDirectionGenerator, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -32161,20 +32263,20 @@ static PyTypeObject __pyx_type_33straininterpolationandintegration_StrainAimAssi
   0, /*tp_as_sequence*/
   0, /*tp_as_mapping*/
   0, /*tp_hash*/
-  __pyx_pw_33straininterpolationandintegration_17StrainAimAssister_13__call__, /*tp_call*/
+  __pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_13__call__, /*tp_call*/
   0, /*tp_str*/
   0, /*tp_getattro*/
   0, /*tp_setattro*/
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
-  0, /*tp_doc*/
-  __pyx_tp_traverse_33straininterpolationandintegration_StrainAimAssister, /*tp_traverse*/
-  __pyx_tp_clear_33straininterpolationandintegration_StrainAimAssister, /*tp_clear*/
+  "\n    A Cython extension type intended to be used in conjunction with a\n    Dp87Strain instance, whereupon the StrainDirectionGenerator provides\n    \"slopes\" for the Dp87Strain to generate trajectories.\n\n    Methods defined here:\n    StrainDirectionGenerator.__init__(xi_itp)\n    StrainDirectionGenerator.set_tan_vec(tan_vec)\n    StrainDirectionGenerator.unset_tan_vec()\n    StrainDirectionGenerator.set_prev_vec(prev_vec)\n    StrainDirectionGenerator.unset_prev_vec()\n    StrainDirectionGenerator.__call__(pos)\n\n    Version: 1.0\n\n    ", /*tp_doc*/
+  __pyx_tp_traverse_33straininterpolationandintegration_StrainDirectionGenerator, /*tp_traverse*/
+  __pyx_tp_clear_33straininterpolationandintegration_StrainDirectionGenerator, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_33straininterpolationandintegration_StrainAimAssister, /*tp_methods*/
+  __pyx_methods_33straininterpolationandintegration_StrainDirectionGenerator, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -32182,9 +32284,9 @@ static PyTypeObject __pyx_type_33straininterpolationandintegration_StrainAimAssi
   0, /*tp_descr_get*/
   0, /*tp_descr_set*/
   0, /*tp_dictoffset*/
-  __pyx_pw_33straininterpolationandintegration_17StrainAimAssister_3__init__, /*tp_init*/
+  __pyx_pw_33straininterpolationandintegration_24StrainDirectionGenerator_3__init__, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_33straininterpolationandintegration_StrainAimAssister, /*tp_new*/
+  __pyx_tp_new_33straininterpolationandintegration_StrainDirectionGenerator, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -32211,7 +32313,7 @@ static PyObject *__pyx_tp_new_33straininterpolationandintegration_Dp87Strain(PyT
   if (unlikely(!o)) return 0;
   p = ((struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *)o);
   p->__pyx_vtab = __pyx_vtabptr_33straininterpolationandintegration_Dp87Strain;
-  p->f = ((struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *)Py_None); Py_INCREF(Py_None);
+  p->f = ((struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *)Py_None); Py_INCREF(Py_None);
   p->c.data = NULL;
   p->c.memview = NULL;
   p->a1.data = NULL;
@@ -32343,14 +32445,14 @@ static int __pyx_tp_clear_33straininterpolationandintegration_Dp87Strain(PyObjec
   PyObject* tmp;
   struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *p = (struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *)o;
   tmp = ((PyObject*)p->f);
-  p->f = ((struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *)Py_None); Py_INCREF(Py_None);
+  p->f = ((struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *)Py_None); Py_INCREF(Py_None);
   Py_XDECREF(tmp);
   return 0;
 }
 
 static PyMethodDef __pyx_methods_33straininterpolationandintegration_Dp87Strain[] = {
-  {"set_aim_assister", (PyCFunction)__pyx_pw_33straininterpolationandintegration_10Dp87Strain_5set_aim_assister, METH_O, 0},
-  {"unset_aim_assister", (PyCFunction)__pyx_pw_33straininterpolationandintegration_10Dp87Strain_7unset_aim_assister, METH_NOARGS, 0},
+  {"set_direction_generator", (PyCFunction)__pyx_pw_33straininterpolationandintegration_10Dp87Strain_5set_direction_generator, METH_O, __pyx_doc_33straininterpolationandintegration_10Dp87Strain_4set_direction_generator},
+  {"unset_direction_generator", (PyCFunction)__pyx_pw_33straininterpolationandintegration_10Dp87Strain_7unset_direction_generator, METH_NOARGS, __pyx_doc_33straininterpolationandintegration_10Dp87Strain_6unset_direction_generator},
   {"__reduce_cython__", (PyCFunction)__pyx_pw_33straininterpolationandintegration_10Dp87Strain_11__reduce_cython__, METH_NOARGS, 0},
   {"__setstate_cython__", (PyCFunction)__pyx_pw_33straininterpolationandintegration_10Dp87Strain_13__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
@@ -32382,7 +32484,7 @@ static PyTypeObject __pyx_type_33straininterpolationandintegration_Dp87Strain = 
   0, /*tp_setattro*/
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
-  0, /*tp_doc*/
+  "\n    A Cython extension type which generates trajectories in R^3 defined\n    as being orthogonal to a (stationary) vector field, by means of the\n    Dormand-Prince 8(7) adaptive timestep Runge-Kutta method.\n\n    The dynamic timestep is implemented roughly as in\n       Hairer, N\303\270rsett and Wanner: \"Solving ordinary differential equations I\n       -- Nonstiff problems\", pages 167 and 168 in the 2008 ed.\n\n    Methods defined here:\n    Dp87Strain.__init__(atol,rtol,hmax)\n    Dp87Strain.set_direction_generator(direction_generator)\n    Dp87Strain.unset_direction_generator()\n    Dp87Strain.__call__(t,pos,h)\n\n    Version: 1.0\n\n    ", /*tp_doc*/
   __pyx_tp_traverse_33straininterpolationandintegration_Dp87Strain, /*tp_traverse*/
   __pyx_tp_clear_33straininterpolationandintegration_Dp87Strain, /*tp_clear*/
   0, /*tp_richcompare*/
@@ -33103,7 +33205,7 @@ static PyModuleDef_Slot __pyx_moduledef_slots[] = {
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
     "straininterpolationandintegration",
-    0, /* m_doc */
+    __pyx_k_This_module_contains_Cython_ext, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
   #else
@@ -33157,15 +33259,16 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_s_The_interpolation_routine_is_cus, __pyx_k_The_interpolation_routine_is_cus, sizeof(__pyx_k_The_interpolation_routine_is_cus), 0, 0, 1, 0},
   {&__pyx_kp_s_The_interpolator_routine_is_cust, __pyx_k_The_interpolator_routine_is_cust, sizeof(__pyx_k_The_interpolator_routine_is_cust), 0, 0, 1, 0},
   {&__pyx_kp_s_The_interpolator_routine_is_cust_2, __pyx_k_The_interpolator_routine_is_cust_2, sizeof(__pyx_k_The_interpolator_routine_is_cust_2), 0, 0, 1, 0},
+  {&__pyx_kp_s_The_trajectory_generating_routin, __pyx_k_The_trajectory_generating_routin, sizeof(__pyx_k_The_trajectory_generating_routin), 0, 0, 1, 0},
   {&__pyx_n_s_TypeError, __pyx_k_TypeError, sizeof(__pyx_k_TypeError), 0, 0, 1, 1},
   {&__pyx_kp_s_Unable_to_convert_item_to_object, __pyx_k_Unable_to_convert_item_to_object, sizeof(__pyx_k_Unable_to_convert_item_to_object), 0, 0, 1, 0},
   {&__pyx_n_s_ValueError, __pyx_k_ValueError, sizeof(__pyx_k_ValueError), 0, 0, 1, 1},
   {&__pyx_n_s_View_MemoryView, __pyx_k_View_MemoryView, sizeof(__pyx_k_View_MemoryView), 0, 0, 1, 1},
-  {&__pyx_kp_b__49, __pyx_k__49, sizeof(__pyx_k__49), 0, 0, 0, 0},
   {&__pyx_kp_b__50, __pyx_k__50, sizeof(__pyx_k__50), 0, 0, 0, 0},
   {&__pyx_kp_b__51, __pyx_k__51, sizeof(__pyx_k__51), 0, 0, 0, 0},
   {&__pyx_kp_b__52, __pyx_k__52, sizeof(__pyx_k__52), 0, 0, 0, 0},
-  {&__pyx_kp_u__53, __pyx_k__53, sizeof(__pyx_k__53), 0, 1, 0, 0},
+  {&__pyx_kp_b__53, __pyx_k__53, sizeof(__pyx_k__53), 0, 0, 0, 0},
+  {&__pyx_kp_u__54, __pyx_k__54, sizeof(__pyx_k__54), 0, 1, 0, 0},
   {&__pyx_n_s_allocate_buffer, __pyx_k_allocate_buffer, sizeof(__pyx_k_allocate_buffer), 0, 0, 1, 1},
   {&__pyx_n_s_atol, __pyx_k_atol, sizeof(__pyx_k_atol), 0, 0, 1, 1},
   {&__pyx_n_s_base, __pyx_k_base, sizeof(__pyx_k_base), 0, 0, 1, 1},
@@ -33193,6 +33296,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_getstate, __pyx_k_getstate, sizeof(__pyx_k_getstate), 0, 0, 1, 1},
   {&__pyx_kp_s_got_differing_extents_in_dimensi, __pyx_k_got_differing_extents_in_dimensi, sizeof(__pyx_k_got_differing_extents_in_dimensi), 0, 0, 1, 0},
   {&__pyx_n_s_h, __pyx_k_h, sizeof(__pyx_k_h), 0, 0, 1, 1},
+  {&__pyx_n_s_hmax, __pyx_k_hmax, sizeof(__pyx_k_hmax), 0, 0, 1, 1},
   {&__pyx_n_s_id, __pyx_k_id, sizeof(__pyx_k_id), 0, 0, 1, 1},
   {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
   {&__pyx_n_s_itemsize, __pyx_k_itemsize, sizeof(__pyx_k_itemsize), 0, 0, 1, 1},
@@ -33263,9 +33367,9 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
 };
 static int __Pyx_InitCachedBuiltins(void) {
   __pyx_builtin_TypeError = __Pyx_GetBuiltinName(__pyx_n_s_TypeError); if (!__pyx_builtin_TypeError) __PYX_ERR(0, 2, __pyx_L1_error)
-  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(1, 145, __pyx_L1_error)
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(1, 393, __pyx_L1_error)
-  __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_n_s_RuntimeError); if (!__pyx_builtin_RuntimeError) __PYX_ERR(1, 610, __pyx_L1_error)
+  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(1, 209, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(1, 595, __pyx_L1_error)
+  __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_n_s_RuntimeError); if (!__pyx_builtin_RuntimeError) __PYX_ERR(1, 951, __pyx_L1_error)
   __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) __PYX_ERR(2, 1000, __pyx_L1_error)
   __pyx_builtin_MemoryError = __Pyx_GetBuiltinName(__pyx_n_s_MemoryError); if (!__pyx_builtin_MemoryError) __PYX_ERR(0, 147, __pyx_L1_error)
   __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_n_s_enumerate); if (!__pyx_builtin_enumerate) __PYX_ERR(0, 150, __pyx_L1_error)
@@ -33300,25 +33404,25 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "straininterpolationandintegration.pyx":145
- * 
+  /* "straininterpolationandintegration.pyx":209
+ *         """
  *         if (xi.shape[0] != x.shape[0] or xi.shape[1] != y.shape[0] or xi.shape[2] != z.shape[0]):
  *             raise ValueError('Array dimensions not aligned!')             # <<<<<<<<<<<<<<
  * 
  *         if xi.shape[3] != 3:
  */
-  __pyx_tuple__3 = PyTuple_Pack(1, __pyx_kp_s_Array_dimensions_not_aligned); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(1, 145, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(1, __pyx_kp_s_Array_dimensions_not_aligned); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(1, 209, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "straininterpolationandintegration.pyx":148
+  /* "straininterpolationandintegration.pyx":212
  * 
  *         if xi.shape[3] != 3:
  *             raise ValueError('The interpolator routine is custom-built for three-dimensional data!')             # <<<<<<<<<<<<<<
  * 
  *         # Enforcing periodic BC by not including the sampling points along the
  */
-  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_kp_s_The_interpolator_routine_is_cust); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(1, 148, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_kp_s_The_interpolator_routine_is_cust); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(1, 212, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
@@ -33341,47 +33445,47 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "straininterpolationandintegration.pyx":370
+  /* "straininterpolationandintegration.pyx":572
  *             int i
  *         if(xi.shape[0] != x.shape[0] or xi.shape[1] != y.shape[0] or xi.shape[2] != z.shape[0]):
  *             raise ValueError('Array dimensions not aligned!')             # <<<<<<<<<<<<<<
  *         if (x.shape[0] < 4 or y.shape[0] < 4 or z.shape[0] < 4):
  *             raise ValueError('Insufficient amount of data points to perform cubic interpolation!')
  */
-  __pyx_tuple__7 = PyTuple_Pack(1, __pyx_kp_s_Array_dimensions_not_aligned); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(1, 370, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(1, __pyx_kp_s_Array_dimensions_not_aligned); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(1, 572, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "straininterpolationandintegration.pyx":372
+  /* "straininterpolationandintegration.pyx":574
  *             raise ValueError('Array dimensions not aligned!')
  *         if (x.shape[0] < 4 or y.shape[0] < 4 or z.shape[0] < 4):
  *             raise ValueError('Insufficient amount of data points to perform cubic interpolation!')             # <<<<<<<<<<<<<<
  *         if(xi.shape[3] != 3):
  *             raise ValueError('The interpolator routine is custom-built for three dimensional data!')
  */
-  __pyx_tuple__8 = PyTuple_Pack(1, __pyx_kp_s_Insufficient_amount_of_data_poin); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(1, 372, __pyx_L1_error)
+  __pyx_tuple__8 = PyTuple_Pack(1, __pyx_kp_s_Insufficient_amount_of_data_poin); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(1, 574, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
-  /* "straininterpolationandintegration.pyx":374
+  /* "straininterpolationandintegration.pyx":576
  *             raise ValueError('Insufficient amount of data points to perform cubic interpolation!')
  *         if(xi.shape[3] != 3):
  *             raise ValueError('The interpolator routine is custom-built for three dimensional data!')             # <<<<<<<<<<<<<<
  * 
  *         if (kx < 2 or kx > 4) or (ky < 2 or ky > 4) or (kz < 2 or kz > 4):
  */
-  __pyx_tuple__9 = PyTuple_Pack(1, __pyx_kp_s_The_interpolator_routine_is_cust_2); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(1, 374, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(1, __pyx_kp_s_The_interpolator_routine_is_cust_2); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(1, 576, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
 
-  /* "straininterpolationandintegration.pyx":377
+  /* "straininterpolationandintegration.pyx":579
  * 
  *         if (kx < 2 or kx > 4) or (ky < 2 or ky > 4) or (kz < 2 or kz > 4):
  *             raise ValueError('Invalid choice of interpolator order!')             # <<<<<<<<<<<<<<
  *         # Enforcing periodic BC by not including the sampling points along
  *         # the last rows and columns
  */
-  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_kp_s_Invalid_choice_of_interpolator_o); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(1, 377, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_kp_s_Invalid_choice_of_interpolator_o); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(1, 579, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
 
@@ -33404,14 +33508,14 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
 
-  /* "straininterpolationandintegration.pyx":610
+  /* "straininterpolationandintegration.pyx":951
  * 
  *         if not (self.initialized_tan and self.initialized_prev):
- *             raise RuntimeError('Aim assister not initialized with target!')             # <<<<<<<<<<<<<<
+ *             raise RuntimeError('Aim assister not initialized with tan_vec and/or prev_vec!')             # <<<<<<<<<<<<<<
  *         self._ev_(pos,self.ret)
  *         return np.copy(self.ret)
  */
-  __pyx_tuple__13 = PyTuple_Pack(1, __pyx_kp_s_Aim_assister_not_initialized_wit); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(1, 610, __pyx_L1_error)
+  __pyx_tuple__13 = PyTuple_Pack(1, __pyx_kp_s_Aim_assister_not_initialized_wit); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(1, 951, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
   __Pyx_GIVEREF(__pyx_tuple__13);
 
@@ -33434,16 +33538,27 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
 
-  /* "straininterpolationandintegration.pyx":769
+  /* "straininterpolationandintegration.pyx":1214
  *             double[::1] pos_i = self.pos_i
+ *         if pos.shape[0] != 3:
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')             # <<<<<<<<<<<<<<
  *         if not self.initialized:
- *             raise RuntimeError('Dormand-Prince 8(7) strain solver not'\             # <<<<<<<<<<<<<<
- *                     ' initialized with a StrainAimAssister instance!')
- *         dcopy(3,pos,1,pos_i,1)
+ *             raise RuntimeError('Dormand-Prince 8(7) strain solver not'\
  */
-  __pyx_tuple__16 = PyTuple_Pack(1, __pyx_kp_s_Dormand_Prince_8_7_strain_solver); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(1, 769, __pyx_L1_error)
+  __pyx_tuple__16 = PyTuple_Pack(1, __pyx_kp_s_The_trajectory_generating_routin); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(1, 1214, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
+
+  /* "straininterpolationandintegration.pyx":1216
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')
+ *         if not self.initialized:
+ *             raise RuntimeError('Dormand-Prince 8(7) strain solver not'\             # <<<<<<<<<<<<<<
+ *                     ' initialized with a StrainDirectionGenerator instance!')
+ *         dcopy(3,pos,1,pos_i,1)
+ */
+  __pyx_tuple__17 = PyTuple_Pack(1, __pyx_kp_s_Dormand_Prince_8_7_strain_solver); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(1, 1216, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__17);
+  __Pyx_GIVEREF(__pyx_tuple__17);
 
   /* "(tree fragment)":2
  * def __reduce_cython__(self):
@@ -33451,115 +33566,115 @@ static int __Pyx_InitCachedConstants(void) {
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  */
-  __pyx_tuple__17 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 2, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__17);
-  __Pyx_GIVEREF(__pyx_tuple__17);
+  __pyx_tuple__18 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__18);
+  __Pyx_GIVEREF(__pyx_tuple__18);
 
   /* "(tree fragment)":4
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")             # <<<<<<<<<<<<<<
  */
-  __pyx_tuple__18 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 4, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__18);
-  __Pyx_GIVEREF(__pyx_tuple__18);
+  __pyx_tuple__19 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__19);
+  __Pyx_GIVEREF(__pyx_tuple__19);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":229
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":229
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_C_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not C contiguous")             # <<<<<<<<<<<<<<
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  */
-  __pyx_tuple__19 = PyTuple_Pack(1, __pyx_kp_u_ndarray_is_not_C_contiguous); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(2, 229, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__19);
-  __Pyx_GIVEREF(__pyx_tuple__19);
+  __pyx_tuple__20 = PyTuple_Pack(1, __pyx_kp_u_ndarray_is_not_C_contiguous); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(2, 229, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__20);
+  __Pyx_GIVEREF(__pyx_tuple__20);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":233
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":233
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_F_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not Fortran contiguous")             # <<<<<<<<<<<<<<
  * 
  *             info.buf = PyArray_DATA(self)
  */
-  __pyx_tuple__20 = PyTuple_Pack(1, __pyx_kp_u_ndarray_is_not_Fortran_contiguou); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(2, 233, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__20);
-  __Pyx_GIVEREF(__pyx_tuple__20);
+  __pyx_tuple__21 = PyTuple_Pack(1, __pyx_kp_u_ndarray_is_not_Fortran_contiguou); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(2, 233, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__21);
+  __Pyx_GIVEREF(__pyx_tuple__21);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":263
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":263
  *                 if ((descr.byteorder == c'>' and little_endian) or
  *                     (descr.byteorder == c'<' and not little_endian)):
  *                     raise ValueError(u"Non-native byte order not supported")             # <<<<<<<<<<<<<<
  *                 if   t == NPY_BYTE:        f = "b"
  *                 elif t == NPY_UBYTE:       f = "B"
  */
-  __pyx_tuple__21 = PyTuple_Pack(1, __pyx_kp_u_Non_native_byte_order_not_suppor); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(2, 263, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__21);
-  __Pyx_GIVEREF(__pyx_tuple__21);
+  __pyx_tuple__22 = PyTuple_Pack(1, __pyx_kp_u_Non_native_byte_order_not_suppor); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(2, 263, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__22);
+  __Pyx_GIVEREF(__pyx_tuple__22);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":810
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":810
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")             # <<<<<<<<<<<<<<
  * 
  *         if ((child.byteorder == c'>' and little_endian) or
  */
-  __pyx_tuple__22 = PyTuple_Pack(1, __pyx_kp_u_Format_string_allocated_too_shor); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(2, 810, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__22);
-  __Pyx_GIVEREF(__pyx_tuple__22);
+  __pyx_tuple__23 = PyTuple_Pack(1, __pyx_kp_u_Format_string_allocated_too_shor); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(2, 810, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__23);
+  __Pyx_GIVEREF(__pyx_tuple__23);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":814
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":814
  *         if ((child.byteorder == c'>' and little_endian) or
  *             (child.byteorder == c'<' and not little_endian)):
  *             raise ValueError(u"Non-native byte order not supported")             # <<<<<<<<<<<<<<
  *             # One could encode it in the format string and have Cython
  *             # complain instead, BUT: < and > in format strings also imply
  */
-  __pyx_tuple__23 = PyTuple_Pack(1, __pyx_kp_u_Non_native_byte_order_not_suppor); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(2, 814, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__23);
-  __Pyx_GIVEREF(__pyx_tuple__23);
+  __pyx_tuple__24 = PyTuple_Pack(1, __pyx_kp_u_Non_native_byte_order_not_suppor); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(2, 814, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__24);
+  __Pyx_GIVEREF(__pyx_tuple__24);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":834
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":834
  *             t = child.type_num
  *             if end - f < 5:
  *                 raise RuntimeError(u"Format string allocated too short.")             # <<<<<<<<<<<<<<
  * 
  *             # Until ticket #99 is fixed, use integers to avoid warnings
  */
-  __pyx_tuple__24 = PyTuple_Pack(1, __pyx_kp_u_Format_string_allocated_too_shor_2); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(2, 834, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__24);
-  __Pyx_GIVEREF(__pyx_tuple__24);
+  __pyx_tuple__25 = PyTuple_Pack(1, __pyx_kp_u_Format_string_allocated_too_shor_2); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(2, 834, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__25);
+  __Pyx_GIVEREF(__pyx_tuple__25);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1000
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1000
  *         _import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
  * 
  * cdef inline int import_umath() except -1:
  */
-  __pyx_tuple__25 = PyTuple_Pack(1, __pyx_kp_s_numpy_core_multiarray_failed_to); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(2, 1000, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__25);
-  __Pyx_GIVEREF(__pyx_tuple__25);
+  __pyx_tuple__26 = PyTuple_Pack(1, __pyx_kp_s_numpy_core_multiarray_failed_to); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(2, 1000, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__26);
+  __Pyx_GIVEREF(__pyx_tuple__26);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1006
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1006
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
  * 
  * cdef inline int import_ufunc() except -1:
  */
-  __pyx_tuple__26 = PyTuple_Pack(1, __pyx_kp_s_numpy_core_umath_failed_to_impor); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(2, 1006, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__26);
-  __Pyx_GIVEREF(__pyx_tuple__26);
+  __pyx_tuple__27 = PyTuple_Pack(1, __pyx_kp_s_numpy_core_umath_failed_to_impor); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(2, 1006, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__27);
+  __Pyx_GIVEREF(__pyx_tuple__27);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1012
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1012
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
  */
-  __pyx_tuple__27 = PyTuple_Pack(1, __pyx_kp_s_numpy_core_umath_failed_to_impor); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(2, 1012, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__27);
-  __Pyx_GIVEREF(__pyx_tuple__27);
+  __pyx_tuple__28 = PyTuple_Pack(1, __pyx_kp_s_numpy_core_umath_failed_to_impor); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(2, 1012, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__28);
+  __Pyx_GIVEREF(__pyx_tuple__28);
 
   /* "View.MemoryView":132
  * 
@@ -33568,9 +33683,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *         if itemsize <= 0:
  */
-  __pyx_tuple__28 = PyTuple_Pack(1, __pyx_kp_s_Empty_shape_tuple_for_cython_arr); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 132, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__28);
-  __Pyx_GIVEREF(__pyx_tuple__28);
+  __pyx_tuple__29 = PyTuple_Pack(1, __pyx_kp_s_Empty_shape_tuple_for_cython_arr); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 132, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__29);
+  __Pyx_GIVEREF(__pyx_tuple__29);
 
   /* "View.MemoryView":135
  * 
@@ -33579,9 +33694,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *         if not isinstance(format, bytes):
  */
-  __pyx_tuple__29 = PyTuple_Pack(1, __pyx_kp_s_itemsize_0_for_cython_array); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 135, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__29);
-  __Pyx_GIVEREF(__pyx_tuple__29);
+  __pyx_tuple__30 = PyTuple_Pack(1, __pyx_kp_s_itemsize_0_for_cython_array); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__30);
+  __Pyx_GIVEREF(__pyx_tuple__30);
 
   /* "View.MemoryView":138
  * 
@@ -33590,9 +33705,9 @@ static int __Pyx_InitCachedConstants(void) {
  *         self._format = format  # keep a reference to the byte string
  *         self.format = self._format
  */
-  __pyx_tuple__30 = PyTuple_Pack(1, __pyx_n_s_ASCII); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 138, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__30);
-  __Pyx_GIVEREF(__pyx_tuple__30);
+  __pyx_tuple__31 = PyTuple_Pack(1, __pyx_n_s_ASCII); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 138, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__31);
+  __Pyx_GIVEREF(__pyx_tuple__31);
 
   /* "View.MemoryView":147
  * 
@@ -33601,9 +33716,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  * 
  */
-  __pyx_tuple__31 = PyTuple_Pack(1, __pyx_kp_s_unable_to_allocate_shape_and_str); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 147, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__31);
-  __Pyx_GIVEREF(__pyx_tuple__31);
+  __pyx_tuple__32 = PyTuple_Pack(1, __pyx_kp_s_unable_to_allocate_shape_and_str); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 147, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__32);
+  __Pyx_GIVEREF(__pyx_tuple__32);
 
   /* "View.MemoryView":175
  *             self.data = <char *>malloc(self.len)
@@ -33612,9 +33727,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *             if self.dtype_is_object:
  */
-  __pyx_tuple__32 = PyTuple_Pack(1, __pyx_kp_s_unable_to_allocate_array_data); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 175, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__32);
-  __Pyx_GIVEREF(__pyx_tuple__32);
+  __pyx_tuple__33 = PyTuple_Pack(1, __pyx_kp_s_unable_to_allocate_array_data); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 175, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__33);
+  __Pyx_GIVEREF(__pyx_tuple__33);
 
   /* "View.MemoryView":191
  *             bufmode = PyBUF_F_CONTIGUOUS | PyBUF_ANY_CONTIGUOUS
@@ -33623,9 +33738,9 @@ static int __Pyx_InitCachedConstants(void) {
  *         info.buf = self.data
  *         info.len = self.len
  */
-  __pyx_tuple__33 = PyTuple_Pack(1, __pyx_kp_s_Can_only_create_a_buffer_that_is); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 191, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__33);
-  __Pyx_GIVEREF(__pyx_tuple__33);
+  __pyx_tuple__34 = PyTuple_Pack(1, __pyx_kp_s_Can_only_create_a_buffer_that_is); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 191, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__34);
+  __Pyx_GIVEREF(__pyx_tuple__34);
 
   /* "(tree fragment)":2
  * def __reduce_cython__(self):
@@ -33633,18 +33748,18 @@ static int __Pyx_InitCachedConstants(void) {
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  */
-  __pyx_tuple__34 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 2, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__34);
-  __Pyx_GIVEREF(__pyx_tuple__34);
+  __pyx_tuple__35 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__35);
+  __Pyx_GIVEREF(__pyx_tuple__35);
 
   /* "(tree fragment)":4
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")             # <<<<<<<<<<<<<<
  */
-  __pyx_tuple__35 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 4, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__35);
-  __Pyx_GIVEREF(__pyx_tuple__35);
+  __pyx_tuple__36 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__36);
+  __Pyx_GIVEREF(__pyx_tuple__36);
 
   /* "View.MemoryView":413
  *     def __setitem__(memoryview self, object index, object value):
@@ -33653,9 +33768,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *         have_slices, index = _unellipsify(index, self.view.ndim)
  */
-  __pyx_tuple__36 = PyTuple_Pack(1, __pyx_kp_s_Cannot_assign_to_read_only_memor); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 413, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__36);
-  __Pyx_GIVEREF(__pyx_tuple__36);
+  __pyx_tuple__37 = PyTuple_Pack(1, __pyx_kp_s_Cannot_assign_to_read_only_memor); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 413, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__37);
+  __Pyx_GIVEREF(__pyx_tuple__37);
 
   /* "View.MemoryView":490
  *             result = struct.unpack(self.view.format, bytesitem)
@@ -33664,9 +33779,9 @@ static int __Pyx_InitCachedConstants(void) {
  *         else:
  *             if len(self.view.format) == 1:
  */
-  __pyx_tuple__37 = PyTuple_Pack(1, __pyx_kp_s_Unable_to_convert_item_to_object); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 490, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__37);
-  __Pyx_GIVEREF(__pyx_tuple__37);
+  __pyx_tuple__38 = PyTuple_Pack(1, __pyx_kp_s_Unable_to_convert_item_to_object); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 490, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__38);
+  __Pyx_GIVEREF(__pyx_tuple__38);
 
   /* "View.MemoryView":515
  *     def __getbuffer__(self, Py_buffer *info, int flags):
@@ -33675,9 +33790,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *         if flags & PyBUF_STRIDES:
  */
-  __pyx_tuple__38 = PyTuple_Pack(1, __pyx_kp_s_Cannot_create_writable_memory_vi); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 515, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__38);
-  __Pyx_GIVEREF(__pyx_tuple__38);
+  __pyx_tuple__39 = PyTuple_Pack(1, __pyx_kp_s_Cannot_create_writable_memory_vi); if (unlikely(!__pyx_tuple__39)) __PYX_ERR(0, 515, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__39);
+  __Pyx_GIVEREF(__pyx_tuple__39);
 
   /* "View.MemoryView":565
  *         if self.view.strides == NULL:
@@ -33686,9 +33801,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *         return tuple([stride for stride in self.view.strides[:self.view.ndim]])
  */
-  __pyx_tuple__39 = PyTuple_Pack(1, __pyx_kp_s_Buffer_view_does_not_expose_stri); if (unlikely(!__pyx_tuple__39)) __PYX_ERR(0, 565, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__39);
-  __Pyx_GIVEREF(__pyx_tuple__39);
+  __pyx_tuple__40 = PyTuple_Pack(1, __pyx_kp_s_Buffer_view_does_not_expose_stri); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(0, 565, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__40);
+  __Pyx_GIVEREF(__pyx_tuple__40);
 
   /* "View.MemoryView":572
  *     def suboffsets(self):
@@ -33697,12 +33812,12 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *         return tuple([suboffset for suboffset in self.view.suboffsets[:self.view.ndim]])
  */
-  __pyx_tuple__40 = PyTuple_New(1); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(0, 572, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__40);
+  __pyx_tuple__41 = PyTuple_New(1); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(0, 572, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__41);
   __Pyx_INCREF(__pyx_int_neg_1);
   __Pyx_GIVEREF(__pyx_int_neg_1);
-  PyTuple_SET_ITEM(__pyx_tuple__40, 0, __pyx_int_neg_1);
-  __Pyx_GIVEREF(__pyx_tuple__40);
+  PyTuple_SET_ITEM(__pyx_tuple__41, 0, __pyx_int_neg_1);
+  __Pyx_GIVEREF(__pyx_tuple__41);
 
   /* "(tree fragment)":2
  * def __reduce_cython__(self):
@@ -33710,18 +33825,18 @@ static int __Pyx_InitCachedConstants(void) {
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  */
-  __pyx_tuple__41 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(0, 2, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__41);
-  __Pyx_GIVEREF(__pyx_tuple__41);
+  __pyx_tuple__42 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__42);
+  __Pyx_GIVEREF(__pyx_tuple__42);
 
   /* "(tree fragment)":4
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")             # <<<<<<<<<<<<<<
  */
-  __pyx_tuple__42 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(0, 4, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__42);
-  __Pyx_GIVEREF(__pyx_tuple__42);
+  __pyx_tuple__43 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__43)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__43);
+  __Pyx_GIVEREF(__pyx_tuple__43);
 
   /* "View.MemoryView":677
  *         if item is Ellipsis:
@@ -33730,9 +33845,9 @@ static int __Pyx_InitCachedConstants(void) {
  *                 seen_ellipsis = True
  *             else:
  */
-  __pyx_slice__43 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__43)) __PYX_ERR(0, 677, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_slice__43);
-  __Pyx_GIVEREF(__pyx_slice__43);
+  __pyx_slice__44 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__44)) __PYX_ERR(0, 677, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_slice__44);
+  __Pyx_GIVEREF(__pyx_slice__44);
 
   /* "View.MemoryView":680
  *                 seen_ellipsis = True
@@ -33741,9 +33856,9 @@ static int __Pyx_InitCachedConstants(void) {
  *             have_slices = True
  *         else:
  */
-  __pyx_slice__44 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__44)) __PYX_ERR(0, 680, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_slice__44);
-  __Pyx_GIVEREF(__pyx_slice__44);
+  __pyx_slice__45 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__45)) __PYX_ERR(0, 680, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_slice__45);
+  __Pyx_GIVEREF(__pyx_slice__45);
 
   /* "View.MemoryView":691
  *     nslices = ndim - len(result)
@@ -33752,9 +33867,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  *     return have_slices or nslices, tuple(result)
  */
-  __pyx_slice__45 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__45)) __PYX_ERR(0, 691, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_slice__45);
-  __Pyx_GIVEREF(__pyx_slice__45);
+  __pyx_slice__46 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__46)) __PYX_ERR(0, 691, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_slice__46);
+  __Pyx_GIVEREF(__pyx_slice__46);
 
   /* "View.MemoryView":698
  *     for suboffset in suboffsets[:ndim]:
@@ -33763,9 +33878,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  * 
  */
-  __pyx_tuple__46 = PyTuple_Pack(1, __pyx_kp_s_Indirect_dimensions_not_supporte); if (unlikely(!__pyx_tuple__46)) __PYX_ERR(0, 698, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__46);
-  __Pyx_GIVEREF(__pyx_tuple__46);
+  __pyx_tuple__47 = PyTuple_Pack(1, __pyx_kp_s_Indirect_dimensions_not_supporte); if (unlikely(!__pyx_tuple__47)) __PYX_ERR(0, 698, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__47);
+  __Pyx_GIVEREF(__pyx_tuple__47);
 
   /* "(tree fragment)":2
  * def __reduce_cython__(self):
@@ -33773,28 +33888,28 @@ static int __Pyx_InitCachedConstants(void) {
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  */
-  __pyx_tuple__47 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__47)) __PYX_ERR(0, 2, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__47);
-  __Pyx_GIVEREF(__pyx_tuple__47);
+  __pyx_tuple__48 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__48)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__48);
+  __Pyx_GIVEREF(__pyx_tuple__48);
 
   /* "(tree fragment)":4
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")             # <<<<<<<<<<<<<<
  */
-  __pyx_tuple__48 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__48)) __PYX_ERR(0, 4, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__48);
-  __Pyx_GIVEREF(__pyx_tuple__48);
+  __pyx_tuple__49 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__49)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__49);
+  __Pyx_GIVEREF(__pyx_tuple__49);
 
   /* "(tree fragment)":1
  * def __pyx_unpickle_InterpolatorWithOrientationFix(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     if __pyx_checksum != 0xd41d8cd:
  *         from pickle import PickleError as __pyx_PickleError
  */
-  __pyx_tuple__54 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__54)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__54);
-  __Pyx_GIVEREF(__pyx_tuple__54);
-  __pyx_codeobj__55 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__54, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_InterpolatorWithO, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__55)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_tuple__55 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__55)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__55);
+  __Pyx_GIVEREF(__pyx_tuple__55);
+  __pyx_codeobj__56 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__55, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_InterpolatorWithO, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__56)) __PYX_ERR(0, 1, __pyx_L1_error)
 
   /* "View.MemoryView":285
  *         return self.name
@@ -33803,9 +33918,9 @@ static int __Pyx_InitCachedConstants(void) {
  * cdef strided = Enum("<strided and direct>") # default
  * cdef indirect = Enum("<strided and indirect>")
  */
-  __pyx_tuple__56 = PyTuple_Pack(1, __pyx_kp_s_strided_and_direct_or_indirect); if (unlikely(!__pyx_tuple__56)) __PYX_ERR(0, 285, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__56);
-  __Pyx_GIVEREF(__pyx_tuple__56);
+  __pyx_tuple__57 = PyTuple_Pack(1, __pyx_kp_s_strided_and_direct_or_indirect); if (unlikely(!__pyx_tuple__57)) __PYX_ERR(0, 285, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__57);
+  __Pyx_GIVEREF(__pyx_tuple__57);
 
   /* "View.MemoryView":286
  * 
@@ -33814,9 +33929,9 @@ static int __Pyx_InitCachedConstants(void) {
  * cdef indirect = Enum("<strided and indirect>")
  * 
  */
-  __pyx_tuple__57 = PyTuple_Pack(1, __pyx_kp_s_strided_and_direct); if (unlikely(!__pyx_tuple__57)) __PYX_ERR(0, 286, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__57);
-  __Pyx_GIVEREF(__pyx_tuple__57);
+  __pyx_tuple__58 = PyTuple_Pack(1, __pyx_kp_s_strided_and_direct); if (unlikely(!__pyx_tuple__58)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__58);
+  __Pyx_GIVEREF(__pyx_tuple__58);
 
   /* "View.MemoryView":287
  * cdef generic = Enum("<strided and direct or indirect>")
@@ -33825,9 +33940,9 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  * 
  */
-  __pyx_tuple__58 = PyTuple_Pack(1, __pyx_kp_s_strided_and_indirect); if (unlikely(!__pyx_tuple__58)) __PYX_ERR(0, 287, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__58);
-  __Pyx_GIVEREF(__pyx_tuple__58);
+  __pyx_tuple__59 = PyTuple_Pack(1, __pyx_kp_s_strided_and_indirect); if (unlikely(!__pyx_tuple__59)) __PYX_ERR(0, 287, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__59);
+  __Pyx_GIVEREF(__pyx_tuple__59);
 
   /* "View.MemoryView":290
  * 
@@ -33836,9 +33951,9 @@ static int __Pyx_InitCachedConstants(void) {
  * cdef indirect_contiguous = Enum("<contiguous and indirect>")
  * 
  */
-  __pyx_tuple__59 = PyTuple_Pack(1, __pyx_kp_s_contiguous_and_direct); if (unlikely(!__pyx_tuple__59)) __PYX_ERR(0, 290, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__59);
-  __Pyx_GIVEREF(__pyx_tuple__59);
+  __pyx_tuple__60 = PyTuple_Pack(1, __pyx_kp_s_contiguous_and_direct); if (unlikely(!__pyx_tuple__60)) __PYX_ERR(0, 290, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__60);
+  __Pyx_GIVEREF(__pyx_tuple__60);
 
   /* "View.MemoryView":291
  * 
@@ -33847,19 +33962,19 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  * 
  */
-  __pyx_tuple__60 = PyTuple_Pack(1, __pyx_kp_s_contiguous_and_indirect); if (unlikely(!__pyx_tuple__60)) __PYX_ERR(0, 291, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__60);
-  __Pyx_GIVEREF(__pyx_tuple__60);
+  __pyx_tuple__61 = PyTuple_Pack(1, __pyx_kp_s_contiguous_and_indirect); if (unlikely(!__pyx_tuple__61)) __PYX_ERR(0, 291, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__61);
+  __Pyx_GIVEREF(__pyx_tuple__61);
 
   /* "(tree fragment)":1
  * def __pyx_unpickle_Enum(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     if __pyx_checksum != 0xb068931:
  *         from pickle import PickleError as __pyx_PickleError
  */
-  __pyx_tuple__61 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__61)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__61);
-  __Pyx_GIVEREF(__pyx_tuple__61);
-  __pyx_codeobj__62 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__61, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_Enum, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__62)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_tuple__62 = PyTuple_Pack(5, __pyx_n_s_pyx_type, __pyx_n_s_pyx_checksum, __pyx_n_s_pyx_state, __pyx_n_s_pyx_PickleError, __pyx_n_s_pyx_result); if (unlikely(!__pyx_tuple__62)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__62);
+  __Pyx_GIVEREF(__pyx_tuple__62);
+  __pyx_codeobj__63 = (PyObject*)__Pyx_PyCode_New(3, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__62, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_Enum, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__63)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -33922,23 +34037,23 @@ static int __Pyx_modinit_type_init_code(void) {
   /*--- Type init code ---*/
   __pyx_vtabptr_33straininterpolationandintegration_SplineInterpolator = &__pyx_vtable_33straininterpolationandintegration_SplineInterpolator;
   __pyx_vtable_33straininterpolationandintegration_SplineInterpolator._ev_ = (void (*)(struct __pyx_obj_33straininterpolationandintegration_SplineInterpolator *, double, double, double, int, int, int, int, double *))__pyx_f_33straininterpolationandintegration_18SplineInterpolator__ev_;
-  if (PyType_Ready(&__pyx_type_33straininterpolationandintegration_SplineInterpolator) < 0) __PYX_ERR(1, 78, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_33straininterpolationandintegration_SplineInterpolator) < 0) __PYX_ERR(1, 105, __pyx_L1_error)
   __pyx_type_33straininterpolationandintegration_SplineInterpolator.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_33straininterpolationandintegration_SplineInterpolator.tp_dictoffset && __pyx_type_33straininterpolationandintegration_SplineInterpolator.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_33straininterpolationandintegration_SplineInterpolator.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_33straininterpolationandintegration_SplineInterpolator.tp_dict, __pyx_vtabptr_33straininterpolationandintegration_SplineInterpolator) < 0) __PYX_ERR(1, 78, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_33straininterpolationandintegration_SplineInterpolator) < 0) __PYX_ERR(1, 78, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_33straininterpolationandintegration_SplineInterpolator.tp_dict, __pyx_vtabptr_33straininterpolationandintegration_SplineInterpolator) < 0) __PYX_ERR(1, 105, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_33straininterpolationandintegration_SplineInterpolator) < 0) __PYX_ERR(1, 105, __pyx_L1_error)
   __pyx_ptype_33straininterpolationandintegration_SplineInterpolator = &__pyx_type_33straininterpolationandintegration_SplineInterpolator;
   __pyx_vtabptr_33straininterpolationandintegration_InterpolatorWithOrientationFix = &__pyx_vtable_33straininterpolationandintegration_InterpolatorWithOrientationFix;
   __pyx_vtable_33straininterpolationandintegration_InterpolatorWithOrientationFix._interpolate_xi_ = (void (*)(struct __pyx_obj_33straininterpolationandintegration_InterpolatorWithOrientationFix *, __Pyx_memviewslice, __Pyx_memviewslice &))__pyx_f_33straininterpolationandintegration_30InterpolatorWithOrientationFix__interpolate_xi_;
-  if (PyType_Ready(&__pyx_type_33straininterpolationandintegration_InterpolatorWithOrientationFix) < 0) __PYX_ERR(1, 104, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_33straininterpolationandintegration_InterpolatorWithOrientationFix) < 0) __PYX_ERR(1, 131, __pyx_L1_error)
   __pyx_type_33straininterpolationandintegration_InterpolatorWithOrientationFix.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_33straininterpolationandintegration_InterpolatorWithOrientationFix.tp_dictoffset && __pyx_type_33straininterpolationandintegration_InterpolatorWithOrientationFix.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_33straininterpolationandintegration_InterpolatorWithOrientationFix.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_33straininterpolationandintegration_InterpolatorWithOrientationFix.tp_dict, __pyx_vtabptr_33straininterpolationandintegration_InterpolatorWithOrientationFix) < 0) __PYX_ERR(1, 104, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_33straininterpolationandintegration_InterpolatorWithOrientationFix) < 0) __PYX_ERR(1, 104, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_33straininterpolationandintegration_InterpolatorWithOrientationFix.tp_dict, __pyx_vtabptr_33straininterpolationandintegration_InterpolatorWithOrientationFix) < 0) __PYX_ERR(1, 131, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_33straininterpolationandintegration_InterpolatorWithOrientationFix) < 0) __PYX_ERR(1, 131, __pyx_L1_error)
   __pyx_ptype_33straininterpolationandintegration_InterpolatorWithOrientationFix = &__pyx_type_33straininterpolationandintegration_InterpolatorWithOrientationFix;
   __pyx_vtabptr_33straininterpolationandintegration_LinearSpecialInterpolator = &__pyx_vtable_33straininterpolationandintegration_LinearSpecialInterpolator;
   __pyx_vtable_33straininterpolationandintegration_LinearSpecialInterpolator.__pyx_base = *__pyx_vtabptr_33straininterpolationandintegration_InterpolatorWithOrientationFix;
@@ -33947,50 +34062,130 @@ static int __Pyx_modinit_type_init_code(void) {
   __pyx_vtable_33straininterpolationandintegration_LinearSpecialInterpolator._set_crnr_vcs_ = (void (*)(struct __pyx_obj_33straininterpolationandintegration_LinearSpecialInterpolator *))__pyx_f_33straininterpolationandintegration_25LinearSpecialInterpolator__set_crnr_vcs_;
   __pyx_vtable_33straininterpolationandintegration_LinearSpecialInterpolator._compute_nrmd_wtd_sum_ = (void (*)(struct __pyx_obj_33straininterpolationandintegration_LinearSpecialInterpolator *, double, double, double, __Pyx_memviewslice &))__pyx_f_33straininterpolationandintegration_25LinearSpecialInterpolator__compute_nrmd_wtd_sum_;
   __pyx_type_33straininterpolationandintegration_LinearSpecialInterpolator.tp_base = __pyx_ptype_33straininterpolationandintegration_InterpolatorWithOrientationFix;
-  if (PyType_Ready(&__pyx_type_33straininterpolationandintegration_LinearSpecialInterpolator) < 0) __PYX_ERR(1, 115, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_33straininterpolationandintegration_LinearSpecialInterpolator) < 0) __PYX_ERR(1, 142, __pyx_L1_error)
   __pyx_type_33straininterpolationandintegration_LinearSpecialInterpolator.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_33straininterpolationandintegration_LinearSpecialInterpolator.tp_dictoffset && __pyx_type_33straininterpolationandintegration_LinearSpecialInterpolator.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_33straininterpolationandintegration_LinearSpecialInterpolator.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_33straininterpolationandintegration_LinearSpecialInterpolator.tp_dict, __pyx_vtabptr_33straininterpolationandintegration_LinearSpecialInterpolator) < 0) __PYX_ERR(1, 115, __pyx_L1_error)
-  if (PyObject_SetAttrString(__pyx_m, "LinearSpecialInterpolator", (PyObject *)&__pyx_type_33straininterpolationandintegration_LinearSpecialInterpolator) < 0) __PYX_ERR(1, 115, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_33straininterpolationandintegration_LinearSpecialInterpolator) < 0) __PYX_ERR(1, 115, __pyx_L1_error)
+  #if CYTHON_COMPILING_IN_CPYTHON
+  {
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_33straininterpolationandintegration_LinearSpecialInterpolator, "__init__"); if (unlikely(!wrapper)) __PYX_ERR(1, 142, __pyx_L1_error)
+    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
+      __pyx_wrapperbase_33straininterpolationandintegration_25LinearSpecialInterpolator_2__init__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_33straininterpolationandintegration_25LinearSpecialInterpolator_2__init__.doc = __pyx_doc_33straininterpolationandintegration_25LinearSpecialInterpolator_2__init__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_33straininterpolationandintegration_25LinearSpecialInterpolator_2__init__;
+    }
+  }
+  #endif
+  #if CYTHON_COMPILING_IN_CPYTHON
+  {
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_33straininterpolationandintegration_LinearSpecialInterpolator, "__call__"); if (unlikely(!wrapper)) __PYX_ERR(1, 142, __pyx_L1_error)
+    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
+      __pyx_wrapperbase_33straininterpolationandintegration_25LinearSpecialInterpolator_4__call__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_33straininterpolationandintegration_25LinearSpecialInterpolator_4__call__.doc = __pyx_doc_33straininterpolationandintegration_25LinearSpecialInterpolator_4__call__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_33straininterpolationandintegration_25LinearSpecialInterpolator_4__call__;
+    }
+  }
+  #endif
+  if (__Pyx_SetVtable(__pyx_type_33straininterpolationandintegration_LinearSpecialInterpolator.tp_dict, __pyx_vtabptr_33straininterpolationandintegration_LinearSpecialInterpolator) < 0) __PYX_ERR(1, 142, __pyx_L1_error)
+  if (PyObject_SetAttrString(__pyx_m, "LinearSpecialInterpolator", (PyObject *)&__pyx_type_33straininterpolationandintegration_LinearSpecialInterpolator) < 0) __PYX_ERR(1, 142, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_33straininterpolationandintegration_LinearSpecialInterpolator) < 0) __PYX_ERR(1, 142, __pyx_L1_error)
   __pyx_ptype_33straininterpolationandintegration_LinearSpecialInterpolator = &__pyx_type_33straininterpolationandintegration_LinearSpecialInterpolator;
   __pyx_vtabptr_33straininterpolationandintegration_CubicSpecialInterpolator = &__pyx_vtable_33straininterpolationandintegration_CubicSpecialInterpolator;
   __pyx_vtable_33straininterpolationandintegration_CubicSpecialInterpolator.__pyx_base = *__pyx_vtabptr_33straininterpolationandintegration_InterpolatorWithOrientationFix;
   __pyx_vtable_33straininterpolationandintegration_CubicSpecialInterpolator.__pyx_base._interpolate_xi_ = (void (*)(struct __pyx_obj_33straininterpolationandintegration_InterpolatorWithOrientationFix *, __Pyx_memviewslice, __Pyx_memviewslice &))__pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolator__interpolate_xi_;
   __pyx_vtable_33straininterpolationandintegration_CubicSpecialInterpolator._set_voxel_indices_ = (void (*)(struct __pyx_obj_33straininterpolationandintegration_CubicSpecialInterpolator *, double, double, double))__pyx_f_33straininterpolationandintegration_24CubicSpecialInterpolator__set_voxel_indices_;
   __pyx_type_33straininterpolationandintegration_CubicSpecialInterpolator.tp_base = __pyx_ptype_33straininterpolationandintegration_InterpolatorWithOrientationFix;
-  if (PyType_Ready(&__pyx_type_33straininterpolationandintegration_CubicSpecialInterpolator) < 0) __PYX_ERR(1, 314, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_33straininterpolationandintegration_CubicSpecialInterpolator) < 0) __PYX_ERR(1, 465, __pyx_L1_error)
   __pyx_type_33straininterpolationandintegration_CubicSpecialInterpolator.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_33straininterpolationandintegration_CubicSpecialInterpolator.tp_dictoffset && __pyx_type_33straininterpolationandintegration_CubicSpecialInterpolator.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_33straininterpolationandintegration_CubicSpecialInterpolator.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_33straininterpolationandintegration_CubicSpecialInterpolator.tp_dict, __pyx_vtabptr_33straininterpolationandintegration_CubicSpecialInterpolator) < 0) __PYX_ERR(1, 314, __pyx_L1_error)
-  if (PyObject_SetAttrString(__pyx_m, "CubicSpecialInterpolator", (PyObject *)&__pyx_type_33straininterpolationandintegration_CubicSpecialInterpolator) < 0) __PYX_ERR(1, 314, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_33straininterpolationandintegration_CubicSpecialInterpolator) < 0) __PYX_ERR(1, 314, __pyx_L1_error)
-  __pyx_ptype_33straininterpolationandintegration_CubicSpecialInterpolator = &__pyx_type_33straininterpolationandintegration_CubicSpecialInterpolator;
-  __pyx_vtabptr_33straininterpolationandintegration_StrainAimAssister = &__pyx_vtable_33straininterpolationandintegration_StrainAimAssister;
-  __pyx_vtable_33straininterpolationandintegration_StrainAimAssister._ev_ = (void (*)(struct __pyx_obj_33straininterpolationandintegration_StrainAimAssister *, __Pyx_memviewslice, __Pyx_memviewslice &))__pyx_f_33straininterpolationandintegration_17StrainAimAssister__ev_;
-  if (PyType_Ready(&__pyx_type_33straininterpolationandintegration_StrainAimAssister) < 0) __PYX_ERR(1, 547, __pyx_L1_error)
-  __pyx_type_33straininterpolationandintegration_StrainAimAssister.tp_print = 0;
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_33straininterpolationandintegration_StrainAimAssister.tp_dictoffset && __pyx_type_33straininterpolationandintegration_StrainAimAssister.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_33straininterpolationandintegration_StrainAimAssister.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  #if CYTHON_COMPILING_IN_CPYTHON
+  {
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_33straininterpolationandintegration_CubicSpecialInterpolator, "__init__"); if (unlikely(!wrapper)) __PYX_ERR(1, 465, __pyx_L1_error)
+    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
+      __pyx_wrapperbase_33straininterpolationandintegration_24CubicSpecialInterpolator_2__init__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_33straininterpolationandintegration_24CubicSpecialInterpolator_2__init__.doc = __pyx_doc_33straininterpolationandintegration_24CubicSpecialInterpolator_2__init__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_33straininterpolationandintegration_24CubicSpecialInterpolator_2__init__;
+    }
   }
-  if (__Pyx_SetVtable(__pyx_type_33straininterpolationandintegration_StrainAimAssister.tp_dict, __pyx_vtabptr_33straininterpolationandintegration_StrainAimAssister) < 0) __PYX_ERR(1, 547, __pyx_L1_error)
-  if (PyObject_SetAttrString(__pyx_m, "StrainAimAssister", (PyObject *)&__pyx_type_33straininterpolationandintegration_StrainAimAssister) < 0) __PYX_ERR(1, 547, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_33straininterpolationandintegration_StrainAimAssister) < 0) __PYX_ERR(1, 547, __pyx_L1_error)
-  __pyx_ptype_33straininterpolationandintegration_StrainAimAssister = &__pyx_type_33straininterpolationandintegration_StrainAimAssister;
+  #endif
+  #if CYTHON_COMPILING_IN_CPYTHON
+  {
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_33straininterpolationandintegration_CubicSpecialInterpolator, "__call__"); if (unlikely(!wrapper)) __PYX_ERR(1, 465, __pyx_L1_error)
+    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
+      __pyx_wrapperbase_33straininterpolationandintegration_24CubicSpecialInterpolator_4__call__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_33straininterpolationandintegration_24CubicSpecialInterpolator_4__call__.doc = __pyx_doc_33straininterpolationandintegration_24CubicSpecialInterpolator_4__call__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_33straininterpolationandintegration_24CubicSpecialInterpolator_4__call__;
+    }
+  }
+  #endif
+  if (__Pyx_SetVtable(__pyx_type_33straininterpolationandintegration_CubicSpecialInterpolator.tp_dict, __pyx_vtabptr_33straininterpolationandintegration_CubicSpecialInterpolator) < 0) __PYX_ERR(1, 465, __pyx_L1_error)
+  if (PyObject_SetAttrString(__pyx_m, "CubicSpecialInterpolator", (PyObject *)&__pyx_type_33straininterpolationandintegration_CubicSpecialInterpolator) < 0) __PYX_ERR(1, 465, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_33straininterpolationandintegration_CubicSpecialInterpolator) < 0) __PYX_ERR(1, 465, __pyx_L1_error)
+  __pyx_ptype_33straininterpolationandintegration_CubicSpecialInterpolator = &__pyx_type_33straininterpolationandintegration_CubicSpecialInterpolator;
+  __pyx_vtabptr_33straininterpolationandintegration_StrainDirectionGenerator = &__pyx_vtable_33straininterpolationandintegration_StrainDirectionGenerator;
+  __pyx_vtable_33straininterpolationandintegration_StrainDirectionGenerator._ev_ = (void (*)(struct __pyx_obj_33straininterpolationandintegration_StrainDirectionGenerator *, __Pyx_memviewslice, __Pyx_memviewslice &))__pyx_f_33straininterpolationandintegration_24StrainDirectionGenerator__ev_;
+  if (PyType_Ready(&__pyx_type_33straininterpolationandintegration_StrainDirectionGenerator) < 0) __PYX_ERR(1, 798, __pyx_L1_error)
+  __pyx_type_33straininterpolationandintegration_StrainDirectionGenerator.tp_print = 0;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_33straininterpolationandintegration_StrainDirectionGenerator.tp_dictoffset && __pyx_type_33straininterpolationandintegration_StrainDirectionGenerator.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_33straininterpolationandintegration_StrainDirectionGenerator.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  }
+  #if CYTHON_COMPILING_IN_CPYTHON
+  {
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_33straininterpolationandintegration_StrainDirectionGenerator, "__init__"); if (unlikely(!wrapper)) __PYX_ERR(1, 798, __pyx_L1_error)
+    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
+      __pyx_wrapperbase_33straininterpolationandintegration_24StrainDirectionGenerator_2__init__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_33straininterpolationandintegration_24StrainDirectionGenerator_2__init__.doc = __pyx_doc_33straininterpolationandintegration_24StrainDirectionGenerator_2__init__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_33straininterpolationandintegration_24StrainDirectionGenerator_2__init__;
+    }
+  }
+  #endif
+  #if CYTHON_COMPILING_IN_CPYTHON
+  {
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_33straininterpolationandintegration_StrainDirectionGenerator, "__call__"); if (unlikely(!wrapper)) __PYX_ERR(1, 798, __pyx_L1_error)
+    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
+      __pyx_wrapperbase_33straininterpolationandintegration_24StrainDirectionGenerator_12__call__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_33straininterpolationandintegration_24StrainDirectionGenerator_12__call__.doc = __pyx_doc_33straininterpolationandintegration_24StrainDirectionGenerator_12__call__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_33straininterpolationandintegration_24StrainDirectionGenerator_12__call__;
+    }
+  }
+  #endif
+  if (__Pyx_SetVtable(__pyx_type_33straininterpolationandintegration_StrainDirectionGenerator.tp_dict, __pyx_vtabptr_33straininterpolationandintegration_StrainDirectionGenerator) < 0) __PYX_ERR(1, 798, __pyx_L1_error)
+  if (PyObject_SetAttrString(__pyx_m, "StrainDirectionGenerator", (PyObject *)&__pyx_type_33straininterpolationandintegration_StrainDirectionGenerator) < 0) __PYX_ERR(1, 798, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_33straininterpolationandintegration_StrainDirectionGenerator) < 0) __PYX_ERR(1, 798, __pyx_L1_error)
+  __pyx_ptype_33straininterpolationandintegration_StrainDirectionGenerator = &__pyx_type_33straininterpolationandintegration_StrainDirectionGenerator;
   __pyx_vtabptr_33straininterpolationandintegration_Dp87Strain = &__pyx_vtable_33straininterpolationandintegration_Dp87Strain;
   __pyx_vtable_33straininterpolationandintegration_Dp87Strain._ev_ = (void (*)(struct __pyx_obj_33straininterpolationandintegration_Dp87Strain *, double *, __Pyx_memviewslice, double *))__pyx_f_33straininterpolationandintegration_10Dp87Strain__ev_;
-  if (PyType_Ready(&__pyx_type_33straininterpolationandintegration_Dp87Strain) < 0) __PYX_ERR(1, 634, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_33straininterpolationandintegration_Dp87Strain) < 0) __PYX_ERR(1, 992, __pyx_L1_error)
   __pyx_type_33straininterpolationandintegration_Dp87Strain.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_33straininterpolationandintegration_Dp87Strain.tp_dictoffset && __pyx_type_33straininterpolationandintegration_Dp87Strain.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_33straininterpolationandintegration_Dp87Strain.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_33straininterpolationandintegration_Dp87Strain.tp_dict, __pyx_vtabptr_33straininterpolationandintegration_Dp87Strain) < 0) __PYX_ERR(1, 634, __pyx_L1_error)
-  if (PyObject_SetAttrString(__pyx_m, "Dp87Strain", (PyObject *)&__pyx_type_33straininterpolationandintegration_Dp87Strain) < 0) __PYX_ERR(1, 634, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_33straininterpolationandintegration_Dp87Strain) < 0) __PYX_ERR(1, 634, __pyx_L1_error)
+  #if CYTHON_COMPILING_IN_CPYTHON
+  {
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_33straininterpolationandintegration_Dp87Strain, "__init__"); if (unlikely(!wrapper)) __PYX_ERR(1, 992, __pyx_L1_error)
+    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
+      __pyx_wrapperbase_33straininterpolationandintegration_10Dp87Strain_2__init__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_33straininterpolationandintegration_10Dp87Strain_2__init__.doc = __pyx_doc_33straininterpolationandintegration_10Dp87Strain_2__init__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_33straininterpolationandintegration_10Dp87Strain_2__init__;
+    }
+  }
+  #endif
+  #if CYTHON_COMPILING_IN_CPYTHON
+  {
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_33straininterpolationandintegration_Dp87Strain, "__call__"); if (unlikely(!wrapper)) __PYX_ERR(1, 992, __pyx_L1_error)
+    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
+      __pyx_wrapperbase_33straininterpolationandintegration_10Dp87Strain_8__call__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_33straininterpolationandintegration_10Dp87Strain_8__call__.doc = __pyx_doc_33straininterpolationandintegration_10Dp87Strain_8__call__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_33straininterpolationandintegration_10Dp87Strain_8__call__;
+    }
+  }
+  #endif
+  if (__Pyx_SetVtable(__pyx_type_33straininterpolationandintegration_Dp87Strain.tp_dict, __pyx_vtabptr_33straininterpolationandintegration_Dp87Strain) < 0) __PYX_ERR(1, 992, __pyx_L1_error)
+  if (PyObject_SetAttrString(__pyx_m, "Dp87Strain", (PyObject *)&__pyx_type_33straininterpolationandintegration_Dp87Strain) < 0) __PYX_ERR(1, 992, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_33straininterpolationandintegration_Dp87Strain) < 0) __PYX_ERR(1, 992, __pyx_L1_error)
   __pyx_ptype_33straininterpolationandintegration_Dp87Strain = &__pyx_type_33straininterpolationandintegration_Dp87Strain;
   __pyx_vtabptr_array = &__pyx_vtable_array;
   __pyx_vtable_array.get_memview = (PyObject *(*)(struct __pyx_array_obj *))__pyx_array_get_memview;
@@ -34220,7 +34415,7 @@ if (!__Pyx_RefNanny) {
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("straininterpolationandintegration", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("straininterpolationandintegration", __pyx_methods, __pyx_k_This_module_contains_Cython_ext, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -34267,16 +34462,16 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   #endif
 
-  /* "straininterpolationandintegration.pyx":3
+  /* "straininterpolationandintegration.pyx":30
  * cimport cython
  * cimport numpy as np
  * import numpy as np             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 3, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(1, 3, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(1, 30, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "(tree fragment)":1
@@ -34290,9 +34485,9 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "straininterpolationandintegration.pyx":1
- * cimport cython             # <<<<<<<<<<<<<<
- * cimport numpy as np
- * import numpy as np
+ * """             # <<<<<<<<<<<<<<
+ * This module contains Cython extension types which:
+ * 1) Facilitate linear and cubic B-spline interpolation of vector fields in R^3,
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -34319,7 +34514,7 @@ if (!__Pyx_RefNanny) {
  * cdef strided = Enum("<strided and direct>") # default
  * cdef indirect = Enum("<strided and indirect>")
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__56, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 285, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__57, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 285, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_XGOTREF(generic);
   __Pyx_DECREF_SET(generic, __pyx_t_1);
@@ -34333,7 +34528,7 @@ if (!__Pyx_RefNanny) {
  * cdef indirect = Enum("<strided and indirect>")
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__57, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 286, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__58, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 286, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_XGOTREF(strided);
   __Pyx_DECREF_SET(strided, __pyx_t_1);
@@ -34347,7 +34542,7 @@ if (!__Pyx_RefNanny) {
  * 
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__58, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 287, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__59, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 287, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_XGOTREF(indirect);
   __Pyx_DECREF_SET(indirect, __pyx_t_1);
@@ -34361,7 +34556,7 @@ if (!__Pyx_RefNanny) {
  * cdef indirect_contiguous = Enum("<contiguous and indirect>")
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__59, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 290, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__60, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 290, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_XGOTREF(contiguous);
   __Pyx_DECREF_SET(contiguous, __pyx_t_1);
@@ -34375,7 +34570,7 @@ if (!__Pyx_RefNanny) {
  * 
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__60, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 291, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(((PyObject *)__pyx_MemviewEnum_type), __pyx_tuple__61, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 291, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_XGOTREF(indirect_contiguous);
   __Pyx_DECREF_SET(indirect_contiguous, __pyx_t_1);

@@ -813,7 +813,7 @@ static const char *__pyx_filename;
 
 static const char *__pyx_f[] = {
   "stringsource",
-  "trivariatescalarinterpolation.pyx",
+  "src/trivariatescalarinterpolation.pyx",
   "__init__.pxd",
   "type.pxd",
 };
@@ -3028,7 +3028,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_12Interpolator_6__sets
   return __pyx_r;
 }
 
-/* "trivariatescalarinterpolation.pyx":74
+/* "trivariatescalarinterpolation.pyx":75
  *         double[::1] grd
  *         double[:,::1] hss
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -3064,7 +3064,7 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline___c
   __Pyx_memviewslice __pyx_t_7 = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "trivariatescalarinterpolation.pyx":75
+  /* "trivariatescalarinterpolation.pyx":76
  *         double[:,::1] hss
  *     def __cinit__(self):
  *         self.grd = self._grd_             # <<<<<<<<<<<<<<
@@ -3074,26 +3074,26 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline___c
   __pyx_t_1 = __pyx_v_self->_grd_;
   if (!__pyx_t_1) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 75, __pyx_L1_error)
+    __PYX_ERR(1, 76, __pyx_L1_error)
   }
   __pyx_t_4 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_3 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 75, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_2 = __pyx_array_new(__pyx_t_3, sizeof(double), PyBytes_AS_STRING(__pyx_t_4), (char *) "fortran", (char *) __pyx_t_1);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 75, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 75, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 76, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->grd, 0);
   __pyx_v_self->grd = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "trivariatescalarinterpolation.pyx":76
+  /* "trivariatescalarinterpolation.pyx":77
  *     def __cinit__(self):
  *         self.grd = self._grd_
  *         self.hss = self._hss_             # <<<<<<<<<<<<<<
@@ -3103,26 +3103,26 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline___c
   __pyx_t_6 = __pyx_v_self->_hss_;
   if (!__pyx_t_6) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 76, __pyx_L1_error)
+    __PYX_ERR(1, 77, __pyx_L1_error)
   }
   __pyx_t_3 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_4 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3), ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 76, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_2 = __pyx_array_new(__pyx_t_4, sizeof(double), PyBytes_AS_STRING(__pyx_t_3), (char *) "c", (char *) __pyx_t_6);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 76, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 76, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 77, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->hss, 0);
   __pyx_v_self->hss = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "trivariatescalarinterpolation.pyx":74
+  /* "trivariatescalarinterpolation.pyx":75
  *         double[::1] grd
  *         double[:,::1] hss
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -3146,7 +3146,7 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline___c
   return __pyx_r;
 }
 
-/* "trivariatescalarinterpolation.pyx":80
+/* "trivariatescalarinterpolation.pyx":81
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __init__(self, double[::1] x, double[::1] y, double[::1] z, double[::1] f,             # <<<<<<<<<<<<<<
@@ -3207,19 +3207,19 @@ static int __pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpline_3__
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_y)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 4, 8, 1); __PYX_ERR(1, 80, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 4, 8, 1); __PYX_ERR(1, 81, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_z)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 4, 8, 2); __PYX_ERR(1, 80, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 4, 8, 2); __PYX_ERR(1, 81, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_f)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 4, 8, 3); __PYX_ERR(1, 80, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 4, 8, 3); __PYX_ERR(1, 81, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
@@ -3247,7 +3247,7 @@ static int __pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpline_3__
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 80, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 81, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -3267,30 +3267,30 @@ static int __pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpline_3__
         default: goto __pyx_L5_argtuple_error;
       }
     }
-    __pyx_v_x = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 80, __pyx_L3_error)
-    __pyx_v_y = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_y.memview)) __PYX_ERR(1, 80, __pyx_L3_error)
-    __pyx_v_z = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[2], PyBUF_WRITABLE); if (unlikely(!__pyx_v_z.memview)) __PYX_ERR(1, 80, __pyx_L3_error)
-    __pyx_v_f = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_f.memview)) __PYX_ERR(1, 80, __pyx_L3_error)
+    __pyx_v_x = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 81, __pyx_L3_error)
+    __pyx_v_y = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_y.memview)) __PYX_ERR(1, 81, __pyx_L3_error)
+    __pyx_v_z = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[2], PyBUF_WRITABLE); if (unlikely(!__pyx_v_z.memview)) __PYX_ERR(1, 81, __pyx_L3_error)
+    __pyx_v_f = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_f.memview)) __PYX_ERR(1, 81, __pyx_L3_error)
     if (values[4]) {
-      __pyx_v_kx = __Pyx_PyInt_As_int(values[4]); if (unlikely((__pyx_v_kx == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 81, __pyx_L3_error)
+      __pyx_v_kx = __Pyx_PyInt_As_int(values[4]); if (unlikely((__pyx_v_kx == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 82, __pyx_L3_error)
     } else {
       __pyx_v_kx = ((int)4);
     }
     if (values[5]) {
-      __pyx_v_ky = __Pyx_PyInt_As_int(values[5]); if (unlikely((__pyx_v_ky == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 81, __pyx_L3_error)
+      __pyx_v_ky = __Pyx_PyInt_As_int(values[5]); if (unlikely((__pyx_v_ky == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 82, __pyx_L3_error)
     } else {
       __pyx_v_ky = ((int)4);
     }
     if (values[6]) {
-      __pyx_v_kz = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_kz == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 81, __pyx_L3_error)
+      __pyx_v_kz = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_kz == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 82, __pyx_L3_error)
     } else {
       __pyx_v_kz = ((int)4);
     }
     if (values[7]) {
-      __pyx_v_extrap = __Pyx_PyObject_IsTrue(values[7]); if (unlikely((__pyx_v_extrap == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 81, __pyx_L3_error)
+      __pyx_v_extrap = __Pyx_PyObject_IsTrue(values[7]); if (unlikely((__pyx_v_extrap == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 82, __pyx_L3_error)
     } else {
 
-      /* "trivariatescalarinterpolation.pyx":81
+      /* "trivariatescalarinterpolation.pyx":82
  *     @cython.boundscheck(False)
  *     def __init__(self, double[::1] x, double[::1] y, double[::1] z, double[::1] f,
  *             int kx = 4, int ky = 4, int kz = 4, bint extrap = False):             # <<<<<<<<<<<<<<
@@ -3302,7 +3302,7 @@ static int __pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpline_3__
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 0, 4, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 80, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 4, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 81, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("trivariatescalarinterpolation.ScalarTrivariateSpline.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3310,7 +3310,7 @@ static int __pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpline_3__
   __pyx_L4_argument_unpacking_done:;
   __pyx_r = __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline_2__init__(((struct __pyx_obj_29trivariatescalarinterpolation_ScalarTrivariateSpline *)__pyx_v_self), __pyx_v_x, __pyx_v_y, __pyx_v_z, __pyx_v_f, __pyx_v_kx, __pyx_v_ky, __pyx_v_kz, __pyx_v_extrap);
 
-  /* "trivariatescalarinterpolation.pyx":80
+  /* "trivariatescalarinterpolation.pyx":81
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __init__(self, double[::1] x, double[::1] y, double[::1] z, double[::1] f,             # <<<<<<<<<<<<<<
@@ -3342,7 +3342,7 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline_2__
   PyObject *__pyx_t_11 = NULL;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "trivariatescalarinterpolation.pyx":137
+  /* "trivariatescalarinterpolation.pyx":138
  *         """
  *         cdef:
  *             int nx = x.shape[0], ny = y.shape[0], nz = z.shape[0]             # <<<<<<<<<<<<<<
@@ -3353,7 +3353,7 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline_2__
   __pyx_v_ny = (__pyx_v_y.shape[0]);
   __pyx_v_nz = (__pyx_v_z.shape[0]);
 
-  /* "trivariatescalarinterpolation.pyx":139
+  /* "trivariatescalarinterpolation.pyx":140
  *             int nx = x.shape[0], ny = y.shape[0], nz = z.shape[0]
  * 
  *         if nx*ny*nz != f.shape[0]:             # <<<<<<<<<<<<<<
@@ -3363,20 +3363,20 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline_2__
   __pyx_t_1 = ((((__pyx_v_nx * __pyx_v_ny) * __pyx_v_nz) != (__pyx_v_f.shape[0])) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "trivariatescalarinterpolation.pyx":140
+    /* "trivariatescalarinterpolation.pyx":141
  * 
  *         if nx*ny*nz != f.shape[0]:
  *             raise ValueError('Array dimensions not aligned!')             # <<<<<<<<<<<<<<
  * 
  *         if (kx < 2 or kx > nx) or (ky < 2 or ky > ny) or (kz < 2 or kz > nz):
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 140, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 141, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 140, __pyx_L1_error)
+    __PYX_ERR(1, 141, __pyx_L1_error)
 
-    /* "trivariatescalarinterpolation.pyx":139
+    /* "trivariatescalarinterpolation.pyx":140
  *             int nx = x.shape[0], ny = y.shape[0], nz = z.shape[0]
  * 
  *         if nx*ny*nz != f.shape[0]:             # <<<<<<<<<<<<<<
@@ -3385,7 +3385,7 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline_2__
  */
   }
 
-  /* "trivariatescalarinterpolation.pyx":142
+  /* "trivariatescalarinterpolation.pyx":143
  *             raise ValueError('Array dimensions not aligned!')
  * 
  *         if (kx < 2 or kx > nx) or (ky < 2 or ky > ny) or (kz < 2 or kz > nz):             # <<<<<<<<<<<<<<
@@ -3427,20 +3427,20 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline_2__
   __pyx_L5_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "trivariatescalarinterpolation.pyx":143
+    /* "trivariatescalarinterpolation.pyx":144
  * 
  *         if (kx < 2 or kx > nx) or (ky < 2 or ky > ny) or (kz < 2 or kz > nz):
  *             raise ValueError('Invalid interpolator order choice!')             # <<<<<<<<<<<<<<
  * 
  *         self.itp = Interpolator(x, y, z, f, kx, ky, kz, extrap)
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 143, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 144, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 143, __pyx_L1_error)
+    __PYX_ERR(1, 144, __pyx_L1_error)
 
-    /* "trivariatescalarinterpolation.pyx":142
+    /* "trivariatescalarinterpolation.pyx":143
  *             raise ValueError('Array dimensions not aligned!')
  * 
  *         if (kx < 2 or kx > nx) or (ky < 2 or ky > ny) or (kz < 2 or kz > nz):             # <<<<<<<<<<<<<<
@@ -3449,30 +3449,30 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline_2__
  */
   }
 
-  /* "trivariatescalarinterpolation.pyx":145
+  /* "trivariatescalarinterpolation.pyx":146
  *             raise ValueError('Invalid interpolator order choice!')
  * 
  *         self.itp = Interpolator(x, y, z, f, kx, ky, kz, extrap)             # <<<<<<<<<<<<<<
  *     @cython.initializedcheck(False)
  *     @cython.boundscheck(False)
  */
-  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_x, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 145, __pyx_L1_error)
+  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_x, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_v_y, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 145, __pyx_L1_error)
+  __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_v_y, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_z, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 145, __pyx_L1_error)
+  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_z, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_v_f, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 145, __pyx_L1_error)
+  __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_v_f, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_7 = __Pyx_PyInt_From_int(__pyx_v_kx); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 145, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyInt_From_int(__pyx_v_kx); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  __pyx_t_8 = __Pyx_PyInt_From_int(__pyx_v_ky); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 145, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyInt_From_int(__pyx_v_ky); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_9 = __Pyx_PyInt_From_int(__pyx_v_kz); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 145, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyInt_From_int(__pyx_v_kz); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_10 = __Pyx_PyBool_FromLong(__pyx_v_extrap); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 145, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyBool_FromLong(__pyx_v_extrap); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_11 = PyTuple_New(8); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 145, __pyx_L1_error)
+  __pyx_t_11 = PyTuple_New(8); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_t_2);
@@ -3498,7 +3498,7 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline_2__
   __pyx_t_8 = 0;
   __pyx_t_9 = 0;
   __pyx_t_10 = 0;
-  __pyx_t_10 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_29trivariatescalarinterpolation_Interpolator), __pyx_t_11, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 145, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_29trivariatescalarinterpolation_Interpolator), __pyx_t_11, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
   __Pyx_GIVEREF(__pyx_t_10);
@@ -3507,7 +3507,7 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline_2__
   __pyx_v_self->itp = ((struct __pyx_obj_29trivariatescalarinterpolation_Interpolator *)__pyx_t_10);
   __pyx_t_10 = 0;
 
-  /* "trivariatescalarinterpolation.pyx":80
+  /* "trivariatescalarinterpolation.pyx":81
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __init__(self, double[::1] x, double[::1] y, double[::1] z, double[::1] f,             # <<<<<<<<<<<<<<
@@ -3539,7 +3539,7 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline_2__
   return __pyx_r;
 }
 
-/* "trivariatescalarinterpolation.pyx":149
+/* "trivariatescalarinterpolation.pyx":150
  *     @cython.boundscheck(False)
  *     @cython.wraparound(False)
  *     def __call__(self, double[::1] pos):             # <<<<<<<<<<<<<<
@@ -3577,18 +3577,18 @@ static PyObject *__pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpli
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 149, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 150, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
     }
-    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 149, __pyx_L3_error)
+    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 150, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 149, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 150, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("trivariatescalarinterpolation.ScalarTrivariateSpline.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3611,7 +3611,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   PyObject *__pyx_t_4 = NULL;
   __Pyx_RefNannySetupContext("__call__", 0);
 
-  /* "trivariatescalarinterpolation.pyx":172
+  /* "trivariatescalarinterpolation.pyx":173
  *         cdef:
  *             double tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,0,0,&tmp)             # <<<<<<<<<<<<<<
@@ -3623,7 +3623,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_3 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self->itp->__pyx_vtab)->_ev_(__pyx_v_self->itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_1)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_2)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_3)) ))), 0, 0, 0, (&__pyx_v_tmp));
 
-  /* "trivariatescalarinterpolation.pyx":173
+  /* "trivariatescalarinterpolation.pyx":174
  *             double tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,0,0,&tmp)
  *         return tmp             # <<<<<<<<<<<<<<
@@ -3631,13 +3631,13 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
  *     @cython.boundscheck(False)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_4 = PyFloat_FromDouble(__pyx_v_tmp); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 173, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble(__pyx_v_tmp); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 174, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_r = __pyx_t_4;
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "trivariatescalarinterpolation.pyx":149
+  /* "trivariatescalarinterpolation.pyx":150
  *     @cython.boundscheck(False)
  *     @cython.wraparound(False)
  *     def __call__(self, double[::1] pos):             # <<<<<<<<<<<<<<
@@ -3657,7 +3657,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   return __pyx_r;
 }
 
-/* "trivariatescalarinterpolation.pyx":177
+/* "trivariatescalarinterpolation.pyx":178
  *     @cython.boundscheck(False)
  *     @cython.wraparound(False)
  *     def grad(self, double[::1] pos):             # <<<<<<<<<<<<<<
@@ -3674,7 +3674,7 @@ static PyObject *__pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("grad (wrapper)", 0);
   assert(__pyx_arg_pos); {
-    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_arg_pos, PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 177, __pyx_L3_error)
+    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_arg_pos, PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 178, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -3714,7 +3714,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   PyObject *__pyx_t_18 = NULL;
   __Pyx_RefNannySetupContext("grad", 0);
 
-  /* "trivariatescalarinterpolation.pyx":199
+  /* "trivariatescalarinterpolation.pyx":200
  *         """
  *         cdef:
  *             double[::1] grd = self.grd             # <<<<<<<<<<<<<<
@@ -3727,7 +3727,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "trivariatescalarinterpolation.pyx":201
+  /* "trivariatescalarinterpolation.pyx":202
  *             double[::1] grd = self.grd
  *             double tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],1,0,0,&tmp)             # <<<<<<<<<<<<<<
@@ -3739,7 +3739,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_4 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self->itp->__pyx_vtab)->_ev_(__pyx_v_self->itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_2)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_3)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_4)) ))), 1, 0, 0, (&__pyx_v_tmp));
 
-  /* "trivariatescalarinterpolation.pyx":202
+  /* "trivariatescalarinterpolation.pyx":203
  *             double tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],1,0,0,&tmp)
  *         grd[0] = tmp             # <<<<<<<<<<<<<<
@@ -3749,7 +3749,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_5 = 0;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_grd.data) + __pyx_t_5)) )) = __pyx_v_tmp;
 
-  /* "trivariatescalarinterpolation.pyx":203
+  /* "trivariatescalarinterpolation.pyx":204
  *         self.itp._ev_(pos[0],pos[1],pos[2],1,0,0,&tmp)
  *         grd[0] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,1,0,&tmp)             # <<<<<<<<<<<<<<
@@ -3761,7 +3761,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_8 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self->itp->__pyx_vtab)->_ev_(__pyx_v_self->itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_6)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_7)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_8)) ))), 0, 1, 0, (&__pyx_v_tmp));
 
-  /* "trivariatescalarinterpolation.pyx":204
+  /* "trivariatescalarinterpolation.pyx":205
  *         grd[0] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,1,0,&tmp)
  *         grd[1] = tmp             # <<<<<<<<<<<<<<
@@ -3771,7 +3771,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_9 = 1;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_grd.data) + __pyx_t_9)) )) = __pyx_v_tmp;
 
-  /* "trivariatescalarinterpolation.pyx":205
+  /* "trivariatescalarinterpolation.pyx":206
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,1,0,&tmp)
  *         grd[1] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,0,1,&tmp)             # <<<<<<<<<<<<<<
@@ -3783,7 +3783,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_12 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self->itp->__pyx_vtab)->_ev_(__pyx_v_self->itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_10)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_11)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_12)) ))), 0, 0, 1, (&__pyx_v_tmp));
 
-  /* "trivariatescalarinterpolation.pyx":206
+  /* "trivariatescalarinterpolation.pyx":207
  *         grd[1] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,0,1,&tmp)
  *         grd[2] = tmp             # <<<<<<<<<<<<<<
@@ -3793,7 +3793,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_13 = 2;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_grd.data) + __pyx_t_13)) )) = __pyx_v_tmp;
 
-  /* "trivariatescalarinterpolation.pyx":207
+  /* "trivariatescalarinterpolation.pyx":208
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,0,1,&tmp)
  *         grd[2] = tmp
  *         return np.copy(grd)             # <<<<<<<<<<<<<<
@@ -3801,12 +3801,12 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
  *     @cython.boundscheck(False)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_15 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 207, __pyx_L1_error)
+  __pyx_t_15 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 208, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_15);
-  __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_t_15, __pyx_n_s_copy); if (unlikely(!__pyx_t_16)) __PYX_ERR(1, 207, __pyx_L1_error)
+  __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_t_15, __pyx_n_s_copy); if (unlikely(!__pyx_t_16)) __PYX_ERR(1, 208, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_16);
   __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
-  __pyx_t_15 = __pyx_memoryview_fromslice(__pyx_v_grd, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 207, __pyx_L1_error)
+  __pyx_t_15 = __pyx_memoryview_fromslice(__pyx_v_grd, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 208, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_15);
   __pyx_t_17 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_16))) {
@@ -3819,14 +3819,14 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
     }
   }
   if (!__pyx_t_17) {
-    __pyx_t_14 = __Pyx_PyObject_CallOneArg(__pyx_t_16, __pyx_t_15); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 207, __pyx_L1_error)
+    __pyx_t_14 = __Pyx_PyObject_CallOneArg(__pyx_t_16, __pyx_t_15); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 208, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
     __Pyx_GOTREF(__pyx_t_14);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_16)) {
       PyObject *__pyx_temp[2] = {__pyx_t_17, __pyx_t_15};
-      __pyx_t_14 = __Pyx_PyFunction_FastCall(__pyx_t_16, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 207, __pyx_L1_error)
+      __pyx_t_14 = __Pyx_PyFunction_FastCall(__pyx_t_16, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 208, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_17); __pyx_t_17 = 0;
       __Pyx_GOTREF(__pyx_t_14);
       __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
@@ -3835,20 +3835,20 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_16)) {
       PyObject *__pyx_temp[2] = {__pyx_t_17, __pyx_t_15};
-      __pyx_t_14 = __Pyx_PyCFunction_FastCall(__pyx_t_16, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 207, __pyx_L1_error)
+      __pyx_t_14 = __Pyx_PyCFunction_FastCall(__pyx_t_16, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 208, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_17); __pyx_t_17 = 0;
       __Pyx_GOTREF(__pyx_t_14);
       __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
     } else
     #endif
     {
-      __pyx_t_18 = PyTuple_New(1+1); if (unlikely(!__pyx_t_18)) __PYX_ERR(1, 207, __pyx_L1_error)
+      __pyx_t_18 = PyTuple_New(1+1); if (unlikely(!__pyx_t_18)) __PYX_ERR(1, 208, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_18);
       __Pyx_GIVEREF(__pyx_t_17); PyTuple_SET_ITEM(__pyx_t_18, 0, __pyx_t_17); __pyx_t_17 = NULL;
       __Pyx_GIVEREF(__pyx_t_15);
       PyTuple_SET_ITEM(__pyx_t_18, 0+1, __pyx_t_15);
       __pyx_t_15 = 0;
-      __pyx_t_14 = __Pyx_PyObject_Call(__pyx_t_16, __pyx_t_18, NULL); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 207, __pyx_L1_error)
+      __pyx_t_14 = __Pyx_PyObject_Call(__pyx_t_16, __pyx_t_18, NULL); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 208, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_14);
       __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
     }
@@ -3858,7 +3858,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_14 = 0;
   goto __pyx_L0;
 
-  /* "trivariatescalarinterpolation.pyx":177
+  /* "trivariatescalarinterpolation.pyx":178
  *     @cython.boundscheck(False)
  *     @cython.wraparound(False)
  *     def grad(self, double[::1] pos):             # <<<<<<<<<<<<<<
@@ -3884,7 +3884,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   return __pyx_r;
 }
 
-/* "trivariatescalarinterpolation.pyx":211
+/* "trivariatescalarinterpolation.pyx":212
  *     @cython.boundscheck(False)
  *     @cython.wraparound(False)
  *     def hess(self, double[::1] pos):             # <<<<<<<<<<<<<<
@@ -3901,7 +3901,7 @@ static PyObject *__pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("hess (wrapper)", 0);
   assert(__pyx_arg_pos); {
-    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_arg_pos, PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 211, __pyx_L3_error)
+    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_arg_pos, PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 212, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -3974,7 +3974,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   PyObject *__pyx_t_51 = NULL;
   __Pyx_RefNannySetupContext("hess", 0);
 
-  /* "trivariatescalarinterpolation.pyx":233
+  /* "trivariatescalarinterpolation.pyx":234
  *         """
  *         cdef:
  *             double[:,::1] hss = self.hss             # <<<<<<<<<<<<<<
@@ -3987,7 +3987,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "trivariatescalarinterpolation.pyx":235
+  /* "trivariatescalarinterpolation.pyx":236
  *             double[:,::1] hss = self.hss
  *             double tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],2,0,0,&tmp)             # <<<<<<<<<<<<<<
@@ -3999,7 +3999,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_4 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self->itp->__pyx_vtab)->_ev_(__pyx_v_self->itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_2)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_3)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_4)) ))), 2, 0, 0, (&__pyx_v_tmp));
 
-  /* "trivariatescalarinterpolation.pyx":236
+  /* "trivariatescalarinterpolation.pyx":237
  *             double tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],2,0,0,&tmp)
  *         hss[0,0] = tmp             # <<<<<<<<<<<<<<
@@ -4010,7 +4010,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_6 = 0;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_5 * __pyx_v_hss.strides[0]) )) + __pyx_t_6)) )) = __pyx_v_tmp;
 
-  /* "trivariatescalarinterpolation.pyx":237
+  /* "trivariatescalarinterpolation.pyx":238
  *         self.itp._ev_(pos[0],pos[1],pos[2],2,0,0,&tmp)
  *         hss[0,0] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],1,1,0,&tmp)             # <<<<<<<<<<<<<<
@@ -4022,7 +4022,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_9 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self->itp->__pyx_vtab)->_ev_(__pyx_v_self->itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_7)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_8)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_9)) ))), 1, 1, 0, (&__pyx_v_tmp));
 
-  /* "trivariatescalarinterpolation.pyx":238
+  /* "trivariatescalarinterpolation.pyx":239
  *         hss[0,0] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],1,1,0,&tmp)
  *         hss[0,1] = tmp             # <<<<<<<<<<<<<<
@@ -4033,7 +4033,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_11 = 1;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_10 * __pyx_v_hss.strides[0]) )) + __pyx_t_11)) )) = __pyx_v_tmp;
 
-  /* "trivariatescalarinterpolation.pyx":239
+  /* "trivariatescalarinterpolation.pyx":240
  *         self.itp._ev_(pos[0],pos[1],pos[2],1,1,0,&tmp)
  *         hss[0,1] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],1,0,1,&tmp)             # <<<<<<<<<<<<<<
@@ -4045,7 +4045,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_14 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self->itp->__pyx_vtab)->_ev_(__pyx_v_self->itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_12)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_13)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_14)) ))), 1, 0, 1, (&__pyx_v_tmp));
 
-  /* "trivariatescalarinterpolation.pyx":240
+  /* "trivariatescalarinterpolation.pyx":241
  *         hss[0,1] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],1,0,1,&tmp)
  *         hss[0,2] = tmp             # <<<<<<<<<<<<<<
@@ -4056,7 +4056,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_16 = 2;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_15 * __pyx_v_hss.strides[0]) )) + __pyx_t_16)) )) = __pyx_v_tmp;
 
-  /* "trivariatescalarinterpolation.pyx":241
+  /* "trivariatescalarinterpolation.pyx":242
  *         self.itp._ev_(pos[0],pos[1],pos[2],1,0,1,&tmp)
  *         hss[0,2] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],1,1,0,&tmp)             # <<<<<<<<<<<<<<
@@ -4068,7 +4068,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_19 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self->itp->__pyx_vtab)->_ev_(__pyx_v_self->itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_17)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_18)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_19)) ))), 1, 1, 0, (&__pyx_v_tmp));
 
-  /* "trivariatescalarinterpolation.pyx":242
+  /* "trivariatescalarinterpolation.pyx":243
  *         hss[0,2] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],1,1,0,&tmp)
  *         hss[1,0] = tmp             # <<<<<<<<<<<<<<
@@ -4079,7 +4079,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_21 = 0;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_20 * __pyx_v_hss.strides[0]) )) + __pyx_t_21)) )) = __pyx_v_tmp;
 
-  /* "trivariatescalarinterpolation.pyx":243
+  /* "trivariatescalarinterpolation.pyx":244
  *         self.itp._ev_(pos[0],pos[1],pos[2],1,1,0,&tmp)
  *         hss[1,0] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,2,0,&tmp)             # <<<<<<<<<<<<<<
@@ -4091,7 +4091,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_24 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self->itp->__pyx_vtab)->_ev_(__pyx_v_self->itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_22)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_23)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_24)) ))), 0, 2, 0, (&__pyx_v_tmp));
 
-  /* "trivariatescalarinterpolation.pyx":244
+  /* "trivariatescalarinterpolation.pyx":245
  *         hss[1,0] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,2,0,&tmp)
  *         hss[1,1] = tmp             # <<<<<<<<<<<<<<
@@ -4102,7 +4102,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_26 = 1;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_25 * __pyx_v_hss.strides[0]) )) + __pyx_t_26)) )) = __pyx_v_tmp;
 
-  /* "trivariatescalarinterpolation.pyx":245
+  /* "trivariatescalarinterpolation.pyx":246
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,2,0,&tmp)
  *         hss[1,1] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,1,1,&tmp)             # <<<<<<<<<<<<<<
@@ -4114,7 +4114,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_29 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self->itp->__pyx_vtab)->_ev_(__pyx_v_self->itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_27)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_28)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_29)) ))), 0, 1, 1, (&__pyx_v_tmp));
 
-  /* "trivariatescalarinterpolation.pyx":246
+  /* "trivariatescalarinterpolation.pyx":247
  *         hss[1,1] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,1,1,&tmp)
  *         hss[1,2] = tmp             # <<<<<<<<<<<<<<
@@ -4125,7 +4125,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_31 = 2;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_30 * __pyx_v_hss.strides[0]) )) + __pyx_t_31)) )) = __pyx_v_tmp;
 
-  /* "trivariatescalarinterpolation.pyx":247
+  /* "trivariatescalarinterpolation.pyx":248
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,1,1,&tmp)
  *         hss[1,2] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],1,0,1,&tmp)             # <<<<<<<<<<<<<<
@@ -4137,7 +4137,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_34 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self->itp->__pyx_vtab)->_ev_(__pyx_v_self->itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_32)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_33)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_34)) ))), 1, 0, 1, (&__pyx_v_tmp));
 
-  /* "trivariatescalarinterpolation.pyx":248
+  /* "trivariatescalarinterpolation.pyx":249
  *         hss[1,2] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],1,0,1,&tmp)
  *         hss[2,0] = tmp             # <<<<<<<<<<<<<<
@@ -4148,7 +4148,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_36 = 0;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_35 * __pyx_v_hss.strides[0]) )) + __pyx_t_36)) )) = __pyx_v_tmp;
 
-  /* "trivariatescalarinterpolation.pyx":249
+  /* "trivariatescalarinterpolation.pyx":250
  *         self.itp._ev_(pos[0],pos[1],pos[2],1,0,1,&tmp)
  *         hss[2,0] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,1,1,&tmp)             # <<<<<<<<<<<<<<
@@ -4160,7 +4160,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_39 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self->itp->__pyx_vtab)->_ev_(__pyx_v_self->itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_37)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_38)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_39)) ))), 0, 1, 1, (&__pyx_v_tmp));
 
-  /* "trivariatescalarinterpolation.pyx":250
+  /* "trivariatescalarinterpolation.pyx":251
  *         hss[2,0] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,1,1,&tmp)
  *         hss[2,1] = tmp             # <<<<<<<<<<<<<<
@@ -4171,7 +4171,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_41 = 1;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_40 * __pyx_v_hss.strides[0]) )) + __pyx_t_41)) )) = __pyx_v_tmp;
 
-  /* "trivariatescalarinterpolation.pyx":251
+  /* "trivariatescalarinterpolation.pyx":252
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,1,1,&tmp)
  *         hss[2,1] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,0,2,&tmp)             # <<<<<<<<<<<<<<
@@ -4183,31 +4183,28 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_44 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self->itp->__pyx_vtab)->_ev_(__pyx_v_self->itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_42)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_43)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_44)) ))), 0, 0, 2, (&__pyx_v_tmp));
 
-  /* "trivariatescalarinterpolation.pyx":252
+  /* "trivariatescalarinterpolation.pyx":253
  *         hss[2,1] = tmp
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,0,2,&tmp)
  *         hss[2,2] = tmp             # <<<<<<<<<<<<<<
  *         return np.copy(hss)
- * 
  */
   __pyx_t_45 = 2;
   __pyx_t_46 = 2;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_45 * __pyx_v_hss.strides[0]) )) + __pyx_t_46)) )) = __pyx_v_tmp;
 
-  /* "trivariatescalarinterpolation.pyx":253
+  /* "trivariatescalarinterpolation.pyx":254
  *         self.itp._ev_(pos[0],pos[1],pos[2],0,0,2,&tmp)
  *         hss[2,2] = tmp
  *         return np.copy(hss)             # <<<<<<<<<<<<<<
- * 
- * ## The following is a deprecated implementation of a B-spline interpolation
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_48 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_48)) __PYX_ERR(1, 253, __pyx_L1_error)
+  __pyx_t_48 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_48)) __PYX_ERR(1, 254, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_48);
-  __pyx_t_49 = __Pyx_PyObject_GetAttrStr(__pyx_t_48, __pyx_n_s_copy); if (unlikely(!__pyx_t_49)) __PYX_ERR(1, 253, __pyx_L1_error)
+  __pyx_t_49 = __Pyx_PyObject_GetAttrStr(__pyx_t_48, __pyx_n_s_copy); if (unlikely(!__pyx_t_49)) __PYX_ERR(1, 254, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_49);
   __Pyx_DECREF(__pyx_t_48); __pyx_t_48 = 0;
-  __pyx_t_48 = __pyx_memoryview_fromslice(__pyx_v_hss, 2, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_48)) __PYX_ERR(1, 253, __pyx_L1_error)
+  __pyx_t_48 = __pyx_memoryview_fromslice(__pyx_v_hss, 2, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_48)) __PYX_ERR(1, 254, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_48);
   __pyx_t_50 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_49))) {
@@ -4220,14 +4217,14 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
     }
   }
   if (!__pyx_t_50) {
-    __pyx_t_47 = __Pyx_PyObject_CallOneArg(__pyx_t_49, __pyx_t_48); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 253, __pyx_L1_error)
+    __pyx_t_47 = __Pyx_PyObject_CallOneArg(__pyx_t_49, __pyx_t_48); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 254, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_48); __pyx_t_48 = 0;
     __Pyx_GOTREF(__pyx_t_47);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_49)) {
       PyObject *__pyx_temp[2] = {__pyx_t_50, __pyx_t_48};
-      __pyx_t_47 = __Pyx_PyFunction_FastCall(__pyx_t_49, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 253, __pyx_L1_error)
+      __pyx_t_47 = __Pyx_PyFunction_FastCall(__pyx_t_49, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 254, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_50); __pyx_t_50 = 0;
       __Pyx_GOTREF(__pyx_t_47);
       __Pyx_DECREF(__pyx_t_48); __pyx_t_48 = 0;
@@ -4236,20 +4233,20 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_49)) {
       PyObject *__pyx_temp[2] = {__pyx_t_50, __pyx_t_48};
-      __pyx_t_47 = __Pyx_PyCFunction_FastCall(__pyx_t_49, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 253, __pyx_L1_error)
+      __pyx_t_47 = __Pyx_PyCFunction_FastCall(__pyx_t_49, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 254, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_50); __pyx_t_50 = 0;
       __Pyx_GOTREF(__pyx_t_47);
       __Pyx_DECREF(__pyx_t_48); __pyx_t_48 = 0;
     } else
     #endif
     {
-      __pyx_t_51 = PyTuple_New(1+1); if (unlikely(!__pyx_t_51)) __PYX_ERR(1, 253, __pyx_L1_error)
+      __pyx_t_51 = PyTuple_New(1+1); if (unlikely(!__pyx_t_51)) __PYX_ERR(1, 254, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_51);
       __Pyx_GIVEREF(__pyx_t_50); PyTuple_SET_ITEM(__pyx_t_51, 0, __pyx_t_50); __pyx_t_50 = NULL;
       __Pyx_GIVEREF(__pyx_t_48);
       PyTuple_SET_ITEM(__pyx_t_51, 0+1, __pyx_t_48);
       __pyx_t_48 = 0;
-      __pyx_t_47 = __Pyx_PyObject_Call(__pyx_t_49, __pyx_t_51, NULL); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 253, __pyx_L1_error)
+      __pyx_t_47 = __Pyx_PyObject_Call(__pyx_t_49, __pyx_t_51, NULL); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 254, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_47);
       __Pyx_DECREF(__pyx_t_51); __pyx_t_51 = 0;
     }
@@ -4259,7 +4256,7 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_t_47 = 0;
   goto __pyx_L0;
 
-  /* "trivariatescalarinterpolation.pyx":211
+  /* "trivariatescalarinterpolation.pyx":212
  *     @cython.boundscheck(False)
  *     @cython.wraparound(False)
  *     def hess(self, double[::1] pos):             # <<<<<<<<<<<<<<
@@ -20297,7 +20294,7 @@ static PyTypeObject __pyx_type_29trivariatescalarinterpolation_ScalarTrivariateS
   0, /*tp_setattro*/
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
-  "\n    A Cython extension type which facilitates simultaneous interpolation of\n    time-dependent vector fields in R^3 along all thre spatial axes, as well\n    as the time abscissa.\n\n    Methods defined here:\n    ScalarTrivariateSpline.__init__(x,y,z,f,kx,ky,kz,extrap)\n    ScalarTrivariateSpline.__call__(pos)\n    ScalarTrivariateSpline.grad(pos)\n    ScalarTrivariateSpline.hess(pos)\n\n    Version: 0.1\n    ", /*tp_doc*/
+  "\n    A Cython extension type which facilitates simultaneous interpolation of\n    time-dependent vector fields in R^3 along all thre spatial axes, as well\n    as the time abscissa.\n\n    Methods defined here:\n    ScalarTrivariateSpline.__init__(x,y,z,f,kx,ky,kz,extrap)\n    ScalarTrivariateSpline.__call__(pos)\n    ScalarTrivariateSpline.grad(pos)\n    ScalarTrivariateSpline.hess(pos)\n\n    Version: 0.1\n\n    ", /*tp_doc*/
   __pyx_tp_traverse_29trivariatescalarinterpolation_ScalarTrivariateSpline, /*tp_traverse*/
   __pyx_tp_clear_29trivariatescalarinterpolation_ScalarTrivariateSpline, /*tp_clear*/
   0, /*tp_richcompare*/
@@ -21159,7 +21156,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
 };
 static int __Pyx_InitCachedBuiltins(void) {
   __pyx_builtin_TypeError = __Pyx_GetBuiltinName(__pyx_n_s_TypeError); if (!__pyx_builtin_TypeError) __PYX_ERR(0, 2, __pyx_L1_error)
-  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(1, 140, __pyx_L1_error)
+  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(1, 141, __pyx_L1_error)
   __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(2, 242, __pyx_L1_error)
   __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_n_s_RuntimeError); if (!__pyx_builtin_RuntimeError) __PYX_ERR(2, 810, __pyx_L1_error)
   __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) __PYX_ERR(2, 1000, __pyx_L1_error)
@@ -21196,25 +21193,25 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "trivariatescalarinterpolation.pyx":140
+  /* "trivariatescalarinterpolation.pyx":141
  * 
  *         if nx*ny*nz != f.shape[0]:
  *             raise ValueError('Array dimensions not aligned!')             # <<<<<<<<<<<<<<
  * 
  *         if (kx < 2 or kx > nx) or (ky < 2 or ky > ny) or (kz < 2 or kz > nz):
  */
-  __pyx_tuple__3 = PyTuple_Pack(1, __pyx_kp_s_Array_dimensions_not_aligned); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(1, 140, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(1, __pyx_kp_s_Array_dimensions_not_aligned); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(1, 141, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "trivariatescalarinterpolation.pyx":143
+  /* "trivariatescalarinterpolation.pyx":144
  * 
  *         if (kx < 2 or kx > nx) or (ky < 2 or ky > ny) or (kz < 2 or kz > nz):
  *             raise ValueError('Invalid interpolator order choice!')             # <<<<<<<<<<<<<<
  * 
  *         self.itp = Interpolator(x, y, z, f, kx, ky, kz, extrap)
  */
-  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_kp_s_Invalid_interpolator_order_choic); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(1, 143, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_kp_s_Invalid_interpolator_order_choic); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(1, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 

@@ -583,7 +583,6 @@ static CYTHON_INLINE float __PYX_NAN() {
 #include "new"
 #include "stdexcept"
 #include "typeinfo"
-#include <vector>
 #include "linkto.h"
 #include "pythread.h"
 #include <stdlib.h>
@@ -814,7 +813,7 @@ static const char *__pyx_filename;
 
 static const char *__pyx_f[] = {
   "stringsource",
-  "quadvariatevectorinterpolation.pyx",
+  "src/quadvariatevectorinterpolation.pyx",
   "__init__.pxd",
   "type.pxd",
 };
@@ -1184,7 +1183,7 @@ typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_complex_t;
 
-/* "quadvariatevectorinterpolation.pyx":34
+/* "quadvariatevectorinterpolation.pyx":32
  * # In-house wrapper class for the bspline-4d fortran class
  * @cython.internal
  * cdef class Interpolator:             # <<<<<<<<<<<<<<
@@ -1198,7 +1197,7 @@ struct __pyx_obj_30quadvariatevectorinterpolation_Interpolator {
 };
 
 
-/* "quadvariatevectorinterpolation.pyx":57
+/* "quadvariatevectorinterpolation.pyx":55
  * 
  * 
  * cdef class TrivectorQuadvariateSpline:             # <<<<<<<<<<<<<<
@@ -1295,7 +1294,7 @@ struct __pyx_memoryviewslice_obj {
 
 
 
-/* "quadvariatevectorinterpolation.pyx":34
+/* "quadvariatevectorinterpolation.pyx":32
  * # In-house wrapper class for the bspline-4d fortran class
  * @cython.internal
  * cdef class Interpolator:             # <<<<<<<<<<<<<<
@@ -2157,8 +2156,6 @@ static struct __pyx_array_obj *__pyx_array_new(PyObject *, Py_ssize_t, char *, c
 
 /* Module declarations from 'cython' */
 
-/* Module declarations from 'libcpp.vector' */
-
 /* Module declarations from 'quadvariatevectorinterpolation' */
 static PyTypeObject *__pyx_ptype_30quadvariatevectorinterpolation_Interpolator = 0;
 static PyTypeObject *__pyx_ptype_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline = 0;
@@ -2577,7 +2574,7 @@ static PyObject *__pyx_tuple__47;
 static PyObject *__pyx_codeobj__48;
 /* Late includes */
 
-/* "quadvariatevectorinterpolation.pyx":40
+/* "quadvariatevectorinterpolation.pyx":38
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __cinit__(self, double[::1] x, double[::1] y, double[::1] z, double[::1] q, double[::1] f,             # <<<<<<<<<<<<<<
@@ -2640,59 +2637,59 @@ static int __pyx_pw_30quadvariatevectorinterpolation_12Interpolator_1__cinit__(P
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_y)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 1); __PYX_ERR(1, 40, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 1); __PYX_ERR(1, 38, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_z)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 2); __PYX_ERR(1, 40, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 2); __PYX_ERR(1, 38, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_q)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 3); __PYX_ERR(1, 40, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 3); __PYX_ERR(1, 38, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
         if (likely((values[4] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_f)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 4); __PYX_ERR(1, 40, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 4); __PYX_ERR(1, 38, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  5:
         if (likely((values[5] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_kx)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 5); __PYX_ERR(1, 40, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 5); __PYX_ERR(1, 38, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  6:
         if (likely((values[6] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_ky)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 6); __PYX_ERR(1, 40, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 6); __PYX_ERR(1, 38, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  7:
         if (likely((values[7] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_kz)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 7); __PYX_ERR(1, 40, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 7); __PYX_ERR(1, 38, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  8:
         if (likely((values[8] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_kq)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 8); __PYX_ERR(1, 40, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 8); __PYX_ERR(1, 38, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  9:
         if (likely((values[9] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_extrap)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 9); __PYX_ERR(1, 40, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, 9); __PYX_ERR(1, 38, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 40, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__cinit__") < 0)) __PYX_ERR(1, 38, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 10) {
       goto __pyx_L5_argtuple_error;
@@ -2708,20 +2705,20 @@ static int __pyx_pw_30quadvariatevectorinterpolation_12Interpolator_1__cinit__(P
       values[8] = PyTuple_GET_ITEM(__pyx_args, 8);
       values[9] = PyTuple_GET_ITEM(__pyx_args, 9);
     }
-    __pyx_v_x = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 40, __pyx_L3_error)
-    __pyx_v_y = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_y.memview)) __PYX_ERR(1, 40, __pyx_L3_error)
-    __pyx_v_z = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[2], PyBUF_WRITABLE); if (unlikely(!__pyx_v_z.memview)) __PYX_ERR(1, 40, __pyx_L3_error)
-    __pyx_v_q = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_q.memview)) __PYX_ERR(1, 40, __pyx_L3_error)
-    __pyx_v_f = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[4], PyBUF_WRITABLE); if (unlikely(!__pyx_v_f.memview)) __PYX_ERR(1, 40, __pyx_L3_error)
-    __pyx_v_kx = __Pyx_PyInt_As_int(values[5]); if (unlikely((__pyx_v_kx == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 41, __pyx_L3_error)
-    __pyx_v_ky = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_ky == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 41, __pyx_L3_error)
-    __pyx_v_kz = __Pyx_PyInt_As_int(values[7]); if (unlikely((__pyx_v_kz == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 41, __pyx_L3_error)
-    __pyx_v_kq = __Pyx_PyInt_As_int(values[8]); if (unlikely((__pyx_v_kq == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 41, __pyx_L3_error)
-    __pyx_v_extrap = __Pyx_PyObject_IsTrue(values[9]); if (unlikely((__pyx_v_extrap == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 41, __pyx_L3_error)
+    __pyx_v_x = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 38, __pyx_L3_error)
+    __pyx_v_y = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_y.memview)) __PYX_ERR(1, 38, __pyx_L3_error)
+    __pyx_v_z = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[2], PyBUF_WRITABLE); if (unlikely(!__pyx_v_z.memview)) __PYX_ERR(1, 38, __pyx_L3_error)
+    __pyx_v_q = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_q.memview)) __PYX_ERR(1, 38, __pyx_L3_error)
+    __pyx_v_f = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[4], PyBUF_WRITABLE); if (unlikely(!__pyx_v_f.memview)) __PYX_ERR(1, 38, __pyx_L3_error)
+    __pyx_v_kx = __Pyx_PyInt_As_int(values[5]); if (unlikely((__pyx_v_kx == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 39, __pyx_L3_error)
+    __pyx_v_ky = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_ky == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 39, __pyx_L3_error)
+    __pyx_v_kz = __Pyx_PyInt_As_int(values[7]); if (unlikely((__pyx_v_kz == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 39, __pyx_L3_error)
+    __pyx_v_kq = __Pyx_PyInt_As_int(values[8]); if (unlikely((__pyx_v_kq == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 39, __pyx_L3_error)
+    __pyx_v_extrap = __Pyx_PyObject_IsTrue(values[9]); if (unlikely((__pyx_v_extrap == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 39, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 40, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 10, 10, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 38, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("quadvariatevectorinterpolation.Interpolator.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2747,7 +2744,7 @@ static int __pyx_pf_30quadvariatevectorinterpolation_12Interpolator___cinit__(st
   Py_ssize_t __pyx_t_7;
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "quadvariatevectorinterpolation.pyx":44
+  /* "quadvariatevectorinterpolation.pyx":42
  *         cdef:
  *             int ext
  *         self.interp = new ItpCont()             # <<<<<<<<<<<<<<
@@ -2758,11 +2755,11 @@ static int __pyx_pf_30quadvariatevectorinterpolation_12Interpolator___cinit__(st
     __pyx_t_1 = new ItpCont();
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(1, 44, __pyx_L1_error)
+    __PYX_ERR(1, 42, __pyx_L1_error)
   }
   __pyx_v_self->interp = __pyx_t_1;
 
-  /* "quadvariatevectorinterpolation.pyx":45
+  /* "quadvariatevectorinterpolation.pyx":43
  *             int ext
  *         self.interp = new ItpCont()
  *         if extrap:             # <<<<<<<<<<<<<<
@@ -2772,7 +2769,7 @@ static int __pyx_pf_30quadvariatevectorinterpolation_12Interpolator___cinit__(st
   __pyx_t_2 = (__pyx_v_extrap != 0);
   if (__pyx_t_2) {
 
-    /* "quadvariatevectorinterpolation.pyx":46
+    /* "quadvariatevectorinterpolation.pyx":44
  *         self.interp = new ItpCont()
  *         if extrap:
  *             ext = 1             # <<<<<<<<<<<<<<
@@ -2781,7 +2778,7 @@ static int __pyx_pf_30quadvariatevectorinterpolation_12Interpolator___cinit__(st
  */
     __pyx_v_ext = 1;
 
-    /* "quadvariatevectorinterpolation.pyx":45
+    /* "quadvariatevectorinterpolation.pyx":43
  *             int ext
  *         self.interp = new ItpCont()
  *         if extrap:             # <<<<<<<<<<<<<<
@@ -2791,7 +2788,7 @@ static int __pyx_pf_30quadvariatevectorinterpolation_12Interpolator___cinit__(st
     goto __pyx_L3;
   }
 
-  /* "quadvariatevectorinterpolation.pyx":48
+  /* "quadvariatevectorinterpolation.pyx":46
  *             ext = 1
  *         else:
  *             ext = 0             # <<<<<<<<<<<<<<
@@ -2803,7 +2800,7 @@ static int __pyx_pf_30quadvariatevectorinterpolation_12Interpolator___cinit__(st
   }
   __pyx_L3:;
 
-  /* "quadvariatevectorinterpolation.pyx":49
+  /* "quadvariatevectorinterpolation.pyx":47
  *         else:
  *             ext = 0
  *         self.interp.init_interp(&x[0],&y[0],&z[0],&q[0],&f[0],kx,ky,kz,kq,x.shape[0],y.shape[0],z.shape[0],q.shape[0],ext)             # <<<<<<<<<<<<<<
@@ -2819,10 +2816,10 @@ static int __pyx_pf_30quadvariatevectorinterpolation_12Interpolator___cinit__(st
     __pyx_v_self->interp->init_interp((&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_3)) )))), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y.data) + __pyx_t_4)) )))), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_z.data) + __pyx_t_5)) )))), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_q.data) + __pyx_t_6)) )))), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_f.data) + __pyx_t_7)) )))), __pyx_v_kx, __pyx_v_ky, __pyx_v_kz, __pyx_v_kq, (__pyx_v_x.shape[0]), (__pyx_v_y.shape[0]), (__pyx_v_z.shape[0]), (__pyx_v_q.shape[0]), __pyx_v_ext);
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(1, 49, __pyx_L1_error)
+    __PYX_ERR(1, 47, __pyx_L1_error)
   }
 
-  /* "quadvariatevectorinterpolation.pyx":40
+  /* "quadvariatevectorinterpolation.pyx":38
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __cinit__(self, double[::1] x, double[::1] y, double[::1] z, double[::1] q, double[::1] f,             # <<<<<<<<<<<<<<
@@ -2846,7 +2843,7 @@ static int __pyx_pf_30quadvariatevectorinterpolation_12Interpolator___cinit__(st
   return __pyx_r;
 }
 
-/* "quadvariatevectorinterpolation.pyx":50
+/* "quadvariatevectorinterpolation.pyx":48
  *             ext = 0
  *         self.interp.init_interp(&x[0],&y[0],&z[0],&q[0],&f[0],kx,ky,kz,kq,x.shape[0],y.shape[0],z.shape[0],q.shape[0],ext)
  *     cdef void _ev_(self, double x, double y, double z, double q, int kx, int ky, int kz, int kq, double*ret):             # <<<<<<<<<<<<<<
@@ -2859,7 +2856,7 @@ static void __pyx_f_30quadvariatevectorinterpolation_12Interpolator__ev_(struct 
   double __pyx_t_1;
   __Pyx_RefNannySetupContext("_ev_", 0);
 
-  /* "quadvariatevectorinterpolation.pyx":51
+  /* "quadvariatevectorinterpolation.pyx":49
  *         self.interp.init_interp(&x[0],&y[0],&z[0],&q[0],&f[0],kx,ky,kz,kq,x.shape[0],y.shape[0],z.shape[0],q.shape[0],ext)
  *     cdef void _ev_(self, double x, double y, double z, double q, int kx, int ky, int kz, int kq, double*ret):
  *         ret[0] = self.interp.eval_interp(x,y,z,q,kx,ky,kz,kq)             # <<<<<<<<<<<<<<
@@ -2870,11 +2867,11 @@ static void __pyx_f_30quadvariatevectorinterpolation_12Interpolator__ev_(struct 
     __pyx_t_1 = __pyx_v_self->interp->eval_interp(__pyx_v_x, __pyx_v_y, __pyx_v_z, __pyx_v_q, __pyx_v_kx, __pyx_v_ky, __pyx_v_kz, __pyx_v_kq);
   } catch(...) {
     __Pyx_CppExn2PyErr();
-    __PYX_ERR(1, 51, __pyx_L1_error)
+    __PYX_ERR(1, 49, __pyx_L1_error)
   }
   (__pyx_v_ret[0]) = __pyx_t_1;
 
-  /* "quadvariatevectorinterpolation.pyx":50
+  /* "quadvariatevectorinterpolation.pyx":48
  *             ext = 0
  *         self.interp.init_interp(&x[0],&y[0],&z[0],&q[0],&f[0],kx,ky,kz,kq,x.shape[0],y.shape[0],z.shape[0],q.shape[0],ext)
  *     cdef void _ev_(self, double x, double y, double z, double q, int kx, int ky, int kz, int kq, double*ret):             # <<<<<<<<<<<<<<
@@ -2890,7 +2887,7 @@ static void __pyx_f_30quadvariatevectorinterpolation_12Interpolator__ev_(struct 
   __Pyx_RefNannyFinishContext();
 }
 
-/* "quadvariatevectorinterpolation.pyx":52
+/* "quadvariatevectorinterpolation.pyx":50
  *     cdef void _ev_(self, double x, double y, double z, double q, int kx, int ky, int kz, int kq, double*ret):
  *         ret[0] = self.interp.eval_interp(x,y,z,q,kx,ky,kz,kq)
  *     def __dealoc__(self):             # <<<<<<<<<<<<<<
@@ -2917,7 +2914,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_12Interpolator_2__dea
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__dealoc__", 0);
 
-  /* "quadvariatevectorinterpolation.pyx":53
+  /* "quadvariatevectorinterpolation.pyx":51
  *         ret[0] = self.interp.eval_interp(x,y,z,q,kx,ky,kz,kq)
  *     def __dealoc__(self):
  *         if self.interp is not NULL:             # <<<<<<<<<<<<<<
@@ -2927,7 +2924,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_12Interpolator_2__dea
   __pyx_t_1 = ((__pyx_v_self->interp != NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "quadvariatevectorinterpolation.pyx":54
+    /* "quadvariatevectorinterpolation.pyx":52
  *     def __dealoc__(self):
  *         if self.interp is not NULL:
  *             del self.interp             # <<<<<<<<<<<<<<
@@ -2936,7 +2933,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_12Interpolator_2__dea
  */
     delete __pyx_v_self->interp;
 
-    /* "quadvariatevectorinterpolation.pyx":53
+    /* "quadvariatevectorinterpolation.pyx":51
  *         ret[0] = self.interp.eval_interp(x,y,z,q,kx,ky,kz,kq)
  *     def __dealoc__(self):
  *         if self.interp is not NULL:             # <<<<<<<<<<<<<<
@@ -2945,7 +2942,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_12Interpolator_2__dea
  */
   }
 
-  /* "quadvariatevectorinterpolation.pyx":52
+  /* "quadvariatevectorinterpolation.pyx":50
  *     cdef void _ev_(self, double x, double y, double z, double q, int kx, int ky, int kz, int kq, double*ret):
  *         ret[0] = self.interp.eval_interp(x,y,z,q,kx,ky,kz,kq)
  *     def __dealoc__(self):             # <<<<<<<<<<<<<<
@@ -3067,7 +3064,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_12Interpolator_6__set
   return __pyx_r;
 }
 
-/* "quadvariatevectorinterpolation.pyx":76
+/* "quadvariatevectorinterpolation.pyx":74
  *         double[::1] vct
  *         double[:,::1] jcb
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -3103,7 +3100,7 @@ static int __pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariateSplin
   __Pyx_memviewslice __pyx_t_7 = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "quadvariatevectorinterpolation.pyx":77
+  /* "quadvariatevectorinterpolation.pyx":75
  *         double[:,::1] jcb
  *     def __cinit__(self):
  *         self.vct = self._vct_             # <<<<<<<<<<<<<<
@@ -3113,26 +3110,26 @@ static int __pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariateSplin
   __pyx_t_1 = __pyx_v_self->_vct_;
   if (!__pyx_t_1) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 77, __pyx_L1_error)
+    __PYX_ERR(1, 75, __pyx_L1_error)
   }
   __pyx_t_4 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_3 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 77, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 75, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_2 = __pyx_array_new(__pyx_t_3, sizeof(double), PyBytes_AS_STRING(__pyx_t_4), (char *) "fortran", (char *) __pyx_t_1);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 77, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 75, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 77, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 75, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->vct, 0);
   __pyx_v_self->vct = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "quadvariatevectorinterpolation.pyx":78
+  /* "quadvariatevectorinterpolation.pyx":76
  *     def __cinit__(self):
  *         self.vct = self._vct_
  *         self.jcb = self._jcb_             # <<<<<<<<<<<<<<
@@ -3142,26 +3139,26 @@ static int __pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariateSplin
   __pyx_t_6 = __pyx_v_self->_jcb_;
   if (!__pyx_t_6) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 78, __pyx_L1_error)
+    __PYX_ERR(1, 76, __pyx_L1_error)
   }
   __pyx_t_3 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_4 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3), ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 78, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_2 = __pyx_array_new(__pyx_t_4, sizeof(double), PyBytes_AS_STRING(__pyx_t_3), (char *) "c", (char *) __pyx_t_6);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 78, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 78, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_d_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 76, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->jcb, 0);
   __pyx_v_self->jcb = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "quadvariatevectorinterpolation.pyx":76
+  /* "quadvariatevectorinterpolation.pyx":74
  *         double[::1] vct
  *         double[:,::1] jcb
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -3185,7 +3182,7 @@ static int __pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariateSplin
   return __pyx_r;
 }
 
-/* "quadvariatevectorinterpolation.pyx":82
+/* "quadvariatevectorinterpolation.pyx":80
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __init__(self, double[::1] t, double[::1] x, double[::1] y, double[::1] z, double[:,::1] v,             # <<<<<<<<<<<<<<
@@ -3195,7 +3192,7 @@ static int __pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariateSplin
 
 /* Python wrapper */
 static int __pyx_pw_30quadvariatevectorinterpolation_26TrivectorQuadvariateSpline_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_30quadvariatevectorinterpolation_26TrivectorQuadvariateSpline_2__init__[] = "\n        TrivectorQuadvariateSpline.__init__(t,x,y,z,v,kt,kx,ky,kz,extrap)\n\n        Constructor for a TrivectorQuadvariateSpline instance.\n\n        Parameters\n        ----------\n        t : (nt,) array_like\n            A (C-contiguous) (NumPy) array of type np.float64 and shape (nt,),\n            containing the sampling points along the time abscissa.\n            Must be strictly increasing.\n        x : (nx,) array_like\n            A (C-contiguous) (NumPy) array of type np.float64 and shape (nx,),\n            containing the sampling points along the x abscissa.\n            Must be strictly increasing.\n        y : (ny,) array_like\n            A (C-contiguous) (NumPy) array of type np.float64 and shape (ny,),\n            containing the sampling points along the y abscissa.\n            Must be strictly increasing.\n        z : (nz,) array_like\n            A (C-contiguous) (NumPy) array of type np.float64 and shape (nz,),\n            containing the sampling points along the z, abscissa.\n            Must be strictly increasing.\n        v : (3,nt*nx*ny*nz) array_like\n            A (C-contiguous) (NumPy) array of type np.float64 and shape\n            (3,nt*nx*ny*nz), containing the sampled vector values.\n            v[0] should contain the x-component, v[1] the y-component and\n            v[2] the z-component.\n\n            Along axis 1, the array must be sorted in Fortran order. That is,\n            v[:,i+nt*(j+nx*(k+ny*m))] should contain the vector sampled\n            at (t[i],x[j],y[k],z[m]).\n            This is most easily done by:\n                1) Initializing an array of shape (nt,nx,ny,nz) for each\n                   vector component, filling it with the corresponding component\n                   values\n                2) Flattening each respective array in Fortran order before\n                   assigning to v, i.e.,\n                   v[0] = u1_tmp.ravel(order='F')\n                   v[1] = u2_tmp.ravel(order='F')\n         ""          v[2] = u3_tmp.ravel(order='F')\n        kt: integer, optional\n            Interpolation order (= degree of polynomial pieces + 1) along the\n            t abscissa. Default: kt = 4.\n            Must satisfy 2 < kt < nt\n        kx: integer, optional\n            Interpolation order (= degree of polynomial pieces + 1) along the\n            x abscissa. Default: kx = 4.\n            Must satisfy 2 < kx < nx\n        ky: integer, optional\n            Interpolation order (= degree of polynomial pieces + 1) along the\n            y abscissa. Default: ky = 4.\n            Must satisfy 2 < ky < ny\n        kz: integer, optional\n            Interpolation order (= degree of polynomial pieces + 1) along the\n            z abscissa. Default: kz = 4.\n            Must satisfy 2 < kz < nz\n        extrap : bool, optional\n            Flag indicating whether or not extrapolation outside of the\n            original sampling domain is allowed. If extrap is false and\n            one attempts to evaluate the interpolated vector field outside of\n            the sampling domain, zero is returned.\n            Extrapolation is generally not advised for high interpolation\n            orders.\n            Default: extrap = False.\n\n        ";
+static char __pyx_doc_30quadvariatevectorinterpolation_26TrivectorQuadvariateSpline_2__init__[] = "\n        TrivectorQuadvariateSpline.__init__(t,x,y,z,v,kt,kx,ky,kz,extrap)\n\n        Constructor for a TrivectorQuadvariateSpline instance.\n\n        Parameters\n        ----------\n        t : (nt,) array_like\n            A (C-contiguous) (NumPy) array of type np.float64 and shape (nt,),\n            containing the sampling points along the time abscissa.\n            Must be strictly increasing.\n        x : (nx,) array_like\n            A (C-contiguous) (NumPy) array of type np.float64 and shape (nx,),\n            containing the sampling points along the x abscissa.\n            Must be strictly increasing.\n        y : (ny,) array_like\n            A (C-contiguous) (NumPy) array of type np.float64 and shape (ny,),\n            containing the sampling points along the y abscissa.\n            Must be strictly increasing.\n        z : (nz,) array_like\n            A (C-contiguous) (NumPy) array of type np.float64 and shape (nz,),\n            containing the sampling points along the z, abscissa.\n            Must be strictly increasing.\n        v : (3,nt*nx*ny*nz) array_like\n            A (C-contiguous) (NumPy) array of type np.float64 and shape\n            (3,nt*nx*ny*nz), containing the sampled vector values.\n            v[0] should contain the x-component, v[1] the y-component and\n            v[2] the z-component.\n\n            Along axis 1, the array must be sorted in Fortran order. That is,\n            v[:,i+nt*(j+nx*(k+ny*m))] should contain the vector sampled\n            at (t[i],x[j],y[k],z[m]).\n            This is most easily done by:\n                1) Initializing an array of shape (nt,nx,ny,nz) for each\n                   vector component, filling it with the corresponding component\n                   values\n                2) Flattening each respective array in Fortran order before\n                   assigning to v, i.e.,\n                   v[0] = u1_tmp.ravel(order='F')\n                   v[1] = u2_tmp.ravel(order='F')\n         ""          v[2] = u3_tmp.ravel(order='F')\n        kt: integer, optional\n            Interpolation order (= degree of polynomial pieces + 1) along the\n            t abscissa. Default: kt = 4.\n            Must satisfy 2 <= kt < nt\n        kx: integer, optional\n            Interpolation order (= degree of polynomial pieces + 1) along the\n            x abscissa. Default: kx = 4.\n            Must satisfy 2 <= kx < nx\n        ky: integer, optional\n            Interpolation order (= degree of polynomial pieces + 1) along the\n            y abscissa. Default: ky = 4.\n            Must satisfy 2 <= ky < ny\n        kz: integer, optional\n            Interpolation order (= degree of polynomial pieces + 1) along the\n            z abscissa. Default: kz = 4.\n            Must satisfy 2 <= kz < nz\n        extrap : bool, optional\n            Flag indicating whether or not extrapolation outside of the\n            original sampling domain is allowed. If extrap is false and\n            one attempts to evaluate the interpolated vector field outside of\n            the sampling domain, zero is returned.\n            Extrapolation is generally not advised for high interpolation\n            orders.\n            Default: extrap = False.\n\n        ";
 #if CYTHON_COMPILING_IN_CPYTHON
 struct wrapperbase __pyx_wrapperbase_30quadvariatevectorinterpolation_26TrivectorQuadvariateSpline_2__init__;
 #endif
@@ -3252,25 +3249,25 @@ static int __pyx_pw_30quadvariatevectorinterpolation_26TrivectorQuadvariateSplin
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_x)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 5, 10, 1); __PYX_ERR(1, 82, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 5, 10, 1); __PYX_ERR(1, 80, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_y)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 5, 10, 2); __PYX_ERR(1, 82, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 5, 10, 2); __PYX_ERR(1, 80, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_z)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 5, 10, 3); __PYX_ERR(1, 82, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 5, 10, 3); __PYX_ERR(1, 80, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
         if (likely((values[4] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_v)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 0, 5, 10, 4); __PYX_ERR(1, 82, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 5, 10, 4); __PYX_ERR(1, 80, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  5:
@@ -3304,7 +3301,7 @@ static int __pyx_pw_30quadvariatevectorinterpolation_26TrivectorQuadvariateSplin
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 82, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 80, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -3327,36 +3324,36 @@ static int __pyx_pw_30quadvariatevectorinterpolation_26TrivectorQuadvariateSplin
         default: goto __pyx_L5_argtuple_error;
       }
     }
-    __pyx_v_t = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_t.memview)) __PYX_ERR(1, 82, __pyx_L3_error)
-    __pyx_v_x = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 82, __pyx_L3_error)
-    __pyx_v_y = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[2], PyBUF_WRITABLE); if (unlikely(!__pyx_v_y.memview)) __PYX_ERR(1, 82, __pyx_L3_error)
-    __pyx_v_z = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_z.memview)) __PYX_ERR(1, 82, __pyx_L3_error)
-    __pyx_v_v = __Pyx_PyObject_to_MemoryviewSlice_d_dc_double(values[4], PyBUF_WRITABLE); if (unlikely(!__pyx_v_v.memview)) __PYX_ERR(1, 82, __pyx_L3_error)
+    __pyx_v_t = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_t.memview)) __PYX_ERR(1, 80, __pyx_L3_error)
+    __pyx_v_x = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 80, __pyx_L3_error)
+    __pyx_v_y = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[2], PyBUF_WRITABLE); if (unlikely(!__pyx_v_y.memview)) __PYX_ERR(1, 80, __pyx_L3_error)
+    __pyx_v_z = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[3], PyBUF_WRITABLE); if (unlikely(!__pyx_v_z.memview)) __PYX_ERR(1, 80, __pyx_L3_error)
+    __pyx_v_v = __Pyx_PyObject_to_MemoryviewSlice_d_dc_double(values[4], PyBUF_WRITABLE); if (unlikely(!__pyx_v_v.memview)) __PYX_ERR(1, 80, __pyx_L3_error)
     if (values[5]) {
-      __pyx_v_kt = __Pyx_PyInt_As_int(values[5]); if (unlikely((__pyx_v_kt == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 83, __pyx_L3_error)
+      __pyx_v_kt = __Pyx_PyInt_As_int(values[5]); if (unlikely((__pyx_v_kt == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 81, __pyx_L3_error)
     } else {
       __pyx_v_kt = ((int)4);
     }
     if (values[6]) {
-      __pyx_v_kx = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_kx == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 83, __pyx_L3_error)
+      __pyx_v_kx = __Pyx_PyInt_As_int(values[6]); if (unlikely((__pyx_v_kx == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 81, __pyx_L3_error)
     } else {
       __pyx_v_kx = ((int)4);
     }
     if (values[7]) {
-      __pyx_v_ky = __Pyx_PyInt_As_int(values[7]); if (unlikely((__pyx_v_ky == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 83, __pyx_L3_error)
+      __pyx_v_ky = __Pyx_PyInt_As_int(values[7]); if (unlikely((__pyx_v_ky == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 81, __pyx_L3_error)
     } else {
       __pyx_v_ky = ((int)4);
     }
     if (values[8]) {
-      __pyx_v_kz = __Pyx_PyInt_As_int(values[8]); if (unlikely((__pyx_v_kz == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 83, __pyx_L3_error)
+      __pyx_v_kz = __Pyx_PyInt_As_int(values[8]); if (unlikely((__pyx_v_kz == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 81, __pyx_L3_error)
     } else {
       __pyx_v_kz = ((int)4);
     }
     if (values[9]) {
-      __pyx_v_extrap = __Pyx_PyObject_IsTrue(values[9]); if (unlikely((__pyx_v_extrap == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 83, __pyx_L3_error)
+      __pyx_v_extrap = __Pyx_PyObject_IsTrue(values[9]); if (unlikely((__pyx_v_extrap == (int)-1) && PyErr_Occurred())) __PYX_ERR(1, 81, __pyx_L3_error)
     } else {
 
-      /* "quadvariatevectorinterpolation.pyx":83
+      /* "quadvariatevectorinterpolation.pyx":81
  *     @cython.boundscheck(False)
  *     def __init__(self, double[::1] t, double[::1] x, double[::1] y, double[::1] z, double[:,::1] v,
  *             int kt = 4, int kx = 4, int ky = 4, int kz = 4, bint extrap = False):             # <<<<<<<<<<<<<<
@@ -3368,7 +3365,7 @@ static int __pyx_pw_30quadvariatevectorinterpolation_26TrivectorQuadvariateSplin
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 0, 5, 10, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 82, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 5, 10, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 80, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("quadvariatevectorinterpolation.TrivectorQuadvariateSpline.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3376,7 +3373,7 @@ static int __pyx_pw_30quadvariatevectorinterpolation_26TrivectorQuadvariateSplin
   __pyx_L4_argument_unpacking_done:;
   __pyx_r = __pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariateSpline_2__init__(((struct __pyx_obj_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline *)__pyx_v_self), __pyx_v_t, __pyx_v_x, __pyx_v_y, __pyx_v_z, __pyx_v_v, __pyx_v_kt, __pyx_v_kx, __pyx_v_ky, __pyx_v_kz, __pyx_v_extrap);
 
-  /* "quadvariatevectorinterpolation.pyx":82
+  /* "quadvariatevectorinterpolation.pyx":80
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __init__(self, double[::1] t, double[::1] x, double[::1] y, double[::1] z, double[:,::1] v,             # <<<<<<<<<<<<<<
@@ -3412,7 +3409,7 @@ static int __pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariateSplin
   PyObject *__pyx_t_14 = NULL;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "quadvariatevectorinterpolation.pyx":152
+  /* "quadvariatevectorinterpolation.pyx":150
  *         """
  *         cdef:
  *             int nt = t.shape[0], nx = x.shape[0], ny = y.shape[0], nz = z.shape[0]             # <<<<<<<<<<<<<<
@@ -3424,7 +3421,7 @@ static int __pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariateSplin
   __pyx_v_ny = (__pyx_v_y.shape[0]);
   __pyx_v_nz = (__pyx_v_z.shape[0]);
 
-  /* "quadvariatevectorinterpolation.pyx":154
+  /* "quadvariatevectorinterpolation.pyx":152
  *             int nt = t.shape[0], nx = x.shape[0], ny = y.shape[0], nz = z.shape[0]
  * 
  *         if v.shape[0] != 3 or nt*nx*ny*nz != v.shape[1]:             # <<<<<<<<<<<<<<
@@ -3442,20 +3439,20 @@ static int __pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariateSplin
   __pyx_L4_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "quadvariatevectorinterpolation.pyx":155
+    /* "quadvariatevectorinterpolation.pyx":153
  * 
  *         if v.shape[0] != 3 or nt*nx*ny*nz != v.shape[1]:
  *             raise ValueError('Array dimensions not aligned!')             # <<<<<<<<<<<<<<
  * 
  *         if (kt < 2 or kt > nt) or (kx < 2 or kx > nx) or (ky < 2 or ky > ny) or (kz < 2 or kz > nz):
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 155, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 153, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 155, __pyx_L1_error)
+    __PYX_ERR(1, 153, __pyx_L1_error)
 
-    /* "quadvariatevectorinterpolation.pyx":154
+    /* "quadvariatevectorinterpolation.pyx":152
  *             int nt = t.shape[0], nx = x.shape[0], ny = y.shape[0], nz = z.shape[0]
  * 
  *         if v.shape[0] != 3 or nt*nx*ny*nz != v.shape[1]:             # <<<<<<<<<<<<<<
@@ -3464,7 +3461,7 @@ static int __pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariateSplin
  */
   }
 
-  /* "quadvariatevectorinterpolation.pyx":157
+  /* "quadvariatevectorinterpolation.pyx":155
  *             raise ValueError('Array dimensions not aligned!')
  * 
  *         if (kt < 2 or kt > nt) or (kx < 2 or kx > nx) or (ky < 2 or ky > ny) or (kz < 2 or kz > nz):             # <<<<<<<<<<<<<<
@@ -3518,20 +3515,20 @@ static int __pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariateSplin
   __pyx_L7_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "quadvariatevectorinterpolation.pyx":158
+    /* "quadvariatevectorinterpolation.pyx":156
  * 
  *         if (kt < 2 or kt > nt) or (kx < 2 or kx > nx) or (ky < 2 or ky > ny) or (kz < 2 or kz > nz):
  *             raise ValueError('Invalid interpolator order choice!')             # <<<<<<<<<<<<<<
  * 
  *         self.itpx = Interpolator(t,x,y,z,v[0],kt,kx,ky,kz,extrap)
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 158, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 156, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 158, __pyx_L1_error)
+    __PYX_ERR(1, 156, __pyx_L1_error)
 
-    /* "quadvariatevectorinterpolation.pyx":157
+    /* "quadvariatevectorinterpolation.pyx":155
  *             raise ValueError('Array dimensions not aligned!')
  * 
  *         if (kt < 2 or kt > nt) or (kx < 2 or kx > nx) or (ky < 2 or ky > ny) or (kz < 2 or kz > nz):             # <<<<<<<<<<<<<<
@@ -3540,20 +3537,20 @@ static int __pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariateSplin
  */
   }
 
-  /* "quadvariatevectorinterpolation.pyx":160
+  /* "quadvariatevectorinterpolation.pyx":158
  *             raise ValueError('Invalid interpolator order choice!')
  * 
  *         self.itpx = Interpolator(t,x,y,z,v[0],kt,kx,ky,kz,extrap)             # <<<<<<<<<<<<<<
  *         self.itpy = Interpolator(t,x,y,z,v[1],kt,kx,ky,kz,extrap)
  *         self.itpz = Interpolator(t,x,y,z,v[2],kt,kx,ky,kz,extrap)
  */
-  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_t, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 160, __pyx_L1_error)
+  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_t, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_v_x, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 160, __pyx_L1_error)
+  __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_v_x, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_y, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 160, __pyx_L1_error)
+  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_y, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_v_z, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 160, __pyx_L1_error)
+  __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_v_z, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_7.data = __pyx_v_v.data;
   __pyx_t_7.memview = __pyx_v_v.memview;
@@ -3566,7 +3563,7 @@ static int __pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariateSplin
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 160, __pyx_L1_error)
+        __PYX_ERR(1, 158, __pyx_L1_error)
     }
         __pyx_t_7.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -3575,22 +3572,22 @@ __pyx_t_7.shape[0] = __pyx_v_v.shape[1];
 __pyx_t_7.strides[0] = __pyx_v_v.strides[1];
     __pyx_t_7.suboffsets[0] = -1;
 
-__pyx_t_8 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 160, __pyx_L1_error)
+__pyx_t_8 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __PYX_XDEC_MEMVIEW(&__pyx_t_7, 1);
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
-  __pyx_t_9 = __Pyx_PyInt_From_int(__pyx_v_kt); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 160, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyInt_From_int(__pyx_v_kt); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_10 = __Pyx_PyInt_From_int(__pyx_v_kx); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 160, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyInt_From_int(__pyx_v_kx); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_11 = __Pyx_PyInt_From_int(__pyx_v_ky); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 160, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyInt_From_int(__pyx_v_ky); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
-  __pyx_t_12 = __Pyx_PyInt_From_int(__pyx_v_kz); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 160, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_PyInt_From_int(__pyx_v_kz); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
-  __pyx_t_13 = __Pyx_PyBool_FromLong(__pyx_v_extrap); if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 160, __pyx_L1_error)
+  __pyx_t_13 = __Pyx_PyBool_FromLong(__pyx_v_extrap); if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_13);
-  __pyx_t_14 = PyTuple_New(10); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 160, __pyx_L1_error)
+  __pyx_t_14 = PyTuple_New(10); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_14);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_14, 0, __pyx_t_3);
@@ -3622,7 +3619,7 @@ __pyx_t_8 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
   __pyx_t_11 = 0;
   __pyx_t_12 = 0;
   __pyx_t_13 = 0;
-  __pyx_t_13 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_30quadvariatevectorinterpolation_Interpolator), __pyx_t_14, NULL); if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 160, __pyx_L1_error)
+  __pyx_t_13 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_30quadvariatevectorinterpolation_Interpolator), __pyx_t_14, NULL); if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_13);
   __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
   __Pyx_GIVEREF(__pyx_t_13);
@@ -3631,20 +3628,20 @@ __pyx_t_8 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
   __pyx_v_self->itpx = ((struct __pyx_obj_30quadvariatevectorinterpolation_Interpolator *)__pyx_t_13);
   __pyx_t_13 = 0;
 
-  /* "quadvariatevectorinterpolation.pyx":161
+  /* "quadvariatevectorinterpolation.pyx":159
  * 
  *         self.itpx = Interpolator(t,x,y,z,v[0],kt,kx,ky,kz,extrap)
  *         self.itpy = Interpolator(t,x,y,z,v[1],kt,kx,ky,kz,extrap)             # <<<<<<<<<<<<<<
  *         self.itpz = Interpolator(t,x,y,z,v[2],kt,kx,ky,kz,extrap)
  *     @cython.initializedcheck(False)
  */
-  __pyx_t_13 = __pyx_memoryview_fromslice(__pyx_v_t, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 161, __pyx_L1_error)
+  __pyx_t_13 = __pyx_memoryview_fromslice(__pyx_v_t, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_13);
-  __pyx_t_14 = __pyx_memoryview_fromslice(__pyx_v_x, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 161, __pyx_L1_error)
+  __pyx_t_14 = __pyx_memoryview_fromslice(__pyx_v_x, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_14);
-  __pyx_t_12 = __pyx_memoryview_fromslice(__pyx_v_y, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 161, __pyx_L1_error)
+  __pyx_t_12 = __pyx_memoryview_fromslice(__pyx_v_y, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
-  __pyx_t_11 = __pyx_memoryview_fromslice(__pyx_v_z, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 161, __pyx_L1_error)
+  __pyx_t_11 = __pyx_memoryview_fromslice(__pyx_v_z, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
   __pyx_t_7.data = __pyx_v_v.data;
   __pyx_t_7.memview = __pyx_v_v.memview;
@@ -3657,7 +3654,7 @@ __pyx_t_8 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 161, __pyx_L1_error)
+        __PYX_ERR(1, 159, __pyx_L1_error)
     }
         __pyx_t_7.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -3666,22 +3663,22 @@ __pyx_t_7.shape[0] = __pyx_v_v.shape[1];
 __pyx_t_7.strides[0] = __pyx_v_v.strides[1];
     __pyx_t_7.suboffsets[0] = -1;
 
-__pyx_t_10 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 161, __pyx_L1_error)
+__pyx_t_10 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __PYX_XDEC_MEMVIEW(&__pyx_t_7, 1);
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
-  __pyx_t_9 = __Pyx_PyInt_From_int(__pyx_v_kt); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 161, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyInt_From_int(__pyx_v_kt); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_8 = __Pyx_PyInt_From_int(__pyx_v_kx); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 161, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyInt_From_int(__pyx_v_kx); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_ky); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 161, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_From_int(__pyx_v_ky); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_kz); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 161, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_From_int(__pyx_v_kz); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyBool_FromLong(__pyx_v_extrap); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 161, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyBool_FromLong(__pyx_v_extrap); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyTuple_New(10); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 161, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(10); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_13);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_13);
@@ -3713,7 +3710,7 @@ __pyx_t_10 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __
   __pyx_t_6 = 0;
   __pyx_t_5 = 0;
   __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_30quadvariatevectorinterpolation_Interpolator), __pyx_t_3, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 161, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_30quadvariatevectorinterpolation_Interpolator), __pyx_t_3, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 159, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_GIVEREF(__pyx_t_4);
@@ -3722,20 +3719,20 @@ __pyx_t_10 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __
   __pyx_v_self->itpy = ((struct __pyx_obj_30quadvariatevectorinterpolation_Interpolator *)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "quadvariatevectorinterpolation.pyx":162
+  /* "quadvariatevectorinterpolation.pyx":160
  *         self.itpx = Interpolator(t,x,y,z,v[0],kt,kx,ky,kz,extrap)
  *         self.itpy = Interpolator(t,x,y,z,v[1],kt,kx,ky,kz,extrap)
  *         self.itpz = Interpolator(t,x,y,z,v[2],kt,kx,ky,kz,extrap)             # <<<<<<<<<<<<<<
  *     @cython.initializedcheck(False)
  *     @cython.wraparound(False)
  */
-  __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_v_t, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 162, __pyx_L1_error)
+  __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_v_t, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_x, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 162, __pyx_L1_error)
+  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_x, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_y, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 162, __pyx_L1_error)
+  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_y, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_v_z, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 162, __pyx_L1_error)
+  __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_v_z, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_7.data = __pyx_v_v.data;
   __pyx_t_7.memview = __pyx_v_v.memview;
@@ -3748,7 +3745,7 @@ __pyx_t_10 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __
         __pyx_tmp_idx += __pyx_tmp_shape;
     if (0 && (__pyx_tmp_idx < 0 || __pyx_tmp_idx >= __pyx_tmp_shape)) {
         PyErr_SetString(PyExc_IndexError, "Index out of bounds (axis 0)");
-        __PYX_ERR(1, 162, __pyx_L1_error)
+        __PYX_ERR(1, 160, __pyx_L1_error)
     }
         __pyx_t_7.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
@@ -3757,22 +3754,22 @@ __pyx_t_7.shape[0] = __pyx_v_v.shape[1];
 __pyx_t_7.strides[0] = __pyx_v_v.strides[1];
     __pyx_t_7.suboffsets[0] = -1;
 
-__pyx_t_8 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 162, __pyx_L1_error)
+__pyx_t_8 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __PYX_XDEC_MEMVIEW(&__pyx_t_7, 1);
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
-  __pyx_t_9 = __Pyx_PyInt_From_int(__pyx_v_kt); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 162, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyInt_From_int(__pyx_v_kt); if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_10 = __Pyx_PyInt_From_int(__pyx_v_kx); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 162, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyInt_From_int(__pyx_v_kx); if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
-  __pyx_t_11 = __Pyx_PyInt_From_int(__pyx_v_ky); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 162, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyInt_From_int(__pyx_v_ky); if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
-  __pyx_t_12 = __Pyx_PyInt_From_int(__pyx_v_kz); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 162, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_PyInt_From_int(__pyx_v_kz); if (unlikely(!__pyx_t_12)) __PYX_ERR(1, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
-  __pyx_t_14 = __Pyx_PyBool_FromLong(__pyx_v_extrap); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 162, __pyx_L1_error)
+  __pyx_t_14 = __Pyx_PyBool_FromLong(__pyx_v_extrap); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_14);
-  __pyx_t_13 = PyTuple_New(10); if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 162, __pyx_L1_error)
+  __pyx_t_13 = PyTuple_New(10); if (unlikely(!__pyx_t_13)) __PYX_ERR(1, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_13);
   __Pyx_GIVEREF(__pyx_t_4);
   PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_4);
@@ -3804,7 +3801,7 @@ __pyx_t_8 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
   __pyx_t_11 = 0;
   __pyx_t_12 = 0;
   __pyx_t_14 = 0;
-  __pyx_t_14 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_30quadvariatevectorinterpolation_Interpolator), __pyx_t_13, NULL); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 162, __pyx_L1_error)
+  __pyx_t_14 = __Pyx_PyObject_Call(((PyObject *)__pyx_ptype_30quadvariatevectorinterpolation_Interpolator), __pyx_t_13, NULL); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 160, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_14);
   __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
   __Pyx_GIVEREF(__pyx_t_14);
@@ -3813,7 +3810,7 @@ __pyx_t_8 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
   __pyx_v_self->itpz = ((struct __pyx_obj_30quadvariatevectorinterpolation_Interpolator *)__pyx_t_14);
   __pyx_t_14 = 0;
 
-  /* "quadvariatevectorinterpolation.pyx":82
+  /* "quadvariatevectorinterpolation.pyx":80
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __init__(self, double[::1] t, double[::1] x, double[::1] y, double[::1] z, double[:,::1] v,             # <<<<<<<<<<<<<<
@@ -3849,7 +3846,7 @@ __pyx_t_8 = __pyx_memoryview_fromslice(__pyx_t_7, 1, (PyObject *(*)(char *)) __p
   return __pyx_r;
 }
 
-/* "quadvariatevectorinterpolation.pyx":166
+/* "quadvariatevectorinterpolation.pyx":164
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __call__(self, double t, double[::1] pos):             # <<<<<<<<<<<<<<
@@ -3892,11 +3889,11 @@ static PyObject *__pyx_pw_30quadvariatevectorinterpolation_26TrivectorQuadvariat
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_pos)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__call__", 1, 2, 2, 1); __PYX_ERR(1, 166, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__call__", 1, 2, 2, 1); __PYX_ERR(1, 164, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 166, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 164, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -3904,12 +3901,12 @@ static PyObject *__pyx_pw_30quadvariatevectorinterpolation_26TrivectorQuadvariat
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_t = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_t == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 166, __pyx_L3_error)
-    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 166, __pyx_L3_error)
+    __pyx_v_t = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_t == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 164, __pyx_L3_error)
+    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 164, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__call__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 166, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__call__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 164, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("quadvariatevectorinterpolation.TrivectorQuadvariateSpline.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3947,7 +3944,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   PyObject *__pyx_t_18 = NULL;
   __Pyx_RefNannySetupContext("__call__", 0);
 
-  /* "quadvariatevectorinterpolation.pyx":191
+  /* "quadvariatevectorinterpolation.pyx":189
  *         cdef:
  *             double tmp
  *             double[::1] vct = self.vct             # <<<<<<<<<<<<<<
@@ -3960,7 +3957,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "quadvariatevectorinterpolation.pyx":192
+  /* "quadvariatevectorinterpolation.pyx":190
  *             double tmp
  *             double[::1] vct = self.vct
  *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)             # <<<<<<<<<<<<<<
@@ -3972,7 +3969,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_4 = 2;
   ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpx->__pyx_vtab)->_ev_(__pyx_v_self->itpx, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_2)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_3)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_4)) ))), 0, 0, 0, 0, (&__pyx_v_tmp));
 
-  /* "quadvariatevectorinterpolation.pyx":193
+  /* "quadvariatevectorinterpolation.pyx":191
  *             double[::1] vct = self.vct
  *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
  *         vct[0] = tmp             # <<<<<<<<<<<<<<
@@ -3982,7 +3979,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_5 = 0;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_vct.data) + __pyx_t_5)) )) = __pyx_v_tmp;
 
-  /* "quadvariatevectorinterpolation.pyx":194
+  /* "quadvariatevectorinterpolation.pyx":192
  *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
  *         vct[0] = tmp
  *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)             # <<<<<<<<<<<<<<
@@ -3994,7 +3991,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_8 = 2;
   ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpy->__pyx_vtab)->_ev_(__pyx_v_self->itpy, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_6)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_7)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_8)) ))), 0, 0, 0, 0, (&__pyx_v_tmp));
 
-  /* "quadvariatevectorinterpolation.pyx":195
+  /* "quadvariatevectorinterpolation.pyx":193
  *         vct[0] = tmp
  *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
  *         vct[1] = tmp             # <<<<<<<<<<<<<<
@@ -4004,7 +4001,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_9 = 1;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_vct.data) + __pyx_t_9)) )) = __pyx_v_tmp;
 
-  /* "quadvariatevectorinterpolation.pyx":196
+  /* "quadvariatevectorinterpolation.pyx":194
  *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
  *         vct[1] = tmp
  *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)             # <<<<<<<<<<<<<<
@@ -4016,7 +4013,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_12 = 2;
   ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpz->__pyx_vtab)->_ev_(__pyx_v_self->itpz, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_10)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_11)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_12)) ))), 0, 0, 0, 0, (&__pyx_v_tmp));
 
-  /* "quadvariatevectorinterpolation.pyx":197
+  /* "quadvariatevectorinterpolation.pyx":195
  *         vct[1] = tmp
  *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
  *         vct[2] = tmp             # <<<<<<<<<<<<<<
@@ -4026,7 +4023,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_13 = 2;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_vct.data) + __pyx_t_13)) )) = __pyx_v_tmp;
 
-  /* "quadvariatevectorinterpolation.pyx":198
+  /* "quadvariatevectorinterpolation.pyx":196
  *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,0,&tmp)
  *         vct[2] = tmp
  *         return np.copy(vct)             # <<<<<<<<<<<<<<
@@ -4034,12 +4031,12 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
  *     @cython.wraparound(False)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_15 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 198, __pyx_L1_error)
+  __pyx_t_15 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_15);
-  __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_t_15, __pyx_n_s_copy); if (unlikely(!__pyx_t_16)) __PYX_ERR(1, 198, __pyx_L1_error)
+  __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_t_15, __pyx_n_s_copy); if (unlikely(!__pyx_t_16)) __PYX_ERR(1, 196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_16);
   __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
-  __pyx_t_15 = __pyx_memoryview_fromslice(__pyx_v_vct, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 198, __pyx_L1_error)
+  __pyx_t_15 = __pyx_memoryview_fromslice(__pyx_v_vct, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 196, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_15);
   __pyx_t_17 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_16))) {
@@ -4052,14 +4049,14 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
     }
   }
   if (!__pyx_t_17) {
-    __pyx_t_14 = __Pyx_PyObject_CallOneArg(__pyx_t_16, __pyx_t_15); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 198, __pyx_L1_error)
+    __pyx_t_14 = __Pyx_PyObject_CallOneArg(__pyx_t_16, __pyx_t_15); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 196, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
     __Pyx_GOTREF(__pyx_t_14);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_16)) {
       PyObject *__pyx_temp[2] = {__pyx_t_17, __pyx_t_15};
-      __pyx_t_14 = __Pyx_PyFunction_FastCall(__pyx_t_16, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 198, __pyx_L1_error)
+      __pyx_t_14 = __Pyx_PyFunction_FastCall(__pyx_t_16, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 196, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_17); __pyx_t_17 = 0;
       __Pyx_GOTREF(__pyx_t_14);
       __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
@@ -4068,20 +4065,20 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_16)) {
       PyObject *__pyx_temp[2] = {__pyx_t_17, __pyx_t_15};
-      __pyx_t_14 = __Pyx_PyCFunction_FastCall(__pyx_t_16, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 198, __pyx_L1_error)
+      __pyx_t_14 = __Pyx_PyCFunction_FastCall(__pyx_t_16, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 196, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_17); __pyx_t_17 = 0;
       __Pyx_GOTREF(__pyx_t_14);
       __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
     } else
     #endif
     {
-      __pyx_t_18 = PyTuple_New(1+1); if (unlikely(!__pyx_t_18)) __PYX_ERR(1, 198, __pyx_L1_error)
+      __pyx_t_18 = PyTuple_New(1+1); if (unlikely(!__pyx_t_18)) __PYX_ERR(1, 196, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_18);
       __Pyx_GIVEREF(__pyx_t_17); PyTuple_SET_ITEM(__pyx_t_18, 0, __pyx_t_17); __pyx_t_17 = NULL;
       __Pyx_GIVEREF(__pyx_t_15);
       PyTuple_SET_ITEM(__pyx_t_18, 0+1, __pyx_t_15);
       __pyx_t_15 = 0;
-      __pyx_t_14 = __Pyx_PyObject_Call(__pyx_t_16, __pyx_t_18, NULL); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 198, __pyx_L1_error)
+      __pyx_t_14 = __Pyx_PyObject_Call(__pyx_t_16, __pyx_t_18, NULL); if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 196, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_14);
       __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
     }
@@ -4091,7 +4088,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_14 = 0;
   goto __pyx_L0;
 
-  /* "quadvariatevectorinterpolation.pyx":166
+  /* "quadvariatevectorinterpolation.pyx":164
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __call__(self, double t, double[::1] pos):             # <<<<<<<<<<<<<<
@@ -4117,7 +4114,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   return __pyx_r;
 }
 
-/* "quadvariatevectorinterpolation.pyx":202
+/* "quadvariatevectorinterpolation.pyx":200
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def jac(self, double t, double[::1] pos):             # <<<<<<<<<<<<<<
@@ -4157,11 +4154,11 @@ static PyObject *__pyx_pw_30quadvariatevectorinterpolation_26TrivectorQuadvariat
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_pos)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("jac", 1, 2, 2, 1); __PYX_ERR(1, 202, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("jac", 1, 2, 2, 1); __PYX_ERR(1, 200, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "jac") < 0)) __PYX_ERR(1, 202, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "jac") < 0)) __PYX_ERR(1, 200, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -4169,12 +4166,12 @@ static PyObject *__pyx_pw_30quadvariatevectorinterpolation_26TrivectorQuadvariat
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_t = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_t == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 202, __pyx_L3_error)
-    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 202, __pyx_L3_error)
+    __pyx_v_t = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_t == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 200, __pyx_L3_error)
+    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 200, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("jac", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 202, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("jac", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 200, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("quadvariatevectorinterpolation.TrivectorQuadvariateSpline.jac", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -4245,7 +4242,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   PyObject *__pyx_t_51 = NULL;
   __Pyx_RefNannySetupContext("jac", 0);
 
-  /* "quadvariatevectorinterpolation.pyx":227
+  /* "quadvariatevectorinterpolation.pyx":225
  *         cdef:
  *             double tmp
  *             double[:,::1] jcb = self.jcb             # <<<<<<<<<<<<<<
@@ -4258,7 +4255,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "quadvariatevectorinterpolation.pyx":228
+  /* "quadvariatevectorinterpolation.pyx":226
  *             double tmp
  *             double[:,::1] jcb = self.jcb
  *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)             # <<<<<<<<<<<<<<
@@ -4270,7 +4267,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_4 = 2;
   ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpx->__pyx_vtab)->_ev_(__pyx_v_self->itpx, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_2)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_3)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_4)) ))), 0, 1, 0, 0, (&__pyx_v_tmp));
 
-  /* "quadvariatevectorinterpolation.pyx":229
+  /* "quadvariatevectorinterpolation.pyx":227
  *             double[:,::1] jcb = self.jcb
  *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
  *         jcb[0,0] = tmp             # <<<<<<<<<<<<<<
@@ -4281,7 +4278,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_6 = 0;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_5 * __pyx_v_jcb.strides[0]) )) + __pyx_t_6)) )) = __pyx_v_tmp;
 
-  /* "quadvariatevectorinterpolation.pyx":230
+  /* "quadvariatevectorinterpolation.pyx":228
  *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
  *         jcb[0,0] = tmp
  *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)             # <<<<<<<<<<<<<<
@@ -4293,7 +4290,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_9 = 2;
   ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpx->__pyx_vtab)->_ev_(__pyx_v_self->itpx, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_7)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_8)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_9)) ))), 0, 0, 1, 0, (&__pyx_v_tmp));
 
-  /* "quadvariatevectorinterpolation.pyx":231
+  /* "quadvariatevectorinterpolation.pyx":229
  *         jcb[0,0] = tmp
  *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
  *         jcb[0,1] = tmp             # <<<<<<<<<<<<<<
@@ -4304,7 +4301,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_11 = 1;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_10 * __pyx_v_jcb.strides[0]) )) + __pyx_t_11)) )) = __pyx_v_tmp;
 
-  /* "quadvariatevectorinterpolation.pyx":232
+  /* "quadvariatevectorinterpolation.pyx":230
  *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
  *         jcb[0,1] = tmp
  *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)             # <<<<<<<<<<<<<<
@@ -4316,7 +4313,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_14 = 2;
   ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpx->__pyx_vtab)->_ev_(__pyx_v_self->itpx, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_12)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_13)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_14)) ))), 0, 0, 0, 1, (&__pyx_v_tmp));
 
-  /* "quadvariatevectorinterpolation.pyx":233
+  /* "quadvariatevectorinterpolation.pyx":231
  *         jcb[0,1] = tmp
  *         self.itpx._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)
  *         jcb[0,2] = tmp             # <<<<<<<<<<<<<<
@@ -4327,7 +4324,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_16 = 2;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_15 * __pyx_v_jcb.strides[0]) )) + __pyx_t_16)) )) = __pyx_v_tmp;
 
-  /* "quadvariatevectorinterpolation.pyx":235
+  /* "quadvariatevectorinterpolation.pyx":233
  *         jcb[0,2] = tmp
  * 
  *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)             # <<<<<<<<<<<<<<
@@ -4339,7 +4336,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_19 = 2;
   ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpy->__pyx_vtab)->_ev_(__pyx_v_self->itpy, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_17)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_18)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_19)) ))), 0, 1, 0, 0, (&__pyx_v_tmp));
 
-  /* "quadvariatevectorinterpolation.pyx":236
+  /* "quadvariatevectorinterpolation.pyx":234
  * 
  *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
  *         jcb[1,0] = tmp             # <<<<<<<<<<<<<<
@@ -4350,7 +4347,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_21 = 0;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_20 * __pyx_v_jcb.strides[0]) )) + __pyx_t_21)) )) = __pyx_v_tmp;
 
-  /* "quadvariatevectorinterpolation.pyx":237
+  /* "quadvariatevectorinterpolation.pyx":235
  *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
  *         jcb[1,0] = tmp
  *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)             # <<<<<<<<<<<<<<
@@ -4362,7 +4359,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_24 = 2;
   ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpy->__pyx_vtab)->_ev_(__pyx_v_self->itpy, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_22)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_23)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_24)) ))), 0, 0, 1, 0, (&__pyx_v_tmp));
 
-  /* "quadvariatevectorinterpolation.pyx":238
+  /* "quadvariatevectorinterpolation.pyx":236
  *         jcb[1,0] = tmp
  *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
  *         jcb[1,1] = tmp             # <<<<<<<<<<<<<<
@@ -4373,7 +4370,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_26 = 1;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_25 * __pyx_v_jcb.strides[0]) )) + __pyx_t_26)) )) = __pyx_v_tmp;
 
-  /* "quadvariatevectorinterpolation.pyx":239
+  /* "quadvariatevectorinterpolation.pyx":237
  *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
  *         jcb[1,1] = tmp
  *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)             # <<<<<<<<<<<<<<
@@ -4385,7 +4382,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_29 = 2;
   ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpy->__pyx_vtab)->_ev_(__pyx_v_self->itpy, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_27)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_28)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_29)) ))), 0, 0, 0, 1, (&__pyx_v_tmp));
 
-  /* "quadvariatevectorinterpolation.pyx":240
+  /* "quadvariatevectorinterpolation.pyx":238
  *         jcb[1,1] = tmp
  *         self.itpy._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)
  *         jcb[1,2] = tmp             # <<<<<<<<<<<<<<
@@ -4396,7 +4393,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_31 = 2;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_30 * __pyx_v_jcb.strides[0]) )) + __pyx_t_31)) )) = __pyx_v_tmp;
 
-  /* "quadvariatevectorinterpolation.pyx":242
+  /* "quadvariatevectorinterpolation.pyx":240
  *         jcb[1,2] = tmp
  * 
  *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)             # <<<<<<<<<<<<<<
@@ -4408,7 +4405,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_34 = 2;
   ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpz->__pyx_vtab)->_ev_(__pyx_v_self->itpz, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_32)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_33)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_34)) ))), 0, 1, 0, 0, (&__pyx_v_tmp));
 
-  /* "quadvariatevectorinterpolation.pyx":243
+  /* "quadvariatevectorinterpolation.pyx":241
  * 
  *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
  *         jcb[2,0] = tmp             # <<<<<<<<<<<<<<
@@ -4419,7 +4416,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_36 = 0;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_35 * __pyx_v_jcb.strides[0]) )) + __pyx_t_36)) )) = __pyx_v_tmp;
 
-  /* "quadvariatevectorinterpolation.pyx":244
+  /* "quadvariatevectorinterpolation.pyx":242
  *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,1,0,0,&tmp)
  *         jcb[2,0] = tmp
  *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)             # <<<<<<<<<<<<<<
@@ -4431,7 +4428,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_39 = 2;
   ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpz->__pyx_vtab)->_ev_(__pyx_v_self->itpz, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_37)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_38)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_39)) ))), 0, 0, 1, 0, (&__pyx_v_tmp));
 
-  /* "quadvariatevectorinterpolation.pyx":245
+  /* "quadvariatevectorinterpolation.pyx":243
  *         jcb[2,0] = tmp
  *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
  *         jcb[2,1] = tmp             # <<<<<<<<<<<<<<
@@ -4442,7 +4439,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_41 = 1;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_40 * __pyx_v_jcb.strides[0]) )) + __pyx_t_41)) )) = __pyx_v_tmp;
 
-  /* "quadvariatevectorinterpolation.pyx":246
+  /* "quadvariatevectorinterpolation.pyx":244
  *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,1,0,&tmp)
  *         jcb[2,1] = tmp
  *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)             # <<<<<<<<<<<<<<
@@ -4454,7 +4451,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_44 = 2;
   ((struct __pyx_vtabstruct_30quadvariatevectorinterpolation_Interpolator *)__pyx_v_self->itpz->__pyx_vtab)->_ev_(__pyx_v_self->itpz, __pyx_v_t, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_42)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_43)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_44)) ))), 0, 0, 0, 1, (&__pyx_v_tmp));
 
-  /* "quadvariatevectorinterpolation.pyx":247
+  /* "quadvariatevectorinterpolation.pyx":245
  *         jcb[2,1] = tmp
  *         self.itpz._ev_(t,pos[0],pos[1],pos[2],0,0,0,1,&tmp)
  *         jcb[2,2] = tmp             # <<<<<<<<<<<<<<
@@ -4465,18 +4462,18 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_46 = 2;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_jcb.data + __pyx_t_45 * __pyx_v_jcb.strides[0]) )) + __pyx_t_46)) )) = __pyx_v_tmp;
 
-  /* "quadvariatevectorinterpolation.pyx":249
+  /* "quadvariatevectorinterpolation.pyx":247
  *         jcb[2,2] = tmp
  * 
  *         return np.copy(jcb)             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_48 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_48)) __PYX_ERR(1, 249, __pyx_L1_error)
+  __pyx_t_48 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_48)) __PYX_ERR(1, 247, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_48);
-  __pyx_t_49 = __Pyx_PyObject_GetAttrStr(__pyx_t_48, __pyx_n_s_copy); if (unlikely(!__pyx_t_49)) __PYX_ERR(1, 249, __pyx_L1_error)
+  __pyx_t_49 = __Pyx_PyObject_GetAttrStr(__pyx_t_48, __pyx_n_s_copy); if (unlikely(!__pyx_t_49)) __PYX_ERR(1, 247, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_49);
   __Pyx_DECREF(__pyx_t_48); __pyx_t_48 = 0;
-  __pyx_t_48 = __pyx_memoryview_fromslice(__pyx_v_jcb, 2, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_48)) __PYX_ERR(1, 249, __pyx_L1_error)
+  __pyx_t_48 = __pyx_memoryview_fromslice(__pyx_v_jcb, 2, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_48)) __PYX_ERR(1, 247, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_48);
   __pyx_t_50 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_49))) {
@@ -4489,14 +4486,14 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
     }
   }
   if (!__pyx_t_50) {
-    __pyx_t_47 = __Pyx_PyObject_CallOneArg(__pyx_t_49, __pyx_t_48); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 249, __pyx_L1_error)
+    __pyx_t_47 = __Pyx_PyObject_CallOneArg(__pyx_t_49, __pyx_t_48); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 247, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_48); __pyx_t_48 = 0;
     __Pyx_GOTREF(__pyx_t_47);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_49)) {
       PyObject *__pyx_temp[2] = {__pyx_t_50, __pyx_t_48};
-      __pyx_t_47 = __Pyx_PyFunction_FastCall(__pyx_t_49, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 249, __pyx_L1_error)
+      __pyx_t_47 = __Pyx_PyFunction_FastCall(__pyx_t_49, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 247, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_50); __pyx_t_50 = 0;
       __Pyx_GOTREF(__pyx_t_47);
       __Pyx_DECREF(__pyx_t_48); __pyx_t_48 = 0;
@@ -4505,20 +4502,20 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_49)) {
       PyObject *__pyx_temp[2] = {__pyx_t_50, __pyx_t_48};
-      __pyx_t_47 = __Pyx_PyCFunction_FastCall(__pyx_t_49, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 249, __pyx_L1_error)
+      __pyx_t_47 = __Pyx_PyCFunction_FastCall(__pyx_t_49, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 247, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_50); __pyx_t_50 = 0;
       __Pyx_GOTREF(__pyx_t_47);
       __Pyx_DECREF(__pyx_t_48); __pyx_t_48 = 0;
     } else
     #endif
     {
-      __pyx_t_51 = PyTuple_New(1+1); if (unlikely(!__pyx_t_51)) __PYX_ERR(1, 249, __pyx_L1_error)
+      __pyx_t_51 = PyTuple_New(1+1); if (unlikely(!__pyx_t_51)) __PYX_ERR(1, 247, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_51);
       __Pyx_GIVEREF(__pyx_t_50); PyTuple_SET_ITEM(__pyx_t_51, 0, __pyx_t_50); __pyx_t_50 = NULL;
       __Pyx_GIVEREF(__pyx_t_48);
       PyTuple_SET_ITEM(__pyx_t_51, 0+1, __pyx_t_48);
       __pyx_t_48 = 0;
-      __pyx_t_47 = __Pyx_PyObject_Call(__pyx_t_49, __pyx_t_51, NULL); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 249, __pyx_L1_error)
+      __pyx_t_47 = __Pyx_PyObject_Call(__pyx_t_49, __pyx_t_51, NULL); if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 247, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_47);
       __Pyx_DECREF(__pyx_t_51); __pyx_t_51 = 0;
     }
@@ -4528,7 +4525,7 @@ static PyObject *__pyx_pf_30quadvariatevectorinterpolation_26TrivectorQuadvariat
   __pyx_t_47 = 0;
   goto __pyx_L0;
 
-  /* "quadvariatevectorinterpolation.pyx":202
+  /* "quadvariatevectorinterpolation.pyx":200
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def jac(self, double t, double[::1] pos):             # <<<<<<<<<<<<<<
@@ -20581,7 +20578,7 @@ static PyTypeObject __pyx_type_30quadvariatevectorinterpolation_TrivectorQuadvar
   0, /*tp_setattro*/
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
-  "\n    A Cython extension type which facilitates simultaneous interpolation of\n    time-dependent vector fields in R^3 along all thre spatial axes, as well\n    as the time abscissa.\n\n    Methods defined here:\n    TrivectorQuadvariateSpline.__init__(t,x,y,z,v,kt,kx,ky,kz,extrap)\n    TrivectorQuadvariateSpline.__call__(t,pos)\n    TrivectorQuadvariateSpline.jac(t,pos)\n\n    Version: 0.1\n    ", /*tp_doc*/
+  "\n    A Cython extension type which facilitates simultaneous interpolation of\n    time-dependent vector fields in R^3 along all thre spatial axes, as well\n    as the time abscissa.\n\n    Methods defined here:\n        TrivectorQuadvariateSpline.__init__(t,x,y,z,v,kt,kx,ky,kz,extrap)\n        TrivectorQuadvariateSpline.__call__(t,pos)\n        TrivectorQuadvariateSpline.jac(t,pos)\n\n    Version: 0.1\n    ", /*tp_doc*/
   __pyx_tp_traverse_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline, /*tp_traverse*/
   __pyx_tp_clear_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline, /*tp_clear*/
   0, /*tp_richcompare*/
@@ -21448,7 +21445,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
 };
 static int __Pyx_InitCachedBuiltins(void) {
   __pyx_builtin_TypeError = __Pyx_GetBuiltinName(__pyx_n_s_TypeError); if (!__pyx_builtin_TypeError) __PYX_ERR(0, 2, __pyx_L1_error)
-  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(1, 155, __pyx_L1_error)
+  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(1, 153, __pyx_L1_error)
   __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(2, 242, __pyx_L1_error)
   __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_n_s_RuntimeError); if (!__pyx_builtin_RuntimeError) __PYX_ERR(2, 810, __pyx_L1_error)
   __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) __PYX_ERR(2, 1000, __pyx_L1_error)
@@ -21485,25 +21482,25 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "quadvariatevectorinterpolation.pyx":155
+  /* "quadvariatevectorinterpolation.pyx":153
  * 
  *         if v.shape[0] != 3 or nt*nx*ny*nz != v.shape[1]:
  *             raise ValueError('Array dimensions not aligned!')             # <<<<<<<<<<<<<<
  * 
  *         if (kt < 2 or kt > nt) or (kx < 2 or kx > nx) or (ky < 2 or ky > ny) or (kz < 2 or kz > nz):
  */
-  __pyx_tuple__3 = PyTuple_Pack(1, __pyx_kp_s_Array_dimensions_not_aligned); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(1, 155, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(1, __pyx_kp_s_Array_dimensions_not_aligned); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(1, 153, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "quadvariatevectorinterpolation.pyx":158
+  /* "quadvariatevectorinterpolation.pyx":156
  * 
  *         if (kt < 2 or kt > nt) or (kx < 2 or kx > nx) or (ky < 2 or ky > ny) or (kz < 2 or kz > nz):
  *             raise ValueError('Invalid interpolator order choice!')             # <<<<<<<<<<<<<<
  * 
  *         self.itpx = Interpolator(t,x,y,z,v[0],kt,kx,ky,kz,extrap)
  */
-  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_kp_s_Invalid_interpolator_order_choic); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(1, 158, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_kp_s_Invalid_interpolator_order_choic); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(1, 156, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
@@ -21973,22 +21970,22 @@ static int __Pyx_modinit_type_init_code(void) {
   /*--- Type init code ---*/
   __pyx_vtabptr_30quadvariatevectorinterpolation_Interpolator = &__pyx_vtable_30quadvariatevectorinterpolation_Interpolator;
   __pyx_vtable_30quadvariatevectorinterpolation_Interpolator._ev_ = (void (*)(struct __pyx_obj_30quadvariatevectorinterpolation_Interpolator *, double, double, double, double, int, int, int, int, double *))__pyx_f_30quadvariatevectorinterpolation_12Interpolator__ev_;
-  if (PyType_Ready(&__pyx_type_30quadvariatevectorinterpolation_Interpolator) < 0) __PYX_ERR(1, 34, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_30quadvariatevectorinterpolation_Interpolator) < 0) __PYX_ERR(1, 32, __pyx_L1_error)
   __pyx_type_30quadvariatevectorinterpolation_Interpolator.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_30quadvariatevectorinterpolation_Interpolator.tp_dictoffset && __pyx_type_30quadvariatevectorinterpolation_Interpolator.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_30quadvariatevectorinterpolation_Interpolator.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_30quadvariatevectorinterpolation_Interpolator.tp_dict, __pyx_vtabptr_30quadvariatevectorinterpolation_Interpolator) < 0) __PYX_ERR(1, 34, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_30quadvariatevectorinterpolation_Interpolator) < 0) __PYX_ERR(1, 34, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_30quadvariatevectorinterpolation_Interpolator.tp_dict, __pyx_vtabptr_30quadvariatevectorinterpolation_Interpolator) < 0) __PYX_ERR(1, 32, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_30quadvariatevectorinterpolation_Interpolator) < 0) __PYX_ERR(1, 32, __pyx_L1_error)
   __pyx_ptype_30quadvariatevectorinterpolation_Interpolator = &__pyx_type_30quadvariatevectorinterpolation_Interpolator;
-  if (PyType_Ready(&__pyx_type_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline) < 0) __PYX_ERR(1, 57, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline) < 0) __PYX_ERR(1, 55, __pyx_L1_error)
   __pyx_type_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline.tp_dictoffset && __pyx_type_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
   #if CYTHON_COMPILING_IN_CPYTHON
   {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline, "__init__"); if (unlikely(!wrapper)) __PYX_ERR(1, 57, __pyx_L1_error)
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline, "__init__"); if (unlikely(!wrapper)) __PYX_ERR(1, 55, __pyx_L1_error)
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
       __pyx_wrapperbase_30quadvariatevectorinterpolation_26TrivectorQuadvariateSpline_2__init__ = *((PyWrapperDescrObject *)wrapper)->d_base;
       __pyx_wrapperbase_30quadvariatevectorinterpolation_26TrivectorQuadvariateSpline_2__init__.doc = __pyx_doc_30quadvariatevectorinterpolation_26TrivectorQuadvariateSpline_2__init__;
@@ -21998,7 +21995,7 @@ static int __Pyx_modinit_type_init_code(void) {
   #endif
   #if CYTHON_COMPILING_IN_CPYTHON
   {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline, "__call__"); if (unlikely(!wrapper)) __PYX_ERR(1, 57, __pyx_L1_error)
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline, "__call__"); if (unlikely(!wrapper)) __PYX_ERR(1, 55, __pyx_L1_error)
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
       __pyx_wrapperbase_30quadvariatevectorinterpolation_26TrivectorQuadvariateSpline_4__call__ = *((PyWrapperDescrObject *)wrapper)->d_base;
       __pyx_wrapperbase_30quadvariatevectorinterpolation_26TrivectorQuadvariateSpline_4__call__.doc = __pyx_doc_30quadvariatevectorinterpolation_26TrivectorQuadvariateSpline_4__call__;
@@ -22006,8 +22003,8 @@ static int __Pyx_modinit_type_init_code(void) {
     }
   }
   #endif
-  if (PyObject_SetAttrString(__pyx_m, "TrivectorQuadvariateSpline", (PyObject *)&__pyx_type_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline) < 0) __PYX_ERR(1, 57, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline) < 0) __PYX_ERR(1, 57, __pyx_L1_error)
+  if (PyObject_SetAttrString(__pyx_m, "TrivectorQuadvariateSpline", (PyObject *)&__pyx_type_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline) < 0) __PYX_ERR(1, 55, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline) < 0) __PYX_ERR(1, 55, __pyx_L1_error)
   __pyx_ptype_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline = &__pyx_type_30quadvariatevectorinterpolation_TrivectorQuadvariateSpline;
   __pyx_vtabptr_array = &__pyx_vtable_array;
   __pyx_vtable_array.get_memview = (PyObject *(*)(struct __pyx_array_obj *))__pyx_array_get_memview;

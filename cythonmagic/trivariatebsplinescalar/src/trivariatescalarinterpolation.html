@@ -679,14 +679,15 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_12Interpolator_2__deal
 <pre class="cython line score-0">&#xA0;<span class="">064</span>: <span class="sd">    ScalarTrivariateSpline.hess(pos)</span></pre>
 <pre class="cython line score-0">&#xA0;<span class="">065</span>: </pre>
 <pre class="cython line score-0">&#xA0;<span class="">066</span>: <span class="sd">    Version: 0.1</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">067</span>: <span class="sd">    &quot;&quot;&quot;</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">068</span>:     <span class="k">cdef</span><span class="p">:</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">069</span>:         <span class="n">Interpolator</span> <span class="n">itp</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">070</span>:         <span class="n">double</span> <span class="n">_grd_</span><span class="p">[</span><span class="mf">3</span><span class="p">]</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">071</span>:         <span class="n">double</span> <span class="n">_hss_</span><span class="p">[</span><span class="mf">3</span><span class="p">][</span><span class="mf">3</span><span class="p">]</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">072</span>:         <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">grd</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">073</span>:         <span class="n">double</span><span class="p">[:,::</span><span class="mf">1</span><span class="p">]</span> <span class="n">hss</span></pre>
-<pre class="cython line score-16" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">074</span>:     <span class="k">def</span> <span class="nf">__cinit__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">067</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">068</span>: <span class="sd">    &quot;&quot;&quot;</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">069</span>:     <span class="k">cdef</span><span class="p">:</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">070</span>:         <span class="n">Interpolator</span> <span class="n">itp</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">071</span>:         <span class="n">double</span> <span class="n">_grd_</span><span class="p">[</span><span class="mf">3</span><span class="p">]</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">072</span>:         <span class="n">double</span> <span class="n">_hss_</span><span class="p">[</span><span class="mf">3</span><span class="p">][</span><span class="mf">3</span><span class="p">]</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">073</span>:         <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">grd</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">074</span>:         <span class="n">double</span><span class="p">[:,::</span><span class="mf">1</span><span class="p">]</span> <span class="n">hss</span></pre>
+<pre class="cython line score-16" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">075</span>:     <span class="k">def</span> <span class="nf">__cinit__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span></pre>
 <pre class='cython code score-16 '>/* Python wrapper */
 static int __pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpline_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
 static int __pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpline_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
@@ -723,54 +724,54 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline___c
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
   return __pyx_r;
 }
-</pre><pre class="cython line score-16" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">075</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">grd</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_grd_</span></pre>
+</pre><pre class="cython line score-16" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">076</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">grd</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_grd_</span></pre>
 <pre class='cython code score-16 '>  __pyx_t_1 = __pyx_v_self-&gt;_grd_;
   if (!__pyx_t_1) {
     <span class='py_c_api'>PyErr_SetString</span>(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    <span class='error_goto'>__PYX_ERR(1, 75, __pyx_L1_error)</span>
+    <span class='error_goto'>__PYX_ERR(1, 76, __pyx_L1_error)</span>
   }
   __pyx_t_4 = __pyx_format_from_typeinfo(&amp;__Pyx_TypeInfo_double);
   __pyx_t_3 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !<span class='py_c_api'>PyBytes_AsString</span>(__pyx_t_4))) <span class='error_goto'>__PYX_ERR(1, 75, __pyx_L1_error)</span>
+  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !<span class='py_c_api'>PyBytes_AsString</span>(__pyx_t_4))) <span class='error_goto'>__PYX_ERR(1, 76, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_4);
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_3);
   __pyx_t_2 = __pyx_array_new(__pyx_t_3, sizeof(double), <span class='py_macro_api'>PyBytes_AS_STRING</span>(__pyx_t_4), (char *) "fortran", (char *) __pyx_t_1);
-  if (unlikely(!__pyx_t_2)) <span class='error_goto'>__PYX_ERR(1, 75, __pyx_L1_error)</span>
+  if (unlikely(!__pyx_t_2)) <span class='error_goto'>__PYX_ERR(1, 76, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_3); __pyx_t_3 = 0;
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_5 = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_dc_double</span>(((PyObject *)__pyx_t_2), PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 75, __pyx_L1_error)</span>
+  __pyx_t_5 = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_dc_double</span>(((PyObject *)__pyx_t_2), PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 76, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&amp;__pyx_v_self-&gt;grd, 0);
   __pyx_v_self-&gt;grd = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
-</pre><pre class="cython line score-16" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">076</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">hss</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hss_</span></pre>
+</pre><pre class="cython line score-16" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">077</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">hss</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_hss_</span></pre>
 <pre class='cython code score-16 '>  __pyx_t_6 = __pyx_v_self-&gt;_hss_;
   if (!__pyx_t_6) {
     <span class='py_c_api'>PyErr_SetString</span>(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    <span class='error_goto'>__PYX_ERR(1, 76, __pyx_L1_error)</span>
+    <span class='error_goto'>__PYX_ERR(1, 77, __pyx_L1_error)</span>
   }
   __pyx_t_3 = __pyx_format_from_typeinfo(&amp;__Pyx_TypeInfo_double);
   __pyx_t_4 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3), ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !<span class='py_c_api'>PyBytes_AsString</span>(__pyx_t_3))) <span class='error_goto'>__PYX_ERR(1, 76, __pyx_L1_error)</span>
+  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !<span class='py_c_api'>PyBytes_AsString</span>(__pyx_t_3))) <span class='error_goto'>__PYX_ERR(1, 77, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_3);
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_4);
   __pyx_t_2 = __pyx_array_new(__pyx_t_4, sizeof(double), <span class='py_macro_api'>PyBytes_AS_STRING</span>(__pyx_t_3), (char *) "c", (char *) __pyx_t_6);
-  if (unlikely(!__pyx_t_2)) <span class='error_goto'>__PYX_ERR(1, 76, __pyx_L1_error)</span>
+  if (unlikely(!__pyx_t_2)) <span class='error_goto'>__PYX_ERR(1, 77, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_4); __pyx_t_4 = 0;
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_7 = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_d_dc_double</span>(((PyObject *)__pyx_t_2), PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 76, __pyx_L1_error)</span>
+  __pyx_t_7 = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_d_dc_double</span>(((PyObject *)__pyx_t_2), PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(1, 77, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&amp;__pyx_v_self-&gt;hss, 0);
   __pyx_v_self-&gt;hss = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
-</pre><pre class="cython line score-0">&#xA0;<span class="">077</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">initializedcheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">078</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">wraparound</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">079</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">boundscheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
-<pre class="cython line score-94" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">080</span>:     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">x</span><span class="p">,</span> <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">y</span><span class="p">,</span> <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">z</span><span class="p">,</span> <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">f</span><span class="p">,</span></pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">078</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">initializedcheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">079</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">wraparound</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">080</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">boundscheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
+<pre class="cython line score-94" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">081</span>:     <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">x</span><span class="p">,</span> <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">y</span><span class="p">,</span> <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">z</span><span class="p">,</span> <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">f</span><span class="p">,</span></pre>
 <pre class='cython code score-94 '>/* Python wrapper */
 static int __pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpline_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
 static char __pyx_doc_29trivariatescalarinterpolation_22ScalarTrivariateSpline_2__init__[] = "\n        ScalarTrivariateSpline.__init__(x,y,z,f,kx,ky,kz,extrap)\n\n        Constructor for a TrivectorQuadvariateSpline instance.\n\n        Parameters\n        ----------\n        x : (nx,) array_like\n            A (C-contiguous) (NumPy) array of type np.float64 and shape (nx,),\n            containing the sampling points along the x abscissa.\n            Must be strictly increasing.\n        y : (ny,) array_like\n            A (C-contiguous) (NumPy) array of type np.float64 and shape (ny,),\n            containing the sampling points along the y abscissa.\n            Must be strictly increasing.\n        z : (nz,) array_like\n            A (C-contiguous) (NumPy) array of type np.float64 and shape (nz,),\n            containing the sampling points along the z, abscissa.\n            Must be strictly increasing.\n        f : (nx*ny*nz,) array_like\n            A (C-contiguous) (NumPy) array of type np.float64 and shape\n            (nx*ny*nz,), containing the sampled scalar values.\n\n            The array must be sorted in Fortran order. That is,\n            f[i+nx*(j+ny*k)] should contain the scalar sampled\n            at (x[i],y[j],z[k]).\n            This is most easily done by:\n                1) Initializing an array of shape (nx,ny,nz),\n                   filling it with the corresponding scalar values\n                2) Flattening the array in Fortran order before\n                   assigning to f, i.e.,\n                   f = f_tmp.ravel(order='F')\n        kx: integer, optional\n            Interpolation order (= degree of polynomial pieces + 1) along the\n            x abscissa. Default: kx = 4.\n            Must satisfy 2 &lt; kx &lt; nx\n        ky: integer, optional\n            Interpolation order (= degree of polynomial pieces + 1) along the\n            y abscissa. Default: ky = 4.\n            Must satisfy 2 &lt; ky &lt; ny\n        kz: integer, optional\n            Interpolation order (= degree of polynomial pieces + 1) along the\n            z ""abscissa. Default: kz = 4.\n            Must satisfy 2 &lt; kz &lt; nz\n        extrap : bool, optional\n            Flag indicating whether or not extrapolation outside of the\n            original sampling domain is allowed. If extrap is false and\n            one attempts to evaluate the interpolated vector field outside of\n            the sampling domain, zero is returned.\n            Extrapolation is generally not advised for high interpolation\n            orders.\n            Default: extrap = False.\n\n        ";
@@ -824,19 +825,19 @@ static int __pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpline_3__
         case  1:
         if (likely((values[1] = <span class='pyx_c_api'>__Pyx_PyDict_GetItemStr</span>(__pyx_kwds, __pyx_n_s_y)) != 0)) kw_args--;
         else {
-          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("__init__", 0, 4, 8, 1); <span class='error_goto'>__PYX_ERR(1, 80, __pyx_L3_error)</span>
+          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("__init__", 0, 4, 8, 1); <span class='error_goto'>__PYX_ERR(1, 81, __pyx_L3_error)</span>
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = <span class='pyx_c_api'>__Pyx_PyDict_GetItemStr</span>(__pyx_kwds, __pyx_n_s_z)) != 0)) kw_args--;
         else {
-          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("__init__", 0, 4, 8, 2); <span class='error_goto'>__PYX_ERR(1, 80, __pyx_L3_error)</span>
+          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("__init__", 0, 4, 8, 2); <span class='error_goto'>__PYX_ERR(1, 81, __pyx_L3_error)</span>
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = <span class='pyx_c_api'>__Pyx_PyDict_GetItemStr</span>(__pyx_kwds, __pyx_n_s_f)) != 0)) kw_args--;
         else {
-          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("__init__", 0, 4, 8, 3); <span class='error_goto'>__PYX_ERR(1, 80, __pyx_L3_error)</span>
+          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("__init__", 0, 4, 8, 3); <span class='error_goto'>__PYX_ERR(1, 81, __pyx_L3_error)</span>
         }
         CYTHON_FALLTHROUGH;
         case  4:
@@ -864,7 +865,7 @@ static int __pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpline_3__
         }
       }
       if (unlikely(kw_args &gt; 0)) {
-        if (unlikely(<span class='pyx_c_api'>__Pyx_ParseOptionalKeywords</span>(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") &lt; 0)) <span class='error_goto'>__PYX_ERR(1, 80, __pyx_L3_error)</span>
+        if (unlikely(<span class='pyx_c_api'>__Pyx_ParseOptionalKeywords</span>(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") &lt; 0)) <span class='error_goto'>__PYX_ERR(1, 81, __pyx_L3_error)</span>
       }
     } else {
       switch (<span class='py_macro_api'>PyTuple_GET_SIZE</span>(__pyx_args)) {
@@ -884,27 +885,27 @@ static int __pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpline_3__
         default: goto __pyx_L5_argtuple_error;
       }
     }
-    __pyx_v_x = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_dc_double</span>(values[0], PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 80, __pyx_L3_error)</span>
-    __pyx_v_y = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_dc_double</span>(values[1], PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_v_y.memview)) __PYX_ERR(1, 80, __pyx_L3_error)</span>
-    __pyx_v_z = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_dc_double</span>(values[2], PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_v_z.memview)) __PYX_ERR(1, 80, __pyx_L3_error)</span>
-    __pyx_v_f = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_dc_double</span>(values[3], PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_v_f.memview)) __PYX_ERR(1, 80, __pyx_L3_error)</span>
+    __pyx_v_x = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_dc_double</span>(values[0], PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 81, __pyx_L3_error)</span>
+    __pyx_v_y = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_dc_double</span>(values[1], PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_v_y.memview)) __PYX_ERR(1, 81, __pyx_L3_error)</span>
+    __pyx_v_z = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_dc_double</span>(values[2], PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_v_z.memview)) __PYX_ERR(1, 81, __pyx_L3_error)</span>
+    __pyx_v_f = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_dc_double</span>(values[3], PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_v_f.memview)) __PYX_ERR(1, 81, __pyx_L3_error)</span>
     if (values[4]) {
-      __pyx_v_kx = <span class='pyx_c_api'>__Pyx_PyInt_As_int</span>(values[4]); if (unlikely((__pyx_v_kx == (int)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(1, 81, __pyx_L3_error)</span>
+      __pyx_v_kx = <span class='pyx_c_api'>__Pyx_PyInt_As_int</span>(values[4]); if (unlikely((__pyx_v_kx == (int)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(1, 82, __pyx_L3_error)</span>
     } else {
       __pyx_v_kx = ((int)4);
     }
     if (values[5]) {
-      __pyx_v_ky = <span class='pyx_c_api'>__Pyx_PyInt_As_int</span>(values[5]); if (unlikely((__pyx_v_ky == (int)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(1, 81, __pyx_L3_error)</span>
+      __pyx_v_ky = <span class='pyx_c_api'>__Pyx_PyInt_As_int</span>(values[5]); if (unlikely((__pyx_v_ky == (int)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(1, 82, __pyx_L3_error)</span>
     } else {
       __pyx_v_ky = ((int)4);
     }
     if (values[6]) {
-      __pyx_v_kz = <span class='pyx_c_api'>__Pyx_PyInt_As_int</span>(values[6]); if (unlikely((__pyx_v_kz == (int)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(1, 81, __pyx_L3_error)</span>
+      __pyx_v_kz = <span class='pyx_c_api'>__Pyx_PyInt_As_int</span>(values[6]); if (unlikely((__pyx_v_kz == (int)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(1, 82, __pyx_L3_error)</span>
     } else {
       __pyx_v_kz = ((int)4);
     }
     if (values[7]) {
-      __pyx_v_extrap = <span class='pyx_c_api'>__Pyx_PyObject_IsTrue</span>(values[7]); if (unlikely((__pyx_v_extrap == (int)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(1, 81, __pyx_L3_error)</span>
+      __pyx_v_extrap = <span class='pyx_c_api'>__Pyx_PyObject_IsTrue</span>(values[7]); if (unlikely((__pyx_v_extrap == (int)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(1, 82, __pyx_L3_error)</span>
     } else {
 /* … */
   /* function exit code */
@@ -943,96 +944,96 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline_2__
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
   return __pyx_r;
 }
-</pre><pre class="cython line score-5" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">081</span>:             <span class="nb">int</span> <span class="n">kx</span> <span class="o">=</span> <span class="mf">4</span><span class="p">,</span> <span class="nb">int</span> <span class="n">ky</span> <span class="o">=</span> <span class="mf">4</span><span class="p">,</span> <span class="nb">int</span> <span class="n">kz</span> <span class="o">=</span> <span class="mf">4</span><span class="p">,</span> <span class="n">bint</span> <span class="n">extrap</span> <span class="o">=</span> <span class="bp">False</span><span class="p">):</span></pre>
+</pre><pre class="cython line score-5" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">082</span>:             <span class="nb">int</span> <span class="n">kx</span> <span class="o">=</span> <span class="mf">4</span><span class="p">,</span> <span class="nb">int</span> <span class="n">ky</span> <span class="o">=</span> <span class="mf">4</span><span class="p">,</span> <span class="nb">int</span> <span class="n">kz</span> <span class="o">=</span> <span class="mf">4</span><span class="p">,</span> <span class="n">bint</span> <span class="n">extrap</span> <span class="o">=</span> <span class="bp">False</span><span class="p">):</span></pre>
 <pre class='cython code score-5 '>      __pyx_v_extrap = ((int)0);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("__init__", 0, 4, 8, <span class='py_macro_api'>PyTuple_GET_SIZE</span>(__pyx_args)); <span class='error_goto'>__PYX_ERR(1, 80, __pyx_L3_error)</span>
+  <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("__init__", 0, 4, 8, <span class='py_macro_api'>PyTuple_GET_SIZE</span>(__pyx_args)); <span class='error_goto'>__PYX_ERR(1, 81, __pyx_L3_error)</span>
   __pyx_L3_error:;
   <span class='pyx_c_api'>__Pyx_AddTraceback</span>("trivariatescalarinterpolation.ScalarTrivariateSpline.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
   return -1;
   __pyx_L4_argument_unpacking_done:;
   __pyx_r = __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline_2__init__(((struct __pyx_obj_29trivariatescalarinterpolation_ScalarTrivariateSpline *)__pyx_v_self), __pyx_v_x, __pyx_v_y, __pyx_v_z, __pyx_v_f, __pyx_v_kx, __pyx_v_ky, __pyx_v_kz, __pyx_v_extrap);
-</pre><pre class="cython line score-0">&#xA0;<span class="">082</span>:         <span class="sd">&quot;&quot;&quot;</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">083</span>: <span class="sd">        ScalarTrivariateSpline.__init__(x,y,z,f,kx,ky,kz,extrap)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">084</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">085</span>: <span class="sd">        Constructor for a TrivectorQuadvariateSpline instance.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">086</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">087</span>: <span class="sd">        Parameters</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">088</span>: <span class="sd">        ----------</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">089</span>: <span class="sd">        x : (nx,) array_like</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">090</span>: <span class="sd">            A (C-contiguous) (NumPy) array of type np.float64 and shape (nx,),</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">091</span>: <span class="sd">            containing the sampling points along the x abscissa.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">092</span>: <span class="sd">            Must be strictly increasing.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">093</span>: <span class="sd">        y : (ny,) array_like</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">094</span>: <span class="sd">            A (C-contiguous) (NumPy) array of type np.float64 and shape (ny,),</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">095</span>: <span class="sd">            containing the sampling points along the y abscissa.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">096</span>: <span class="sd">            Must be strictly increasing.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">097</span>: <span class="sd">        z : (nz,) array_like</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">098</span>: <span class="sd">            A (C-contiguous) (NumPy) array of type np.float64 and shape (nz,),</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">099</span>: <span class="sd">            containing the sampling points along the z, abscissa.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">100</span>: <span class="sd">            Must be strictly increasing.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">101</span>: <span class="sd">        f : (nx*ny*nz,) array_like</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">102</span>: <span class="sd">            A (C-contiguous) (NumPy) array of type np.float64 and shape</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">103</span>: <span class="sd">            (nx*ny*nz,), containing the sampled scalar values.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">104</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">105</span>: <span class="sd">            The array must be sorted in Fortran order. That is,</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">106</span>: <span class="sd">            f[i+nx*(j+ny*k)] should contain the scalar sampled</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">107</span>: <span class="sd">            at (x[i],y[j],z[k]).</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">108</span>: <span class="sd">            This is most easily done by:</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">109</span>: <span class="sd">                1) Initializing an array of shape (nx,ny,nz),</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">110</span>: <span class="sd">                   filling it with the corresponding scalar values</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">111</span>: <span class="sd">                2) Flattening the array in Fortran order before</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">112</span>: <span class="sd">                   assigning to f, i.e.,</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">113</span>: <span class="sd">                   f = f_tmp.ravel(order=&#39;F&#39;)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">114</span>: <span class="sd">        kx: integer, optional</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">115</span>: <span class="sd">            Interpolation order (= degree of polynomial pieces + 1) along the</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">116</span>: <span class="sd">            x abscissa. Default: kx = 4.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">117</span>: <span class="sd">            Must satisfy 2 &lt; kx &lt; nx</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">118</span>: <span class="sd">        ky: integer, optional</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">119</span>: <span class="sd">            Interpolation order (= degree of polynomial pieces + 1) along the</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">120</span>: <span class="sd">            y abscissa. Default: ky = 4.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">121</span>: <span class="sd">            Must satisfy 2 &lt; ky &lt; ny</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">122</span>: <span class="sd">        kz: integer, optional</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">123</span>: <span class="sd">            Interpolation order (= degree of polynomial pieces + 1) along the</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">124</span>: <span class="sd">            z abscissa. Default: kz = 4.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">125</span>: <span class="sd">            Must satisfy 2 &lt; kz &lt; nz</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">126</span>: <span class="sd">        extrap : bool, optional</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">127</span>: <span class="sd">            Flag indicating whether or not extrapolation outside of the</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">128</span>: <span class="sd">            original sampling domain is allowed. If extrap is false and</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">129</span>: <span class="sd">            one attempts to evaluate the interpolated vector field outside of</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">130</span>: <span class="sd">            the sampling domain, zero is returned.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">131</span>: <span class="sd">            Extrapolation is generally not advised for high interpolation</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">132</span>: <span class="sd">            orders.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">133</span>: <span class="sd">            Default: extrap = False.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">134</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">135</span>: <span class="sd">        &quot;&quot;&quot;</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">136</span>:         <span class="k">cdef</span><span class="p">:</span></pre>
-<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">137</span>:             <span class="nb">int</span> <span class="n">nx</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span> <span class="n">ny</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span> <span class="n">nz</span> <span class="o">=</span> <span class="n">z</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span></pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">083</span>:         <span class="sd">&quot;&quot;&quot;</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">084</span>: <span class="sd">        ScalarTrivariateSpline.__init__(x,y,z,f,kx,ky,kz,extrap)</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">085</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">086</span>: <span class="sd">        Constructor for a TrivectorQuadvariateSpline instance.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">087</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">088</span>: <span class="sd">        Parameters</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">089</span>: <span class="sd">        ----------</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">090</span>: <span class="sd">        x : (nx,) array_like</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">091</span>: <span class="sd">            A (C-contiguous) (NumPy) array of type np.float64 and shape (nx,),</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">092</span>: <span class="sd">            containing the sampling points along the x abscissa.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">093</span>: <span class="sd">            Must be strictly increasing.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">094</span>: <span class="sd">        y : (ny,) array_like</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">095</span>: <span class="sd">            A (C-contiguous) (NumPy) array of type np.float64 and shape (ny,),</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">096</span>: <span class="sd">            containing the sampling points along the y abscissa.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">097</span>: <span class="sd">            Must be strictly increasing.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">098</span>: <span class="sd">        z : (nz,) array_like</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">099</span>: <span class="sd">            A (C-contiguous) (NumPy) array of type np.float64 and shape (nz,),</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">100</span>: <span class="sd">            containing the sampling points along the z, abscissa.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">101</span>: <span class="sd">            Must be strictly increasing.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">102</span>: <span class="sd">        f : (nx*ny*nz,) array_like</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">103</span>: <span class="sd">            A (C-contiguous) (NumPy) array of type np.float64 and shape</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">104</span>: <span class="sd">            (nx*ny*nz,), containing the sampled scalar values.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">105</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">106</span>: <span class="sd">            The array must be sorted in Fortran order. That is,</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">107</span>: <span class="sd">            f[i+nx*(j+ny*k)] should contain the scalar sampled</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">108</span>: <span class="sd">            at (x[i],y[j],z[k]).</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">109</span>: <span class="sd">            This is most easily done by:</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">110</span>: <span class="sd">                1) Initializing an array of shape (nx,ny,nz),</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">111</span>: <span class="sd">                   filling it with the corresponding scalar values</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">112</span>: <span class="sd">                2) Flattening the array in Fortran order before</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">113</span>: <span class="sd">                   assigning to f, i.e.,</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">114</span>: <span class="sd">                   f = f_tmp.ravel(order=&#39;F&#39;)</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">115</span>: <span class="sd">        kx: integer, optional</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">116</span>: <span class="sd">            Interpolation order (= degree of polynomial pieces + 1) along the</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">117</span>: <span class="sd">            x abscissa. Default: kx = 4.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">118</span>: <span class="sd">            Must satisfy 2 &lt; kx &lt; nx</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">119</span>: <span class="sd">        ky: integer, optional</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">120</span>: <span class="sd">            Interpolation order (= degree of polynomial pieces + 1) along the</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">121</span>: <span class="sd">            y abscissa. Default: ky = 4.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">122</span>: <span class="sd">            Must satisfy 2 &lt; ky &lt; ny</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">123</span>: <span class="sd">        kz: integer, optional</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">124</span>: <span class="sd">            Interpolation order (= degree of polynomial pieces + 1) along the</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">125</span>: <span class="sd">            z abscissa. Default: kz = 4.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">126</span>: <span class="sd">            Must satisfy 2 &lt; kz &lt; nz</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">127</span>: <span class="sd">        extrap : bool, optional</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">128</span>: <span class="sd">            Flag indicating whether or not extrapolation outside of the</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">129</span>: <span class="sd">            original sampling domain is allowed. If extrap is false and</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">130</span>: <span class="sd">            one attempts to evaluate the interpolated vector field outside of</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">131</span>: <span class="sd">            the sampling domain, zero is returned.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">132</span>: <span class="sd">            Extrapolation is generally not advised for high interpolation</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">133</span>: <span class="sd">            orders.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">134</span>: <span class="sd">            Default: extrap = False.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">135</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">136</span>: <span class="sd">        &quot;&quot;&quot;</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">137</span>:         <span class="k">cdef</span><span class="p">:</span></pre>
+<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">138</span>:             <span class="nb">int</span> <span class="n">nx</span> <span class="o">=</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span> <span class="n">ny</span> <span class="o">=</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span> <span class="n">nz</span> <span class="o">=</span> <span class="n">z</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span></pre>
 <pre class='cython code score-0 '>  __pyx_v_nx = (__pyx_v_x.shape[0]);
   __pyx_v_ny = (__pyx_v_y.shape[0]);
   __pyx_v_nz = (__pyx_v_z.shape[0]);
-</pre><pre class="cython line score-0">&#xA0;<span class="">138</span>: </pre>
-<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">139</span>:         <span class="k">if</span> <span class="n">nx</span><span class="o">*</span><span class="n">ny</span><span class="o">*</span><span class="n">nz</span> <span class="o">!=</span> <span class="n">f</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mf">0</span><span class="p">]:</span></pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">139</span>: </pre>
+<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">140</span>:         <span class="k">if</span> <span class="n">nx</span><span class="o">*</span><span class="n">ny</span><span class="o">*</span><span class="n">nz</span> <span class="o">!=</span> <span class="n">f</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mf">0</span><span class="p">]:</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_1 = ((((__pyx_v_nx * __pyx_v_ny) * __pyx_v_nz) != (__pyx_v_f.shape[0])) != 0);
   if (unlikely(__pyx_t_1)) {
 /* … */
   }
-</pre><pre class="cython line score-10" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">140</span>:             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s">&#39;Array dimensions not aligned!&#39;</span><span class="p">)</span></pre>
-<pre class='cython code score-10 '>    __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_Call</span>(__pyx_builtin_ValueError, __pyx_tuple__3, NULL);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 140, __pyx_L1_error)</span>
+</pre><pre class="cython line score-10" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">141</span>:             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s">&#39;Array dimensions not aligned!&#39;</span><span class="p">)</span></pre>
+<pre class='cython code score-10 '>    __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_Call</span>(__pyx_builtin_ValueError, __pyx_tuple__3, NULL);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 141, __pyx_L1_error)</span>
     <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
     <span class='pyx_c_api'>__Pyx_Raise</span>(__pyx_t_2, 0, 0, 0);
     <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-    <span class='error_goto'>__PYX_ERR(1, 140, __pyx_L1_error)</span>
+    <span class='error_goto'>__PYX_ERR(1, 141, __pyx_L1_error)</span>
 /* … */
-  __pyx_tuple__3 = <span class='py_c_api'>PyTuple_Pack</span>(1, __pyx_kp_s_Array_dimensions_not_aligned);<span class='error_goto'> if (unlikely(!__pyx_tuple__3)) __PYX_ERR(1, 140, __pyx_L1_error)</span>
+  __pyx_tuple__3 = <span class='py_c_api'>PyTuple_Pack</span>(1, __pyx_kp_s_Array_dimensions_not_aligned);<span class='error_goto'> if (unlikely(!__pyx_tuple__3)) __PYX_ERR(1, 141, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_tuple__3);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_tuple__3);
-</pre><pre class="cython line score-0">&#xA0;<span class="">141</span>: </pre>
-<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">142</span>:         <span class="k">if</span> <span class="p">(</span><span class="n">kx</span> <span class="o">&lt;</span> <span class="mf">2</span> <span class="ow">or</span> <span class="n">kx</span> <span class="o">&gt;</span> <span class="n">nx</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">ky</span> <span class="o">&lt;</span> <span class="mf">2</span> <span class="ow">or</span> <span class="n">ky</span> <span class="o">&gt;</span> <span class="n">ny</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">kz</span> <span class="o">&lt;</span> <span class="mf">2</span> <span class="ow">or</span> <span class="n">kz</span> <span class="o">&gt;</span> <span class="n">nz</span><span class="p">):</span></pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">142</span>: </pre>
+<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">143</span>:         <span class="k">if</span> <span class="p">(</span><span class="n">kx</span> <span class="o">&lt;</span> <span class="mf">2</span> <span class="ow">or</span> <span class="n">kx</span> <span class="o">&gt;</span> <span class="n">nx</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">ky</span> <span class="o">&lt;</span> <span class="mf">2</span> <span class="ow">or</span> <span class="n">ky</span> <span class="o">&gt;</span> <span class="n">ny</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span><span class="n">kz</span> <span class="o">&lt;</span> <span class="mf">2</span> <span class="ow">or</span> <span class="n">kz</span> <span class="o">&gt;</span> <span class="n">nz</span><span class="p">):</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_3 = ((__pyx_v_kx &lt; 2) != 0);
   if (!__pyx_t_3) {
   } else {
@@ -1069,35 +1070,35 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline_2__
   if (unlikely(__pyx_t_1)) {
 /* … */
   }
-</pre><pre class="cython line score-10" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">143</span>:             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s">&#39;Invalid interpolator order choice!&#39;</span><span class="p">)</span></pre>
-<pre class='cython code score-10 '>    __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_Call</span>(__pyx_builtin_ValueError, __pyx_tuple__4, NULL);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 143, __pyx_L1_error)</span>
+</pre><pre class="cython line score-10" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">144</span>:             <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s">&#39;Invalid interpolator order choice!&#39;</span><span class="p">)</span></pre>
+<pre class='cython code score-10 '>    __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_Call</span>(__pyx_builtin_ValueError, __pyx_tuple__4, NULL);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 144, __pyx_L1_error)</span>
     <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
     <span class='pyx_c_api'>__Pyx_Raise</span>(__pyx_t_2, 0, 0, 0);
     <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-    <span class='error_goto'>__PYX_ERR(1, 143, __pyx_L1_error)</span>
+    <span class='error_goto'>__PYX_ERR(1, 144, __pyx_L1_error)</span>
 /* … */
-  __pyx_tuple__4 = <span class='py_c_api'>PyTuple_Pack</span>(1, __pyx_kp_s_Invalid_interpolator_order_choic);<span class='error_goto'> if (unlikely(!__pyx_tuple__4)) __PYX_ERR(1, 143, __pyx_L1_error)</span>
+  __pyx_tuple__4 = <span class='py_c_api'>PyTuple_Pack</span>(1, __pyx_kp_s_Invalid_interpolator_order_choic);<span class='error_goto'> if (unlikely(!__pyx_tuple__4)) __PYX_ERR(1, 144, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_tuple__4);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_tuple__4);
-</pre><pre class="cython line score-0">&#xA0;<span class="">144</span>: </pre>
-<pre class="cython line score-25" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">145</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span> <span class="o">=</span> <span class="n">Interpolator</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span><span class="p">,</span> <span class="n">kz</span><span class="p">,</span> <span class="n">extrap</span><span class="p">)</span></pre>
-<pre class='cython code score-25 '>  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_x, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);;<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 145, __pyx_L1_error)</span>
+</pre><pre class="cython line score-0">&#xA0;<span class="">145</span>: </pre>
+<pre class="cython line score-25" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">146</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span> <span class="o">=</span> <span class="n">Interpolator</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">kx</span><span class="p">,</span> <span class="n">ky</span><span class="p">,</span> <span class="n">kz</span><span class="p">,</span> <span class="n">extrap</span><span class="p">)</span></pre>
+<pre class='cython code score-25 '>  __pyx_t_2 = __pyx_memoryview_fromslice(__pyx_v_x, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);;<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 146, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
-  __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_v_y, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);;<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 145, __pyx_L1_error)</span>
+  __pyx_t_4 = __pyx_memoryview_fromslice(__pyx_v_y, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);;<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 146, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_4);
-  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_z, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);;<span class='error_goto'> if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 145, __pyx_L1_error)</span>
+  __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_v_z, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);;<span class='error_goto'> if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 146, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_5);
-  __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_v_f, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);;<span class='error_goto'> if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 145, __pyx_L1_error)</span>
+  __pyx_t_6 = __pyx_memoryview_fromslice(__pyx_v_f, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);;<span class='error_goto'> if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 146, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_6);
-  __pyx_t_7 = <span class='pyx_c_api'>__Pyx_PyInt_From_int</span>(__pyx_v_kx);<span class='error_goto'> if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 145, __pyx_L1_error)</span>
+  __pyx_t_7 = <span class='pyx_c_api'>__Pyx_PyInt_From_int</span>(__pyx_v_kx);<span class='error_goto'> if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 146, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_7);
-  __pyx_t_8 = <span class='pyx_c_api'>__Pyx_PyInt_From_int</span>(__pyx_v_ky);<span class='error_goto'> if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 145, __pyx_L1_error)</span>
+  __pyx_t_8 = <span class='pyx_c_api'>__Pyx_PyInt_From_int</span>(__pyx_v_ky);<span class='error_goto'> if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 146, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_8);
-  __pyx_t_9 = <span class='pyx_c_api'>__Pyx_PyInt_From_int</span>(__pyx_v_kz);<span class='error_goto'> if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 145, __pyx_L1_error)</span>
+  __pyx_t_9 = <span class='pyx_c_api'>__Pyx_PyInt_From_int</span>(__pyx_v_kz);<span class='error_goto'> if (unlikely(!__pyx_t_9)) __PYX_ERR(1, 146, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_9);
-  __pyx_t_10 = <span class='pyx_c_api'>__Pyx_PyBool_FromLong</span>(__pyx_v_extrap);<span class='error_goto'> if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 145, __pyx_L1_error)</span>
+  __pyx_t_10 = <span class='pyx_c_api'>__Pyx_PyBool_FromLong</span>(__pyx_v_extrap);<span class='error_goto'> if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 146, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_10);
-  __pyx_t_11 = <span class='py_c_api'>PyTuple_New</span>(8);<span class='error_goto'> if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 145, __pyx_L1_error)</span>
+  __pyx_t_11 = <span class='py_c_api'>PyTuple_New</span>(8);<span class='error_goto'> if (unlikely(!__pyx_t_11)) __PYX_ERR(1, 146, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_11);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_t_2);
   <span class='py_macro_api'>PyTuple_SET_ITEM</span>(__pyx_t_11, 0, __pyx_t_2);
@@ -1123,7 +1124,7 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline_2__
   __pyx_t_8 = 0;
   __pyx_t_9 = 0;
   __pyx_t_10 = 0;
-  __pyx_t_10 = <span class='pyx_c_api'>__Pyx_PyObject_Call</span>(((PyObject *)__pyx_ptype_29trivariatescalarinterpolation_Interpolator), __pyx_t_11, NULL);<span class='error_goto'> if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 145, __pyx_L1_error)</span>
+  __pyx_t_10 = <span class='pyx_c_api'>__Pyx_PyObject_Call</span>(((PyObject *)__pyx_ptype_29trivariatescalarinterpolation_Interpolator), __pyx_t_11, NULL);<span class='error_goto'> if (unlikely(!__pyx_t_10)) __PYX_ERR(1, 146, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_10);
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_11); __pyx_t_11 = 0;
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_t_10);
@@ -1131,10 +1132,10 @@ static int __pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpline_2__
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(((PyObject *)__pyx_v_self-&gt;itp));
   __pyx_v_self-&gt;itp = ((struct __pyx_obj_29trivariatescalarinterpolation_Interpolator *)__pyx_t_10);
   __pyx_t_10 = 0;
-</pre><pre class="cython line score-0">&#xA0;<span class="">146</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">initializedcheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">147</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">boundscheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">148</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">wraparound</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
-<pre class="cython line score-23" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">149</span>:     <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">pos</span><span class="p">):</span></pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">147</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">initializedcheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">148</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">boundscheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">149</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">wraparound</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
+<pre class="cython line score-23" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">150</span>:     <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">pos</span><span class="p">):</span></pre>
 <pre class='cython code score-23 '>/* Python wrapper */
 static PyObject *__pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpline_5__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
 static char __pyx_doc_29trivariatescalarinterpolation_22ScalarTrivariateSpline_4__call__[] = "\n        ScalarTrivariateSpline.__call__(pos)\n\n        Evaluates the interpolated vector field at at the coordinates specified\n        by pos.\n\n        Parameters\n        ----------\n        pos: (3,) ndarray\n          A (C-contiguous) (NumPy) array containing the (Cartesian) coordinates\n          of the point in R^3 at which the vector field is to be interpolated\n\n        Returns\n        -------\n        val : double\n          Interpolated scalar.\n          If extrap = False and an interpolation is requested outside of the\n          sampling domain, val = 0.\n\n        ";
@@ -1165,18 +1166,18 @@ static PyObject *__pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpli
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args &gt; 0)) {
-        if (unlikely(<span class='pyx_c_api'>__Pyx_ParseOptionalKeywords</span>(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") &lt; 0)) <span class='error_goto'>__PYX_ERR(1, 149, __pyx_L3_error)</span>
+        if (unlikely(<span class='pyx_c_api'>__Pyx_ParseOptionalKeywords</span>(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") &lt; 0)) <span class='error_goto'>__PYX_ERR(1, 150, __pyx_L3_error)</span>
       }
     } else if (<span class='py_macro_api'>PyTuple_GET_SIZE</span>(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = <span class='py_macro_api'>PyTuple_GET_ITEM</span>(__pyx_args, 0);
     }
-    __pyx_v_pos = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_dc_double</span>(values[0], PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 149, __pyx_L3_error)</span>
+    __pyx_v_pos = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_dc_double</span>(values[0], PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 150, __pyx_L3_error)</span>
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("__call__", 1, 1, 1, <span class='py_macro_api'>PyTuple_GET_SIZE</span>(__pyx_args)); <span class='error_goto'>__PYX_ERR(1, 149, __pyx_L3_error)</span>
+  <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("__call__", 1, 1, 1, <span class='py_macro_api'>PyTuple_GET_SIZE</span>(__pyx_args)); <span class='error_goto'>__PYX_ERR(1, 150, __pyx_L3_error)</span>
   __pyx_L3_error:;
   <span class='pyx_c_api'>__Pyx_AddTraceback</span>("trivariatescalarinterpolation.ScalarTrivariateSpline.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
@@ -1206,44 +1207,44 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
   return __pyx_r;
 }
-</pre><pre class="cython line score-0">&#xA0;<span class="">150</span>:         <span class="sd">&quot;&quot;&quot;</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">151</span>: <span class="sd">        ScalarTrivariateSpline.__call__(pos)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">152</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">153</span>: <span class="sd">        Evaluates the interpolated vector field at at the coordinates specified</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">154</span>: <span class="sd">        by pos.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">155</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">156</span>: <span class="sd">        Parameters</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">157</span>: <span class="sd">        ----------</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">158</span>: <span class="sd">        pos: (3,) ndarray</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">159</span>: <span class="sd">          A (C-contiguous) (NumPy) array containing the (Cartesian) coordinates</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">160</span>: <span class="sd">          of the point in R^3 at which the vector field is to be interpolated</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">161</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">162</span>: <span class="sd">        Returns</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">163</span>: <span class="sd">        -------</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">164</span>: <span class="sd">        val : double</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">165</span>: <span class="sd">          Interpolated scalar.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">166</span>: <span class="sd">          If extrap = False and an interpolation is requested outside of the</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">167</span>: <span class="sd">          sampling domain, val = 0.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">168</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">169</span>: <span class="sd">        &quot;&quot;&quot;</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">170</span>:         <span class="k">cdef</span><span class="p">:</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">171</span>:             <span class="n">double</span> <span class="n">tmp</span></pre>
-<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">172</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">151</span>:         <span class="sd">&quot;&quot;&quot;</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">152</span>: <span class="sd">        ScalarTrivariateSpline.__call__(pos)</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">153</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">154</span>: <span class="sd">        Evaluates the interpolated vector field at at the coordinates specified</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">155</span>: <span class="sd">        by pos.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">156</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">157</span>: <span class="sd">        Parameters</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">158</span>: <span class="sd">        ----------</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">159</span>: <span class="sd">        pos: (3,) ndarray</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">160</span>: <span class="sd">          A (C-contiguous) (NumPy) array containing the (Cartesian) coordinates</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">161</span>: <span class="sd">          of the point in R^3 at which the vector field is to be interpolated</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">162</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">163</span>: <span class="sd">        Returns</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">164</span>: <span class="sd">        -------</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">165</span>: <span class="sd">        val : double</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">166</span>: <span class="sd">          Interpolated scalar.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">167</span>: <span class="sd">          If extrap = False and an interpolation is requested outside of the</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">168</span>: <span class="sd">          sampling domain, val = 0.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">169</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">170</span>: <span class="sd">        &quot;&quot;&quot;</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">171</span>:         <span class="k">cdef</span><span class="p">:</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">172</span>:             <span class="n">double</span> <span class="n">tmp</span></pre>
+<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">173</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_1 = 0;
   __pyx_t_2 = 1;
   __pyx_t_3 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self-&gt;itp-&gt;__pyx_vtab)-&gt;_ev_(__pyx_v_self-&gt;itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_1)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_2)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_3)) ))), 0, 0, 0, (&amp;__pyx_v_tmp));
-</pre><pre class="cython line score-6" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">173</span>:         <span class="k">return</span> <span class="n">tmp</span></pre>
+</pre><pre class="cython line score-6" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">174</span>:         <span class="k">return</span> <span class="n">tmp</span></pre>
 <pre class='cython code score-6 '>  <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_r);
-  __pyx_t_4 = <span class='py_c_api'>PyFloat_FromDouble</span>(__pyx_v_tmp);<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 173, __pyx_L1_error)</span>
+  __pyx_t_4 = <span class='py_c_api'>PyFloat_FromDouble</span>(__pyx_v_tmp);<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 174, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_4);
   __pyx_r = __pyx_t_4;
   __pyx_t_4 = 0;
   goto __pyx_L0;
-</pre><pre class="cython line score-0">&#xA0;<span class="">174</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">initializedcheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">175</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">boundscheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">176</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">wraparound</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
-<pre class="cython line score-11" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">177</span>:     <span class="k">def</span> <span class="nf">grad</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">pos</span><span class="p">):</span></pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">175</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">initializedcheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">176</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">boundscheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">177</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">wraparound</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
+<pre class="cython line score-11" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">178</span>:     <span class="k">def</span> <span class="nf">grad</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">pos</span><span class="p">):</span></pre>
 <pre class='cython code score-11 '>/* Python wrapper */
 static PyObject *__pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpline_7grad(PyObject *__pyx_v_self, PyObject *__pyx_arg_pos); /*proto*/
 static char __pyx_doc_29trivariatescalarinterpolation_22ScalarTrivariateSpline_6grad[] = "\n        ScalarTrivariateSpline.grad(pos)\n\n        Evaluates the gradient of the interpolated scalar field at the\n        coordinates specified by pos.\n\n        Parameters\n        ----------\n        pos: (3,) ndarray\n          A (C-contiguous) (NumPy) array containing the (Cartesian) coordinates\n          of the point in R^3 at which the vector field is to be interpolated\n\n        Returns\n        -------\n        grad : (3,) ndarray\n          (Interpolated) gradient.\n          If extrap = False and an interpolation is requested outside of the\n          sampling domain, grad = np.zeros(3).\n\n        ";
@@ -1253,7 +1254,7 @@ static PyObject *__pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   <span class='refnanny'>__Pyx_RefNannyDeclarations</span>
   <span class='refnanny'>__Pyx_RefNannySetupContext</span>("grad (wrapper)", 0);
   assert(__pyx_arg_pos); {
-    __pyx_v_pos = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_dc_double</span>(__pyx_arg_pos, PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 177, __pyx_L3_error)</span>
+    __pyx_v_pos = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_dc_double</span>(__pyx_arg_pos, PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 178, __pyx_L3_error)</span>
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -1292,66 +1293,66 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
   return __pyx_r;
 }
-</pre><pre class="cython line score-0">&#xA0;<span class="">178</span>:         <span class="sd">&quot;&quot;&quot;</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">179</span>: <span class="sd">        ScalarTrivariateSpline.grad(pos)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">180</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">181</span>: <span class="sd">        Evaluates the gradient of the interpolated scalar field at the</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">182</span>: <span class="sd">        coordinates specified by pos.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">183</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">184</span>: <span class="sd">        Parameters</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">185</span>: <span class="sd">        ----------</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">186</span>: <span class="sd">        pos: (3,) ndarray</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">187</span>: <span class="sd">          A (C-contiguous) (NumPy) array containing the (Cartesian) coordinates</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">188</span>: <span class="sd">          of the point in R^3 at which the vector field is to be interpolated</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">189</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">190</span>: <span class="sd">        Returns</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">191</span>: <span class="sd">        -------</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">192</span>: <span class="sd">        grad : (3,) ndarray</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">193</span>: <span class="sd">          (Interpolated) gradient.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">194</span>: <span class="sd">          If extrap = False and an interpolation is requested outside of the</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">195</span>: <span class="sd">          sampling domain, grad = np.zeros(3).</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">196</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">197</span>: <span class="sd">        &quot;&quot;&quot;</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">198</span>:         <span class="k">cdef</span><span class="p">:</span></pre>
-<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">199</span>:             <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">grd</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">grd</span></pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">179</span>:         <span class="sd">&quot;&quot;&quot;</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">180</span>: <span class="sd">        ScalarTrivariateSpline.grad(pos)</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">181</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">182</span>: <span class="sd">        Evaluates the gradient of the interpolated scalar field at the</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">183</span>: <span class="sd">        coordinates specified by pos.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">184</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">185</span>: <span class="sd">        Parameters</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">186</span>: <span class="sd">        ----------</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">187</span>: <span class="sd">        pos: (3,) ndarray</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">188</span>: <span class="sd">          A (C-contiguous) (NumPy) array containing the (Cartesian) coordinates</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">189</span>: <span class="sd">          of the point in R^3 at which the vector field is to be interpolated</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">190</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">191</span>: <span class="sd">        Returns</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">192</span>: <span class="sd">        -------</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">193</span>: <span class="sd">        grad : (3,) ndarray</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">194</span>: <span class="sd">          (Interpolated) gradient.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">195</span>: <span class="sd">          If extrap = False and an interpolation is requested outside of the</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">196</span>: <span class="sd">          sampling domain, grad = np.zeros(3).</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">197</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">198</span>: <span class="sd">        &quot;&quot;&quot;</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">199</span>:         <span class="k">cdef</span><span class="p">:</span></pre>
+<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">200</span>:             <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">grd</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">grd</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_1 = __pyx_v_self-&gt;grd;
   __PYX_INC_MEMVIEW(&amp;__pyx_t_1, 1);
   __pyx_v_grd = __pyx_t_1;
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
-</pre><pre class="cython line score-0">&#xA0;<span class="">200</span>:             <span class="n">double</span> <span class="n">tmp</span></pre>
-<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">201</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">201</span>:             <span class="n">double</span> <span class="n">tmp</span></pre>
+<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">202</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_2 = 0;
   __pyx_t_3 = 1;
   __pyx_t_4 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self-&gt;itp-&gt;__pyx_vtab)-&gt;_ev_(__pyx_v_self-&gt;itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_2)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_3)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_4)) ))), 1, 0, 0, (&amp;__pyx_v_tmp));
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">202</span>:         <span class="n">grd</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">203</span>:         <span class="n">grd</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_5 = 0;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_grd.data) + __pyx_t_5)) )) = __pyx_v_tmp;
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">203</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">204</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_6 = 0;
   __pyx_t_7 = 1;
   __pyx_t_8 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self-&gt;itp-&gt;__pyx_vtab)-&gt;_ev_(__pyx_v_self-&gt;itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_6)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_7)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_8)) ))), 0, 1, 0, (&amp;__pyx_v_tmp));
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">204</span>:         <span class="n">grd</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">205</span>:         <span class="n">grd</span><span class="p">[</span><span class="mf">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_9 = 1;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_grd.data) + __pyx_t_9)) )) = __pyx_v_tmp;
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">205</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">206</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_10 = 0;
   __pyx_t_11 = 1;
   __pyx_t_12 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self-&gt;itp-&gt;__pyx_vtab)-&gt;_ev_(__pyx_v_self-&gt;itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_10)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_11)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_12)) ))), 0, 0, 1, (&amp;__pyx_v_tmp));
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">206</span>:         <span class="n">grd</span><span class="p">[</span><span class="mf">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">207</span>:         <span class="n">grd</span><span class="p">[</span><span class="mf">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_13 = 2;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_grd.data) + __pyx_t_13)) )) = __pyx_v_tmp;
-</pre><pre class="cython line score-45" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">207</span>:         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">grd</span><span class="p">)</span></pre>
+</pre><pre class="cython line score-45" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">208</span>:         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">grd</span><span class="p">)</span></pre>
 <pre class='cython code score-45 '>  <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_r);
-  __pyx_t_15 = <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_n_s_np);<span class='error_goto'> if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 207, __pyx_L1_error)</span>
+  __pyx_t_15 = <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_n_s_np);<span class='error_goto'> if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 208, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_15);
-  __pyx_t_16 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_15, __pyx_n_s_copy);<span class='error_goto'> if (unlikely(!__pyx_t_16)) __PYX_ERR(1, 207, __pyx_L1_error)</span>
+  __pyx_t_16 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_15, __pyx_n_s_copy);<span class='error_goto'> if (unlikely(!__pyx_t_16)) __PYX_ERR(1, 208, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_16);
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_15); __pyx_t_15 = 0;
-  __pyx_t_15 = __pyx_memoryview_fromslice(__pyx_v_grd, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);;<span class='error_goto'> if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 207, __pyx_L1_error)</span>
+  __pyx_t_15 = __pyx_memoryview_fromslice(__pyx_v_grd, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);;<span class='error_goto'> if (unlikely(!__pyx_t_15)) __PYX_ERR(1, 208, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_15);
   __pyx_t_17 = NULL;
   if (CYTHON_UNPACK_METHODS &amp;&amp; unlikely(<span class='py_c_api'>PyMethod_Check</span>(__pyx_t_16))) {
@@ -1364,14 +1365,14 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
     }
   }
   if (!__pyx_t_17) {
-    __pyx_t_14 = <span class='pyx_c_api'>__Pyx_PyObject_CallOneArg</span>(__pyx_t_16, __pyx_t_15);<span class='error_goto'> if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 207, __pyx_L1_error)</span>
+    __pyx_t_14 = <span class='pyx_c_api'>__Pyx_PyObject_CallOneArg</span>(__pyx_t_16, __pyx_t_15);<span class='error_goto'> if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 208, __pyx_L1_error)</span>
     <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_15); __pyx_t_15 = 0;
     <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_14);
   } else {
     #if CYTHON_FAST_PYCALL
     if (<span class='py_c_api'>PyFunction_Check</span>(__pyx_t_16)) {
       PyObject *__pyx_temp[2] = {__pyx_t_17, __pyx_t_15};
-      __pyx_t_14 = <span class='pyx_c_api'>__Pyx_PyFunction_FastCall</span>(__pyx_t_16, __pyx_temp+1-1, 1+1);<span class='error_goto'> if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 207, __pyx_L1_error)</span>
+      __pyx_t_14 = <span class='pyx_c_api'>__Pyx_PyFunction_FastCall</span>(__pyx_t_16, __pyx_temp+1-1, 1+1);<span class='error_goto'> if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 208, __pyx_L1_error)</span>
       <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_17); __pyx_t_17 = 0;
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_14);
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_15); __pyx_t_15 = 0;
@@ -1380,20 +1381,20 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
     #if CYTHON_FAST_PYCCALL
     if (<span class='pyx_c_api'>__Pyx_PyFastCFunction_Check</span>(__pyx_t_16)) {
       PyObject *__pyx_temp[2] = {__pyx_t_17, __pyx_t_15};
-      __pyx_t_14 = <span class='pyx_c_api'>__Pyx_PyCFunction_FastCall</span>(__pyx_t_16, __pyx_temp+1-1, 1+1);<span class='error_goto'> if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 207, __pyx_L1_error)</span>
+      __pyx_t_14 = <span class='pyx_c_api'>__Pyx_PyCFunction_FastCall</span>(__pyx_t_16, __pyx_temp+1-1, 1+1);<span class='error_goto'> if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 208, __pyx_L1_error)</span>
       <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_17); __pyx_t_17 = 0;
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_14);
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_15); __pyx_t_15 = 0;
     } else
     #endif
     {
-      __pyx_t_18 = <span class='py_c_api'>PyTuple_New</span>(1+1);<span class='error_goto'> if (unlikely(!__pyx_t_18)) __PYX_ERR(1, 207, __pyx_L1_error)</span>
+      __pyx_t_18 = <span class='py_c_api'>PyTuple_New</span>(1+1);<span class='error_goto'> if (unlikely(!__pyx_t_18)) __PYX_ERR(1, 208, __pyx_L1_error)</span>
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_18);
       <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_t_17); <span class='py_macro_api'>PyTuple_SET_ITEM</span>(__pyx_t_18, 0, __pyx_t_17); __pyx_t_17 = NULL;
       <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_t_15);
       <span class='py_macro_api'>PyTuple_SET_ITEM</span>(__pyx_t_18, 0+1, __pyx_t_15);
       __pyx_t_15 = 0;
-      __pyx_t_14 = <span class='pyx_c_api'>__Pyx_PyObject_Call</span>(__pyx_t_16, __pyx_t_18, NULL);<span class='error_goto'> if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 207, __pyx_L1_error)</span>
+      __pyx_t_14 = <span class='pyx_c_api'>__Pyx_PyObject_Call</span>(__pyx_t_16, __pyx_t_18, NULL);<span class='error_goto'> if (unlikely(!__pyx_t_14)) __PYX_ERR(1, 208, __pyx_L1_error)</span>
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_14);
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_18); __pyx_t_18 = 0;
     }
@@ -1402,10 +1403,10 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_r = __pyx_t_14;
   __pyx_t_14 = 0;
   goto __pyx_L0;
-</pre><pre class="cython line score-0">&#xA0;<span class="">208</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">initializedcheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">209</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">boundscheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">210</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">wraparound</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
-<pre class="cython line score-11" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">211</span>:     <span class="k">def</span> <span class="nf">hess</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">pos</span><span class="p">):</span></pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">209</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">initializedcheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">210</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">boundscheck</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">211</span>:     <span class="nd">@cython</span><span class="o">.</span><span class="n">wraparound</span><span class="p">(</span><span class="bp">False</span><span class="p">)</span></pre>
+<pre class="cython line score-11" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">212</span>:     <span class="k">def</span> <span class="nf">hess</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">double</span><span class="p">[::</span><span class="mf">1</span><span class="p">]</span> <span class="n">pos</span><span class="p">):</span></pre>
 <pre class='cython code score-11 '>/* Python wrapper */
 static PyObject *__pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpline_9hess(PyObject *__pyx_v_self, PyObject *__pyx_arg_pos); /*proto*/
 static char __pyx_doc_29trivariatescalarinterpolation_22ScalarTrivariateSpline_8hess[] = "\n        ScalarTrivariateSpline.hess(pos)\n\n        Evaluates the Hessian matrix of the interpolated scalar field at the\n        coordinates specified by pos.\n\n        Parameters\n        ----------\n        pos: (3,) ndarray\n          A (C-contiguous) (NumPy) array containing the (Cartesian) coordinates\n          of the point in R^3 at which the vector field is to be interpolated\n\n        Returns\n        -------\n        hess : (3,3) ndarray\n          (Interpolated) Hessian matrix.\n          If extrap = False and an interpolation is requested outside of the\n          sampling domain, hess = np.zeros(3,3).\n\n        ";
@@ -1415,7 +1416,7 @@ static PyObject *__pyx_pw_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   <span class='refnanny'>__Pyx_RefNannyDeclarations</span>
   <span class='refnanny'>__Pyx_RefNannySetupContext</span>("hess (wrapper)", 0);
   assert(__pyx_arg_pos); {
-    __pyx_v_pos = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_dc_double</span>(__pyx_arg_pos, PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 211, __pyx_L3_error)</span>
+    __pyx_v_pos = <span class='pyx_c_api'>__Pyx_PyObject_to_MemoryviewSlice_dc_double</span>(__pyx_arg_pos, PyBUF_WRITABLE);<span class='error_goto'> if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 212, __pyx_L3_error)</span>
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -1454,123 +1455,123 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
   return __pyx_r;
 }
-</pre><pre class="cython line score-0">&#xA0;<span class="">212</span>:         <span class="sd">&quot;&quot;&quot;</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">213</span>: <span class="sd">        ScalarTrivariateSpline.hess(pos)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">214</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">215</span>: <span class="sd">        Evaluates the Hessian matrix of the interpolated scalar field at the</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">216</span>: <span class="sd">        coordinates specified by pos.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">217</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">218</span>: <span class="sd">        Parameters</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">219</span>: <span class="sd">        ----------</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">220</span>: <span class="sd">        pos: (3,) ndarray</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">221</span>: <span class="sd">          A (C-contiguous) (NumPy) array containing the (Cartesian) coordinates</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">222</span>: <span class="sd">          of the point in R^3 at which the vector field is to be interpolated</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">223</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">224</span>: <span class="sd">        Returns</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">225</span>: <span class="sd">        -------</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">226</span>: <span class="sd">        hess : (3,3) ndarray</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">227</span>: <span class="sd">          (Interpolated) Hessian matrix.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">228</span>: <span class="sd">          If extrap = False and an interpolation is requested outside of the</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">229</span>: <span class="sd">          sampling domain, hess = np.zeros(3,3).</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">230</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">231</span>: <span class="sd">        &quot;&quot;&quot;</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">232</span>:         <span class="k">cdef</span><span class="p">:</span></pre>
-<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">233</span>:             <span class="n">double</span><span class="p">[:,::</span><span class="mf">1</span><span class="p">]</span> <span class="n">hss</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">hss</span></pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">213</span>:         <span class="sd">&quot;&quot;&quot;</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">214</span>: <span class="sd">        ScalarTrivariateSpline.hess(pos)</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">215</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">216</span>: <span class="sd">        Evaluates the Hessian matrix of the interpolated scalar field at the</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">217</span>: <span class="sd">        coordinates specified by pos.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">218</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">219</span>: <span class="sd">        Parameters</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">220</span>: <span class="sd">        ----------</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">221</span>: <span class="sd">        pos: (3,) ndarray</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">222</span>: <span class="sd">          A (C-contiguous) (NumPy) array containing the (Cartesian) coordinates</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">223</span>: <span class="sd">          of the point in R^3 at which the vector field is to be interpolated</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">224</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">225</span>: <span class="sd">        Returns</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">226</span>: <span class="sd">        -------</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">227</span>: <span class="sd">        hess : (3,3) ndarray</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">228</span>: <span class="sd">          (Interpolated) Hessian matrix.</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">229</span>: <span class="sd">          If extrap = False and an interpolation is requested outside of the</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">230</span>: <span class="sd">          sampling domain, hess = np.zeros(3,3).</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">231</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">232</span>: <span class="sd">        &quot;&quot;&quot;</span></pre>
+<pre class="cython line score-0">&#xA0;<span class="">233</span>:         <span class="k">cdef</span><span class="p">:</span></pre>
+<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">234</span>:             <span class="n">double</span><span class="p">[:,::</span><span class="mf">1</span><span class="p">]</span> <span class="n">hss</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">hss</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_1 = __pyx_v_self-&gt;hss;
   __PYX_INC_MEMVIEW(&amp;__pyx_t_1, 1);
   __pyx_v_hss = __pyx_t_1;
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
-</pre><pre class="cython line score-0">&#xA0;<span class="">234</span>:             <span class="n">double</span> <span class="n">tmp</span></pre>
-<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">235</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">2</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">235</span>:             <span class="n">double</span> <span class="n">tmp</span></pre>
+<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">236</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">2</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_2 = 0;
   __pyx_t_3 = 1;
   __pyx_t_4 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self-&gt;itp-&gt;__pyx_vtab)-&gt;_ev_(__pyx_v_self-&gt;itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_2)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_3)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_4)) ))), 2, 0, 0, (&amp;__pyx_v_tmp));
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">236</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">237</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_5 = 0;
   __pyx_t_6 = 0;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_5 * __pyx_v_hss.strides[0]) )) + __pyx_t_6)) )) = __pyx_v_tmp;
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">237</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">1</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">238</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">1</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_7 = 0;
   __pyx_t_8 = 1;
   __pyx_t_9 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self-&gt;itp-&gt;__pyx_vtab)-&gt;_ev_(__pyx_v_self-&gt;itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_7)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_8)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_9)) ))), 1, 1, 0, (&amp;__pyx_v_tmp));
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">238</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">239</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_10 = 0;
   __pyx_t_11 = 1;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_10 * __pyx_v_hss.strides[0]) )) + __pyx_t_11)) )) = __pyx_v_tmp;
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">239</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">240</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_12 = 0;
   __pyx_t_13 = 1;
   __pyx_t_14 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self-&gt;itp-&gt;__pyx_vtab)-&gt;_ev_(__pyx_v_self-&gt;itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_12)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_13)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_14)) ))), 1, 0, 1, (&amp;__pyx_v_tmp));
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">240</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="mf">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">241</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">0</span><span class="p">,</span><span class="mf">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_15 = 0;
   __pyx_t_16 = 2;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_15 * __pyx_v_hss.strides[0]) )) + __pyx_t_16)) )) = __pyx_v_tmp;
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">241</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">1</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">242</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">1</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_17 = 0;
   __pyx_t_18 = 1;
   __pyx_t_19 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self-&gt;itp-&gt;__pyx_vtab)-&gt;_ev_(__pyx_v_self-&gt;itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_17)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_18)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_19)) ))), 1, 1, 0, (&amp;__pyx_v_tmp));
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">242</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">243</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_20 = 1;
   __pyx_t_21 = 0;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_20 * __pyx_v_hss.strides[0]) )) + __pyx_t_21)) )) = __pyx_v_tmp;
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">243</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">0</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">244</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">0</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_22 = 0;
   __pyx_t_23 = 1;
   __pyx_t_24 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self-&gt;itp-&gt;__pyx_vtab)-&gt;_ev_(__pyx_v_self-&gt;itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_22)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_23)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_24)) ))), 0, 2, 0, (&amp;__pyx_v_tmp));
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">244</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="mf">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">245</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="mf">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_25 = 1;
   __pyx_t_26 = 1;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_25 * __pyx_v_hss.strides[0]) )) + __pyx_t_26)) )) = __pyx_v_tmp;
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">245</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">246</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_27 = 0;
   __pyx_t_28 = 1;
   __pyx_t_29 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self-&gt;itp-&gt;__pyx_vtab)-&gt;_ev_(__pyx_v_self-&gt;itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_27)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_28)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_29)) ))), 0, 1, 1, (&amp;__pyx_v_tmp));
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">246</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="mf">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">247</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">1</span><span class="p">,</span><span class="mf">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_30 = 1;
   __pyx_t_31 = 2;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_30 * __pyx_v_hss.strides[0]) )) + __pyx_t_31)) )) = __pyx_v_tmp;
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">247</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">248</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">1</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_32 = 0;
   __pyx_t_33 = 1;
   __pyx_t_34 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self-&gt;itp-&gt;__pyx_vtab)-&gt;_ev_(__pyx_v_self-&gt;itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_32)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_33)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_34)) ))), 1, 0, 1, (&amp;__pyx_v_tmp));
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">248</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">2</span><span class="p">,</span><span class="mf">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">249</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">2</span><span class="p">,</span><span class="mf">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_35 = 2;
   __pyx_t_36 = 0;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_35 * __pyx_v_hss.strides[0]) )) + __pyx_t_36)) )) = __pyx_v_tmp;
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">249</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">250</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">0</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="mf">1</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_37 = 0;
   __pyx_t_38 = 1;
   __pyx_t_39 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self-&gt;itp-&gt;__pyx_vtab)-&gt;_ev_(__pyx_v_self-&gt;itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_37)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_38)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_39)) ))), 0, 1, 1, (&amp;__pyx_v_tmp));
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">250</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">2</span><span class="p">,</span><span class="mf">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">251</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">2</span><span class="p">,</span><span class="mf">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_40 = 2;
   __pyx_t_41 = 1;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_40 * __pyx_v_hss.strides[0]) )) + __pyx_t_41)) )) = __pyx_v_tmp;
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">251</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">252</span>:         <span class="bp">self</span><span class="o">.</span><span class="n">itp</span><span class="o">.</span><span class="n">_ev_</span><span class="p">(</span><span class="n">pos</span><span class="p">[</span><span class="mf">0</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">1</span><span class="p">],</span><span class="n">pos</span><span class="p">[</span><span class="mf">2</span><span class="p">],</span><span class="mf">0</span><span class="p">,</span><span class="mf">0</span><span class="p">,</span><span class="mf">2</span><span class="p">,</span><span class="o">&amp;</span><span class="n">tmp</span><span class="p">)</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_42 = 0;
   __pyx_t_43 = 1;
   __pyx_t_44 = 2;
   ((struct __pyx_vtabstruct_29trivariatescalarinterpolation_Interpolator *)__pyx_v_self-&gt;itp-&gt;__pyx_vtab)-&gt;_ev_(__pyx_v_self-&gt;itp, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_42)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_43)) ))), (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_44)) ))), 0, 0, 2, (&amp;__pyx_v_tmp));
-</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">252</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">2</span><span class="p">,</span><span class="mf">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
+</pre><pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">253</span>:         <span class="n">hss</span><span class="p">[</span><span class="mf">2</span><span class="p">,</span><span class="mf">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">tmp</span></pre>
 <pre class='cython code score-0 '>  __pyx_t_45 = 2;
   __pyx_t_46 = 2;
   *((double *) ( /* dim=1 */ ((char *) (((double *) ( /* dim=0 */ (__pyx_v_hss.data + __pyx_t_45 * __pyx_v_hss.strides[0]) )) + __pyx_t_46)) )) = __pyx_v_tmp;
-</pre><pre class="cython line score-45" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">253</span>:         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">hss</span><span class="p">)</span></pre>
+</pre><pre class="cython line score-45" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">254</span>:         <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">hss</span><span class="p">)</span></pre>
 <pre class='cython code score-45 '>  <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_r);
-  __pyx_t_48 = <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_n_s_np);<span class='error_goto'> if (unlikely(!__pyx_t_48)) __PYX_ERR(1, 253, __pyx_L1_error)</span>
+  __pyx_t_48 = <span class='pyx_c_api'>__Pyx_GetModuleGlobalName</span>(__pyx_n_s_np);<span class='error_goto'> if (unlikely(!__pyx_t_48)) __PYX_ERR(1, 254, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_48);
-  __pyx_t_49 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_48, __pyx_n_s_copy);<span class='error_goto'> if (unlikely(!__pyx_t_49)) __PYX_ERR(1, 253, __pyx_L1_error)</span>
+  __pyx_t_49 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(__pyx_t_48, __pyx_n_s_copy);<span class='error_goto'> if (unlikely(!__pyx_t_49)) __PYX_ERR(1, 254, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_49);
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_48); __pyx_t_48 = 0;
-  __pyx_t_48 = __pyx_memoryview_fromslice(__pyx_v_hss, 2, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);;<span class='error_goto'> if (unlikely(!__pyx_t_48)) __PYX_ERR(1, 253, __pyx_L1_error)</span>
+  __pyx_t_48 = __pyx_memoryview_fromslice(__pyx_v_hss, 2, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);;<span class='error_goto'> if (unlikely(!__pyx_t_48)) __PYX_ERR(1, 254, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_48);
   __pyx_t_50 = NULL;
   if (CYTHON_UNPACK_METHODS &amp;&amp; unlikely(<span class='py_c_api'>PyMethod_Check</span>(__pyx_t_49))) {
@@ -1583,14 +1584,14 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
     }
   }
   if (!__pyx_t_50) {
-    __pyx_t_47 = <span class='pyx_c_api'>__Pyx_PyObject_CallOneArg</span>(__pyx_t_49, __pyx_t_48);<span class='error_goto'> if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 253, __pyx_L1_error)</span>
+    __pyx_t_47 = <span class='pyx_c_api'>__Pyx_PyObject_CallOneArg</span>(__pyx_t_49, __pyx_t_48);<span class='error_goto'> if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 254, __pyx_L1_error)</span>
     <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_48); __pyx_t_48 = 0;
     <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_47);
   } else {
     #if CYTHON_FAST_PYCALL
     if (<span class='py_c_api'>PyFunction_Check</span>(__pyx_t_49)) {
       PyObject *__pyx_temp[2] = {__pyx_t_50, __pyx_t_48};
-      __pyx_t_47 = <span class='pyx_c_api'>__Pyx_PyFunction_FastCall</span>(__pyx_t_49, __pyx_temp+1-1, 1+1);<span class='error_goto'> if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 253, __pyx_L1_error)</span>
+      __pyx_t_47 = <span class='pyx_c_api'>__Pyx_PyFunction_FastCall</span>(__pyx_t_49, __pyx_temp+1-1, 1+1);<span class='error_goto'> if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 254, __pyx_L1_error)</span>
       <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_50); __pyx_t_50 = 0;
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_47);
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_48); __pyx_t_48 = 0;
@@ -1599,20 +1600,20 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
     #if CYTHON_FAST_PYCCALL
     if (<span class='pyx_c_api'>__Pyx_PyFastCFunction_Check</span>(__pyx_t_49)) {
       PyObject *__pyx_temp[2] = {__pyx_t_50, __pyx_t_48};
-      __pyx_t_47 = <span class='pyx_c_api'>__Pyx_PyCFunction_FastCall</span>(__pyx_t_49, __pyx_temp+1-1, 1+1);<span class='error_goto'> if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 253, __pyx_L1_error)</span>
+      __pyx_t_47 = <span class='pyx_c_api'>__Pyx_PyCFunction_FastCall</span>(__pyx_t_49, __pyx_temp+1-1, 1+1);<span class='error_goto'> if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 254, __pyx_L1_error)</span>
       <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_50); __pyx_t_50 = 0;
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_47);
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_48); __pyx_t_48 = 0;
     } else
     #endif
     {
-      __pyx_t_51 = <span class='py_c_api'>PyTuple_New</span>(1+1);<span class='error_goto'> if (unlikely(!__pyx_t_51)) __PYX_ERR(1, 253, __pyx_L1_error)</span>
+      __pyx_t_51 = <span class='py_c_api'>PyTuple_New</span>(1+1);<span class='error_goto'> if (unlikely(!__pyx_t_51)) __PYX_ERR(1, 254, __pyx_L1_error)</span>
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_51);
       <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_t_50); <span class='py_macro_api'>PyTuple_SET_ITEM</span>(__pyx_t_51, 0, __pyx_t_50); __pyx_t_50 = NULL;
       <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_t_48);
       <span class='py_macro_api'>PyTuple_SET_ITEM</span>(__pyx_t_51, 0+1, __pyx_t_48);
       __pyx_t_48 = 0;
-      __pyx_t_47 = <span class='pyx_c_api'>__Pyx_PyObject_Call</span>(__pyx_t_49, __pyx_t_51, NULL);<span class='error_goto'> if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 253, __pyx_L1_error)</span>
+      __pyx_t_47 = <span class='pyx_c_api'>__Pyx_PyObject_Call</span>(__pyx_t_49, __pyx_t_51, NULL);<span class='error_goto'> if (unlikely(!__pyx_t_47)) __PYX_ERR(1, 254, __pyx_L1_error)</span>
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_47);
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_51); __pyx_t_51 = 0;
     }
@@ -1621,56 +1622,4 @@ static PyObject *__pyx_pf_29trivariatescalarinterpolation_22ScalarTrivariateSpli
   __pyx_r = __pyx_t_47;
   __pyx_t_47 = 0;
   goto __pyx_L0;
-</pre><pre class="cython line score-0">&#xA0;<span class="">254</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">255</span>: <span class="c">## The following is a deprecated implementation of a B-spline interpolation</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">256</span>: <span class="c">## object for three-dimensional vector fields, designed with advection</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">257</span>: <span class="c">## based on model data. Its replacement, TrivectorQuadvariateSpline, enables</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">258</span>: <span class="c">## interpolation in time as well as along the spatial abscissa.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">259</span>: <span class="c">##</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">260</span>: <span class="c">## Regardless, the implementation is kept for future reference.</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">261</span>: <span class="c">#cdef class VectorTrivariateSpline:</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">262</span>: <span class="c">#    cdef:</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">263</span>: <span class="c">#        Interpolator itpx, itpy, itpz</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">264</span>: <span class="c">#        double _vct_[3]</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">265</span>: <span class="c">#        double[::1] vct</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">266</span>: <span class="c">#        double _jcb_[3][3]</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">267</span>: <span class="c">#        double[:,::1] jcb</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">268</span>: <span class="c">#    def __cinit__(self):</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">269</span>: <span class="c">#        self.vct = self._vct_</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">270</span>: <span class="c">#        self.jcb = self._jcb_</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">271</span>: <span class="c">#    def __init__(self, double[::1] x, double[::1] y, double[::1] z, double[:,::1] f,</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">272</span>: <span class="c">#            int kx = 4, int ky = 4, int kz = 4, bint extrap = False):</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">273</span>: <span class="c">#        cdef:</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">274</span>: <span class="c">#            int nx = x.shape[0], ny = y.shape[0], nz = z.shape[0]</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">275</span>: <span class="c">#</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">276</span>: <span class="c">#        if f.shape[0] != 3 or nx*ny*nz != f.shape[1]:</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">277</span>: <span class="c">#            raise ValueError(&#39;Array dimensions not aligned!&#39;)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">278</span>: <span class="c">#</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">279</span>: <span class="c">#        if (kx &lt; 2 or kx &gt; x.shape[0]) or (ky &lt; 2 or ky &gt; y.shape[0]) or (kz &lt; 2 or kz &gt; z.shape[0]):</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">280</span>: <span class="c">#            raise ValueError(&#39;Invalid interpolator order choice!&#39;)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">281</span>: <span class="c">#</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">282</span>: <span class="c">#        self.itpx = Interpolator(x, y, z, f[0], kx, ky, kz, extrap)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">283</span>: <span class="c">#        self.itpy = Interpolator(x, y, z, f[1], kx, ky, kz, extrap)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">284</span>: <span class="c">#        self.itpz = Interpolator(x, y, z, f[2], kx, ky, kz, extrap)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">285</span>: <span class="c">#</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">286</span>: <span class="c">#    def __call__(self, double[::1] pos):</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">287</span>: <span class="c">#        cdef:</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">288</span>: <span class="c">#            double[::1] vct = self.vct</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">289</span>: <span class="c">#        vct[0] = self.itpx._ev_(pos[0],pos[1],pos[2],0,0,0)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">290</span>: <span class="c">#        vct[1] = self.itpy._ev_(pos[0],pos[1],pos[2],0,0,0)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">291</span>: <span class="c">#        vct[2] = self.itpz._ev_(pos[0],pos[1],pos[2],0,0,0)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">292</span>: <span class="c">#        return np.copy(vct)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">293</span>: <span class="c">#    def jac(self, double[::1] pos):</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">294</span>: <span class="c">#        cdef:</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">295</span>: <span class="c">#            double[:,::1] jac = self.jac</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">296</span>: <span class="c">#        jac[0,0] = self.itpx._ev_(pos[0],pos[1],pos[2],1,0,0)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">297</span>: <span class="c">#        jac[0,1] = self.itpx._ev_(pos[0],pos[1],pos[2],0,1,0)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">298</span>: <span class="c">#        jac[0,2] = self.itpx._ev_(pos[0],pos[1],pos[2],0,0,1)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">299</span>: <span class="c">#        jac[1,0] = self.itpy._ev_(pos[0],pos[1],pos[2],1,0,0)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">300</span>: <span class="c">#        jac[1,1] = self.itpy._ev_(pos[0],pos[1],pos[2],0,1,0)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">301</span>: <span class="c">#        jac[1,2] = self.itpy._ev_(pos[0],pos[1],pos[2],0,0,1)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">302</span>: <span class="c">#        jac[2,0] = self.itpz._ev_(pos[0],pos[1],pos[2],1,0,0)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">303</span>: <span class="c">#        jac[2,1] = self.itpz._ev_(pos[0],pos[1],pos[2],0,1,0)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">304</span>: <span class="c">#        jac[2,2] = self.itpz._ev_(pos[0],pos[1],pos[2],0,0,1)</span></pre>
-<pre class="cython line score-0">&#xA0;<span class="">305</span>: <span class="c">#        return np.copy(jac)</span></pre>
-</div></body></html>
+</pre></div></body></html>

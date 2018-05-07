@@ -927,7 +927,7 @@ typedef struct {
 } __Pyx_BufFmt_Context;
 
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":730
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":730
  * # in Cython to enable them only on the right systems.
  * 
  * ctypedef npy_int8       int8_t             # <<<<<<<<<<<<<<
@@ -936,7 +936,7 @@ typedef struct {
  */
 typedef npy_int8 __pyx_t_5numpy_int8_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":731
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":731
  * 
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t             # <<<<<<<<<<<<<<
@@ -945,7 +945,7 @@ typedef npy_int8 __pyx_t_5numpy_int8_t;
  */
 typedef npy_int16 __pyx_t_5numpy_int16_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":732
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":732
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t             # <<<<<<<<<<<<<<
@@ -954,7 +954,7 @@ typedef npy_int16 __pyx_t_5numpy_int16_t;
  */
 typedef npy_int32 __pyx_t_5numpy_int32_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":733
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":733
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t
  * ctypedef npy_int64      int64_t             # <<<<<<<<<<<<<<
@@ -963,7 +963,7 @@ typedef npy_int32 __pyx_t_5numpy_int32_t;
  */
 typedef npy_int64 __pyx_t_5numpy_int64_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":737
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":737
  * #ctypedef npy_int128     int128_t
  * 
  * ctypedef npy_uint8      uint8_t             # <<<<<<<<<<<<<<
@@ -972,7 +972,7 @@ typedef npy_int64 __pyx_t_5numpy_int64_t;
  */
 typedef npy_uint8 __pyx_t_5numpy_uint8_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":738
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":738
  * 
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t             # <<<<<<<<<<<<<<
@@ -981,7 +981,7 @@ typedef npy_uint8 __pyx_t_5numpy_uint8_t;
  */
 typedef npy_uint16 __pyx_t_5numpy_uint16_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":739
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":739
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t             # <<<<<<<<<<<<<<
@@ -990,7 +990,7 @@ typedef npy_uint16 __pyx_t_5numpy_uint16_t;
  */
 typedef npy_uint32 __pyx_t_5numpy_uint32_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":740
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":740
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t
  * ctypedef npy_uint64     uint64_t             # <<<<<<<<<<<<<<
@@ -999,7 +999,7 @@ typedef npy_uint32 __pyx_t_5numpy_uint32_t;
  */
 typedef npy_uint64 __pyx_t_5numpy_uint64_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":744
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":744
  * #ctypedef npy_uint128    uint128_t
  * 
  * ctypedef npy_float32    float32_t             # <<<<<<<<<<<<<<
@@ -1008,7 +1008,7 @@ typedef npy_uint64 __pyx_t_5numpy_uint64_t;
  */
 typedef npy_float32 __pyx_t_5numpy_float32_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":745
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":745
  * 
  * ctypedef npy_float32    float32_t
  * ctypedef npy_float64    float64_t             # <<<<<<<<<<<<<<
@@ -1017,7 +1017,7 @@ typedef npy_float32 __pyx_t_5numpy_float32_t;
  */
 typedef npy_float64 __pyx_t_5numpy_float64_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":754
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":754
  * # The int types are mapped a bit surprising --
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t             # <<<<<<<<<<<<<<
@@ -1026,7 +1026,7 @@ typedef npy_float64 __pyx_t_5numpy_float64_t;
  */
 typedef npy_long __pyx_t_5numpy_int_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":755
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":755
  * # numpy.int corresponds to 'l' and numpy.long to 'q'
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t             # <<<<<<<<<<<<<<
@@ -1035,7 +1035,7 @@ typedef npy_long __pyx_t_5numpy_int_t;
  */
 typedef npy_longlong __pyx_t_5numpy_long_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":756
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":756
  * ctypedef npy_long       int_t
  * ctypedef npy_longlong   long_t
  * ctypedef npy_longlong   longlong_t             # <<<<<<<<<<<<<<
@@ -1044,7 +1044,7 @@ typedef npy_longlong __pyx_t_5numpy_long_t;
  */
 typedef npy_longlong __pyx_t_5numpy_longlong_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":758
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":758
  * ctypedef npy_longlong   longlong_t
  * 
  * ctypedef npy_ulong      uint_t             # <<<<<<<<<<<<<<
@@ -1053,7 +1053,7 @@ typedef npy_longlong __pyx_t_5numpy_longlong_t;
  */
 typedef npy_ulong __pyx_t_5numpy_uint_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":759
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":759
  * 
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t             # <<<<<<<<<<<<<<
@@ -1062,7 +1062,7 @@ typedef npy_ulong __pyx_t_5numpy_uint_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":760
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":760
  * ctypedef npy_ulong      uint_t
  * ctypedef npy_ulonglong  ulong_t
  * ctypedef npy_ulonglong  ulonglong_t             # <<<<<<<<<<<<<<
@@ -1071,7 +1071,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulong_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":762
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":762
  * ctypedef npy_ulonglong  ulonglong_t
  * 
  * ctypedef npy_intp       intp_t             # <<<<<<<<<<<<<<
@@ -1080,7 +1080,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
  */
 typedef npy_intp __pyx_t_5numpy_intp_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":763
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":763
  * 
  * ctypedef npy_intp       intp_t
  * ctypedef npy_uintp      uintp_t             # <<<<<<<<<<<<<<
@@ -1089,7 +1089,7 @@ typedef npy_intp __pyx_t_5numpy_intp_t;
  */
 typedef npy_uintp __pyx_t_5numpy_uintp_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":765
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":765
  * ctypedef npy_uintp      uintp_t
  * 
  * ctypedef npy_double     float_t             # <<<<<<<<<<<<<<
@@ -1098,7 +1098,7 @@ typedef npy_uintp __pyx_t_5numpy_uintp_t;
  */
 typedef npy_double __pyx_t_5numpy_float_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":766
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":766
  * 
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t             # <<<<<<<<<<<<<<
@@ -1107,7 +1107,7 @@ typedef npy_double __pyx_t_5numpy_float_t;
  */
 typedef npy_double __pyx_t_5numpy_double_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":767
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":767
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t
  * ctypedef npy_longdouble longdouble_t             # <<<<<<<<<<<<<<
@@ -1162,14 +1162,14 @@ static CYTHON_INLINE __pyx_t_double_complex __pyx_t_double_complex_from_parts(do
 struct __pyx_obj_16analytical_field_CallableFunction;
 struct __pyx_obj_16analytical_field_SinusoidalField;
 struct __pyx_obj_16analytical_field_SphericalField;
-struct __pyx_obj_16analytical_field_AnalyticalAimAssister;
+struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator;
 struct __pyx_obj_16analytical_field_Dp87Analytical;
 struct __pyx_array_obj;
 struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
 struct __pyx_memoryviewslice_obj;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":769
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":769
  * ctypedef npy_longdouble longdouble_t
  * 
  * ctypedef npy_cfloat      cfloat_t             # <<<<<<<<<<<<<<
@@ -1178,7 +1178,7 @@ struct __pyx_memoryviewslice_obj;
  */
 typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":770
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":770
  * 
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t             # <<<<<<<<<<<<<<
@@ -1187,7 +1187,7 @@ typedef npy_cfloat __pyx_t_5numpy_cfloat_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":771
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":771
  * ctypedef npy_cfloat      cfloat_t
  * ctypedef npy_cdouble     cdouble_t
  * ctypedef npy_clongdouble clongdouble_t             # <<<<<<<<<<<<<<
@@ -1196,7 +1196,7 @@ typedef npy_cdouble __pyx_t_5numpy_cdouble_t;
  */
 typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":773
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":773
  * ctypedef npy_clongdouble clongdouble_t
  * 
  * ctypedef npy_cdouble     complex_t             # <<<<<<<<<<<<<<
@@ -1205,8 +1205,8 @@ typedef npy_clongdouble __pyx_t_5numpy_clongdouble_t;
  */
 typedef npy_cdouble __pyx_t_5numpy_complex_t;
 
-/* "analytical_field.pyx":66
- * 
+/* "analytical_field.pyx":84
+ * # Intended to be subclassed, and/or sent to other extension types defined below.
  * @cython.internal
  * cdef class CallableFunction:             # <<<<<<<<<<<<<<
  *     def __cinit__(self):
@@ -1218,12 +1218,12 @@ struct __pyx_obj_16analytical_field_CallableFunction {
 };
 
 
-/* "analytical_field.pyx":74
+/* "analytical_field.pyx":92
  *         pass
  * 
  * cdef class SinusoidalField(CallableFunction):             # <<<<<<<<<<<<<<
- *     cdef:
- *         double freq_x, freq_y, ampl
+ *     """
+ *     A Cython extension type which allows for computation of a normal vector
  */
 struct __pyx_obj_16analytical_field_SinusoidalField {
   struct __pyx_obj_16analytical_field_CallableFunction __pyx_base;
@@ -1235,12 +1235,12 @@ struct __pyx_obj_16analytical_field_SinusoidalField {
 };
 
 
-/* "analytical_field.pyx":107
+/* "analytical_field.pyx":186
  * 
  * 
  * cdef class SphericalField(CallableFunction):             # <<<<<<<<<<<<<<
- *     cdef:
- *         double _ret_[3]
+ *     """
+ *     A Cython extension type which allows for computation of a purely radial
  */
 struct __pyx_obj_16analytical_field_SphericalField {
   struct __pyx_obj_16analytical_field_CallableFunction __pyx_base;
@@ -1251,37 +1251,36 @@ struct __pyx_obj_16analytical_field_SphericalField {
 };
 
 
-/* "analytical_field.pyx":135
+/* "analytical_field.pyx":272
  *         _cy_normalize_(ret)
  * 
- * cdef class AnalyticalAimAssister:             # <<<<<<<<<<<<<<
- *     """A Cython extension type tailor-made for computing trajectories defined
- *     to be pointwise orthogonal to two vectors in 3D.
+ * cdef class AnalyticalDirectionGenerator:             # <<<<<<<<<<<<<<
+ *     """
+ *     A Cython extension type intended to be used in conjunction with a
  */
-struct __pyx_obj_16analytical_field_AnalyticalAimAssister {
+struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator {
   PyObject_HEAD
-  struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister *__pyx_vtab;
+  struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator *__pyx_vtab;
   double _tan_vec_[3];
   __Pyx_memviewslice tan_vec;
   double _prev_vec_[3];
   __Pyx_memviewslice prev_vec;
   double _xi_[3];
   __Pyx_memviewslice xi;
-  double _pos_[3];
-  __Pyx_memviewslice pos;
-  __Pyx_memviewslice ret_mv;
+  double _ret_[3];
+  __Pyx_memviewslice ret;
   struct __pyx_obj_16analytical_field_CallableFunction *xi_fun;
   int initialized_tan_vec;
   int initialized_prev_vec;
 };
 
 
-/* "analytical_field.pyx":275
+/* "analytical_field.pyx":467
  *         pass
  * 
  * cdef class Dp87Analytical:             # <<<<<<<<<<<<<<
- *     """A Cython extension type tailor-made for computing trajectories which
- *     are defined as being orthogonal to a linearly interpolated trivariate vector
+ *     """
+ *     A Cython extension type which generates trajectories in R^3 defined
  */
 struct __pyx_obj_16analytical_field_Dp87Analytical {
   PyObject_HEAD
@@ -1358,10 +1357,11 @@ struct __pyx_obj_16analytical_field_Dp87Analytical {
   double sc;
   double err;
   double h_opt;
+  double hmax;
   double atol;
   double rtol;
   double q;
-  struct __pyx_obj_16analytical_field_AnalyticalAimAssister *f;
+  struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *f;
   int initialized;
 };
 
@@ -1444,8 +1444,8 @@ struct __pyx_memoryviewslice_obj {
 
 
 
-/* "analytical_field.pyx":66
- * 
+/* "analytical_field.pyx":84
+ * # Intended to be subclassed, and/or sent to other extension types defined below.
  * @cython.internal
  * cdef class CallableFunction:             # <<<<<<<<<<<<<<
  *     def __cinit__(self):
@@ -1458,12 +1458,12 @@ struct __pyx_vtabstruct_16analytical_field_CallableFunction {
 static struct __pyx_vtabstruct_16analytical_field_CallableFunction *__pyx_vtabptr_16analytical_field_CallableFunction;
 
 
-/* "analytical_field.pyx":74
+/* "analytical_field.pyx":92
  *         pass
  * 
  * cdef class SinusoidalField(CallableFunction):             # <<<<<<<<<<<<<<
- *     cdef:
- *         double freq_x, freq_y, ampl
+ *     """
+ *     A Cython extension type which allows for computation of a normal vector
  */
 
 struct __pyx_vtabstruct_16analytical_field_SinusoidalField {
@@ -1472,12 +1472,12 @@ struct __pyx_vtabstruct_16analytical_field_SinusoidalField {
 static struct __pyx_vtabstruct_16analytical_field_SinusoidalField *__pyx_vtabptr_16analytical_field_SinusoidalField;
 
 
-/* "analytical_field.pyx":107
+/* "analytical_field.pyx":186
  * 
  * 
  * cdef class SphericalField(CallableFunction):             # <<<<<<<<<<<<<<
- *     cdef:
- *         double _ret_[3]
+ *     """
+ *     A Cython extension type which allows for computation of a purely radial
  */
 
 struct __pyx_vtabstruct_16analytical_field_SphericalField {
@@ -1486,30 +1486,26 @@ struct __pyx_vtabstruct_16analytical_field_SphericalField {
 static struct __pyx_vtabstruct_16analytical_field_SphericalField *__pyx_vtabptr_16analytical_field_SphericalField;
 
 
-/* "analytical_field.pyx":135
+/* "analytical_field.pyx":272
  *         _cy_normalize_(ret)
  * 
- * cdef class AnalyticalAimAssister:             # <<<<<<<<<<<<<<
- *     """A Cython extension type tailor-made for computing trajectories defined
- *     to be pointwise orthogonal to two vectors in 3D.
+ * cdef class AnalyticalDirectionGenerator:             # <<<<<<<<<<<<<<
+ *     """
+ *     A Cython extension type intended to be used in conjunction with a
  */
 
-struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister {
-  void (*set_tan_vec)(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *, __Pyx_memviewslice, int __pyx_skip_dispatch);
-  void (*unset_tan_vec)(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *, int __pyx_skip_dispatch);
-  void (*set_prev_vec)(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *, __Pyx_memviewslice, int __pyx_skip_dispatch);
-  void (*unset_prev_vec)(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *, int __pyx_skip_dispatch);
-  PyObject *(*_ev_)(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *, double, __Pyx_memviewslice &, __Pyx_memviewslice &);
+struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator {
+  PyObject *(*_ev_)(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *, __Pyx_memviewslice, __Pyx_memviewslice &);
 };
-static struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister *__pyx_vtabptr_16analytical_field_AnalyticalAimAssister;
+static struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator *__pyx_vtabptr_16analytical_field_AnalyticalDirectionGenerator;
 
 
-/* "analytical_field.pyx":275
+/* "analytical_field.pyx":467
  *         pass
  * 
  * cdef class Dp87Analytical:             # <<<<<<<<<<<<<<
- *     """A Cython extension type tailor-made for computing trajectories which
- *     are defined as being orthogonal to a linearly interpolated trivariate vector
+ *     """
+ *     A Cython extension type which generates trajectories in R^3 defined
  */
 
 struct __pyx_vtabstruct_16analytical_field_Dp87Analytical {
@@ -1761,20 +1757,13 @@ static CYTHON_INLINE PyObject* __Pyx_PyObject_CallOneArg(PyObject *func, PyObjec
         __Pyx__ArgTypeTest(obj, type, name, exact))
 static int __Pyx__ArgTypeTest(PyObject *obj, PyTypeObject *type, const char *name, int exact);
 
+/* IncludeStringH.proto */
+#include <string.h>
+
 /* WriteUnraisableException.proto */
 static void __Pyx_WriteUnraisable(const char *name, int clineno,
                                   int lineno, const char *filename,
                                   int full_traceback, int nogil);
-
-/* PyObjectCallNoArg.proto */
-#if CYTHON_COMPILING_IN_CPYTHON
-static CYTHON_INLINE PyObject* __Pyx_PyObject_CallNoArg(PyObject *func);
-#else
-#define __Pyx_PyObject_CallNoArg(func) __Pyx_PyObject_Call(func, __pyx_empty_tuple, NULL)
-#endif
-
-/* IncludeStringH.proto */
-#include <string.h>
 
 /* DictGetItem.proto */
 #if PY_MAJOR_VERSION >= 3 && !CYTHON_COMPILING_IN_PYPY
@@ -2289,13 +2278,9 @@ static int __Pyx_ImportFunction(PyObject *module, const char *funcname, void (**
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
 static PyObject *__pyx_f_16analytical_field_16CallableFunction__ev_(CYTHON_UNUSED struct __pyx_obj_16analytical_field_CallableFunction *__pyx_v_self, CYTHON_UNUSED __Pyx_memviewslice __pyx_v_x, CYTHON_UNUSED __Pyx_memviewslice &__pyx_v_ret); /* proto*/
-static PyObject *__pyx_f_16analytical_field_15SinusoidalField__ev_(struct __pyx_obj_16analytical_field_SinusoidalField *__pyx_v_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice &__pyx_v_ret); /* proto*/
-static PyObject *__pyx_f_16analytical_field_14SphericalField__ev_(struct __pyx_obj_16analytical_field_SphericalField *__pyx_v_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice &__pyx_v_ret); /* proto*/
-static void __pyx_f_16analytical_field_21AnalyticalAimAssister_set_tan_vec(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, __Pyx_memviewslice __pyx_v_tan_vec, int __pyx_skip_dispatch); /* proto*/
-static void __pyx_f_16analytical_field_21AnalyticalAimAssister_unset_tan_vec(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, int __pyx_skip_dispatch); /* proto*/
-static void __pyx_f_16analytical_field_21AnalyticalAimAssister_set_prev_vec(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, __Pyx_memviewslice __pyx_v_prev_vec, int __pyx_skip_dispatch); /* proto*/
-static void __pyx_f_16analytical_field_21AnalyticalAimAssister_unset_prev_vec(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, int __pyx_skip_dispatch); /* proto*/
-static PyObject *__pyx_f_16analytical_field_21AnalyticalAimAssister__ev_(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, CYTHON_UNUSED double __pyx_v_t, __Pyx_memviewslice &__pyx_v_pos_, __Pyx_memviewslice &__pyx_v_ret); /* proto*/
+static PyObject *__pyx_f_16analytical_field_15SinusoidalField__ev_(struct __pyx_obj_16analytical_field_SinusoidalField *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos, __Pyx_memviewslice &__pyx_v_ret); /* proto*/
+static PyObject *__pyx_f_16analytical_field_14SphericalField__ev_(struct __pyx_obj_16analytical_field_SphericalField *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos, __Pyx_memviewslice &__pyx_v_ret); /* proto*/
+static PyObject *__pyx_f_16analytical_field_28AnalyticalDirectionGenerator__ev_(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos, __Pyx_memviewslice &__pyx_v_ret); /* proto*/
 static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16analytical_field_Dp87Analytical *__pyx_v_self, double *__pyx_v_t, __Pyx_memviewslice __pyx_v_pos, double *__pyx_v_h); /* proto*/
 static PyObject *__pyx_array_get_memview(struct __pyx_array_obj *__pyx_v_self); /* proto*/
 static char *__pyx_memoryview_get_item_pointer(struct __pyx_memoryview_obj *__pyx_v_self, PyObject *__pyx_v_index); /* proto*/
@@ -2357,7 +2342,7 @@ static void (*__pyx_f_5scipy_6linalg_11cython_blas_dscal)(int *, __pyx_t_5scipy_
 static PyTypeObject *__pyx_ptype_16analytical_field_CallableFunction = 0;
 static PyTypeObject *__pyx_ptype_16analytical_field_SinusoidalField = 0;
 static PyTypeObject *__pyx_ptype_16analytical_field_SphericalField = 0;
-static PyTypeObject *__pyx_ptype_16analytical_field_AnalyticalAimAssister = 0;
+static PyTypeObject *__pyx_ptype_16analytical_field_AnalyticalDirectionGenerator = 0;
 static PyTypeObject *__pyx_ptype_16analytical_field_Dp87Analytical = 0;
 static PyTypeObject *__pyx_array_type = 0;
 static PyTypeObject *__pyx_MemviewEnum_type = 0;
@@ -2421,9 +2406,9 @@ int __pyx_module_is_main_analytical_field = 0;
 
 /* Implementation of 'analytical_field' */
 static PyObject *__pyx_builtin_TypeError;
+static PyObject *__pyx_builtin_ValueError;
 static PyObject *__pyx_builtin_RuntimeError;
 static PyObject *__pyx_builtin_range;
-static PyObject *__pyx_builtin_ValueError;
 static PyObject *__pyx_builtin_ImportError;
 static PyObject *__pyx_builtin_OverflowError;
 static PyObject *__pyx_builtin_enumerate;
@@ -2434,13 +2419,12 @@ static PyObject *__pyx_builtin_id;
 static const char __pyx_k_O[] = "O";
 static const char __pyx_k_T[] = "T{";
   static const char __pyx_k_c[] = "c";
+  static const char __pyx_k_f[] = "f";
   static const char __pyx_k_h[] = "h";
   static const char __pyx_k_s[] = "(%s)";
   static const char __pyx_k_t[] = "t";
-  static const char __pyx_k_x[] = "x";
   static const char __pyx_k_id[] = "id";
   static const char __pyx_k_np[] = "np";
-  static const char __pyx_k_xi[] = "xi";
   static const char __pyx_k__46[] = "^";
   static const char __pyx_k__47[] = "";
   static const char __pyx_k__48[] = ":";
@@ -2454,6 +2438,7 @@ static const char __pyx_k_atol[] = "atol";
 static const char __pyx_k_base[] = "base";
 static const char __pyx_k_copy[] = "copy";
 static const char __pyx_k_dict[] = "__dict__";
+static const char __pyx_k_hmax[] = "hmax";
 static const char __pyx_k_join[] = "join";
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_mode[] = "mode";
@@ -2504,16 +2489,12 @@ static const char __pyx_k_pyx_vtable[] = "__pyx_vtable__";
 static const char __pyx_k_ImportError[] = "ImportError";
 static const char __pyx_k_MemoryError[] = "MemoryError";
 static const char __pyx_k_PickleError[] = "PickleError";
-static const char __pyx_k_set_tan_vec[] = "set_tan_vec";
 static const char __pyx_k_RuntimeError[] = "RuntimeError";
 static const char __pyx_k_pyx_checksum[] = "__pyx_checksum";
-static const char __pyx_k_set_prev_vec[] = "set_prev_vec";
 static const char __pyx_k_stringsource[] = "stringsource";
 static const char __pyx_k_OverflowError[] = "OverflowError";
 static const char __pyx_k_pyx_getbuffer[] = "__pyx_getbuffer";
 static const char __pyx_k_reduce_cython[] = "__reduce_cython__";
-static const char __pyx_k_unset_tan_vec[] = "unset_tan_vec";
-static const char __pyx_k_unset_prev_vec[] = "unset_prev_vec";
 static const char __pyx_k_View_MemoryView[] = "View.MemoryView";
 static const char __pyx_k_allocate_buffer[] = "allocate_buffer";
 static const char __pyx_k_dtype_is_object[] = "dtype_is_object";
@@ -2532,17 +2513,17 @@ static const char __pyx_k_Invalid_shape_in_axis_d_d[] = "Invalid shape in axis %
 static const char __pyx_k_for_three_dimensional_data[] = " for three dimensional data!";
 static const char __pyx_k_itemsize_0_for_cython_array[] = "itemsize <= 0 for cython.array";
 static const char __pyx_k_ndarray_is_not_C_contiguous[] = "ndarray is not C contiguous";
-static const char __pyx_k_Aim_assister_not_initialized[] = "Aim assister not initialized!";
 static const char __pyx_k_unable_to_allocate_array_data[] = "unable to allocate array data.";
-static const char __pyx_k_Dont_fuck_with_squirrels_Morty[] = "Dont fuck with squirrels, Morty!";
 static const char __pyx_k_strided_and_direct_or_indirect[] = "<strided and direct or indirect>";
+static const char __pyx_k_This_module_contains_Cython_ext[] = "\nThis module contains Cython extension types which facilitate the approximation\nof manifolds defined as being everywhere orthogonal to stationary vector fields\nin R^3, by means of a slightly tweaked method of geodesic level sets.\n\nExtension types defined here:\n    SinusoidalField\n    SphericalField\n    AnalyticalDirectionGenerator\n    Dp87Analytical\n\nVersion: 1.0\n\n";
 static const char __pyx_k_numpy_core_multiarray_failed_to[] = "numpy.core.multiarray failed to import";
 static const char __pyx_k_unknown_dtype_code_in_numpy_pxd[] = "unknown dtype code in numpy.pxd (%d)";
+static const char __pyx_k_Aim_assister_not_properly_initia[] = "Aim assister not properly initialized!";
 static const char __pyx_k_Buffer_view_does_not_expose_stri[] = "Buffer view does not expose strides";
 static const char __pyx_k_Can_only_create_a_buffer_that_is[] = "Can only create a buffer that is contiguous in memory.";
 static const char __pyx_k_Cannot_assign_to_read_only_memor[] = "Cannot assign to read-only memoryview";
 static const char __pyx_k_Cannot_create_writable_memory_vi[] = "Cannot create writable memory view from read-only memoryview";
-static const char __pyx_k_Dormand_Prince_8_7_linear_solver[] = "Dormand-Prince 8(7) linear solver not initialized with a AnalyticalAimAssister instance!";
+static const char __pyx_k_Dormand_Prince_8_7_solver_not_in[] = "Dormand-Prince 8(7) solver not initialized with a AnalyticalDirectionGenerator instance!";
 static const char __pyx_k_Empty_shape_tuple_for_cython_arr[] = "Empty shape tuple for cython.array";
 static const char __pyx_k_Format_string_allocated_too_shor[] = "Format string allocated too short, see comment in numpy.pxd";
 static const char __pyx_k_Incompatible_checksums_s_vs_0xb0[] = "Incompatible checksums (%s vs 0xb068931 = (name))";
@@ -2552,6 +2533,8 @@ static const char __pyx_k_Non_native_byte_order_not_suppor[] = "Non-native byte 
 static const char __pyx_k_Out_of_bounds_on_buffer_access_a[] = "Out of bounds on buffer access (axis %d)";
 static const char __pyx_k_The_aiming_routine_is_custom_bui[] = "The aiming routine is custom-built";
 static const char __pyx_k_The_interpolation_aiming_routine[] = "The interpolation-aiming routine is custom-built";
+static const char __pyx_k_The_spherical_field_is_defined_f[] = "The spherical field is defined for R^3!";
+static const char __pyx_k_The_trajectory_generating_routin[] = "The trajectory generating routine is custom-built for three-dimensional data!";
 static const char __pyx_k_Unable_to_convert_item_to_object[] = "Unable to convert item to object";
 static const char __pyx_k_got_differing_extents_in_dimensi[] = "got differing extents in dimension %d (got %d and %d)";
 static const char __pyx_k_ndarray_is_not_Fortran_contiguou[] = "ndarray is not Fortran contiguous";
@@ -2560,14 +2543,13 @@ static const char __pyx_k_numpy_core_umath_failed_to_impor[] = "numpy.core.umath
 static const char __pyx_k_unable_to_allocate_shape_and_str[] = "unable to allocate shape and strides.";
 static const char __pyx_k_Format_string_allocated_too_shor_2[] = "Format string allocated too short.";
 static PyObject *__pyx_n_s_ASCII;
-static PyObject *__pyx_kp_s_Aim_assister_not_initialized;
+static PyObject *__pyx_kp_s_Aim_assister_not_properly_initia;
 static PyObject *__pyx_kp_s_Buffer_view_does_not_expose_stri;
 static PyObject *__pyx_kp_s_Can_only_create_a_buffer_that_is;
 static PyObject *__pyx_kp_s_Cannot_assign_to_read_only_memor;
 static PyObject *__pyx_kp_s_Cannot_create_writable_memory_vi;
 static PyObject *__pyx_kp_s_Cannot_index_with_type_s;
-static PyObject *__pyx_kp_s_Dont_fuck_with_squirrels_Morty;
-static PyObject *__pyx_kp_s_Dormand_Prince_8_7_linear_solver;
+static PyObject *__pyx_kp_s_Dormand_Prince_8_7_solver_not_in;
 static PyObject *__pyx_n_s_Ellipsis;
 static PyObject *__pyx_kp_s_Empty_shape_tuple_for_cython_arr;
 static PyObject *__pyx_kp_u_Format_string_allocated_too_shor;
@@ -2590,6 +2572,8 @@ static PyObject *__pyx_n_s_RuntimeError;
 static PyObject *__pyx_kp_b_T;
 static PyObject *__pyx_kp_s_The_aiming_routine_is_custom_bui;
 static PyObject *__pyx_kp_s_The_interpolation_aiming_routine;
+static PyObject *__pyx_kp_s_The_spherical_field_is_defined_f;
+static PyObject *__pyx_kp_s_The_trajectory_generating_routin;
 static PyObject *__pyx_n_s_TypeError;
 static PyObject *__pyx_kp_s_Unable_to_convert_item_to_object;
 static PyObject *__pyx_n_s_ValueError;
@@ -2616,6 +2600,7 @@ static PyObject *__pyx_n_s_empty;
 static PyObject *__pyx_n_s_encode;
 static PyObject *__pyx_n_s_enumerate;
 static PyObject *__pyx_n_s_error;
+static PyObject *__pyx_n_s_f;
 static PyObject *__pyx_n_s_flags;
 static PyObject *__pyx_kp_s_for_three_dimensional_data;
 static PyObject *__pyx_n_s_format;
@@ -2626,6 +2611,7 @@ static PyObject *__pyx_n_s_freq_y;
 static PyObject *__pyx_n_s_getstate;
 static PyObject *__pyx_kp_s_got_differing_extents_in_dimensi;
 static PyObject *__pyx_n_s_h;
+static PyObject *__pyx_n_s_hmax;
 static PyObject *__pyx_n_s_id;
 static PyObject *__pyx_n_s_import;
 static PyObject *__pyx_n_s_itemsize;
@@ -2664,8 +2650,6 @@ static PyObject *__pyx_n_s_reduce_cython;
 static PyObject *__pyx_n_s_reduce_ex;
 static PyObject *__pyx_n_s_rtol;
 static PyObject *__pyx_kp_u_s;
-static PyObject *__pyx_n_s_set_prev_vec;
-static PyObject *__pyx_n_s_set_tan_vec;
 static PyObject *__pyx_n_s_setstate;
 static PyObject *__pyx_n_s_setstate_cython;
 static PyObject *__pyx_n_s_shape;
@@ -2684,38 +2668,34 @@ static PyObject *__pyx_kp_s_unable_to_allocate_array_data;
 static PyObject *__pyx_kp_s_unable_to_allocate_shape_and_str;
 static PyObject *__pyx_kp_u_unknown_dtype_code_in_numpy_pxd;
 static PyObject *__pyx_n_s_unpack;
-static PyObject *__pyx_n_s_unset_prev_vec;
-static PyObject *__pyx_n_s_unset_tan_vec;
 static PyObject *__pyx_n_s_update;
-static PyObject *__pyx_n_s_x;
-static PyObject *__pyx_n_s_xi;
 static int __pyx_pf_16analytical_field_16CallableFunction___cinit__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_CallableFunction *__pyx_v_self); /* proto */
 static int __pyx_pf_16analytical_field_16CallableFunction_2__init__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_CallableFunction *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_16analytical_field_16CallableFunction_4__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_CallableFunction *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_16analytical_field_16CallableFunction_6__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_CallableFunction *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static int __pyx_pf_16analytical_field_15SinusoidalField___cinit__(struct __pyx_obj_16analytical_field_SinusoidalField *__pyx_v_self); /* proto */
 static int __pyx_pf_16analytical_field_15SinusoidalField_2__init__(struct __pyx_obj_16analytical_field_SinusoidalField *__pyx_v_self, double __pyx_v_freq_x, double __pyx_v_freq_y, double __pyx_v_ampl); /* proto */
-static PyObject *__pyx_pf_16analytical_field_15SinusoidalField_4__call__(struct __pyx_obj_16analytical_field_SinusoidalField *__pyx_v_self, __Pyx_memviewslice __pyx_v_x); /* proto */
+static PyObject *__pyx_pf_16analytical_field_15SinusoidalField_4__call__(struct __pyx_obj_16analytical_field_SinusoidalField *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos); /* proto */
 static PyObject *__pyx_pf_16analytical_field_15SinusoidalField_6__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_SinusoidalField *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_16analytical_field_15SinusoidalField_8__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_SinusoidalField *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static int __pyx_pf_16analytical_field_14SphericalField___cinit__(struct __pyx_obj_16analytical_field_SphericalField *__pyx_v_self); /* proto */
 static int __pyx_pf_16analytical_field_14SphericalField_2__init__(struct __pyx_obj_16analytical_field_SphericalField *__pyx_v_self, __Pyx_memviewslice __pyx_v_origin); /* proto */
-static PyObject *__pyx_pf_16analytical_field_14SphericalField_4__call__(struct __pyx_obj_16analytical_field_SphericalField *__pyx_v_self, __Pyx_memviewslice __pyx_v_x); /* proto */
+static PyObject *__pyx_pf_16analytical_field_14SphericalField_4__call__(struct __pyx_obj_16analytical_field_SphericalField *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos); /* proto */
 static PyObject *__pyx_pf_16analytical_field_14SphericalField_6__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_SphericalField *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_16analytical_field_14SphericalField_8__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_SphericalField *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
-static int __pyx_pf_16analytical_field_21AnalyticalAimAssister___cinit__(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self); /* proto */
-static int __pyx_pf_16analytical_field_21AnalyticalAimAssister_2__init__(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, struct __pyx_obj_16analytical_field_CallableFunction *__pyx_v_xi); /* proto */
-static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_4set_tan_vec(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, __Pyx_memviewslice __pyx_v_tan_vec); /* proto */
-static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_6unset_tan_vec(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_8set_prev_vec(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, __Pyx_memviewslice __pyx_v_prev_vec); /* proto */
-static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_10unset_prev_vec(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_12__call__(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, double __pyx_v_t, __Pyx_memviewslice __pyx_v_pos); /* proto */
-static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_14__dealoc__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_16__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_18__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static int __pyx_pf_16analytical_field_28AnalyticalDirectionGenerator___cinit__(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self); /* proto */
+static int __pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_2__init__(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self, struct __pyx_obj_16analytical_field_CallableFunction *__pyx_v_f); /* proto */
+static PyObject *__pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_4set_tan_vec(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self, __Pyx_memviewslice __pyx_v_tan_vec); /* proto */
+static PyObject *__pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_6unset_tan_vec(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_8set_prev_vec(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self, __Pyx_memviewslice __pyx_v_prev_vec); /* proto */
+static PyObject *__pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_10unset_prev_vec(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_12__call__(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos); /* proto */
+static PyObject *__pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_14__dealoc__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_16__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_18__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_obj_16analytical_field_Dp87Analytical *__pyx_v_self); /* proto */
-static int __pyx_pf_16analytical_field_14Dp87Analytical_2__init__(struct __pyx_obj_16analytical_field_Dp87Analytical *__pyx_v_self, double __pyx_v_atol, double __pyx_v_rtol); /* proto */
-static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_4set_aim_assister(struct __pyx_obj_16analytical_field_Dp87Analytical *__pyx_v_self, struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_direction_generator); /* proto */
+static int __pyx_pf_16analytical_field_14Dp87Analytical_2__init__(struct __pyx_obj_16analytical_field_Dp87Analytical *__pyx_v_self, double __pyx_v_atol, double __pyx_v_rtol, double __pyx_v_hmax); /* proto */
+static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_4set_direction_generator(struct __pyx_obj_16analytical_field_Dp87Analytical *__pyx_v_self, struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_direction_generator); /* proto */
 static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_6unset_aim_assister(struct __pyx_obj_16analytical_field_Dp87Analytical *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_8__call__(struct __pyx_obj_16analytical_field_Dp87Analytical *__pyx_v_self, double __pyx_v_t, __Pyx_memviewslice __pyx_v_pos, double __pyx_v_h); /* proto */
 static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_4atol___get__(struct __pyx_obj_16analytical_field_Dp87Analytical *__pyx_v_self); /* proto */
@@ -2769,7 +2749,7 @@ static PyObject *__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum(CYTHON_UNUSE
 static PyObject *__pyx_tp_new_16analytical_field_CallableFunction(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_16analytical_field_SinusoidalField(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_16analytical_field_SphericalField(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
-static PyObject *__pyx_tp_new_16analytical_field_AnalyticalAimAssister(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_16analytical_field_AnalyticalDirectionGenerator(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_16analytical_field_Dp87Analytical(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_array(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_Enum(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
@@ -2834,7 +2814,7 @@ static PyObject *__pyx_tuple__56;
 static PyObject *__pyx_codeobj__57;
 /* Late includes */
 
-/* "analytical_field.pyx":18
+/* "analytical_field.pyx":34
  * @cython.initializedcheck(False)
  * @cython.boundscheck(False)
  * cdef double ddot(int N, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:             # <<<<<<<<<<<<<<
@@ -2847,7 +2827,7 @@ static double __pyx_f_16analytical_field_ddot(int __pyx_v_N, __Pyx_memviewslice 
   Py_ssize_t __pyx_t_1;
   Py_ssize_t __pyx_t_2;
 
-  /* "analytical_field.pyx":19
+  /* "analytical_field.pyx":35
  * @cython.boundscheck(False)
  * cdef double ddot(int N, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:
  *     return scp_ddot(&N, &x[0], &INCX, &y[0], &INCY)             # <<<<<<<<<<<<<<
@@ -2861,7 +2841,7 @@ static double __pyx_f_16analytical_field_ddot(int __pyx_v_N, __Pyx_memviewslice 
   __pyx_r = __pyx_f_5scipy_6linalg_11cython_blas_ddot((&__pyx_v_N), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_1)) )))), (&__pyx_v_INCX), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y.data) + __pyx_t_2)) )))), (&__pyx_v_INCY));
   goto __pyx_L0;
 
-  /* "analytical_field.pyx":18
+  /* "analytical_field.pyx":34
  * @cython.initializedcheck(False)
  * @cython.boundscheck(False)
  * cdef double ddot(int N, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:             # <<<<<<<<<<<<<<
@@ -2874,7 +2854,7 @@ static double __pyx_f_16analytical_field_ddot(int __pyx_v_N, __Pyx_memviewslice 
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":24
+/* "analytical_field.pyx":40
  * @cython.wraparound(False)
  * @cython.boundscheck(False)
  * cdef void dcopy(int N, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:             # <<<<<<<<<<<<<<
@@ -2886,7 +2866,7 @@ static void __pyx_f_16analytical_field_dcopy(int __pyx_v_N, __Pyx_memviewslice &
   Py_ssize_t __pyx_t_1;
   Py_ssize_t __pyx_t_2;
 
-  /* "analytical_field.pyx":25
+  /* "analytical_field.pyx":41
  * @cython.boundscheck(False)
  * cdef void dcopy(int N, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:
  *     scp_dcopy(&N, &x[0], &INCX, &y[0], &INCY)             # <<<<<<<<<<<<<<
@@ -2897,7 +2877,7 @@ static void __pyx_f_16analytical_field_dcopy(int __pyx_v_N, __Pyx_memviewslice &
   __pyx_t_2 = 0;
   __pyx_f_5scipy_6linalg_11cython_blas_dcopy((&__pyx_v_N), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_1)) )))), (&__pyx_v_INCX), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y.data) + __pyx_t_2)) )))), (&__pyx_v_INCY));
 
-  /* "analytical_field.pyx":24
+  /* "analytical_field.pyx":40
  * @cython.wraparound(False)
  * @cython.boundscheck(False)
  * cdef void dcopy(int N, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:             # <<<<<<<<<<<<<<
@@ -2908,7 +2888,7 @@ static void __pyx_f_16analytical_field_dcopy(int __pyx_v_N, __Pyx_memviewslice &
   /* function exit code */
 }
 
-/* "analytical_field.pyx":30
+/* "analytical_field.pyx":46
  * @cython.wraparound(False)
  * @cython.boundscheck(False)
  * cdef double dnrm2(int N, double[::1] &x, int INCX) nogil:             # <<<<<<<<<<<<<<
@@ -2920,7 +2900,7 @@ static double __pyx_f_16analytical_field_dnrm2(int __pyx_v_N, __Pyx_memviewslice
   double __pyx_r;
   Py_ssize_t __pyx_t_1;
 
-  /* "analytical_field.pyx":31
+  /* "analytical_field.pyx":47
  * @cython.boundscheck(False)
  * cdef double dnrm2(int N, double[::1] &x, int INCX) nogil:
  *     return scp_dnrm2(&N, &x[0], &INCX)             # <<<<<<<<<<<<<<
@@ -2931,7 +2911,7 @@ static double __pyx_f_16analytical_field_dnrm2(int __pyx_v_N, __Pyx_memviewslice
   __pyx_r = __pyx_f_5scipy_6linalg_11cython_blas_dnrm2((&__pyx_v_N), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_1)) )))), (&__pyx_v_INCX));
   goto __pyx_L0;
 
-  /* "analytical_field.pyx":30
+  /* "analytical_field.pyx":46
  * @cython.wraparound(False)
  * @cython.boundscheck(False)
  * cdef double dnrm2(int N, double[::1] &x, int INCX) nogil:             # <<<<<<<<<<<<<<
@@ -2944,7 +2924,7 @@ static double __pyx_f_16analytical_field_dnrm2(int __pyx_v_N, __Pyx_memviewslice
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":36
+/* "analytical_field.pyx":52
  * @cython.wraparound(False)
  * @cython.boundscheck(False)
  * cdef void daxpy(int N, double alpha, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:             # <<<<<<<<<<<<<<
@@ -2956,7 +2936,7 @@ static void __pyx_f_16analytical_field_daxpy(int __pyx_v_N, double __pyx_v_alpha
   Py_ssize_t __pyx_t_1;
   Py_ssize_t __pyx_t_2;
 
-  /* "analytical_field.pyx":37
+  /* "analytical_field.pyx":53
  * @cython.boundscheck(False)
  * cdef void daxpy(int N, double alpha, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:
  *     scp_daxpy(&N, &alpha, &x[0], &INCX, &y[0], &INCY)             # <<<<<<<<<<<<<<
@@ -2967,7 +2947,7 @@ static void __pyx_f_16analytical_field_daxpy(int __pyx_v_N, double __pyx_v_alpha
   __pyx_t_2 = 0;
   __pyx_f_5scipy_6linalg_11cython_blas_daxpy((&__pyx_v_N), (&__pyx_v_alpha), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_1)) )))), (&__pyx_v_INCX), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_y.data) + __pyx_t_2)) )))), (&__pyx_v_INCY));
 
-  /* "analytical_field.pyx":36
+  /* "analytical_field.pyx":52
  * @cython.wraparound(False)
  * @cython.boundscheck(False)
  * cdef void daxpy(int N, double alpha, double[::1] &x, int INCX, double[::1] &y, int INCY) nogil:             # <<<<<<<<<<<<<<
@@ -2978,7 +2958,7 @@ static void __pyx_f_16analytical_field_daxpy(int __pyx_v_N, double __pyx_v_alpha
   /* function exit code */
 }
 
-/* "analytical_field.pyx":42
+/* "analytical_field.pyx":58
  * @cython.wraparound(False)
  * @cython.boundscheck(False)
  * cdef void dscal(int N, double alpha, double[::1] &x, int INCX) nogil:             # <<<<<<<<<<<<<<
@@ -2989,7 +2969,7 @@ static void __pyx_f_16analytical_field_daxpy(int __pyx_v_N, double __pyx_v_alpha
 static void __pyx_f_16analytical_field_dscal(int __pyx_v_N, double __pyx_v_alpha, __Pyx_memviewslice &__pyx_v_x, int __pyx_v_INCX) {
   Py_ssize_t __pyx_t_1;
 
-  /* "analytical_field.pyx":43
+  /* "analytical_field.pyx":59
  * @cython.boundscheck(False)
  * cdef void dscal(int N, double alpha, double[::1] &x, int INCX) nogil:
  *     scp_dscal(&N, &alpha, &x[0], &INCX)             # <<<<<<<<<<<<<<
@@ -2999,7 +2979,7 @@ static void __pyx_f_16analytical_field_dscal(int __pyx_v_N, double __pyx_v_alpha
   __pyx_t_1 = 0;
   __pyx_f_5scipy_6linalg_11cython_blas_dscal((&__pyx_v_N), (&__pyx_v_alpha), (&(*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_1)) )))), (&__pyx_v_INCX));
 
-  /* "analytical_field.pyx":42
+  /* "analytical_field.pyx":58
  * @cython.wraparound(False)
  * @cython.boundscheck(False)
  * cdef void dscal(int N, double alpha, double[::1] &x, int INCX) nogil:             # <<<<<<<<<<<<<<
@@ -3010,7 +2990,7 @@ static void __pyx_f_16analytical_field_dscal(int __pyx_v_N, double __pyx_v_alpha
   /* function exit code */
 }
 
-/* "analytical_field.pyx":50
+/* "analytical_field.pyx":66
  * @cython.wraparound(False)
  * @cython.boundscheck(False)
  * cdef void _cy_cross_product_(double[::1] u, double[::1] v, double[::1] &ret):             # <<<<<<<<<<<<<<
@@ -3037,7 +3017,7 @@ static void __pyx_f_16analytical_field__cy_cross_product_(__Pyx_memviewslice __p
   Py_ssize_t __pyx_t_15;
   __Pyx_RefNannySetupContext("_cy_cross_product_", 0);
 
-  /* "analytical_field.pyx":51
+  /* "analytical_field.pyx":67
  * @cython.boundscheck(False)
  * cdef void _cy_cross_product_(double[::1] u, double[::1] v, double[::1] &ret):
  *     ret[0] = u[1]*v[2]-u[2]*v[1]             # <<<<<<<<<<<<<<
@@ -3051,7 +3031,7 @@ static void __pyx_f_16analytical_field__cy_cross_product_(__Pyx_memviewslice __p
   __pyx_t_5 = 0;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_ret.data) + __pyx_t_5)) )) = (((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_u.data) + __pyx_t_1)) ))) * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_v.data) + __pyx_t_2)) )))) - ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_u.data) + __pyx_t_3)) ))) * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_v.data) + __pyx_t_4)) )))));
 
-  /* "analytical_field.pyx":52
+  /* "analytical_field.pyx":68
  * cdef void _cy_cross_product_(double[::1] u, double[::1] v, double[::1] &ret):
  *     ret[0] = u[1]*v[2]-u[2]*v[1]
  *     ret[1] = -(u[0]*v[2]-u[2]*v[0])             # <<<<<<<<<<<<<<
@@ -3065,7 +3045,7 @@ static void __pyx_f_16analytical_field__cy_cross_product_(__Pyx_memviewslice __p
   __pyx_t_10 = 1;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_ret.data) + __pyx_t_10)) )) = (-(((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_u.data) + __pyx_t_6)) ))) * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_v.data) + __pyx_t_7)) )))) - ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_u.data) + __pyx_t_8)) ))) * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_v.data) + __pyx_t_9)) ))))));
 
-  /* "analytical_field.pyx":53
+  /* "analytical_field.pyx":69
  *     ret[0] = u[1]*v[2]-u[2]*v[1]
  *     ret[1] = -(u[0]*v[2]-u[2]*v[0])
  *     ret[2] = u[0]*v[1]-u[1]*v[0]             # <<<<<<<<<<<<<<
@@ -3079,7 +3059,7 @@ static void __pyx_f_16analytical_field__cy_cross_product_(__Pyx_memviewslice __p
   __pyx_t_15 = 2;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_ret.data) + __pyx_t_15)) )) = (((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_u.data) + __pyx_t_11)) ))) * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_v.data) + __pyx_t_12)) )))) - ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_u.data) + __pyx_t_13)) ))) * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_v.data) + __pyx_t_14)) )))));
 
-  /* "analytical_field.pyx":50
+  /* "analytical_field.pyx":66
  * @cython.wraparound(False)
  * @cython.boundscheck(False)
  * cdef void _cy_cross_product_(double[::1] u, double[::1] v, double[::1] &ret):             # <<<<<<<<<<<<<<
@@ -3091,7 +3071,7 @@ static void __pyx_f_16analytical_field__cy_cross_product_(__Pyx_memviewslice __p
   __Pyx_RefNannyFinishContext();
 }
 
-/* "analytical_field.pyx":57
+/* "analytical_field.pyx":73
  * @cython.cdivision(True)
  * @cython.initializedcheck(False)
  * cdef void _cy_normalize_(double[::1] v):             # <<<<<<<<<<<<<<
@@ -3106,7 +3086,7 @@ static void __pyx_f_16analytical_field__cy_normalize_(__Pyx_memviewslice __pyx_v
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("_cy_normalize_", 0);
 
-  /* "analytical_field.pyx":59
+  /* "analytical_field.pyx":75
  * cdef void _cy_normalize_(double[::1] v):
  *     cdef:
  *         int N = v.shape[0]             # <<<<<<<<<<<<<<
@@ -3115,7 +3095,7 @@ static void __pyx_f_16analytical_field__cy_normalize_(__Pyx_memviewslice __pyx_v
  */
   __pyx_v_N = (__pyx_v_v.shape[0]);
 
-  /* "analytical_field.pyx":60
+  /* "analytical_field.pyx":76
  *     cdef:
  *         int N = v.shape[0]
  *         int INCX = 1             # <<<<<<<<<<<<<<
@@ -3124,7 +3104,7 @@ static void __pyx_f_16analytical_field__cy_normalize_(__Pyx_memviewslice __pyx_v
  */
   __pyx_v_INCX = 1;
 
-  /* "analytical_field.pyx":61
+  /* "analytical_field.pyx":77
  *         int N = v.shape[0]
  *         int INCX = 1
  *     while(dnrm2(N,v,INCX) < 0.0001):             # <<<<<<<<<<<<<<
@@ -3135,7 +3115,7 @@ static void __pyx_f_16analytical_field__cy_normalize_(__Pyx_memviewslice __pyx_v
     __pyx_t_1 = ((__pyx_f_16analytical_field_dnrm2(__pyx_v_N, __pyx_v_v, __pyx_v_INCX) < 0.0001) != 0);
     if (!__pyx_t_1) break;
 
-    /* "analytical_field.pyx":62
+    /* "analytical_field.pyx":78
  *         int INCX = 1
  *     while(dnrm2(N,v,INCX) < 0.0001):
  *         dscal(N,100,v,INCX)             # <<<<<<<<<<<<<<
@@ -3145,16 +3125,16 @@ static void __pyx_f_16analytical_field__cy_normalize_(__Pyx_memviewslice __pyx_v
     __pyx_f_16analytical_field_dscal(__pyx_v_N, 100.0, __pyx_v_v, __pyx_v_INCX);
   }
 
-  /* "analytical_field.pyx":63
+  /* "analytical_field.pyx":79
  *     while(dnrm2(N,v,INCX) < 0.0001):
  *         dscal(N,100,v,INCX)
  *     dscal(N,1/dnrm2(N,v,INCX),v,INCX)             # <<<<<<<<<<<<<<
  * 
- * @cython.internal
+ * # Hidden superclass, mirroring a virtual superclass in C++.
  */
   __pyx_f_16analytical_field_dscal(__pyx_v_N, (1.0 / __pyx_f_16analytical_field_dnrm2(__pyx_v_N, __pyx_v_v, __pyx_v_INCX)), __pyx_v_v, __pyx_v_INCX);
 
-  /* "analytical_field.pyx":57
+  /* "analytical_field.pyx":73
  * @cython.cdivision(True)
  * @cython.initializedcheck(False)
  * cdef void _cy_normalize_(double[::1] v):             # <<<<<<<<<<<<<<
@@ -3166,7 +3146,7 @@ static void __pyx_f_16analytical_field__cy_normalize_(__Pyx_memviewslice __pyx_v
   __Pyx_RefNannyFinishContext();
 }
 
-/* "analytical_field.pyx":67
+/* "analytical_field.pyx":85
  * @cython.internal
  * cdef class CallableFunction:
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -3201,7 +3181,7 @@ static int __pyx_pf_16analytical_field_16CallableFunction___cinit__(CYTHON_UNUSE
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":69
+/* "analytical_field.pyx":87
  *     def __cinit__(self):
  *         pass
  *     def __init__(self):             # <<<<<<<<<<<<<<
@@ -3236,7 +3216,7 @@ static int __pyx_pf_16analytical_field_16CallableFunction_2__init__(CYTHON_UNUSE
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":71
+/* "analytical_field.pyx":89
  *     def __init__(self):
  *         pass
  *     cdef _ev_(self, double[::1] x, double[::1] &ret):             # <<<<<<<<<<<<<<
@@ -3363,7 +3343,7 @@ static PyObject *__pyx_pf_16analytical_field_16CallableFunction_6__setstate_cyth
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":80
+/* "analytical_field.pyx":111
  *         double[::1] ret_mv
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -3397,7 +3377,7 @@ static int __pyx_pf_16analytical_field_15SinusoidalField___cinit__(struct __pyx_
   __Pyx_memviewslice __pyx_t_5 = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "analytical_field.pyx":81
+  /* "analytical_field.pyx":112
  * 
  *     def __cinit__(self):
  *         self.ret_mv = self._ret_             # <<<<<<<<<<<<<<
@@ -3407,26 +3387,26 @@ static int __pyx_pf_16analytical_field_15SinusoidalField___cinit__(struct __pyx_
   __pyx_t_1 = __pyx_v_self->_ret_;
   if (!__pyx_t_1) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 81, __pyx_L1_error)
+    __PYX_ERR(1, 112, __pyx_L1_error)
   }
   __pyx_t_4 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_3 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 81, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_2 = __pyx_array_new(__pyx_t_3, sizeof(double), PyBytes_AS_STRING(__pyx_t_4), (char *) "fortran", (char *) __pyx_t_1);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 81, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 81, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 112, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->ret_mv, 0);
   __pyx_v_self->ret_mv = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "analytical_field.pyx":80
+  /* "analytical_field.pyx":111
  *         double[::1] ret_mv
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -3449,16 +3429,20 @@ static int __pyx_pf_16analytical_field_15SinusoidalField___cinit__(struct __pyx_
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":83
+/* "analytical_field.pyx":114
  *         self.ret_mv = self._ret_
  * 
  *     def __init__(self, double freq_x = 1., double freq_y = 1.,             # <<<<<<<<<<<<<<
  *             double ampl = 1.):
- *         self.freq_x = freq_x
+ *         """
  */
 
 /* Python wrapper */
 static int __pyx_pw_16analytical_field_15SinusoidalField_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_16analytical_field_15SinusoidalField_2__init__[] = "\n        SinusoidalField.__init__(freq_x,freq_y,ampl)\n\n        Constructor for a SinusoidalField instance.\n\n        Parameters\n        ----------\n        freq_x : double\n           (Angular) frequency of the sinusoidal field in the x-direction\n        freq_y : double\n           (Angular) frequency of the sinusoidal field in the y-direction\n        ampl :\n           Amplitude of the sinusoidal field.\n\n        ";
+#if CYTHON_COMPILING_IN_CPYTHON
+struct wrapperbase __pyx_wrapperbase_16analytical_field_15SinusoidalField_2__init__;
+#endif
 static int __pyx_pw_16analytical_field_15SinusoidalField_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   double __pyx_v_freq_x;
   double __pyx_v_freq_y;
@@ -3503,7 +3487,7 @@ static int __pyx_pw_16analytical_field_15SinusoidalField_3__init__(PyObject *__p
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 83, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 114, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -3518,24 +3502,24 @@ static int __pyx_pw_16analytical_field_15SinusoidalField_3__init__(PyObject *__p
       }
     }
     if (values[0]) {
-      __pyx_v_freq_x = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_freq_x == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 83, __pyx_L3_error)
+      __pyx_v_freq_x = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_freq_x == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 114, __pyx_L3_error)
     } else {
       __pyx_v_freq_x = ((double)1.);
     }
     if (values[1]) {
-      __pyx_v_freq_y = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_freq_y == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 83, __pyx_L3_error)
+      __pyx_v_freq_y = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_freq_y == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 114, __pyx_L3_error)
     } else {
       __pyx_v_freq_y = ((double)1.);
     }
     if (values[2]) {
-      __pyx_v_ampl = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_ampl == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 84, __pyx_L3_error)
+      __pyx_v_ampl = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_ampl == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 115, __pyx_L3_error)
     } else {
       __pyx_v_ampl = ((double)1.);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 83, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 0, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 114, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("analytical_field.SinusoidalField.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3553,17 +3537,17 @@ static int __pyx_pf_16analytical_field_15SinusoidalField_2__init__(struct __pyx_
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "analytical_field.pyx":85
- *     def __init__(self, double freq_x = 1., double freq_y = 1.,
- *             double ampl = 1.):
+  /* "analytical_field.pyx":131
+ * 
+ *         """
  *         self.freq_x = freq_x             # <<<<<<<<<<<<<<
  *         self.freq_y = freq_y
  *         self.ampl = ampl
  */
   __pyx_v_self->freq_x = __pyx_v_freq_x;
 
-  /* "analytical_field.pyx":86
- *             double ampl = 1.):
+  /* "analytical_field.pyx":132
+ *         """
  *         self.freq_x = freq_x
  *         self.freq_y = freq_y             # <<<<<<<<<<<<<<
  *         self.ampl = ampl
@@ -3571,7 +3555,7 @@ static int __pyx_pf_16analytical_field_15SinusoidalField_2__init__(struct __pyx_
  */
   __pyx_v_self->freq_y = __pyx_v_freq_y;
 
-  /* "analytical_field.pyx":87
+  /* "analytical_field.pyx":133
  *         self.freq_x = freq_x
  *         self.freq_y = freq_y
  *         self.ampl = ampl             # <<<<<<<<<<<<<<
@@ -3580,12 +3564,12 @@ static int __pyx_pf_16analytical_field_15SinusoidalField_2__init__(struct __pyx_
  */
   __pyx_v_self->ampl = __pyx_v_ampl;
 
-  /* "analytical_field.pyx":83
+  /* "analytical_field.pyx":114
  *         self.ret_mv = self._ret_
  * 
  *     def __init__(self, double freq_x = 1., double freq_y = 1.,             # <<<<<<<<<<<<<<
  *             double ampl = 1.):
- *         self.freq_x = freq_x
+ *         """
  */
 
   /* function exit code */
@@ -3594,23 +3578,27 @@ static int __pyx_pf_16analytical_field_15SinusoidalField_2__init__(struct __pyx_
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":90
+/* "analytical_field.pyx":136
  * 
  *     @cython.initializedcheck(False)
- *     def __call__(self, double[::1] x not None):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double[::1] ret = self.ret_mv
+ *     def __call__(self, double[::1] pos not None):             # <<<<<<<<<<<<<<
+ *         """
+ *         SinusoidalField.__call__(pos)
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_16analytical_field_15SinusoidalField_5__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_16analytical_field_15SinusoidalField_4__call__[] = "\n        SinusoidalField.__call__(pos)\n\n        Evaluates the normal vector field at the coordinates specified by pos.\n\n        Parameters\n        ----------\n        pos : (3,) ndarray\n           A (C-contiguous) NumPy array containing the (Cartesian) coordinates\n           of the point in R^3 at which the vector field is to be evaluated.\n\n        Returns\n        -------\n        vec : (3,) ndarray\n           A (C-contiguous) NumPy array containing the unit normalized\n           normal vector at pos.\n\n        ";
+#if CYTHON_COMPILING_IN_CPYTHON
+struct wrapperbase __pyx_wrapperbase_16analytical_field_15SinusoidalField_4__call__;
+#endif
 static PyObject *__pyx_pw_16analytical_field_15SinusoidalField_5__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
-  __Pyx_memviewslice __pyx_v_x = { 0, 0, { 0 }, { 0 }, { 0 } };
+  __Pyx_memviewslice __pyx_v_pos = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__call__ (wrapper)", 0);
   {
-    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_x,0};
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_pos,0};
     PyObject* values[1] = {0};
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
@@ -3624,31 +3612,31 @@ static PyObject *__pyx_pw_16analytical_field_15SinusoidalField_5__call__(PyObjec
       kw_args = PyDict_Size(__pyx_kwds);
       switch (pos_args) {
         case  0:
-        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_x)) != 0)) kw_args--;
+        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_pos)) != 0)) kw_args--;
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 90, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 136, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
     }
-    __pyx_v_x = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 90, __pyx_L3_error)
+    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 136, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 90, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 136, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("analytical_field.SinusoidalField.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(((PyObject *)__pyx_v_x.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "x"); __PYX_ERR(1, 90, __pyx_L1_error)
+  if (unlikely(((PyObject *)__pyx_v_pos.memview) == Py_None)) {
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "pos"); __PYX_ERR(1, 136, __pyx_L1_error)
   }
-  __pyx_r = __pyx_pf_16analytical_field_15SinusoidalField_4__call__(((struct __pyx_obj_16analytical_field_SinusoidalField *)__pyx_v_self), __pyx_v_x);
+  __pyx_r = __pyx_pf_16analytical_field_15SinusoidalField_4__call__(((struct __pyx_obj_16analytical_field_SinusoidalField *)__pyx_v_self), __pyx_v_pos);
 
   /* function exit code */
   goto __pyx_L0;
@@ -3659,7 +3647,7 @@ static PyObject *__pyx_pw_16analytical_field_15SinusoidalField_5__call__(PyObjec
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_16analytical_field_15SinusoidalField_4__call__(struct __pyx_obj_16analytical_field_SinusoidalField *__pyx_v_self, __Pyx_memviewslice __pyx_v_x) {
+static PyObject *__pyx_pf_16analytical_field_15SinusoidalField_4__call__(struct __pyx_obj_16analytical_field_SinusoidalField *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos) {
   __Pyx_memviewslice __pyx_v_ret = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -3671,11 +3659,11 @@ static PyObject *__pyx_pf_16analytical_field_15SinusoidalField_4__call__(struct 
   PyObject *__pyx_t_6 = NULL;
   __Pyx_RefNannySetupContext("__call__", 0);
 
-  /* "analytical_field.pyx":92
- *     def __call__(self, double[::1] x not None):
+  /* "analytical_field.pyx":156
+ *         """
  *         cdef:
  *             double[::1] ret = self.ret_mv             # <<<<<<<<<<<<<<
- *         self._ev_(x,ret)
+ *         self._ev_(pos,ret)
  *         return np.copy(ret)
  */
   __pyx_t_1 = __pyx_v_self->ret_mv;
@@ -3684,31 +3672,31 @@ static PyObject *__pyx_pf_16analytical_field_15SinusoidalField_4__call__(struct 
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "analytical_field.pyx":93
+  /* "analytical_field.pyx":157
  *         cdef:
  *             double[::1] ret = self.ret_mv
- *         self._ev_(x,ret)             # <<<<<<<<<<<<<<
+ *         self._ev_(pos,ret)             # <<<<<<<<<<<<<<
  *         return np.copy(ret)
  * 
  */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_SinusoidalField *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._ev_(((struct __pyx_obj_16analytical_field_CallableFunction *)__pyx_v_self), __pyx_v_x, __pyx_v_ret); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 93, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_SinusoidalField *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._ev_(((struct __pyx_obj_16analytical_field_CallableFunction *)__pyx_v_self), __pyx_v_pos, __pyx_v_ret); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "analytical_field.pyx":94
+  /* "analytical_field.pyx":158
  *             double[::1] ret = self.ret_mv
- *         self._ev_(x,ret)
+ *         self._ev_(pos,ret)
  *         return np.copy(ret)             # <<<<<<<<<<<<<<
  * 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 94, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_copy); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 94, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_copy); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_ret, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 94, __pyx_L1_error)
+  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_ret, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_5 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
@@ -3721,14 +3709,14 @@ static PyObject *__pyx_pf_16analytical_field_15SinusoidalField_4__call__(struct 
     }
   }
   if (!__pyx_t_5) {
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 94, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 158, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_2);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_3};
-      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 94, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 158, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -3737,20 +3725,20 @@ static PyObject *__pyx_pf_16analytical_field_15SinusoidalField_4__call__(struct 
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_3};
-      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 94, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 158, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 94, __pyx_L1_error)
+      __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 158, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_5); __pyx_t_5 = NULL;
       __Pyx_GIVEREF(__pyx_t_3);
       PyTuple_SET_ITEM(__pyx_t_6, 0+1, __pyx_t_3);
       __pyx_t_3 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 94, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 158, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     }
@@ -3760,12 +3748,12 @@ static PyObject *__pyx_pf_16analytical_field_15SinusoidalField_4__call__(struct 
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "analytical_field.pyx":90
+  /* "analytical_field.pyx":136
  * 
  *     @cython.initializedcheck(False)
- *     def __call__(self, double[::1] x not None):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double[::1] ret = self.ret_mv
+ *     def __call__(self, double[::1] pos not None):             # <<<<<<<<<<<<<<
+ *         """
+ *         SinusoidalField.__call__(pos)
  */
 
   /* function exit code */
@@ -3780,21 +3768,21 @@ static PyObject *__pyx_pf_16analytical_field_15SinusoidalField_4__call__(struct 
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_ret, 1);
-  __PYX_XDEC_MEMVIEW(&__pyx_v_x, 1);
+  __PYX_XDEC_MEMVIEW(&__pyx_v_pos, 1);
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":100
+/* "analytical_field.pyx":164
  *     @cython.boundscheck(False)
  *     @cython.wraparound(False)
- *     cdef _ev_(self, double[::1] x, double[::1] &ret):             # <<<<<<<<<<<<<<
- *         ret[0] = self.ampl*self.freq_x*c_cos(self.freq_x*x[0])*c_sin(self.freq_y*x[1])
- *         ret[1] = self.ampl*self.freq_y*c_sin(self.freq_x*x[0])*c_cos(self.freq_y*x[1])
+ *     cdef _ev_(self, double[::1] pos, double[::1] &ret):             # <<<<<<<<<<<<<<
+ *         """
+ *         SinusoidalField._ev_(pos,ret)
  */
 
-static PyObject *__pyx_f_16analytical_field_15SinusoidalField__ev_(struct __pyx_obj_16analytical_field_SinusoidalField *__pyx_v_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice &__pyx_v_ret) {
+static PyObject *__pyx_f_16analytical_field_15SinusoidalField__ev_(struct __pyx_obj_16analytical_field_SinusoidalField *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos, __Pyx_memviewslice &__pyx_v_ret) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   Py_ssize_t __pyx_t_1;
@@ -3806,33 +3794,33 @@ static PyObject *__pyx_f_16analytical_field_15SinusoidalField__ev_(struct __pyx_
   Py_ssize_t __pyx_t_7;
   __Pyx_RefNannySetupContext("_ev_", 0);
 
-  /* "analytical_field.pyx":101
- *     @cython.wraparound(False)
- *     cdef _ev_(self, double[::1] x, double[::1] &ret):
- *         ret[0] = self.ampl*self.freq_x*c_cos(self.freq_x*x[0])*c_sin(self.freq_y*x[1])             # <<<<<<<<<<<<<<
- *         ret[1] = self.ampl*self.freq_y*c_sin(self.freq_x*x[0])*c_cos(self.freq_y*x[1])
+  /* "analytical_field.pyx":180
+ * 
+ *         """
+ *         ret[0] = self.ampl*self.freq_x*c_cos(self.freq_x*pos[0])*c_sin(self.freq_y*pos[1])             # <<<<<<<<<<<<<<
+ *         ret[1] = self.ampl*self.freq_y*c_sin(self.freq_x*pos[0])*c_cos(self.freq_y*pos[1])
  *         ret[2] = -1
  */
   __pyx_t_1 = 0;
   __pyx_t_2 = 1;
   __pyx_t_3 = 0;
-  *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_ret.data) + __pyx_t_3)) )) = (((__pyx_v_self->ampl * __pyx_v_self->freq_x) * cos((__pyx_v_self->freq_x * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_1)) )))))) * sin((__pyx_v_self->freq_y * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_2)) ))))));
+  *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_ret.data) + __pyx_t_3)) )) = (((__pyx_v_self->ampl * __pyx_v_self->freq_x) * cos((__pyx_v_self->freq_x * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_1)) )))))) * sin((__pyx_v_self->freq_y * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_2)) ))))));
 
-  /* "analytical_field.pyx":102
- *     cdef _ev_(self, double[::1] x, double[::1] &ret):
- *         ret[0] = self.ampl*self.freq_x*c_cos(self.freq_x*x[0])*c_sin(self.freq_y*x[1])
- *         ret[1] = self.ampl*self.freq_y*c_sin(self.freq_x*x[0])*c_cos(self.freq_y*x[1])             # <<<<<<<<<<<<<<
+  /* "analytical_field.pyx":181
+ *         """
+ *         ret[0] = self.ampl*self.freq_x*c_cos(self.freq_x*pos[0])*c_sin(self.freq_y*pos[1])
+ *         ret[1] = self.ampl*self.freq_y*c_sin(self.freq_x*pos[0])*c_cos(self.freq_y*pos[1])             # <<<<<<<<<<<<<<
  *         ret[2] = -1
  *         _cy_normalize_(ret)
  */
   __pyx_t_4 = 0;
   __pyx_t_5 = 1;
   __pyx_t_6 = 1;
-  *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_ret.data) + __pyx_t_6)) )) = (((__pyx_v_self->ampl * __pyx_v_self->freq_y) * sin((__pyx_v_self->freq_x * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_4)) )))))) * cos((__pyx_v_self->freq_y * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x.data) + __pyx_t_5)) ))))));
+  *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_ret.data) + __pyx_t_6)) )) = (((__pyx_v_self->ampl * __pyx_v_self->freq_y) * sin((__pyx_v_self->freq_x * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_4)) )))))) * cos((__pyx_v_self->freq_y * (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_pos.data) + __pyx_t_5)) ))))));
 
-  /* "analytical_field.pyx":103
- *         ret[0] = self.ampl*self.freq_x*c_cos(self.freq_x*x[0])*c_sin(self.freq_y*x[1])
- *         ret[1] = self.ampl*self.freq_y*c_sin(self.freq_x*x[0])*c_cos(self.freq_y*x[1])
+  /* "analytical_field.pyx":182
+ *         ret[0] = self.ampl*self.freq_x*c_cos(self.freq_x*pos[0])*c_sin(self.freq_y*pos[1])
+ *         ret[1] = self.ampl*self.freq_y*c_sin(self.freq_x*pos[0])*c_cos(self.freq_y*pos[1])
  *         ret[2] = -1             # <<<<<<<<<<<<<<
  *         _cy_normalize_(ret)
  * 
@@ -3840,8 +3828,8 @@ static PyObject *__pyx_f_16analytical_field_15SinusoidalField__ev_(struct __pyx_
   __pyx_t_7 = 2;
   *((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_ret.data) + __pyx_t_7)) )) = -1.0;
 
-  /* "analytical_field.pyx":104
- *         ret[1] = self.ampl*self.freq_y*c_sin(self.freq_x*x[0])*c_cos(self.freq_y*x[1])
+  /* "analytical_field.pyx":183
+ *         ret[1] = self.ampl*self.freq_y*c_sin(self.freq_x*pos[0])*c_cos(self.freq_y*pos[1])
  *         ret[2] = -1
  *         _cy_normalize_(ret)             # <<<<<<<<<<<<<<
  * 
@@ -3849,12 +3837,12 @@ static PyObject *__pyx_f_16analytical_field_15SinusoidalField__ev_(struct __pyx_
  */
   __pyx_f_16analytical_field__cy_normalize_(__pyx_v_ret);
 
-  /* "analytical_field.pyx":100
+  /* "analytical_field.pyx":164
  *     @cython.boundscheck(False)
  *     @cython.wraparound(False)
- *     cdef _ev_(self, double[::1] x, double[::1] &ret):             # <<<<<<<<<<<<<<
- *         ret[0] = self.ampl*self.freq_x*c_cos(self.freq_x*x[0])*c_sin(self.freq_y*x[1])
- *         ret[1] = self.ampl*self.freq_y*c_sin(self.freq_x*x[0])*c_cos(self.freq_y*x[1])
+ *     cdef _ev_(self, double[::1] pos, double[::1] &ret):             # <<<<<<<<<<<<<<
+ *         """
+ *         SinusoidalField._ev_(pos,ret)
  */
 
   /* function exit code */
@@ -3971,7 +3959,7 @@ static PyObject *__pyx_pf_16analytical_field_15SinusoidalField_8__setstate_cytho
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":113
+/* "analytical_field.pyx":203
  *         double _orig_[3]
  *         double[::1] origin
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -4005,7 +3993,7 @@ static int __pyx_pf_16analytical_field_14SphericalField___cinit__(struct __pyx_o
   __Pyx_memviewslice __pyx_t_5 = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "analytical_field.pyx":114
+  /* "analytical_field.pyx":204
  *         double[::1] origin
  *     def __cinit__(self):
  *         self.ret_mv = self._ret_             # <<<<<<<<<<<<<<
@@ -4015,26 +4003,26 @@ static int __pyx_pf_16analytical_field_14SphericalField___cinit__(struct __pyx_o
   __pyx_t_1 = __pyx_v_self->_ret_;
   if (!__pyx_t_1) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 114, __pyx_L1_error)
+    __PYX_ERR(1, 204, __pyx_L1_error)
   }
   __pyx_t_4 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_3 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 114, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 204, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_2 = __pyx_array_new(__pyx_t_3, sizeof(double), PyBytes_AS_STRING(__pyx_t_4), (char *) "fortran", (char *) __pyx_t_1);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 114, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 204, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 114, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 204, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->ret_mv, 0);
   __pyx_v_self->ret_mv = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "analytical_field.pyx":115
+  /* "analytical_field.pyx":205
  *     def __cinit__(self):
  *         self.ret_mv = self._ret_
  *         self.origin = self._orig_             # <<<<<<<<<<<<<<
@@ -4044,26 +4032,26 @@ static int __pyx_pf_16analytical_field_14SphericalField___cinit__(struct __pyx_o
   __pyx_t_1 = __pyx_v_self->_orig_;
   if (!__pyx_t_1) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 115, __pyx_L1_error)
+    __PYX_ERR(1, 205, __pyx_L1_error)
   }
   __pyx_t_3 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_4 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 115, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_2 = __pyx_array_new(__pyx_t_4, sizeof(double), PyBytes_AS_STRING(__pyx_t_3), (char *) "fortran", (char *) __pyx_t_1);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 115, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 205, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 115, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 205, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->origin, 0);
   __pyx_v_self->origin = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "analytical_field.pyx":113
+  /* "analytical_field.pyx":203
  *         double _orig_[3]
  *         double[::1] origin
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -4086,16 +4074,20 @@ static int __pyx_pf_16analytical_field_14SphericalField___cinit__(struct __pyx_o
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":117
+/* "analytical_field.pyx":207
  *         self.origin = self._orig_
  *     @cython.initializedcheck(False)
  *     def __init__(self, double[::1] origin not None):             # <<<<<<<<<<<<<<
- *         if origin.shape[0] != 3:
- *             raise RuntimeError('Don''t fuck with squirrels, Morty!')
+ *         """
+ *         SphericalField.__init__(freq_x,freq_y,ampl)
  */
 
 /* Python wrapper */
 static int __pyx_pw_16analytical_field_14SphericalField_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_16analytical_field_14SphericalField_2__init__[] = "\n        SphericalField.__init__(freq_x,freq_y,ampl)\n\n        Constructor for a SphericalField instance.\n\n        Parameters\n        ----------\n        origin : (3,) ndarray\n           A (C-contiguous) NumPy array, containing the coordinates of\n           the origin of the radial field.\n\n        ";
+#if CYTHON_COMPILING_IN_CPYTHON
+struct wrapperbase __pyx_wrapperbase_16analytical_field_14SphericalField_2__init__;
+#endif
 static int __pyx_pw_16analytical_field_14SphericalField_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_origin = { 0, 0, { 0 }, { 0 }, { 0 } };
   int __pyx_r;
@@ -4120,25 +4112,25 @@ static int __pyx_pw_16analytical_field_14SphericalField_3__init__(PyObject *__py
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 117, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 207, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
     }
-    __pyx_v_origin = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_origin.memview)) __PYX_ERR(1, 117, __pyx_L3_error)
+    __pyx_v_origin = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_origin.memview)) __PYX_ERR(1, 207, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 117, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 207, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("analytical_field.SphericalField.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(((PyObject *)__pyx_v_origin.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "origin"); __PYX_ERR(1, 117, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "origin"); __PYX_ERR(1, 207, __pyx_L1_error)
   }
   __pyx_r = __pyx_pf_16analytical_field_14SphericalField_2__init__(((struct __pyx_obj_16analytical_field_SphericalField *)__pyx_v_self), __pyx_v_origin);
 
@@ -4158,53 +4150,53 @@ static int __pyx_pf_16analytical_field_14SphericalField_2__init__(struct __pyx_o
   PyObject *__pyx_t_2 = NULL;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "analytical_field.pyx":118
- *     @cython.initializedcheck(False)
- *     def __init__(self, double[::1] origin not None):
+  /* "analytical_field.pyx":220
+ * 
+ *         """
  *         if origin.shape[0] != 3:             # <<<<<<<<<<<<<<
- *             raise RuntimeError('Don''t fuck with squirrels, Morty!')
+ *             raise ValueError('The spherical field is defined for R^3!')
  *         dcopy(3,origin,1,self.origin,1)
  */
   __pyx_t_1 = (((__pyx_v_origin.shape[0]) != 3) != 0);
   if (unlikely(__pyx_t_1)) {
 
-    /* "analytical_field.pyx":119
- *     def __init__(self, double[::1] origin not None):
+    /* "analytical_field.pyx":221
+ *         """
  *         if origin.shape[0] != 3:
- *             raise RuntimeError('Don''t fuck with squirrels, Morty!')             # <<<<<<<<<<<<<<
+ *             raise ValueError('The spherical field is defined for R^3!')             # <<<<<<<<<<<<<<
  *         dcopy(3,origin,1,self.origin,1)
  *     @cython.initializedcheck(False)
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 119, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 221, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_Raise(__pyx_t_2, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 119, __pyx_L1_error)
+    __PYX_ERR(1, 221, __pyx_L1_error)
 
-    /* "analytical_field.pyx":118
- *     @cython.initializedcheck(False)
- *     def __init__(self, double[::1] origin not None):
+    /* "analytical_field.pyx":220
+ * 
+ *         """
  *         if origin.shape[0] != 3:             # <<<<<<<<<<<<<<
- *             raise RuntimeError('Don''t fuck with squirrels, Morty!')
+ *             raise ValueError('The spherical field is defined for R^3!')
  *         dcopy(3,origin,1,self.origin,1)
  */
   }
 
-  /* "analytical_field.pyx":120
+  /* "analytical_field.pyx":222
  *         if origin.shape[0] != 3:
- *             raise RuntimeError('Don''t fuck with squirrels, Morty!')
+ *             raise ValueError('The spherical field is defined for R^3!')
  *         dcopy(3,origin,1,self.origin,1)             # <<<<<<<<<<<<<<
  *     @cython.initializedcheck(False)
- *     def __call__(self, double[::1] x not None):
+ *     def __call__(self, double[::1] pos not None):
  */
   __pyx_f_16analytical_field_dcopy(3, __pyx_v_origin, 1, __pyx_v_self->origin, 1);
 
-  /* "analytical_field.pyx":117
+  /* "analytical_field.pyx":207
  *         self.origin = self._orig_
  *     @cython.initializedcheck(False)
  *     def __init__(self, double[::1] origin not None):             # <<<<<<<<<<<<<<
- *         if origin.shape[0] != 3:
- *             raise RuntimeError('Don''t fuck with squirrels, Morty!')
+ *         """
+ *         SphericalField.__init__(freq_x,freq_y,ampl)
  */
 
   /* function exit code */
@@ -4220,23 +4212,27 @@ static int __pyx_pf_16analytical_field_14SphericalField_2__init__(struct __pyx_o
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":122
+/* "analytical_field.pyx":224
  *         dcopy(3,origin,1,self.origin,1)
  *     @cython.initializedcheck(False)
- *     def __call__(self, double[::1] x not None):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double[::1] ret = self.ret_mv
+ *     def __call__(self, double[::1] pos not None):             # <<<<<<<<<<<<<<
+ *         """
+ *         SphericalField.__call__(pos)
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_16analytical_field_14SphericalField_5__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_16analytical_field_14SphericalField_4__call__[] = "\n        SphericalField.__call__(pos)\n\n        Evaluates the radial vector field at the coordinates specified by pos.\n\n        Parameters\n        ----------\n        pos : (3,) ndarray\n           A (C-contiguous) NumPy array containing the (Cartesian) coordinates\n           of the point in R^3 at which the vector field is to be evaluated.\n\n        Returns\n        -------\n        vec : (3,) ndarray\n           A (C-contiguous) NumPy array containing the unit normalized\n           radial vector at pos.\n\n        ";
+#if CYTHON_COMPILING_IN_CPYTHON
+struct wrapperbase __pyx_wrapperbase_16analytical_field_14SphericalField_4__call__;
+#endif
 static PyObject *__pyx_pw_16analytical_field_14SphericalField_5__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
-  __Pyx_memviewslice __pyx_v_x = { 0, 0, { 0 }, { 0 }, { 0 } };
+  __Pyx_memviewslice __pyx_v_pos = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__call__ (wrapper)", 0);
   {
-    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_x,0};
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_pos,0};
     PyObject* values[1] = {0};
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
@@ -4250,31 +4246,31 @@ static PyObject *__pyx_pw_16analytical_field_14SphericalField_5__call__(PyObject
       kw_args = PyDict_Size(__pyx_kwds);
       switch (pos_args) {
         case  0:
-        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_x)) != 0)) kw_args--;
+        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_pos)) != 0)) kw_args--;
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 122, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 224, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
     }
-    __pyx_v_x = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_x.memview)) __PYX_ERR(1, 122, __pyx_L3_error)
+    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 224, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 122, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 224, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("analytical_field.SphericalField.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(((PyObject *)__pyx_v_x.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "x"); __PYX_ERR(1, 122, __pyx_L1_error)
+  if (unlikely(((PyObject *)__pyx_v_pos.memview) == Py_None)) {
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "pos"); __PYX_ERR(1, 224, __pyx_L1_error)
   }
-  __pyx_r = __pyx_pf_16analytical_field_14SphericalField_4__call__(((struct __pyx_obj_16analytical_field_SphericalField *)__pyx_v_self), __pyx_v_x);
+  __pyx_r = __pyx_pf_16analytical_field_14SphericalField_4__call__(((struct __pyx_obj_16analytical_field_SphericalField *)__pyx_v_self), __pyx_v_pos);
 
   /* function exit code */
   goto __pyx_L0;
@@ -4285,7 +4281,7 @@ static PyObject *__pyx_pw_16analytical_field_14SphericalField_5__call__(PyObject
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_16analytical_field_14SphericalField_4__call__(struct __pyx_obj_16analytical_field_SphericalField *__pyx_v_self, __Pyx_memviewslice __pyx_v_x) {
+static PyObject *__pyx_pf_16analytical_field_14SphericalField_4__call__(struct __pyx_obj_16analytical_field_SphericalField *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos) {
   __Pyx_memviewslice __pyx_v_ret = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
@@ -4297,11 +4293,11 @@ static PyObject *__pyx_pf_16analytical_field_14SphericalField_4__call__(struct _
   PyObject *__pyx_t_6 = NULL;
   __Pyx_RefNannySetupContext("__call__", 0);
 
-  /* "analytical_field.pyx":124
- *     def __call__(self, double[::1] x not None):
+  /* "analytical_field.pyx":244
+ *         """
  *         cdef:
  *             double[::1] ret = self.ret_mv             # <<<<<<<<<<<<<<
- *         self._ev_(x,ret)
+ *         self._ev_(pos,ret)
  *         return np.copy(ret)
  */
   __pyx_t_1 = __pyx_v_self->ret_mv;
@@ -4310,31 +4306,31 @@ static PyObject *__pyx_pf_16analytical_field_14SphericalField_4__call__(struct _
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "analytical_field.pyx":125
+  /* "analytical_field.pyx":245
  *         cdef:
  *             double[::1] ret = self.ret_mv
- *         self._ev_(x,ret)             # <<<<<<<<<<<<<<
+ *         self._ev_(pos,ret)             # <<<<<<<<<<<<<<
  *         return np.copy(ret)
  *     @cython.initializedcheck(False)
  */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_SphericalField *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._ev_(((struct __pyx_obj_16analytical_field_CallableFunction *)__pyx_v_self), __pyx_v_x, __pyx_v_ret); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 125, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_SphericalField *)__pyx_v_self->__pyx_base.__pyx_vtab)->__pyx_base._ev_(((struct __pyx_obj_16analytical_field_CallableFunction *)__pyx_v_self), __pyx_v_pos, __pyx_v_ret); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 245, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "analytical_field.pyx":126
+  /* "analytical_field.pyx":246
  *             double[::1] ret = self.ret_mv
- *         self._ev_(x,ret)
+ *         self._ev_(pos,ret)
  *         return np.copy(ret)             # <<<<<<<<<<<<<<
  *     @cython.initializedcheck(False)
  *     @cython.boundscheck(False)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 126, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 246, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_copy); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 126, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_copy); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 246, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_ret, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 126, __pyx_L1_error)
+  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_ret, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 246, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_5 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
@@ -4347,14 +4343,14 @@ static PyObject *__pyx_pf_16analytical_field_14SphericalField_4__call__(struct _
     }
   }
   if (!__pyx_t_5) {
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 126, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 246, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_GOTREF(__pyx_t_2);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_3};
-      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 126, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 246, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -4363,20 +4359,20 @@ static PyObject *__pyx_pf_16analytical_field_14SphericalField_4__call__(struct _
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_3};
-      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 126, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 246, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 126, __pyx_L1_error)
+      __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 246, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_5); __pyx_t_5 = NULL;
       __Pyx_GIVEREF(__pyx_t_3);
       PyTuple_SET_ITEM(__pyx_t_6, 0+1, __pyx_t_3);
       __pyx_t_3 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 126, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 246, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     }
@@ -4386,12 +4382,12 @@ static PyObject *__pyx_pf_16analytical_field_14SphericalField_4__call__(struct _
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "analytical_field.pyx":122
+  /* "analytical_field.pyx":224
  *         dcopy(3,origin,1,self.origin,1)
  *     @cython.initializedcheck(False)
- *     def __call__(self, double[::1] x not None):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double[::1] ret = self.ret_mv
+ *     def __call__(self, double[::1] pos not None):             # <<<<<<<<<<<<<<
+ *         """
+ *         SphericalField.__call__(pos)
  */
 
   /* function exit code */
@@ -4406,58 +4402,58 @@ static PyObject *__pyx_pf_16analytical_field_14SphericalField_4__call__(struct _
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_ret, 1);
-  __PYX_XDEC_MEMVIEW(&__pyx_v_x, 1);
+  __PYX_XDEC_MEMVIEW(&__pyx_v_pos, 1);
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":130
+/* "analytical_field.pyx":250
  *     @cython.boundscheck(False)
  *     @cython.wraparound(False)
- *     cdef _ev_(self, double[::1] x, double[::1] &ret):             # <<<<<<<<<<<<<<
- *         dcopy(3,x,1,ret,1)
- *         daxpy(3,-1,self.origin,1,ret,1)
+ *     cdef _ev_(self, double[::1] pos, double[::1] &ret):             # <<<<<<<<<<<<<<
+ *         """
+ *         SphericalField._ev_(pos,ret)
  */
 
-static PyObject *__pyx_f_16analytical_field_14SphericalField__ev_(struct __pyx_obj_16analytical_field_SphericalField *__pyx_v_self, __Pyx_memviewslice __pyx_v_x, __Pyx_memviewslice &__pyx_v_ret) {
+static PyObject *__pyx_f_16analytical_field_14SphericalField__ev_(struct __pyx_obj_16analytical_field_SphericalField *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos, __Pyx_memviewslice &__pyx_v_ret) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("_ev_", 0);
 
-  /* "analytical_field.pyx":131
- *     @cython.wraparound(False)
- *     cdef _ev_(self, double[::1] x, double[::1] &ret):
- *         dcopy(3,x,1,ret,1)             # <<<<<<<<<<<<<<
+  /* "analytical_field.pyx":268
+ * 
+ *         """
+ *         dcopy(3,pos,1,ret,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,-1,self.origin,1,ret,1)
  *         _cy_normalize_(ret)
  */
-  __pyx_f_16analytical_field_dcopy(3, __pyx_v_x, 1, __pyx_v_ret, 1);
+  __pyx_f_16analytical_field_dcopy(3, __pyx_v_pos, 1, __pyx_v_ret, 1);
 
-  /* "analytical_field.pyx":132
- *     cdef _ev_(self, double[::1] x, double[::1] &ret):
- *         dcopy(3,x,1,ret,1)
+  /* "analytical_field.pyx":269
+ *         """
+ *         dcopy(3,pos,1,ret,1)
  *         daxpy(3,-1,self.origin,1,ret,1)             # <<<<<<<<<<<<<<
  *         _cy_normalize_(ret)
  * 
  */
   __pyx_f_16analytical_field_daxpy(3, -1.0, __pyx_v_self->origin, 1, __pyx_v_ret, 1);
 
-  /* "analytical_field.pyx":133
- *         dcopy(3,x,1,ret,1)
+  /* "analytical_field.pyx":270
+ *         dcopy(3,pos,1,ret,1)
  *         daxpy(3,-1,self.origin,1,ret,1)
  *         _cy_normalize_(ret)             # <<<<<<<<<<<<<<
  * 
- * cdef class AnalyticalAimAssister:
+ * cdef class AnalyticalDirectionGenerator:
  */
   __pyx_f_16analytical_field__cy_normalize_(__pyx_v_ret);
 
-  /* "analytical_field.pyx":130
+  /* "analytical_field.pyx":250
  *     @cython.boundscheck(False)
  *     @cython.wraparound(False)
- *     cdef _ev_(self, double[::1] x, double[::1] &ret):             # <<<<<<<<<<<<<<
- *         dcopy(3,x,1,ret,1)
- *         daxpy(3,-1,self.origin,1,ret,1)
+ *     cdef _ev_(self, double[::1] pos, double[::1] &ret):             # <<<<<<<<<<<<<<
+ *         """
+ *         SphericalField._ev_(pos,ret)
  */
 
   /* function exit code */
@@ -4574,7 +4570,7 @@ static PyObject *__pyx_pf_16analytical_field_14SphericalField_8__setstate_cython
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":163
+/* "analytical_field.pyx":303
  *         bint initialized_prev_vec
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -4583,22 +4579,22 @@ static PyObject *__pyx_pf_16analytical_field_14SphericalField_8__setstate_cython
  */
 
 /* Python wrapper */
-static int __pyx_pw_16analytical_field_21AnalyticalAimAssister_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_16analytical_field_21AnalyticalAimAssister_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__cinit__ (wrapper)", 0);
   if (unlikely(PyTuple_GET_SIZE(__pyx_args) > 0)) {
     __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 0, 0, PyTuple_GET_SIZE(__pyx_args)); return -1;}
   if (unlikely(__pyx_kwds) && unlikely(PyDict_Size(__pyx_kwds) > 0) && unlikely(!__Pyx_CheckKeywordStrings(__pyx_kwds, "__cinit__", 0))) return -1;
-  __pyx_r = __pyx_pf_16analytical_field_21AnalyticalAimAssister___cinit__(((struct __pyx_obj_16analytical_field_AnalyticalAimAssister *)__pyx_v_self));
+  __pyx_r = __pyx_pf_16analytical_field_28AnalyticalDirectionGenerator___cinit__(((struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_16analytical_field_21AnalyticalAimAssister___cinit__(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self) {
+static int __pyx_pf_16analytical_field_28AnalyticalDirectionGenerator___cinit__(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   double *__pyx_t_1;
@@ -4608,7 +4604,7 @@ static int __pyx_pf_16analytical_field_21AnalyticalAimAssister___cinit__(struct 
   __Pyx_memviewslice __pyx_t_5 = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "analytical_field.pyx":164
+  /* "analytical_field.pyx":304
  * 
  *     def __cinit__(self):
  *         self.tan_vec = self._tan_vec_             # <<<<<<<<<<<<<<
@@ -4618,135 +4614,113 @@ static int __pyx_pf_16analytical_field_21AnalyticalAimAssister___cinit__(struct 
   __pyx_t_1 = __pyx_v_self->_tan_vec_;
   if (!__pyx_t_1) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 164, __pyx_L1_error)
+    __PYX_ERR(1, 304, __pyx_L1_error)
   }
   __pyx_t_4 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_3 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 164, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_2 = __pyx_array_new(__pyx_t_3, sizeof(double), PyBytes_AS_STRING(__pyx_t_4), (char *) "fortran", (char *) __pyx_t_1);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 164, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 304, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 164, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 304, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->tan_vec, 0);
   __pyx_v_self->tan_vec = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "analytical_field.pyx":165
+  /* "analytical_field.pyx":305
  *     def __cinit__(self):
  *         self.tan_vec = self._tan_vec_
  *         self.prev_vec = self._prev_vec_             # <<<<<<<<<<<<<<
  *         self.xi = self._xi_
- *         self.pos = self._pos_
+ *         self.ret = self._ret_
  */
   __pyx_t_1 = __pyx_v_self->_prev_vec_;
   if (!__pyx_t_1) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 165, __pyx_L1_error)
+    __PYX_ERR(1, 305, __pyx_L1_error)
   }
   __pyx_t_3 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_4 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 165, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 305, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_2 = __pyx_array_new(__pyx_t_4, sizeof(double), PyBytes_AS_STRING(__pyx_t_3), (char *) "fortran", (char *) __pyx_t_1);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 165, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 305, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 165, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 305, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->prev_vec, 0);
   __pyx_v_self->prev_vec = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "analytical_field.pyx":166
+  /* "analytical_field.pyx":306
  *         self.tan_vec = self._tan_vec_
  *         self.prev_vec = self._prev_vec_
  *         self.xi = self._xi_             # <<<<<<<<<<<<<<
- *         self.pos = self._pos_
- *         self.ret_mv = np.empty(3)
+ *         self.ret = self._ret_
+ * 
  */
   __pyx_t_1 = __pyx_v_self->_xi_;
   if (!__pyx_t_1) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 166, __pyx_L1_error)
+    __PYX_ERR(1, 306, __pyx_L1_error)
   }
   __pyx_t_4 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_3 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 166, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4 || !__pyx_t_3 || !PyBytes_AsString(__pyx_t_4))) __PYX_ERR(1, 306, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_2 = __pyx_array_new(__pyx_t_3, sizeof(double), PyBytes_AS_STRING(__pyx_t_4), (char *) "fortran", (char *) __pyx_t_1);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 166, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 306, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 166, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 306, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->xi, 0);
   __pyx_v_self->xi = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "analytical_field.pyx":167
+  /* "analytical_field.pyx":307
  *         self.prev_vec = self._prev_vec_
  *         self.xi = self._xi_
- *         self.pos = self._pos_             # <<<<<<<<<<<<<<
- *         self.ret_mv = np.empty(3)
- * 
- */
-  __pyx_t_1 = __pyx_v_self->_pos_;
-  if (!__pyx_t_1) {
-    PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 167, __pyx_L1_error)
-  }
-  __pyx_t_3 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
-  __pyx_t_4 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 167, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_2 = __pyx_array_new(__pyx_t_4, sizeof(double), PyBytes_AS_STRING(__pyx_t_3), (char *) "fortran", (char *) __pyx_t_1);
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 167, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 167, __pyx_L1_error)
-  __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
-  __PYX_XDEC_MEMVIEW(&__pyx_v_self->pos, 0);
-  __pyx_v_self->pos = __pyx_t_5;
-  __pyx_t_5.memview = NULL;
-  __pyx_t_5.data = NULL;
-
-  /* "analytical_field.pyx":168
- *         self.xi = self._xi_
- *         self.pos = self._pos_
- *         self.ret_mv = np.empty(3)             # <<<<<<<<<<<<<<
+ *         self.ret = self._ret_             # <<<<<<<<<<<<<<
  * 
  *     @cython.initializedcheck(False)
  */
-  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 168, __pyx_L1_error)
+  __pyx_t_1 = __pyx_v_self->_ret_;
+  if (!__pyx_t_1) {
+    PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
+    __PYX_ERR(1, 307, __pyx_L1_error)
+  }
+  __pyx_t_3 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
+  __pyx_t_4 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
+  if (unlikely(!__pyx_t_3 || !__pyx_t_4 || !PyBytes_AsString(__pyx_t_3))) __PYX_ERR(1, 307, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_empty); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__8, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 168, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_2 = __pyx_array_new(__pyx_t_4, sizeof(double), PyBytes_AS_STRING(__pyx_t_3), (char *) "fortran", (char *) __pyx_t_1);
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 307, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_t_3, PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 168, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __PYX_XDEC_MEMVIEW(&__pyx_v_self->ret_mv, 0);
-  __pyx_v_self->ret_mv = __pyx_t_5;
+  __pyx_t_5 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_2), PyBUF_WRITABLE); if (unlikely(!__pyx_t_5.memview)) __PYX_ERR(1, 307, __pyx_L1_error)
+  __Pyx_DECREF(((PyObject *)__pyx_t_2)); __pyx_t_2 = 0;
+  __PYX_XDEC_MEMVIEW(&__pyx_v_self->ret, 0);
+  __pyx_v_self->ret = __pyx_t_5;
   __pyx_t_5.memview = NULL;
   __pyx_t_5.data = NULL;
 
-  /* "analytical_field.pyx":163
+  /* "analytical_field.pyx":303
  *         bint initialized_prev_vec
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -4762,34 +4736,34 @@ static int __pyx_pf_16analytical_field_21AnalyticalAimAssister___cinit__(struct 
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __PYX_XDEC_MEMVIEW(&__pyx_t_5, 1);
-  __Pyx_AddTraceback("analytical_field.AnalyticalAimAssister.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("analytical_field.AnalyticalDirectionGenerator.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":173
+/* "analytical_field.pyx":312
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
- *     def __init__(self, CallableFunction xi):             # <<<<<<<<<<<<<<
- *         """SplineAimAssister(xi)
- * 
+ *     def __init__(self, CallableFunction f):             # <<<<<<<<<<<<<<
+ *         """
+ *         SplineDirectionGenerator.__init__(f)
  */
 
 /* Python wrapper */
-static int __pyx_pw_16analytical_field_21AnalyticalAimAssister_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_16analytical_field_21AnalyticalAimAssister_2__init__[] = "SplineAimAssister(xi)\n\n        Constructor for the trivariate B-spline aim assister extension type.\n\n        param: xi     -- A CallableFunction instance of the (normalized)\n                         vector field which locally defines the normal vector\n                         to the planes in which one is permitted to aim.\n\n        ";
+static int __pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_16analytical_field_28AnalyticalDirectionGenerator_2__init__[] = "\n        SplineDirectionGenerator.__init__(f)\n\n        Constructor for a AnalyticalDirectionGenerator instance.\n\n        Parameters\n        ----------\n        f : SinusoidalField or SphericalField (as per version 1.0)\n           Extension type which generates an analytically known vector field.\n\n        ";
 #if CYTHON_COMPILING_IN_CPYTHON
-struct wrapperbase __pyx_wrapperbase_16analytical_field_21AnalyticalAimAssister_2__init__;
+struct wrapperbase __pyx_wrapperbase_16analytical_field_28AnalyticalDirectionGenerator_2__init__;
 #endif
-static int __pyx_pw_16analytical_field_21AnalyticalAimAssister_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
-  struct __pyx_obj_16analytical_field_CallableFunction *__pyx_v_xi = 0;
+static int __pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+  struct __pyx_obj_16analytical_field_CallableFunction *__pyx_v_f = 0;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__init__ (wrapper)", 0);
   {
-    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_xi,0};
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_f,0};
     PyObject* values[1] = {0};
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
@@ -4803,29 +4777,29 @@ static int __pyx_pw_16analytical_field_21AnalyticalAimAssister_3__init__(PyObjec
       kw_args = PyDict_Size(__pyx_kwds);
       switch (pos_args) {
         case  0:
-        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_xi)) != 0)) kw_args--;
+        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_f)) != 0)) kw_args--;
         else goto __pyx_L5_argtuple_error;
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 173, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 312, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
     }
-    __pyx_v_xi = ((struct __pyx_obj_16analytical_field_CallableFunction *)values[0]);
+    __pyx_v_f = ((struct __pyx_obj_16analytical_field_CallableFunction *)values[0]);
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 173, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 312, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("analytical_field.AnalyticalAimAssister.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("analytical_field.AnalyticalDirectionGenerator.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_xi), __pyx_ptype_16analytical_field_CallableFunction, 1, "xi", 0))) __PYX_ERR(1, 173, __pyx_L1_error)
-  __pyx_r = __pyx_pf_16analytical_field_21AnalyticalAimAssister_2__init__(((struct __pyx_obj_16analytical_field_AnalyticalAimAssister *)__pyx_v_self), __pyx_v_xi);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_f), __pyx_ptype_16analytical_field_CallableFunction, 1, "f", 0))) __PYX_ERR(1, 312, __pyx_L1_error)
+  __pyx_r = __pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_2__init__(((struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self), __pyx_v_f);
 
   /* function exit code */
   goto __pyx_L0;
@@ -4836,30 +4810,30 @@ static int __pyx_pw_16analytical_field_21AnalyticalAimAssister_3__init__(PyObjec
   return __pyx_r;
 }
 
-static int __pyx_pf_16analytical_field_21AnalyticalAimAssister_2__init__(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, struct __pyx_obj_16analytical_field_CallableFunction *__pyx_v_xi) {
+static int __pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_2__init__(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self, struct __pyx_obj_16analytical_field_CallableFunction *__pyx_v_f) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "analytical_field.pyx":183
+  /* "analytical_field.pyx":324
  * 
  *         """
- *         self.xi_fun = xi             # <<<<<<<<<<<<<<
+ *         self.xi_fun = f             # <<<<<<<<<<<<<<
  * 
  *     @cython.initializedcheck(False)
  */
-  __Pyx_INCREF(((PyObject *)__pyx_v_xi));
-  __Pyx_GIVEREF(((PyObject *)__pyx_v_xi));
+  __Pyx_INCREF(((PyObject *)__pyx_v_f));
+  __Pyx_GIVEREF(((PyObject *)__pyx_v_f));
   __Pyx_GOTREF(__pyx_v_self->xi_fun);
   __Pyx_DECREF(((PyObject *)__pyx_v_self->xi_fun));
-  __pyx_v_self->xi_fun = __pyx_v_xi;
+  __pyx_v_self->xi_fun = __pyx_v_f;
 
-  /* "analytical_field.pyx":173
+  /* "analytical_field.pyx":312
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
- *     def __init__(self, CallableFunction xi):             # <<<<<<<<<<<<<<
- *         """SplineAimAssister(xi)
- * 
+ *     def __init__(self, CallableFunction f):             # <<<<<<<<<<<<<<
+ *         """
+ *         SplineDirectionGenerator.__init__(f)
  */
 
   /* function exit code */
@@ -4868,133 +4842,98 @@ static int __pyx_pf_16analytical_field_21AnalyticalAimAssister_2__init__(struct 
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":188
+/* "analytical_field.pyx":329
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
- *     cpdef void set_tan_vec(self, double[::1] tan_vec):             # <<<<<<<<<<<<<<
- *         if tan_vec.shape[0] != 3:
- *             raise RuntimeError('The interpolation-aiming routine is custom-built'\
+ *     def set_tan_vec(self, double[::1] tan_vec not None):             # <<<<<<<<<<<<<<
+ *         """
+ *         AnalyticalDirectionGenerator.set_tan_vec(tan_vec)
  */
 
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_5set_tan_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_tan_vec); /*proto*/
-static void __pyx_f_16analytical_field_21AnalyticalAimAssister_set_tan_vec(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, __Pyx_memviewslice __pyx_v_tan_vec, int __pyx_skip_dispatch) {
+/* Python wrapper */
+static PyObject *__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_5set_tan_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_tan_vec); /*proto*/
+static char __pyx_doc_16analytical_field_28AnalyticalDirectionGenerator_4set_tan_vec[] = "\n        AnalyticalDirectionGenerator.set_tan_vec(tan_vec)\n\n        Function which sets the approximately tangent vector, to be used in\n        conjunction with the underlying vector field in order to\n        generate step directions in R^3.\n\n        Must be called prior to AnalyticalDirectionGenerator.__call__.\n\n        Parameters\n        ----------\n        tan_vec : (3,) ndarray\n           A (C-contiguous) NumPy array, containing the (approximately) tangent\n           vector.\n\n        ";
+static PyObject *__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_5set_tan_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_tan_vec) {
+  __Pyx_memviewslice __pyx_v_tan_vec = { 0, 0, { 0 }, { 0 }, { 0 } };
+  PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
+  __Pyx_RefNannySetupContext("set_tan_vec (wrapper)", 0);
+  assert(__pyx_arg_tan_vec); {
+    __pyx_v_tan_vec = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_arg_tan_vec, PyBUF_WRITABLE); if (unlikely(!__pyx_v_tan_vec.memview)) __PYX_ERR(1, 329, __pyx_L3_error)
+  }
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L3_error:;
+  __Pyx_AddTraceback("analytical_field.AnalyticalDirectionGenerator.set_tan_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  if (unlikely(((PyObject *)__pyx_v_tan_vec.memview) == Py_None)) {
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "tan_vec"); __PYX_ERR(1, 329, __pyx_L1_error)
+  }
+  __pyx_r = __pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_4set_tan_vec(((struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self), __pyx_v_tan_vec);
+
+  /* function exit code */
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_4set_tan_vec(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self, __Pyx_memviewslice __pyx_v_tan_vec) {
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  int __pyx_t_1;
   PyObject *__pyx_t_2 = NULL;
   PyObject *__pyx_t_3 = NULL;
-  PyObject *__pyx_t_4 = NULL;
-  PyObject *__pyx_t_5 = NULL;
-  PyObject *__pyx_t_6 = NULL;
-  int __pyx_t_7;
   __Pyx_RefNannySetupContext("set_tan_vec", 0);
-  /* Check if called by wrapper */
-  if (unlikely(__pyx_skip_dispatch)) ;
-  /* Check if overridden in Python */
-  else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_set_tan_vec); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 188, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_16analytical_field_21AnalyticalAimAssister_5set_tan_vec)) {
-      __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_tan_vec, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 188, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_3);
-      __Pyx_INCREF(__pyx_t_1);
-      __pyx_t_4 = __pyx_t_1; __pyx_t_5 = NULL;
-      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
-        __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_4);
-        if (likely(__pyx_t_5)) {
-          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
-          __Pyx_INCREF(__pyx_t_5);
-          __Pyx_INCREF(function);
-          __Pyx_DECREF_SET(__pyx_t_4, function);
-        }
-      }
-      if (!__pyx_t_5) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 188, __pyx_L1_error)
-        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __Pyx_GOTREF(__pyx_t_2);
-      } else {
-        #if CYTHON_FAST_PYCALL
-        if (PyFunction_Check(__pyx_t_4)) {
-          PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_3};
-          __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 188, __pyx_L1_error)
-          __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-          __Pyx_GOTREF(__pyx_t_2);
-          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        } else
-        #endif
-        #if CYTHON_FAST_PYCCALL
-        if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
-          PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_3};
-          __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 188, __pyx_L1_error)
-          __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-          __Pyx_GOTREF(__pyx_t_2);
-          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        } else
-        #endif
-        {
-          __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 188, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_6);
-          __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_5); __pyx_t_5 = NULL;
-          __Pyx_GIVEREF(__pyx_t_3);
-          PyTuple_SET_ITEM(__pyx_t_6, 0+1, __pyx_t_3);
-          __pyx_t_3 = 0;
-          __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 188, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_2);
-          __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-        }
-      }
-      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      goto __pyx_L0;
-    }
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  }
 
-  /* "analytical_field.pyx":189
- *     @cython.boundscheck(False)
- *     cpdef void set_tan_vec(self, double[::1] tan_vec):
+  /* "analytical_field.pyx":347
+ *         """
+ * 
  *         if tan_vec.shape[0] != 3:             # <<<<<<<<<<<<<<
- *             raise RuntimeError('The interpolation-aiming routine is custom-built'\
+ *             raise ValueError('The interpolation-aiming routine is custom-built'\
  *                     +' for three dimensional data!')
  */
-  __pyx_t_7 = (((__pyx_v_tan_vec.shape[0]) != 3) != 0);
-  if (unlikely(__pyx_t_7)) {
+  __pyx_t_1 = (((__pyx_v_tan_vec.shape[0]) != 3) != 0);
+  if (unlikely(__pyx_t_1)) {
 
-    /* "analytical_field.pyx":191
+    /* "analytical_field.pyx":349
  *         if tan_vec.shape[0] != 3:
- *             raise RuntimeError('The interpolation-aiming routine is custom-built'\
+ *             raise ValueError('The interpolation-aiming routine is custom-built'\
  *                     +' for three dimensional data!')             # <<<<<<<<<<<<<<
  *         dcopy(3,tan_vec,1,self.tan_vec,1)
  *         self.initialized_tan_vec = True
  */
-    __pyx_t_1 = PyNumber_Add(__pyx_kp_s_The_interpolation_aiming_routine, __pyx_kp_s_for_three_dimensional_data); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 191, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
+    __pyx_t_2 = PyNumber_Add(__pyx_kp_s_The_interpolation_aiming_routine, __pyx_kp_s_for_three_dimensional_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 349, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
 
-    /* "analytical_field.pyx":190
- *     cpdef void set_tan_vec(self, double[::1] tan_vec):
+    /* "analytical_field.pyx":348
+ * 
  *         if tan_vec.shape[0] != 3:
- *             raise RuntimeError('The interpolation-aiming routine is custom-built'\             # <<<<<<<<<<<<<<
+ *             raise ValueError('The interpolation-aiming routine is custom-built'\             # <<<<<<<<<<<<<<
  *                     +' for three dimensional data!')
  *         dcopy(3,tan_vec,1,self.tan_vec,1)
  */
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_RuntimeError, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 190, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_Raise(__pyx_t_2, 0, 0, 0);
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 348, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 190, __pyx_L1_error)
+    __Pyx_Raise(__pyx_t_3, 0, 0, 0);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __PYX_ERR(1, 348, __pyx_L1_error)
 
-    /* "analytical_field.pyx":189
- *     @cython.boundscheck(False)
- *     cpdef void set_tan_vec(self, double[::1] tan_vec):
+    /* "analytical_field.pyx":347
+ *         """
+ * 
  *         if tan_vec.shape[0] != 3:             # <<<<<<<<<<<<<<
- *             raise RuntimeError('The interpolation-aiming routine is custom-built'\
+ *             raise ValueError('The interpolation-aiming routine is custom-built'\
  *                     +' for three dimensional data!')
  */
   }
 
-  /* "analytical_field.pyx":192
- *             raise RuntimeError('The interpolation-aiming routine is custom-built'\
+  /* "analytical_field.pyx":350
+ *             raise ValueError('The interpolation-aiming routine is custom-built'\
  *                     +' for three dimensional data!')
  *         dcopy(3,tan_vec,1,self.tan_vec,1)             # <<<<<<<<<<<<<<
  *         self.initialized_tan_vec = True
@@ -5002,76 +4941,30 @@ static void __pyx_f_16analytical_field_21AnalyticalAimAssister_set_tan_vec(struc
  */
   __pyx_f_16analytical_field_dcopy(3, __pyx_v_tan_vec, 1, __pyx_v_self->tan_vec, 1);
 
-  /* "analytical_field.pyx":193
+  /* "analytical_field.pyx":351
  *                     +' for three dimensional data!')
  *         dcopy(3,tan_vec,1,self.tan_vec,1)
  *         self.initialized_tan_vec = True             # <<<<<<<<<<<<<<
  * 
- *     cpdef void unset_tan_vec(self):
+ *     def unset_tan_vec(self):
  */
   __pyx_v_self->initialized_tan_vec = 1;
 
-  /* "analytical_field.pyx":188
+  /* "analytical_field.pyx":329
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
- *     cpdef void set_tan_vec(self, double[::1] tan_vec):             # <<<<<<<<<<<<<<
- *         if tan_vec.shape[0] != 3:
- *             raise RuntimeError('The interpolation-aiming routine is custom-built'\
+ *     def set_tan_vec(self, double[::1] tan_vec not None):             # <<<<<<<<<<<<<<
+ *         """
+ *         AnalyticalDirectionGenerator.set_tan_vec(tan_vec)
  */
 
   /* function exit code */
+  __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_WriteUnraisable("analytical_field.AnalyticalAimAssister.set_tan_vec", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
-  __pyx_L0:;
-  __Pyx_RefNannyFinishContext();
-}
-
-/* Python wrapper */
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_5set_tan_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_tan_vec); /*proto*/
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_5set_tan_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_tan_vec) {
-  __Pyx_memviewslice __pyx_v_tan_vec = { 0, 0, { 0 }, { 0 }, { 0 } };
-  PyObject *__pyx_r = 0;
-  __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("set_tan_vec (wrapper)", 0);
-  assert(__pyx_arg_tan_vec); {
-    __pyx_v_tan_vec = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_arg_tan_vec, PyBUF_WRITABLE); if (unlikely(!__pyx_v_tan_vec.memview)) __PYX_ERR(1, 188, __pyx_L3_error)
-  }
-  goto __pyx_L4_argument_unpacking_done;
-  __pyx_L3_error:;
-  __Pyx_AddTraceback("analytical_field.AnalyticalAimAssister.set_tan_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  __Pyx_RefNannyFinishContext();
-  return NULL;
-  __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_16analytical_field_21AnalyticalAimAssister_4set_tan_vec(((struct __pyx_obj_16analytical_field_AnalyticalAimAssister *)__pyx_v_self), __pyx_v_tan_vec);
-
-  /* function exit code */
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_4set_tan_vec(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, __Pyx_memviewslice __pyx_v_tan_vec) {
-  PyObject *__pyx_r = NULL;
-  __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
-  __Pyx_RefNannySetupContext("set_tan_vec", 0);
-  __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_void_to_None(__pyx_f_16analytical_field_21AnalyticalAimAssister_set_tan_vec(__pyx_v_self, __pyx_v_tan_vec, 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 188, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_r = __pyx_t_1;
-  __pyx_t_1 = 0;
-  goto __pyx_L0;
-
-  /* function exit code */
-  __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("analytical_field.AnalyticalAimAssister.set_tan_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("analytical_field.AnalyticalDirectionGenerator.set_tan_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_tan_vec, 1);
@@ -5080,334 +4973,191 @@ static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_4set_tan_ve
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":195
+/* "analytical_field.pyx":353
  *         self.initialized_tan_vec = True
  * 
- *     cpdef void unset_tan_vec(self):             # <<<<<<<<<<<<<<
- *         """SplineAimAssister.unset_target()
- * 
- */
-
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_7unset_tan_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static void __pyx_f_16analytical_field_21AnalyticalAimAssister_unset_tan_vec(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, int __pyx_skip_dispatch) {
-  __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
-  PyObject *__pyx_t_2 = NULL;
-  PyObject *__pyx_t_3 = NULL;
-  PyObject *__pyx_t_4 = NULL;
-  __Pyx_RefNannySetupContext("unset_tan_vec", 0);
-  /* Check if called by wrapper */
-  if (unlikely(__pyx_skip_dispatch)) ;
-  /* Check if overridden in Python */
-  else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_unset_tan_vec); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 195, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_16analytical_field_21AnalyticalAimAssister_7unset_tan_vec)) {
-      __Pyx_INCREF(__pyx_t_1);
-      __pyx_t_3 = __pyx_t_1; __pyx_t_4 = NULL;
-      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
-        __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_3);
-        if (likely(__pyx_t_4)) {
-          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-          __Pyx_INCREF(__pyx_t_4);
-          __Pyx_INCREF(function);
-          __Pyx_DECREF_SET(__pyx_t_3, function);
-        }
-      }
-      if (__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 195, __pyx_L1_error)
-        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      } else {
-        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 195, __pyx_L1_error)
-      }
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      goto __pyx_L0;
-    }
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  }
-
-  /* "analytical_field.pyx":202
- * 
+ *     def unset_tan_vec(self):             # <<<<<<<<<<<<<<
  *         """
- *         self.initialized_tan_vec = False             # <<<<<<<<<<<<<<
- * 
- *     @cython.initializedcheck(False)
+ *         AnalyticalDirectionGenerator.unset_tan_vec()
  */
-  __pyx_v_self->initialized_tan_vec = 0;
-
-  /* "analytical_field.pyx":195
- *         self.initialized_tan_vec = True
- * 
- *     cpdef void unset_tan_vec(self):             # <<<<<<<<<<<<<<
- *         """SplineAimAssister.unset_target()
- * 
- */
-
-  /* function exit code */
-  goto __pyx_L0;
-  __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_WriteUnraisable("analytical_field.AnalyticalAimAssister.unset_tan_vec", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
-  __pyx_L0:;
-  __Pyx_RefNannyFinishContext();
-}
 
 /* Python wrapper */
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_7unset_tan_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_16analytical_field_21AnalyticalAimAssister_6unset_tan_vec[] = "SplineAimAssister.unset_target()\n\n        Unsets the target. Useful in order to ensure that the target is always\n        updated when it should be.\n\n        ";
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_7unset_tan_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_7unset_tan_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_16analytical_field_28AnalyticalDirectionGenerator_6unset_tan_vec[] = "\n        AnalyticalDirectionGenerator.unset_tan_vec()\n\n        Unsets the tangent vector.\n\n        ";
+static PyObject *__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_7unset_tan_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("unset_tan_vec (wrapper)", 0);
-  __pyx_r = __pyx_pf_16analytical_field_21AnalyticalAimAssister_6unset_tan_vec(((struct __pyx_obj_16analytical_field_AnalyticalAimAssister *)__pyx_v_self));
+  __pyx_r = __pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_6unset_tan_vec(((struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_6unset_tan_vec(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self) {
+static PyObject *__pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_6unset_tan_vec(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("unset_tan_vec", 0);
-  __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_void_to_None(__pyx_f_16analytical_field_21AnalyticalAimAssister_unset_tan_vec(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 195, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_r = __pyx_t_1;
-  __pyx_t_1 = 0;
-  goto __pyx_L0;
+
+  /* "analytical_field.pyx":360
+ * 
+ *         """
+ *         self.initialized_tan_vec = False             # <<<<<<<<<<<<<<
+ * 
+ *     def set_prev_vec(self, double[::1] prev_vec  not None):
+ */
+  __pyx_v_self->initialized_tan_vec = 0;
+
+  /* "analytical_field.pyx":353
+ *         self.initialized_tan_vec = True
+ * 
+ *     def unset_tan_vec(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         AnalyticalDirectionGenerator.unset_tan_vec()
+ */
 
   /* function exit code */
-  __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("analytical_field.AnalyticalAimAssister.unset_tan_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  __pyx_r = NULL;
-  __pyx_L0:;
+  __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":207
- *     @cython.wraparound(False)
- *     @cython.boundscheck(False)
- *     cpdef void set_prev_vec(self, double[::1] prev_vec):             # <<<<<<<<<<<<<<
- *         if prev_vec.shape[0] != 3:
- *             raise RuntimeError('The interpolation-aiming routine is custom-built'\
+/* "analytical_field.pyx":362
+ *         self.initialized_tan_vec = False
+ * 
+ *     def set_prev_vec(self, double[::1] prev_vec  not None):             # <<<<<<<<<<<<<<
+ *         """
+ *         AnalyticalDirectionGenerator.set_prev_vec(prev_vec)
  */
 
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_9set_prev_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_prev_vec); /*proto*/
-static void __pyx_f_16analytical_field_21AnalyticalAimAssister_set_prev_vec(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, __Pyx_memviewslice __pyx_v_prev_vec, int __pyx_skip_dispatch) {
+/* Python wrapper */
+static PyObject *__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_9set_prev_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_prev_vec); /*proto*/
+static char __pyx_doc_16analytical_field_28AnalyticalDirectionGenerator_8set_prev_vec[] = "\n        AnalyticalDirectionGenerator.set_prev_vec(prev_vec)\n\n        Function which sets the previous vector, which is used in order\n        to ensure that any trajectory does not instantaneously fold onto\n        itself in regions with strong orientational discontinuities.\n\n        Must be called prior to AnalyticalDirectionGenerator.__call__.\n\n        Parameters\n        ----------\n        prev_vec : (3,) ndarray\n           A (C-contiguous) NumPy array, containing the (approximately) prevgent\n           vector.\n\n        ";
+static PyObject *__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_9set_prev_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_prev_vec) {
+  __Pyx_memviewslice __pyx_v_prev_vec = { 0, 0, { 0 }, { 0 }, { 0 } };
+  PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
+  __Pyx_RefNannySetupContext("set_prev_vec (wrapper)", 0);
+  assert(__pyx_arg_prev_vec); {
+    __pyx_v_prev_vec = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_arg_prev_vec, PyBUF_WRITABLE); if (unlikely(!__pyx_v_prev_vec.memview)) __PYX_ERR(1, 362, __pyx_L3_error)
+  }
+  goto __pyx_L4_argument_unpacking_done;
+  __pyx_L3_error:;
+  __Pyx_AddTraceback("analytical_field.AnalyticalDirectionGenerator.set_prev_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_RefNannyFinishContext();
+  return NULL;
+  __pyx_L4_argument_unpacking_done:;
+  if (unlikely(((PyObject *)__pyx_v_prev_vec.memview) == Py_None)) {
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "prev_vec"); __PYX_ERR(1, 362, __pyx_L1_error)
+  }
+  __pyx_r = __pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_8set_prev_vec(((struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self), __pyx_v_prev_vec);
+
+  /* function exit code */
+  goto __pyx_L0;
+  __pyx_L1_error:;
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_8set_prev_vec(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self, __Pyx_memviewslice __pyx_v_prev_vec) {
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  int __pyx_t_1;
   PyObject *__pyx_t_2 = NULL;
   PyObject *__pyx_t_3 = NULL;
-  PyObject *__pyx_t_4 = NULL;
-  PyObject *__pyx_t_5 = NULL;
-  PyObject *__pyx_t_6 = NULL;
-  int __pyx_t_7;
   __Pyx_RefNannySetupContext("set_prev_vec", 0);
-  /* Check if called by wrapper */
-  if (unlikely(__pyx_skip_dispatch)) ;
-  /* Check if overridden in Python */
-  else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_set_prev_vec); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 207, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_16analytical_field_21AnalyticalAimAssister_9set_prev_vec)) {
-      __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_prev_vec, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 207, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_3);
-      __Pyx_INCREF(__pyx_t_1);
-      __pyx_t_4 = __pyx_t_1; __pyx_t_5 = NULL;
-      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
-        __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_4);
-        if (likely(__pyx_t_5)) {
-          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
-          __Pyx_INCREF(__pyx_t_5);
-          __Pyx_INCREF(function);
-          __Pyx_DECREF_SET(__pyx_t_4, function);
-        }
-      }
-      if (!__pyx_t_5) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 207, __pyx_L1_error)
-        __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        __Pyx_GOTREF(__pyx_t_2);
-      } else {
-        #if CYTHON_FAST_PYCALL
-        if (PyFunction_Check(__pyx_t_4)) {
-          PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_3};
-          __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 207, __pyx_L1_error)
-          __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-          __Pyx_GOTREF(__pyx_t_2);
-          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        } else
-        #endif
-        #if CYTHON_FAST_PYCCALL
-        if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
-          PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_3};
-          __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 207, __pyx_L1_error)
-          __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-          __Pyx_GOTREF(__pyx_t_2);
-          __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-        } else
-        #endif
-        {
-          __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 207, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_6);
-          __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_5); __pyx_t_5 = NULL;
-          __Pyx_GIVEREF(__pyx_t_3);
-          PyTuple_SET_ITEM(__pyx_t_6, 0+1, __pyx_t_3);
-          __pyx_t_3 = 0;
-          __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 207, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_2);
-          __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-        }
-      }
-      __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      goto __pyx_L0;
-    }
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  }
 
-  /* "analytical_field.pyx":208
- *     @cython.boundscheck(False)
- *     cpdef void set_prev_vec(self, double[::1] prev_vec):
+  /* "analytical_field.pyx":379
+ * 
+ *         """
  *         if prev_vec.shape[0] != 3:             # <<<<<<<<<<<<<<
- *             raise RuntimeError('The interpolation-aiming routine is custom-built'\
+ *             raise ValueError('The interpolation-aiming routine is custom-built'\
  *                     +' for three dimensional data!')
  */
-  __pyx_t_7 = (((__pyx_v_prev_vec.shape[0]) != 3) != 0);
-  if (unlikely(__pyx_t_7)) {
+  __pyx_t_1 = (((__pyx_v_prev_vec.shape[0]) != 3) != 0);
+  if (unlikely(__pyx_t_1)) {
 
-    /* "analytical_field.pyx":210
+    /* "analytical_field.pyx":381
  *         if prev_vec.shape[0] != 3:
- *             raise RuntimeError('The interpolation-aiming routine is custom-built'\
+ *             raise ValueError('The interpolation-aiming routine is custom-built'\
  *                     +' for three dimensional data!')             # <<<<<<<<<<<<<<
  *         dcopy(3,prev_vec,1,self.prev_vec,1)
  *         _cy_normalize_(self.prev_vec)
  */
-    __pyx_t_1 = PyNumber_Add(__pyx_kp_s_The_interpolation_aiming_routine, __pyx_kp_s_for_three_dimensional_data); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 210, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
+    __pyx_t_2 = PyNumber_Add(__pyx_kp_s_The_interpolation_aiming_routine, __pyx_kp_s_for_three_dimensional_data); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 381, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
 
-    /* "analytical_field.pyx":209
- *     cpdef void set_prev_vec(self, double[::1] prev_vec):
+    /* "analytical_field.pyx":380
+ *         """
  *         if prev_vec.shape[0] != 3:
- *             raise RuntimeError('The interpolation-aiming routine is custom-built'\             # <<<<<<<<<<<<<<
+ *             raise ValueError('The interpolation-aiming routine is custom-built'\             # <<<<<<<<<<<<<<
  *                     +' for three dimensional data!')
  *         dcopy(3,prev_vec,1,self.prev_vec,1)
  */
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_RuntimeError, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 209, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_Raise(__pyx_t_2, 0, 0, 0);
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 380, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __PYX_ERR(1, 209, __pyx_L1_error)
+    __Pyx_Raise(__pyx_t_3, 0, 0, 0);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __PYX_ERR(1, 380, __pyx_L1_error)
 
-    /* "analytical_field.pyx":208
- *     @cython.boundscheck(False)
- *     cpdef void set_prev_vec(self, double[::1] prev_vec):
+    /* "analytical_field.pyx":379
+ * 
+ *         """
  *         if prev_vec.shape[0] != 3:             # <<<<<<<<<<<<<<
- *             raise RuntimeError('The interpolation-aiming routine is custom-built'\
+ *             raise ValueError('The interpolation-aiming routine is custom-built'\
  *                     +' for three dimensional data!')
  */
   }
 
-  /* "analytical_field.pyx":211
- *             raise RuntimeError('The interpolation-aiming routine is custom-built'\
+  /* "analytical_field.pyx":382
+ *             raise ValueError('The interpolation-aiming routine is custom-built'\
  *                     +' for three dimensional data!')
  *         dcopy(3,prev_vec,1,self.prev_vec,1)             # <<<<<<<<<<<<<<
  *         _cy_normalize_(self.prev_vec)
  *         self.initialized_prev_vec = True
  */
+  if (unlikely(!__pyx_v_self->prev_vec.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(1, 382, __pyx_L1_error)}
   __pyx_f_16analytical_field_dcopy(3, __pyx_v_prev_vec, 1, __pyx_v_self->prev_vec, 1);
 
-  /* "analytical_field.pyx":212
+  /* "analytical_field.pyx":383
  *                     +' for three dimensional data!')
  *         dcopy(3,prev_vec,1,self.prev_vec,1)
  *         _cy_normalize_(self.prev_vec)             # <<<<<<<<<<<<<<
  *         self.initialized_prev_vec = True
  * 
  */
+  if (unlikely(!__pyx_v_self->prev_vec.memview)) {PyErr_SetString(PyExc_AttributeError,"Memoryview is not initialized");__PYX_ERR(1, 383, __pyx_L1_error)}
   __pyx_f_16analytical_field__cy_normalize_(__pyx_v_self->prev_vec);
 
-  /* "analytical_field.pyx":213
+  /* "analytical_field.pyx":384
  *         dcopy(3,prev_vec,1,self.prev_vec,1)
  *         _cy_normalize_(self.prev_vec)
  *         self.initialized_prev_vec = True             # <<<<<<<<<<<<<<
  * 
- *     cpdef void unset_prev_vec(self):
+ *     def unset_prev_vec(self):
  */
   __pyx_v_self->initialized_prev_vec = 1;
 
-  /* "analytical_field.pyx":207
- *     @cython.wraparound(False)
- *     @cython.boundscheck(False)
- *     cpdef void set_prev_vec(self, double[::1] prev_vec):             # <<<<<<<<<<<<<<
- *         if prev_vec.shape[0] != 3:
- *             raise RuntimeError('The interpolation-aiming routine is custom-built'\
+  /* "analytical_field.pyx":362
+ *         self.initialized_tan_vec = False
+ * 
+ *     def set_prev_vec(self, double[::1] prev_vec  not None):             # <<<<<<<<<<<<<<
+ *         """
+ *         AnalyticalDirectionGenerator.set_prev_vec(prev_vec)
  */
 
   /* function exit code */
+  __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_WriteUnraisable("analytical_field.AnalyticalAimAssister.set_prev_vec", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
-  __pyx_L0:;
-  __Pyx_RefNannyFinishContext();
-}
-
-/* Python wrapper */
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_9set_prev_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_prev_vec); /*proto*/
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_9set_prev_vec(PyObject *__pyx_v_self, PyObject *__pyx_arg_prev_vec) {
-  __Pyx_memviewslice __pyx_v_prev_vec = { 0, 0, { 0 }, { 0 }, { 0 } };
-  PyObject *__pyx_r = 0;
-  __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("set_prev_vec (wrapper)", 0);
-  assert(__pyx_arg_prev_vec); {
-    __pyx_v_prev_vec = __Pyx_PyObject_to_MemoryviewSlice_dc_double(__pyx_arg_prev_vec, PyBUF_WRITABLE); if (unlikely(!__pyx_v_prev_vec.memview)) __PYX_ERR(1, 207, __pyx_L3_error)
-  }
-  goto __pyx_L4_argument_unpacking_done;
-  __pyx_L3_error:;
-  __Pyx_AddTraceback("analytical_field.AnalyticalAimAssister.set_prev_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  __Pyx_RefNannyFinishContext();
-  return NULL;
-  __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_16analytical_field_21AnalyticalAimAssister_8set_prev_vec(((struct __pyx_obj_16analytical_field_AnalyticalAimAssister *)__pyx_v_self), __pyx_v_prev_vec);
-
-  /* function exit code */
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_8set_prev_vec(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, __Pyx_memviewslice __pyx_v_prev_vec) {
-  PyObject *__pyx_r = NULL;
-  __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
-  __Pyx_RefNannySetupContext("set_prev_vec", 0);
-  __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_void_to_None(__pyx_f_16analytical_field_21AnalyticalAimAssister_set_prev_vec(__pyx_v_self, __pyx_v_prev_vec, 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 207, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_r = __pyx_t_1;
-  __pyx_t_1 = 0;
-  goto __pyx_L0;
-
-  /* function exit code */
-  __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("analytical_field.AnalyticalAimAssister.set_prev_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("analytical_field.AnalyticalDirectionGenerator.set_prev_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_prev_vec, 1);
@@ -5416,56 +5166,34 @@ static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_8set_prev_v
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":215
+/* "analytical_field.pyx":386
  *         self.initialized_prev_vec = True
  * 
- *     cpdef void unset_prev_vec(self):             # <<<<<<<<<<<<<<
- *         """SplineAimAssister.unset_target()
- * 
+ *     def unset_prev_vec(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         AnalyticalDirectionGenerator.unset_prev_vec()
  */
 
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_11unset_prev_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static void __pyx_f_16analytical_field_21AnalyticalAimAssister_unset_prev_vec(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, int __pyx_skip_dispatch) {
+/* Python wrapper */
+static PyObject *__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_11unset_prev_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static char __pyx_doc_16analytical_field_28AnalyticalDirectionGenerator_10unset_prev_vec[] = "\n        AnalyticalDirectionGenerator.unset_prev_vec()\n\n        Unsets the previous vector.\n\n        ";
+static PyObject *__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_11unset_prev_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+  PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
-  PyObject *__pyx_t_2 = NULL;
-  PyObject *__pyx_t_3 = NULL;
-  PyObject *__pyx_t_4 = NULL;
-  __Pyx_RefNannySetupContext("unset_prev_vec", 0);
-  /* Check if called by wrapper */
-  if (unlikely(__pyx_skip_dispatch)) ;
-  /* Check if overridden in Python */
-  else if (unlikely(Py_TYPE(((PyObject *)__pyx_v_self))->tp_dictoffset != 0)) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_unset_prev_vec); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 215, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    if (!PyCFunction_Check(__pyx_t_1) || (PyCFunction_GET_FUNCTION(__pyx_t_1) != (PyCFunction)__pyx_pw_16analytical_field_21AnalyticalAimAssister_11unset_prev_vec)) {
-      __Pyx_INCREF(__pyx_t_1);
-      __pyx_t_3 = __pyx_t_1; __pyx_t_4 = NULL;
-      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
-        __pyx_t_4 = PyMethod_GET_SELF(__pyx_t_3);
-        if (likely(__pyx_t_4)) {
-          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_3);
-          __Pyx_INCREF(__pyx_t_4);
-          __Pyx_INCREF(function);
-          __Pyx_DECREF_SET(__pyx_t_3, function);
-        }
-      }
-      if (__pyx_t_4) {
-        __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 215, __pyx_L1_error)
-        __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      } else {
-        __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 215, __pyx_L1_error)
-      }
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-      __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      goto __pyx_L0;
-    }
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  }
+  __Pyx_RefNannySetupContext("unset_prev_vec (wrapper)", 0);
+  __pyx_r = __pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_10unset_prev_vec(((struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self));
 
-  /* "analytical_field.pyx":222
+  /* function exit code */
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+static PyObject *__pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_10unset_prev_vec(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self) {
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  __Pyx_RefNannySetupContext("unset_prev_vec", 0);
+
+  /* "analytical_field.pyx":393
  * 
  *         """
  *         self.initialized_prev_vec = False             # <<<<<<<<<<<<<<
@@ -5474,88 +5202,47 @@ static void __pyx_f_16analytical_field_21AnalyticalAimAssister_unset_prev_vec(st
  */
   __pyx_v_self->initialized_prev_vec = 0;
 
-  /* "analytical_field.pyx":215
+  /* "analytical_field.pyx":386
  *         self.initialized_prev_vec = True
  * 
- *     cpdef void unset_prev_vec(self):             # <<<<<<<<<<<<<<
- *         """SplineAimAssister.unset_target()
- * 
+ *     def unset_prev_vec(self):             # <<<<<<<<<<<<<<
+ *         """
+ *         AnalyticalDirectionGenerator.unset_prev_vec()
  */
 
   /* function exit code */
-  goto __pyx_L0;
-  __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_WriteUnraisable("analytical_field.AnalyticalAimAssister.unset_prev_vec", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
-  __pyx_L0:;
-  __Pyx_RefNannyFinishContext();
-}
-
-/* Python wrapper */
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_11unset_prev_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_16analytical_field_21AnalyticalAimAssister_10unset_prev_vec[] = "SplineAimAssister.unset_target()\n\n        Unsets the target. Useful in order to ensure that the target is always\n        updated when it should be.\n\n        ";
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_11unset_prev_vec(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
-  PyObject *__pyx_r = 0;
-  __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("unset_prev_vec (wrapper)", 0);
-  __pyx_r = __pyx_pf_16analytical_field_21AnalyticalAimAssister_10unset_prev_vec(((struct __pyx_obj_16analytical_field_AnalyticalAimAssister *)__pyx_v_self));
-
-  /* function exit code */
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_10unset_prev_vec(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self) {
-  PyObject *__pyx_r = NULL;
-  __Pyx_RefNannyDeclarations
-  PyObject *__pyx_t_1 = NULL;
-  __Pyx_RefNannySetupContext("unset_prev_vec", 0);
-  __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_void_to_None(__pyx_f_16analytical_field_21AnalyticalAimAssister_unset_prev_vec(__pyx_v_self, 1)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 215, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_r = __pyx_t_1;
-  __pyx_t_1 = 0;
-  goto __pyx_L0;
-
-  /* function exit code */
-  __pyx_L1_error:;
-  __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("analytical_field.AnalyticalAimAssister.unset_prev_vec", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  __pyx_r = NULL;
-  __pyx_L0:;
+  __pyx_r = Py_None; __Pyx_INCREF(Py_None);
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":228
+/* "analytical_field.pyx":399
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
- *     def __call__(self, double t, double[::1] pos not None):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double[::1] ret = self.ret_mv
+ *     def __call__(self, double[::1] pos not None):             # <<<<<<<<<<<<<<
+ *         """
+ *         AnalyticalDirectionGenerator.__call__(pos)
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_13__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_13__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
-  double __pyx_v_t;
+static PyObject *__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_13__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static char __pyx_doc_16analytical_field_28AnalyticalDirectionGenerator_12__call__[] = "\n        AnalyticalDirectionGenerator.__call__(pos)\n\n        Generates a trajectory direction at pos, based upon the underlying\n        vector field and the pre-set tan_vec and prev_vec.\n\n        Parameters\n        ----------\n        pos : (3,) array-like\n           A (C-contiguous) NumPy array containing the (Cartesian) coordinates\n           of the point in R^3 at which a direction is sought.\n\n        Returns\n        -------\n        vec : (3,) ndarray\n           A (C-contiguous) NumPy array containing the normalized direction.\n\n        ";
+#if CYTHON_COMPILING_IN_CPYTHON
+struct wrapperbase __pyx_wrapperbase_16analytical_field_28AnalyticalDirectionGenerator_12__call__;
+#endif
+static PyObject *__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_13__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_pos = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__call__ (wrapper)", 0);
   {
-    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_t,&__pyx_n_s_pos,0};
-    PyObject* values[2] = {0,0};
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_pos,0};
+    PyObject* values[1] = {0};
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
       switch (pos_args) {
-        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
-        CYTHON_FALLTHROUGH;
         case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
         CYTHON_FALLTHROUGH;
         case  0: break;
@@ -5564,39 +5251,31 @@ static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_13__call__(
       kw_args = PyDict_Size(__pyx_kwds);
       switch (pos_args) {
         case  0:
-        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_t)) != 0)) kw_args--;
+        if (likely((values[0] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_pos)) != 0)) kw_args--;
         else goto __pyx_L5_argtuple_error;
-        CYTHON_FALLTHROUGH;
-        case  1:
-        if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_pos)) != 0)) kw_args--;
-        else {
-          __Pyx_RaiseArgtupleInvalid("__call__", 1, 2, 2, 1); __PYX_ERR(1, 228, __pyx_L3_error)
-        }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 228, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 399, __pyx_L3_error)
       }
-    } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
+    } else if (PyTuple_GET_SIZE(__pyx_args) != 1) {
       goto __pyx_L5_argtuple_error;
     } else {
       values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
-      values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
     }
-    __pyx_v_t = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_t == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 228, __pyx_L3_error)
-    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 228, __pyx_L3_error)
+    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[0], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 399, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__call__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 228, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__call__", 1, 1, 1, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 399, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("analytical_field.AnalyticalAimAssister.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("analytical_field.AnalyticalDirectionGenerator.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(((PyObject *)__pyx_v_pos.memview) == Py_None)) {
-    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "pos"); __PYX_ERR(1, 228, __pyx_L1_error)
+    PyErr_Format(PyExc_TypeError, "Argument '%.200s' must not be None", "pos"); __PYX_ERR(1, 399, __pyx_L1_error)
   }
-  __pyx_r = __pyx_pf_16analytical_field_21AnalyticalAimAssister_12__call__(((struct __pyx_obj_16analytical_field_AnalyticalAimAssister *)__pyx_v_self), __pyx_v_t, __pyx_v_pos);
+  __pyx_r = __pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_12__call__(((struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self), __pyx_v_pos);
 
   /* function exit code */
   goto __pyx_L0;
@@ -5607,144 +5286,8 @@ static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_13__call__(
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_12__call__(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, double __pyx_v_t, __Pyx_memviewslice __pyx_v_pos) {
+static PyObject *__pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_12__call__(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos) {
   __Pyx_memviewslice __pyx_v_ret = { 0, 0, { 0 }, { 0 }, { 0 } };
-  PyObject *__pyx_r = NULL;
-  __Pyx_RefNannyDeclarations
-  __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  PyObject *__pyx_t_2 = NULL;
-  PyObject *__pyx_t_3 = NULL;
-  PyObject *__pyx_t_4 = NULL;
-  PyObject *__pyx_t_5 = NULL;
-  PyObject *__pyx_t_6 = NULL;
-  __Pyx_RefNannySetupContext("__call__", 0);
-
-  /* "analytical_field.pyx":230
- *     def __call__(self, double t, double[::1] pos not None):
- *         cdef:
- *             double[::1] ret = self.ret_mv             # <<<<<<<<<<<<<<
- *         self._ev_(t,pos,ret)
- *         return np.copy(ret)
- */
-  __pyx_t_1 = __pyx_v_self->ret_mv;
-  __PYX_INC_MEMVIEW(&__pyx_t_1, 1);
-  __pyx_v_ret = __pyx_t_1;
-  __pyx_t_1.memview = NULL;
-  __pyx_t_1.data = NULL;
-
-  /* "analytical_field.pyx":231
- *         cdef:
- *             double[::1] ret = self.ret_mv
- *         self._ev_(t,pos,ret)             # <<<<<<<<<<<<<<
- *         return np.copy(ret)
- * 
- */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister *)__pyx_v_self->__pyx_vtab)->_ev_(__pyx_v_self, __pyx_v_t, __pyx_v_pos, __pyx_v_ret); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 231, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_2);
-  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-
-  /* "analytical_field.pyx":232
- *             double[::1] ret = self.ret_mv
- *         self._ev_(t,pos,ret)
- *         return np.copy(ret)             # <<<<<<<<<<<<<<
- * 
- *     @cython.initializedcheck(False)
- */
-  __Pyx_XDECREF(__pyx_r);
-  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 232, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_copy); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 232, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_ret, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 232, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = NULL;
-  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
-    __pyx_t_5 = PyMethod_GET_SELF(__pyx_t_4);
-    if (likely(__pyx_t_5)) {
-      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_4);
-      __Pyx_INCREF(__pyx_t_5);
-      __Pyx_INCREF(function);
-      __Pyx_DECREF_SET(__pyx_t_4, function);
-    }
-  }
-  if (!__pyx_t_5) {
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 232, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_GOTREF(__pyx_t_2);
-  } else {
-    #if CYTHON_FAST_PYCALL
-    if (PyFunction_Check(__pyx_t_4)) {
-      PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_3};
-      __pyx_t_2 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 232, __pyx_L1_error)
-      __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    } else
-    #endif
-    #if CYTHON_FAST_PYCCALL
-    if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
-      PyObject *__pyx_temp[2] = {__pyx_t_5, __pyx_t_3};
-      __pyx_t_2 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 232, __pyx_L1_error)
-      __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    } else
-    #endif
-    {
-      __pyx_t_6 = PyTuple_New(1+1); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 232, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_6);
-      __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_5); __pyx_t_5 = NULL;
-      __Pyx_GIVEREF(__pyx_t_3);
-      PyTuple_SET_ITEM(__pyx_t_6, 0+1, __pyx_t_3);
-      __pyx_t_3 = 0;
-      __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_6, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 232, __pyx_L1_error)
-      __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    }
-  }
-  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_r = __pyx_t_2;
-  __pyx_t_2 = 0;
-  goto __pyx_L0;
-
-  /* "analytical_field.pyx":228
- *     @cython.wraparound(False)
- *     @cython.boundscheck(False)
- *     def __call__(self, double t, double[::1] pos not None):             # <<<<<<<<<<<<<<
- *         cdef:
- *             double[::1] ret = self.ret_mv
- */
-
-  /* function exit code */
-  __pyx_L1_error:;
-  __PYX_XDEC_MEMVIEW(&__pyx_t_1, 1);
-  __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_AddTraceback("analytical_field.AnalyticalAimAssister.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
-  __pyx_r = NULL;
-  __pyx_L0:;
-  __PYX_XDEC_MEMVIEW(&__pyx_v_ret, 1);
-  __PYX_XDEC_MEMVIEW(&__pyx_v_pos, 1);
-  __Pyx_XGIVEREF(__pyx_r);
-  __Pyx_RefNannyFinishContext();
-  return __pyx_r;
-}
-
-/* "analytical_field.pyx":237
- *     @cython.wraparound(False)
- *     @cython.boundscheck(False)
- *     cdef _ev_(self, double t, double[::1] &pos_, double[::1] &ret):             # <<<<<<<<<<<<<<
- *         """SplineAimAssister._ev_(pos)
- * 
- */
-
-static PyObject *__pyx_f_16analytical_field_21AnalyticalAimAssister__ev_(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, CYTHON_UNUSED double __pyx_v_t, __Pyx_memviewslice &__pyx_v_pos_, __Pyx_memviewslice &__pyx_v_ret) {
-  __Pyx_memviewslice __pyx_v_xi = { 0, 0, { 0 }, { 0 }, { 0 } };
-  __Pyx_memviewslice __pyx_v_pos = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -5752,75 +5295,73 @@ static PyObject *__pyx_f_16analytical_field_21AnalyticalAimAssister__ev_(struct 
   PyObject *__pyx_t_3 = NULL;
   PyObject *__pyx_t_4 = NULL;
   int __pyx_t_5;
-  __Pyx_RefNannySetupContext("_ev_", 0);
+  PyObject *__pyx_t_6 = NULL;
+  PyObject *__pyx_t_7 = NULL;
+  PyObject *__pyx_t_8 = NULL;
+  __Pyx_RefNannySetupContext("__call__", 0);
 
-  /* "analytical_field.pyx":253
+  /* "analytical_field.pyx":419
  *         """
  *         cdef:
- *             double[::1] xi = self.xi, pos = self.pos             # <<<<<<<<<<<<<<
- *         if pos_.shape[0] != 3:
- *             raise RuntimeError('The aiming routine is custom-built'\
+ *             double[::1] ret = self.ret             # <<<<<<<<<<<<<<
+ * 
+ *         if pos.shape[0] != 3:
  */
-  __pyx_t_1 = __pyx_v_self->xi;
+  __pyx_t_1 = __pyx_v_self->ret;
   __PYX_INC_MEMVIEW(&__pyx_t_1, 1);
-  __pyx_v_xi = __pyx_t_1;
-  __pyx_t_1.memview = NULL;
-  __pyx_t_1.data = NULL;
-  __pyx_t_1 = __pyx_v_self->pos;
-  __PYX_INC_MEMVIEW(&__pyx_t_1, 1);
-  __pyx_v_pos = __pyx_t_1;
+  __pyx_v_ret = __pyx_t_1;
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "analytical_field.pyx":254
- *         cdef:
- *             double[::1] xi = self.xi, pos = self.pos
- *         if pos_.shape[0] != 3:             # <<<<<<<<<<<<<<
- *             raise RuntimeError('The aiming routine is custom-built'\
+  /* "analytical_field.pyx":421
+ *             double[::1] ret = self.ret
+ * 
+ *         if pos.shape[0] != 3:             # <<<<<<<<<<<<<<
+ *             raise ValueError('The aiming routine is custom-built'\
  *                     +' for three dimensional data!')
  */
-  __pyx_t_2 = (((__pyx_v_pos_.shape[0]) != 3) != 0);
+  __pyx_t_2 = (((__pyx_v_pos.shape[0]) != 3) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "analytical_field.pyx":256
- *         if pos_.shape[0] != 3:
- *             raise RuntimeError('The aiming routine is custom-built'\
+    /* "analytical_field.pyx":423
+ *         if pos.shape[0] != 3:
+ *             raise ValueError('The aiming routine is custom-built'\
  *                     +' for three dimensional data!')             # <<<<<<<<<<<<<<
  * 
  *         if not (self.initialized_tan_vec and self.initialized_prev_vec):
  */
-    __pyx_t_3 = PyNumber_Add(__pyx_kp_s_The_aiming_routine_is_custom_bui, __pyx_kp_s_for_three_dimensional_data); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 256, __pyx_L1_error)
+    __pyx_t_3 = PyNumber_Add(__pyx_kp_s_The_aiming_routine_is_custom_bui, __pyx_kp_s_for_three_dimensional_data); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 423, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
 
-    /* "analytical_field.pyx":255
- *             double[::1] xi = self.xi, pos = self.pos
- *         if pos_.shape[0] != 3:
- *             raise RuntimeError('The aiming routine is custom-built'\             # <<<<<<<<<<<<<<
+    /* "analytical_field.pyx":422
+ * 
+ *         if pos.shape[0] != 3:
+ *             raise ValueError('The aiming routine is custom-built'\             # <<<<<<<<<<<<<<
  *                     +' for three dimensional data!')
  * 
  */
-    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_RuntimeError, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 255, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_ValueError, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 422, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(1, 255, __pyx_L1_error)
+    __PYX_ERR(1, 422, __pyx_L1_error)
 
-    /* "analytical_field.pyx":254
- *         cdef:
- *             double[::1] xi = self.xi, pos = self.pos
- *         if pos_.shape[0] != 3:             # <<<<<<<<<<<<<<
- *             raise RuntimeError('The aiming routine is custom-built'\
+    /* "analytical_field.pyx":421
+ *             double[::1] ret = self.ret
+ * 
+ *         if pos.shape[0] != 3:             # <<<<<<<<<<<<<<
+ *             raise ValueError('The aiming routine is custom-built'\
  *                     +' for three dimensional data!')
  */
   }
 
-  /* "analytical_field.pyx":258
+  /* "analytical_field.pyx":425
  *                     +' for three dimensional data!')
  * 
  *         if not (self.initialized_tan_vec and self.initialized_prev_vec):             # <<<<<<<<<<<<<<
- *             raise RuntimeError('Aim assister not initialized!')
- *         dcopy(3,pos_,1,pos,1)
+ *             raise RuntimeError('Aim assister not properly initialized!')
+ *         self._ev_(pos,ret)
  */
   __pyx_t_5 = (__pyx_v_self->initialized_tan_vec != 0);
   if (__pyx_t_5) {
@@ -5834,59 +5375,182 @@ static PyObject *__pyx_f_16analytical_field_21AnalyticalAimAssister__ev_(struct 
   __pyx_t_5 = ((!__pyx_t_2) != 0);
   if (unlikely(__pyx_t_5)) {
 
-    /* "analytical_field.pyx":259
+    /* "analytical_field.pyx":426
  * 
  *         if not (self.initialized_tan_vec and self.initialized_prev_vec):
- *             raise RuntimeError('Aim assister not initialized!')             # <<<<<<<<<<<<<<
- *         dcopy(3,pos_,1,pos,1)
- * 
+ *             raise RuntimeError('Aim assister not properly initialized!')             # <<<<<<<<<<<<<<
+ *         self._ev_(pos,ret)
+ *         return np.copy(ret)
  */
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__9, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 259, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__8, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 426, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(1, 259, __pyx_L1_error)
+    __PYX_ERR(1, 426, __pyx_L1_error)
 
-    /* "analytical_field.pyx":258
+    /* "analytical_field.pyx":425
  *                     +' for three dimensional data!')
  * 
  *         if not (self.initialized_tan_vec and self.initialized_prev_vec):             # <<<<<<<<<<<<<<
- *             raise RuntimeError('Aim assister not initialized!')
- *         dcopy(3,pos_,1,pos,1)
+ *             raise RuntimeError('Aim assister not properly initialized!')
+ *         self._ev_(pos,ret)
  */
   }
 
-  /* "analytical_field.pyx":260
+  /* "analytical_field.pyx":427
  *         if not (self.initialized_tan_vec and self.initialized_prev_vec):
- *             raise RuntimeError('Aim assister not initialized!')
- *         dcopy(3,pos_,1,pos,1)             # <<<<<<<<<<<<<<
+ *             raise RuntimeError('Aim assister not properly initialized!')
+ *         self._ev_(pos,ret)             # <<<<<<<<<<<<<<
+ *         return np.copy(ret)
+ * 
+ */
+  __pyx_t_4 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self->__pyx_vtab)->_ev_(__pyx_v_self, __pyx_v_pos, __pyx_v_ret); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 427, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+
+  /* "analytical_field.pyx":428
+ *             raise RuntimeError('Aim assister not properly initialized!')
+ *         self._ev_(pos,ret)
+ *         return np.copy(ret)             # <<<<<<<<<<<<<<
+ * 
+ *     @cython.initializedcheck(False)
+ */
+  __Pyx_XDECREF(__pyx_r);
+  __pyx_t_3 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 428, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_copy); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 428, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_6);
+  __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_v_ret, 1, (PyObject *(*)(char *)) __pyx_memview_get_double, (int (*)(char *, PyObject *)) __pyx_memview_set_double, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 428, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_7 = NULL;
+  if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
+    __pyx_t_7 = PyMethod_GET_SELF(__pyx_t_6);
+    if (likely(__pyx_t_7)) {
+      PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_6);
+      __Pyx_INCREF(__pyx_t_7);
+      __Pyx_INCREF(function);
+      __Pyx_DECREF_SET(__pyx_t_6, function);
+    }
+  }
+  if (!__pyx_t_7) {
+    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 428, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __Pyx_GOTREF(__pyx_t_4);
+  } else {
+    #if CYTHON_FAST_PYCALL
+    if (PyFunction_Check(__pyx_t_6)) {
+      PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_t_3};
+      __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 428, __pyx_L1_error)
+      __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
+      __Pyx_GOTREF(__pyx_t_4);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    } else
+    #endif
+    #if CYTHON_FAST_PYCCALL
+    if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
+      PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_t_3};
+      __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 428, __pyx_L1_error)
+      __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
+      __Pyx_GOTREF(__pyx_t_4);
+      __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    } else
+    #endif
+    {
+      __pyx_t_8 = PyTuple_New(1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 428, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_8);
+      __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_7); __pyx_t_7 = NULL;
+      __Pyx_GIVEREF(__pyx_t_3);
+      PyTuple_SET_ITEM(__pyx_t_8, 0+1, __pyx_t_3);
+      __pyx_t_3 = 0;
+      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 428, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_4);
+      __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+    }
+  }
+  __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+  __pyx_r = __pyx_t_4;
+  __pyx_t_4 = 0;
+  goto __pyx_L0;
+
+  /* "analytical_field.pyx":399
+ *     @cython.wraparound(False)
+ *     @cython.boundscheck(False)
+ *     def __call__(self, double[::1] pos not None):             # <<<<<<<<<<<<<<
+ *         """
+ *         AnalyticalDirectionGenerator.__call__(pos)
+ */
+
+  /* function exit code */
+  __pyx_L1_error:;
+  __PYX_XDEC_MEMVIEW(&__pyx_t_1, 1);
+  __Pyx_XDECREF(__pyx_t_3);
+  __Pyx_XDECREF(__pyx_t_4);
+  __Pyx_XDECREF(__pyx_t_6);
+  __Pyx_XDECREF(__pyx_t_7);
+  __Pyx_XDECREF(__pyx_t_8);
+  __Pyx_AddTraceback("analytical_field.AnalyticalDirectionGenerator.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __pyx_r = NULL;
+  __pyx_L0:;
+  __PYX_XDEC_MEMVIEW(&__pyx_v_ret, 1);
+  __PYX_XDEC_MEMVIEW(&__pyx_v_pos, 1);
+  __Pyx_XGIVEREF(__pyx_r);
+  __Pyx_RefNannyFinishContext();
+  return __pyx_r;
+}
+
+/* "analytical_field.pyx":433
+ *     @cython.wraparound(False)
+ *     @cython.boundscheck(False)
+ *     cdef _ev_(self, double[::1] pos, double[::1] &ret):             # <<<<<<<<<<<<<<
+ *         """
+ *         AnalyticalDirectionGenerator._ev_(pos,ret)
+ */
+
+static PyObject *__pyx_f_16analytical_field_28AnalyticalDirectionGenerator__ev_(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self, __Pyx_memviewslice __pyx_v_pos, __Pyx_memviewslice &__pyx_v_ret) {
+  __Pyx_memviewslice __pyx_v_xi = { 0, 0, { 0 }, { 0 }, { 0 } };
+  PyObject *__pyx_r = NULL;
+  __Pyx_RefNannyDeclarations
+  __Pyx_memviewslice __pyx_t_1 = { 0, 0, { 0 }, { 0 }, { 0 } };
+  PyObject *__pyx_t_2 = NULL;
+  int __pyx_t_3;
+  __Pyx_RefNannySetupContext("_ev_", 0);
+
+  /* "analytical_field.pyx":452
+ *         """
+ *         cdef:
+ *             double[::1] xi = self.xi             # <<<<<<<<<<<<<<
  * 
  *         self.xi_fun._ev_(pos, xi)
  */
-  __pyx_f_16analytical_field_dcopy(3, __pyx_v_pos_, 1, __pyx_v_pos, 1);
+  __pyx_t_1 = __pyx_v_self->xi;
+  __PYX_INC_MEMVIEW(&__pyx_t_1, 1);
+  __pyx_v_xi = __pyx_t_1;
+  __pyx_t_1.memview = NULL;
+  __pyx_t_1.data = NULL;
 
-  /* "analytical_field.pyx":262
- *         dcopy(3,pos_,1,pos,1)
+  /* "analytical_field.pyx":454
+ *             double[::1] xi = self.xi
  * 
  *         self.xi_fun._ev_(pos, xi)             # <<<<<<<<<<<<<<
  *         if 1 - c_pow(ddot(3,xi,1,self.tan_vec,1),2) < 1e-10:
  *             dcopy(3,self.prev_vec,1,ret,1)
  */
-  __pyx_t_4 = ((struct __pyx_vtabstruct_16analytical_field_CallableFunction *)__pyx_v_self->xi_fun->__pyx_vtab)->_ev_(__pyx_v_self->xi_fun, __pyx_v_pos, __pyx_v_xi); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 262, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_CallableFunction *)__pyx_v_self->xi_fun->__pyx_vtab)->_ev_(__pyx_v_self->xi_fun, __pyx_v_pos, __pyx_v_xi); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 454, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_2);
+  __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "analytical_field.pyx":263
+  /* "analytical_field.pyx":455
  * 
  *         self.xi_fun._ev_(pos, xi)
  *         if 1 - c_pow(ddot(3,xi,1,self.tan_vec,1),2) < 1e-10:             # <<<<<<<<<<<<<<
  *             dcopy(3,self.prev_vec,1,ret,1)
  *         else:
  */
-  __pyx_t_5 = (((1.0 - pow(__pyx_f_16analytical_field_ddot(3, __pyx_v_xi, 1, __pyx_v_self->tan_vec, 1), 2.0)) < 1e-10) != 0);
-  if (__pyx_t_5) {
+  __pyx_t_3 = (((1.0 - pow(__pyx_f_16analytical_field_ddot(3, __pyx_v_xi, 1, __pyx_v_self->tan_vec, 1), 2.0)) < 1e-10) != 0);
+  if (__pyx_t_3) {
 
-    /* "analytical_field.pyx":264
+    /* "analytical_field.pyx":456
  *         self.xi_fun._ev_(pos, xi)
  *         if 1 - c_pow(ddot(3,xi,1,self.tan_vec,1),2) < 1e-10:
  *             dcopy(3,self.prev_vec,1,ret,1)             # <<<<<<<<<<<<<<
@@ -5895,17 +5559,17 @@ static PyObject *__pyx_f_16analytical_field_21AnalyticalAimAssister__ev_(struct 
  */
     __pyx_f_16analytical_field_dcopy(3, __pyx_v_self->prev_vec, 1, __pyx_v_ret, 1);
 
-    /* "analytical_field.pyx":263
+    /* "analytical_field.pyx":455
  * 
  *         self.xi_fun._ev_(pos, xi)
  *         if 1 - c_pow(ddot(3,xi,1,self.tan_vec,1),2) < 1e-10:             # <<<<<<<<<<<<<<
  *             dcopy(3,self.prev_vec,1,ret,1)
  *         else:
  */
-    goto __pyx_L7;
+    goto __pyx_L3;
   }
 
-  /* "analytical_field.pyx":266
+  /* "analytical_field.pyx":458
  *             dcopy(3,self.prev_vec,1,ret,1)
  *         else:
  *             _cy_cross_product_(xi,self.tan_vec,ret)             # <<<<<<<<<<<<<<
@@ -5915,9 +5579,9 @@ static PyObject *__pyx_f_16analytical_field_21AnalyticalAimAssister__ev_(struct 
   /*else*/ {
     __pyx_f_16analytical_field__cy_cross_product_(__pyx_v_xi, __pyx_v_self->tan_vec, __pyx_v_ret);
   }
-  __pyx_L7:;
+  __pyx_L3:;
 
-  /* "analytical_field.pyx":267
+  /* "analytical_field.pyx":459
  *         else:
  *             _cy_cross_product_(xi,self.tan_vec,ret)
  *         _cy_normalize_(ret)             # <<<<<<<<<<<<<<
@@ -5926,17 +5590,17 @@ static PyObject *__pyx_f_16analytical_field_21AnalyticalAimAssister__ev_(struct 
  */
   __pyx_f_16analytical_field__cy_normalize_(__pyx_v_ret);
 
-  /* "analytical_field.pyx":268
+  /* "analytical_field.pyx":460
  *             _cy_cross_product_(xi,self.tan_vec,ret)
  *         _cy_normalize_(ret)
  *         if ddot(3,ret,1,self.prev_vec,1) < 0:             # <<<<<<<<<<<<<<
  *             dscal(3,-1,ret,1)
  * 
  */
-  __pyx_t_5 = ((__pyx_f_16analytical_field_ddot(3, __pyx_v_ret, 1, __pyx_v_self->prev_vec, 1) < 0.0) != 0);
-  if (__pyx_t_5) {
+  __pyx_t_3 = ((__pyx_f_16analytical_field_ddot(3, __pyx_v_ret, 1, __pyx_v_self->prev_vec, 1) < 0.0) != 0);
+  if (__pyx_t_3) {
 
-    /* "analytical_field.pyx":269
+    /* "analytical_field.pyx":461
  *         _cy_normalize_(ret)
  *         if ddot(3,ret,1,self.prev_vec,1) < 0:
  *             dscal(3,-1,ret,1)             # <<<<<<<<<<<<<<
@@ -5945,7 +5609,7 @@ static PyObject *__pyx_f_16analytical_field_21AnalyticalAimAssister__ev_(struct 
  */
     __pyx_f_16analytical_field_dscal(3, -1.0, __pyx_v_ret, 1);
 
-    /* "analytical_field.pyx":268
+    /* "analytical_field.pyx":460
  *             _cy_cross_product_(xi,self.tan_vec,ret)
  *         _cy_normalize_(ret)
  *         if ddot(3,ret,1,self.prev_vec,1) < 0:             # <<<<<<<<<<<<<<
@@ -5954,12 +5618,12 @@ static PyObject *__pyx_f_16analytical_field_21AnalyticalAimAssister__ev_(struct 
  */
   }
 
-  /* "analytical_field.pyx":237
+  /* "analytical_field.pyx":433
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
- *     cdef _ev_(self, double t, double[::1] &pos_, double[::1] &ret):             # <<<<<<<<<<<<<<
- *         """SplineAimAssister._ev_(pos)
- * 
+ *     cdef _ev_(self, double[::1] pos, double[::1] &ret):             # <<<<<<<<<<<<<<
+ *         """
+ *         AnalyticalDirectionGenerator._ev_(pos,ret)
  */
 
   /* function exit code */
@@ -5967,19 +5631,17 @@ static PyObject *__pyx_f_16analytical_field_21AnalyticalAimAssister__ev_(struct 
   goto __pyx_L0;
   __pyx_L1_error:;
   __PYX_XDEC_MEMVIEW(&__pyx_t_1, 1);
-  __Pyx_XDECREF(__pyx_t_3);
-  __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("analytical_field.AnalyticalAimAssister._ev_", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_XDECREF(__pyx_t_2);
+  __Pyx_AddTraceback("analytical_field.AnalyticalDirectionGenerator._ev_", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_xi, 1);
-  __PYX_XDEC_MEMVIEW(&__pyx_v_pos, 1);
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":272
+/* "analytical_field.pyx":464
  * 
  * 
  *     def __dealoc__(self):             # <<<<<<<<<<<<<<
@@ -5988,19 +5650,19 @@ static PyObject *__pyx_f_16analytical_field_21AnalyticalAimAssister__ev_(struct 
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_15__dealoc__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_15__dealoc__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_15__dealoc__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_15__dealoc__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealoc__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_16analytical_field_21AnalyticalAimAssister_14__dealoc__(((struct __pyx_obj_16analytical_field_AnalyticalAimAssister *)__pyx_v_self));
+  __pyx_r = __pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_14__dealoc__(((struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_14__dealoc__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self) {
+static PyObject *__pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_14__dealoc__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__dealoc__", 0);
@@ -6019,19 +5681,19 @@ static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_14__dealoc_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_17__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_17__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_17__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_17__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_16analytical_field_21AnalyticalAimAssister_16__reduce_cython__(((struct __pyx_obj_16analytical_field_AnalyticalAimAssister *)__pyx_v_self));
+  __pyx_r = __pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_16__reduce_cython__(((struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_16__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self) {
+static PyObject *__pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_16__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6043,7 +5705,7 @@ static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_16__reduce_
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__9, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_Raise(__pyx_t_1, 0, 0, 0);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -6058,7 +5720,7 @@ static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_16__reduce_
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("analytical_field.AnalyticalAimAssister.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("analytical_field.AnalyticalDirectionGenerator.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -6073,19 +5735,19 @@ static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_16__reduce_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_19__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_16analytical_field_21AnalyticalAimAssister_19__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_19__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_19__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_16analytical_field_21AnalyticalAimAssister_18__setstate_cython__(((struct __pyx_obj_16analytical_field_AnalyticalAimAssister *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_18__setstate_cython__(((struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_18__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_16analytical_field_28AnalyticalDirectionGenerator_18__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -6096,7 +5758,7 @@ static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_18__setstat
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")             # <<<<<<<<<<<<<<
  */
-  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__11, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_Raise(__pyx_t_1, 0, 0, 0);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -6112,14 +5774,14 @@ static PyObject *__pyx_pf_16analytical_field_21AnalyticalAimAssister_18__setstat
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("analytical_field.AnalyticalAimAssister.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("analytical_field.AnalyticalDirectionGenerator.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":338
+/* "analytical_field.pyx":534
  *         bint initialized
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -6169,7 +5831,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   double __pyx_t_21[3];
   __Pyx_RefNannySetupContext("__cinit__", 0);
 
-  /* "analytical_field.pyx":339
+  /* "analytical_field.pyx":535
  * 
  *     def __cinit__(self):
  *         self._c_  = [0.05555555555555555556, 0.08333333333333333333, 0.125, 0.3125, 0.375, 0.1475, 0.465, 0.56486545138225957359, 0.65, 0.92465627764050444674, 1., 1.]             # <<<<<<<<<<<<<<
@@ -6190,7 +5852,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_1[11] = 1.;
   memcpy(&(__pyx_v_self->_c_[0]), __pyx_t_1, sizeof(__pyx_v_self->_c_[0]) * (12));
 
-  /* "analytical_field.pyx":340
+  /* "analytical_field.pyx":536
  *     def __cinit__(self):
  *         self._c_  = [0.05555555555555555556, 0.08333333333333333333, 0.125, 0.3125, 0.375, 0.1475, 0.465, 0.56486545138225957359, 0.65, 0.92465627764050444674, 1., 1.]
  *         self._a1_ = [0.05555555555555555556]             # <<<<<<<<<<<<<<
@@ -6200,7 +5862,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_2[0] = 0.05555555555555555556;
   memcpy(&(__pyx_v_self->_a1_[0]), __pyx_t_2, sizeof(__pyx_v_self->_a1_[0]) * (1));
 
-  /* "analytical_field.pyx":341
+  /* "analytical_field.pyx":537
  *         self._c_  = [0.05555555555555555556, 0.08333333333333333333, 0.125, 0.3125, 0.375, 0.1475, 0.465, 0.56486545138225957359, 0.65, 0.92465627764050444674, 1., 1.]
  *         self._a1_ = [0.05555555555555555556]
  *         self._a2_ = [0.0208333333333333333, 0.0625]             # <<<<<<<<<<<<<<
@@ -6211,7 +5873,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_3[1] = 0.0625;
   memcpy(&(__pyx_v_self->_a2_[0]), __pyx_t_3, sizeof(__pyx_v_self->_a2_[0]) * (2));
 
-  /* "analytical_field.pyx":342
+  /* "analytical_field.pyx":538
  *         self._a1_ = [0.05555555555555555556]
  *         self._a2_ = [0.0208333333333333333, 0.0625]
  *         self._a3_ = [0.03125, 0., 0.09375]             # <<<<<<<<<<<<<<
@@ -6223,7 +5885,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_4[2] = 0.09375;
   memcpy(&(__pyx_v_self->_a3_[0]), __pyx_t_4, sizeof(__pyx_v_self->_a3_[0]) * (3));
 
-  /* "analytical_field.pyx":343
+  /* "analytical_field.pyx":539
  *         self._a2_ = [0.0208333333333333333, 0.0625]
  *         self._a3_ = [0.03125, 0., 0.09375]
  *         self._a4_ = [0.3125, 0., -1.17185, 1.17185]             # <<<<<<<<<<<<<<
@@ -6236,7 +5898,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_5[3] = 1.17185;
   memcpy(&(__pyx_v_self->_a4_[0]), __pyx_t_5, sizeof(__pyx_v_self->_a4_[0]) * (4));
 
-  /* "analytical_field.pyx":344
+  /* "analytical_field.pyx":540
  *         self._a3_ = [0.03125, 0., 0.09375]
  *         self._a4_ = [0.3125, 0., -1.17185, 1.17185]
  *         self._a5_ = [0.0375, 0., 0., 0.1875, 0.15]             # <<<<<<<<<<<<<<
@@ -6250,7 +5912,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_6[4] = 0.15;
   memcpy(&(__pyx_v_self->_a5_[0]), __pyx_t_6, sizeof(__pyx_v_self->_a5_[0]) * (5));
 
-  /* "analytical_field.pyx":345
+  /* "analytical_field.pyx":541
  *         self._a4_ = [0.3125, 0., -1.17185, 1.17185]
  *         self._a5_ = [0.0375, 0., 0., 0.1875, 0.15]
  *         self._a6_ = [0.04791013711111111111, 0., 0., 0.11224871277777777777, -0.02550567377777777777, 0.012846823888888888]             # <<<<<<<<<<<<<<
@@ -6265,7 +5927,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_7[5] = 0.012846823888888888;
   memcpy(&(__pyx_v_self->_a6_[0]), __pyx_t_7, sizeof(__pyx_v_self->_a6_[0]) * (6));
 
-  /* "analytical_field.pyx":346
+  /* "analytical_field.pyx":542
  *         self._a5_ = [0.0375, 0., 0., 0.1875, 0.15]
  *         self._a6_ = [0.04791013711111111111, 0., 0., 0.11224871277777777777, -0.02550567377777777777, 0.012846823888888888]
  *         self._a7_ = [0.016917989787292281, 0., 0., 0.387848278486043169, 0.035977369851500327, 0.196970214215666060, -0.172713852340501838]             # <<<<<<<<<<<<<<
@@ -6281,7 +5943,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_8[6] = -0.172713852340501838;
   memcpy(&(__pyx_v_self->_a7_[0]), __pyx_t_8, sizeof(__pyx_v_self->_a7_[0]) * (7));
 
-  /* "analytical_field.pyx":347
+  /* "analytical_field.pyx":543
  *         self._a6_ = [0.04791013711111111111, 0., 0., 0.11224871277777777777, -0.02550567377777777777, 0.012846823888888888]
  *         self._a7_ = [0.016917989787292281, 0., 0., 0.387848278486043169, 0.035977369851500327, 0.196970214215666060, -0.172713852340501838]
  *         self._a8_ = [0.069095753359192300, 0., 0., -0.63424797672885411, -0.16119757522460408, 0.138650309458825255, 0.940928614035756269, 0.211636326481943981]             # <<<<<<<<<<<<<<
@@ -6298,7 +5960,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_9[7] = 0.211636326481943981;
   memcpy(&(__pyx_v_self->_a8_[0]), __pyx_t_9, sizeof(__pyx_v_self->_a8_[0]) * (8));
 
-  /* "analytical_field.pyx":348
+  /* "analytical_field.pyx":544
  *         self._a7_ = [0.016917989787292281, 0., 0., 0.387848278486043169, 0.035977369851500327, 0.196970214215666060, -0.172713852340501838]
  *         self._a8_ = [0.069095753359192300, 0., 0., -0.63424797672885411, -0.16119757522460408, 0.138650309458825255, 0.940928614035756269, 0.211636326481943981]
  *         self._a9_ = [0.183556996839045385, 0., 0., -2.46876808431559245, -0.29128688781630045, -0.02647302023311737, 2.847838764192800449, 0.281387331469849792, 0.123744899863314657]             # <<<<<<<<<<<<<<
@@ -6316,7 +5978,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_10[8] = 0.123744899863314657;
   memcpy(&(__pyx_v_self->_a9_[0]), __pyx_t_10, sizeof(__pyx_v_self->_a9_[0]) * (9));
 
-  /* "analytical_field.pyx":349
+  /* "analytical_field.pyx":545
  *         self._a8_ = [0.069095753359192300, 0., 0., -0.63424797672885411, -0.16119757522460408, 0.138650309458825255, 0.940928614035756269, 0.211636326481943981]
  *         self._a9_ = [0.183556996839045385, 0., 0., -2.46876808431559245, -0.29128688781630045, -0.02647302023311737, 2.847838764192800449, 0.281387331469849792, 0.123744899863314657]
  *         self._a10_ = [-1.21542481739588805, 0., 0., 16.672608665945772432, 0.915741828416817960, -6.05660580435747094, -16.00357359415617811, 14.849303086297662557, -13.371575735289849318, 5.134182648179637933]             # <<<<<<<<<<<<<<
@@ -6335,7 +5997,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_11[9] = 5.134182648179637933;
   memcpy(&(__pyx_v_self->_a10_[0]), __pyx_t_11, sizeof(__pyx_v_self->_a10_[0]) * (10));
 
-  /* "analytical_field.pyx":350
+  /* "analytical_field.pyx":546
  *         self._a9_ = [0.183556996839045385, 0., 0., -2.46876808431559245, -0.29128688781630045, -0.02647302023311737, 2.847838764192800449, 0.281387331469849792, 0.123744899863314657]
  *         self._a10_ = [-1.21542481739588805, 0., 0., 16.672608665945772432, 0.915741828416817960, -6.05660580435747094, -16.00357359415617811, 14.849303086297662557, -13.371575735289849318, 5.134182648179637933]
  *         self._a11_ = [0.258860916438264283, 0., 0., -4.774485785489205112, -0.435093013777032509, -3.049483332072241509, 5.577920039936099117, 6.155831589861040689, -5.062104586736938370, 2.193926173180679061, 0.134627998659334941]             # <<<<<<<<<<<<<<
@@ -6355,7 +6017,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_12[10] = 0.134627998659334941;
   memcpy(&(__pyx_v_self->_a11_[0]), __pyx_t_12, sizeof(__pyx_v_self->_a11_[0]) * (11));
 
-  /* "analytical_field.pyx":351
+  /* "analytical_field.pyx":547
  *         self._a10_ = [-1.21542481739588805, 0., 0., 16.672608665945772432, 0.915741828416817960, -6.05660580435747094, -16.00357359415617811, 14.849303086297662557, -13.371575735289849318, 5.134182648179637933]
  *         self._a11_ = [0.258860916438264283, 0., 0., -4.774485785489205112, -0.435093013777032509, -3.049483332072241509, 5.577920039936099117, 6.155831589861040689, -5.062104586736938370, 2.193926173180679061, 0.134627998659334941]
  *         self._a12_ = [0.822427599626507477, 0., 0.,  -11.658673257277664283, -0.757622116690936195, 0.713973588159581527, 12.075774986890056739, -2.127659113920402656, 1.990166207048955418, -0.234286471544040292, 0.175898577707942265, 0.  ]             # <<<<<<<<<<<<<<
@@ -6376,7 +6038,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_13[11] = 0.;
   memcpy(&(__pyx_v_self->_a12_[0]), __pyx_t_13, sizeof(__pyx_v_self->_a12_[0]) * (12));
 
-  /* "analytical_field.pyx":353
+  /* "analytical_field.pyx":549
  *         self._a12_ = [0.822427599626507477, 0., 0.,  -11.658673257277664283, -0.757622116690936195, 0.713973588159581527, 12.075774986890056739, -2.127659113920402656, 1.990166207048955418, -0.234286471544040292, 0.175898577707942265, 0.  ]
  * 
  *         self._b7_ = [ 0.0295532136763534969, 0., 0., 0., 0., -0.8286062764877970397, 0.3112409000511183279, 2.4673451905998869819, -2.5469416518419087391, 1.4435485836767752403, 0.0794155958811272872, 0.0444444444444444444, 0. ]             # <<<<<<<<<<<<<<
@@ -6398,7 +6060,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_14[12] = 0.;
   memcpy(&(__pyx_v_self->_b7_[0]), __pyx_t_14, sizeof(__pyx_v_self->_b7_[0]) * (13));
 
-  /* "analytical_field.pyx":354
+  /* "analytical_field.pyx":550
  * 
  *         self._b7_ = [ 0.0295532136763534969, 0., 0., 0., 0., -0.8286062764877970397, 0.3112409000511183279, 2.4673451905998869819, -2.5469416518419087391, 1.4435485836767752403, 0.0794155958811272872, 0.0444444444444444444, 0. ]
  *         self._b8_ = [ 0.0417474911415302462, 0., 0., 0., 0., -0.0554523286112393089, 0.2393128072011800970, 0.7035106694034430230, -0.7597596138144609298, 0.6605630309222863414, 0.1581874825101233355, -0.2381095387528628044, 0.25]             # <<<<<<<<<<<<<<
@@ -6420,7 +6082,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_15[12] = 0.25;
   memcpy(&(__pyx_v_self->_b8_[0]), __pyx_t_15, sizeof(__pyx_v_self->_b8_[0]) * (13));
 
-  /* "analytical_field.pyx":356
+  /* "analytical_field.pyx":552
  *         self._b8_ = [ 0.0417474911415302462, 0., 0., 0., 0., -0.0554523286112393089, 0.2393128072011800970, 0.7035106694034430230, -0.7597596138144609298, 0.6605630309222863414, 0.1581874825101233355, -0.2381095387528628044, 0.25]
  * 
  *         self.c = self._c_             # <<<<<<<<<<<<<<
@@ -6430,26 +6092,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_c_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 356, __pyx_L1_error)
+    __PYX_ERR(1, 552, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)12));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 356, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 552, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 356, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 552, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 356, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 552, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->c, 0);
   __pyx_v_self->c = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":357
+  /* "analytical_field.pyx":553
  * 
  *         self.c = self._c_
  *         self.a1 = self._a1_             # <<<<<<<<<<<<<<
@@ -6459,26 +6121,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_a1_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 357, __pyx_L1_error)
+    __PYX_ERR(1, 553, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)1));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 357, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 553, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 357, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 553, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 357, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 553, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a1, 0);
   __pyx_v_self->a1 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":358
+  /* "analytical_field.pyx":554
  *         self.c = self._c_
  *         self.a1 = self._a1_
  *         self.a2 = self._a2_             # <<<<<<<<<<<<<<
@@ -6488,26 +6150,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_a2_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 358, __pyx_L1_error)
+    __PYX_ERR(1, 554, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)2));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 358, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 554, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 358, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 554, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 358, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 554, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a2, 0);
   __pyx_v_self->a2 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":359
+  /* "analytical_field.pyx":555
  *         self.a1 = self._a1_
  *         self.a2 = self._a2_
  *         self.a3 = self._a3_             # <<<<<<<<<<<<<<
@@ -6517,26 +6179,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_a3_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 359, __pyx_L1_error)
+    __PYX_ERR(1, 555, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 359, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 555, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 359, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 555, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 359, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 555, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a3, 0);
   __pyx_v_self->a3 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":360
+  /* "analytical_field.pyx":556
  *         self.a2 = self._a2_
  *         self.a3 = self._a3_
  *         self.a4 = self._a4_             # <<<<<<<<<<<<<<
@@ -6546,26 +6208,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_a4_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 360, __pyx_L1_error)
+    __PYX_ERR(1, 556, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)4));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 360, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 556, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 360, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 556, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 360, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 556, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a4, 0);
   __pyx_v_self->a4 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":361
+  /* "analytical_field.pyx":557
  *         self.a3 = self._a3_
  *         self.a4 = self._a4_
  *         self.a5 = self._a5_             # <<<<<<<<<<<<<<
@@ -6575,26 +6237,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_a5_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 361, __pyx_L1_error)
+    __PYX_ERR(1, 557, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)5));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 361, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 557, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 361, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 557, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 361, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 557, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a5, 0);
   __pyx_v_self->a5 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":362
+  /* "analytical_field.pyx":558
  *         self.a4 = self._a4_
  *         self.a5 = self._a5_
  *         self.a6 = self._a6_             # <<<<<<<<<<<<<<
@@ -6604,26 +6266,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_a6_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 362, __pyx_L1_error)
+    __PYX_ERR(1, 558, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)6));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 362, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 558, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 362, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 558, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 362, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 558, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a6, 0);
   __pyx_v_self->a6 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":363
+  /* "analytical_field.pyx":559
  *         self.a5 = self._a5_
  *         self.a6 = self._a6_
  *         self.a7 = self._a7_             # <<<<<<<<<<<<<<
@@ -6633,26 +6295,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_a7_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 363, __pyx_L1_error)
+    __PYX_ERR(1, 559, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)7));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 363, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 559, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 363, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 559, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 363, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 559, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a7, 0);
   __pyx_v_self->a7 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":364
+  /* "analytical_field.pyx":560
  *         self.a6 = self._a6_
  *         self.a7 = self._a7_
  *         self.a8 = self._a8_             # <<<<<<<<<<<<<<
@@ -6662,26 +6324,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_a8_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 364, __pyx_L1_error)
+    __PYX_ERR(1, 560, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)8));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 364, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 560, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 364, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 560, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 364, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 560, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a8, 0);
   __pyx_v_self->a8 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":365
+  /* "analytical_field.pyx":561
  *         self.a7 = self._a7_
  *         self.a8 = self._a8_
  *         self.a9 = self._a9_             # <<<<<<<<<<<<<<
@@ -6691,26 +6353,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_a9_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 365, __pyx_L1_error)
+    __PYX_ERR(1, 561, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)9));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 365, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 561, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 365, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 561, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 365, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 561, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a9, 0);
   __pyx_v_self->a9 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":366
+  /* "analytical_field.pyx":562
  *         self.a8 = self._a8_
  *         self.a9 = self._a9_
  *         self.a10 = self._a10_             # <<<<<<<<<<<<<<
@@ -6720,26 +6382,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_a10_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 366, __pyx_L1_error)
+    __PYX_ERR(1, 562, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)10));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 366, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 562, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 366, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 562, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 366, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 562, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a10, 0);
   __pyx_v_self->a10 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":367
+  /* "analytical_field.pyx":563
  *         self.a9 = self._a9_
  *         self.a10 = self._a10_
  *         self.a11 = self._a11_             # <<<<<<<<<<<<<<
@@ -6749,26 +6411,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_a11_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 367, __pyx_L1_error)
+    __PYX_ERR(1, 563, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)11));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 367, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 563, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 367, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 563, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 367, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 563, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a11, 0);
   __pyx_v_self->a11 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":368
+  /* "analytical_field.pyx":564
  *         self.a10 = self._a10_
  *         self.a11 = self._a11_
  *         self.a12 = self._a12_             # <<<<<<<<<<<<<<
@@ -6778,26 +6440,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_a12_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 368, __pyx_L1_error)
+    __PYX_ERR(1, 564, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)12));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 368, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 564, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 368, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 564, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 368, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 564, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->a12, 0);
   __pyx_v_self->a12 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":369
+  /* "analytical_field.pyx":565
  *         self.a11 = self._a11_
  *         self.a12 = self._a12_
  *         self.b7 = self._b7_             # <<<<<<<<<<<<<<
@@ -6807,26 +6469,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_b7_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 369, __pyx_L1_error)
+    __PYX_ERR(1, 565, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)13));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 369, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 565, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 369, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 565, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 369, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 565, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->b7, 0);
   __pyx_v_self->b7 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":370
+  /* "analytical_field.pyx":566
  *         self.a12 = self._a12_
  *         self.b7 = self._b7_
  *         self.b8 = self._b8_             # <<<<<<<<<<<<<<
@@ -6836,26 +6498,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_b8_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 370, __pyx_L1_error)
+    __PYX_ERR(1, 566, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)13));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 370, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 566, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 370, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 566, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 370, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 566, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->b8, 0);
   __pyx_v_self->b8 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":371
+  /* "analytical_field.pyx":567
  *         self.b7 = self._b7_
  *         self.b8 = self._b8_
  *         self.x7 = self._x7_             # <<<<<<<<<<<<<<
@@ -6865,26 +6527,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_x7_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 371, __pyx_L1_error)
+    __PYX_ERR(1, 567, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 371, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 567, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 371, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 567, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 371, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 567, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->x7, 0);
   __pyx_v_self->x7 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":372
+  /* "analytical_field.pyx":568
  *         self.b8 = self._b8_
  *         self.x7 = self._x7_
  *         self.x8 = self._x8_             # <<<<<<<<<<<<<<
@@ -6894,26 +6556,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_x8_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 372, __pyx_L1_error)
+    __PYX_ERR(1, 568, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 372, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 568, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 372, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 568, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 372, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 568, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->x8, 0);
   __pyx_v_self->x8 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":374
+  /* "analytical_field.pyx":570
  *         self.x8 = self._x8_
  * 
  *         self.k1 = self._k1_             # <<<<<<<<<<<<<<
@@ -6923,26 +6585,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_k1_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 374, __pyx_L1_error)
+    __PYX_ERR(1, 570, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 374, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 570, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 374, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 570, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 374, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 570, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k1, 0);
   __pyx_v_self->k1 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":375
+  /* "analytical_field.pyx":571
  * 
  *         self.k1 = self._k1_
  *         self.k2 = self._k2_             # <<<<<<<<<<<<<<
@@ -6952,26 +6614,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_k2_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 375, __pyx_L1_error)
+    __PYX_ERR(1, 571, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 375, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 571, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 375, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 571, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 375, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 571, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k2, 0);
   __pyx_v_self->k2 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":376
+  /* "analytical_field.pyx":572
  *         self.k1 = self._k1_
  *         self.k2 = self._k2_
  *         self.k3 = self._k3_             # <<<<<<<<<<<<<<
@@ -6981,26 +6643,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_k3_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 376, __pyx_L1_error)
+    __PYX_ERR(1, 572, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 376, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 572, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 376, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 572, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 376, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 572, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k3, 0);
   __pyx_v_self->k3 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":377
+  /* "analytical_field.pyx":573
  *         self.k2 = self._k2_
  *         self.k3 = self._k3_
  *         self.k4 = self._k4_             # <<<<<<<<<<<<<<
@@ -7010,26 +6672,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_k4_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 377, __pyx_L1_error)
+    __PYX_ERR(1, 573, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 377, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 573, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 377, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 573, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 377, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 573, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k4, 0);
   __pyx_v_self->k4 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":378
+  /* "analytical_field.pyx":574
  *         self.k3 = self._k3_
  *         self.k4 = self._k4_
  *         self.k5 = self._k5_             # <<<<<<<<<<<<<<
@@ -7039,26 +6701,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_k5_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 378, __pyx_L1_error)
+    __PYX_ERR(1, 574, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 378, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 574, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 378, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 574, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 378, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 574, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k5, 0);
   __pyx_v_self->k5 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":379
+  /* "analytical_field.pyx":575
  *         self.k4 = self._k4_
  *         self.k5 = self._k5_
  *         self.k6 = self._k6_             # <<<<<<<<<<<<<<
@@ -7068,26 +6730,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_k6_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 379, __pyx_L1_error)
+    __PYX_ERR(1, 575, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 379, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 575, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 379, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 575, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 379, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 575, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k6, 0);
   __pyx_v_self->k6 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":380
+  /* "analytical_field.pyx":576
  *         self.k5 = self._k5_
  *         self.k6 = self._k6_
  *         self.k7 = self._k7_             # <<<<<<<<<<<<<<
@@ -7097,26 +6759,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_k7_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 380, __pyx_L1_error)
+    __PYX_ERR(1, 576, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 380, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 576, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 380, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 576, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 380, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 576, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k7, 0);
   __pyx_v_self->k7 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":381
+  /* "analytical_field.pyx":577
  *         self.k6 = self._k6_
  *         self.k7 = self._k7_
  *         self.k8 = self._k8_             # <<<<<<<<<<<<<<
@@ -7126,26 +6788,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_k8_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 381, __pyx_L1_error)
+    __PYX_ERR(1, 577, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 381, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 577, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 381, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 577, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 381, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 577, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k8, 0);
   __pyx_v_self->k8 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":382
+  /* "analytical_field.pyx":578
  *         self.k7 = self._k7_
  *         self.k8 = self._k8_
  *         self.k9 = self._k9_             # <<<<<<<<<<<<<<
@@ -7155,26 +6817,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_k9_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 382, __pyx_L1_error)
+    __PYX_ERR(1, 578, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 382, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 578, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 382, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 578, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 382, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 578, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k9, 0);
   __pyx_v_self->k9 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":383
+  /* "analytical_field.pyx":579
  *         self.k8 = self._k8_
  *         self.k9 = self._k9_
  *         self.k10 = self._k10_             # <<<<<<<<<<<<<<
@@ -7184,26 +6846,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_k10_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 383, __pyx_L1_error)
+    __PYX_ERR(1, 579, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 383, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 579, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 383, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 579, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 383, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 579, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k10, 0);
   __pyx_v_self->k10 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":384
+  /* "analytical_field.pyx":580
  *         self.k9 = self._k9_
  *         self.k10 = self._k10_
  *         self.k11 = self._k11_             # <<<<<<<<<<<<<<
@@ -7213,26 +6875,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_k11_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 384, __pyx_L1_error)
+    __PYX_ERR(1, 580, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 384, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 580, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 384, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 580, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 384, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 580, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k11, 0);
   __pyx_v_self->k11 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":385
+  /* "analytical_field.pyx":581
  *         self.k10 = self._k10_
  *         self.k11 = self._k11_
  *         self.k12 = self._k12_             # <<<<<<<<<<<<<<
@@ -7242,26 +6904,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_k12_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 385, __pyx_L1_error)
+    __PYX_ERR(1, 581, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 385, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 581, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 385, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 581, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 385, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 581, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k12, 0);
   __pyx_v_self->k12 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":386
+  /* "analytical_field.pyx":582
  *         self.k11 = self._k11_
  *         self.k12 = self._k12_
  *         self.k13 = self._k13_             # <<<<<<<<<<<<<<
@@ -7271,26 +6933,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_k13_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 386, __pyx_L1_error)
+    __PYX_ERR(1, 582, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 386, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 582, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 386, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 582, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 386, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 582, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k13, 0);
   __pyx_v_self->k13 = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":387
+  /* "analytical_field.pyx":583
  *         self.k12 = self._k12_
  *         self.k13 = self._k13_
  *         self.k_tmp = self._k_tmp_             # <<<<<<<<<<<<<<
@@ -7300,45 +6962,45 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_k_tmp_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 387, __pyx_L1_error)
+    __PYX_ERR(1, 583, __pyx_L1_error)
   }
   __pyx_t_19 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_18 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 387, __pyx_L1_error)
+  if (unlikely(!__pyx_t_19 || !__pyx_t_18 || !PyBytes_AsString(__pyx_t_19))) __PYX_ERR(1, 583, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_GOTREF(__pyx_t_18);
   __pyx_t_17 = __pyx_array_new(__pyx_t_18, sizeof(double), PyBytes_AS_STRING(__pyx_t_19), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 387, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 583, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 387, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 583, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->k_tmp, 0);
   __pyx_v_self->k_tmp = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":389
+  /* "analytical_field.pyx":585
  *         self.k_tmp = self._k_tmp_
  * 
  *         self._pos_i_ = np.empty(3)             # <<<<<<<<<<<<<<
  * 
  *         self.pos_i = self._pos_i_
  */
-  __pyx_t_19 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_19)) __PYX_ERR(1, 389, __pyx_L1_error)
+  __pyx_t_19 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_19)) __PYX_ERR(1, 585, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
-  __pyx_t_18 = __Pyx_PyObject_GetAttrStr(__pyx_t_19, __pyx_n_s_empty); if (unlikely(!__pyx_t_18)) __PYX_ERR(1, 389, __pyx_L1_error)
+  __pyx_t_18 = __Pyx_PyObject_GetAttrStr(__pyx_t_19, __pyx_n_s_empty); if (unlikely(!__pyx_t_18)) __PYX_ERR(1, 585, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-  __pyx_t_19 = __Pyx_PyObject_Call(__pyx_t_18, __pyx_tuple__12, NULL); if (unlikely(!__pyx_t_19)) __PYX_ERR(1, 389, __pyx_L1_error)
+  __pyx_t_19 = __Pyx_PyObject_Call(__pyx_t_18, __pyx_tuple__11, NULL); if (unlikely(!__pyx_t_19)) __PYX_ERR(1, 585, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_19);
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  if (unlikely(__Pyx_carray_from_py_double(__pyx_t_19, __pyx_t_21, 3) < 0)) __PYX_ERR(1, 389, __pyx_L1_error)
+  if (unlikely(__Pyx_carray_from_py_double(__pyx_t_19, __pyx_t_21, 3) < 0)) __PYX_ERR(1, 585, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   memcpy(&(__pyx_v_self->_pos_i_[0]), __pyx_t_21, sizeof(__pyx_v_self->_pos_i_[0]) * (3));
 
-  /* "analytical_field.pyx":391
+  /* "analytical_field.pyx":587
  *         self._pos_i_ = np.empty(3)
  * 
  *         self.pos_i = self._pos_i_             # <<<<<<<<<<<<<<
@@ -7348,26 +7010,26 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   __pyx_t_16 = __pyx_v_self->_pos_i_;
   if (!__pyx_t_16) {
     PyErr_SetString(PyExc_ValueError,"Cannot create cython.array from NULL pointer");
-    __PYX_ERR(1, 391, __pyx_L1_error)
+    __PYX_ERR(1, 587, __pyx_L1_error)
   }
   __pyx_t_18 = __pyx_format_from_typeinfo(&__Pyx_TypeInfo_double);
   __pyx_t_19 = Py_BuildValue((char*) "("  __PYX_BUILD_PY_SSIZE_T  ")", ((Py_ssize_t)3));
-  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 391, __pyx_L1_error)
+  if (unlikely(!__pyx_t_18 || !__pyx_t_19 || !PyBytes_AsString(__pyx_t_18))) __PYX_ERR(1, 587, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_18);
   __Pyx_GOTREF(__pyx_t_19);
   __pyx_t_17 = __pyx_array_new(__pyx_t_19, sizeof(double), PyBytes_AS_STRING(__pyx_t_18), (char *) "fortran", (char *) __pyx_t_16);
-  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 391, __pyx_L1_error)
+  if (unlikely(!__pyx_t_17)) __PYX_ERR(1, 587, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_17);
   __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 391, __pyx_L1_error)
+  __pyx_t_20 = __Pyx_PyObject_to_MemoryviewSlice_dc_double(((PyObject *)__pyx_t_17), PyBUF_WRITABLE); if (unlikely(!__pyx_t_20.memview)) __PYX_ERR(1, 587, __pyx_L1_error)
   __Pyx_DECREF(((PyObject *)__pyx_t_17)); __pyx_t_17 = 0;
   __PYX_XDEC_MEMVIEW(&__pyx_v_self->pos_i, 0);
   __pyx_v_self->pos_i = __pyx_t_20;
   __pyx_t_20.memview = NULL;
   __pyx_t_20.data = NULL;
 
-  /* "analytical_field.pyx":393
+  /* "analytical_field.pyx":589
  *         self.pos_i = self._pos_i_
  * 
  *         self.fac = 0.8             # <<<<<<<<<<<<<<
@@ -7376,7 +7038,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
  */
   __pyx_v_self->fac = 0.8;
 
-  /* "analytical_field.pyx":394
+  /* "analytical_field.pyx":590
  * 
  *         self.fac = 0.8
  *         self.maxfac = 2.0             # <<<<<<<<<<<<<<
@@ -7385,7 +7047,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
  */
   __pyx_v_self->maxfac = 2.0;
 
-  /* "analytical_field.pyx":395
+  /* "analytical_field.pyx":591
  *         self.fac = 0.8
  *         self.maxfac = 2.0
  *         self.q = 4             # <<<<<<<<<<<<<<
@@ -7394,7 +7056,7 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
  */
   __pyx_v_self->q = 4.0;
 
-  /* "analytical_field.pyx":338
+  /* "analytical_field.pyx":534
  *         bint initialized
  * 
  *     def __cinit__(self):             # <<<<<<<<<<<<<<
@@ -7417,33 +7079,36 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical___cinit__(struct __pyx_o
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":400
+/* "analytical_field.pyx":596
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
- *     def __init__(self, double atol, double rtol):             # <<<<<<<<<<<<<<
- *         """Dp87Analytical.__init__(atol,rtol)
- * 
+ *     def __init__(self, double atol, double rtol, double hmax = 10.):             # <<<<<<<<<<<<<<
+ *         """
+ *         Dp87Analytical.__init__(atol,rtol,hmax)
  */
 
 /* Python wrapper */
 static int __pyx_pw_16analytical_field_14Dp87Analytical_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_16analytical_field_14Dp87Analytical_2__init__[] = "Dp87Analytical.__init__(atol,rtol)\n\n        Constructor for the trivariate linearly interpolated trajectory\n        approximation extension type.\n\n        param: atol -- Absolute tolerance for the Dormand-Prince 8(7) method\n        param: rtol -- Relative tolerance for the Dormand-Prince 8(7) method\n\n        ";
+static char __pyx_doc_16analytical_field_14Dp87Analytical_2__init__[] = "\n        Dp87Analytical.__init__(atol,rtol,hmax)\n\n        Constructor for a Dp87Analytical instance.\n\n        Parameters\n        ----------\n        atol : double\n           Absolute tolerance used in the dynamic timestep update\n        rtol : double\n           Relative tolerance used in the dynamic timestep update\n        hmax : double, optional\n           Largest allowed timestep, as a fallback option in the event\n           that the dynamic timestep update would otherwise suggest an\n           infinitely large step. Default: hmax = 10.\n\n        ";
 #if CYTHON_COMPILING_IN_CPYTHON
 struct wrapperbase __pyx_wrapperbase_16analytical_field_14Dp87Analytical_2__init__;
 #endif
 static int __pyx_pw_16analytical_field_14Dp87Analytical_3__init__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   double __pyx_v_atol;
   double __pyx_v_rtol;
+  double __pyx_v_hmax;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__init__ (wrapper)", 0);
   {
-    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_atol,&__pyx_n_s_rtol,0};
-    PyObject* values[2] = {0,0};
+    static PyObject **__pyx_pyargnames[] = {&__pyx_n_s_atol,&__pyx_n_s_rtol,&__pyx_n_s_hmax,0};
+    PyObject* values[3] = {0,0,0};
     if (unlikely(__pyx_kwds)) {
       Py_ssize_t kw_args;
       const Py_ssize_t pos_args = PyTuple_GET_SIZE(__pyx_args);
       switch (pos_args) {
+        case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+        CYTHON_FALLTHROUGH;
         case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
         CYTHON_FALLTHROUGH;
         case  1: values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
@@ -7460,65 +7125,89 @@ static int __pyx_pw_16analytical_field_14Dp87Analytical_3__init__(PyObject *__py
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_rtol)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 2, 2, 1); __PYX_ERR(1, 400, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 0, 2, 3, 1); __PYX_ERR(1, 596, __pyx_L3_error)
+        }
+        CYTHON_FALLTHROUGH;
+        case  2:
+        if (kw_args > 0) {
+          PyObject* value = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_hmax);
+          if (value) { values[2] = value; kw_args--; }
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 400, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(1, 596, __pyx_L3_error)
       }
-    } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
-      goto __pyx_L5_argtuple_error;
     } else {
-      values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
-      values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+      switch (PyTuple_GET_SIZE(__pyx_args)) {
+        case  3: values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
+        CYTHON_FALLTHROUGH;
+        case  2: values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
+        values[0] = PyTuple_GET_ITEM(__pyx_args, 0);
+        break;
+        default: goto __pyx_L5_argtuple_error;
+      }
     }
-    __pyx_v_atol = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_atol == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 400, __pyx_L3_error)
-    __pyx_v_rtol = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_rtol == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 400, __pyx_L3_error)
+    __pyx_v_atol = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_atol == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 596, __pyx_L3_error)
+    __pyx_v_rtol = __pyx_PyFloat_AsDouble(values[1]); if (unlikely((__pyx_v_rtol == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 596, __pyx_L3_error)
+    if (values[2]) {
+      __pyx_v_hmax = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_hmax == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 596, __pyx_L3_error)
+    } else {
+      __pyx_v_hmax = ((double)10.);
+    }
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 400, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 596, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("analytical_field.Dp87Analytical.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_16analytical_field_14Dp87Analytical_2__init__(((struct __pyx_obj_16analytical_field_Dp87Analytical *)__pyx_v_self), __pyx_v_atol, __pyx_v_rtol);
+  __pyx_r = __pyx_pf_16analytical_field_14Dp87Analytical_2__init__(((struct __pyx_obj_16analytical_field_Dp87Analytical *)__pyx_v_self), __pyx_v_atol, __pyx_v_rtol, __pyx_v_hmax);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_16analytical_field_14Dp87Analytical_2__init__(struct __pyx_obj_16analytical_field_Dp87Analytical *__pyx_v_self, double __pyx_v_atol, double __pyx_v_rtol) {
+static int __pyx_pf_16analytical_field_14Dp87Analytical_2__init__(struct __pyx_obj_16analytical_field_Dp87Analytical *__pyx_v_self, double __pyx_v_atol, double __pyx_v_rtol, double __pyx_v_hmax) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "analytical_field.pyx":410
+  /* "analytical_field.pyx":614
  * 
  *         """
  *         self.atol = atol             # <<<<<<<<<<<<<<
  *         self.rtol = rtol
- * 
+ *         self.hmax = hmax
  */
   __pyx_v_self->atol = __pyx_v_atol;
 
-  /* "analytical_field.pyx":411
+  /* "analytical_field.pyx":615
  *         """
  *         self.atol = atol
  *         self.rtol = rtol             # <<<<<<<<<<<<<<
+ *         self.hmax = hmax
  * 
- *     @cython.initializedcheck(False)
  */
   __pyx_v_self->rtol = __pyx_v_rtol;
 
-  /* "analytical_field.pyx":400
+  /* "analytical_field.pyx":616
+ *         self.atol = atol
+ *         self.rtol = rtol
+ *         self.hmax = hmax             # <<<<<<<<<<<<<<
+ * 
+ *     @cython.initializedcheck(False)
+ */
+  __pyx_v_self->hmax = __pyx_v_hmax;
+
+  /* "analytical_field.pyx":596
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
- *     def __init__(self, double atol, double rtol):             # <<<<<<<<<<<<<<
- *         """Dp87Analytical.__init__(atol,rtol)
- * 
+ *     def __init__(self, double atol, double rtol, double hmax = 10.):             # <<<<<<<<<<<<<<
+ *         """
+ *         Dp87Analytical.__init__(atol,rtol,hmax)
  */
 
   /* function exit code */
@@ -7527,23 +7216,23 @@ static int __pyx_pf_16analytical_field_14Dp87Analytical_2__init__(struct __pyx_o
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":416
+/* "analytical_field.pyx":621
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
- *     def set_aim_assister(self, AnalyticalAimAssister direction_generator):             # <<<<<<<<<<<<<<
- *         """Dp87Analytical.set_aim_assister(direction_generator)
- * 
+ *     def set_direction_generator(self, AnalyticalDirectionGenerator direction_generator):             # <<<<<<<<<<<<<<
+ *         """
+ *         Dp87Analytical.set_direction_generator(direction_generator)
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_16analytical_field_14Dp87Analytical_5set_aim_assister(PyObject *__pyx_v_self, PyObject *__pyx_v_direction_generator); /*proto*/
-static char __pyx_doc_16analytical_field_14Dp87Analytical_4set_aim_assister[] = "Dp87Analytical.set_aim_assister(direction_generator)\n\n        Sets the aim assister. Must be called *before* Dp87Analytical.__call__.\n\n        param: direction_generator -- AnalyticalAimAssister instance,\n                                      initialized with a CallableFunction\n                                      object as well as a target\n\n        ";
-static PyObject *__pyx_pw_16analytical_field_14Dp87Analytical_5set_aim_assister(PyObject *__pyx_v_self, PyObject *__pyx_v_direction_generator) {
+static PyObject *__pyx_pw_16analytical_field_14Dp87Analytical_5set_direction_generator(PyObject *__pyx_v_self, PyObject *__pyx_v_direction_generator); /*proto*/
+static char __pyx_doc_16analytical_field_14Dp87Analytical_4set_direction_generator[] = "\n        Dp87Analytical.set_direction_generator(direction_generator)\n\n        Function which sets the AnalyticalDirectionGenerator instance, to be\n        used in order to generate trajectories.\n\n        Must be called prior to Dp87Analytical.__call__.\n\n        Parameters\n        ----------\n        direction_generator : AnalyticalDirectionGenerator\n           A (properly initialized, cf. constructor and other methods of a)\n           AnalyticalDirectionGenerator instance.\n\n        ";
+static PyObject *__pyx_pw_16analytical_field_14Dp87Analytical_5set_direction_generator(PyObject *__pyx_v_self, PyObject *__pyx_v_direction_generator) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("set_aim_assister (wrapper)", 0);
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_direction_generator), __pyx_ptype_16analytical_field_AnalyticalAimAssister, 1, "direction_generator", 0))) __PYX_ERR(1, 416, __pyx_L1_error)
-  __pyx_r = __pyx_pf_16analytical_field_14Dp87Analytical_4set_aim_assister(((struct __pyx_obj_16analytical_field_Dp87Analytical *)__pyx_v_self), ((struct __pyx_obj_16analytical_field_AnalyticalAimAssister *)__pyx_v_direction_generator));
+  __Pyx_RefNannySetupContext("set_direction_generator (wrapper)", 0);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_direction_generator), __pyx_ptype_16analytical_field_AnalyticalDirectionGenerator, 1, "direction_generator", 0))) __PYX_ERR(1, 621, __pyx_L1_error)
+  __pyx_r = __pyx_pf_16analytical_field_14Dp87Analytical_4set_direction_generator(((struct __pyx_obj_16analytical_field_Dp87Analytical *)__pyx_v_self), ((struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_direction_generator));
 
   /* function exit code */
   goto __pyx_L0;
@@ -7554,12 +7243,12 @@ static PyObject *__pyx_pw_16analytical_field_14Dp87Analytical_5set_aim_assister(
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_4set_aim_assister(struct __pyx_obj_16analytical_field_Dp87Analytical *__pyx_v_self, struct __pyx_obj_16analytical_field_AnalyticalAimAssister *__pyx_v_direction_generator) {
+static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_4set_direction_generator(struct __pyx_obj_16analytical_field_Dp87Analytical *__pyx_v_self, struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *__pyx_v_direction_generator) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("set_aim_assister", 0);
+  __Pyx_RefNannySetupContext("set_direction_generator", 0);
 
-  /* "analytical_field.pyx":426
+  /* "analytical_field.pyx":637
  * 
  *         """
  *         self.f = direction_generator             # <<<<<<<<<<<<<<
@@ -7572,7 +7261,7 @@ static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_4set_aim_assister(
   __Pyx_DECREF(((PyObject *)__pyx_v_self->f));
   __pyx_v_self->f = __pyx_v_direction_generator;
 
-  /* "analytical_field.pyx":427
+  /* "analytical_field.pyx":638
  *         """
  *         self.f = direction_generator
  *         self.initialized = True             # <<<<<<<<<<<<<<
@@ -7581,12 +7270,12 @@ static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_4set_aim_assister(
  */
   __pyx_v_self->initialized = 1;
 
-  /* "analytical_field.pyx":416
+  /* "analytical_field.pyx":621
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
- *     def set_aim_assister(self, AnalyticalAimAssister direction_generator):             # <<<<<<<<<<<<<<
- *         """Dp87Analytical.set_aim_assister(direction_generator)
- * 
+ *     def set_direction_generator(self, AnalyticalDirectionGenerator direction_generator):             # <<<<<<<<<<<<<<
+ *         """
+ *         Dp87Analytical.set_direction_generator(direction_generator)
  */
 
   /* function exit code */
@@ -7596,17 +7285,17 @@ static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_4set_aim_assister(
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":432
+/* "analytical_field.pyx":643
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def unset_aim_assister(self):             # <<<<<<<<<<<<<<
- *         """Dp87Analytical.unset_aim_assister()
- * 
+ *         """
+ *         Dp87Analytical.unset_direction_generator()
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_16analytical_field_14Dp87Analytical_7unset_aim_assister(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static char __pyx_doc_16analytical_field_14Dp87Analytical_6unset_aim_assister[] = "Dp87Analytical.unset_aim_assister()\n\n        Unsets the aim_assister. Useful in order to ensure that the aim assister\n        is always updated when it should be, namely in terms of a new target\n        or, for that matter, a new vector field.\n\n        ";
+static char __pyx_doc_16analytical_field_14Dp87Analytical_6unset_aim_assister[] = "\n        Dp87Analytical.unset_direction_generator()\n\n        Unsets the direction generator.\n\n        ";
 static PyObject *__pyx_pw_16analytical_field_14Dp87Analytical_7unset_aim_assister(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
@@ -7623,7 +7312,7 @@ static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_6unset_aim_assiste
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("unset_aim_assister", 0);
 
-  /* "analytical_field.pyx":440
+  /* "analytical_field.pyx":650
  * 
  *         """
  *         self.initialized = False             # <<<<<<<<<<<<<<
@@ -7632,12 +7321,12 @@ static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_6unset_aim_assiste
  */
   __pyx_v_self->initialized = 0;
 
-  /* "analytical_field.pyx":432
+  /* "analytical_field.pyx":643
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def unset_aim_assister(self):             # <<<<<<<<<<<<<<
- *         """Dp87Analytical.unset_aim_assister()
- * 
+ *         """
+ *         Dp87Analytical.unset_direction_generator()
  */
 
   /* function exit code */
@@ -7647,17 +7336,17 @@ static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_6unset_aim_assiste
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":445
+/* "analytical_field.pyx":655
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __call__(self, double t, double[::1] pos, double h):             # <<<<<<<<<<<<<<
- *         """Dp87Analytical.__call__(t,pos,h)
- * 
+ *         """
+ *         Dp87Analytical.__call__(t,pos,h)
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_16analytical_field_14Dp87Analytical_9__call__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static char __pyx_doc_16analytical_field_14Dp87Analytical_8__call__[] = "Dp87Analytical.__call__(t,pos,h)\n\n        Attempts a single step forwards in (pseudo-)time, using the\n        Dormand-Prince 8(7) adaptive integrator scheme. If the attempted step\n        is rejected, the time level and coordinates are not updated, while the\n        time increment is refined.\n\n        Steps in the direction given by the direction generator set by\n        set_aim_assister, which has to be called in advance. Otherwise,\n        a RuntimeError is raised.\n\n        param: t --   Current (pseudo-)time level\n        param: pos -- Current (Cartesian) coordinates, as a three-component\n                      C-contiguous NumPy array\n        param: h --   Current time increment\n\n        return: t --   (a) New (pseudo-)time level, if the attempted step is\n                           accepted\n                       (b) Current (pseudo-)time level, if the attempted step is\n                           rejected\n        return: pos -- Three-component C-contiguous NumPy array, containing\n                       (a) Dormand-Prince 8(7) Analytical approximation of the\n                           (Cartesian) coordinates at the new time level, if the\n                           attempted step is accepted\n                       (b) Current (Cartesian) coordinates; unaltered, if the\n                           attempted step is rejected\n        return: h --   Updated (pseudo-)time increment. Generally increased\n                       or decreased, depending on whether or not the trial step\n                       is accepted.\n\n        ";
+static char __pyx_doc_16analytical_field_14Dp87Analytical_8__call__[] = "\n        Dp87Analytical.__call__(t,pos,h)\n\n        The function which attempts a step forwards in (pseudo)time along\n        the current trajectory.\n\n        Parameters\n        ----------\n        t : double\n           Current (pseudo)time level\n        pos : (3,) ndarray\n           A (C-contiguous) NumPy array containing the current (Cartesian)\n           coordinates.\n        h : double\n           Current (pseudo)time step\n\n        Returns\n        -------\n        _t : double\n           If the attempted step is rejected, _t = t\n           If the attempted step is accepted, _t = t + h\n        _pos : (3,) ndarray\n           If the attempted step is rejected, _pos = pos\n           If the attempted step is accepted, _pos =/= pos\n        _h : double\n           Updated (pseudo)time step.\n\n        ";
 #if CYTHON_COMPILING_IN_CPYTHON
 struct wrapperbase __pyx_wrapperbase_16analytical_field_14Dp87Analytical_8__call__;
 #endif
@@ -7693,17 +7382,17 @@ static PyObject *__pyx_pw_16analytical_field_14Dp87Analytical_9__call__(PyObject
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_pos)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__call__", 1, 3, 3, 1); __PYX_ERR(1, 445, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__call__", 1, 3, 3, 1); __PYX_ERR(1, 655, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_h)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__call__", 1, 3, 3, 2); __PYX_ERR(1, 445, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__call__", 1, 3, 3, 2); __PYX_ERR(1, 655, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 445, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(1, 655, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -7712,13 +7401,13 @@ static PyObject *__pyx_pw_16analytical_field_14Dp87Analytical_9__call__(PyObject
       values[1] = PyTuple_GET_ITEM(__pyx_args, 1);
       values[2] = PyTuple_GET_ITEM(__pyx_args, 2);
     }
-    __pyx_v_t = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_t == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 445, __pyx_L3_error)
-    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 445, __pyx_L3_error)
-    __pyx_v_h = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_h == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 445, __pyx_L3_error)
+    __pyx_v_t = __pyx_PyFloat_AsDouble(values[0]); if (unlikely((__pyx_v_t == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 655, __pyx_L3_error)
+    __pyx_v_pos = __Pyx_PyObject_to_MemoryviewSlice_dc_double(values[1], PyBUF_WRITABLE); if (unlikely(!__pyx_v_pos.memview)) __PYX_ERR(1, 655, __pyx_L3_error)
+    __pyx_v_h = __pyx_PyFloat_AsDouble(values[2]); if (unlikely((__pyx_v_h == (double)-1) && PyErr_Occurred())) __PYX_ERR(1, 655, __pyx_L3_error)
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__call__", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 445, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__call__", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(1, 655, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("analytical_field.Dp87Analytical.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -7745,12 +7434,12 @@ static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_8__call__(struct _
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("__call__", 0);
 
-  /* "analytical_field.pyx":479
- * 
+  /* "analytical_field.pyx":685
+ *         """
  *         cdef:
  *             double[::1] pos_i = self.pos_i             # <<<<<<<<<<<<<<
- *         if not self.initialized:
- *             raise RuntimeError('Dormand-Prince 8(7) linear solver not'\
+ *         if pos.shape[0] != 3:
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')
  */
   __pyx_t_1 = __pyx_v_self->pos_i;
   __PYX_INC_MEMVIEW(&__pyx_t_1, 1);
@@ -7758,49 +7447,81 @@ static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_8__call__(struct _
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "analytical_field.pyx":480
+  /* "analytical_field.pyx":686
  *         cdef:
  *             double[::1] pos_i = self.pos_i
+ *         if pos.shape[0] != 3:             # <<<<<<<<<<<<<<
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')
+ *         if not self.initialized:
+ */
+  __pyx_t_2 = (((__pyx_v_pos.shape[0]) != 3) != 0);
+  if (unlikely(__pyx_t_2)) {
+
+    /* "analytical_field.pyx":687
+ *             double[::1] pos_i = self.pos_i
+ *         if pos.shape[0] != 3:
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')             # <<<<<<<<<<<<<<
+ *         if not self.initialized:
+ *             raise RuntimeError('Dormand-Prince 8(7) solver not'\
+ */
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_ValueError, __pyx_tuple__12, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 687, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_3);
+    __Pyx_Raise(__pyx_t_3, 0, 0, 0);
+    __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
+    __PYX_ERR(1, 687, __pyx_L1_error)
+
+    /* "analytical_field.pyx":686
+ *         cdef:
+ *             double[::1] pos_i = self.pos_i
+ *         if pos.shape[0] != 3:             # <<<<<<<<<<<<<<
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')
+ *         if not self.initialized:
+ */
+  }
+
+  /* "analytical_field.pyx":688
+ *         if pos.shape[0] != 3:
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')
  *         if not self.initialized:             # <<<<<<<<<<<<<<
- *             raise RuntimeError('Dormand-Prince 8(7) linear solver not'\
- *                     ' initialized with a AnalyticalAimAssister instance!')
+ *             raise RuntimeError('Dormand-Prince 8(7) solver not'\
+ *                     ' initialized with a AnalyticalDirectionGenerator instance!')
  */
   __pyx_t_2 = ((!(__pyx_v_self->initialized != 0)) != 0);
   if (unlikely(__pyx_t_2)) {
 
-    /* "analytical_field.pyx":481
- *             double[::1] pos_i = self.pos_i
+    /* "analytical_field.pyx":689
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')
  *         if not self.initialized:
- *             raise RuntimeError('Dormand-Prince 8(7) linear solver not'\             # <<<<<<<<<<<<<<
- *                     ' initialized with a AnalyticalAimAssister instance!')
+ *             raise RuntimeError('Dormand-Prince 8(7) solver not'\             # <<<<<<<<<<<<<<
+ *                     ' initialized with a AnalyticalDirectionGenerator instance!')
  *         dcopy(3,pos,1,pos_i,1)
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__13, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 481, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_RuntimeError, __pyx_tuple__13, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 689, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_Raise(__pyx_t_3, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __PYX_ERR(1, 481, __pyx_L1_error)
+    __PYX_ERR(1, 689, __pyx_L1_error)
 
-    /* "analytical_field.pyx":480
- *         cdef:
- *             double[::1] pos_i = self.pos_i
+    /* "analytical_field.pyx":688
+ *         if pos.shape[0] != 3:
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')
  *         if not self.initialized:             # <<<<<<<<<<<<<<
- *             raise RuntimeError('Dormand-Prince 8(7) linear solver not'\
- *                     ' initialized with a AnalyticalAimAssister instance!')
+ *             raise RuntimeError('Dormand-Prince 8(7) solver not'\
+ *                     ' initialized with a AnalyticalDirectionGenerator instance!')
  */
   }
 
-  /* "analytical_field.pyx":483
- *             raise RuntimeError('Dormand-Prince 8(7) linear solver not'\
- *                     ' initialized with a AnalyticalAimAssister instance!')
+  /* "analytical_field.pyx":691
+ *             raise RuntimeError('Dormand-Prince 8(7) solver not'\
+ *                     ' initialized with a AnalyticalDirectionGenerator instance!')
  *         dcopy(3,pos,1,pos_i,1)             # <<<<<<<<<<<<<<
  *         self._ev_(&t,pos_i,&h)
  *         return t, np.copy(self._pos_i_), h
  */
   __pyx_f_16analytical_field_dcopy(3, __pyx_v_pos, 1, __pyx_v_pos_i, 1);
 
-  /* "analytical_field.pyx":484
- *                     ' initialized with a AnalyticalAimAssister instance!')
+  /* "analytical_field.pyx":692
+ *                     ' initialized with a AnalyticalDirectionGenerator instance!')
  *         dcopy(3,pos,1,pos_i,1)
  *         self._ev_(&t,pos_i,&h)             # <<<<<<<<<<<<<<
  *         return t, np.copy(self._pos_i_), h
@@ -7808,7 +7529,7 @@ static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_8__call__(struct _
  */
   ((struct __pyx_vtabstruct_16analytical_field_Dp87Analytical *)__pyx_v_self->__pyx_vtab)->_ev_(__pyx_v_self, (&__pyx_v_t), __pyx_v_pos_i, (&__pyx_v_h));
 
-  /* "analytical_field.pyx":485
+  /* "analytical_field.pyx":693
  *         dcopy(3,pos,1,pos_i,1)
  *         self._ev_(&t,pos_i,&h)
  *         return t, np.copy(self._pos_i_), h             # <<<<<<<<<<<<<<
@@ -7816,14 +7537,14 @@ static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_8__call__(struct _
  *     @cython.initializedcheck(False)
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_3 = PyFloat_FromDouble(__pyx_v_t); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 485, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble(__pyx_v_t); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 693, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 485, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_GetModuleGlobalName(__pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 693, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_copy); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 485, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_copy); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 693, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_carray_to_py_double(__pyx_v_self->_pos_i_, 3); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 485, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_carray_to_py_double(__pyx_v_self->_pos_i_, 3); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 693, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
@@ -7836,14 +7557,14 @@ static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_8__call__(struct _
     }
   }
   if (!__pyx_t_7) {
-    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 485, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 693, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_4);
   } else {
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_6)) {
       PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_t_5};
-      __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 485, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 693, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -7852,28 +7573,28 @@ static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_8__call__(struct _
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
       PyObject *__pyx_temp[2] = {__pyx_t_7, __pyx_t_5};
-      __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 485, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-1, 1+1); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 693, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else
     #endif
     {
-      __pyx_t_8 = PyTuple_New(1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 485, __pyx_L1_error)
+      __pyx_t_8 = PyTuple_New(1+1); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 693, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_7); __pyx_t_7 = NULL;
       __Pyx_GIVEREF(__pyx_t_5);
       PyTuple_SET_ITEM(__pyx_t_8, 0+1, __pyx_t_5);
       __pyx_t_5 = 0;
-      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 485, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 693, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     }
   }
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = PyFloat_FromDouble(__pyx_v_h); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 485, __pyx_L1_error)
+  __pyx_t_6 = PyFloat_FromDouble(__pyx_v_h); if (unlikely(!__pyx_t_6)) __PYX_ERR(1, 693, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 485, __pyx_L1_error)
+  __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(1, 693, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_3);
@@ -7888,12 +7609,12 @@ static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_8__call__(struct _
   __pyx_t_8 = 0;
   goto __pyx_L0;
 
-  /* "analytical_field.pyx":445
+  /* "analytical_field.pyx":655
  *     @cython.wraparound(False)
  *     @cython.boundscheck(False)
  *     def __call__(self, double t, double[::1] pos, double h):             # <<<<<<<<<<<<<<
- *         """Dp87Analytical.__call__(t,pos,h)
- * 
+ *         """
+ *         Dp87Analytical.__call__(t,pos,h)
  */
 
   /* function exit code */
@@ -7915,12 +7636,12 @@ static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_8__call__(struct _
   return __pyx_r;
 }
 
-/* "analytical_field.pyx":491
+/* "analytical_field.pyx":699
  *     @cython.boundscheck(False)
  *     @cython.cdivision(True)
  *     cdef void _ev_(self, double *t, double[::1] pos, double *h):             # <<<<<<<<<<<<<<
- *         """Dp87Analytical._ev_(t,pos,h)
- * 
+ *         """
+ *         Dp87Analytical._ev_(t,pos,h)
  */
 
 static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16analytical_field_Dp87Analytical *__pyx_v_self, double *__pyx_v_t, __Pyx_memviewslice __pyx_v_pos, double *__pyx_v_h) {
@@ -8080,7 +7801,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   double __pyx_t_121;
   __Pyx_RefNannySetupContext("_ev_", 0);
 
-  /* "analytical_field.pyx":507
+  /* "analytical_field.pyx":729
  *         """
  *         cdef:
  *             double[::1] k1 = self.k1, k2 = self.k2, k3 = self.k3, k4 = self.k4, k5 = self.k5, k6 = self.k6, k7 = self.k7, k8 = self.k8, k9 = self.k9, k10 = self.k10, k11 = self.k11, k12 = self.k12, k13 = self.k13, k_tmp = self.k_tmp             # <<<<<<<<<<<<<<
@@ -8158,7 +7879,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "analytical_field.pyx":508
+  /* "analytical_field.pyx":730
  *         cdef:
  *             double[::1] k1 = self.k1, k2 = self.k2, k3 = self.k3, k4 = self.k4, k5 = self.k5, k6 = self.k6, k7 = self.k7, k8 = self.k8, k9 = self.k9, k10 = self.k10, k11 = self.k11, k12 = self.k12, k13 = self.k13, k_tmp = self.k_tmp
  *             double[::1] x7 = self.x7, x8 = self.x8             # <<<<<<<<<<<<<<
@@ -8176,7 +7897,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "analytical_field.pyx":509
+  /* "analytical_field.pyx":731
  *             double[::1] k1 = self.k1, k2 = self.k2, k3 = self.k3, k4 = self.k4, k5 = self.k5, k6 = self.k6, k7 = self.k7, k8 = self.k8, k9 = self.k9, k10 = self.k10, k11 = self.k11, k12 = self.k12, k13 = self.k13, k_tmp = self.k_tmp
  *             double[::1] x7 = self.x7, x8 = self.x8
  *             double[::1] b7 = self.b7, b8 = self.b8             # <<<<<<<<<<<<<<
@@ -8194,7 +7915,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "analytical_field.pyx":510
+  /* "analytical_field.pyx":732
  *             double[::1] x7 = self.x7, x8 = self.x8
  *             double[::1] b7 = self.b7, b8 = self.b8
  *             double[::1] a1 = self.a1, a2 = self.a2, a3 = self.a3, a4 = self.a4, a5 = self.a5, a6 = self.a6, a7 = self.a7, a8 = self.a8, a9 = self.a9, a10 = self.a10, a11 = self.a11, a12 = self.a12, a13 = self.a13             # <<<<<<<<<<<<<<
@@ -8267,58 +7988,58 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_1.memview = NULL;
   __pyx_t_1.data = NULL;
 
-  /* "analytical_field.pyx":513
+  /* "analytical_field.pyx":735
  *             int i
  * 
- *         self.f._ev_(t[0],pos,k1)             # <<<<<<<<<<<<<<
+ *         self.f._ev_(pos,k1)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a1[0]*h[0],k1,1,k_tmp,1)
  */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, (__pyx_v_t[0]), __pyx_v_pos, __pyx_v_k1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 513, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_pos, __pyx_v_k1); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 735, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "analytical_field.pyx":514
+  /* "analytical_field.pyx":736
  * 
- *         self.f._ev_(t[0],pos,k1)
+ *         self.f._ev_(pos,k1)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a1[0]*h[0],k1,1,k_tmp,1)
  * 
  */
   __pyx_f_16analytical_field_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":515
- *         self.f._ev_(t[0],pos,k1)
+  /* "analytical_field.pyx":737
+ *         self.f._ev_(pos,k1)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a1[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
  * 
- *         self.f._ev_(t[0],k_tmp,k2)
+ *         self.f._ev_(k_tmp,k2)
  */
   __pyx_t_3 = 0;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a1.data) + __pyx_t_3)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":517
+  /* "analytical_field.pyx":739
  *         daxpy(3,a1[0]*h[0],k1,1,k_tmp,1)
  * 
- *         self.f._ev_(t[0],k_tmp,k2)             # <<<<<<<<<<<<<<
+ *         self.f._ev_(k_tmp,k2)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a2[0]*h[0],k1,1,k_tmp,1)
  */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, (__pyx_v_t[0]), __pyx_v_k_tmp, __pyx_v_k2); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 517, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k2); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 739, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "analytical_field.pyx":518
+  /* "analytical_field.pyx":740
  * 
- *         self.f._ev_(t[0],k_tmp,k2)
+ *         self.f._ev_(k_tmp,k2)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a2[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a2[1]*h[0],k2,1,k_tmp,1)
  */
   __pyx_f_16analytical_field_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":519
- *         self.f._ev_(t[0],k_tmp,k2)
+  /* "analytical_field.pyx":741
+ *         self.f._ev_(k_tmp,k2)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a2[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a2[1]*h[0],k2,1,k_tmp,1)
@@ -8327,38 +8048,38 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_4 = 0;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a2.data) + __pyx_t_4)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":520
+  /* "analytical_field.pyx":742
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a2[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a2[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
  * 
- *         self.f._ev_(t[0],k_tmp,k3)
+ *         self.f._ev_(k_tmp,k3)
  */
   __pyx_t_5 = 1;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a2.data) + __pyx_t_5)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":522
+  /* "analytical_field.pyx":744
  *         daxpy(3,a2[1]*h[0],k2,1,k_tmp,1)
  * 
- *         self.f._ev_(t[0],k_tmp,k3)             # <<<<<<<<<<<<<<
+ *         self.f._ev_(k_tmp,k3)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a3[0]*h[0],k1,1,k_tmp,1)
  */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, (__pyx_v_t[0]), __pyx_v_k_tmp, __pyx_v_k3); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 522, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k3); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 744, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "analytical_field.pyx":523
+  /* "analytical_field.pyx":745
  * 
- *         self.f._ev_(t[0],k_tmp,k3)
+ *         self.f._ev_(k_tmp,k3)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a3[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a3[1]*h[0],k2,1,k_tmp,1)
  */
   __pyx_f_16analytical_field_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":524
- *         self.f._ev_(t[0],k_tmp,k3)
+  /* "analytical_field.pyx":746
+ *         self.f._ev_(k_tmp,k3)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a3[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a3[1]*h[0],k2,1,k_tmp,1)
@@ -8367,7 +8088,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_6 = 0;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a3.data) + __pyx_t_6)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":525
+  /* "analytical_field.pyx":747
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a3[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a3[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8377,38 +8098,38 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_7 = 1;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a3.data) + __pyx_t_7)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":526
+  /* "analytical_field.pyx":748
  *         daxpy(3,a3[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a3[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a3[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
  * 
- *         self.f._ev_(t[0],k_tmp,k4)
+ *         self.f._ev_(k_tmp,k4)
  */
   __pyx_t_8 = 2;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a3.data) + __pyx_t_8)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":528
+  /* "analytical_field.pyx":750
  *         daxpy(3,a3[2]*h[0],k3,1,k_tmp,1)
  * 
- *         self.f._ev_(t[0],k_tmp,k4)             # <<<<<<<<<<<<<<
+ *         self.f._ev_(k_tmp,k4)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a4[0]*h[0],k1,1,k_tmp,1)
  */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, (__pyx_v_t[0]), __pyx_v_k_tmp, __pyx_v_k4); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 528, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k4); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 750, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "analytical_field.pyx":529
+  /* "analytical_field.pyx":751
  * 
- *         self.f._ev_(t[0],k_tmp,k4)
+ *         self.f._ev_(k_tmp,k4)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a4[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a4[1]*h[0],k2,1,k_tmp,1)
  */
   __pyx_f_16analytical_field_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":530
- *         self.f._ev_(t[0],k_tmp,k4)
+  /* "analytical_field.pyx":752
+ *         self.f._ev_(k_tmp,k4)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a4[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a4[1]*h[0],k2,1,k_tmp,1)
@@ -8417,7 +8138,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_9 = 0;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a4.data) + __pyx_t_9)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":531
+  /* "analytical_field.pyx":753
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a4[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a4[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8427,7 +8148,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_10 = 1;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a4.data) + __pyx_t_10)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":532
+  /* "analytical_field.pyx":754
  *         daxpy(3,a4[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a4[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a4[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8437,38 +8158,38 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_11 = 2;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a4.data) + __pyx_t_11)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":533
+  /* "analytical_field.pyx":755
  *         daxpy(3,a4[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a4[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a4[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
  * 
- *         self.f._ev_(t[0],k_tmp,k5)
+ *         self.f._ev_(k_tmp,k5)
  */
   __pyx_t_12 = 3;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a4.data) + __pyx_t_12)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":535
+  /* "analytical_field.pyx":757
  *         daxpy(3,a4[3]*h[0],k4,1,k_tmp,1)
  * 
- *         self.f._ev_(t[0],k_tmp,k5)             # <<<<<<<<<<<<<<
+ *         self.f._ev_(k_tmp,k5)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a5[0]*h[0],k1,1,k_tmp,1)
  */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, (__pyx_v_t[0]), __pyx_v_k_tmp, __pyx_v_k5); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 535, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k5); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 757, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "analytical_field.pyx":536
+  /* "analytical_field.pyx":758
  * 
- *         self.f._ev_(t[0],k_tmp,k5)
+ *         self.f._ev_(k_tmp,k5)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a5[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a5[1]*h[0],k2,1,k_tmp,1)
  */
   __pyx_f_16analytical_field_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":537
- *         self.f._ev_(t[0],k_tmp,k5)
+  /* "analytical_field.pyx":759
+ *         self.f._ev_(k_tmp,k5)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a5[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a5[1]*h[0],k2,1,k_tmp,1)
@@ -8477,7 +8198,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_13 = 0;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a5.data) + __pyx_t_13)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":538
+  /* "analytical_field.pyx":760
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a5[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a5[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8487,7 +8208,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_14 = 1;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a5.data) + __pyx_t_14)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":539
+  /* "analytical_field.pyx":761
  *         daxpy(3,a5[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a5[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a5[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8497,7 +8218,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_15 = 2;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a5.data) + __pyx_t_15)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":540
+  /* "analytical_field.pyx":762
  *         daxpy(3,a5[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a5[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a5[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8507,38 +8228,38 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_16 = 3;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a5.data) + __pyx_t_16)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":541
+  /* "analytical_field.pyx":763
  *         daxpy(3,a5[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a5[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a5[4]*h[0],k5,1,k_tmp,1)             # <<<<<<<<<<<<<<
  * 
- *         self.f._ev_(t[0],k_tmp,k6)
+ *         self.f._ev_(k_tmp,k6)
  */
   __pyx_t_17 = 4;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a5.data) + __pyx_t_17)) ))) * (__pyx_v_h[0])), __pyx_v_k5, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":543
+  /* "analytical_field.pyx":765
  *         daxpy(3,a5[4]*h[0],k5,1,k_tmp,1)
  * 
- *         self.f._ev_(t[0],k_tmp,k6)             # <<<<<<<<<<<<<<
+ *         self.f._ev_(k_tmp,k6)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a6[0]*h[0],k1,1,k_tmp,1)
  */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, (__pyx_v_t[0]), __pyx_v_k_tmp, __pyx_v_k6); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 543, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k6); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 765, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "analytical_field.pyx":544
+  /* "analytical_field.pyx":766
  * 
- *         self.f._ev_(t[0],k_tmp,k6)
+ *         self.f._ev_(k_tmp,k6)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a6[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a6[1]*h[0],k2,1,k_tmp,1)
  */
   __pyx_f_16analytical_field_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":545
- *         self.f._ev_(t[0],k_tmp,k6)
+  /* "analytical_field.pyx":767
+ *         self.f._ev_(k_tmp,k6)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a6[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a6[1]*h[0],k2,1,k_tmp,1)
@@ -8547,7 +8268,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_18 = 0;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a6.data) + __pyx_t_18)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":546
+  /* "analytical_field.pyx":768
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a6[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a6[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8557,7 +8278,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_19 = 1;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a6.data) + __pyx_t_19)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":547
+  /* "analytical_field.pyx":769
  *         daxpy(3,a6[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a6[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a6[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8567,7 +8288,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_20 = 2;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a6.data) + __pyx_t_20)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":548
+  /* "analytical_field.pyx":770
  *         daxpy(3,a6[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a6[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a6[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8577,7 +8298,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_21 = 3;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a6.data) + __pyx_t_21)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":549
+  /* "analytical_field.pyx":771
  *         daxpy(3,a6[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a6[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a6[4]*h[0],k5,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8587,38 +8308,38 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_22 = 4;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a6.data) + __pyx_t_22)) ))) * (__pyx_v_h[0])), __pyx_v_k5, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":550
+  /* "analytical_field.pyx":772
  *         daxpy(3,a6[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a6[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a6[5]*h[0],k6,1,k_tmp,1)             # <<<<<<<<<<<<<<
  * 
- *         self.f._ev_(t[0],k_tmp,k7)
+ *         self.f._ev_(k_tmp,k7)
  */
   __pyx_t_23 = 5;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a6.data) + __pyx_t_23)) ))) * (__pyx_v_h[0])), __pyx_v_k6, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":552
+  /* "analytical_field.pyx":774
  *         daxpy(3,a6[5]*h[0],k6,1,k_tmp,1)
  * 
- *         self.f._ev_(t[0],k_tmp,k7)             # <<<<<<<<<<<<<<
+ *         self.f._ev_(k_tmp,k7)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a7[0]*h[0],k1,1,k_tmp,1)
  */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, (__pyx_v_t[0]), __pyx_v_k_tmp, __pyx_v_k7); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 552, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k7); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 774, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "analytical_field.pyx":553
+  /* "analytical_field.pyx":775
  * 
- *         self.f._ev_(t[0],k_tmp,k7)
+ *         self.f._ev_(k_tmp,k7)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a7[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a7[1]*h[0],k2,1,k_tmp,1)
  */
   __pyx_f_16analytical_field_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":554
- *         self.f._ev_(t[0],k_tmp,k7)
+  /* "analytical_field.pyx":776
+ *         self.f._ev_(k_tmp,k7)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a7[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a7[1]*h[0],k2,1,k_tmp,1)
@@ -8627,7 +8348,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_24 = 0;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a7.data) + __pyx_t_24)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":555
+  /* "analytical_field.pyx":777
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a7[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a7[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8637,7 +8358,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_25 = 1;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a7.data) + __pyx_t_25)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":556
+  /* "analytical_field.pyx":778
  *         daxpy(3,a7[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a7[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a7[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8647,7 +8368,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_26 = 2;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a7.data) + __pyx_t_26)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":557
+  /* "analytical_field.pyx":779
  *         daxpy(3,a7[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a7[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a7[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8657,7 +8378,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_27 = 3;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a7.data) + __pyx_t_27)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":558
+  /* "analytical_field.pyx":780
  *         daxpy(3,a7[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a7[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a7[4]*h[0],k5,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8667,7 +8388,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_28 = 4;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a7.data) + __pyx_t_28)) ))) * (__pyx_v_h[0])), __pyx_v_k5, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":559
+  /* "analytical_field.pyx":781
  *         daxpy(3,a7[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a7[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a7[5]*h[0],k6,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8677,38 +8398,38 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_29 = 5;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a7.data) + __pyx_t_29)) ))) * (__pyx_v_h[0])), __pyx_v_k6, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":560
+  /* "analytical_field.pyx":782
  *         daxpy(3,a7[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a7[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a7[6]*h[0],k7,1,k_tmp,1)             # <<<<<<<<<<<<<<
  * 
- *         self.f._ev_(t[0],k_tmp,k8)
+ *         self.f._ev_(k_tmp,k8)
  */
   __pyx_t_30 = 6;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a7.data) + __pyx_t_30)) ))) * (__pyx_v_h[0])), __pyx_v_k7, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":562
+  /* "analytical_field.pyx":784
  *         daxpy(3,a7[6]*h[0],k7,1,k_tmp,1)
  * 
- *         self.f._ev_(t[0],k_tmp,k8)             # <<<<<<<<<<<<<<
+ *         self.f._ev_(k_tmp,k8)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a8[0]*h[0],k1,1,k_tmp,1)
  */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, (__pyx_v_t[0]), __pyx_v_k_tmp, __pyx_v_k8); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 562, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k8); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 784, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "analytical_field.pyx":563
+  /* "analytical_field.pyx":785
  * 
- *         self.f._ev_(t[0],k_tmp,k8)
+ *         self.f._ev_(k_tmp,k8)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a8[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a8[1]*h[0],k2,1,k_tmp,1)
  */
   __pyx_f_16analytical_field_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":564
- *         self.f._ev_(t[0],k_tmp,k8)
+  /* "analytical_field.pyx":786
+ *         self.f._ev_(k_tmp,k8)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a8[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a8[1]*h[0],k2,1,k_tmp,1)
@@ -8717,7 +8438,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_31 = 0;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a8.data) + __pyx_t_31)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":565
+  /* "analytical_field.pyx":787
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a8[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a8[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8727,7 +8448,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_32 = 1;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a8.data) + __pyx_t_32)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":566
+  /* "analytical_field.pyx":788
  *         daxpy(3,a8[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a8[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a8[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8737,7 +8458,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_33 = 2;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a8.data) + __pyx_t_33)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":567
+  /* "analytical_field.pyx":789
  *         daxpy(3,a8[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a8[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a8[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8747,7 +8468,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_34 = 3;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a8.data) + __pyx_t_34)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":568
+  /* "analytical_field.pyx":790
  *         daxpy(3,a8[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a8[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a8[4]*h[0],k5,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8757,7 +8478,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_35 = 4;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a8.data) + __pyx_t_35)) ))) * (__pyx_v_h[0])), __pyx_v_k5, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":569
+  /* "analytical_field.pyx":791
  *         daxpy(3,a8[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a8[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a8[5]*h[0],k6,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8767,7 +8488,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_36 = 5;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a8.data) + __pyx_t_36)) ))) * (__pyx_v_h[0])), __pyx_v_k6, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":570
+  /* "analytical_field.pyx":792
  *         daxpy(3,a8[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a8[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a8[6]*h[0],k7,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8777,38 +8498,38 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_37 = 6;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a8.data) + __pyx_t_37)) ))) * (__pyx_v_h[0])), __pyx_v_k7, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":571
+  /* "analytical_field.pyx":793
  *         daxpy(3,a8[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a8[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a8[7]*h[0],k8,1,k_tmp,1)             # <<<<<<<<<<<<<<
  * 
- *         self.f._ev_(t[0],k_tmp,k9)
+ *         self.f._ev_(k_tmp,k9)
  */
   __pyx_t_38 = 7;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a8.data) + __pyx_t_38)) ))) * (__pyx_v_h[0])), __pyx_v_k8, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":573
+  /* "analytical_field.pyx":795
  *         daxpy(3,a8[7]*h[0],k8,1,k_tmp,1)
  * 
- *         self.f._ev_(t[0],k_tmp,k9)             # <<<<<<<<<<<<<<
+ *         self.f._ev_(k_tmp,k9)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a9[0]*h[0],k1,1,k_tmp,1)
  */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, (__pyx_v_t[0]), __pyx_v_k_tmp, __pyx_v_k9); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 573, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k9); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 795, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "analytical_field.pyx":574
+  /* "analytical_field.pyx":796
  * 
- *         self.f._ev_(t[0],k_tmp,k9)
+ *         self.f._ev_(k_tmp,k9)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a9[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a9[1]*h[0],k2,1,k_tmp,1)
  */
   __pyx_f_16analytical_field_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":575
- *         self.f._ev_(t[0],k_tmp,k9)
+  /* "analytical_field.pyx":797
+ *         self.f._ev_(k_tmp,k9)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a9[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a9[1]*h[0],k2,1,k_tmp,1)
@@ -8817,7 +8538,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_39 = 0;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_39)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":576
+  /* "analytical_field.pyx":798
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a9[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a9[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8827,7 +8548,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_40 = 1;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_40)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":577
+  /* "analytical_field.pyx":799
  *         daxpy(3,a9[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a9[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a9[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8837,7 +8558,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_41 = 2;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_41)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":578
+  /* "analytical_field.pyx":800
  *         daxpy(3,a9[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a9[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a9[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8847,7 +8568,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_42 = 3;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_42)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":579
+  /* "analytical_field.pyx":801
  *         daxpy(3,a9[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a9[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a9[4]*h[0],k5,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8857,7 +8578,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_43 = 4;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_43)) ))) * (__pyx_v_h[0])), __pyx_v_k5, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":580
+  /* "analytical_field.pyx":802
  *         daxpy(3,a9[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a9[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a9[5]*h[0],k6,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8867,7 +8588,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_44 = 5;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_44)) ))) * (__pyx_v_h[0])), __pyx_v_k6, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":581
+  /* "analytical_field.pyx":803
  *         daxpy(3,a9[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a9[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a9[6]*h[0],k7,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8877,7 +8598,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_45 = 6;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_45)) ))) * (__pyx_v_h[0])), __pyx_v_k7, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":582
+  /* "analytical_field.pyx":804
  *         daxpy(3,a9[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a9[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a9[7]*h[0],k8,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8887,38 +8608,38 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_46 = 7;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_46)) ))) * (__pyx_v_h[0])), __pyx_v_k8, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":583
+  /* "analytical_field.pyx":805
  *         daxpy(3,a9[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a9[7]*h[0],k8,1,k_tmp,1)
  *         daxpy(3,a9[8]*h[0],k9,1,k_tmp,1)             # <<<<<<<<<<<<<<
  * 
- *         self.f._ev_(t[0],k_tmp,k10)
+ *         self.f._ev_(k_tmp,k10)
  */
   __pyx_t_47 = 8;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a9.data) + __pyx_t_47)) ))) * (__pyx_v_h[0])), __pyx_v_k9, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":585
+  /* "analytical_field.pyx":807
  *         daxpy(3,a9[8]*h[0],k9,1,k_tmp,1)
  * 
- *         self.f._ev_(t[0],k_tmp,k10)             # <<<<<<<<<<<<<<
+ *         self.f._ev_(k_tmp,k10)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a10[0]*h[0],k1,1,k_tmp,1)
  */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, (__pyx_v_t[0]), __pyx_v_k_tmp, __pyx_v_k10); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 585, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k10); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 807, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "analytical_field.pyx":586
+  /* "analytical_field.pyx":808
  * 
- *         self.f._ev_(t[0],k_tmp,k10)
+ *         self.f._ev_(k_tmp,k10)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a10[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a10[1]*h[0],k2,1,k_tmp,1)
  */
   __pyx_f_16analytical_field_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":587
- *         self.f._ev_(t[0],k_tmp,k10)
+  /* "analytical_field.pyx":809
+ *         self.f._ev_(k_tmp,k10)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a10[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a10[1]*h[0],k2,1,k_tmp,1)
@@ -8927,7 +8648,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_48 = 0;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_48)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":588
+  /* "analytical_field.pyx":810
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a10[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a10[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8937,7 +8658,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_49 = 1;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_49)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":589
+  /* "analytical_field.pyx":811
  *         daxpy(3,a10[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a10[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a10[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8947,7 +8668,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_50 = 2;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_50)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":590
+  /* "analytical_field.pyx":812
  *         daxpy(3,a10[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a10[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a10[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8957,7 +8678,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_51 = 3;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_51)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":591
+  /* "analytical_field.pyx":813
  *         daxpy(3,a10[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a10[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a10[4]*h[0],k5,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8967,7 +8688,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_52 = 4;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_52)) ))) * (__pyx_v_h[0])), __pyx_v_k5, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":592
+  /* "analytical_field.pyx":814
  *         daxpy(3,a10[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a10[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a10[5]*h[0],k6,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8977,7 +8698,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_53 = 5;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_53)) ))) * (__pyx_v_h[0])), __pyx_v_k6, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":593
+  /* "analytical_field.pyx":815
  *         daxpy(3,a10[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a10[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a10[6]*h[0],k7,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8987,7 +8708,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_54 = 6;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_54)) ))) * (__pyx_v_h[0])), __pyx_v_k7, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":594
+  /* "analytical_field.pyx":816
  *         daxpy(3,a10[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a10[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a10[7]*h[0],k8,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -8997,7 +8718,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_55 = 7;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_55)) ))) * (__pyx_v_h[0])), __pyx_v_k8, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":595
+  /* "analytical_field.pyx":817
  *         daxpy(3,a10[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a10[7]*h[0],k8,1,k_tmp,1)
  *         daxpy(3,a10[8]*h[0],k9,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9007,38 +8728,38 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_56 = 8;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_56)) ))) * (__pyx_v_h[0])), __pyx_v_k9, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":596
+  /* "analytical_field.pyx":818
  *         daxpy(3,a10[7]*h[0],k8,1,k_tmp,1)
  *         daxpy(3,a10[8]*h[0],k9,1,k_tmp,1)
  *         daxpy(3,a10[9]*h[0],k10,1,k_tmp,1)             # <<<<<<<<<<<<<<
  * 
- *         self.f._ev_(t[0],k_tmp,k11)
+ *         self.f._ev_(k_tmp,k11)
  */
   __pyx_t_57 = 9;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a10.data) + __pyx_t_57)) ))) * (__pyx_v_h[0])), __pyx_v_k10, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":598
+  /* "analytical_field.pyx":820
  *         daxpy(3,a10[9]*h[0],k10,1,k_tmp,1)
  * 
- *         self.f._ev_(t[0],k_tmp,k11)             # <<<<<<<<<<<<<<
+ *         self.f._ev_(k_tmp,k11)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a11[0]*h[0],k1,1,k_tmp,1)
  */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, (__pyx_v_t[0]), __pyx_v_k_tmp, __pyx_v_k11); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 598, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k11); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 820, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "analytical_field.pyx":599
+  /* "analytical_field.pyx":821
  * 
- *         self.f._ev_(t[0],k_tmp,k11)
+ *         self.f._ev_(k_tmp,k11)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a11[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a11[1]*h[0],k2,1,k_tmp,1)
  */
   __pyx_f_16analytical_field_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":600
- *         self.f._ev_(t[0],k_tmp,k11)
+  /* "analytical_field.pyx":822
+ *         self.f._ev_(k_tmp,k11)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a11[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a11[1]*h[0],k2,1,k_tmp,1)
@@ -9047,7 +8768,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_58 = 0;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_58)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":601
+  /* "analytical_field.pyx":823
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a11[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a11[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9057,7 +8778,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_59 = 1;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_59)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":602
+  /* "analytical_field.pyx":824
  *         daxpy(3,a11[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a11[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a11[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9067,7 +8788,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_60 = 2;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_60)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":603
+  /* "analytical_field.pyx":825
  *         daxpy(3,a11[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a11[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a11[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9077,7 +8798,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_61 = 3;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_61)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":604
+  /* "analytical_field.pyx":826
  *         daxpy(3,a11[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a11[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a11[4]*h[0],k5,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9087,7 +8808,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_62 = 4;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_62)) ))) * (__pyx_v_h[0])), __pyx_v_k5, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":605
+  /* "analytical_field.pyx":827
  *         daxpy(3,a11[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a11[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a11[5]*h[0],k6,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9097,7 +8818,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_63 = 5;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_63)) ))) * (__pyx_v_h[0])), __pyx_v_k6, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":606
+  /* "analytical_field.pyx":828
  *         daxpy(3,a11[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a11[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a11[6]*h[0],k7,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9107,7 +8828,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_64 = 6;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_64)) ))) * (__pyx_v_h[0])), __pyx_v_k7, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":607
+  /* "analytical_field.pyx":829
  *         daxpy(3,a11[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a11[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a11[7]*h[0],k8,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9117,7 +8838,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_65 = 7;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_65)) ))) * (__pyx_v_h[0])), __pyx_v_k8, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":608
+  /* "analytical_field.pyx":830
  *         daxpy(3,a11[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a11[7]*h[0],k8,1,k_tmp,1)
  *         daxpy(3,a11[8]*h[0],k9,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9127,7 +8848,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_66 = 8;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_66)) ))) * (__pyx_v_h[0])), __pyx_v_k9, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":609
+  /* "analytical_field.pyx":831
  *         daxpy(3,a11[7]*h[0],k8,1,k_tmp,1)
  *         daxpy(3,a11[8]*h[0],k9,1,k_tmp,1)
  *         daxpy(3,a11[9]*h[0],k10,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9137,38 +8858,38 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_67 = 9;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_67)) ))) * (__pyx_v_h[0])), __pyx_v_k10, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":610
+  /* "analytical_field.pyx":832
  *         daxpy(3,a11[8]*h[0],k9,1,k_tmp,1)
  *         daxpy(3,a11[9]*h[0],k10,1,k_tmp,1)
  *         daxpy(3,a11[10]*h[0],k11,1,k_tmp,1)             # <<<<<<<<<<<<<<
  * 
- *         self.f._ev_(t[0],k_tmp,k12)
+ *         self.f._ev_(k_tmp,k12)
  */
   __pyx_t_68 = 10;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a11.data) + __pyx_t_68)) ))) * (__pyx_v_h[0])), __pyx_v_k11, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":612
+  /* "analytical_field.pyx":834
  *         daxpy(3,a11[10]*h[0],k11,1,k_tmp,1)
  * 
- *         self.f._ev_(t[0],k_tmp,k12)             # <<<<<<<<<<<<<<
+ *         self.f._ev_(k_tmp,k12)             # <<<<<<<<<<<<<<
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a12[0]*h[0],k1,1,k_tmp,1)
  */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, (__pyx_v_t[0]), __pyx_v_k_tmp, __pyx_v_k12); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 612, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k12); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 834, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "analytical_field.pyx":613
+  /* "analytical_field.pyx":835
  * 
- *         self.f._ev_(t[0],k_tmp,k12)
+ *         self.f._ev_(k_tmp,k12)
  *         dcopy(3,pos,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a12[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a12[1]*h[0],k2,1,k_tmp,1)
  */
   __pyx_f_16analytical_field_dcopy(3, __pyx_v_pos, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":614
- *         self.f._ev_(t[0],k_tmp,k12)
+  /* "analytical_field.pyx":836
+ *         self.f._ev_(k_tmp,k12)
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a12[0]*h[0],k1,1,k_tmp,1)             # <<<<<<<<<<<<<<
  *         daxpy(3,a12[1]*h[0],k2,1,k_tmp,1)
@@ -9177,7 +8898,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_69 = 0;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_69)) ))) * (__pyx_v_h[0])), __pyx_v_k1, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":615
+  /* "analytical_field.pyx":837
  *         dcopy(3,pos,1,k_tmp,1)
  *         daxpy(3,a12[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a12[1]*h[0],k2,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9187,7 +8908,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_70 = 1;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_70)) ))) * (__pyx_v_h[0])), __pyx_v_k2, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":616
+  /* "analytical_field.pyx":838
  *         daxpy(3,a12[0]*h[0],k1,1,k_tmp,1)
  *         daxpy(3,a12[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a12[2]*h[0],k3,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9197,7 +8918,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_71 = 2;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_71)) ))) * (__pyx_v_h[0])), __pyx_v_k3, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":617
+  /* "analytical_field.pyx":839
  *         daxpy(3,a12[1]*h[0],k2,1,k_tmp,1)
  *         daxpy(3,a12[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a12[3]*h[0],k4,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9207,7 +8928,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_72 = 3;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_72)) ))) * (__pyx_v_h[0])), __pyx_v_k4, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":618
+  /* "analytical_field.pyx":840
  *         daxpy(3,a12[2]*h[0],k3,1,k_tmp,1)
  *         daxpy(3,a12[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a12[4]*h[0],k5,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9217,7 +8938,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_73 = 4;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_73)) ))) * (__pyx_v_h[0])), __pyx_v_k5, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":619
+  /* "analytical_field.pyx":841
  *         daxpy(3,a12[3]*h[0],k4,1,k_tmp,1)
  *         daxpy(3,a12[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a12[5]*h[0],k6,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9227,7 +8948,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_74 = 5;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_74)) ))) * (__pyx_v_h[0])), __pyx_v_k6, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":620
+  /* "analytical_field.pyx":842
  *         daxpy(3,a12[4]*h[0],k5,1,k_tmp,1)
  *         daxpy(3,a12[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a12[6]*h[0],k7,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9237,7 +8958,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_75 = 6;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_75)) ))) * (__pyx_v_h[0])), __pyx_v_k7, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":621
+  /* "analytical_field.pyx":843
  *         daxpy(3,a12[5]*h[0],k6,1,k_tmp,1)
  *         daxpy(3,a12[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a12[7]*h[0],k8,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9247,7 +8968,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_76 = 7;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_76)) ))) * (__pyx_v_h[0])), __pyx_v_k8, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":622
+  /* "analytical_field.pyx":844
  *         daxpy(3,a12[6]*h[0],k7,1,k_tmp,1)
  *         daxpy(3,a12[7]*h[0],k8,1,k_tmp,1)
  *         daxpy(3,a12[8]*h[0],k9,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9257,7 +8978,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_77 = 8;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_77)) ))) * (__pyx_v_h[0])), __pyx_v_k9, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":623
+  /* "analytical_field.pyx":845
  *         daxpy(3,a12[7]*h[0],k8,1,k_tmp,1)
  *         daxpy(3,a12[8]*h[0],k9,1,k_tmp,1)
  *         daxpy(3,a12[9]*h[0],k10,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9267,7 +8988,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_78 = 9;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_78)) ))) * (__pyx_v_h[0])), __pyx_v_k10, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":624
+  /* "analytical_field.pyx":846
  *         daxpy(3,a12[8]*h[0],k9,1,k_tmp,1)
  *         daxpy(3,a12[9]*h[0],k10,1,k_tmp,1)
  *         daxpy(3,a12[10]*h[0],k11,1,k_tmp,1)             # <<<<<<<<<<<<<<
@@ -9277,29 +8998,29 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_79 = 10;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_79)) ))) * (__pyx_v_h[0])), __pyx_v_k11, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":625
+  /* "analytical_field.pyx":847
  *         daxpy(3,a12[9]*h[0],k10,1,k_tmp,1)
  *         daxpy(3,a12[10]*h[0],k11,1,k_tmp,1)
  *         daxpy(3,a12[11]*h[0],k12,1,k_tmp,1)             # <<<<<<<<<<<<<<
  * 
- *         self.f._ev_(t[0],k_tmp,k13)
+ *         self.f._ev_(k_tmp,k13)
  */
   __pyx_t_80 = 11;
   __pyx_f_16analytical_field_daxpy(3, ((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_a12.data) + __pyx_t_80)) ))) * (__pyx_v_h[0])), __pyx_v_k12, 1, __pyx_v_k_tmp, 1);
 
-  /* "analytical_field.pyx":627
+  /* "analytical_field.pyx":849
  *         daxpy(3,a12[11]*h[0],k12,1,k_tmp,1)
  * 
- *         self.f._ev_(t[0],k_tmp,k13)             # <<<<<<<<<<<<<<
+ *         self.f._ev_(k_tmp,k13)             # <<<<<<<<<<<<<<
  * 
  *         dscal(3,0,x7,1)
  */
-  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, (__pyx_v_t[0]), __pyx_v_k_tmp, __pyx_v_k13); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 627, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator *)__pyx_v_self->f->__pyx_vtab)->_ev_(__pyx_v_self->f, __pyx_v_k_tmp, __pyx_v_k13); if (unlikely(!__pyx_t_2)) __PYX_ERR(1, 849, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "analytical_field.pyx":629
- *         self.f._ev_(t[0],k_tmp,k13)
+  /* "analytical_field.pyx":851
+ *         self.f._ev_(k_tmp,k13)
  * 
  *         dscal(3,0,x7,1)             # <<<<<<<<<<<<<<
  *         dscal(3,0,x8,1)
@@ -9307,7 +9028,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
  */
   __pyx_f_16analytical_field_dscal(3, 0.0, __pyx_v_x7, 1);
 
-  /* "analytical_field.pyx":630
+  /* "analytical_field.pyx":852
  * 
  *         dscal(3,0,x7,1)
  *         dscal(3,0,x8,1)             # <<<<<<<<<<<<<<
@@ -9316,7 +9037,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
  */
   __pyx_f_16analytical_field_dscal(3, 0.0, __pyx_v_x8, 1);
 
-  /* "analytical_field.pyx":632
+  /* "analytical_field.pyx":854
  *         dscal(3,0,x8,1)
  * 
  *         daxpy(3,b7[0],k1,1,x7,1)             # <<<<<<<<<<<<<<
@@ -9326,7 +9047,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_81 = 0;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_81)) ))), __pyx_v_k1, 1, __pyx_v_x7, 1);
 
-  /* "analytical_field.pyx":633
+  /* "analytical_field.pyx":855
  * 
  *         daxpy(3,b7[0],k1,1,x7,1)
  *         daxpy(3,b7[1],k2,1,x7,1)             # <<<<<<<<<<<<<<
@@ -9336,7 +9057,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_82 = 1;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_82)) ))), __pyx_v_k2, 1, __pyx_v_x7, 1);
 
-  /* "analytical_field.pyx":634
+  /* "analytical_field.pyx":856
  *         daxpy(3,b7[0],k1,1,x7,1)
  *         daxpy(3,b7[1],k2,1,x7,1)
  *         daxpy(3,b7[2],k3,1,x7,1)             # <<<<<<<<<<<<<<
@@ -9346,7 +9067,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_83 = 2;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_83)) ))), __pyx_v_k3, 1, __pyx_v_x7, 1);
 
-  /* "analytical_field.pyx":635
+  /* "analytical_field.pyx":857
  *         daxpy(3,b7[1],k2,1,x7,1)
  *         daxpy(3,b7[2],k3,1,x7,1)
  *         daxpy(3,b7[3],k4,1,x7,1)             # <<<<<<<<<<<<<<
@@ -9356,7 +9077,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_84 = 3;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_84)) ))), __pyx_v_k4, 1, __pyx_v_x7, 1);
 
-  /* "analytical_field.pyx":636
+  /* "analytical_field.pyx":858
  *         daxpy(3,b7[2],k3,1,x7,1)
  *         daxpy(3,b7[3],k4,1,x7,1)
  *         daxpy(3,b7[4],k5,1,x7,1)             # <<<<<<<<<<<<<<
@@ -9366,7 +9087,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_85 = 4;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_85)) ))), __pyx_v_k5, 1, __pyx_v_x7, 1);
 
-  /* "analytical_field.pyx":637
+  /* "analytical_field.pyx":859
  *         daxpy(3,b7[3],k4,1,x7,1)
  *         daxpy(3,b7[4],k5,1,x7,1)
  *         daxpy(3,b7[5],k6,1,x7,1)             # <<<<<<<<<<<<<<
@@ -9376,7 +9097,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_86 = 5;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_86)) ))), __pyx_v_k6, 1, __pyx_v_x7, 1);
 
-  /* "analytical_field.pyx":638
+  /* "analytical_field.pyx":860
  *         daxpy(3,b7[4],k5,1,x7,1)
  *         daxpy(3,b7[5],k6,1,x7,1)
  *         daxpy(3,b7[6],k7,1,x7,1)             # <<<<<<<<<<<<<<
@@ -9386,7 +9107,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_87 = 6;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_87)) ))), __pyx_v_k7, 1, __pyx_v_x7, 1);
 
-  /* "analytical_field.pyx":639
+  /* "analytical_field.pyx":861
  *         daxpy(3,b7[5],k6,1,x7,1)
  *         daxpy(3,b7[6],k7,1,x7,1)
  *         daxpy(3,b7[7],k8,1,x7,1)             # <<<<<<<<<<<<<<
@@ -9396,7 +9117,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_88 = 7;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_88)) ))), __pyx_v_k8, 1, __pyx_v_x7, 1);
 
-  /* "analytical_field.pyx":640
+  /* "analytical_field.pyx":862
  *         daxpy(3,b7[6],k7,1,x7,1)
  *         daxpy(3,b7[7],k8,1,x7,1)
  *         daxpy(3,b7[8],k9,1,x7,1)             # <<<<<<<<<<<<<<
@@ -9406,7 +9127,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_89 = 8;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_89)) ))), __pyx_v_k9, 1, __pyx_v_x7, 1);
 
-  /* "analytical_field.pyx":641
+  /* "analytical_field.pyx":863
  *         daxpy(3,b7[7],k8,1,x7,1)
  *         daxpy(3,b7[8],k9,1,x7,1)
  *         daxpy(3,b7[9],k10,1,x7,1)             # <<<<<<<<<<<<<<
@@ -9416,7 +9137,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_90 = 9;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_90)) ))), __pyx_v_k10, 1, __pyx_v_x7, 1);
 
-  /* "analytical_field.pyx":642
+  /* "analytical_field.pyx":864
  *         daxpy(3,b7[8],k9,1,x7,1)
  *         daxpy(3,b7[9],k10,1,x7,1)
  *         daxpy(3,b7[10],k11,1,x7,1)             # <<<<<<<<<<<<<<
@@ -9426,7 +9147,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_91 = 10;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_91)) ))), __pyx_v_k11, 1, __pyx_v_x7, 1);
 
-  /* "analytical_field.pyx":643
+  /* "analytical_field.pyx":865
  *         daxpy(3,b7[9],k10,1,x7,1)
  *         daxpy(3,b7[10],k11,1,x7,1)
  *         daxpy(3,b7[11],k12,1,x7,1)             # <<<<<<<<<<<<<<
@@ -9436,7 +9157,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_92 = 11;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_92)) ))), __pyx_v_k12, 1, __pyx_v_x7, 1);
 
-  /* "analytical_field.pyx":644
+  /* "analytical_field.pyx":866
  *         daxpy(3,b7[10],k11,1,x7,1)
  *         daxpy(3,b7[11],k12,1,x7,1)
  *         daxpy(3,b7[12],k13,1,x7,1)             # <<<<<<<<<<<<<<
@@ -9446,7 +9167,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_93 = 12;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b7.data) + __pyx_t_93)) ))), __pyx_v_k13, 1, __pyx_v_x7, 1);
 
-  /* "analytical_field.pyx":646
+  /* "analytical_field.pyx":868
  *         daxpy(3,b7[12],k13,1,x7,1)
  * 
  *         dscal(3,h[0],x7,1)             # <<<<<<<<<<<<<<
@@ -9455,7 +9176,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
  */
   __pyx_f_16analytical_field_dscal(3, (__pyx_v_h[0]), __pyx_v_x7, 1);
 
-  /* "analytical_field.pyx":647
+  /* "analytical_field.pyx":869
  * 
  *         dscal(3,h[0],x7,1)
  *         daxpy(3,1,pos,1,x7,1)             # <<<<<<<<<<<<<<
@@ -9464,7 +9185,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
  */
   __pyx_f_16analytical_field_daxpy(3, 1.0, __pyx_v_pos, 1, __pyx_v_x7, 1);
 
-  /* "analytical_field.pyx":649
+  /* "analytical_field.pyx":871
  *         daxpy(3,1,pos,1,x7,1)
  * 
  *         daxpy(3,b8[0],k1,1,x8,1)             # <<<<<<<<<<<<<<
@@ -9474,7 +9195,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_94 = 0;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_94)) ))), __pyx_v_k1, 1, __pyx_v_x8, 1);
 
-  /* "analytical_field.pyx":650
+  /* "analytical_field.pyx":872
  * 
  *         daxpy(3,b8[0],k1,1,x8,1)
  *         daxpy(3,b8[1],k2,1,x8,1)             # <<<<<<<<<<<<<<
@@ -9484,7 +9205,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_95 = 1;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_95)) ))), __pyx_v_k2, 1, __pyx_v_x8, 1);
 
-  /* "analytical_field.pyx":651
+  /* "analytical_field.pyx":873
  *         daxpy(3,b8[0],k1,1,x8,1)
  *         daxpy(3,b8[1],k2,1,x8,1)
  *         daxpy(3,b8[2],k3,1,x8,1)             # <<<<<<<<<<<<<<
@@ -9494,7 +9215,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_96 = 2;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_96)) ))), __pyx_v_k3, 1, __pyx_v_x8, 1);
 
-  /* "analytical_field.pyx":652
+  /* "analytical_field.pyx":874
  *         daxpy(3,b8[1],k2,1,x8,1)
  *         daxpy(3,b8[2],k3,1,x8,1)
  *         daxpy(3,b8[3],k4,1,x8,1)             # <<<<<<<<<<<<<<
@@ -9504,7 +9225,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_97 = 3;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_97)) ))), __pyx_v_k4, 1, __pyx_v_x8, 1);
 
-  /* "analytical_field.pyx":653
+  /* "analytical_field.pyx":875
  *         daxpy(3,b8[2],k3,1,x8,1)
  *         daxpy(3,b8[3],k4,1,x8,1)
  *         daxpy(3,b8[4],k5,1,x8,1)             # <<<<<<<<<<<<<<
@@ -9514,7 +9235,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_98 = 4;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_98)) ))), __pyx_v_k5, 1, __pyx_v_x8, 1);
 
-  /* "analytical_field.pyx":654
+  /* "analytical_field.pyx":876
  *         daxpy(3,b8[3],k4,1,x8,1)
  *         daxpy(3,b8[4],k5,1,x8,1)
  *         daxpy(3,b8[5],k6,1,x8,1)             # <<<<<<<<<<<<<<
@@ -9524,7 +9245,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_99 = 5;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_99)) ))), __pyx_v_k6, 1, __pyx_v_x8, 1);
 
-  /* "analytical_field.pyx":655
+  /* "analytical_field.pyx":877
  *         daxpy(3,b8[4],k5,1,x8,1)
  *         daxpy(3,b8[5],k6,1,x8,1)
  *         daxpy(3,b8[6],k7,1,x8,1)             # <<<<<<<<<<<<<<
@@ -9534,7 +9255,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_100 = 6;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_100)) ))), __pyx_v_k7, 1, __pyx_v_x8, 1);
 
-  /* "analytical_field.pyx":656
+  /* "analytical_field.pyx":878
  *         daxpy(3,b8[5],k6,1,x8,1)
  *         daxpy(3,b8[6],k7,1,x8,1)
  *         daxpy(3,b8[7],k8,1,x8,1)             # <<<<<<<<<<<<<<
@@ -9544,7 +9265,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_101 = 7;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_101)) ))), __pyx_v_k8, 1, __pyx_v_x8, 1);
 
-  /* "analytical_field.pyx":657
+  /* "analytical_field.pyx":879
  *         daxpy(3,b8[6],k7,1,x8,1)
  *         daxpy(3,b8[7],k8,1,x8,1)
  *         daxpy(3,b8[8],k9,1,x8,1)             # <<<<<<<<<<<<<<
@@ -9554,7 +9275,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_102 = 8;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_102)) ))), __pyx_v_k9, 1, __pyx_v_x8, 1);
 
-  /* "analytical_field.pyx":658
+  /* "analytical_field.pyx":880
  *         daxpy(3,b8[7],k8,1,x8,1)
  *         daxpy(3,b8[8],k9,1,x8,1)
  *         daxpy(3,b8[9],k10,1,x8,1)             # <<<<<<<<<<<<<<
@@ -9564,7 +9285,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_103 = 9;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_103)) ))), __pyx_v_k10, 1, __pyx_v_x8, 1);
 
-  /* "analytical_field.pyx":659
+  /* "analytical_field.pyx":881
  *         daxpy(3,b8[8],k9,1,x8,1)
  *         daxpy(3,b8[9],k10,1,x8,1)
  *         daxpy(3,b8[10],k11,1,x8,1)             # <<<<<<<<<<<<<<
@@ -9574,7 +9295,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_104 = 10;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_104)) ))), __pyx_v_k11, 1, __pyx_v_x8, 1);
 
-  /* "analytical_field.pyx":660
+  /* "analytical_field.pyx":882
  *         daxpy(3,b8[9],k10,1,x8,1)
  *         daxpy(3,b8[10],k11,1,x8,1)
  *         daxpy(3,b8[11],k12,1,x8,1)             # <<<<<<<<<<<<<<
@@ -9584,7 +9305,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_105 = 11;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_105)) ))), __pyx_v_k12, 1, __pyx_v_x8, 1);
 
-  /* "analytical_field.pyx":661
+  /* "analytical_field.pyx":883
  *         daxpy(3,b8[10],k11,1,x8,1)
  *         daxpy(3,b8[11],k12,1,x8,1)
  *         daxpy(3,b8[12],k13,1,x8,1)             # <<<<<<<<<<<<<<
@@ -9594,7 +9315,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_106 = 12;
   __pyx_f_16analytical_field_daxpy(3, (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_b8.data) + __pyx_t_106)) ))), __pyx_v_k13, 1, __pyx_v_x8, 1);
 
-  /* "analytical_field.pyx":663
+  /* "analytical_field.pyx":885
  *         daxpy(3,b8[12],k13,1,x8,1)
  * 
  *         dscal(3,h[0],x8,1)             # <<<<<<<<<<<<<<
@@ -9603,7 +9324,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
  */
   __pyx_f_16analytical_field_dscal(3, (__pyx_v_h[0]), __pyx_v_x8, 1);
 
-  /* "analytical_field.pyx":664
+  /* "analytical_field.pyx":886
  * 
  *         dscal(3,h[0],x8,1)
  *         daxpy(3,1,pos,1,x8,1)             # <<<<<<<<<<<<<<
@@ -9612,7 +9333,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
  */
   __pyx_f_16analytical_field_daxpy(3, 1.0, __pyx_v_pos, 1, __pyx_v_x8, 1);
 
-  /* "analytical_field.pyx":666
+  /* "analytical_field.pyx":888
  *         daxpy(3,1,pos,1,x8,1)
  * 
  *         if c_fabs(x8[0]) < c_fabs(x8[0]):             # <<<<<<<<<<<<<<
@@ -9624,7 +9345,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_109 = ((fabs((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x8.data) + __pyx_t_107)) )))) < fabs((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x8.data) + __pyx_t_108)) ))))) != 0);
   if (__pyx_t_109) {
 
-    /* "analytical_field.pyx":667
+    /* "analytical_field.pyx":889
  * 
  *         if c_fabs(x8[0]) < c_fabs(x8[0]):
  *             self.sc = self.atol + c_fabs(x7[0])*self.rtol             # <<<<<<<<<<<<<<
@@ -9634,7 +9355,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
     __pyx_t_110 = 0;
     __pyx_v_self->sc = (__pyx_v_self->atol + (fabs((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x7.data) + __pyx_t_110)) )))) * __pyx_v_self->rtol));
 
-    /* "analytical_field.pyx":666
+    /* "analytical_field.pyx":888
  *         daxpy(3,1,pos,1,x8,1)
  * 
  *         if c_fabs(x8[0]) < c_fabs(x8[0]):             # <<<<<<<<<<<<<<
@@ -9644,7 +9365,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
     goto __pyx_L3;
   }
 
-  /* "analytical_field.pyx":669
+  /* "analytical_field.pyx":891
  *             self.sc = self.atol + c_fabs(x7[0])*self.rtol
  *         else:
  *             self.sc = self.atol + c_fabs(x8[0])*self.rtol             # <<<<<<<<<<<<<<
@@ -9657,7 +9378,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   }
   __pyx_L3:;
 
-  /* "analytical_field.pyx":671
+  /* "analytical_field.pyx":893
  *             self.sc = self.atol + c_fabs(x8[0])*self.rtol
  * 
  *         self.err = c_fabs(x7[0]-x8[0])/self.sc             # <<<<<<<<<<<<<<
@@ -9668,7 +9389,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_113 = 0;
   __pyx_v_self->err = (fabs(((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x7.data) + __pyx_t_112)) ))) - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x8.data) + __pyx_t_113)) ))))) / __pyx_v_self->sc);
 
-  /* "analytical_field.pyx":672
+  /* "analytical_field.pyx":894
  * 
  *         self.err = c_fabs(x7[0]-x8[0])/self.sc
  *         for i in range(1,3):             # <<<<<<<<<<<<<<
@@ -9678,7 +9399,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   for (__pyx_t_114 = 1; __pyx_t_114 < 3; __pyx_t_114+=1) {
     __pyx_v_i = __pyx_t_114;
 
-    /* "analytical_field.pyx":673
+    /* "analytical_field.pyx":895
  *         self.err = c_fabs(x7[0]-x8[0])/self.sc
  *         for i in range(1,3):
  *             if c_fabs(x7[i]) < c_fabs(x8[i]):             # <<<<<<<<<<<<<<
@@ -9690,7 +9411,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
     __pyx_t_109 = ((fabs((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x7.data) + __pyx_t_115)) )))) < fabs((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x8.data) + __pyx_t_116)) ))))) != 0);
     if (__pyx_t_109) {
 
-      /* "analytical_field.pyx":674
+      /* "analytical_field.pyx":896
  *         for i in range(1,3):
  *             if c_fabs(x7[i]) < c_fabs(x8[i]):
  *                 self.sc = self.atol + c_fabs(x7[i])*self.rtol             # <<<<<<<<<<<<<<
@@ -9700,7 +9421,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
       __pyx_t_117 = __pyx_v_i;
       __pyx_v_self->sc = (__pyx_v_self->atol + (fabs((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x7.data) + __pyx_t_117)) )))) * __pyx_v_self->rtol));
 
-      /* "analytical_field.pyx":673
+      /* "analytical_field.pyx":895
  *         self.err = c_fabs(x7[0]-x8[0])/self.sc
  *         for i in range(1,3):
  *             if c_fabs(x7[i]) < c_fabs(x8[i]):             # <<<<<<<<<<<<<<
@@ -9710,7 +9431,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
       goto __pyx_L6;
     }
 
-    /* "analytical_field.pyx":676
+    /* "analytical_field.pyx":898
  *                 self.sc = self.atol + c_fabs(x7[i])*self.rtol
  *             else:
  *                 self.sc = self.atol + c_fabs(x8[i])*self.rtol             # <<<<<<<<<<<<<<
@@ -9723,7 +9444,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
     }
     __pyx_L6:;
 
-    /* "analytical_field.pyx":678
+    /* "analytical_field.pyx":900
  *                 self.sc = self.atol + c_fabs(x8[i])*self.rtol
  * 
  *             self.tmp = c_fabs(x7[i]-x8[i])/self.sc             # <<<<<<<<<<<<<<
@@ -9734,7 +9455,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
     __pyx_t_120 = __pyx_v_i;
     __pyx_v_self->tmp = (fabs(((*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x7.data) + __pyx_t_119)) ))) - (*((double *) ( /* dim=0 */ ((char *) (((double *) __pyx_v_x8.data) + __pyx_t_120)) ))))) / __pyx_v_self->sc);
 
-    /* "analytical_field.pyx":680
+    /* "analytical_field.pyx":902
  *             self.tmp = c_fabs(x7[i]-x8[i])/self.sc
  * 
  *             if self.tmp > self.err:             # <<<<<<<<<<<<<<
@@ -9744,7 +9465,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
     __pyx_t_109 = ((__pyx_v_self->tmp > __pyx_v_self->err) != 0);
     if (__pyx_t_109) {
 
-      /* "analytical_field.pyx":681
+      /* "analytical_field.pyx":903
  * 
  *             if self.tmp > self.err:
  *                 self.err = self.tmp             # <<<<<<<<<<<<<<
@@ -9754,7 +9475,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
       __pyx_t_121 = __pyx_v_self->tmp;
       __pyx_v_self->err = __pyx_t_121;
 
-      /* "analytical_field.pyx":680
+      /* "analytical_field.pyx":902
  *             self.tmp = c_fabs(x7[i]-x8[i])/self.sc
  * 
  *             if self.tmp > self.err:             # <<<<<<<<<<<<<<
@@ -9764,37 +9485,37 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
     }
   }
 
-  /* "analytical_field.pyx":683
+  /* "analytical_field.pyx":905
  *                 self.err = self.tmp
  * 
  *         if self.err == 0:             # <<<<<<<<<<<<<<
- *             self.h_opt = c_copysign(10,h[0])
+ *             self.h_opt = c_copysign(self.hmax,h[0])
  *         else:
  */
   __pyx_t_109 = ((__pyx_v_self->err == 0.0) != 0);
   if (__pyx_t_109) {
 
-    /* "analytical_field.pyx":684
+    /* "analytical_field.pyx":906
  * 
  *         if self.err == 0:
- *             self.h_opt = c_copysign(10,h[0])             # <<<<<<<<<<<<<<
+ *             self.h_opt = c_copysign(self.hmax,h[0])             # <<<<<<<<<<<<<<
  *         else:
  *             self.h_opt = h[0]*c_pow((1/self.err),1/(self.q+1))
  */
-    __pyx_v_self->h_opt = copysign(10.0, (__pyx_v_h[0]));
+    __pyx_v_self->h_opt = copysign(__pyx_v_self->hmax, (__pyx_v_h[0]));
 
-    /* "analytical_field.pyx":683
+    /* "analytical_field.pyx":905
  *                 self.err = self.tmp
  * 
  *         if self.err == 0:             # <<<<<<<<<<<<<<
- *             self.h_opt = c_copysign(10,h[0])
+ *             self.h_opt = c_copysign(self.hmax,h[0])
  *         else:
  */
     goto __pyx_L8;
   }
 
-  /* "analytical_field.pyx":686
- *             self.h_opt = c_copysign(10,h[0])
+  /* "analytical_field.pyx":908
+ *             self.h_opt = c_copysign(self.hmax,h[0])
  *         else:
  *             self.h_opt = h[0]*c_pow((1/self.err),1/(self.q+1))             # <<<<<<<<<<<<<<
  * 
@@ -9805,7 +9526,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   }
   __pyx_L8:;
 
-  /* "analytical_field.pyx":688
+  /* "analytical_field.pyx":910
  *             self.h_opt = h[0]*c_pow((1/self.err),1/(self.q+1))
  * 
  *         if self.err < 1:             # <<<<<<<<<<<<<<
@@ -9815,7 +9536,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __pyx_t_109 = ((__pyx_v_self->err < 1.0) != 0);
   if (__pyx_t_109) {
 
-    /* "analytical_field.pyx":689
+    /* "analytical_field.pyx":911
  * 
  *         if self.err < 1:
  *             t[0] = t[0] + h[0]             # <<<<<<<<<<<<<<
@@ -9824,7 +9545,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
  */
     (__pyx_v_t[0]) = ((__pyx_v_t[0]) + (__pyx_v_h[0]));
 
-    /* "analytical_field.pyx":690
+    /* "analytical_field.pyx":912
  *         if self.err < 1:
  *             t[0] = t[0] + h[0]
  *             dcopy(3,x8,1,pos,1)             # <<<<<<<<<<<<<<
@@ -9833,7 +9554,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
  */
     __pyx_f_16analytical_field_dcopy(3, __pyx_v_x8, 1, __pyx_v_pos, 1);
 
-    /* "analytical_field.pyx":691
+    /* "analytical_field.pyx":913
  *             t[0] = t[0] + h[0]
  *             dcopy(3,x8,1,pos,1)
  *             if self.maxfac*h[0] < self.fac*self.h_opt:             # <<<<<<<<<<<<<<
@@ -9843,7 +9564,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
     __pyx_t_109 = (((__pyx_v_self->maxfac * (__pyx_v_h[0])) < (__pyx_v_self->fac * __pyx_v_self->h_opt)) != 0);
     if (__pyx_t_109) {
 
-      /* "analytical_field.pyx":692
+      /* "analytical_field.pyx":914
  *             dcopy(3,x8,1,pos,1)
  *             if self.maxfac*h[0] < self.fac*self.h_opt:
  *                 h[0] = self.maxfac*h[0]             # <<<<<<<<<<<<<<
@@ -9852,7 +9573,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
  */
       (__pyx_v_h[0]) = (__pyx_v_self->maxfac * (__pyx_v_h[0]));
 
-      /* "analytical_field.pyx":691
+      /* "analytical_field.pyx":913
  *             t[0] = t[0] + h[0]
  *             dcopy(3,x8,1,pos,1)
  *             if self.maxfac*h[0] < self.fac*self.h_opt:             # <<<<<<<<<<<<<<
@@ -9862,7 +9583,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
       goto __pyx_L10;
     }
 
-    /* "analytical_field.pyx":694
+    /* "analytical_field.pyx":916
  *                 h[0] = self.maxfac*h[0]
  *             else:
  *                 h[0] = self.fac*self.h_opt             # <<<<<<<<<<<<<<
@@ -9874,7 +9595,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
     }
     __pyx_L10:;
 
-    /* "analytical_field.pyx":688
+    /* "analytical_field.pyx":910
  *             self.h_opt = h[0]*c_pow((1/self.err),1/(self.q+1))
  * 
  *         if self.err < 1:             # <<<<<<<<<<<<<<
@@ -9884,7 +9605,7 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
     goto __pyx_L9;
   }
 
-  /* "analytical_field.pyx":696
+  /* "analytical_field.pyx":918
  *                 h[0] = self.fac*self.h_opt
  *         else:
  *             h[0] = self.fac*self.h_opt             # <<<<<<<<<<<<<<
@@ -9894,12 +9615,12 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   }
   __pyx_L9:;
 
-  /* "analytical_field.pyx":491
+  /* "analytical_field.pyx":699
  *     @cython.boundscheck(False)
  *     @cython.cdivision(True)
  *     cdef void _ev_(self, double *t, double[::1] pos, double *h):             # <<<<<<<<<<<<<<
- *         """Dp87Analytical._ev_(t,pos,h)
- * 
+ *         """
+ *         Dp87Analytical._ev_(t,pos,h)
  */
 
   /* function exit code */
@@ -9943,12 +9664,12 @@ static void __pyx_f_16analytical_field_14Dp87Analytical__ev_(struct __pyx_obj_16
   __Pyx_RefNannyFinishContext();
 }
 
-/* "analytical_field.pyx":333
+/* "analytical_field.pyx":529
  *         double[::1] pos_i
- *         double tmp, sc, err, h_opt
+ *         double tmp, sc, err, h_opt, hmax
  *         readonly double atol, rtol             # <<<<<<<<<<<<<<
  *         double q
- *         AnalyticalAimAssister f
+ *         AnalyticalDirectionGenerator f
  */
 
 /* Python wrapper */
@@ -9970,7 +9691,7 @@ static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_4atol___get__(stru
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->atol); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 333, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->atol); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 529, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -10006,7 +9727,7 @@ static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_4rtol___get__(stru
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("__get__", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rtol); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 333, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble(__pyx_v_self->rtol); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 529, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -10130,7 +9851,7 @@ static PyObject *__pyx_pf_16analytical_field_14Dp87Analytical_12__setstate_cytho
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":215
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":215
  *         # experimental exception made for __getbuffer__ and __releasebuffer__
  *         # -- the details of this may change.
  *         def __getbuffer__(ndarray self, Py_buffer* info, int flags):             # <<<<<<<<<<<<<<
@@ -10178,7 +9899,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_v_info->obj = Py_None; __Pyx_INCREF(Py_None);
   __Pyx_GIVEREF(__pyx_v_info->obj);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":222
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":222
  * 
  *             cdef int i, ndim
  *             cdef int endian_detector = 1             # <<<<<<<<<<<<<<
@@ -10187,7 +9908,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_endian_detector = 1;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":223
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":223
  *             cdef int i, ndim
  *             cdef int endian_detector = 1
  *             cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)             # <<<<<<<<<<<<<<
@@ -10196,7 +9917,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_little_endian = ((((char *)(&__pyx_v_endian_detector))[0]) != 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":225
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":225
  *             cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)
  * 
  *             ndim = PyArray_NDIM(self)             # <<<<<<<<<<<<<<
@@ -10205,7 +9926,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_ndim = PyArray_NDIM(__pyx_v_self);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":227
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":227
  *             ndim = PyArray_NDIM(self)
  * 
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -10219,7 +9940,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     goto __pyx_L4_bool_binop_done;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":228
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":228
  * 
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_C_CONTIGUOUS)):             # <<<<<<<<<<<<<<
@@ -10230,7 +9951,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_t_1 = __pyx_t_2;
   __pyx_L4_bool_binop_done:;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":227
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":227
  *             ndim = PyArray_NDIM(self)
  * 
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -10239,7 +9960,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   if (unlikely(__pyx_t_1)) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":229
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":229
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_C_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not C contiguous")             # <<<<<<<<<<<<<<
@@ -10252,7 +9973,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __PYX_ERR(2, 229, __pyx_L1_error)
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":227
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":227
  *             ndim = PyArray_NDIM(self)
  * 
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -10261,7 +9982,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":231
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":231
  *                 raise ValueError(u"ndarray is not C contiguous")
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -10275,7 +9996,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     goto __pyx_L7_bool_binop_done;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":232
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":232
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_F_CONTIGUOUS)):             # <<<<<<<<<<<<<<
@@ -10286,7 +10007,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_t_1 = __pyx_t_2;
   __pyx_L7_bool_binop_done:;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":231
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":231
  *                 raise ValueError(u"ndarray is not C contiguous")
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -10295,7 +10016,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   if (unlikely(__pyx_t_1)) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":233
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":233
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_F_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not Fortran contiguous")             # <<<<<<<<<<<<<<
@@ -10308,7 +10029,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __PYX_ERR(2, 233, __pyx_L1_error)
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":231
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":231
  *                 raise ValueError(u"ndarray is not C contiguous")
  * 
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)             # <<<<<<<<<<<<<<
@@ -10317,7 +10038,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":235
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":235
  *                 raise ValueError(u"ndarray is not Fortran contiguous")
  * 
  *             info.buf = PyArray_DATA(self)             # <<<<<<<<<<<<<<
@@ -10326,7 +10047,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->buf = PyArray_DATA(__pyx_v_self);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":236
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":236
  * 
  *             info.buf = PyArray_DATA(self)
  *             info.ndim = ndim             # <<<<<<<<<<<<<<
@@ -10335,7 +10056,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->ndim = __pyx_v_ndim;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":237
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":237
  *             info.buf = PyArray_DATA(self)
  *             info.ndim = ndim
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
@@ -10345,7 +10066,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_t_1 = (((sizeof(npy_intp)) != (sizeof(Py_ssize_t))) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":240
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":240
  *                 # Allocate new buffer for strides and shape info.
  *                 # This is allocated as one block, strides first.
  *                 info.strides = <Py_ssize_t*>PyObject_Malloc(sizeof(Py_ssize_t) * 2 * <size_t>ndim)             # <<<<<<<<<<<<<<
@@ -10354,7 +10075,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     __pyx_v_info->strides = ((Py_ssize_t *)PyObject_Malloc((((sizeof(Py_ssize_t)) * 2) * ((size_t)__pyx_v_ndim))));
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":241
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":241
  *                 # This is allocated as one block, strides first.
  *                 info.strides = <Py_ssize_t*>PyObject_Malloc(sizeof(Py_ssize_t) * 2 * <size_t>ndim)
  *                 info.shape = info.strides + ndim             # <<<<<<<<<<<<<<
@@ -10363,7 +10084,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     __pyx_v_info->shape = (__pyx_v_info->strides + __pyx_v_ndim);
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":242
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":242
  *                 info.strides = <Py_ssize_t*>PyObject_Malloc(sizeof(Py_ssize_t) * 2 * <size_t>ndim)
  *                 info.shape = info.strides + ndim
  *                 for i in range(ndim):             # <<<<<<<<<<<<<<
@@ -10375,7 +10096,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_5; __pyx_t_6+=1) {
       __pyx_v_i = __pyx_t_6;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":243
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":243
  *                 info.shape = info.strides + ndim
  *                 for i in range(ndim):
  *                     info.strides[i] = PyArray_STRIDES(self)[i]             # <<<<<<<<<<<<<<
@@ -10384,7 +10105,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
       (__pyx_v_info->strides[__pyx_v_i]) = (PyArray_STRIDES(__pyx_v_self)[__pyx_v_i]);
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":244
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":244
  *                 for i in range(ndim):
  *                     info.strides[i] = PyArray_STRIDES(self)[i]
  *                     info.shape[i] = PyArray_DIMS(self)[i]             # <<<<<<<<<<<<<<
@@ -10394,7 +10115,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       (__pyx_v_info->shape[__pyx_v_i]) = (PyArray_DIMS(__pyx_v_self)[__pyx_v_i]);
     }
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":237
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":237
  *             info.buf = PyArray_DATA(self)
  *             info.ndim = ndim
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
@@ -10404,7 +10125,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     goto __pyx_L9;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":246
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":246
  *                     info.shape[i] = PyArray_DIMS(self)[i]
  *             else:
  *                 info.strides = <Py_ssize_t*>PyArray_STRIDES(self)             # <<<<<<<<<<<<<<
@@ -10414,7 +10135,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   /*else*/ {
     __pyx_v_info->strides = ((Py_ssize_t *)PyArray_STRIDES(__pyx_v_self));
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":247
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":247
  *             else:
  *                 info.strides = <Py_ssize_t*>PyArray_STRIDES(self)
  *                 info.shape = <Py_ssize_t*>PyArray_DIMS(self)             # <<<<<<<<<<<<<<
@@ -10425,7 +10146,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   }
   __pyx_L9:;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":248
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":248
  *                 info.strides = <Py_ssize_t*>PyArray_STRIDES(self)
  *                 info.shape = <Py_ssize_t*>PyArray_DIMS(self)
  *             info.suboffsets = NULL             # <<<<<<<<<<<<<<
@@ -10434,7 +10155,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->suboffsets = NULL;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":249
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":249
  *                 info.shape = <Py_ssize_t*>PyArray_DIMS(self)
  *             info.suboffsets = NULL
  *             info.itemsize = PyArray_ITEMSIZE(self)             # <<<<<<<<<<<<<<
@@ -10443,7 +10164,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->itemsize = PyArray_ITEMSIZE(__pyx_v_self);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":250
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":250
  *             info.suboffsets = NULL
  *             info.itemsize = PyArray_ITEMSIZE(self)
  *             info.readonly = not PyArray_ISWRITEABLE(self)             # <<<<<<<<<<<<<<
@@ -10452,7 +10173,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_info->readonly = (!(PyArray_ISWRITEABLE(__pyx_v_self) != 0));
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":253
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":253
  * 
  *             cdef int t
  *             cdef char* f = NULL             # <<<<<<<<<<<<<<
@@ -10461,7 +10182,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   __pyx_v_f = NULL;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":254
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":254
  *             cdef int t
  *             cdef char* f = NULL
  *             cdef dtype descr = self.descr             # <<<<<<<<<<<<<<
@@ -10473,7 +10194,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_v_descr = ((PyArray_Descr *)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":257
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":257
  *             cdef int offset
  * 
  *             info.obj = self             # <<<<<<<<<<<<<<
@@ -10486,7 +10207,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __Pyx_DECREF(__pyx_v_info->obj);
   __pyx_v_info->obj = ((PyObject *)__pyx_v_self);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":259
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":259
  *             info.obj = self
  * 
  *             if not PyDataType_HASFIELDS(descr):             # <<<<<<<<<<<<<<
@@ -10496,7 +10217,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   __pyx_t_1 = ((!(PyDataType_HASFIELDS(__pyx_v_descr) != 0)) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":260
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":260
  * 
  *             if not PyDataType_HASFIELDS(descr):
  *                 t = descr.type_num             # <<<<<<<<<<<<<<
@@ -10506,7 +10227,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __pyx_t_4 = __pyx_v_descr->type_num;
     __pyx_v_t = __pyx_t_4;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":261
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":261
  *             if not PyDataType_HASFIELDS(descr):
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -10526,7 +10247,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     }
     __pyx_L15_next_or:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":262
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":262
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or
  *                     (descr.byteorder == c'<' and not little_endian)):             # <<<<<<<<<<<<<<
@@ -10543,7 +10264,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __pyx_t_1 = __pyx_t_2;
     __pyx_L14_bool_binop_done:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":261
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":261
  *             if not PyDataType_HASFIELDS(descr):
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -10552,7 +10273,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     if (unlikely(__pyx_t_1)) {
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":263
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":263
  *                 if ((descr.byteorder == c'>' and little_endian) or
  *                     (descr.byteorder == c'<' and not little_endian)):
  *                     raise ValueError(u"Non-native byte order not supported")             # <<<<<<<<<<<<<<
@@ -10565,7 +10286,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __PYX_ERR(2, 263, __pyx_L1_error)
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":261
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":261
  *             if not PyDataType_HASFIELDS(descr):
  *                 t = descr.type_num
  *                 if ((descr.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -10574,7 +10295,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     }
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":264
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":264
  *                     (descr.byteorder == c'<' and not little_endian)):
  *                     raise ValueError(u"Non-native byte order not supported")
  *                 if   t == NPY_BYTE:        f = "b"             # <<<<<<<<<<<<<<
@@ -10586,7 +10307,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"b");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":265
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":265
  *                     raise ValueError(u"Non-native byte order not supported")
  *                 if   t == NPY_BYTE:        f = "b"
  *                 elif t == NPY_UBYTE:       f = "B"             # <<<<<<<<<<<<<<
@@ -10597,7 +10318,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"B");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":266
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":266
  *                 if   t == NPY_BYTE:        f = "b"
  *                 elif t == NPY_UBYTE:       f = "B"
  *                 elif t == NPY_SHORT:       f = "h"             # <<<<<<<<<<<<<<
@@ -10608,7 +10329,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"h");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":267
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":267
  *                 elif t == NPY_UBYTE:       f = "B"
  *                 elif t == NPY_SHORT:       f = "h"
  *                 elif t == NPY_USHORT:      f = "H"             # <<<<<<<<<<<<<<
@@ -10619,7 +10340,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"H");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":268
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":268
  *                 elif t == NPY_SHORT:       f = "h"
  *                 elif t == NPY_USHORT:      f = "H"
  *                 elif t == NPY_INT:         f = "i"             # <<<<<<<<<<<<<<
@@ -10630,7 +10351,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"i");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":269
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":269
  *                 elif t == NPY_USHORT:      f = "H"
  *                 elif t == NPY_INT:         f = "i"
  *                 elif t == NPY_UINT:        f = "I"             # <<<<<<<<<<<<<<
@@ -10641,7 +10362,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"I");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":270
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":270
  *                 elif t == NPY_INT:         f = "i"
  *                 elif t == NPY_UINT:        f = "I"
  *                 elif t == NPY_LONG:        f = "l"             # <<<<<<<<<<<<<<
@@ -10652,7 +10373,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"l");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":271
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":271
  *                 elif t == NPY_UINT:        f = "I"
  *                 elif t == NPY_LONG:        f = "l"
  *                 elif t == NPY_ULONG:       f = "L"             # <<<<<<<<<<<<<<
@@ -10663,7 +10384,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"L");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":272
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":272
  *                 elif t == NPY_LONG:        f = "l"
  *                 elif t == NPY_ULONG:       f = "L"
  *                 elif t == NPY_LONGLONG:    f = "q"             # <<<<<<<<<<<<<<
@@ -10674,7 +10395,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"q");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":273
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":273
  *                 elif t == NPY_ULONG:       f = "L"
  *                 elif t == NPY_LONGLONG:    f = "q"
  *                 elif t == NPY_ULONGLONG:   f = "Q"             # <<<<<<<<<<<<<<
@@ -10685,7 +10406,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"Q");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":274
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":274
  *                 elif t == NPY_LONGLONG:    f = "q"
  *                 elif t == NPY_ULONGLONG:   f = "Q"
  *                 elif t == NPY_FLOAT:       f = "f"             # <<<<<<<<<<<<<<
@@ -10696,7 +10417,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"f");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":275
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":275
  *                 elif t == NPY_ULONGLONG:   f = "Q"
  *                 elif t == NPY_FLOAT:       f = "f"
  *                 elif t == NPY_DOUBLE:      f = "d"             # <<<<<<<<<<<<<<
@@ -10707,7 +10428,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"d");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":276
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":276
  *                 elif t == NPY_FLOAT:       f = "f"
  *                 elif t == NPY_DOUBLE:      f = "d"
  *                 elif t == NPY_LONGDOUBLE:  f = "g"             # <<<<<<<<<<<<<<
@@ -10718,7 +10439,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"g");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":277
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":277
  *                 elif t == NPY_DOUBLE:      f = "d"
  *                 elif t == NPY_LONGDOUBLE:  f = "g"
  *                 elif t == NPY_CFLOAT:      f = "Zf"             # <<<<<<<<<<<<<<
@@ -10729,7 +10450,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"Zf");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":278
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":278
  *                 elif t == NPY_LONGDOUBLE:  f = "g"
  *                 elif t == NPY_CFLOAT:      f = "Zf"
  *                 elif t == NPY_CDOUBLE:     f = "Zd"             # <<<<<<<<<<<<<<
@@ -10740,7 +10461,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"Zd");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":279
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":279
  *                 elif t == NPY_CFLOAT:      f = "Zf"
  *                 elif t == NPY_CDOUBLE:     f = "Zd"
  *                 elif t == NPY_CLONGDOUBLE: f = "Zg"             # <<<<<<<<<<<<<<
@@ -10751,7 +10472,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       __pyx_v_f = ((char *)"Zg");
       break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":280
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":280
  *                 elif t == NPY_CDOUBLE:     f = "Zd"
  *                 elif t == NPY_CLONGDOUBLE: f = "Zg"
  *                 elif t == NPY_OBJECT:      f = "O"             # <<<<<<<<<<<<<<
@@ -10763,7 +10484,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
       default:
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":282
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":282
  *                 elif t == NPY_OBJECT:      f = "O"
  *                 else:
  *                     raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)             # <<<<<<<<<<<<<<
@@ -10784,7 +10505,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
       break;
     }
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":283
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":283
  *                 else:
  *                     raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)
  *                 info.format = f             # <<<<<<<<<<<<<<
@@ -10793,7 +10514,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     __pyx_v_info->format = __pyx_v_f;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":284
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":284
  *                     raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)
  *                 info.format = f
  *                 return             # <<<<<<<<<<<<<<
@@ -10803,7 +10524,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __pyx_r = 0;
     goto __pyx_L0;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":259
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":259
  *             info.obj = self
  * 
  *             if not PyDataType_HASFIELDS(descr):             # <<<<<<<<<<<<<<
@@ -10812,7 +10533,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":286
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":286
  *                 return
  *             else:
  *                 info.format = <char*>PyObject_Malloc(_buffer_format_string_len)             # <<<<<<<<<<<<<<
@@ -10822,7 +10543,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   /*else*/ {
     __pyx_v_info->format = ((char *)PyObject_Malloc(0xFF));
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":287
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":287
  *             else:
  *                 info.format = <char*>PyObject_Malloc(_buffer_format_string_len)
  *                 info.format[0] = c'^' # Native data types, manual alignment             # <<<<<<<<<<<<<<
@@ -10831,7 +10552,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     (__pyx_v_info->format[0]) = '^';
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":288
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":288
  *                 info.format = <char*>PyObject_Malloc(_buffer_format_string_len)
  *                 info.format[0] = c'^' # Native data types, manual alignment
  *                 offset = 0             # <<<<<<<<<<<<<<
@@ -10840,7 +10561,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
  */
     __pyx_v_offset = 0;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":289
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":289
  *                 info.format[0] = c'^' # Native data types, manual alignment
  *                 offset = 0
  *                 f = _util_dtypestring(descr, info.format + 1,             # <<<<<<<<<<<<<<
@@ -10850,7 +10571,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     __pyx_t_8 = __pyx_f_5numpy__util_dtypestring(__pyx_v_descr, (__pyx_v_info->format + 1), (__pyx_v_info->format + 0xFF), (&__pyx_v_offset)); if (unlikely(__pyx_t_8 == ((char *)NULL))) __PYX_ERR(2, 289, __pyx_L1_error)
     __pyx_v_f = __pyx_t_8;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":292
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":292
  *                                       info.format + _buffer_format_string_len,
  *                                       &offset)
  *                 f[0] = c'\0' # Terminate format string             # <<<<<<<<<<<<<<
@@ -10860,7 +10581,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
     (__pyx_v_f[0]) = '\x00';
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":215
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":215
  *         # experimental exception made for __getbuffer__ and __releasebuffer__
  *         # -- the details of this may change.
  *         def __getbuffer__(ndarray self, Py_buffer* info, int flags):             # <<<<<<<<<<<<<<
@@ -10892,7 +10613,7 @@ static int __pyx_pf_5numpy_7ndarray___getbuffer__(PyArrayObject *__pyx_v_self, P
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":294
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":294
  *                 f[0] = c'\0' # Terminate format string
  * 
  *         def __releasebuffer__(ndarray self, Py_buffer* info):             # <<<<<<<<<<<<<<
@@ -10916,7 +10637,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("__releasebuffer__", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":295
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":295
  * 
  *         def __releasebuffer__(ndarray self, Py_buffer* info):
  *             if PyArray_HASFIELDS(self):             # <<<<<<<<<<<<<<
@@ -10926,7 +10647,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
   __pyx_t_1 = (PyArray_HASFIELDS(__pyx_v_self) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":296
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":296
  *         def __releasebuffer__(ndarray self, Py_buffer* info):
  *             if PyArray_HASFIELDS(self):
  *                 PyObject_Free(info.format)             # <<<<<<<<<<<<<<
@@ -10935,7 +10656,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
  */
     PyObject_Free(__pyx_v_info->format);
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":295
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":295
  * 
  *         def __releasebuffer__(ndarray self, Py_buffer* info):
  *             if PyArray_HASFIELDS(self):             # <<<<<<<<<<<<<<
@@ -10944,7 +10665,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
  */
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":297
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":297
  *             if PyArray_HASFIELDS(self):
  *                 PyObject_Free(info.format)
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
@@ -10954,7 +10675,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
   __pyx_t_1 = (((sizeof(npy_intp)) != (sizeof(Py_ssize_t))) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":298
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":298
  *                 PyObject_Free(info.format)
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):
  *                 PyObject_Free(info.strides)             # <<<<<<<<<<<<<<
@@ -10963,7 +10684,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
  */
     PyObject_Free(__pyx_v_info->strides);
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":297
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":297
  *             if PyArray_HASFIELDS(self):
  *                 PyObject_Free(info.format)
  *             if sizeof(npy_intp) != sizeof(Py_ssize_t):             # <<<<<<<<<<<<<<
@@ -10972,7 +10693,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
  */
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":294
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":294
  *                 f[0] = c'\0' # Terminate format string
  * 
  *         def __releasebuffer__(ndarray self, Py_buffer* info):             # <<<<<<<<<<<<<<
@@ -10984,7 +10705,7 @@ static void __pyx_pf_5numpy_7ndarray_2__releasebuffer__(PyArrayObject *__pyx_v_s
   __Pyx_RefNannyFinishContext();
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":775
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":775
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -10998,7 +10719,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew1", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":776
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":776
  * 
  * cdef inline object PyArray_MultiIterNew1(a):
  *     return PyArray_MultiIterNew(1, <void*>a)             # <<<<<<<<<<<<<<
@@ -11012,7 +10733,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":775
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":775
  * ctypedef npy_cdouble     complex_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -11031,7 +10752,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":778
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":778
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -11045,7 +10766,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew2", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":779
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":779
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)             # <<<<<<<<<<<<<<
@@ -11059,7 +10780,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":778
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":778
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -11078,7 +10799,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":781
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":781
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -11092,7 +10813,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew3", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":782
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":782
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)             # <<<<<<<<<<<<<<
@@ -11106,7 +10827,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":781
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":781
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -11125,7 +10846,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":784
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":784
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -11139,7 +10860,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew4", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":785
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":785
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)             # <<<<<<<<<<<<<<
@@ -11153,7 +10874,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":784
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":784
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -11172,7 +10893,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":787
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":787
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -11186,7 +10907,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   PyObject *__pyx_t_1 = NULL;
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew5", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":788
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":788
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)             # <<<<<<<<<<<<<<
@@ -11200,7 +10921,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":787
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":787
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -11219,7 +10940,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":790
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":790
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -11233,7 +10954,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("PyDataType_SHAPE", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":791
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":791
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -11243,7 +10964,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   __pyx_t_1 = (PyDataType_HASSUBARRAY(__pyx_v_d) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":792
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":792
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):
  *         return <tuple>d.subarray.shape             # <<<<<<<<<<<<<<
@@ -11255,7 +10976,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     __pyx_r = ((PyObject*)__pyx_v_d->subarray->shape);
     goto __pyx_L0;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":791
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":791
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -11264,7 +10985,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
  */
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":794
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":794
  *         return <tuple>d.subarray.shape
  *     else:
  *         return ()             # <<<<<<<<<<<<<<
@@ -11278,7 +10999,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     goto __pyx_L0;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":790
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":790
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -11293,7 +11014,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":796
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":796
  *         return ()
  * 
  * cdef inline char* _util_dtypestring(dtype descr, char* f, char* end, int* offset) except NULL:             # <<<<<<<<<<<<<<
@@ -11322,7 +11043,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   char *__pyx_t_9;
   __Pyx_RefNannySetupContext("_util_dtypestring", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":801
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":801
  * 
  *     cdef dtype child
  *     cdef int endian_detector = 1             # <<<<<<<<<<<<<<
@@ -11331,7 +11052,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
   __pyx_v_endian_detector = 1;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":802
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":802
  *     cdef dtype child
  *     cdef int endian_detector = 1
  *     cdef bint little_endian = ((<char*>&endian_detector)[0] != 0)             # <<<<<<<<<<<<<<
@@ -11340,7 +11061,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
   __pyx_v_little_endian = ((((char *)(&__pyx_v_endian_detector))[0]) != 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":805
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":805
  *     cdef tuple fields
  * 
  *     for childname in descr.names:             # <<<<<<<<<<<<<<
@@ -11363,7 +11084,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __Pyx_XDECREF_SET(__pyx_v_childname, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":806
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":806
  * 
  *     for childname in descr.names:
  *         fields = descr.fields[childname]             # <<<<<<<<<<<<<<
@@ -11380,7 +11101,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __Pyx_XDECREF_SET(__pyx_v_fields, ((PyObject*)__pyx_t_3));
     __pyx_t_3 = 0;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":807
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":807
  *     for childname in descr.names:
  *         fields = descr.fields[childname]
  *         child, new_offset = fields             # <<<<<<<<<<<<<<
@@ -11415,7 +11136,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __Pyx_XDECREF_SET(__pyx_v_new_offset, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":809
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":809
  *         child, new_offset = fields
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:             # <<<<<<<<<<<<<<
@@ -11432,7 +11153,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_6 = ((((__pyx_v_end - __pyx_v_f) - ((int)__pyx_t_5)) < 15) != 0);
     if (unlikely(__pyx_t_6)) {
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":810
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":810
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")             # <<<<<<<<<<<<<<
@@ -11445,7 +11166,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __PYX_ERR(2, 810, __pyx_L1_error)
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":809
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":809
  *         child, new_offset = fields
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:             # <<<<<<<<<<<<<<
@@ -11454,7 +11175,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
     }
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":812
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":812
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
  * 
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -11474,7 +11195,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     }
     __pyx_L8_next_or:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":813
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":813
  * 
  *         if ((child.byteorder == c'>' and little_endian) or
  *             (child.byteorder == c'<' and not little_endian)):             # <<<<<<<<<<<<<<
@@ -11491,7 +11212,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_6 = __pyx_t_7;
     __pyx_L7_bool_binop_done:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":812
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":812
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
  * 
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -11500,7 +11221,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
     if (unlikely(__pyx_t_6)) {
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":814
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":814
  *         if ((child.byteorder == c'>' and little_endian) or
  *             (child.byteorder == c'<' and not little_endian)):
  *             raise ValueError(u"Non-native byte order not supported")             # <<<<<<<<<<<<<<
@@ -11513,7 +11234,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __PYX_ERR(2, 814, __pyx_L1_error)
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":812
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":812
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")
  * 
  *         if ((child.byteorder == c'>' and little_endian) or             # <<<<<<<<<<<<<<
@@ -11522,7 +11243,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
     }
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":824
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":824
  * 
  *         # Output padding bytes
  *         while offset[0] < new_offset:             # <<<<<<<<<<<<<<
@@ -11538,7 +11259,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       if (!__pyx_t_6) break;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":825
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":825
  *         # Output padding bytes
  *         while offset[0] < new_offset:
  *             f[0] = 120 # "x"; pad byte             # <<<<<<<<<<<<<<
@@ -11547,7 +11268,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       (__pyx_v_f[0]) = 0x78;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":826
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":826
  *         while offset[0] < new_offset:
  *             f[0] = 120 # "x"; pad byte
  *             f += 1             # <<<<<<<<<<<<<<
@@ -11556,7 +11277,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       __pyx_v_f = (__pyx_v_f + 1);
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":827
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":827
  *             f[0] = 120 # "x"; pad byte
  *             f += 1
  *             offset[0] += 1             # <<<<<<<<<<<<<<
@@ -11567,7 +11288,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       (__pyx_v_offset[__pyx_t_8]) = ((__pyx_v_offset[__pyx_t_8]) + 1);
     }
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":829
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":829
  *             offset[0] += 1
  * 
  *         offset[0] += child.itemsize             # <<<<<<<<<<<<<<
@@ -11577,7 +11298,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_8 = 0;
     (__pyx_v_offset[__pyx_t_8]) = ((__pyx_v_offset[__pyx_t_8]) + __pyx_v_child->elsize);
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":831
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":831
  *         offset[0] += child.itemsize
  * 
  *         if not PyDataType_HASFIELDS(child):             # <<<<<<<<<<<<<<
@@ -11587,7 +11308,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     __pyx_t_6 = ((!(PyDataType_HASFIELDS(__pyx_v_child) != 0)) != 0);
     if (__pyx_t_6) {
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":832
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":832
  * 
  *         if not PyDataType_HASFIELDS(child):
  *             t = child.type_num             # <<<<<<<<<<<<<<
@@ -11599,7 +11320,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __Pyx_XDECREF_SET(__pyx_v_t, __pyx_t_4);
       __pyx_t_4 = 0;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":833
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":833
  *         if not PyDataType_HASFIELDS(child):
  *             t = child.type_num
  *             if end - f < 5:             # <<<<<<<<<<<<<<
@@ -11609,7 +11330,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       __pyx_t_6 = (((__pyx_v_end - __pyx_v_f) < 5) != 0);
       if (unlikely(__pyx_t_6)) {
 
-        /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":834
+        /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":834
  *             t = child.type_num
  *             if end - f < 5:
  *                 raise RuntimeError(u"Format string allocated too short.")             # <<<<<<<<<<<<<<
@@ -11622,7 +11343,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __PYX_ERR(2, 834, __pyx_L1_error)
 
-        /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":833
+        /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":833
  *         if not PyDataType_HASFIELDS(child):
  *             t = child.type_num
  *             if end - f < 5:             # <<<<<<<<<<<<<<
@@ -11631,7 +11352,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":837
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":837
  * 
  *             # Until ticket #99 is fixed, use integers to avoid warnings
  *             if   t == NPY_BYTE:        f[0] =  98 #"b"             # <<<<<<<<<<<<<<
@@ -11649,7 +11370,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":838
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":838
  *             # Until ticket #99 is fixed, use integers to avoid warnings
  *             if   t == NPY_BYTE:        f[0] =  98 #"b"
  *             elif t == NPY_UBYTE:       f[0] =  66 #"B"             # <<<<<<<<<<<<<<
@@ -11667,7 +11388,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":839
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":839
  *             if   t == NPY_BYTE:        f[0] =  98 #"b"
  *             elif t == NPY_UBYTE:       f[0] =  66 #"B"
  *             elif t == NPY_SHORT:       f[0] = 104 #"h"             # <<<<<<<<<<<<<<
@@ -11685,7 +11406,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":840
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":840
  *             elif t == NPY_UBYTE:       f[0] =  66 #"B"
  *             elif t == NPY_SHORT:       f[0] = 104 #"h"
  *             elif t == NPY_USHORT:      f[0] =  72 #"H"             # <<<<<<<<<<<<<<
@@ -11703,7 +11424,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":841
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":841
  *             elif t == NPY_SHORT:       f[0] = 104 #"h"
  *             elif t == NPY_USHORT:      f[0] =  72 #"H"
  *             elif t == NPY_INT:         f[0] = 105 #"i"             # <<<<<<<<<<<<<<
@@ -11721,7 +11442,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":842
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":842
  *             elif t == NPY_USHORT:      f[0] =  72 #"H"
  *             elif t == NPY_INT:         f[0] = 105 #"i"
  *             elif t == NPY_UINT:        f[0] =  73 #"I"             # <<<<<<<<<<<<<<
@@ -11739,7 +11460,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":843
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":843
  *             elif t == NPY_INT:         f[0] = 105 #"i"
  *             elif t == NPY_UINT:        f[0] =  73 #"I"
  *             elif t == NPY_LONG:        f[0] = 108 #"l"             # <<<<<<<<<<<<<<
@@ -11757,7 +11478,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":844
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":844
  *             elif t == NPY_UINT:        f[0] =  73 #"I"
  *             elif t == NPY_LONG:        f[0] = 108 #"l"
  *             elif t == NPY_ULONG:       f[0] = 76  #"L"             # <<<<<<<<<<<<<<
@@ -11775,7 +11496,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":845
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":845
  *             elif t == NPY_LONG:        f[0] = 108 #"l"
  *             elif t == NPY_ULONG:       f[0] = 76  #"L"
  *             elif t == NPY_LONGLONG:    f[0] = 113 #"q"             # <<<<<<<<<<<<<<
@@ -11793,7 +11514,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":846
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":846
  *             elif t == NPY_ULONG:       f[0] = 76  #"L"
  *             elif t == NPY_LONGLONG:    f[0] = 113 #"q"
  *             elif t == NPY_ULONGLONG:   f[0] = 81  #"Q"             # <<<<<<<<<<<<<<
@@ -11811,7 +11532,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":847
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":847
  *             elif t == NPY_LONGLONG:    f[0] = 113 #"q"
  *             elif t == NPY_ULONGLONG:   f[0] = 81  #"Q"
  *             elif t == NPY_FLOAT:       f[0] = 102 #"f"             # <<<<<<<<<<<<<<
@@ -11829,7 +11550,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":848
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":848
  *             elif t == NPY_ULONGLONG:   f[0] = 81  #"Q"
  *             elif t == NPY_FLOAT:       f[0] = 102 #"f"
  *             elif t == NPY_DOUBLE:      f[0] = 100 #"d"             # <<<<<<<<<<<<<<
@@ -11847,7 +11568,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":849
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":849
  *             elif t == NPY_FLOAT:       f[0] = 102 #"f"
  *             elif t == NPY_DOUBLE:      f[0] = 100 #"d"
  *             elif t == NPY_LONGDOUBLE:  f[0] = 103 #"g"             # <<<<<<<<<<<<<<
@@ -11865,7 +11586,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":850
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":850
  *             elif t == NPY_DOUBLE:      f[0] = 100 #"d"
  *             elif t == NPY_LONGDOUBLE:  f[0] = 103 #"g"
  *             elif t == NPY_CFLOAT:      f[0] = 90; f[1] = 102; f += 1 # Zf             # <<<<<<<<<<<<<<
@@ -11885,7 +11606,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":851
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":851
  *             elif t == NPY_LONGDOUBLE:  f[0] = 103 #"g"
  *             elif t == NPY_CFLOAT:      f[0] = 90; f[1] = 102; f += 1 # Zf
  *             elif t == NPY_CDOUBLE:     f[0] = 90; f[1] = 100; f += 1 # Zd             # <<<<<<<<<<<<<<
@@ -11905,7 +11626,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":852
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":852
  *             elif t == NPY_CFLOAT:      f[0] = 90; f[1] = 102; f += 1 # Zf
  *             elif t == NPY_CDOUBLE:     f[0] = 90; f[1] = 100; f += 1 # Zd
  *             elif t == NPY_CLONGDOUBLE: f[0] = 90; f[1] = 103; f += 1 # Zg             # <<<<<<<<<<<<<<
@@ -11925,7 +11646,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":853
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":853
  *             elif t == NPY_CDOUBLE:     f[0] = 90; f[1] = 100; f += 1 # Zd
  *             elif t == NPY_CLONGDOUBLE: f[0] = 90; f[1] = 103; f += 1 # Zg
  *             elif t == NPY_OBJECT:      f[0] = 79 #"O"             # <<<<<<<<<<<<<<
@@ -11943,7 +11664,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
         goto __pyx_L15;
       }
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":855
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":855
  *             elif t == NPY_OBJECT:      f[0] = 79 #"O"
  *             else:
  *                 raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)             # <<<<<<<<<<<<<<
@@ -11962,7 +11683,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       }
       __pyx_L15:;
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":856
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":856
  *             else:
  *                 raise ValueError(u"unknown dtype code in numpy.pxd (%d)" % t)
  *             f += 1             # <<<<<<<<<<<<<<
@@ -11971,7 +11692,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
  */
       __pyx_v_f = (__pyx_v_f + 1);
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":831
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":831
  *         offset[0] += child.itemsize
  * 
  *         if not PyDataType_HASFIELDS(child):             # <<<<<<<<<<<<<<
@@ -11981,7 +11702,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
       goto __pyx_L13;
     }
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":860
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":860
  *             # Cython ignores struct boundary information ("T{...}"),
  *             # so don't output it
  *             f = _util_dtypestring(child, f, end, offset)             # <<<<<<<<<<<<<<
@@ -11994,7 +11715,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
     }
     __pyx_L13:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":805
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":805
  *     cdef tuple fields
  * 
  *     for childname in descr.names:             # <<<<<<<<<<<<<<
@@ -12004,7 +11725,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":861
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":861
  *             # so don't output it
  *             f = _util_dtypestring(child, f, end, offset)
  *     return f             # <<<<<<<<<<<<<<
@@ -12014,7 +11735,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   __pyx_r = __pyx_v_f;
   goto __pyx_L0;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":796
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":796
  *         return ()
  * 
  * cdef inline char* _util_dtypestring(dtype descr, char* f, char* end, int* offset) except NULL:             # <<<<<<<<<<<<<<
@@ -12039,7 +11760,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy__util_dtypestring(PyArray_Descr *__pyx
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":977
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":977
  * 
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -12054,7 +11775,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   int __pyx_t_2;
   __Pyx_RefNannySetupContext("set_array_base", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":979
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":979
  * cdef inline void set_array_base(ndarray arr, object base):
  *      cdef PyObject* baseptr
  *      if base is None:             # <<<<<<<<<<<<<<
@@ -12065,7 +11786,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":980
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":980
  *      cdef PyObject* baseptr
  *      if base is None:
  *          baseptr = NULL             # <<<<<<<<<<<<<<
@@ -12074,7 +11795,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
     __pyx_v_baseptr = NULL;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":979
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":979
  * cdef inline void set_array_base(ndarray arr, object base):
  *      cdef PyObject* baseptr
  *      if base is None:             # <<<<<<<<<<<<<<
@@ -12084,7 +11805,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
     goto __pyx_L3;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":982
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":982
  *          baseptr = NULL
  *      else:
  *          Py_INCREF(base) # important to do this before decref below!             # <<<<<<<<<<<<<<
@@ -12094,7 +11815,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   /*else*/ {
     Py_INCREF(__pyx_v_base);
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":983
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":983
  *      else:
  *          Py_INCREF(base) # important to do this before decref below!
  *          baseptr = <PyObject*>base             # <<<<<<<<<<<<<<
@@ -12105,7 +11826,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   }
   __pyx_L3:;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":984
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":984
  *          Py_INCREF(base) # important to do this before decref below!
  *          baseptr = <PyObject*>base
  *      Py_XDECREF(arr.base)             # <<<<<<<<<<<<<<
@@ -12114,7 +11835,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   Py_XDECREF(__pyx_v_arr->base);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":985
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":985
  *          baseptr = <PyObject*>base
  *      Py_XDECREF(arr.base)
  *      arr.base = baseptr             # <<<<<<<<<<<<<<
@@ -12123,7 +11844,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   __pyx_v_arr->base = __pyx_v_baseptr;
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":977
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":977
  * 
  * 
  * cdef inline void set_array_base(ndarray arr, object base):             # <<<<<<<<<<<<<<
@@ -12135,7 +11856,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_RefNannyFinishContext();
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":987
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":987
  *      arr.base = baseptr
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -12149,7 +11870,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("get_array_base", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":988
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":988
  * 
  * cdef inline object get_array_base(ndarray arr):
  *     if arr.base is NULL:             # <<<<<<<<<<<<<<
@@ -12159,7 +11880,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_t_1 = ((__pyx_v_arr->base == NULL) != 0);
   if (__pyx_t_1) {
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":989
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":989
  * cdef inline object get_array_base(ndarray arr):
  *     if arr.base is NULL:
  *         return None             # <<<<<<<<<<<<<<
@@ -12170,7 +11891,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":988
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":988
  * 
  * cdef inline object get_array_base(ndarray arr):
  *     if arr.base is NULL:             # <<<<<<<<<<<<<<
@@ -12179,7 +11900,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":991
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":991
  *         return None
  *     else:
  *         return <object>arr.base             # <<<<<<<<<<<<<<
@@ -12193,7 +11914,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     goto __pyx_L0;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":987
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":987
  *      arr.base = baseptr
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -12208,7 +11929,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":996
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":996
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -12229,7 +11950,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("import_array", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":997
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":997
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12245,7 +11966,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":998
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":998
  * cdef inline int import_array() except -1:
  *     try:
  *         _import_array()             # <<<<<<<<<<<<<<
@@ -12254,7 +11975,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  */
       __pyx_t_4 = _import_array(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 998, __pyx_L3_error)
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":997
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":997
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12268,7 +11989,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":999
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":999
  *     try:
  *         _import_array()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -12283,7 +12004,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1000
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1000
  *         _import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -12299,7 +12020,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":997
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":997
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12314,7 +12035,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":996
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":996
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -12337,7 +12058,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1002
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1002
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -12358,7 +12079,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("import_umath", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1003
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1003
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12374,7 +12095,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1004
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1004
  * cdef inline int import_umath() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -12383,7 +12104,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 1004, __pyx_L3_error)
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1003
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1003
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12397,7 +12118,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1005
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1005
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -12412,7 +12133,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1006
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1006
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -12428,7 +12149,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1003
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1003
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12443,7 +12164,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1002
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1002
  *         raise ImportError("numpy.core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -12466,7 +12187,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   return __pyx_r;
 }
 
-/* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1008
+/* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1008
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -12487,7 +12208,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   PyObject *__pyx_t_8 = NULL;
   __Pyx_RefNannySetupContext("import_ufunc", 0);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1009
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1009
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12503,7 +12224,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1010
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1010
  * cdef inline int import_ufunc() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -12512,7 +12233,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 1010, __pyx_L3_error)
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1009
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1009
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12526,7 +12247,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1011
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1011
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -12540,7 +12261,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_GOTREF(__pyx_t_7);
 
-      /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1012
+      /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1012
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -12554,7 +12275,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L5_except_error;
     __pyx_L5_except_error:;
 
-    /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1009
+    /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1009
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -12569,7 +12290,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1008
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1008
  *         raise ImportError("numpy.core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -26544,7 +26265,7 @@ static PyTypeObject __pyx_type_16analytical_field_SinusoidalField = {
   0, /*tp_setattro*/
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE, /*tp_flags*/
-  0, /*tp_doc*/
+  "\n    A Cython extension type which allows for computation of a normal vector\n    field for a three-dimensional surface defined by\n       f(x,y,z) = A*sin(w_x*x)*sin(w_y*y) + (z - z_0) = 0\n    at any point in R^3.\n\n    Methods defined here:\n    SinusoidalField.__init__(freq_x,freq_y,ampl)\n    SinusoidalField.__call_(pos)\n\n    Version: 1.0\n\n    ", /*tp_doc*/
   0, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
@@ -26638,7 +26359,7 @@ static PyTypeObject __pyx_type_16analytical_field_SphericalField = {
   0, /*tp_setattro*/
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE, /*tp_flags*/
-  0, /*tp_doc*/
+  "\n    A Cython extension type which allows for computation of a purely radial\n    vector field in R^3.\n\n    Methods defined here:\n    SphericalField.__init__(origin)\n    SphericalField.__call_(pos)\n\n    Version: 1.0\n\n    ", /*tp_doc*/
   0, /*tp_traverse*/
   0, /*tp_clear*/
   0, /*tp_richcompare*/
@@ -26669,10 +26390,10 @@ static PyTypeObject __pyx_type_16analytical_field_SphericalField = {
   0, /*tp_finalize*/
   #endif
 };
-static struct __pyx_vtabstruct_16analytical_field_AnalyticalAimAssister __pyx_vtable_16analytical_field_AnalyticalAimAssister;
+static struct __pyx_vtabstruct_16analytical_field_AnalyticalDirectionGenerator __pyx_vtable_16analytical_field_AnalyticalDirectionGenerator;
 
-static PyObject *__pyx_tp_new_16analytical_field_AnalyticalAimAssister(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
-  struct __pyx_obj_16analytical_field_AnalyticalAimAssister *p;
+static PyObject *__pyx_tp_new_16analytical_field_AnalyticalDirectionGenerator(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+  struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -26680,8 +26401,8 @@ static PyObject *__pyx_tp_new_16analytical_field_AnalyticalAimAssister(PyTypeObj
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_16analytical_field_AnalyticalAimAssister *)o);
-  p->__pyx_vtab = __pyx_vtabptr_16analytical_field_AnalyticalAimAssister;
+  p = ((struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *)o);
+  p->__pyx_vtab = __pyx_vtabptr_16analytical_field_AnalyticalDirectionGenerator;
   p->xi_fun = ((struct __pyx_obj_16analytical_field_CallableFunction *)Py_None); Py_INCREF(Py_None);
   p->tan_vec.data = NULL;
   p->tan_vec.memview = NULL;
@@ -26689,19 +26410,17 @@ static PyObject *__pyx_tp_new_16analytical_field_AnalyticalAimAssister(PyTypeObj
   p->prev_vec.memview = NULL;
   p->xi.data = NULL;
   p->xi.memview = NULL;
-  p->pos.data = NULL;
-  p->pos.memview = NULL;
-  p->ret_mv.data = NULL;
-  p->ret_mv.memview = NULL;
-  if (unlikely(__pyx_pw_16analytical_field_21AnalyticalAimAssister_1__cinit__(o, __pyx_empty_tuple, NULL) < 0)) goto bad;
+  p->ret.data = NULL;
+  p->ret.memview = NULL;
+  if (unlikely(__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_1__cinit__(o, __pyx_empty_tuple, NULL) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_16analytical_field_AnalyticalAimAssister(PyObject *o) {
-  struct __pyx_obj_16analytical_field_AnalyticalAimAssister *p = (struct __pyx_obj_16analytical_field_AnalyticalAimAssister *)o;
+static void __pyx_tp_dealloc_16analytical_field_AnalyticalDirectionGenerator(PyObject *o) {
+  struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *p = (struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && !_PyGC_FINALIZED(o)) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -26712,46 +26431,45 @@ static void __pyx_tp_dealloc_16analytical_field_AnalyticalAimAssister(PyObject *
   __PYX_XDEC_MEMVIEW(&p->tan_vec, 1);
   __PYX_XDEC_MEMVIEW(&p->prev_vec, 1);
   __PYX_XDEC_MEMVIEW(&p->xi, 1);
-  __PYX_XDEC_MEMVIEW(&p->pos, 1);
-  __PYX_XDEC_MEMVIEW(&p->ret_mv, 1);
+  __PYX_XDEC_MEMVIEW(&p->ret, 1);
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static int __pyx_tp_traverse_16analytical_field_AnalyticalAimAssister(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_16analytical_field_AnalyticalDirectionGenerator(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_16analytical_field_AnalyticalAimAssister *p = (struct __pyx_obj_16analytical_field_AnalyticalAimAssister *)o;
+  struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *p = (struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *)o;
   if (p->xi_fun) {
     e = (*v)(((PyObject *)p->xi_fun), a); if (e) return e;
   }
   return 0;
 }
 
-static int __pyx_tp_clear_16analytical_field_AnalyticalAimAssister(PyObject *o) {
+static int __pyx_tp_clear_16analytical_field_AnalyticalDirectionGenerator(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_16analytical_field_AnalyticalAimAssister *p = (struct __pyx_obj_16analytical_field_AnalyticalAimAssister *)o;
+  struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *p = (struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *)o;
   tmp = ((PyObject*)p->xi_fun);
   p->xi_fun = ((struct __pyx_obj_16analytical_field_CallableFunction *)Py_None); Py_INCREF(Py_None);
   Py_XDECREF(tmp);
   return 0;
 }
 
-static PyMethodDef __pyx_methods_16analytical_field_AnalyticalAimAssister[] = {
-  {"set_tan_vec", (PyCFunction)__pyx_pw_16analytical_field_21AnalyticalAimAssister_5set_tan_vec, METH_O, 0},
-  {"unset_tan_vec", (PyCFunction)__pyx_pw_16analytical_field_21AnalyticalAimAssister_7unset_tan_vec, METH_NOARGS, __pyx_doc_16analytical_field_21AnalyticalAimAssister_6unset_tan_vec},
-  {"set_prev_vec", (PyCFunction)__pyx_pw_16analytical_field_21AnalyticalAimAssister_9set_prev_vec, METH_O, 0},
-  {"unset_prev_vec", (PyCFunction)__pyx_pw_16analytical_field_21AnalyticalAimAssister_11unset_prev_vec, METH_NOARGS, __pyx_doc_16analytical_field_21AnalyticalAimAssister_10unset_prev_vec},
-  {"__dealoc__", (PyCFunction)__pyx_pw_16analytical_field_21AnalyticalAimAssister_15__dealoc__, METH_NOARGS, 0},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_16analytical_field_21AnalyticalAimAssister_17__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_16analytical_field_21AnalyticalAimAssister_19__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_16analytical_field_AnalyticalDirectionGenerator[] = {
+  {"set_tan_vec", (PyCFunction)__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_5set_tan_vec, METH_O, __pyx_doc_16analytical_field_28AnalyticalDirectionGenerator_4set_tan_vec},
+  {"unset_tan_vec", (PyCFunction)__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_7unset_tan_vec, METH_NOARGS, __pyx_doc_16analytical_field_28AnalyticalDirectionGenerator_6unset_tan_vec},
+  {"set_prev_vec", (PyCFunction)__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_9set_prev_vec, METH_O, __pyx_doc_16analytical_field_28AnalyticalDirectionGenerator_8set_prev_vec},
+  {"unset_prev_vec", (PyCFunction)__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_11unset_prev_vec, METH_NOARGS, __pyx_doc_16analytical_field_28AnalyticalDirectionGenerator_10unset_prev_vec},
+  {"__dealoc__", (PyCFunction)__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_15__dealoc__, METH_NOARGS, 0},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_17__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_19__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_16analytical_field_AnalyticalAimAssister = {
+static PyTypeObject __pyx_type_16analytical_field_AnalyticalDirectionGenerator = {
   PyVarObject_HEAD_INIT(0, 0)
-  "analytical_field.AnalyticalAimAssister", /*tp_name*/
-  sizeof(struct __pyx_obj_16analytical_field_AnalyticalAimAssister), /*tp_basicsize*/
+  "analytical_field.AnalyticalDirectionGenerator", /*tp_name*/
+  sizeof(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_16analytical_field_AnalyticalAimAssister, /*tp_dealloc*/
+  __pyx_tp_dealloc_16analytical_field_AnalyticalDirectionGenerator, /*tp_dealloc*/
   0, /*tp_print*/
   0, /*tp_getattr*/
   0, /*tp_setattr*/
@@ -26766,20 +26484,20 @@ static PyTypeObject __pyx_type_16analytical_field_AnalyticalAimAssister = {
   0, /*tp_as_sequence*/
   0, /*tp_as_mapping*/
   0, /*tp_hash*/
-  __pyx_pw_16analytical_field_21AnalyticalAimAssister_13__call__, /*tp_call*/
+  __pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_13__call__, /*tp_call*/
   0, /*tp_str*/
   0, /*tp_getattro*/
   0, /*tp_setattro*/
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
-  "A Cython extension type tailor-made for computing trajectories defined\n    to be pointwise orthogonal to two vectors in 3D.\n\n    Methods defined here:\n\n    SplineAimAssister.__init__(CallableFunction f)\n    SplineAimAssister.set_tangential_vec(target)\n    SplineAimAssister.unset_target()\n    SplineAimAssister.__ev__(t,pos)\n\n    Version: 0.2\n\n    ", /*tp_doc*/
-  __pyx_tp_traverse_16analytical_field_AnalyticalAimAssister, /*tp_traverse*/
-  __pyx_tp_clear_16analytical_field_AnalyticalAimAssister, /*tp_clear*/
+  "\n    A Cython extension type intended to be used in conjunction with a\n    Dp87Analytical instance, whereupon the AnalyticalDirectionGenerator\n    provides \"slopes\" for the Dp87Analytical to generate trajectories.\n\n    Methods defined here:\n\n    AnalyticalDirectionGenerator.__init__(f)\n    AnalyticalDirectionGenerator.set_tan_vec(tan_vec)\n    AnalyticalDirectionGenerator.unset_tan_vec()\n    AnalyticalDirectionGenerator.set_prev_vec(prev_vec)\n    AnalyticalDirectionGenerator.unset_prev_vec()\n    AnalyticalDirectionGenerator.__call__(pos)\n\n    Version: 1.0\n\n    ", /*tp_doc*/
+  __pyx_tp_traverse_16analytical_field_AnalyticalDirectionGenerator, /*tp_traverse*/
+  __pyx_tp_clear_16analytical_field_AnalyticalDirectionGenerator, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_16analytical_field_AnalyticalAimAssister, /*tp_methods*/
+  __pyx_methods_16analytical_field_AnalyticalDirectionGenerator, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -26787,9 +26505,9 @@ static PyTypeObject __pyx_type_16analytical_field_AnalyticalAimAssister = {
   0, /*tp_descr_get*/
   0, /*tp_descr_set*/
   0, /*tp_dictoffset*/
-  __pyx_pw_16analytical_field_21AnalyticalAimAssister_3__init__, /*tp_init*/
+  __pyx_pw_16analytical_field_28AnalyticalDirectionGenerator_3__init__, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_16analytical_field_AnalyticalAimAssister, /*tp_new*/
+  __pyx_tp_new_16analytical_field_AnalyticalDirectionGenerator, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -26816,7 +26534,7 @@ static PyObject *__pyx_tp_new_16analytical_field_Dp87Analytical(PyTypeObject *t,
   if (unlikely(!o)) return 0;
   p = ((struct __pyx_obj_16analytical_field_Dp87Analytical *)o);
   p->__pyx_vtab = __pyx_vtabptr_16analytical_field_Dp87Analytical;
-  p->f = ((struct __pyx_obj_16analytical_field_AnalyticalAimAssister *)Py_None); Py_INCREF(Py_None);
+  p->f = ((struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *)Py_None); Py_INCREF(Py_None);
   p->c.data = NULL;
   p->c.memview = NULL;
   p->a1.data = NULL;
@@ -26948,7 +26666,7 @@ static int __pyx_tp_clear_16analytical_field_Dp87Analytical(PyObject *o) {
   PyObject* tmp;
   struct __pyx_obj_16analytical_field_Dp87Analytical *p = (struct __pyx_obj_16analytical_field_Dp87Analytical *)o;
   tmp = ((PyObject*)p->f);
-  p->f = ((struct __pyx_obj_16analytical_field_AnalyticalAimAssister *)Py_None); Py_INCREF(Py_None);
+  p->f = ((struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *)Py_None); Py_INCREF(Py_None);
   Py_XDECREF(tmp);
   return 0;
 }
@@ -26962,7 +26680,7 @@ static PyObject *__pyx_getprop_16analytical_field_14Dp87Analytical_rtol(PyObject
 }
 
 static PyMethodDef __pyx_methods_16analytical_field_Dp87Analytical[] = {
-  {"set_aim_assister", (PyCFunction)__pyx_pw_16analytical_field_14Dp87Analytical_5set_aim_assister, METH_O, __pyx_doc_16analytical_field_14Dp87Analytical_4set_aim_assister},
+  {"set_direction_generator", (PyCFunction)__pyx_pw_16analytical_field_14Dp87Analytical_5set_direction_generator, METH_O, __pyx_doc_16analytical_field_14Dp87Analytical_4set_direction_generator},
   {"unset_aim_assister", (PyCFunction)__pyx_pw_16analytical_field_14Dp87Analytical_7unset_aim_assister, METH_NOARGS, __pyx_doc_16analytical_field_14Dp87Analytical_6unset_aim_assister},
   {"__reduce_cython__", (PyCFunction)__pyx_pw_16analytical_field_14Dp87Analytical_11__reduce_cython__, METH_NOARGS, 0},
   {"__setstate_cython__", (PyCFunction)__pyx_pw_16analytical_field_14Dp87Analytical_13__setstate_cython__, METH_O, 0},
@@ -27001,7 +26719,7 @@ static PyTypeObject __pyx_type_16analytical_field_Dp87Analytical = {
   0, /*tp_setattro*/
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
-  "A Cython extension type tailor-made for computing trajectories which\n    are defined as being orthogonal to a linearly interpolated trivariate vector\n    field in R^3 by means of the Dormand-Prince 8(7) numerical integrator.\n\n    Methods defined here:\n\n    Dp87Analytical.__init__(atol, rtol)\n    Dp87Analytical.set_aim_assister(direction_generator)\n    Dp87Analytical.unset_aim_assister()\n\n    Version: 0.2\n\n    ", /*tp_doc*/
+  "\n    A Cython extension type which generates trajectories in R^3 defined\n    as being orthogonal to an analytical vector field, by means of the\n    Dormand-Prince 8(7) adaptive timestep Runge-Kutta method.\n\n    The dynamic timestep is implemented roughly as in\n       Hairer, N\303\270rsett and Wanner: \"Solving ordinary differential equations I\n       -- Nonstiff problems\", pages 167 and 168 in the 2008 ed.\n\n    Methods defined here:\n    Dp87Analytical.__init__(atol,rtol,hmax)\n    Dp87Analytical.set_direction_generator(direction_generator)\n    Dp87Analytical.unset_direction_generator()\n    Dp87Analytical.__call__(t,pos,h)\n\n    Version: 1.0\n    ", /*tp_doc*/
   __pyx_tp_traverse_16analytical_field_Dp87Analytical, /*tp_traverse*/
   __pyx_tp_clear_16analytical_field_Dp87Analytical, /*tp_clear*/
   0, /*tp_richcompare*/
@@ -27722,7 +27440,7 @@ static PyModuleDef_Slot __pyx_moduledef_slots[] = {
 static struct PyModuleDef __pyx_moduledef = {
     PyModuleDef_HEAD_INIT,
     "analytical_field",
-    0, /* m_doc */
+    __pyx_k_This_module_contains_Cython_ext, /* m_doc */
   #if CYTHON_PEP489_MULTI_PHASE_INIT
     0, /* m_size */
   #else
@@ -27742,14 +27460,13 @@ static struct PyModuleDef __pyx_moduledef = {
 
 static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_ASCII, __pyx_k_ASCII, sizeof(__pyx_k_ASCII), 0, 0, 1, 1},
-  {&__pyx_kp_s_Aim_assister_not_initialized, __pyx_k_Aim_assister_not_initialized, sizeof(__pyx_k_Aim_assister_not_initialized), 0, 0, 1, 0},
+  {&__pyx_kp_s_Aim_assister_not_properly_initia, __pyx_k_Aim_assister_not_properly_initia, sizeof(__pyx_k_Aim_assister_not_properly_initia), 0, 0, 1, 0},
   {&__pyx_kp_s_Buffer_view_does_not_expose_stri, __pyx_k_Buffer_view_does_not_expose_stri, sizeof(__pyx_k_Buffer_view_does_not_expose_stri), 0, 0, 1, 0},
   {&__pyx_kp_s_Can_only_create_a_buffer_that_is, __pyx_k_Can_only_create_a_buffer_that_is, sizeof(__pyx_k_Can_only_create_a_buffer_that_is), 0, 0, 1, 0},
   {&__pyx_kp_s_Cannot_assign_to_read_only_memor, __pyx_k_Cannot_assign_to_read_only_memor, sizeof(__pyx_k_Cannot_assign_to_read_only_memor), 0, 0, 1, 0},
   {&__pyx_kp_s_Cannot_create_writable_memory_vi, __pyx_k_Cannot_create_writable_memory_vi, sizeof(__pyx_k_Cannot_create_writable_memory_vi), 0, 0, 1, 0},
   {&__pyx_kp_s_Cannot_index_with_type_s, __pyx_k_Cannot_index_with_type_s, sizeof(__pyx_k_Cannot_index_with_type_s), 0, 0, 1, 0},
-  {&__pyx_kp_s_Dont_fuck_with_squirrels_Morty, __pyx_k_Dont_fuck_with_squirrels_Morty, sizeof(__pyx_k_Dont_fuck_with_squirrels_Morty), 0, 0, 1, 0},
-  {&__pyx_kp_s_Dormand_Prince_8_7_linear_solver, __pyx_k_Dormand_Prince_8_7_linear_solver, sizeof(__pyx_k_Dormand_Prince_8_7_linear_solver), 0, 0, 1, 0},
+  {&__pyx_kp_s_Dormand_Prince_8_7_solver_not_in, __pyx_k_Dormand_Prince_8_7_solver_not_in, sizeof(__pyx_k_Dormand_Prince_8_7_solver_not_in), 0, 0, 1, 0},
   {&__pyx_n_s_Ellipsis, __pyx_k_Ellipsis, sizeof(__pyx_k_Ellipsis), 0, 0, 1, 1},
   {&__pyx_kp_s_Empty_shape_tuple_for_cython_arr, __pyx_k_Empty_shape_tuple_for_cython_arr, sizeof(__pyx_k_Empty_shape_tuple_for_cython_arr), 0, 0, 1, 0},
   {&__pyx_kp_u_Format_string_allocated_too_shor, __pyx_k_Format_string_allocated_too_shor, sizeof(__pyx_k_Format_string_allocated_too_shor), 0, 1, 0, 0},
@@ -27772,6 +27489,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_b_T, __pyx_k_T, sizeof(__pyx_k_T), 0, 0, 0, 0},
   {&__pyx_kp_s_The_aiming_routine_is_custom_bui, __pyx_k_The_aiming_routine_is_custom_bui, sizeof(__pyx_k_The_aiming_routine_is_custom_bui), 0, 0, 1, 0},
   {&__pyx_kp_s_The_interpolation_aiming_routine, __pyx_k_The_interpolation_aiming_routine, sizeof(__pyx_k_The_interpolation_aiming_routine), 0, 0, 1, 0},
+  {&__pyx_kp_s_The_spherical_field_is_defined_f, __pyx_k_The_spherical_field_is_defined_f, sizeof(__pyx_k_The_spherical_field_is_defined_f), 0, 0, 1, 0},
+  {&__pyx_kp_s_The_trajectory_generating_routin, __pyx_k_The_trajectory_generating_routin, sizeof(__pyx_k_The_trajectory_generating_routin), 0, 0, 1, 0},
   {&__pyx_n_s_TypeError, __pyx_k_TypeError, sizeof(__pyx_k_TypeError), 0, 0, 1, 1},
   {&__pyx_kp_s_Unable_to_convert_item_to_object, __pyx_k_Unable_to_convert_item_to_object, sizeof(__pyx_k_Unable_to_convert_item_to_object), 0, 0, 1, 0},
   {&__pyx_n_s_ValueError, __pyx_k_ValueError, sizeof(__pyx_k_ValueError), 0, 0, 1, 1},
@@ -27798,6 +27517,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_encode, __pyx_k_encode, sizeof(__pyx_k_encode), 0, 0, 1, 1},
   {&__pyx_n_s_enumerate, __pyx_k_enumerate, sizeof(__pyx_k_enumerate), 0, 0, 1, 1},
   {&__pyx_n_s_error, __pyx_k_error, sizeof(__pyx_k_error), 0, 0, 1, 1},
+  {&__pyx_n_s_f, __pyx_k_f, sizeof(__pyx_k_f), 0, 0, 1, 1},
   {&__pyx_n_s_flags, __pyx_k_flags, sizeof(__pyx_k_flags), 0, 0, 1, 1},
   {&__pyx_kp_s_for_three_dimensional_data, __pyx_k_for_three_dimensional_data, sizeof(__pyx_k_for_three_dimensional_data), 0, 0, 1, 0},
   {&__pyx_n_s_format, __pyx_k_format, sizeof(__pyx_k_format), 0, 0, 1, 1},
@@ -27808,6 +27528,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_getstate, __pyx_k_getstate, sizeof(__pyx_k_getstate), 0, 0, 1, 1},
   {&__pyx_kp_s_got_differing_extents_in_dimensi, __pyx_k_got_differing_extents_in_dimensi, sizeof(__pyx_k_got_differing_extents_in_dimensi), 0, 0, 1, 0},
   {&__pyx_n_s_h, __pyx_k_h, sizeof(__pyx_k_h), 0, 0, 1, 1},
+  {&__pyx_n_s_hmax, __pyx_k_hmax, sizeof(__pyx_k_hmax), 0, 0, 1, 1},
   {&__pyx_n_s_id, __pyx_k_id, sizeof(__pyx_k_id), 0, 0, 1, 1},
   {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
   {&__pyx_n_s_itemsize, __pyx_k_itemsize, sizeof(__pyx_k_itemsize), 0, 0, 1, 1},
@@ -27846,8 +27567,6 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_reduce_ex, __pyx_k_reduce_ex, sizeof(__pyx_k_reduce_ex), 0, 0, 1, 1},
   {&__pyx_n_s_rtol, __pyx_k_rtol, sizeof(__pyx_k_rtol), 0, 0, 1, 1},
   {&__pyx_kp_u_s, __pyx_k_s, sizeof(__pyx_k_s), 0, 1, 0, 0},
-  {&__pyx_n_s_set_prev_vec, __pyx_k_set_prev_vec, sizeof(__pyx_k_set_prev_vec), 0, 0, 1, 1},
-  {&__pyx_n_s_set_tan_vec, __pyx_k_set_tan_vec, sizeof(__pyx_k_set_tan_vec), 0, 0, 1, 1},
   {&__pyx_n_s_setstate, __pyx_k_setstate, sizeof(__pyx_k_setstate), 0, 0, 1, 1},
   {&__pyx_n_s_setstate_cython, __pyx_k_setstate_cython, sizeof(__pyx_k_setstate_cython), 0, 0, 1, 1},
   {&__pyx_n_s_shape, __pyx_k_shape, sizeof(__pyx_k_shape), 0, 0, 1, 1},
@@ -27866,18 +27585,14 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_s_unable_to_allocate_shape_and_str, __pyx_k_unable_to_allocate_shape_and_str, sizeof(__pyx_k_unable_to_allocate_shape_and_str), 0, 0, 1, 0},
   {&__pyx_kp_u_unknown_dtype_code_in_numpy_pxd, __pyx_k_unknown_dtype_code_in_numpy_pxd, sizeof(__pyx_k_unknown_dtype_code_in_numpy_pxd), 0, 1, 0, 0},
   {&__pyx_n_s_unpack, __pyx_k_unpack, sizeof(__pyx_k_unpack), 0, 0, 1, 1},
-  {&__pyx_n_s_unset_prev_vec, __pyx_k_unset_prev_vec, sizeof(__pyx_k_unset_prev_vec), 0, 0, 1, 1},
-  {&__pyx_n_s_unset_tan_vec, __pyx_k_unset_tan_vec, sizeof(__pyx_k_unset_tan_vec), 0, 0, 1, 1},
   {&__pyx_n_s_update, __pyx_k_update, sizeof(__pyx_k_update), 0, 0, 1, 1},
-  {&__pyx_n_s_x, __pyx_k_x, sizeof(__pyx_k_x), 0, 0, 1, 1},
-  {&__pyx_n_s_xi, __pyx_k_xi, sizeof(__pyx_k_xi), 0, 0, 1, 1},
   {0, 0, 0, 0, 0, 0, 0}
 };
 static int __Pyx_InitCachedBuiltins(void) {
   __pyx_builtin_TypeError = __Pyx_GetBuiltinName(__pyx_n_s_TypeError); if (!__pyx_builtin_TypeError) __PYX_ERR(0, 2, __pyx_L1_error)
-  __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_n_s_RuntimeError); if (!__pyx_builtin_RuntimeError) __PYX_ERR(1, 119, __pyx_L1_error)
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(1, 672, __pyx_L1_error)
-  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(2, 229, __pyx_L1_error)
+  __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(1, 221, __pyx_L1_error)
+  __pyx_builtin_RuntimeError = __Pyx_GetBuiltinName(__pyx_n_s_RuntimeError); if (!__pyx_builtin_RuntimeError) __PYX_ERR(1, 426, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(1, 894, __pyx_L1_error)
   __pyx_builtin_ImportError = __Pyx_GetBuiltinName(__pyx_n_s_ImportError); if (!__pyx_builtin_ImportError) __PYX_ERR(2, 1000, __pyx_L1_error)
   __pyx_builtin_OverflowError = __Pyx_GetBuiltinName(__pyx_n_s_OverflowError); if (!__pyx_builtin_OverflowError) __PYX_ERR(0, 81, __pyx_L1_error)
   __pyx_builtin_enumerate = __Pyx_GetBuiltinName(__pyx_n_s_enumerate); if (!__pyx_builtin_enumerate) __PYX_ERR(0, 84, __pyx_L1_error)
@@ -27932,14 +27647,14 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
-  /* "analytical_field.pyx":119
- *     def __init__(self, double[::1] origin not None):
+  /* "analytical_field.pyx":221
+ *         """
  *         if origin.shape[0] != 3:
- *             raise RuntimeError('Don''t fuck with squirrels, Morty!')             # <<<<<<<<<<<<<<
+ *             raise ValueError('The spherical field is defined for R^3!')             # <<<<<<<<<<<<<<
  *         dcopy(3,origin,1,self.origin,1)
  *     @cython.initializedcheck(False)
  */
-  __pyx_tuple__5 = PyTuple_Pack(1, __pyx_kp_s_Dont_fuck_with_squirrels_Morty); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(1, 119, __pyx_L1_error)
+  __pyx_tuple__5 = PyTuple_Pack(1, __pyx_kp_s_The_spherical_field_is_defined_f); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(1, 221, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
 
@@ -27962,27 +27677,16 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "analytical_field.pyx":168
- *         self.xi = self._xi_
- *         self.pos = self._pos_
- *         self.ret_mv = np.empty(3)             # <<<<<<<<<<<<<<
- * 
- *     @cython.initializedcheck(False)
- */
-  __pyx_tuple__8 = PyTuple_Pack(1, __pyx_int_3); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(1, 168, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__8);
-  __Pyx_GIVEREF(__pyx_tuple__8);
-
-  /* "analytical_field.pyx":259
+  /* "analytical_field.pyx":426
  * 
  *         if not (self.initialized_tan_vec and self.initialized_prev_vec):
- *             raise RuntimeError('Aim assister not initialized!')             # <<<<<<<<<<<<<<
- *         dcopy(3,pos_,1,pos,1)
- * 
+ *             raise RuntimeError('Aim assister not properly initialized!')             # <<<<<<<<<<<<<<
+ *         self._ev_(pos,ret)
+ *         return np.copy(ret)
  */
-  __pyx_tuple__9 = PyTuple_Pack(1, __pyx_kp_s_Aim_assister_not_initialized); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(1, 259, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__9);
-  __Pyx_GIVEREF(__pyx_tuple__9);
+  __pyx_tuple__8 = PyTuple_Pack(1, __pyx_kp_s_Aim_assister_not_properly_initia); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(1, 426, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__8);
+  __Pyx_GIVEREF(__pyx_tuple__8);
 
   /* "(tree fragment)":2
  * def __reduce_cython__(self):
@@ -27990,38 +27694,49 @@ static int __Pyx_InitCachedConstants(void) {
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  */
-  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 2, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__10);
-  __Pyx_GIVEREF(__pyx_tuple__10);
+  __pyx_tuple__9 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 2, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__9);
+  __Pyx_GIVEREF(__pyx_tuple__9);
 
   /* "(tree fragment)":4
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")
  * def __setstate_cython__(self, __pyx_state):
  *     raise TypeError("no default __reduce__ due to non-trivial __cinit__")             # <<<<<<<<<<<<<<
  */
-  __pyx_tuple__11 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 4, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_tuple__11);
-  __Pyx_GIVEREF(__pyx_tuple__11);
+  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_kp_s_no_default___reduce___due_to_non); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 4, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__10);
+  __Pyx_GIVEREF(__pyx_tuple__10);
 
-  /* "analytical_field.pyx":389
+  /* "analytical_field.pyx":585
  *         self.k_tmp = self._k_tmp_
  * 
  *         self._pos_i_ = np.empty(3)             # <<<<<<<<<<<<<<
  * 
  *         self.pos_i = self._pos_i_
  */
-  __pyx_tuple__12 = PyTuple_Pack(1, __pyx_int_3); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(1, 389, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(1, __pyx_int_3); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(1, 585, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_tuple__11);
+  __Pyx_GIVEREF(__pyx_tuple__11);
+
+  /* "analytical_field.pyx":687
+ *             double[::1] pos_i = self.pos_i
+ *         if pos.shape[0] != 3:
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')             # <<<<<<<<<<<<<<
+ *         if not self.initialized:
+ *             raise RuntimeError('Dormand-Prince 8(7) solver not'\
+ */
+  __pyx_tuple__12 = PyTuple_Pack(1, __pyx_kp_s_The_trajectory_generating_routin); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(1, 687, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
 
-  /* "analytical_field.pyx":481
- *             double[::1] pos_i = self.pos_i
+  /* "analytical_field.pyx":689
+ *             raise ValueError('The trajectory generating routine is custom-built for three-dimensional data!')
  *         if not self.initialized:
- *             raise RuntimeError('Dormand-Prince 8(7) linear solver not'\             # <<<<<<<<<<<<<<
- *                     ' initialized with a AnalyticalAimAssister instance!')
+ *             raise RuntimeError('Dormand-Prince 8(7) solver not'\             # <<<<<<<<<<<<<<
+ *                     ' initialized with a AnalyticalDirectionGenerator instance!')
  *         dcopy(3,pos,1,pos_i,1)
  */
-  __pyx_tuple__13 = PyTuple_Pack(1, __pyx_kp_s_Dormand_Prince_8_7_linear_solver); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(1, 481, __pyx_L1_error)
+  __pyx_tuple__13 = PyTuple_Pack(1, __pyx_kp_s_Dormand_Prince_8_7_solver_not_in); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(1, 689, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
   __Pyx_GIVEREF(__pyx_tuple__13);
 
@@ -28044,7 +27759,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":229
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":229
  *             if ((flags & pybuf.PyBUF_C_CONTIGUOUS == pybuf.PyBUF_C_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_C_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not C contiguous")             # <<<<<<<<<<<<<<
@@ -28055,7 +27770,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":233
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":233
  *             if ((flags & pybuf.PyBUF_F_CONTIGUOUS == pybuf.PyBUF_F_CONTIGUOUS)
  *                 and not PyArray_CHKFLAGS(self, NPY_F_CONTIGUOUS)):
  *                 raise ValueError(u"ndarray is not Fortran contiguous")             # <<<<<<<<<<<<<<
@@ -28066,7 +27781,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__17);
   __Pyx_GIVEREF(__pyx_tuple__17);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":263
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":263
  *                 if ((descr.byteorder == c'>' and little_endian) or
  *                     (descr.byteorder == c'<' and not little_endian)):
  *                     raise ValueError(u"Non-native byte order not supported")             # <<<<<<<<<<<<<<
@@ -28077,7 +27792,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__18);
   __Pyx_GIVEREF(__pyx_tuple__18);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":810
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":810
  * 
  *         if (end - f) - <int>(new_offset - offset[0]) < 15:
  *             raise RuntimeError(u"Format string allocated too short, see comment in numpy.pxd")             # <<<<<<<<<<<<<<
@@ -28088,7 +27803,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__19);
   __Pyx_GIVEREF(__pyx_tuple__19);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":814
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":814
  *         if ((child.byteorder == c'>' and little_endian) or
  *             (child.byteorder == c'<' and not little_endian)):
  *             raise ValueError(u"Non-native byte order not supported")             # <<<<<<<<<<<<<<
@@ -28099,7 +27814,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__20);
   __Pyx_GIVEREF(__pyx_tuple__20);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":834
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":834
  *             t = child.type_num
  *             if end - f < 5:
  *                 raise RuntimeError(u"Format string allocated too short.")             # <<<<<<<<<<<<<<
@@ -28110,7 +27825,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__21);
   __Pyx_GIVEREF(__pyx_tuple__21);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1000
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1000
  *         _import_array()
  *     except Exception:
  *         raise ImportError("numpy.core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -28121,7 +27836,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__22);
   __Pyx_GIVEREF(__pyx_tuple__22);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1006
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1006
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -28132,7 +27847,7 @@ static int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__23);
   __Pyx_GIVEREF(__pyx_tuple__23);
 
-  /* "../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1012
+  /* "../../../../anaconda3/lib/python3.6/site-packages/Cython/Includes/numpy/__init__.pxd":1012
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy.core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -28492,75 +28207,121 @@ static int __Pyx_modinit_type_init_code(void) {
   /*--- Type init code ---*/
   __pyx_vtabptr_16analytical_field_CallableFunction = &__pyx_vtable_16analytical_field_CallableFunction;
   __pyx_vtable_16analytical_field_CallableFunction._ev_ = (PyObject *(*)(struct __pyx_obj_16analytical_field_CallableFunction *, __Pyx_memviewslice, __Pyx_memviewslice &))__pyx_f_16analytical_field_16CallableFunction__ev_;
-  if (PyType_Ready(&__pyx_type_16analytical_field_CallableFunction) < 0) __PYX_ERR(1, 66, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_16analytical_field_CallableFunction) < 0) __PYX_ERR(1, 84, __pyx_L1_error)
   __pyx_type_16analytical_field_CallableFunction.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_16analytical_field_CallableFunction.tp_dictoffset && __pyx_type_16analytical_field_CallableFunction.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_16analytical_field_CallableFunction.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_16analytical_field_CallableFunction.tp_dict, __pyx_vtabptr_16analytical_field_CallableFunction) < 0) __PYX_ERR(1, 66, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_16analytical_field_CallableFunction) < 0) __PYX_ERR(1, 66, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_16analytical_field_CallableFunction.tp_dict, __pyx_vtabptr_16analytical_field_CallableFunction) < 0) __PYX_ERR(1, 84, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_16analytical_field_CallableFunction) < 0) __PYX_ERR(1, 84, __pyx_L1_error)
   __pyx_ptype_16analytical_field_CallableFunction = &__pyx_type_16analytical_field_CallableFunction;
   __pyx_vtabptr_16analytical_field_SinusoidalField = &__pyx_vtable_16analytical_field_SinusoidalField;
   __pyx_vtable_16analytical_field_SinusoidalField.__pyx_base = *__pyx_vtabptr_16analytical_field_CallableFunction;
   __pyx_vtable_16analytical_field_SinusoidalField.__pyx_base._ev_ = (PyObject *(*)(struct __pyx_obj_16analytical_field_CallableFunction *, __Pyx_memviewslice, __Pyx_memviewslice &))__pyx_f_16analytical_field_15SinusoidalField__ev_;
   __pyx_type_16analytical_field_SinusoidalField.tp_base = __pyx_ptype_16analytical_field_CallableFunction;
-  if (PyType_Ready(&__pyx_type_16analytical_field_SinusoidalField) < 0) __PYX_ERR(1, 74, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_16analytical_field_SinusoidalField) < 0) __PYX_ERR(1, 92, __pyx_L1_error)
   __pyx_type_16analytical_field_SinusoidalField.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_16analytical_field_SinusoidalField.tp_dictoffset && __pyx_type_16analytical_field_SinusoidalField.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_16analytical_field_SinusoidalField.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_16analytical_field_SinusoidalField.tp_dict, __pyx_vtabptr_16analytical_field_SinusoidalField) < 0) __PYX_ERR(1, 74, __pyx_L1_error)
-  if (PyObject_SetAttrString(__pyx_m, "SinusoidalField", (PyObject *)&__pyx_type_16analytical_field_SinusoidalField) < 0) __PYX_ERR(1, 74, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_16analytical_field_SinusoidalField) < 0) __PYX_ERR(1, 74, __pyx_L1_error)
+  #if CYTHON_COMPILING_IN_CPYTHON
+  {
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_16analytical_field_SinusoidalField, "__init__"); if (unlikely(!wrapper)) __PYX_ERR(1, 92, __pyx_L1_error)
+    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
+      __pyx_wrapperbase_16analytical_field_15SinusoidalField_2__init__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_16analytical_field_15SinusoidalField_2__init__.doc = __pyx_doc_16analytical_field_15SinusoidalField_2__init__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_16analytical_field_15SinusoidalField_2__init__;
+    }
+  }
+  #endif
+  #if CYTHON_COMPILING_IN_CPYTHON
+  {
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_16analytical_field_SinusoidalField, "__call__"); if (unlikely(!wrapper)) __PYX_ERR(1, 92, __pyx_L1_error)
+    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
+      __pyx_wrapperbase_16analytical_field_15SinusoidalField_4__call__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_16analytical_field_15SinusoidalField_4__call__.doc = __pyx_doc_16analytical_field_15SinusoidalField_4__call__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_16analytical_field_15SinusoidalField_4__call__;
+    }
+  }
+  #endif
+  if (__Pyx_SetVtable(__pyx_type_16analytical_field_SinusoidalField.tp_dict, __pyx_vtabptr_16analytical_field_SinusoidalField) < 0) __PYX_ERR(1, 92, __pyx_L1_error)
+  if (PyObject_SetAttrString(__pyx_m, "SinusoidalField", (PyObject *)&__pyx_type_16analytical_field_SinusoidalField) < 0) __PYX_ERR(1, 92, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_16analytical_field_SinusoidalField) < 0) __PYX_ERR(1, 92, __pyx_L1_error)
   __pyx_ptype_16analytical_field_SinusoidalField = &__pyx_type_16analytical_field_SinusoidalField;
   __pyx_vtabptr_16analytical_field_SphericalField = &__pyx_vtable_16analytical_field_SphericalField;
   __pyx_vtable_16analytical_field_SphericalField.__pyx_base = *__pyx_vtabptr_16analytical_field_CallableFunction;
   __pyx_vtable_16analytical_field_SphericalField.__pyx_base._ev_ = (PyObject *(*)(struct __pyx_obj_16analytical_field_CallableFunction *, __Pyx_memviewslice, __Pyx_memviewslice &))__pyx_f_16analytical_field_14SphericalField__ev_;
   __pyx_type_16analytical_field_SphericalField.tp_base = __pyx_ptype_16analytical_field_CallableFunction;
-  if (PyType_Ready(&__pyx_type_16analytical_field_SphericalField) < 0) __PYX_ERR(1, 107, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_16analytical_field_SphericalField) < 0) __PYX_ERR(1, 186, __pyx_L1_error)
   __pyx_type_16analytical_field_SphericalField.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_16analytical_field_SphericalField.tp_dictoffset && __pyx_type_16analytical_field_SphericalField.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_16analytical_field_SphericalField.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_16analytical_field_SphericalField.tp_dict, __pyx_vtabptr_16analytical_field_SphericalField) < 0) __PYX_ERR(1, 107, __pyx_L1_error)
-  if (PyObject_SetAttrString(__pyx_m, "SphericalField", (PyObject *)&__pyx_type_16analytical_field_SphericalField) < 0) __PYX_ERR(1, 107, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_16analytical_field_SphericalField) < 0) __PYX_ERR(1, 107, __pyx_L1_error)
-  __pyx_ptype_16analytical_field_SphericalField = &__pyx_type_16analytical_field_SphericalField;
-  __pyx_vtabptr_16analytical_field_AnalyticalAimAssister = &__pyx_vtable_16analytical_field_AnalyticalAimAssister;
-  __pyx_vtable_16analytical_field_AnalyticalAimAssister.set_tan_vec = (void (*)(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *, __Pyx_memviewslice, int __pyx_skip_dispatch))__pyx_f_16analytical_field_21AnalyticalAimAssister_set_tan_vec;
-  __pyx_vtable_16analytical_field_AnalyticalAimAssister.unset_tan_vec = (void (*)(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *, int __pyx_skip_dispatch))__pyx_f_16analytical_field_21AnalyticalAimAssister_unset_tan_vec;
-  __pyx_vtable_16analytical_field_AnalyticalAimAssister.set_prev_vec = (void (*)(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *, __Pyx_memviewslice, int __pyx_skip_dispatch))__pyx_f_16analytical_field_21AnalyticalAimAssister_set_prev_vec;
-  __pyx_vtable_16analytical_field_AnalyticalAimAssister.unset_prev_vec = (void (*)(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *, int __pyx_skip_dispatch))__pyx_f_16analytical_field_21AnalyticalAimAssister_unset_prev_vec;
-  __pyx_vtable_16analytical_field_AnalyticalAimAssister._ev_ = (PyObject *(*)(struct __pyx_obj_16analytical_field_AnalyticalAimAssister *, double, __Pyx_memviewslice &, __Pyx_memviewslice &))__pyx_f_16analytical_field_21AnalyticalAimAssister__ev_;
-  if (PyType_Ready(&__pyx_type_16analytical_field_AnalyticalAimAssister) < 0) __PYX_ERR(1, 135, __pyx_L1_error)
-  __pyx_type_16analytical_field_AnalyticalAimAssister.tp_print = 0;
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_16analytical_field_AnalyticalAimAssister.tp_dictoffset && __pyx_type_16analytical_field_AnalyticalAimAssister.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_16analytical_field_AnalyticalAimAssister.tp_getattro = __Pyx_PyObject_GenericGetAttr;
-  }
   #if CYTHON_COMPILING_IN_CPYTHON
   {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_16analytical_field_AnalyticalAimAssister, "__init__"); if (unlikely(!wrapper)) __PYX_ERR(1, 135, __pyx_L1_error)
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_16analytical_field_SphericalField, "__init__"); if (unlikely(!wrapper)) __PYX_ERR(1, 186, __pyx_L1_error)
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
-      __pyx_wrapperbase_16analytical_field_21AnalyticalAimAssister_2__init__ = *((PyWrapperDescrObject *)wrapper)->d_base;
-      __pyx_wrapperbase_16analytical_field_21AnalyticalAimAssister_2__init__.doc = __pyx_doc_16analytical_field_21AnalyticalAimAssister_2__init__;
-      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_16analytical_field_21AnalyticalAimAssister_2__init__;
+      __pyx_wrapperbase_16analytical_field_14SphericalField_2__init__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_16analytical_field_14SphericalField_2__init__.doc = __pyx_doc_16analytical_field_14SphericalField_2__init__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_16analytical_field_14SphericalField_2__init__;
     }
   }
   #endif
-  if (__Pyx_SetVtable(__pyx_type_16analytical_field_AnalyticalAimAssister.tp_dict, __pyx_vtabptr_16analytical_field_AnalyticalAimAssister) < 0) __PYX_ERR(1, 135, __pyx_L1_error)
-  if (PyObject_SetAttrString(__pyx_m, "AnalyticalAimAssister", (PyObject *)&__pyx_type_16analytical_field_AnalyticalAimAssister) < 0) __PYX_ERR(1, 135, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_16analytical_field_AnalyticalAimAssister) < 0) __PYX_ERR(1, 135, __pyx_L1_error)
-  __pyx_ptype_16analytical_field_AnalyticalAimAssister = &__pyx_type_16analytical_field_AnalyticalAimAssister;
+  #if CYTHON_COMPILING_IN_CPYTHON
+  {
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_16analytical_field_SphericalField, "__call__"); if (unlikely(!wrapper)) __PYX_ERR(1, 186, __pyx_L1_error)
+    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
+      __pyx_wrapperbase_16analytical_field_14SphericalField_4__call__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_16analytical_field_14SphericalField_4__call__.doc = __pyx_doc_16analytical_field_14SphericalField_4__call__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_16analytical_field_14SphericalField_4__call__;
+    }
+  }
+  #endif
+  if (__Pyx_SetVtable(__pyx_type_16analytical_field_SphericalField.tp_dict, __pyx_vtabptr_16analytical_field_SphericalField) < 0) __PYX_ERR(1, 186, __pyx_L1_error)
+  if (PyObject_SetAttrString(__pyx_m, "SphericalField", (PyObject *)&__pyx_type_16analytical_field_SphericalField) < 0) __PYX_ERR(1, 186, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_16analytical_field_SphericalField) < 0) __PYX_ERR(1, 186, __pyx_L1_error)
+  __pyx_ptype_16analytical_field_SphericalField = &__pyx_type_16analytical_field_SphericalField;
+  __pyx_vtabptr_16analytical_field_AnalyticalDirectionGenerator = &__pyx_vtable_16analytical_field_AnalyticalDirectionGenerator;
+  __pyx_vtable_16analytical_field_AnalyticalDirectionGenerator._ev_ = (PyObject *(*)(struct __pyx_obj_16analytical_field_AnalyticalDirectionGenerator *, __Pyx_memviewslice, __Pyx_memviewslice &))__pyx_f_16analytical_field_28AnalyticalDirectionGenerator__ev_;
+  if (PyType_Ready(&__pyx_type_16analytical_field_AnalyticalDirectionGenerator) < 0) __PYX_ERR(1, 272, __pyx_L1_error)
+  __pyx_type_16analytical_field_AnalyticalDirectionGenerator.tp_print = 0;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_16analytical_field_AnalyticalDirectionGenerator.tp_dictoffset && __pyx_type_16analytical_field_AnalyticalDirectionGenerator.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_16analytical_field_AnalyticalDirectionGenerator.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  }
+  #if CYTHON_COMPILING_IN_CPYTHON
+  {
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_16analytical_field_AnalyticalDirectionGenerator, "__init__"); if (unlikely(!wrapper)) __PYX_ERR(1, 272, __pyx_L1_error)
+    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
+      __pyx_wrapperbase_16analytical_field_28AnalyticalDirectionGenerator_2__init__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_16analytical_field_28AnalyticalDirectionGenerator_2__init__.doc = __pyx_doc_16analytical_field_28AnalyticalDirectionGenerator_2__init__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_16analytical_field_28AnalyticalDirectionGenerator_2__init__;
+    }
+  }
+  #endif
+  #if CYTHON_COMPILING_IN_CPYTHON
+  {
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_16analytical_field_AnalyticalDirectionGenerator, "__call__"); if (unlikely(!wrapper)) __PYX_ERR(1, 272, __pyx_L1_error)
+    if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
+      __pyx_wrapperbase_16analytical_field_28AnalyticalDirectionGenerator_12__call__ = *((PyWrapperDescrObject *)wrapper)->d_base;
+      __pyx_wrapperbase_16analytical_field_28AnalyticalDirectionGenerator_12__call__.doc = __pyx_doc_16analytical_field_28AnalyticalDirectionGenerator_12__call__;
+      ((PyWrapperDescrObject *)wrapper)->d_base = &__pyx_wrapperbase_16analytical_field_28AnalyticalDirectionGenerator_12__call__;
+    }
+  }
+  #endif
+  if (__Pyx_SetVtable(__pyx_type_16analytical_field_AnalyticalDirectionGenerator.tp_dict, __pyx_vtabptr_16analytical_field_AnalyticalDirectionGenerator) < 0) __PYX_ERR(1, 272, __pyx_L1_error)
+  if (PyObject_SetAttrString(__pyx_m, "AnalyticalDirectionGenerator", (PyObject *)&__pyx_type_16analytical_field_AnalyticalDirectionGenerator) < 0) __PYX_ERR(1, 272, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_16analytical_field_AnalyticalDirectionGenerator) < 0) __PYX_ERR(1, 272, __pyx_L1_error)
+  __pyx_ptype_16analytical_field_AnalyticalDirectionGenerator = &__pyx_type_16analytical_field_AnalyticalDirectionGenerator;
   __pyx_vtabptr_16analytical_field_Dp87Analytical = &__pyx_vtable_16analytical_field_Dp87Analytical;
   __pyx_vtable_16analytical_field_Dp87Analytical._ev_ = (void (*)(struct __pyx_obj_16analytical_field_Dp87Analytical *, double *, __Pyx_memviewslice, double *))__pyx_f_16analytical_field_14Dp87Analytical__ev_;
-  if (PyType_Ready(&__pyx_type_16analytical_field_Dp87Analytical) < 0) __PYX_ERR(1, 275, __pyx_L1_error)
+  if (PyType_Ready(&__pyx_type_16analytical_field_Dp87Analytical) < 0) __PYX_ERR(1, 467, __pyx_L1_error)
   __pyx_type_16analytical_field_Dp87Analytical.tp_print = 0;
   if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_16analytical_field_Dp87Analytical.tp_dictoffset && __pyx_type_16analytical_field_Dp87Analytical.tp_getattro == PyObject_GenericGetAttr)) {
     __pyx_type_16analytical_field_Dp87Analytical.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
   #if CYTHON_COMPILING_IN_CPYTHON
   {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_16analytical_field_Dp87Analytical, "__init__"); if (unlikely(!wrapper)) __PYX_ERR(1, 275, __pyx_L1_error)
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_16analytical_field_Dp87Analytical, "__init__"); if (unlikely(!wrapper)) __PYX_ERR(1, 467, __pyx_L1_error)
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
       __pyx_wrapperbase_16analytical_field_14Dp87Analytical_2__init__ = *((PyWrapperDescrObject *)wrapper)->d_base;
       __pyx_wrapperbase_16analytical_field_14Dp87Analytical_2__init__.doc = __pyx_doc_16analytical_field_14Dp87Analytical_2__init__;
@@ -28570,7 +28331,7 @@ static int __Pyx_modinit_type_init_code(void) {
   #endif
   #if CYTHON_COMPILING_IN_CPYTHON
   {
-    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_16analytical_field_Dp87Analytical, "__call__"); if (unlikely(!wrapper)) __PYX_ERR(1, 275, __pyx_L1_error)
+    PyObject *wrapper = PyObject_GetAttrString((PyObject *)&__pyx_type_16analytical_field_Dp87Analytical, "__call__"); if (unlikely(!wrapper)) __PYX_ERR(1, 467, __pyx_L1_error)
     if (Py_TYPE(wrapper) == &PyWrapperDescr_Type) {
       __pyx_wrapperbase_16analytical_field_14Dp87Analytical_8__call__ = *((PyWrapperDescrObject *)wrapper)->d_base;
       __pyx_wrapperbase_16analytical_field_14Dp87Analytical_8__call__.doc = __pyx_doc_16analytical_field_14Dp87Analytical_8__call__;
@@ -28578,9 +28339,9 @@ static int __Pyx_modinit_type_init_code(void) {
     }
   }
   #endif
-  if (__Pyx_SetVtable(__pyx_type_16analytical_field_Dp87Analytical.tp_dict, __pyx_vtabptr_16analytical_field_Dp87Analytical) < 0) __PYX_ERR(1, 275, __pyx_L1_error)
-  if (PyObject_SetAttrString(__pyx_m, "Dp87Analytical", (PyObject *)&__pyx_type_16analytical_field_Dp87Analytical) < 0) __PYX_ERR(1, 275, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_16analytical_field_Dp87Analytical) < 0) __PYX_ERR(1, 275, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_type_16analytical_field_Dp87Analytical.tp_dict, __pyx_vtabptr_16analytical_field_Dp87Analytical) < 0) __PYX_ERR(1, 467, __pyx_L1_error)
+  if (PyObject_SetAttrString(__pyx_m, "Dp87Analytical", (PyObject *)&__pyx_type_16analytical_field_Dp87Analytical) < 0) __PYX_ERR(1, 467, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_16analytical_field_Dp87Analytical) < 0) __PYX_ERR(1, 467, __pyx_L1_error)
   __pyx_ptype_16analytical_field_Dp87Analytical = &__pyx_type_16analytical_field_Dp87Analytical;
   __pyx_vtabptr_array = &__pyx_vtable_array;
   __pyx_vtable_array.get_memview = (PyObject *(*)(struct __pyx_array_obj *))__pyx_array_get_memview;
@@ -28810,7 +28571,7 @@ if (!__Pyx_RefNanny) {
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("analytical_field", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("analytical_field", __pyx_methods, __pyx_k_This_module_contains_Cython_ext, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   #else
   __pyx_m = PyModule_Create(&__pyx_moduledef);
   #endif
@@ -28857,21 +28618,22 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   #endif
 
-  /* "analytical_field.pyx":2
+  /* "analytical_field.pyx":18
+ * 
  * cimport numpy as np
  * import numpy as np             # <<<<<<<<<<<<<<
  * 
  * cimport cython
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 2, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, -1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(1, 2, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(1, 18, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "analytical_field.pyx":1
- * cimport numpy as np             # <<<<<<<<<<<<<<
- * import numpy as np
- * 
+ * """             # <<<<<<<<<<<<<<
+ * This module contains Cython extension types which facilitate the approximation
+ * of manifolds defined as being everywhere orthogonal to stationary vector fields
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -29917,29 +29679,8 @@ static CYTHON_INLINE PyObject* __Pyx_PyObject_CallOneArg(PyObject *func, PyObjec
 #endif
 }
 
-/* PyObjectCallNoArg */
-    #if CYTHON_COMPILING_IN_CPYTHON
-static CYTHON_INLINE PyObject* __Pyx_PyObject_CallNoArg(PyObject *func) {
-#if CYTHON_FAST_PYCALL
-    if (PyFunction_Check(func)) {
-        return __Pyx_PyFunction_FastCall(func, NULL, 0);
-    }
-#endif
-#ifdef __Pyx_CyFunction_USED
-    if (likely(PyCFunction_Check(func) || __Pyx_TypeCheck(func, __pyx_CyFunctionType))) {
-#else
-    if (likely(PyCFunction_Check(func))) {
-#endif
-        if (likely(PyCFunction_GET_FLAGS(func) & METH_NOARGS)) {
-            return __Pyx_PyObject_CallMethO(func, NULL);
-        }
-    }
-    return __Pyx_PyObject_Call(func, __pyx_empty_tuple, NULL);
-}
-#endif
-
 /* DictGetItem */
-      #if PY_MAJOR_VERSION >= 3 && !CYTHON_COMPILING_IN_PYPY
+    #if PY_MAJOR_VERSION >= 3 && !CYTHON_COMPILING_IN_PYPY
 static PyObject *__Pyx_PyDict_GetItem(PyObject *d, PyObject* key) {
     PyObject *value;
     value = PyDict_GetItemWithError(d, key);
@@ -29958,25 +29699,25 @@ static PyObject *__Pyx_PyDict_GetItem(PyObject *d, PyObject* key) {
 #endif
 
 /* RaiseTooManyValuesToUnpack */
-      static CYTHON_INLINE void __Pyx_RaiseTooManyValuesError(Py_ssize_t expected) {
+    static CYTHON_INLINE void __Pyx_RaiseTooManyValuesError(Py_ssize_t expected) {
     PyErr_Format(PyExc_ValueError,
                  "too many values to unpack (expected %" CYTHON_FORMAT_SSIZE_T "d)", expected);
 }
 
 /* RaiseNeedMoreValuesToUnpack */
-      static CYTHON_INLINE void __Pyx_RaiseNeedMoreValuesError(Py_ssize_t index) {
+    static CYTHON_INLINE void __Pyx_RaiseNeedMoreValuesError(Py_ssize_t index) {
     PyErr_Format(PyExc_ValueError,
                  "need more than %" CYTHON_FORMAT_SSIZE_T "d value%.1s to unpack",
                  index, (index == 1) ? "" : "s");
 }
 
 /* RaiseNoneIterError */
-      static CYTHON_INLINE void __Pyx_RaiseNoneNotIterableError(void) {
+    static CYTHON_INLINE void __Pyx_RaiseNoneNotIterableError(void) {
     PyErr_SetString(PyExc_TypeError, "'NoneType' object is not iterable");
 }
 
 /* ExtTypeTest */
-      static CYTHON_INLINE int __Pyx_TypeTest(PyObject *obj, PyTypeObject *type) {
+    static CYTHON_INLINE int __Pyx_TypeTest(PyObject *obj, PyTypeObject *type) {
     if (unlikely(!type)) {
         PyErr_SetString(PyExc_SystemError, "Missing type object");
         return 0;
@@ -29989,7 +29730,7 @@ static PyObject *__Pyx_PyDict_GetItem(PyObject *d, PyObject* key) {
 }
 
 /* SaveResetException */
-      #if CYTHON_FAST_THREAD_STATE
+    #if CYTHON_FAST_THREAD_STATE
 static CYTHON_INLINE void __Pyx__ExceptionSave(PyThreadState *tstate, PyObject **type, PyObject **value, PyObject **tb) {
     #if PY_VERSION_HEX >= 0x030700A2
     *type = tstate->exc_state.exc_type;
@@ -30028,7 +29769,7 @@ static CYTHON_INLINE void __Pyx__ExceptionReset(PyThreadState *tstate, PyObject 
 #endif
 
 /* PyErrExceptionMatches */
-      #if CYTHON_FAST_THREAD_STATE
+    #if CYTHON_FAST_THREAD_STATE
 static int __Pyx_PyErr_ExceptionMatchesTuple(PyObject *exc_type, PyObject *tuple) {
     Py_ssize_t i, n;
     n = PyTuple_GET_SIZE(tuple);
@@ -30053,7 +29794,7 @@ static CYTHON_INLINE int __Pyx_PyErr_ExceptionMatchesInState(PyThreadState* tsta
 #endif
 
 /* GetException */
-      #if CYTHON_FAST_THREAD_STATE
+    #if CYTHON_FAST_THREAD_STATE
 static int __Pyx__GetException(PyThreadState *tstate, PyObject **type, PyObject **value, PyObject **tb) {
 #else
 static int __Pyx_GetException(PyObject **type, PyObject **value, PyObject **tb) {
@@ -30123,7 +29864,7 @@ bad:
 }
 
 /* BytesEquals */
-        static CYTHON_INLINE int __Pyx_PyBytes_Equals(PyObject* s1, PyObject* s2, int equals) {
+      static CYTHON_INLINE int __Pyx_PyBytes_Equals(PyObject* s1, PyObject* s2, int equals) {
 #if CYTHON_COMPILING_IN_PYPY
     return PyObject_RichCompareBool(s1, s2, equals);
 #else
@@ -30170,7 +29911,7 @@ bad:
 }
 
 /* UnicodeEquals */
-        static CYTHON_INLINE int __Pyx_PyUnicode_Equals(PyObject* s1, PyObject* s2, int equals) {
+      static CYTHON_INLINE int __Pyx_PyUnicode_Equals(PyObject* s1, PyObject* s2, int equals) {
 #if CYTHON_COMPILING_IN_PYPY
     return PyObject_RichCompareBool(s1, s2, equals);
 #else
@@ -30269,7 +30010,7 @@ return_ne:
 }
 
 /* None */
-        static CYTHON_INLINE Py_ssize_t __Pyx_div_Py_ssize_t(Py_ssize_t a, Py_ssize_t b) {
+      static CYTHON_INLINE Py_ssize_t __Pyx_div_Py_ssize_t(Py_ssize_t a, Py_ssize_t b) {
     Py_ssize_t q = a / b;
     Py_ssize_t r = a - q*b;
     q -= ((r != 0) & ((r ^ b) < 0));
@@ -30277,7 +30018,7 @@ return_ne:
 }
 
 /* GetAttr */
-        static CYTHON_INLINE PyObject *__Pyx_GetAttr(PyObject *o, PyObject *n) {
+      static CYTHON_INLINE PyObject *__Pyx_GetAttr(PyObject *o, PyObject *n) {
 #if CYTHON_USE_TYPE_SLOTS
 #if PY_MAJOR_VERSION >= 3
     if (likely(PyUnicode_Check(n)))
@@ -30290,7 +30031,7 @@ return_ne:
 }
 
 /* GetItemInt */
-        static PyObject *__Pyx_GetItemInt_Generic(PyObject *o, PyObject* j) {
+      static PyObject *__Pyx_GetItemInt_Generic(PyObject *o, PyObject* j) {
     PyObject *r;
     if (!j) return NULL;
     r = PyObject_GetItem(o, j);
@@ -30377,7 +30118,7 @@ static CYTHON_INLINE PyObject *__Pyx_GetItemInt_Fast(PyObject *o, Py_ssize_t i, 
 }
 
 /* ObjectGetItem */
-        #if CYTHON_USE_TYPE_SLOTS
+      #if CYTHON_USE_TYPE_SLOTS
 static PyObject *__Pyx_PyObject_GetIndex(PyObject *obj, PyObject* index) {
     PyObject *runerr;
     Py_ssize_t key_value;
@@ -30406,7 +30147,7 @@ static PyObject *__Pyx_PyObject_GetItem(PyObject *obj, PyObject* key) {
 #endif
 
 /* decode_c_string */
-        static CYTHON_INLINE PyObject* __Pyx_decode_c_string(
+      static CYTHON_INLINE PyObject* __Pyx_decode_c_string(
          const char* cstring, Py_ssize_t start, Py_ssize_t stop,
          const char* encoding, const char* errors,
          PyObject* (*decode_func)(const char *s, Py_ssize_t size, const char *errors)) {
@@ -30439,7 +30180,7 @@ static PyObject *__Pyx_PyObject_GetItem(PyObject *obj, PyObject* key) {
 }
 
 /* GetAttr3 */
-        static PyObject *__Pyx_GetAttr3Default(PyObject *d) {
+      static PyObject *__Pyx_GetAttr3Default(PyObject *d) {
     __Pyx_PyThreadState_declare
     __Pyx_PyThreadState_assign
     if (unlikely(!__Pyx_PyErr_ExceptionMatches(PyExc_AttributeError)))
@@ -30454,7 +30195,7 @@ static CYTHON_INLINE PyObject *__Pyx_GetAttr3(PyObject *o, PyObject *n, PyObject
 }
 
 /* SwapException */
-        #if CYTHON_FAST_THREAD_STATE
+      #if CYTHON_FAST_THREAD_STATE
 static CYTHON_INLINE void __Pyx__ExceptionSwap(PyThreadState *tstate, PyObject **type, PyObject **value, PyObject **tb) {
     PyObject *tmp_type, *tmp_value, *tmp_tb;
     #if PY_VERSION_HEX >= 0x030700A2
@@ -30488,7 +30229,7 @@ static CYTHON_INLINE void __Pyx_ExceptionSwap(PyObject **type, PyObject **value,
 #endif
 
 /* Import */
-        static PyObject *__Pyx_Import(PyObject *name, PyObject *from_list, int level) {
+      static PyObject *__Pyx_Import(PyObject *name, PyObject *from_list, int level) {
     PyObject *empty_list = 0;
     PyObject *module = 0;
     PyObject *global_dict = 0;
@@ -30553,7 +30294,7 @@ bad:
 }
 
 /* FastTypeChecks */
-        #if CYTHON_COMPILING_IN_CPYTHON
+      #if CYTHON_COMPILING_IN_CPYTHON
 static int __Pyx_InBases(PyTypeObject *a, PyTypeObject *b) {
     while (a) {
         a = a->tp_base;
@@ -30625,7 +30366,7 @@ static CYTHON_INLINE int __Pyx_PyErr_GivenExceptionMatches2(PyObject *err, PyObj
 #endif
 
 /* PyIntBinop */
-        #if !CYTHON_COMPILING_IN_PYPY
+      #if !CYTHON_COMPILING_IN_PYPY
 static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED long intval, CYTHON_UNUSED int inplace) {
     #if PY_MAJOR_VERSION < 3
     if (likely(PyInt_CheckExact(op1))) {
@@ -30747,12 +30488,12 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
 #endif
 
 /* None */
-        static CYTHON_INLINE void __Pyx_RaiseUnboundLocalError(const char *varname) {
+      static CYTHON_INLINE void __Pyx_RaiseUnboundLocalError(const char *varname) {
     PyErr_Format(PyExc_UnboundLocalError, "local variable '%s' referenced before assignment", varname);
 }
 
 /* None */
-        static CYTHON_INLINE long __Pyx_div_long(long a, long b) {
+      static CYTHON_INLINE long __Pyx_div_long(long a, long b) {
     long q = a / b;
     long r = a - q*b;
     q -= ((r != 0) & ((r ^ b) < 0));
@@ -30760,7 +30501,7 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
 }
 
 /* ImportFrom */
-        static PyObject* __Pyx_ImportFrom(PyObject* module, PyObject* name) {
+      static PyObject* __Pyx_ImportFrom(PyObject* module, PyObject* name) {
     PyObject* value = __Pyx_PyObject_GetAttrStr(module, name);
     if (unlikely(!value) && PyErr_ExceptionMatches(PyExc_AttributeError)) {
         PyErr_Format(PyExc_ImportError,
@@ -30774,7 +30515,7 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
 }
 
 /* HasAttr */
-        static CYTHON_INLINE int __Pyx_HasAttr(PyObject *o, PyObject *n) {
+      static CYTHON_INLINE int __Pyx_HasAttr(PyObject *o, PyObject *n) {
     PyObject *r;
     if (unlikely(!__Pyx_PyBaseString_Check(n))) {
         PyErr_SetString(PyExc_TypeError,
@@ -30792,14 +30533,14 @@ static PyObject* __Pyx_PyInt_AddObjC(PyObject *op1, PyObject *op2, CYTHON_UNUSED
 }
 
 /* StringJoin */
-        #if !CYTHON_COMPILING_IN_CPYTHON
+      #if !CYTHON_COMPILING_IN_CPYTHON
 static CYTHON_INLINE PyObject* __Pyx_PyBytes_Join(PyObject* sep, PyObject* values) {
     return PyObject_CallMethodObjArgs(sep, __pyx_n_s_join, values, NULL);
 }
 #endif
 
 /* PyObject_GenericGetAttrNoDict */
-        #if CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP && PY_VERSION_HEX < 0x03070000
+      #if CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP && PY_VERSION_HEX < 0x03070000
 static PyObject *__Pyx_RaiseGenericGetAttributeError(PyTypeObject *tp, PyObject *attr_name) {
     PyErr_Format(PyExc_AttributeError,
 #if PY_MAJOR_VERSION >= 3
@@ -30839,7 +30580,7 @@ static CYTHON_INLINE PyObject* __Pyx_PyObject_GenericGetAttrNoDict(PyObject* obj
 #endif
 
 /* PyObject_GenericGetAttr */
-        #if CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP && PY_VERSION_HEX < 0x03070000
+      #if CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP && PY_VERSION_HEX < 0x03070000
 static PyObject* __Pyx_PyObject_GenericGetAttr(PyObject* obj, PyObject* attr_name) {
     if (unlikely(Py_TYPE(obj)->tp_dictoffset)) {
         return PyObject_GenericGetAttr(obj, attr_name);
@@ -30849,7 +30590,7 @@ static PyObject* __Pyx_PyObject_GenericGetAttr(PyObject* obj, PyObject* attr_nam
 #endif
 
 /* SetVTable */
-        static int __Pyx_SetVtable(PyObject *dict, void *vtable) {
+      static int __Pyx_SetVtable(PyObject *dict, void *vtable) {
 #if PY_VERSION_HEX >= 0x02070000
     PyObject *ob = PyCapsule_New(vtable, 0, 0);
 #else
@@ -30867,7 +30608,7 @@ bad:
 }
 
 /* SetupReduce */
-        static int __Pyx_setup_reduce_is_named(PyObject* meth, PyObject* name) {
+      static int __Pyx_setup_reduce_is_named(PyObject* meth, PyObject* name) {
   int ret;
   PyObject *name_attr;
   name_attr = __Pyx_PyObject_GetAttrStr(meth, __pyx_n_s_name_2);
@@ -30943,7 +30684,7 @@ GOOD:
 }
 
 /* CLineInTraceback */
-        #ifndef CYTHON_CLINE_IN_TRACEBACK
+      #ifndef CYTHON_CLINE_IN_TRACEBACK
 static int __Pyx_CLineForTraceback(CYTHON_UNUSED PyThreadState *tstate, int c_line) {
     PyObject *use_cline;
     PyObject *ptype, *pvalue, *ptraceback;
@@ -30980,7 +30721,7 @@ static int __Pyx_CLineForTraceback(CYTHON_UNUSED PyThreadState *tstate, int c_li
 #endif
 
 /* CodeObjectCache */
-        static int __pyx_bisect_code_objects(__Pyx_CodeObjectCacheEntry* entries, int count, int code_line) {
+      static int __pyx_bisect_code_objects(__Pyx_CodeObjectCacheEntry* entries, int count, int code_line) {
     int start = 0, mid = 0, end = count - 1;
     if (end >= 0 && code_line > entries[end].code_line) {
         return count;
@@ -31060,7 +30801,7 @@ static void __pyx_insert_code_object(int code_line, PyCodeObject* code_object) {
 }
 
 /* AddTraceback */
-        #include "compile.h"
+      #include "compile.h"
 #include "frameobject.h"
 #include "traceback.h"
 static PyCodeObject* __Pyx_CreateCodeObjectForTraceback(
@@ -31168,8 +30909,8 @@ static void __Pyx_ReleaseBuffer(Py_buffer *view) {
 #endif
 
 
-        /* MemviewSliceIsContig */
-        static int
+      /* MemviewSliceIsContig */
+      static int
 __pyx_memviewslice_is_contig(const __Pyx_memviewslice mvs, char order, int ndim)
 {
     int i, index, step, start;
@@ -31191,7 +30932,7 @@ __pyx_memviewslice_is_contig(const __Pyx_memviewslice mvs, char order, int ndim)
 }
 
 /* OverlappingSlices */
-        static void
+      static void
 __pyx_get_array_memory_extents(__Pyx_memviewslice *slice,
                                void **out_start, void **out_end,
                                int ndim, size_t itemsize)
@@ -31227,7 +30968,7 @@ __pyx_slices_overlap(__Pyx_memviewslice *slice1,
 }
 
 /* Capsule */
-        static CYTHON_INLINE PyObject *
+      static CYTHON_INLINE PyObject *
 __pyx_capsule_create(void *p, CYTHON_UNUSED const char *sig)
 {
     PyObject *cobj;
@@ -31240,7 +30981,7 @@ __pyx_capsule_create(void *p, CYTHON_UNUSED const char *sig)
 }
 
 /* IsLittleEndian */
-        static CYTHON_INLINE int __Pyx_Is_Little_Endian(void)
+      static CYTHON_INLINE int __Pyx_Is_Little_Endian(void)
 {
   union {
     uint32_t u32;
@@ -31251,7 +30992,7 @@ __pyx_capsule_create(void *p, CYTHON_UNUSED const char *sig)
 }
 
 /* BufferFormatCheck */
-        static void __Pyx_BufFmt_Init(__Pyx_BufFmt_Context* ctx,
+      static void __Pyx_BufFmt_Init(__Pyx_BufFmt_Context* ctx,
                               __Pyx_BufFmt_StackElem* stack,
                               __Pyx_TypeInfo* type) {
   stack[0].field = &ctx->root;
@@ -31753,7 +31494,7 @@ static const char* __Pyx_BufFmt_CheckString(__Pyx_BufFmt_Context* ctx, const cha
 }
 
 /* TypeInfoCompare */
-          static int
+        static int
 __pyx_typeinfo_cmp(__Pyx_TypeInfo *a, __Pyx_TypeInfo *b)
 {
     int i;
@@ -31794,7 +31535,7 @@ __pyx_typeinfo_cmp(__Pyx_TypeInfo *a, __Pyx_TypeInfo *b)
 }
 
 /* MemviewSliceValidateAndInit */
-          static int
+        static int
 __pyx_check_strides(Py_buffer *buf, int dim, int ndim, int spec)
 {
     if (buf->shape[dim] <= 1)
@@ -31976,7 +31717,7 @@ no_fail:
 }
 
 /* ObjectToMemviewSlice */
-          static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_double(PyObject *obj, int writable_flag) {
+        static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dc_double(PyObject *obj, int writable_flag) {
     __Pyx_memviewslice result = { 0, 0, { 0 }, { 0 }, { 0 } };
     __Pyx_BufFmt_StackElem stack[1];
     int axes_specs[] = { (__Pyx_MEMVIEW_DIRECT | __Pyx_MEMVIEW_CONTIG) };
@@ -31999,7 +31740,7 @@ __pyx_fail:
 }
 
 /* MemviewDtypeToObject */
-          static CYTHON_INLINE PyObject *__pyx_memview_get_double(const char *itemp) {
+        static CYTHON_INLINE PyObject *__pyx_memview_get_double(const char *itemp) {
     return (PyObject *) PyFloat_FromDouble(*(double *) itemp);
 }
 static CYTHON_INLINE int __pyx_memview_set_double(const char *itemp, PyObject *obj) {
@@ -32011,7 +31752,7 @@ static CYTHON_INLINE int __pyx_memview_set_double(const char *itemp, PyObject *o
 }
 
 /* CIntFromPyVerify */
-          #define __PYX_VERIFY_RETURN_INT(target_type, func_type, func_value)\
+        #define __PYX_VERIFY_RETURN_INT(target_type, func_type, func_value)\
     __PYX__VERIFY_RETURN_INT(target_type, func_type, func_value, 0)
 #define __PYX_VERIFY_RETURN_INT_EXC(target_type, func_type, func_value)\
     __PYX__VERIFY_RETURN_INT(target_type, func_type, func_value, 1)
@@ -32033,7 +31774,7 @@ static CYTHON_INLINE int __pyx_memview_set_double(const char *itemp, PyObject *o
     }
 
 /* Declarations */
-          #if CYTHON_CCOMPLEX
+        #if CYTHON_CCOMPLEX
   #ifdef __cplusplus
     static CYTHON_INLINE __pyx_t_float_complex __pyx_t_float_complex_from_parts(float x, float y) {
       return ::std::complex< float >(x, y);
@@ -32053,7 +31794,7 @@ static CYTHON_INLINE int __pyx_memview_set_double(const char *itemp, PyObject *o
 #endif
 
 /* Arithmetic */
-          #if CYTHON_CCOMPLEX
+        #if CYTHON_CCOMPLEX
 #else
     static CYTHON_INLINE int __Pyx_c_eq_float(__pyx_t_float_complex a, __pyx_t_float_complex b) {
        return (a.real == b.real) && (a.imag == b.imag);
@@ -32188,7 +31929,7 @@ static CYTHON_INLINE int __pyx_memview_set_double(const char *itemp, PyObject *o
 #endif
 
 /* Declarations */
-          #if CYTHON_CCOMPLEX
+        #if CYTHON_CCOMPLEX
   #ifdef __cplusplus
     static CYTHON_INLINE __pyx_t_double_complex __pyx_t_double_complex_from_parts(double x, double y) {
       return ::std::complex< double >(x, y);
@@ -32208,7 +31949,7 @@ static CYTHON_INLINE int __pyx_memview_set_double(const char *itemp, PyObject *o
 #endif
 
 /* Arithmetic */
-          #if CYTHON_CCOMPLEX
+        #if CYTHON_CCOMPLEX
 #else
     static CYTHON_INLINE int __Pyx_c_eq_double(__pyx_t_double_complex a, __pyx_t_double_complex b) {
        return (a.real == b.real) && (a.imag == b.imag);
@@ -32343,7 +32084,7 @@ static CYTHON_INLINE int __pyx_memview_set_double(const char *itemp, PyObject *o
 #endif
 
 /* CIntToPy */
-          static CYTHON_INLINE PyObject* __Pyx_PyInt_From_int(int value) {
+        static CYTHON_INLINE PyObject* __Pyx_PyInt_From_int(int value) {
     const int neg_one = (int) -1, const_zero = (int) 0;
     const int is_unsigned = neg_one > const_zero;
     if (is_unsigned) {
@@ -32374,7 +32115,7 @@ static CYTHON_INLINE int __pyx_memview_set_double(const char *itemp, PyObject *o
 }
 
 /* CIntToPy */
-          static CYTHON_INLINE PyObject* __Pyx_PyInt_From_enum__NPY_TYPES(enum NPY_TYPES value) {
+        static CYTHON_INLINE PyObject* __Pyx_PyInt_From_enum__NPY_TYPES(enum NPY_TYPES value) {
     const enum NPY_TYPES neg_one = (enum NPY_TYPES) -1, const_zero = (enum NPY_TYPES) 0;
     const int is_unsigned = neg_one > const_zero;
     if (is_unsigned) {
@@ -32405,7 +32146,7 @@ static CYTHON_INLINE int __pyx_memview_set_double(const char *itemp, PyObject *o
 }
 
 /* MemviewSliceCopyTemplate */
-          static __Pyx_memviewslice
+        static __Pyx_memviewslice
 __pyx_memoryview_copy_new_contig(const __Pyx_memviewslice *from_mvs,
                                  const char *mode, int ndim,
                                  size_t sizeof_dtype, int contig_flag,
@@ -32472,7 +32213,7 @@ no_fail:
 }
 
 /* TypeInfoToFormat */
-          static struct __pyx_typeinfo_string __Pyx_TypeInfoToFormat(__Pyx_TypeInfo *type) {
+        static struct __pyx_typeinfo_string __Pyx_TypeInfoToFormat(__Pyx_TypeInfo *type) {
     struct __pyx_typeinfo_string result = { {0} };
     char *buf = (char *) result.string;
     size_t size = type->size;
@@ -32516,7 +32257,7 @@ no_fail:
 }
 
 /* CIntFromPy */
-          static CYTHON_INLINE int __Pyx_PyInt_As_int(PyObject *x) {
+        static CYTHON_INLINE int __Pyx_PyInt_As_int(PyObject *x) {
     const int neg_one = (int) -1, const_zero = (int) 0;
     const int is_unsigned = neg_one > const_zero;
 #if PY_MAJOR_VERSION < 3
@@ -32705,7 +32446,7 @@ raise_neg_overflow:
 }
 
 /* CIntFromPy */
-          static CYTHON_INLINE size_t __Pyx_PyInt_As_size_t(PyObject *x) {
+        static CYTHON_INLINE size_t __Pyx_PyInt_As_size_t(PyObject *x) {
     const size_t neg_one = (size_t) -1, const_zero = (size_t) 0;
     const int is_unsigned = neg_one > const_zero;
 #if PY_MAJOR_VERSION < 3
@@ -32894,7 +32635,7 @@ raise_neg_overflow:
 }
 
 /* CIntFromPy */
-          static CYTHON_INLINE long __Pyx_PyInt_As_long(PyObject *x) {
+        static CYTHON_INLINE long __Pyx_PyInt_As_long(PyObject *x) {
     const long neg_one = (long) -1, const_zero = (long) 0;
     const int is_unsigned = neg_one > const_zero;
 #if PY_MAJOR_VERSION < 3
@@ -33083,7 +32824,7 @@ raise_neg_overflow:
 }
 
 /* CIntToPy */
-          static CYTHON_INLINE PyObject* __Pyx_PyInt_From_long(long value) {
+        static CYTHON_INLINE PyObject* __Pyx_PyInt_From_long(long value) {
     const long neg_one = (long) -1, const_zero = (long) 0;
     const int is_unsigned = neg_one > const_zero;
     if (is_unsigned) {
@@ -33114,7 +32855,7 @@ raise_neg_overflow:
 }
 
 /* CIntFromPy */
-          static CYTHON_INLINE char __Pyx_PyInt_As_char(PyObject *x) {
+        static CYTHON_INLINE char __Pyx_PyInt_As_char(PyObject *x) {
     const char neg_one = (char) -1, const_zero = (char) 0;
     const int is_unsigned = neg_one > const_zero;
 #if PY_MAJOR_VERSION < 3
@@ -33303,7 +33044,7 @@ raise_neg_overflow:
 }
 
 /* CheckBinaryVersion */
-          static int __Pyx_check_binary_version(void) {
+        static int __Pyx_check_binary_version(void) {
     char ctversion[4], rtversion[4];
     PyOS_snprintf(ctversion, 4, "%d.%d", PY_MAJOR_VERSION, PY_MINOR_VERSION);
     PyOS_snprintf(rtversion, 4, "%s", Py_GetVersion());
@@ -33319,7 +33060,7 @@ raise_neg_overflow:
 }
 
 /* ModuleImport */
-          #ifndef __PYX_HAVE_RT_ImportModule
+        #ifndef __PYX_HAVE_RT_ImportModule
 #define __PYX_HAVE_RT_ImportModule
 static PyObject *__Pyx_ImportModule(const char *name) {
     PyObject *py_name = 0;
@@ -33337,7 +33078,7 @@ bad:
 #endif
 
 /* TypeImport */
-          #ifndef __PYX_HAVE_RT_ImportType
+        #ifndef __PYX_HAVE_RT_ImportType
 #define __PYX_HAVE_RT_ImportType
 static PyTypeObject *__Pyx_ImportType(const char *module_name, const char *class_name,
     size_t size, int strict)
@@ -33402,7 +33143,7 @@ bad:
 #endif
 
 /* FunctionImport */
-          #ifndef __PYX_HAVE_RT_ImportFunction
+        #ifndef __PYX_HAVE_RT_ImportFunction
 #define __PYX_HAVE_RT_ImportFunction
 static int __Pyx_ImportFunction(PyObject *module, const char *funcname, void (**f)(void), const char *sig) {
     PyObject *d = 0;
@@ -33456,7 +33197,7 @@ bad:
 #endif
 
 /* InitStrings */
-          static int __Pyx_InitStrings(__Pyx_StringTabEntry *t) {
+        static int __Pyx_InitStrings(__Pyx_StringTabEntry *t) {
     while (t->p) {
         #if PY_MAJOR_VERSION < 3
         if (t->is_unicode) {

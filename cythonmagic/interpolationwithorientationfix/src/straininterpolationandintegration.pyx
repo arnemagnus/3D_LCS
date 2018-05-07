@@ -1134,7 +1134,7 @@ cdef class Dp87Strain:
         hmax : double, optional
            Largest allowed timestep, as a fallback option in the event
            that the dynamic timestep update would otherwise suggest an
-           infinitely large step.
+           infinitely large step. Default: hmax = 10.
 
         """
         self.atol = atol

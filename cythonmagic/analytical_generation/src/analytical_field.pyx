@@ -265,7 +265,7 @@ cdef class SphericalField(CallableFunction):
            unit normalized radial vector at pos.
 
         """
-        dcopy(3,x,1,ret,1)
+        dcopy(3,pos,1,ret,1)
         daxpy(3,-1,self.origin,1,ret,1)
         _cy_normalize_(ret)
 
@@ -327,7 +327,22 @@ cdef class AnalyticalDirectionGenerator:
     @cython.wraparound(False)
     @cython.boundscheck(False)
     def set_tan_vec(self, double[::1] tan_vec not None):
+        """
+        AnalyticalDirectionGenerator.set_tan_vec(tan_vec)
 
+        Function which sets the approximately tangent vector, to be used in
+        conjunction with the underlying vector field in order to
+        generate step directions in R^3.
+
+        Must be called prior to AnalyticalDirectionGenerator.__call__.
+
+        Parameters
+        ----------
+        tan_vec : (3,) ndarray
+           A (C-contiguous) NumPy array, containing the (approximately) tangent
+           vector.
+
+        """
 
         if tan_vec.shape[0] != 3:
             raise ValueError('The interpolation-aiming routine is custom-built'\
@@ -336,15 +351,31 @@ cdef class AnalyticalDirectionGenerator:
         self.initialized_tan_vec = True
 
     def unset_tan_vec(self):
-        """SplineDirectionGenerator.unset_target()
+        """
+        AnalyticalDirectionGenerator.unset_tan_vec()
 
-        Unsets the target. Useful in order to ensure that the target is always
-        updated when it should be.
+        Unsets the tangent vector.
 
         """
         self.initialized_tan_vec = False
 
     def set_prev_vec(self, double[::1] prev_vec  not None):
+        """
+        AnalyticalDirectionGenerator.set_prev_vec(prev_vec)
+
+        Function which sets the previous vector, which is used in order
+        to ensure that any trajectory does not instantaneously fold onto
+        itself in regions with strong orientational discontinuities.
+
+        Must be called prior to AnalyticalDirectionGenerator.__call__.
+
+        Parameters
+        ----------
+        prev_vec : (3,) ndarray
+           A (C-contiguous) NumPy array, containing the (approximately) prevgent
+           vector.
+
+        """
         if prev_vec.shape[0] != 3:
             raise ValueError('The interpolation-aiming routine is custom-built'\
                     +' for three dimensional data!')
@@ -353,10 +384,10 @@ cdef class AnalyticalDirectionGenerator:
         self.initialized_prev_vec = True
 
     def unset_prev_vec(self):
-        """SplineDirectionGenerator.unset_target()
+        """
+        AnalyticalDirectionGenerator.unset_prev_vec()
 
-        Unsets the target. Useful in order to ensure that the target is always
-        updated when it should be.
+        Unsets the previous vector.
 
         """
         self.initialized_prev_vec = False
@@ -366,6 +397,24 @@ cdef class AnalyticalDirectionGenerator:
     @cython.wraparound(False)
     @cython.boundscheck(False)
     def __call__(self, double[::1] pos not None):
+        """
+        AnalyticalDirectionGenerator.__call__(pos)
+
+        Generates a trajectory direction at pos, based upon the underlying
+        vector field and the pre-set tan_vec and prev_vec.
+
+        Parameters
+        ----------
+        pos : (3,) array-like
+           A (C-contiguous) NumPy array containing the (Cartesian) coordinates
+           of the point in R^3 at which a direction is sought.
+
+        Returns
+        -------
+        vec : (3,) ndarray
+           A (C-contiguous) NumPy array containing the normalized direction.
+
+        """
         cdef:
             double[::1] ret = self.ret
 
@@ -382,6 +431,23 @@ cdef class AnalyticalDirectionGenerator:
     @cython.wraparound(False)
     @cython.boundscheck(False)
     cdef _ev_(self, double[::1] pos, double[::1] &ret):
+        """
+        AnalyticalDirectionGenerator._ev_(pos,ret)
+
+        The C-level function which actually generates the sought direction
+        at pos, based upon the underlying vector field and the pre-set tan_vec
+        and prev_vec.
+
+	Parameters
+        ----------
+        pos : (3,) array-like
+           A (C-contiguous) memoryview containing the (Cartesian) coordinates
+           of the point in R^3 at which a direction is sought.
+        ret : (3,) array-like, intent = out
+           Upon exit, a (C-contiguous) memoryview containing the normalized
+           direction.
+
+        """
         cdef:
             double[::1] xi = self.xi
 
@@ -399,18 +465,22 @@ cdef class AnalyticalDirectionGenerator:
         pass
 
 cdef class Dp87Analytical:
-    """A Cython extension type tailor-made for computing trajectories which
-    are defined as being orthogonal to a linearly interpolated trivariate vector
-    field in R^3 by means of the Dormand-Prince 8(7) numerical integrator.
+    """
+    A Cython extension type which generates trajectories in R^3 defined
+    as being orthogonal to an analytical vector field, by means of the
+    Dormand-Prince 8(7) adaptive timestep Runge-Kutta method.
+
+    The dynamic timestep is implemented roughly as in
+       Hairer, Nørsett and Wanner: "Solving ordinary differential equations I
+       -- Nonstiff problems", pages 167 and 168 in the 2008 ed.
 
     Methods defined here:
+    Dp87Analytical.__init__(atol,rtol,hmax)
+    Dp87Analytical.set_direction_generator(direction_generator)
+    Dp87Analytical.unset_direction_generator()
+    Dp87Analytical.__call__(t,pos,h)
 
-    Dp87Analytical.__init__(atol, rtol)
-    Dp87Analytical.set_aim_assister(direction_generator)
-    Dp87Analytical.unset_aim_assister()
-
-    Version: 0.2
-
+    Version: 1.0
     """
     cdef:
         double fac, maxfac
@@ -455,7 +525,7 @@ cdef class Dp87Analytical:
         double[::1] k_tmp
         double _pos_i_[3]
         double[::1] pos_i
-        double tmp, sc, err, h_opt
+        double tmp, sc, err, h_opt, hmax
         readonly double atol, rtol
         double q
         AnalyticalDirectionGenerator f
@@ -523,30 +593,45 @@ cdef class Dp87Analytical:
     @cython.initializedcheck(False)
     @cython.wraparound(False)
     @cython.boundscheck(False)
-    def __init__(self, double atol, double rtol):
-        """Dp87Analytical.__init__(atol,rtol)
+    def __init__(self, double atol, double rtol, double hmax = 10.):
+        """
+        Dp87Analytical.__init__(atol,rtol,hmax)
 
-        Constructor for the trivariate linearly interpolated trajectory
-        approximation extension type.
+        Constructor for a Dp87Analytical instance.
 
-        param: atol -- Absolute tolerance for the Dormand-Prince 8(7) method
-        param: rtol -- Relative tolerance for the Dormand-Prince 8(7) method
+        Parameters
+        ----------
+        atol : double
+           Absolute tolerance used in the dynamic timestep update
+        rtol : double
+           Relative tolerance used in the dynamic timestep update
+        hmax : double, optional
+           Largest allowed timestep, as a fallback option in the event
+           that the dynamic timestep update would otherwise suggest an
+           infinitely large step. Default: hmax = 10.
 
         """
         self.atol = atol
         self.rtol = rtol
+        self.hmax = hmax
 
     @cython.initializedcheck(False)
     @cython.wraparound(False)
     @cython.boundscheck(False)
-    def set_aim_assister(self, AnalyticalDirectionGenerator direction_generator):
-        """Dp87Analytical.set_aim_assister(direction_generator)
+    def set_direction_generator(self, AnalyticalDirectionGenerator direction_generator):
+        """
+        Dp87Analytical.set_direction_generator(direction_generator)
 
-        Sets the aim assister. Must be called *before* Dp87Analytical.__call__.
+        Function which sets the AnalyticalDirectionGenerator instance, to be
+        used in order to generate trajectories.
 
-        param: direction_generator -- AnalyticalDirectionGenerator instance,
-                                      initialized with a CallableFunction
-                                      object as well as a target
+        Must be called prior to Dp87Analytical.__call__.
+
+        Parameters
+        ----------
+        direction_generator : AnalyticalDirectionGenerator
+           A (properly initialized, cf. constructor and other methods of a)
+           AnalyticalDirectionGenerator instance.
 
         """
         self.f = direction_generator
@@ -556,11 +641,10 @@ cdef class Dp87Analytical:
     @cython.wraparound(False)
     @cython.boundscheck(False)
     def unset_aim_assister(self):
-        """Dp87Analytical.unset_aim_assister()
+        """
+        Dp87Analytical.unset_direction_generator()
 
-        Unsets the aim_assister. Useful in order to ensure that the aim assister
-        is always updated when it should be, namely in terms of a new target
-        or, for that matter, a new vector field.
+        Unsets the direction generator.
 
         """
         self.initialized = False
@@ -569,38 +653,34 @@ cdef class Dp87Analytical:
     @cython.wraparound(False)
     @cython.boundscheck(False)
     def __call__(self, double t, double[::1] pos, double h):
-        """Dp87Analytical.__call__(t,pos,h)
+        """
+        Dp87Analytical.__call__(t,pos,h)
 
-        Attempts a single step forwards in (pseudo-)time, using the
-        Dormand-Prince 8(7) adaptive integrator scheme. If the attempted step
-        is rejected, the time level and coordinates are not updated, while the
-        time increment is refined.
+        The function which attempts a step forwards in (pseudo)time along
+        the current trajectory.
 
-        Steps in the direction given by the direction generator set by
-        set_aim_assister, which has to be called in advance. Otherwise,
-        a RuntimeError is raised.
+        Parameters
+        ----------
+        t : double
+           Current (pseudo)time level
+        pos : (3,) ndarray
+           A (C-contiguous) NumPy array containing the current (Cartesian)
+           coordinates.
+        h : double
+           Current (pseudo)time step
 
-        param: t --   Current (pseudo-)time level
-        param: pos -- Current (Cartesian) coordinates, as a three-component
-                      C-contiguous NumPy array
-        param: h --   Current time increment
-
-        return: t --   (a) New (pseudo-)time level, if the attempted step is
-                           accepted
-                       (b) Current (pseudo-)time level, if the attempted step is
-                           rejected
-        return: pos -- Three-component C-contiguous NumPy array, containing
-                       (a) Dormand-Prince 8(7) Analytical approximation of the
-                           (Cartesian) coordinates at the new time level, if the
-                           attempted step is accepted
-                       (b) Current (Cartesian) coordinates; unaltered, if the
-                           attempted step is rejected
-        return: h --   Updated (pseudo-)time increment. Generally increased
-                       or decreased, depending on whether or not the trial step
-                       is accepted.
+        Returns
+        -------
+        _t : double
+           If the attempted step is rejected, _t = t
+           If the attempted step is accepted, _t = t + h
+        _pos : (3,) ndarray
+           If the attempted step is rejected, _pos = pos
+           If the attempted step is accepted, _pos =/= pos
+        _h : double
+           Updated (pseudo)time step.
 
         """
-
         cdef:
             double[::1] pos_i = self.pos_i
         if pos.shape[0] != 3:
@@ -617,18 +697,32 @@ cdef class Dp87Analytical:
     @cython.boundscheck(False)
     @cython.cdivision(True)
     cdef void _ev_(self, double *t, double[::1] pos, double *h):
-        """Dp87Analytical._ev_(t,pos,h)
+        """
+        Dp87Analytical._ev_(t,pos,h)
 
-        The C-level function which performs the under-the-hood work of the
-        __call__ routine. Facilitates C-level computations with as little
-        Python overhead as possible for any related extension types.
+        The C-level function which attempts a step forwards in (pseudo)time
+        along the current trajectory.
 
-        param/return: t
-        param/return: pos
-        param/return: h
-
-        All params and returns are the same as for the overarching Python-level
-        __call__ method.
+        Parameters
+        ----------
+        t : double, intent = inout
+           On entry:
+             Current (pseudo)time level
+           On exit:
+             If the attempted step is rejected, _t = t
+             If the attempted step is accepted, _t = t + h
+        pos : (3,) ndarray, intent = inout
+           On entry:
+             A (C-contiguous) NumPy array containing the current (Cartesian)
+             coordinates.
+           On exit:
+             If the attempted step is rejected, _pos = pos
+             If the attempted step is accepted, _pos =/= pos
+        h : double, intent = inoue
+           On entry:
+             Current (pseudo)time step
+           On exit:
+             Updated (pseudo)time step.
 
         """
         cdef:
@@ -638,29 +732,29 @@ cdef class Dp87Analytical:
             double[::1] a1 = self.a1, a2 = self.a2, a3 = self.a3, a4 = self.a4, a5 = self.a5, a6 = self.a6, a7 = self.a7, a8 = self.a8, a9 = self.a9, a10 = self.a10, a11 = self.a11, a12 = self.a12, a13 = self.a13
             int i
 
-        self.f._ev_(t[0],pos,k1)
+        self.f._ev_(pos,k1)
         dcopy(3,pos,1,k_tmp,1)
         daxpy(3,a1[0]*h[0],k1,1,k_tmp,1)
 
-        self.f._ev_(t[0],k_tmp,k2)
+        self.f._ev_(k_tmp,k2)
         dcopy(3,pos,1,k_tmp,1)
         daxpy(3,a2[0]*h[0],k1,1,k_tmp,1)
         daxpy(3,a2[1]*h[0],k2,1,k_tmp,1)
 
-        self.f._ev_(t[0],k_tmp,k3)
+        self.f._ev_(k_tmp,k3)
         dcopy(3,pos,1,k_tmp,1)
         daxpy(3,a3[0]*h[0],k1,1,k_tmp,1)
         daxpy(3,a3[1]*h[0],k2,1,k_tmp,1)
         daxpy(3,a3[2]*h[0],k3,1,k_tmp,1)
 
-        self.f._ev_(t[0],k_tmp,k4)
+        self.f._ev_(k_tmp,k4)
         dcopy(3,pos,1,k_tmp,1)
         daxpy(3,a4[0]*h[0],k1,1,k_tmp,1)
         daxpy(3,a4[1]*h[0],k2,1,k_tmp,1)
         daxpy(3,a4[2]*h[0],k3,1,k_tmp,1)
         daxpy(3,a4[3]*h[0],k4,1,k_tmp,1)
 
-        self.f._ev_(t[0],k_tmp,k5)
+        self.f._ev_(k_tmp,k5)
         dcopy(3,pos,1,k_tmp,1)
         daxpy(3,a5[0]*h[0],k1,1,k_tmp,1)
         daxpy(3,a5[1]*h[0],k2,1,k_tmp,1)
@@ -668,7 +762,7 @@ cdef class Dp87Analytical:
         daxpy(3,a5[3]*h[0],k4,1,k_tmp,1)
         daxpy(3,a5[4]*h[0],k5,1,k_tmp,1)
 
-        self.f._ev_(t[0],k_tmp,k6)
+        self.f._ev_(k_tmp,k6)
         dcopy(3,pos,1,k_tmp,1)
         daxpy(3,a6[0]*h[0],k1,1,k_tmp,1)
         daxpy(3,a6[1]*h[0],k2,1,k_tmp,1)
@@ -677,7 +771,7 @@ cdef class Dp87Analytical:
         daxpy(3,a6[4]*h[0],k5,1,k_tmp,1)
         daxpy(3,a6[5]*h[0],k6,1,k_tmp,1)
 
-        self.f._ev_(t[0],k_tmp,k7)
+        self.f._ev_(k_tmp,k7)
         dcopy(3,pos,1,k_tmp,1)
         daxpy(3,a7[0]*h[0],k1,1,k_tmp,1)
         daxpy(3,a7[1]*h[0],k2,1,k_tmp,1)
@@ -687,7 +781,7 @@ cdef class Dp87Analytical:
         daxpy(3,a7[5]*h[0],k6,1,k_tmp,1)
         daxpy(3,a7[6]*h[0],k7,1,k_tmp,1)
 
-        self.f._ev_(t[0],k_tmp,k8)
+        self.f._ev_(k_tmp,k8)
         dcopy(3,pos,1,k_tmp,1)
         daxpy(3,a8[0]*h[0],k1,1,k_tmp,1)
         daxpy(3,a8[1]*h[0],k2,1,k_tmp,1)
@@ -698,7 +792,7 @@ cdef class Dp87Analytical:
         daxpy(3,a8[6]*h[0],k7,1,k_tmp,1)
         daxpy(3,a8[7]*h[0],k8,1,k_tmp,1)
 
-        self.f._ev_(t[0],k_tmp,k9)
+        self.f._ev_(k_tmp,k9)
         dcopy(3,pos,1,k_tmp,1)
         daxpy(3,a9[0]*h[0],k1,1,k_tmp,1)
         daxpy(3,a9[1]*h[0],k2,1,k_tmp,1)
@@ -710,7 +804,7 @@ cdef class Dp87Analytical:
         daxpy(3,a9[7]*h[0],k8,1,k_tmp,1)
         daxpy(3,a9[8]*h[0],k9,1,k_tmp,1)
 
-        self.f._ev_(t[0],k_tmp,k10)
+        self.f._ev_(k_tmp,k10)
         dcopy(3,pos,1,k_tmp,1)
         daxpy(3,a10[0]*h[0],k1,1,k_tmp,1)
         daxpy(3,a10[1]*h[0],k2,1,k_tmp,1)
@@ -723,7 +817,7 @@ cdef class Dp87Analytical:
         daxpy(3,a10[8]*h[0],k9,1,k_tmp,1)
         daxpy(3,a10[9]*h[0],k10,1,k_tmp,1)
 
-        self.f._ev_(t[0],k_tmp,k11)
+        self.f._ev_(k_tmp,k11)
         dcopy(3,pos,1,k_tmp,1)
         daxpy(3,a11[0]*h[0],k1,1,k_tmp,1)
         daxpy(3,a11[1]*h[0],k2,1,k_tmp,1)
@@ -737,7 +831,7 @@ cdef class Dp87Analytical:
         daxpy(3,a11[9]*h[0],k10,1,k_tmp,1)
         daxpy(3,a11[10]*h[0],k11,1,k_tmp,1)
 
-        self.f._ev_(t[0],k_tmp,k12)
+        self.f._ev_(k_tmp,k12)
         dcopy(3,pos,1,k_tmp,1)
         daxpy(3,a12[0]*h[0],k1,1,k_tmp,1)
         daxpy(3,a12[1]*h[0],k2,1,k_tmp,1)
@@ -752,7 +846,7 @@ cdef class Dp87Analytical:
         daxpy(3,a12[10]*h[0],k11,1,k_tmp,1)
         daxpy(3,a12[11]*h[0],k12,1,k_tmp,1)
 
-        self.f._ev_(t[0],k_tmp,k13)
+        self.f._ev_(k_tmp,k13)
 
         dscal(3,0,x7,1)
         dscal(3,0,x8,1)
@@ -809,7 +903,7 @@ cdef class Dp87Analytical:
                 self.err = self.tmp
 
         if self.err == 0:
-            self.h_opt = c_copysign(10,h[0])
+            self.h_opt = c_copysign(self.hmax,h[0])
         else:
             self.h_opt = h[0]*c_pow((1/self.err),1/(self.q+1))
 
