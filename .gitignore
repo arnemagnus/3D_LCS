@@ -32,6 +32,7 @@ _minted*/
 *.auxlock
 *.bbl
 
+
 # Archive files:
 *.tar.gz
 
