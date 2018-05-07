@@ -39,6 +39,6 @@ _minted*/
 articles/
 
 # Large image files
-final_results/
-mpl-figs/
-stuff/
+*/final_results/
+*/mpl-figs/
+*/stuff/
