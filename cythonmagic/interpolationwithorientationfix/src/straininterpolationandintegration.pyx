@@ -469,6 +469,13 @@ cdef class CubicSpecialInterpolator(InterpolatorWithOrientationFix):
     to combat orientational discontinuities, with normalized results.
     Periodic boundary conditions are assumed.
 
+    NOTE: In order for this to function as intended (allowing for cubic
+          polylomial pieces, corresponding to a quartic spline), the
+          bspline-fortran source code must be slightly modified.
+          In particular, in the subroutine 'check_k', which is located withihn
+          bspline_sub_module.f90, the second condition of the if statement
+          must be changed from 'k >= n' to 'k > n'.
+
     Methods defined here:
     CubicSpecialInterpolator.__init__(x,y,z,xi)
     CubicSpecialInterpolator.__call__(pos)
@@ -522,7 +529,7 @@ cdef class CubicSpecialInterpolator(InterpolatorWithOrientationFix):
     @cython.wraparound(False)
     @cython.boundscheck(False)
     def __init__(self, double[::1] x not None, double[::1] y not None, double[::1] z not None, \
-            double[:,:,:,::1] xi not None, int kx = 3, int ky = 3, int kz = 3):
+            double[:,:,:,::1] xi not None, int kx = 4, int ky = 4, int kz = 4):
         """
         CubicSpecialInterpolator.__init__(x,y,z,xi)
 
@@ -547,14 +554,14 @@ cdef class CubicSpecialInterpolator(InterpolatorWithOrientationFix):
            (nx,ny,nz,3), containing the sampled vector field.
            xi[i,j,k] should correspond to the sample at (x[i],y[j],z[k]).
         kx : integer, optional
-           Spline order along the x abscissa. Available choices: kx = 2, 3.
-           Default: kx = 3
+           Spline order along the x abscissa. Available choices: kx = 2, 3, 4.
+           Default: kx = 4 (corresponding to cubic spline pieces)
         ky : integer, optional
-           Spline order along the y abscissa. Available choices: ky = 2, 3.
-           Default: ky = 3
+           Spline order along the y abscissa. Available choices: ky = 2, 3, 4.
+           Default: ky = 4 (corresponding to cubic spline pieces)
         kz : integer, optional
            Spline order along the z abscissa. Available choices: ky = 2, 3.
-           Default: kz = 3
+           Default: kz = 4 (corresponding to cubic spline pieces)
 
         """
         cdef:
@@ -566,7 +573,7 @@ cdef class CubicSpecialInterpolator(InterpolatorWithOrientationFix):
         if(xi.shape[3] != 3):
             raise ValueError('The interpolator routine is custom-built for three dimensional data!')
 
-        if (kx < 2 or kx > 3) or (ky < 2 or ky > 3) or (kz < 2 or kz > 3):
+        if (kx < 2 or kx > 4) or (ky < 2 or ky > 4) or (kz < 2 or kz > 4):
             raise ValueError('Invalid choice of interpolator order!')
         # Enforcing periodic BC by not including the sampling points along
         # the last rows and columns
