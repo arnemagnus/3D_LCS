@@ -27,8 +27,6 @@ _minted*/
 *.lof
 *.lot
 *.toc
-
-# Last-minute LaTeX stuff
 *.sty
 
 # Archive files:
@@ -39,3 +37,7 @@ _minted*/
 
 # Articles
 articles/
+
+# Large image files
+final_results/
+mpl-figs/

@@ -53,3 +53,23 @@ where the parameter values
     k_{0} = 0.3, \quad k_{1} = 0.5, \quad k_{2} = 1.5, \quad k_{3} = 1.8
 \end{equation}
 were used, like in \textcite{oettinger2016autonomous}.
+
+\subsection{(Normal) vector field for a sinusoidal surface}
+\label{sub:_normal_vector_field_for_a_sinusoidal_surface}
+
+For the surface implicitly defined as the zeros of the function
+
+\begin{equation}
+    f(\vct{r}) = A\sin(\omega_{x}x)\sin(\omega_{y}y) + (z_{0}-z),
+\end{equation}
+
+one possible choice for its normal vector field is
+
+\begin{equation}
+    \vct{n}(\vct{r}) = %
+    \begin{pmatrix}
+        A\omega_{x}\cos(\omega_{x}x)\sin(\omega_{y}y)\\
+        A\omega_{y}\sin(\omega_{x}x)\cos(\omega_{y}y)\\
+        -1
+    \end{pmatrix}.
+\end{equation}

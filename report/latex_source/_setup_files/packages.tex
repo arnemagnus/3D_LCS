@@ -12,20 +12,6 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 
-% Typographical refinement
-\usepackage[activate={true,nocompatibility},% Let microtype do its magic
-%                                           % without trying to keep page breaks
-%                                           % etc.
-final=true,% Activate microtype even when in draft mode
-kerning=true,% Fixes kerning issues
-spacing=true,% Fixes spacing issues
-tracking=true,% Adds letter spacing for small caps
-shrink=30,% Characters are stretched or shrunk in order to improve justification
-stretch=30,% up to 3 %
-factor=0% Controls how much punctuation protrudes past the end of the line
-]{microtype}
-\microtypecontext{spacing=nonfrench} % <-- No spacing found for Linux Libertine
-
 % Text spacing
 \usepackage[]{setspace}
 
@@ -78,9 +64,25 @@ factor=0% Controls how much punctuation protrudes past the end of the line
 % Interface for floating objects
 \usepackage[]{float}
 
+% Typographical refinement
+\usepackage[activate={true,nocompatibility},% Let microtype do its magic
+%                                           % without trying to keep page breaks
+%                                           % etc.
+final=true,% Activate microtype even when in draft mode
+kerning=true,% Fixes kerning issues
+spacing=true,% Fixes spacing issues
+tracking=true,% Adds letter spacing for small caps
+shrink=30,% Characters are stretched or shrunk in order to improve justification
+stretch=30,% up to 3 %
+factor=0% Controls how much punctuation protrudes past the end of the line
+]{microtype}
+\microtypecontext{spacing=nonfrench} % <-- No spacing found for Linux Libertine
+
+
 % TikZ stuff
 \usepackage{tikz}
 \usepackage[]{tikz-3dplot}
+\usepackage{pgfplots}
 \usetikzlibrary{%
     angles,%
     arrows.meta,%
@@ -139,6 +141,12 @@ factor=0% Controls how much punctuation protrudes past the end of the line
     \expandafter\xdef\csname angle#3\endcsname{\pgfmathresult}%
   \endgroup%
 }
+
+
+%\usetikzlibrary{external}
+%\usepgfplotslibrary{external}
+%\tikzexternalize[prefix=./figures/compiled-tikz-figs/]
+%\tikzset{external/force remake}
 
 
 % Interface for stacked floating objects:
