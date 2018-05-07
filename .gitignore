@@ -31,6 +31,8 @@ _minted*/
 *.fmt
 *.auxlock
 *.bbl
+*.makefile
+*.figlist
 
 
 # Archive files:
@@ -49,6 +51,7 @@ report/latex_source/figures/compiled-tikz-figs/*
 notebooks/ABC_flow/stuff/*
 notebooks/tor-fjord/*
 report/latex_source/_pgfcache
+report/latex_source/_tikzcache
 
 # Pseudohacky stuff
 bspline-fortran-arnes-mod/
