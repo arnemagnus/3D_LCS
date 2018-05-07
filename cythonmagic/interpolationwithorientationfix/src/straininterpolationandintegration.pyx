@@ -995,6 +995,18 @@ cdef class Dp87Strain:
     as being orthogonal to a (stationary) vector field, by means of the
     Dormand-Prince 8(7) adaptive timestep Runge-Kutta method.
 
+    The dynamic timestep is implemented roughly as in
+       Hairer, Nørsett and Wanner: "Solving ordinary differential equations I
+       -- Nonstiff problems", pages 167 and 168 in the 2008 ed.
+
+    Methods defined here:
+    Dp87Strain.__init__(atol,rtol,hmax)
+    Dp87Strain.set_direction_generator(direction_generator)
+    Dp87Strain.unset_direction_generator()
+    Dp87Strain.__call__(t,pos,h)
+
+    Version: 1.0
+
     """
     cdef:
         double fac, maxfac
@@ -1040,7 +1052,7 @@ cdef class Dp87Strain:
         double _pos_i_[3]
         double[::1] pos_i
         double tmp, sc, err, h_opt
-        double atol, rtol
+        double atol, rtol, hmax
         double q
         StrainDirectionGenerator f
         bint initialized
@@ -1099,6 +1111,7 @@ cdef class Dp87Strain:
 
         self.pos_i = self._pos_i_
 
+        self.hmax = 10.
         self.fac = 0.8
         self.maxfac = 2.0
         self.q = 7.
@@ -1106,27 +1119,95 @@ cdef class Dp87Strain:
     @cython.initializedcheck(False)
     @cython.wraparound(False)
     @cython.boundscheck(False)
-    def __init__(self, double atol, double rtol):
+    def __init__(self, double atol, double rtol, double hmax = 10.):
+        """
+        Dp87Strain.__init__(atol,rtol,hmax)
+
+        Constructor for a Dp87Strain instance.
+
+        Parameters
+        ----------
+        atol : double
+           Absolute tolerance used in the dynamic timestep update
+        rtol : double
+           Relative tolerance used in the dynamic timestep update
+        hmax : double, optional
+           Largest allowed timestep, as a fallback option in the event
+           that the dynamic timestep update would otherwise suggest an
+           infinitely large step.
+
+        """
         self.atol = atol
         self.rtol = rtol
+        self.hmax = hmax
 
     @cython.initializedcheck(False)
     @cython.wraparound(False)
     @cython.boundscheck(False)
-    def set_aim_assister(self, StrainDirectionGenerator direction_generator):
+    def set_direction_generator(self, StrainDirectionGenerator direction_generator):
+        """
+        Dp87Strain.set_direction_generator(direction_generator)
+
+        Function which sets the StrainDirectionGenerator instance, to be
+        used in order to generate trajectories.
+
+        Must be called prior to Dp87Strain.__call__.
+
+        Parameters
+        ----------
+        direction_generator : StrainDirectionGenerator
+           A (properly initialized, cf. constructor and other methods of a)
+           StrainDirectionGenerator instance.
+
+        """
         self.f = direction_generator
         self.initialized = True
 
     @cython.initializedcheck(False)
     @cython.wraparound(False)
     @cython.boundscheck(False)
-    def unset_aim_assister(self):
+    def unset_direction_generator(self):
+        """
+        Dp87Strain.unset_direction_generator()
+
+        Unsets the direction generator.
+
+        """
         self.initialized = False
 
     @cython.initializedcheck(False)
     @cython.wraparound(False)
     @cython.boundscheck(False)
     def __call__(self, double t, double[::1] pos not None, double h):
+        """
+        Dp87Strain.__call__(t,pos,h)
+
+        The function which attempts a step forwards in (pseudo)time along
+        the current trajectory.
+
+        Parameters
+        ----------
+        t : double
+           Current (pseudo)time level
+        pos : (3,) ndarray
+           A (C-contiguous) NumPy array containing the current (Cartesian)
+           coordinates.
+        h : double
+           Current (pseudo)time step
+
+        Returns
+        -------
+        _t : double
+           If the attempted step is rejected, _t = t
+           If the attempted step is accepted, _t = t + h
+        _pos : (3,) ndarray
+           If the attempted step is rejected, _pos = pos
+           If the attempted step is accepted, _pos =/= pos
+        _h : double
+           Updated (pseudo)time step.
+
+        """
+
         cdef:
             double[::1] pos_i = self.pos_i
         if not self.initialized:
@@ -1141,6 +1222,34 @@ cdef class Dp87Strain:
     @cython.boundscheck(False)
     @cython.cdivision(True)
     cdef void _ev_(self, double *t, double[::1] pos, double *h):
+        """
+        Dp87Strain._ev_(t,pos,h)
+
+        The C-level function which attempts a step forwards in (pseudo)time
+        along the current trajectory.
+
+        Parameters
+        ----------
+        t : double, intent = inout
+           On entry:
+             Current (pseudo)time level
+           On exit:
+             If the attempted step is rejected, _t = t
+             If the attempted step is accepted, _t = t + h
+        pos : (3,) ndarray, intent = inout
+           On entry:
+             A (C-contiguous) NumPy array containing the current (Cartesian)
+             coordinates.
+           On exit:
+             If the attempted step is rejected, _pos = pos
+             If the attempted step is accepted, _pos =/= pos
+        h : double, intent = inoue
+           On entry:
+             Current (pseudo)time step
+           On exit:
+             Updated (pseudo)time step.
+
+        """
         cdef:
             double[::1] k1 = self.k1, k2 = self.k2, k3 = self.k3, k4 = self.k4, k5 = self.k5, k6 = self.k6, k7 = self.k7, k8 = self.k8, k9 = self.k9, k10 = self.k10, k11 = self.k11, k12 = self.k12, k13 = self.k13, k_tmp = self.k_tmp
             double[::1] x7 = self.x7, x8 = self.x8
@@ -1319,7 +1428,7 @@ cdef class Dp87Strain:
                 self.err = self.tmp
 
         if self.err == 0:
-            self.h_opt = c_copysign(10,h[0])
+            self.h_opt = c_copysign(self.hmax,h[0])
         else:
             self.h_opt = h[0]*c_pow((1/self.err),1/(self.q+1))
 
