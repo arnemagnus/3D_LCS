@@ -23,22 +23,13 @@ the system given by \cref{eq:consideredflow}, the flow map is defined as
 hence, the flow map describes the movement of tracers from one point in time
 to another mathematically. In general, the flow map is as smooth as the
 underlying velocity field (cf.\ system \eqref{eq:consideredflow})
-\parencite{farazmand2012computing}. For sufficiently smooth velocity fields, the
-right Cauchy-Green strain tensor field can be defined as
-\begin{equation}
-    \label{eq:defn_cauchygreen}
-    \mtrx{C}_{t_{0}}^{t}(\vct{x}_{0}) = %
-    \Big(\grad\vct{\phi}_{t_{0}}^{t}(\vct{x}_{0})\Big)^{\ast}%
-    \Big(\grad\vct{\phi}_{t_{0}}^{t}(\vct{x}_{0})\Big),
-\end{equation}
-where $\grad\vct{\phi}_{t_{0}}^{t}$ denotes the Jacobian matrix of the flow
-map $\vct{\phi}_{t_{0}}^{t}$, and the asterisk refers to the adjoint operation,
-which, because the Jacobian $\grad\vct{\phi}_{t_{0}}^{t}$ is real-valued,
-equates to matrix transposition. Component-wise, the Jacobian matrix of a
-general vector-valued function $\vct{f}$ is defined as
+\parencite{farazmand2012computing}. In Lagrangian flow analysis, the
+\emph{Jacobian matrix} of the flow map $\vct{\phi}_{t_{0}}^{t}$ plays a
+significant role. Component-wise, the Jacobian matrix of a general vector-valued
+function $\vct{f}$ is defined as
 \begin{equation}
     \label{eq:defn_jacobian}
-    (\grad\vct{f})_{i,j} = \pdv{f_{i}}{x_{j}}, \quad%
+    (\grad{\vct{f}})_{i,j} = \pdv{f_{i}}{x_{j}}, \quad %
     \vct{f} = \vct{f}(\vct{x}) = \big(f_{1}(\vct{x}),f_{2}(\vct{x}),\ldots\big),
 \end{equation}
 which, for our three-dimensional flow, reduces to
@@ -50,12 +41,67 @@ which, for our three-dimensional flow, reduces to
     \begin{pmatrix}%
         \dpdv{f_{1}}{x} & \dpdv{f_{1}}{y} & \dpdv{f_{1}}{z} \\[2ex]
         \dpdv{f_{2}}{x} & \dpdv{f_{2}}{y} & \dpdv{f_{2}}{z} \\[2ex]
-        \dpdv{f_{3}}{x} & \dpdv{f_{3}}{y} & \dpdv{f_{3}}{z}
+        \dpdv{f_{3}}{x} & \dpdv{f_{3}}{y} & \dpdv{f_{3}}{z}.
     \end{pmatrix}.
 \end{equation}
 \endgroup
-Because the Jacobian of the flow map is invertible, the Cauchy-Green strain
-tensor $\mtrx{C}_{t_{0}}^{t}$ is symmetric and positive definite
+Making use of the definition of the flow map (cf.\ \cref{eq:defn_flowmap})
+in conjunction with \cref{eq:consideredflow}, one finds the following ordinary
+differential equation which describes the time evolution of the flow map:
+\begin{equation}
+    \label{eq:timederivative_flowmap}
+    \dot{\vct{\phi}} = \vct{v}(t,\vct{\phi}),
+\end{equation}
+where $t_{0}$, $t$ and $\vct{x}_{0}$ have been omitted in order to avoid
+notational clutter. These are, however, implicit by context. As the nabla
+operator is time-independent, \cref{eq:timederivative_flowmap} immediately
+yields an ordinary differential equation for the time development of the
+directional derivative of the flow map, namely
+\begin{equation}
+    \label{eq:timederivative_directionalderivative_flowmap}
+    \dv{\phantom{}}{t}\big(\uvct{u}\cdot\grad\big)\vct{\phi} = %
+    \big(\uvct{u}\cdot\grad\big)\vct{v}(t,\vct{\phi}),
+\end{equation}
+which holds along any constant unit vector $\uvct{u}$. On a regular Cartesian
+grid, \cref{eq:timederivative_directionalderivative_flowmap} provides a coupled
+set of ordinary differential equations describing the time evolution of each
+component of the Jacobian of the flow map:
+\begin{equation}
+    \label{eq:timederivative_flowmap_jacobian}
+    \begin{gathered}
+        \dv{\phantom{}}{t}\bigg(\pdv{\phi_{i}}{x_{j}}\bigg) = %
+        \sum\limits_{k} \pdv{v_{i}}{x_{k}}\bigg|_{(t,\vct{\phi})}\,%
+        \pdv{\phi_{k}}{x_{j}}\bigg|_{t},\\
+        \pdv{\phi_{i}}{x_{j}}\bigg|_{t_{0}} = \delta_{ij},%
+        \quad \vct{x}_{0}\in\mathcal{U},\quad t\in[t_{0},t_{1}],
+    \end{gathered}
+\end{equation}
+where the Kronecker delta is defined as
+\begin{equation}
+    \label{eq:defn_kroneckerdelta}
+    \delta_{ij} =
+    \begin{cases}
+        1, & \text{if }i=j,\\
+        0, & \text{if }i\neq{}j.
+    \end{cases}
+\end{equation}
+The initial conditions for the Jacobi components reflect the fact that, for
+a regular Cartesian grid, the directional derivative of the $x$ coordinate in
+the $x$ direction is $q$, but zero in the $y$ and $z$ directions.
+
+For sufficiently smooth velocity fields, the flow map Jacobian
+$\grad{\vct{\phi}_{t_{0}}^{t}}$ can be computed, which allows for the
+right Cauchy-Green strain tensor field to be defined as
+\begin{equation}
+    \label{eq:defn_cauchygreen}
+    \mtrx{C}_{t_{0}}^{t}(\vct{x}_{0}) = %
+    \Big(\grad\vct{\phi}_{t_{0}}^{t}(\vct{x}_{0})\Big)^{\ast}%
+    \Big(\grad\vct{\phi}_{t_{0}}^{t}(\vct{x}_{0})\Big),
+\end{equation}
+where the asterisk refers to the adjoint operation, which, because the Jacobian
+$\grad\vct{\phi}_{t_{0}}^{t}$ is real-valued, equates to matrix transposition.
+Moreover, as the Jacobian of the flow map is invertible, the Cauchy-Green strain
+tensor $\mtrx{C}_{t_{0}}^{t}(\vct{x}_{0})$ is symmetric and positive definite
 \parencite{farazmand2012computing}. Thus, it has three real, positive
 eigenvalues and orthogonal, real eigenvectors. Its eigenvalues $\lambda_{i}$
 and corresponding unit eigenvectors $\vct{\xi}_{i}$ are defined by%
@@ -63,14 +109,15 @@ and corresponding unit eigenvectors $\vct{\xi}_{i}$ are defined by%
     \label{eq:cauchygreen_characteristics}
     \begin{gathered}
         \mtrx{C}_{t_{0}}^{t}(\vct{x}_{0})\vct{\xi}_{i}(\vct{x}_{0}) = %
-        \lambda_{i}\vct{\xi}_{i}(\vct{x}_{0}), \quad %
-        \norm{\vct{\xi}_{i}(\vct{x}_{0})} = 1, \quad i = 1, 2, 3, \\
-        0 < \lambda_{1}(\vct{x}_{0}) \leq \lambda_{2}(\vct{x}_{0}) %
+        \lambda_{i}\vct{\xi}_{i}(\vct{x}_{0}), \quad i = 1, 2, 3, \\
+    \inp[\big]{\vct{\xi}_{i}(\vct{x}_{0})}{\vct{\xi}_{j}(\vct{x}_{0})} = \delta_{ij}, %
+        \quad 0 < \lambda_{1}(\vct{x}_{0}) \leq \lambda_{2}(\vct{x}_{0}) %
         \leq \lambda_{3}(\vct{x}_{0}),
     \end{gathered}
 \end{equation}
-where, for the sake of notational transparency, the dependence of $\lambda_{i}$
-and $\vct{\xi}_{i}$ on $t_{0}$ and $t$ has been suppressed. The geometric
+where the Kronecker delta is defined in~\cref{eq:defn_kroneckerdelta}, and
+the dependence of $\lambda_{i}$ and $\vct{\xi}_{i}$ on $t_{0}$ and $t$ has been
+suppressed, for the sake of notational transparency. The geometric
 interpretation of \cref{eq:cauchygreen_characteristics} is that a fluid element
 undergoes the most stretching along the $\vct{\xi}_{3}$ axis, less stretching
 along the $\vct{\xi}_{2}$ axis, and the least stretching along the
@@ -106,4 +153,4 @@ to the velocity field $\vct{v}$ being
 divergence-free (i.e.,\ $\div\vct{v}\equiv0$ in system
 \eqref{eq:consideredflow}).
 
-
+\input{mainmatter/theory/figures/interpolantorder}

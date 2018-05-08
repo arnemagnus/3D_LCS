@@ -1,0 +1,49 @@
+\begin{table}[htpb]
+\centering
+    \caption[Butcher tableau representation of the Bogacki-Shampine 5(4)
+    embedded Runge-Kutta method]{Butcher tableau representation of the
+        Bogacki-Shampine 5(4) embedded Runge-Kutta method. The $b$ coefficients correspond
+to a \nth{5}-order accurate solution used to continue the integration. The
+two rows of $\widehat{b}$ coefficients correspond to two independent
+\nth{4}-order accurate interpolants. They can be used to estimate the error of
+the numerical approximation, and to dynamically adjust the time step. The fact
+that two independent interpolants are included is a part of the reason for which
+the method nearly behaves like a \nth{6}-order method
+\parencite[p.194]{hairer1993solving}. The
+\emph{First Same As Last} property is apparent from the fact that the $b$
+coefficients correspond exactly to the last row of coefficients in the
+Runge-Kutta matrix. For reference, see~\textcite{bogacki1996efficient}.}
+    \label{tab:butcherbs54}
+    \renewcommand{\arraystretch}{2.5}
+    \begin{tabular}{C|CCCCCCCC}
+        \toprule
+        0 & \\
+        \dfrac{1}{6} & \dfrac{1}{6} \\
+        \dfrac{2}{9} & \dfrac{2}{27} & \dfrac{4}{27} \\
+        \dfrac{3}{7} & \dfrac{183}{1372} & \dfrac{-162}{343} %
+                     & \dfrac{1053}{1372} \\
+        \dfrac{2}{3} & \dfrac{68}{297} & \dfrac{-4}{11} & \dfrac{42}{143} %
+                     & \dfrac{1960}{3861} \\
+        \dfrac{3}{4} & \dfrac{597}{22528} & \dfrac{81}{352} %
+                     & \dfrac{63099}{585728} & \dfrac{58653}{366080} %
+                     & \dfrac{4617}{20480} \\
+        1 & \dfrac{174197}{959244} & \dfrac{-30942}{79937} %
+          & \dfrac{8152137}{19744439} & \dfrac{666106}{1039181} %
+          & \dfrac{-29421}{29068} & \dfrac{482048}{414219} \\
+        1 & \dfrac{587}{8064} & 0 & \dfrac{4440339}{15491840} %
+          & \dfrac{24353}{124800} & \dfrac{387}{44800} & \dfrac{2152}{5985} %
+          & \dfrac{7267}{94080} \\
+        \hline
+          & \dfrac{587}{8064} & 0 & \dfrac{4440339}{15491840} %
+          & \dfrac{24353}{124800} & \dfrac{387}{44800} & \dfrac{2152}{5985} %
+          & \dfrac{7267}{94080} \\
+        \hline
+        & \dfrac{6059}{80640} & 0 & \dfrac{8559189}{30983680} %
+        & \dfrac{26411}{124800} & \dfrac{-927}{89600} & \dfrac{443}{1197} %
+                              & \dfrac{7267}{94080} \\
+        & \dfrac{2479}{34992} & 0 & \dfrac{123}{416} & \dfrac{612941}{3411720} %
+        & \dfrac{43}{1440} & \dfrac{2272}{6561} & \dfrac{79937}{1113912} %
+        & \dfrac{3293}{556956} \\
+        \bottomrule
+    \end{tabular}
+\end{table}

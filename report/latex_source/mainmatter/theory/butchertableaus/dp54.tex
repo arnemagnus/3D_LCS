@@ -1,0 +1,36 @@
+\begin{table}[htpb]
+    \centering
+    \caption[Butcher tableau representation of the Dormand-Prince 5(4)
+    embedded Runge-Kutta method]
+    {Butcher tableau representation of the Dormand-Prince 5(4)
+    embedded Runge-Kutta method. The $b$ coefficients correspond to a
+    \nth{5}-order accurate solution used to continue the integration. The
+    $\widehat{b}$ coefficients correspond to a \nth{4}-order interpolant, which
+    can be used to estimate the error of the numerical approximation, and to
+    dynamically adjust the time step. The \emph{First Same As Last} property is
+    apparent from the fact that the $b$ coefficients correspond exactly to the
+    last row of the Runge-Kutta matrix. For reference, see
+    \textcite{dormand1980family}.}
+    \label{tab:butcherdopri54}
+    \renewcommand{\arraystretch}{2.5}
+    \begin{tabular}{C|CCCCCCC}
+    \toprule
+    0 \\
+    \dfrac{1}{5} & \dfrac{1}{5} \\
+    \dfrac{3}{10} & \dfrac{3}{40} & \dfrac{9}{40} \\
+    \dfrac{4}{5} & \dfrac{44}{45} & \dfrac{-56}{15} & \dfrac{32}{9} \\
+    \dfrac{8}{9} & \dfrac{19372}{6561} & \dfrac{-25360}{2187} %
+                 & \dfrac{64448}{6561} & \dfrac{-212}{769} \\
+    1 & \dfrac{9017}{3168} & \dfrac{-355}{33} & \dfrac{46732}{5247} %
+      & \dfrac{49}{176} & \dfrac{-5103}{18656} \\
+    1 & \dfrac{35}{384} & 0 & \dfrac{500}{1113} & \dfrac{125}{192} %
+      & \dfrac{-2187}{6784} & \dfrac{11}{84} \\
+    \hline
+      & \dfrac{35}{384} & 0 & \dfrac{500}{1113} & \dfrac{125}{192} %
+      & \dfrac{-2187}{6784} & \dfrac{11}{84} \\
+    \hline
+    & \dfrac{5179}{57600} & 0 & \dfrac{7571}{16695} & \dfrac{393}{640} %
+    & \dfrac{-92097}{339200} & \dfrac{187}{2100} & \dfrac{1}{40} \\
+    \bottomrule
+    \end{tabular}
+\end{table}

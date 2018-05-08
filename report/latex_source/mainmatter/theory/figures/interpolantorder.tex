@@ -1,0 +1,34 @@
+\begin{figure}[htpb]
+    \centering
+    \begin{subfigure}[b]{0.475\textwidth}
+    \centering
+       \importpgf{figures/mpl-illustrations}{nn-itp.pgf}
+       \caption[]{{\small Nearest neighbor interpolation}}
+    \label{fig:itp_nnb}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.475\textwidth}
+    \centering
+       \importpgf{figures/mpl-illustrations}{lin-itp.pgf}
+       \caption[]{{\small Linear interpolation}}
+    \label{fig:itp_lin}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.475\textwidth}
+    \centering
+       \importpgf{figures/mpl-illustrations}{quad-itp.pgf}
+       \caption[]{{\small Quadratic B-spline interpolation}}
+    \label{fig:itp_nnb}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.475\textwidth}
+    \centering
+       \importpgf{figures/mpl-illustrations}{cbc-itp.pgf}
+       \caption[]{{\small Cubic B-spline interpolation}}
+    \label{fig:itp_lin}
+    \end{subfigure}
+    \caption[Aviici is love, Aviici is life]
+    {Spline interpolation of orders 0 through to 3 (solid) applied to a higher
+        order polynomial (dashed). The sampling points are shown as hollow
+        circles. Observe how higher order splines yield increasingly accurate
+        and smooth interpolations.
+    }
+\end{figure}

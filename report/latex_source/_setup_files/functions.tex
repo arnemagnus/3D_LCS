@@ -435,3 +435,7 @@
 %http://groups.google.com/group/comp.text.tex/msg/7e812e5d6e67fcc5
 \def\convertto#1#2{\strip@pt\dimexpr #2*65536/\number\dimexpr 1#1}
 \makeatother
+
+% Define pseudohacky macro to enable e.g. dots and superscripts without
+% unnatural spacing
+\newcommand{\hckspc}{\ensuremath{\,\!}}
