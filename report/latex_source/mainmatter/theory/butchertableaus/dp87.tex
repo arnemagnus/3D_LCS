@@ -1,18 +1,20 @@
+\begingroup
+\captionsetup[table]{skip=3pt}
 \begin{sidewaystable}
     \centering
+    \tiny
     \caption[Butcher tableau representation of the Dormand-Prince 8(7) embedded
     Runge-Kutta method]
     {Butcher tableau for the Dormand-Prince 8(7) embedded Runge-Kutta method.
-        The $b$ coefficients correspond to an \nth{8}-order accurate solution used
-        to continue the integration. The $\widehat{b}$ coefficients correspond to
+        The $b$ coefficients give an \nth{8}-order accurate solution used
+        to continue the integration. The $\widehat{b}$ coefficients yield
         a \nth{7}-order interpolant, which can be used to estimate the error of
         the numerical approximation, and to dynamically adjust the time step.
-    Note that the provided coefficients are rational
-approximations, accurate to about 24 significant decimal digits --
-sufficiently well-resolved for most numerical applications.
-For reference, see \textcite{prince1981highorder}.}
+        The provided coefficients are rational approximations, accurate to about
+        24 significant decimal digits. For reference, see
+    \textcite{prince1981highorder}.}
     \label{tab:butcherdopri87}
-    \resizebox{\textwidth}{!}{%
+    \resizebox*{0.95\textwidth}{!}{%
         \renewcommand{\arraystretch}{2.25}
         \begin{tabular}{C|CCCCCCCCCCCCC}
             \toprule
@@ -77,3 +79,4 @@ For reference, see \textcite{prince1981highorder}.}
             \bottomrule
     \end{tabular}}
 \end{sidewaystable}
+\endgroup
