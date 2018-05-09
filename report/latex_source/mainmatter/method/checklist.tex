@@ -1,0 +1,34 @@
+\cleartorecto
+\begin{framed}
+    \begin{itemize}
+        \item ABC-strømning (begge former), fjordstrømning (vist v/ kartprojeksjon(er)),
+            oppsett av grids og beregning av $\lambda$, $\xi$ v/ SVD
+        \item Interpolasjon av skalare- og vektorstørrelser
+        \item Fullstendig beskrivelse av opprinnelig metode (lett modifisert GLS; tanvec, prevvec, levelsets etc.),
+            muligens med flowchart
+        \item Vis/beskriv eksplisitt noen av problemene/utfordringene med opprinnelig metode
+            \begin{itemize}
+                \item Veldig mange frihetsgrader
+                \item (Tidvis) tilfeldighetspreget oppførsel i regioner med rasktvarierende $\xi_{3}$,
+                    hvor godt vi traff avh. av hvilket vinkeloffset vi traff med først (opp eller ned)
+                \item Langsom metode; Trenger gjerne mange forsøk om det først går galt
+            \end{itemize}
+        \item Utfyllende meskrivelse av ny metode, med hovedfokus på forskjellene fra opprinnelig versjon.
+            Flowchart?
+            \begin{itemize}
+                \item Kan tillate os dette fordi vi har en ekstra frihetsgrad sml med system fra levelset-paper
+                \item Utvikling langs <<strains>> er en tredimensjonal videreføring av strainlines (siter Løken/Nordgreen 2017; F\&H 2012)
+                \item Mer konsekvent oppførsel nær sterke diskontinuiteter, god konvergens
+            \end{itemize}
+        \item Nytt av versjon 2 er kontinuerlige self-intersection-checks
+            \begin{itemize}
+                \item Beskriv bruk av Möller-Trumbore osv.
+            \end{itemize}
+        \item Seleksjon av lokalt sterkest repulsive materialoverflater v/ lokal sjekk
+            \begin{itemize}
+                \item Sjekk hvert punkt på mangfoldigheten ift ABD
+                \item Behold også punkt som ikke er i ABD, så fremt de er nærme nok minst et annet punkt i ABD
+                \item Filtrer vekk LCS-kandidater som er for små
+            \end{itemize}
+    \end{itemize}
+\end{framed}

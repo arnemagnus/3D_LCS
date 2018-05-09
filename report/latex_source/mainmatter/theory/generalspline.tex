@@ -1,0 +1,110 @@
+\subsection{Spline interpolation of discrete data}
+\label{sub:spline_interpolation_of_discrete_data}
+
+As all naturally ocurring physical systems can only be known partially, either
+by means of partial measurements or grid based model output, interpolating
+(i.e.,\ estimating) the measurement data becomes a requirement when describing
+the dynamics of systems which depend on measurement data from inbetween the
+sampling or grid points. Spline interpolation involves approximating a
+discretely sampled function by a series of piecewise defined polynomials.
+According to \textcite[p.93]{stoer2002introduction}, spline interpolation
+is a popular tool within the field of numerical analysis, due to yielding
+smooth interpolation curves with limited interpolation error when using low
+degree polynomial pieces. Furthermore, the local nature of spline
+interpolated functions means that such functions are less prone to
+oscillatory behaviour when using high order polynomials. This is in stark
+constrast to regular, global polynomial interpolation, which exhibits
+strong global dependence on local properties. In particular, if the
+function to be approximated is badly behaved anywhere within the interval of
+approximation, then the approximation by polynomial interpolation is poor
+everywhere \parencite[p.17]{deboor1978practical}. \vfill{}
+
+A generic interpolation problem can be described in terms of a family of
+functions
+\begin{equation}
+    \label{eq:interpolationfamily}
+    \Theta(\vct{x};\beta_{0},\ldots,\beta_{n}),
+\end{equation}
+each of which characterized by the $n+1$ parameters $\{\beta_{i}\}$,
+with $\vct{x}$ containing the independent variables of the problem. Given
+a set of $n+1$ discrete measurements --- each defined by a set of coordinates and
+function values $(\vct{x}_{i},f_{i})$ where $\vct{x}_{i}\neq\vct{x}_{j}$ for
+$i\neq{}j$ and $f_{i}=f(\vct{x}_{i})$ --- the interpolation problem reduces
+to finding parameters $\{\beta_{i}\}$ such that
+\begin{equation}
+    \label{eq:interpolationrequirement}
+    \Theta(\vct{x};\beta_{0},\ldots,\beta_{n}) = f_{i}, \quad i=0,\ldots,n
+\end{equation}
+is satisfied. According to \textcite[pp.38--39]{stoer2002introduction},
+spline interpolation problems (amongst others) can be classified as linear
+interpolation problems, meaning that the family of interpolation functions
+(cf.\ \cref{eq:interpolationfamily}) can be expressed as
+\begin{equation}
+    \label{eq:linearinterpolationfamily}
+    \Theta(\vct{x};\beta_{0},\ldots,\beta_{n}) = %
+    \sum\limits_{i=0}^{n} \beta_{i}\Theta_{i}(\vct{x}).
+\end{equation}
+In the following, let the coordinates $\{\vct{x}_{i}\}$, function values
+$\{f_{i}\}$ and sampling points $\{(\vct{x}_{i},f_{i})\}$ be denoted by
+\emph{support abscissas}, \emph{support ordinates} and \emph{support points},
+respectively.
+
+Solving an interpolation problem by means of spline interpolation is done
+by determining the set of parameters $\{\beta_{i}\}$ of
+\cref{eq:interpolationrequirement,eq:linearinterpolationfamily}, with the
+family of functions $\{\Theta_{i}\}$ limited to spline functions. These
+functions, often denoted as \emph{splines}, are connected through the use
+of a partition. Consider the one-dimensional case for the sake of notational
+simplicity. The partition
+\begin{equation}
+    \label{eq:interpolationpartition}
+    \Delta : \quad \{a = x_{0} < x_{1} < \cdots < x_{n} = b\}
+\end{equation}
+of the closed interval $[a,b]$ determines the domains of the piecewise
+polynomial spline functions $\mathcal{S}$ in the set $\mathcal{S}_{\Delta}$.
+These spline functions are joined at support abscissas, which, in the context
+of splines, are called \emph{knots}.
+
+\textcite[p.107]{stoer2002introduction} define a
+\emph{piecewise polynomial function} as follows:
+\begin{defn}[Piecewise polynomial functions]
+    \label{def:piecewise_polynomial}
+    Let $f$ be a real-valued function which, for each $i=0,\ldots,n-1$, when
+    restricted to the subinterval $(x_{i},x_{i+1})$ of the partition given
+    in~\cref{eq:interpolationpartition} corresponds to a polynomial
+    $p_{i}(x)$ of degree less than or equal to $r-1$.
+
+    \vspace{-0.8\baselineskip}
+    In order to obtain a one-to-one correspondence between the function $f$ and
+    the polynomial sequence $\big(p_{0}(x),p_{1}(x),\ldots,p_{n-1}(x)\big)$,
+    \emph{define} $f$ at the knots $\{x_{i}\}_{i=0}^{n-1}$, so that the
+    function becomes continuous from the right.
+\end{defn}
+
+Accordingly, spline functions $\mathcal{S}_{\Delta}$ of degree $k$ are
+polynomial functions of degree $k$ which are $(k-1)$ times continuously
+differentiable at the interior knots, that is, $\{x_{i}\}_{i=1}^{n-1}$ , of the
+partition $\Delta$. These $k^{\text{th}}$-order polynomials are uniquely
+determined by $k+1$ coefficients, of which $k$ are given by the $(k-1)$
+derivatives and function values at their left bordering knot.
+
+\input{mainmatter/theory/figures/interpolantorder}
+
+B-splines are a family of nonnegative spline functions which have minimal
+support for any given degree, smoothness and domain partition. Furthermore, any
+spline function of a given degree can be expressed as a linear combination
+of B-splines of the same degree
+\parencite[pp.107--110]{stoer2002introduction}. Accordingly, B-splines provide
+the foundation of efficient and numerically stable computations of splines.
+A selection of commonly used interpolation methods applied to a discretely
+sampled, high order polynomial is shown in~\cref{fig:itp_multi}. From the
+figure, the increased precision of higher order splines when applied to
+continuous functions is readily apparent. Note, however, that higher order
+interpolation methods require more sampling points than lower order methods.
+In particular, at least $k+1$ samples are required in order to construct a
+$k^{\text{th}}$ order spline. In higher dimensions, that is, with data which
+depends on several other (independent) variables, the required amount of samples
+increases rapidly with the interpolation order. Subsequently, the use of cubic
+B-splines constitutes a popular method for general-purpose interpolation,
+providing a good balance between numerical accuracy and computational complexity.
+

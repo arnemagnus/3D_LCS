@@ -2,17 +2,42 @@
 flows]{Definition of Lagrangian coherent structures for\\\phantom{2.2}
 three-dimensional flows}
 
-Lagrangian coherent structures (henceforth abbreviated to LCSs) can be described
-as time-evolving surfaces which shape coherent trajectory patterns in dynamical
-systems, defined over a finite time interval \parencite{haller2010variational}.
-There are three main types of LCSs, namely \emph{elliptic}, \emph{hyperbolic}
-and \emph{parabolic}. Rougly speaking, parabolic LCSs outline cores of jet-like
-trajectories, elliptic LCSs describe vortex boundaries, whereas hyperbolic LCSs
-are comprised of overall attractive or repelling manifolds. As such, hyperbolic
-LCSs practically act as organizing centers of observable tracer patterns
-\parencite{onu2015lcstool}. Because hyperbolic LCSs provide the most readily
-applicable insight in terms of forecasting flow in e.g.\ oceanic currents,
-such structures have been the focus of this project.
+A necessary prerequisite for three-dimensional Lagrangian flow analysis is the
+concept of \emph{material surfaces}, which \textcite{oettinger2016autonomous}
+define as
+
+\begin{defn}[Material surfaces]
+    \label{def:material_surface}
+    Consider a set of initial positions forming a two-dimensional surface
+    $\mathcal{M}(t_{0})$ at time $t_{0}$ in $\mathcal{U}$. Its time-$t$ image,
+    $\mathcal{M}(t)$, is obtained under the flow map as
+    \begin{equation}
+        \label{eq:advected_materialsurface}
+        \mathcal{M}(t) = \vct{\phi}_{t_{0}}^{t}\big(\mathcal{M}(t)\big).
+    \end{equation}
+    The union of \emph{all} time-$t$ images,
+    $\cup_{t\in[t_{0},t_{1}]}\mathcal{M}(t)$, is a hypersurface in the
+    extended phase space $\mathcal{U}\times\mathcal{I}$, called a
+    \emph{material surface}.
+\end{defn}
+In the following, the entire material surface will be referred to by the
+notation $\mathcal{M}(t)$. Although no material surfaces can be crossed by
+tracers, only special material surfaces create coherence in the phase space
+$\mathcal{U}$ and thus act as observable transport barriers. Such material
+surfaces are generally referred to as \emph{Lagrangian coherent structures}
+(henceforth abbreviated to LCSs).
+
+Subsequently, LCSs can be described as time-evolving surfaces which shape
+coherent trajectory patterns in dynamical systems, defined over a finite time
+interval \parencite{haller2010variational}. There are three main types of LCSs,
+namely \emph{elliptic}, \emph{hyperbolic} and \emph{parabolic}. Rougly speaking,
+parabolic LCSs outline cores of jet-like trajectories, elliptic LCSs describe
+vortex boundaries, whereas hyperbolic LCSs are comprised of overall attractive
+or repelling manifolds. As such, hyperbolic LCSs practically act as organizing
+centers of observable tracer patterns \parencite{onu2015lcstool}. Because
+hyperbolic LCSs provide the most readily applicable insight in terms of
+forecasting flow in e.g.\ oceanic currents, such structures have been the focus
+of this project.
 
 \subsection{Hyperbolic LCSs}
 \label{sub:hyperbolic_lcss}
@@ -29,18 +54,14 @@ def:hyperbolic_lcs} \parencite{haller2010variational}.
 \begin{defn}[Normally repellent material surfaces]
     \label{def:normal_repellence}
     A \emph{normally repellent material surface} over the time interval
-    $[t_{0},t_{0}+T]$ is a compact material surface segment $\mathcal{M}(t)$
+    $[t_{0},t_{1}]$ is a compact material surface segment $\mathcal{M}(t)$
     which is overall repelling, and on which the normal repulsion rate is
     greater than the tangential repulsion rate.
 \end{defn}
 
-A \emph{material surface} is a smooth surface $\mathcal{M}(t_{0})$ at time $t_{0}$,
-which is advected by the flow map, given by \cref{eq:defn_flowmap}, into a
-dynamic material line
-$\mathcal{M}(t) = \vct{\phi}_{t_{0}}^{t}\big(\mathcal{M}(t_{0})\big)$. The
-required \emph{compactness} of the material surface segment signifies that, in
-some sense, it must be topologically well-behaved. That the material surface is
-\emph{overall repelling} means that nearby trajectories are repelled from,
+The required \emph{compactness} of the material surface segment signifies that,
+in some sense, it must be topologically well-behaved. That the material surface
+is \emph{overall repelling} means that nearby trajectories are repelled from,
 rather than attracted towards, the material surface. Lastly, requiring that the
 \emph{normal} repulsion rate is greater than the \emph{tangential} repulsion
 rate means that nearby trajectories are in fact driven away from the material
@@ -48,7 +69,7 @@ surface, rather than being stretched along with it due to shear stress.
 
 \begin{defn}[Repelling LCS]
     \label{def:repelling_lcs}
-    A \emph{repelling LCS} over the time interval $[t_{0},t_{0}+T]$ is a
+    A \emph{repelling LCS} over the time interval $[t_{0},t_{1}]$ is a
     normally repelling material surface $\mathcal{M}(t_{0})$ whose normal repulsion
     admits a pointwise non-degenerate maximum relative to any nearby material
     surface $\widehat{\mathcal{M}}(t_{0})$.
@@ -56,25 +77,26 @@ surface, rather than being stretched along with it due to shear stress.
 
 \begin{defn}[Attracting LCS]
     \label{def:attracting_lcs}
-    An \emph{attracting LCS} over the time interval $[t_{0},t_{0}+T]$ is defined
-    as a repelling LCS over the \emph{backward} time interval $[t_{0}+T,t_{0}]$.
+    An \emph{attracting LCS} over the time interval $[t_{0},t_{1}]$ is defined
+    as a repelling LCS over the \emph{backward} time interval $[t_{1},t_{0}]$.
 \end{defn}
 
 \begin{defn}[Hyperbolic LCS]
     \label{def:hyperbolic_lcs}
-    A \emph{hyperbolic LCS} over the time interval $[t_{0},t_{0}+T]$ is a
+    A \emph{hyperbolic LCS} over the time interval $[t_{0},t_{1}]$ is a
     \emph{repelling} or \emph{attracting} LCS over the same time interval.
 \end{defn}
 
-Note that the above definitions associate LCSs with the time interval $I$ over
-which the dynamical system under consideration is known, or, at the very least,
-where information regarding the behaviour of tracers, is sought. Generally,
-LCSs obtained over a time interval $I$ do not necessarily exist over different
-time intervals \parencite{farazmand2012computing}.
+Note that the above definitions associate LCSs with the time interval
+$\mathcal{I}$ over which the dynamical system under consideration is known, or,
+at the very least, where information regarding the behaviour of tracers, is
+sought. Generally, LCSs obtained over a time interval $\mathcal{I}$ do not
+necessarily exist over different time intervals
+\parencite{farazmand2012computing}.
 
 For sufficiently smooth three-dimensional flow, the above definitions can be
 summarized as a set of mathematical existence criteria, based on the
-Cauchy-Green strain tensor
+Cauchy-Green strain tensor (cf.\ \cref{eq:defn_cauchygreen})
 \parencite{haller2010variational,farazmand2012computing,karrasch2012comment,%
 farazmand2012erratum}.
 These are given in \cref{thm:lcs_conditions}.
@@ -83,8 +105,8 @@ These are given in \cref{thm:lcs_conditions}.
     three-dimensional flows]
     \label{thm:lcs_conditions}
     Consider a compact material surface $\mathcal{M}(t)\subset\mathcal{U}$
-    evolving over the time interal $[t_{0},t_{0}+T]$. Then $\mathcal{M}(t)$
-    is a repelling LCS over $[t_{0},t_{0}+T]$ if and only if all of the
+    evolving over the time interval $[t_{0},t_{1}]$. Then $\mathcal{M}(t)$
+    is a repelling LCS over $[t_{0},t_{1}]$ if and only if all of the
     following holds for all initial conditions
     $\vct{x}_{0}\in\mathcal{M}(t_{0})$:
     \begin{subequations}
@@ -134,5 +156,33 @@ that the normal repulsion rate attains a local extremum along the LCS, relative
 to all nearby material surfaces. Lastly, condition~\eqref{eq:lcs_condition_b}
 ensures that this is a strict local maximum.
 
+From condition~\eqref{eq:lcs_condition_c} and the orthormality of the
+Cauchy-Green strain eigenvectors (cf.\ \cref{eq:cauchygreen_characteristics}),
+it follows that any initial LCS surface is tangent to the planes locally
+spanned by $\vct{\xi}_{1}(\vct{x}_{0})$ and $\vct{\xi}_{2}(\vct{x}_{0})$.
+Thus, an integral curve of any (normalized) linear combination of the
+$\vct{\xi}_{1}$- and $\vct{\xi}_{2}$-direction fields, launched from an
+arbitrary point of the surface $\mathcal{M}(t_{0})$, will lever leave
+$\mathcal{M}(t_{0})$. Hence:
 
+\begin{rmrk}[Invariance of initial positions of repelling LCSs]
+    \label{rmk:invariance_lcs}
+    The initial position $\mathcal{M}(t_{0})$ of any repelling LCS
+    (\cref{def:repelling_lcs}) is an invariant manifold of the autonomous
+    dynamical system
+    \begin{equation}
+        \label{eq:dynamialsystem_initialposition}
+        \vct{r}^{\prime} = a\vct{\xi}_{1}(\vct{r})+b\vct{\xi}_{2}(\vct{r}),%
+        \quad a^{2}+b^{2}=1.
+    \end{equation}
+\end{rmrk}
 
+\begingroup
+\crefname{equation}{}{} % Suppress cref's <<equations>> locally.
+Note that the converse of~\cref{rmk:invariance_lcs} does not hold. That is,
+a material surface $\Xi(t_{0})$ which is an invariant manifold of all
+(normalized) linear combinations of $\vct{\xi}_{1}$ and $\vct{\xi}_{2}$ does not
+necessarily correspond to a repelling LCS $\mathcal{M}(t_{0})$ --- that is,
+unless $\Xi(t_{0})$ also satisfies conditions%
+\cref{eq:lcs_condition_a,eq:lcs_condition_b,eq:lcs_condition_d}.
+\endgroup

@@ -240,17 +240,26 @@ pdfkeywords={Computational physics, Nonlinear dynamics, Lagrangian coherent stru
 % Clever typesetting of theorems, definitions etc.
 \let\openbox\relax
 \usepackage[]{amsthm}
-\theoremstyle{plain}
-\newtheorem{thm}{Theorem}
-\crefname{thm}{theorem}{theorems}
-\newtheoremstyle{mydefinition}{\topsep}{\topsep}{\selectfont}{}{}{.}{\newline}{{\bfseries{\thmname{#1}\thmnumber{ #2}}}\emph{\thmnote{ (#3)}}}
+\newtheoremstyle{mydefinition}{\topsep}{\topsep}{\selectfont}{}{}{.}{\newline}{{\bfseries{\thmname{#1}\thmnumber{~#2}}}\emph{\thmnote{ (#3)}}}
 \theoremstyle{mydefinition}
+\newtheorem{thm}{Theorem}
+\let\oldthm=\thm
+\let\endoldthm=\endthm
+\renewenvironment{thm}{\begin{oldthm}}{\end{oldthm}\vspace{-0.7\baselineskip}}
+\crefname{thm}{theorem}{theorems}
 \newtheorem{defn}{Definition}
+\let\olddefn=\defn
+\let\endolddefn=\enddefn
+\renewenvironment{defn}{\begin{olddefn}}{\end{olddefn}\vspace{-0.7\baselineskip}}
 \crefname{defn}{definition}{definitions}
+\newtheorem{rmrk}{Remark}
+\let\oldrmrk=\rmrk
+\let\endoldrmrk=\endrmrk
+\renewenvironment{rmrk}{\begin{oldrmrk}}{\end{oldrmrk}\vspace{-0.7\baselineskip}}
+\crefname{rmrk}{remark}{remarks}
 \theoremstyle{plain}
 \newtheorem{lemm}{Lemma}
 \crefname{lemm}{lemma}{lemmas}
 
 \crefname{figure}{figure}{figures}
 \crefname{equation}{equation}{equations}
-
