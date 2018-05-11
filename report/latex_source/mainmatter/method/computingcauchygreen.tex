@@ -54,22 +54,23 @@ special-purpose linear interpolation routine which has previously been
 utilized to compute LCSs in two spatial dimensions
 \parencite{onu2015lcstool,loken2017sensitivity}. The routine is based upon
 careful monitoring and local reorientation prior to cubic interpolation, and
-its two-dimensional equivalent is illustrated in \textbf{\emph{SETT INN REF}}
+its two-dimensional equivalent is illustrated in \cref{fig:special_interp}
 --- the principles are similar in three dimensions, but illustrating a
-two-dimensional projection of the three-dimensional case easily became
-horribly cluttered.
+two-dimensional projection of the three-dimensional case simply became
+cluttered beyond comprehension.
+
+\input{mainmatter/method/figures/specialinterpolation}
 
 First, the 64 (in two dimensions: 16) nearest neighboring
 grid points to any given coordinate $\vct{r}$ are identified. Choosing a
 vector at a corner of this local interpolation voxel, orientational
 discontinuities inbetween the grid elements are found by inspecting the
 inner products of the $\vct{\xi}_{i}$ vectors of the remaining grid points
-with the pivot. Rotations exceeding $90^{\deg}$ are labelled as orientational
+with the pivot. Rotations exceeding $90\si{\degree}$ are labelled as orientational
 discontinuities, and are corrected by flipping the corresponding vectors
-by $180^{\deg}$. For each of $\vct{\xi}_{i}$'s three components, cubic
+by $180\si{\degree}$. For each of $\vct{\xi}_{i}$'s three components, cubic
 B-spline interpolation is used within the interpolation voxel in order to
 find $\vct{\xi}_{i}(\vct{r})$, which is then normalized, like the
 $\vct{\xi}_{i}$ vectors defined at the grid points are a priori.
-
 
 

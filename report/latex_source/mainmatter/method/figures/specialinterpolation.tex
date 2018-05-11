@@ -1,0 +1,17 @@
+\begin{figure}[htpb]
+    \centering
+    \resizebox{0.9\linewidth}{!}{\includestandalone{figures/tikz-figs/special_interpolation}}
+    \caption[Conceptual illustration of the special-purpose cubic interpolation
+    routine for the Cauchy-Green strain eigenvectors]
+    {Conceptual illustration of the special-purpose cubic interpolation
+    routine for the Cauchy-Green strain eigenvectors. The 64 nearest grid points
+    (16 in two dimensions; here shown in gray) to any given coordinate $\vct{r}$
+    are identified. As the local stretch is equal in magnitude along the negative
+    $\vct{\xi}_{i}$ axis as that of its positive counterpart, we are free to
+    reverse any $\vct{\xi}_{i}$ vector which is rotated more than $90\si{\degree}$
+    with regards to the selected pivot vector (at the grid point denoted by
+    $\mathcal{P}$) prior to interpolating the components of $\vct{\xi}_{i}$, making
+    use of cubic B-splines. The vectors used in the local cubic interpolation
+    are dashed, wherease the vectors which had to be reversed are dotted.}
+    \label{fig:special_interp}
+\end{figure}
