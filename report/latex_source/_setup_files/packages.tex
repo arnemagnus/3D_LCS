@@ -87,6 +87,8 @@ factor=0% Controls how much punctuation protrudes past the end of the line
     \usepackage[libertine]{newtxmath}
     \usepackage[]{physics}
     \usepackage[]{bm}
+    % Clever typesetting of SI units
+    \usepackage[]{siunitx}
     % Macros for greek letters in roman style, in math mode
     \DeclareRobustCommand{\mathup}[1]{%
     \begingroup\ensuremath\changegreek\mathrm{#1}\endgroup}
@@ -121,6 +123,9 @@ factor=0% Controls how much punctuation protrudes past the end of the line
 
 % Enhanced graphics support
 \usepackage[]{graphicx}
+
+% SVG files
+\usepackage[]{svg}
 
 % PGF files
 \usepackage[]{pgf}

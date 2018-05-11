@@ -1,11 +1,11 @@
-\section{The considered flow systems}
-\label{sec:the_considered_flow_systems}
+%\section{The considered flow systems}
+%\label{sec:the_considered_flow_systems}
 
-\subsection{Flow systems defined by analytical velocity fields}
-\label{sub:flow_systems_defined_by_analytical_velocity_fields}
+\section{Flow systems defined by analytical velocity fields}
+\label{sec:flow_systems_defined_by_analytical_velocity_fields}
 
-\subsubsection{Steady Arnold-Beltrami-Childress flow}
-\label{ssub:steady_arnold_beltrami_childress_flow}
+\subsection{Steady Arnold-Beltrami-Childress flow}
+\label{sub:steady_arnold_beltrami_childress_flow}
 
 The Arnold-Beltrami-Childress (henceforth abbreviated to ABC) flow is a
 three-dimensional, incompressible velocity field which solves the Euler
@@ -24,7 +24,7 @@ mathematically as
 \end{equation}
 where $A$, $B$ and $C$ are parameters which dictate the nature of the flow
 pattern. The inherent periodicity with regards to the Cartesian axes naturally
-leads to a domain of interest $\mathcal{U} = [0,\hspace{0.5ex}2\pi]^{3}$, with
+leads to a domain of interest $\mathcal{U} = [0,2\pi]^{3}$, with
 periodic boundary conditions imposed in $x$, $y$ and $z$.
 
 Here, the parameter values
@@ -34,10 +34,11 @@ Here, the parameter values
 \end{equation}
 were used, as has been common in litterature (e.g.\ by
 \textcite{oettinger2016autonomous}), as these values are known to result in
-chaotic tracer trajectories \parencite{zhao1993chaotic}.
+chaotic tracer trajectories \parencite{zhao1993chaotic}. The time domain of
+interest for this system was $\mathcal{I}=[0,5]$.
 
-\subsubsection{Unsteady Arnold-Beltrami-Childress flow}%
-\label{ssub:unsteady_arnold_beltrami_childress_flow}
+\subsection{Unsteady Arnold-Beltrami-Childress flow}%
+\label{sub:unsteady_arnold_beltrami_childress_flow}
 
 Inspired by~\textcite{oettinger2016autonomous}, a temporally aperiodic
 modification of the ABC flow (\cref{eq:abc_flow}) was made by the replacements
@@ -54,20 +55,74 @@ parameters values
     \label{eq:abc_params_nonstationary_frequencies}
     k_{0}=0.3,\quad k_{1}=0.5,\quad k_{2}=1.5,\quad k_{3}=1.8,
 \end{equation}
-were used. The time dependence of the $\widetilde{B}$ and $\widetilde{C}$
-coefficients is illustrated in \cref{fig:abc_timedep_coeff}.
+were used. The fundamental idea of this modification is to further enhance
+the chaotic nature of the resulting flow patterns. Similarly modified
+ABC flow has previously been at the centre of other three-dimensional transport
+barrier investigations --- including hyperbolic LCSs --- such as the work of
+\textcite{blazevski2014hyperbolic}; albeit with quite different methods of
+computing said LCSs than the one considered here. Like for its stationary
+sibling, the time domain of interest for this system was $\mathcal{I}=[0,5]$.
+The time dependence of the $\widetilde{B}$ and  $\widetilde{C}$ coefficients is
+illustrated in \cref{fig:abc_timedep_coeff}.
 
 \input{mainmatter/method/figures/timedepcoeff.tex}
 
-\subsection{Flow systems defined by gridded velocity data}
-\label{sub:flow_systems_defined_by_gridded_velocity_data}
+\section{Flow systems defined by gridded velocity data}
+\label{sec:flow_systems_defined_by_gridded_velocity_data}
 
-\subsubsection{Oceanic currents in the Førde Fjord}
+\subsection{Oceanic currents in the Førde fjord}
 \label{ssub:oceanic_currents_in_the_forde_fjord}
 
-\begin{framed}
-    Motiver med potensielt sjødeponi for gruveavfall
-\end{framed}
+In 2016, the mining company Nordic Mining ASA received permission from the
+Norwegian Ministry of Climate and Environment to extract rutile from the
+Engebø mountain in Naustdal, Norway \parencite{garvik2017gruvekonflikten,%
+haugan2015sjodeponi}. Furthermore, the company were authorized to dump
+the mining waste into the nearby Førde fjord; a legislation which has been
+debated fiercely, and heavily protested against, ever since the original
+application was submitted in 2008. Early estimates suggest that, when operating
+at full scale, the mining operation will result in yearly oceanic mine tailings
+deposits in excess of five million tonnes \parencite{garvik2017gruvekonflikten}.
+
+Several centres of technical expertise --- such as the Norwegian Institute of
+Marine Research --- have publically advised against depositing mine tailings
+into the fjord, emphasizing the potentially severe negative consequences
+for the aquaculture \parencite{haugan2015sjodeponi}. Not only is the surrounding
+area a significant spawning ground for cod, there is always a possibility of
+of particles being transported by the water currents such that they
+contaminate the outer edges of the fjord, or even into the ocean. Accordingly,
+the use of LCSs in order to predict possible flow patterns for contaminants
+resulting from the deposit of mine tailings would be of great environmental
+interest.
+
+To this end, gridded three-dimensional velocity data, modelling oceanic
+currents in the (depths of the) Førde Fjord, was made available by SINTEF
+Fisheries and Aquaculture. The data set considered here contains velocity data
+for the time period between June 1 2013, 00:00 and June 2 2013, 23:40, sampled
+in intervals of 20 minutes. For our simulations, the time interval of interest
+was the 18 hour time window between 00:00 and 18:00 on June 1 2013 ---
+practically ensuring the encapsulation of at least one tidal cycle.
+
+Seeing as some of the most harmful contaminants found within the mine tailings
+are heavy metals, we concentrated our analysis on the depths of the fjord.
+Accordingly, we looked for LCSs in a region of water which was neither
+particularly close to the oceanic surface, nor hit the coastline when
+advected for the 18 hour duration of the time interval of interest. This
+limited our research to a
+$500\,\si{\meter}\times500\,\si{\meter}\times250\,\si{\meter}$ region, with
+depths ranging from $50\,\si{\meter}$ to $300\,\si{\meter}$ below the
+surface. A bird's-eye view of the region is shown in white in
+\cref{fig:currentmap}, which also contains a map view of the geographical
+region.
+
+
+\input{mainmatter/method/figures/currentmap}
+
+\subsection{Interpolating gridded velocity data}
+\label{sub:interpolating_gridded_velocity_data}
+
+
+
+
 
 
 
