@@ -1,0 +1,75 @@
+\section[Computing Cauchy-Green strain eigenvalues and -vectors]
+{Computing Cauchy-Green strain eigenvalues and \newline\phantom{3.2} -vectors}
+\label{sec:computing_cauchy_green_strain_eigenvalues_and_vectors}
+
+Computing the Cauchy-Green strain tensor field directly, by performing a series
+of matrix products per its definition in \cref{eq:defn_cauchygreen}, and then
+solving for its eigenvalues and -vectors turns out to be numerically
+disadvantageous \parencite{oettinger2016autonomous}. In particular, this
+method leaves the smallest eigenvalues quite susceptible to numerical
+round-off error. A fully equivalent, more numerically sound way of identifying
+the Cauchy-Green strain eigenvalues and -vectors is based on performing an
+SVD decomposition of the Jacobian field of the flow map, i.e.,
+\begin{equation}
+    \label{eq:jacobi_flow_map_svd}
+    \grad\vct{\phi}_{t_{0}}^{t}(\vct{x}_{0}) = \mtrx{U}\mtrx{\Sigma}\mtrx{V}^{\ast},
+\end{equation}
+where the asterisk refers to the adjoint operation, $\mtrx{U}$ and $\mtrx{V}$
+are square, unitary matrices and $\mtrx{\Sigma}$ is a square, diagonal matrix
+with nonnegative real numbers --- the \emph{singular values} of
+$\grad\vct{\phi}$ --- on the diagonal. Because the flow map Jacobian is
+real-valued, so too are the matrices $\mtrx{U}$ and $\mtrx{V}$. The eigenvalues
+of the right Cauchy-Green strain tensor (cf.
+\cref{eq:defn_cauchygreen,eq:cauchygreen_characteristics}) are given by the
+squares of the singular values, that is, $\lambda_{i}(\vct{x}_{0}) =%
+\big(\sigma_{i}(\vct{x}_{0})\big)^{2}$, and the corresponding orthonormal
+eigenvectors are found in the columns of $\mtrx{V}$.
+
+\subsubsection{Interpolating the Cauchy-Green strain eigenvalues}
+\label{ssub:interpolating_the_cauchy_green_strain_eigenvalues_and_vectors}
+
+For computing LCSs, the Cauchy-Green strain eigenvalues frequently need to
+be evaluated inbetween the grid points. Moreover, as suggested by
+the existence criterion given in \cref{eq:lcs_condition_b}, all of the second
+derivatives of $\lambda_{3}(\vct{x}_{0})$ are also needed. Accordingly, the
+eigenvalues were interpolated by means of cubic trivariate B-splines, in order
+to ensure continuous second derivatives. For this purpose, the Bspline-Fortran
+library written by \textcite{williams2018bspline}, was used.
+
+\subsubsection{Interpolating the Cauchy-Green strain eigenvectors}
+\label{ssub:interpolating_the_cauchy_green_strain_eigenvectors}
+
+Just like the eigenvalues of the Cauchy-Green strain tensor field, its
+eigenvectors frequently need to be evaluated inbetween the grid points in order
+to compute LCSs. Like the strain eigenvalues, the strain eigenvectors were
+interpolated by means of cubic trivariate B-splines; though with a twist, in
+order to remove local orientational discontinuities.  In particular, the
+local stretch is equal in magnitude along the negative $\vct{\xi}_{3}$ axis
+as that of its positive counterpart, and there is no a priori reason to
+expect the SVD decomposition (cf.\ \cref{eq:jacobi_flow_map_svd}) to follow
+any particular convention regarding the `sign' of the computed eigenvectors.
+
+The interpolation routine outlined here is a generalization of a similar
+special-purpose linear interpolation routine which has previously been
+utilized to compute LCSs in two spatial dimensions
+\parencite{onu2015lcstool,loken2017sensitivity}. The routine is based upon
+careful monitoring and local reorientation prior to cubic interpolation, and
+its two-dimensional equivalent is illustrated in \textbf{\emph{SETT INN REF}}
+--- the principles are similar in three dimensions, but illustrating a
+two-dimensional projection of the three-dimensional case easily became
+horribly cluttered.
+
+First, the 64 (in two dimensions: 16) nearest neighboring
+grid points to any given coordinate $\vct{r}$ are identified. Choosing a
+vector at a corner of this local interpolation voxel, orientational
+discontinuities inbetween the grid elements are found by inspecting the
+inner products of the $\vct{\xi}_{i}$ vectors of the remaining grid points
+with the pivot. Rotations exceeding $90^{\deg}$ are labelled as orientational
+discontinuities, and are corrected by flipping the corresponding vectors
+by $180^{\deg}$. For each of $\vct{\xi}_{i}$'s three components, cubic
+B-spline interpolation is used within the interpolation voxel in order to
+find $\vct{\xi}_{i}(\vct{r})$, which is then normalized, like the
+$\vct{\xi}_{i}$ vectors defined at the grid points are a priori.
+
+
+

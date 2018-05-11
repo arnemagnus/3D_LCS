@@ -1,0 +1,111 @@
+\section[Computing the flow map and its directional derivatives]
+{Computing the flow map and its directional\\ \phantom{3.2} derivatives}
+\label{sec:computing_the_flow_map_and_its_directional_derivatives}
+
+\subsection{Advecting a set of tracers}
+\label{sub:advecting_a_set_of_tracers}
+
+The variational framework for computing LCSs is based upon the advection of
+non-interacting tracers, as described in
+\cref{sub:the_type_of_flow_systems_considered}, by the systems mentioned in
+\cref{sec:the_considered_flow_systems}. The computational domains $\mathcal{U}$
+were discretized by a set equidistant tracers, effectively creating a
+uniform grid with tracers placed on and within the domain boundaries of
+$\mathcal{U}$. The grid parameters are summarized in
+\cref{tab:gridparams}.
+
+\input{mainmatter/method/tables/gridparameters}
+
+In order to increase the precision of the computed Cauchy-Green strain tensor
+field, it is necessary to increase the accuracy with which one computes the
+Jacobian of the flow map, as their accuracies are intrinsically linked;
+which follows from \cref{eq:defn_cauchygreen}. Accordingly, the flow map
+Jacobian was computed directly, by means of simultaneously solving the
+twelve coupled ODEs given by
+\cref{eq:consideredflow,eq:timederivative_flowmap_jacobian} while letting the
+underlying velocity field transport the tracers. All twelve ODEs were solved
+simultaneously, via the Dormand-Prince 8(7) method (see
+\cref{sub:the_runge_kutta_family_of_numerical_ode_solvers} and, in particular,
+\cref{tab:butcherdopri87}). The dynamic step length adjustment procedure
+will be outlined in detail in
+\cref{sub:the_implementation_of_dynamic_runge_kutta_step_size}.
+
+In this framework, the tracer advection takes second stage to the `advection' of
+the components of the flow map Jacobian. As it turns out, the increase in
+mathematical complexity which the coupling terms introduces is a small price to
+pay for the increased precision compared to the straightforward approach of
+applying a finite diffference scheme to the advected flow map
+\parencite{oettinger2016autonomous}. This is also evident from previous
+`finite difference-based' LCS computing endeavors, in which the use of several
+grids of tracers was necessitated in order to accurately compute flow map
+Jacobian \parencite{loken2017sensitivity,farazmand2012computing}.
+
+\subsection{The implementation of dynamic Runge-Kutta step size}
+\label{sub:the_implementation_of_dynamic_runge_kutta_step_size}
+
+In order to implement automatic step size control, the procedure suggested by
+\textcite[pp.167--168]{hairer1993solving} was followed closely. A starting step
+size $h$ needs to be prescribed; this generally differs based upon the
+(pseudo-)time scale of the underlying system. For the first solution step,
+the embedded Dormand-Prince 8(7) method, as described in
+\cref{sub:the_runge_kutta_family_of_numerical_ode_solvers,tab:butcherdopri87},
+yields the two approximations $x_{1}$ and $\widehat{x}_{1}$, from which the
+difference $x_{1}-\widehat{x}_{1}$ can be used as an estimate of the error
+of the less precise result. The idea is to enforce the error of the numerical
+solution to satisfy, componentwise:
+\begin{equation}
+    \label{eq:adaptivetimestep_baseline}
+    \abs{x_{1,i}-\widehat{x}_{1,i}}\leq\mathrm{sc}_{i}, \quad%
+    \mathrm{sc}_{i} = \mathrm{Atol}_{i}+\max\Big(\abs{x_{1,i}},%
+    \abs{\widehat{x}_{1,i}}\Big)\cdot\mathrm{Rtol}_{i},
+\end{equation}
+where $\mathrm{Atol}_{i}$ and $\mathrm{Rtol}_{i}$ are the desired absolute
+and relative tolerances. For this project, the tolerance values
+\begin{equation}
+    \label{eq:adaptivetimestep_tolerances}
+    \mathrm{Atol}_{i} = 10^{-7}, \quad \mathrm{Rtol}_{i} = 10^{-7}
+\end{equation}
+were used throughout.
+
+As a measure of the numerical error,
+\begin{equation}
+    \label{eq:adaptivetimestep_errorestimate}
+    \mathrm{err} = \sqrt{\frac{1}{n}\sum\limits_{i=1}^{n}\bigg(\frac{x_{1,i}-\widehat{x}_{1,i}}{\mathrm{sc}_{i}}\bigg)^{2}}
+\end{equation}
+is used. Then, $\mathrm{err}$ is compared to unity in order to find an optimal
+step size. From \cref{def:runge_kutta_order}, it follows that $\mathrm{err}$
+scales like $h^{q+1}$, where $q = \min(p,\widehat{p}\,)$. Under the assumption
+$1\approx{}Kh_{\mathrm{opt}}^{q+1}$, one finds the optimal step size from
+\begin{equation}
+    \label{eq:adaptivetimestep_optimalstepsize}
+    h_{\mathrm{opt}} = h\cdot\bigg(\frac{1}{\mathrm{err}}\bigg)^{\frac{1}{q+1}}.
+\end{equation}
+If $\mathrm{err}\leq1$, the suggested solution step is accepted, the
+(pseudo-)time variable $t$ is increased by $h$, and the step length is modified
+according to
+\cref{eq:adaptivetimestep_optimalstepsize,eq:adaptivetimestep_timestepupdate}.
+Which of the two approximations $x_{n+1}$ or $\widehat{x}_{n+1}$ is used to
+continue the integration generally depends on the embedded Runge-Kutta method
+in question. Continuing the integration with the higher order result is
+commonly referred to as \emph{local extrapolation}. The Dormand-Prince 8(7)
+method is tuned in order to minimize the order of the higher order result;
+accordingly, local extrapolation was used throughout. If $\mathrm{err} > 1$, the
+solution step is rejected, and the step length decreased before attempting
+another step. The procedure for updating the time step can be summarized
+as follows:
+\begin{equation}
+    \label{eq:adaptivetimestep_timestepupdate}
+    h_{\mathrm{new}} = %
+    \begin{cases}
+        \min(\mathrm{fac}_{\mathrm{max}}\cdot{}h,\mathrm{fac}\cdot{}h_{\mathrm{opt}}) & \text{if the solution step is accepted,}\\
+        \mathrm{fac}\cdot{}h_{\mathrm{opt}}, & \text{if the solution step is rejected,}
+    \end{cases}
+\end{equation}
+where $\mathrm{fac}$ and $\mathrm{fac}_{\mathrm{max}}$ are numerical safety
+factors, intended to prevent increasing the step size \emph{too} much. Here,
+the parameter values
+\begin{equation}
+    \label{eq:adaptivetimetep_safetyfactors}
+    \mathrm{fac}=0.8,\quad \mathrm{fac}_{\mathrm{max}} = 2.0,
+\end{equation}
+were used throughout.
