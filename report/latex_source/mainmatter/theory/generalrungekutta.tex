@@ -137,7 +137,8 @@ for specific constraints, such as problems of varying degrees of stiffness.
 Based on prior investigations --- such as the work done by
 \textcite{loken2017sensitivity} --- using explicit, high order, embedded
 Runge-Kutta methods to compute Lagrangian coherent structures
-(which will be elaborated upon in \textbf{\emph{SETT INN REF}})
+(which will be elaborated upon in
+\cref{sec:definition_of_lagrangian_coherent_structures_for_three_dimensional_flows})
 consistently yields accurate solutions at lower computational cost than
 the most common fixed stepsize methods. Accordingly, the Dormand-Prince 8(7)
 method --- consisting of an eighth order solution with a seventh order
@@ -153,6 +154,7 @@ is invalid, as the time step is, in principle, different for each integration
 step. A Butcher tableau representation of the Dormand-Prince 8(7) method
 is available in~\cref{tab:butcherdopri87}, which has been typeset in
 landscape mode for the reader's convenience. Details on how the dynamic
-time step was implemented will be presented in \textbf{\emph{SETT INN REF}}.
+time step was implemented will be presented in
+\cref{sub:the_implementation_of_dynamic_runge_kutta_step_size}.
 
 \input{mainmatter/theory/butchertableaus/dp87}

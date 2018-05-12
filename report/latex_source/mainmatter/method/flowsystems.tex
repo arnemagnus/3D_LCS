@@ -114,20 +114,36 @@ surface. A bird's-eye view of the region is shown in white in
 \cref{fig:currentmap}, which also contains a map view of the geographical
 region.
 
-
 \input{mainmatter/method/figures/currentmap}
 
 \subsection{Interpolating gridded velocity data}
 \label{sub:interpolating_gridded_velocity_data}
 
+In order to describe transport phenomena in the Førde fjord, interpolating
+the discretely sampled velocity field becomes necessary. Based upon the
+considerations presented in \cref{sub:spline_interpolation_of_discrete_data},
+we elected to do so by means of cubic B-splines in time and space. Thus,
+each of the velocity field's three components was considered to be a
+quadvariate function of time and the three spatial coordinates.
 
+Several multidimensional B-spline interpolation libraries are publically
+available under open access licensing. For this project, we elected to use
+the Bspline-Fortran library, partly motivated by its extensive documentation
+\parencite{williams2018bspline}. In particular, we made use of the
+\texttt{bspline\_4d} derived type, which we, along with a subset of its
+type-bound procedures, made available in C making use of the Fortran standard
+interoperability with C-languages, that is, the \texttt{iso\_c\_binding} module
+--- which is shipped with most modern Fortran compilers. From there, we wrote a
+thin wrapper class in C++, which was exposed to Python via Cython.
 
+The choice of Python as our main programming language was made partly due to
+its relatively low development costs, in addition to its beneficial properties
+as a `glue language' --- as examplified by the above, and the ease of
+parallelization by means of e.g. MPI (the use of which will be outlined in
+greater detail in \cref{sub:advecting_a_set_of_tracers} and
+\emph{\textbf{SETT INN REF TIL AVSN OM BEREGNING AV MANGFOLDIGHETER}}).
+Moreover, by utilizing Fortran's reference-based subroutine call structure, in
+addition to pointers at C-level (typed memoryviews in Cython), we were able to
+avoid memory duplication. This could otherwise have been a significant
+bottleneck.
 
-
-
-
-
-In order to identify LCSs in three-dimensional flow by means of geodesic level
-set approximations, a system which has been studied extensively in the
-literature was chosen. The system is a simple example of a fluid flow which can
-exhibit chaotic behaviour \parencite[p.204]{frisch1995turbulence}.

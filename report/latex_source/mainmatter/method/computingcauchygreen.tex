@@ -34,14 +34,10 @@ be evaluated inbetween the grid points. Moreover, as suggested by
 the existence criterion given in \cref{eq:lcs_condition_b}, all of the second
 derivatives of $\lambda_{3}(\vct{x}_{0})$ are also needed. Accordingly, the
 eigenvalues were interpolated by means of cubic trivariate B-splines, in order
-to ensure continuous second derivatives. For this purpose, the Bspline-Fortran
-library written by \textcite{williams2018bspline}, was used.
-
-\begin{framed}
-    Beskriv porting av Bspline-Fortran til Python via C++ og Cython i avsnitt
-    om Førdefjord-hastighetsfelt, for å kunne referere til porte-teknikken i
-    dette (og senere) avsnitt!
-\end{framed}
+to ensure continuous second derivatives. For this purpose, the
+\texttt{bspline\_3d} derived type from the Bspline-Fortran library
+\parencite{williams2018bspline} was ported to Python using the techniques
+described in \cref{sub:interpolating_gridded_velocity_data}.
 
 \subsubsection{Interpolating the Cauchy-Green strain eigenvectors}
 \label{ssub:interpolating_the_cauchy_green_strain_eigenvectors}
@@ -49,8 +45,10 @@ library written by \textcite{williams2018bspline}, was used.
 Just like the eigenvalues of the Cauchy-Green strain tensor field, its
 eigenvectors frequently need to be evaluated inbetween the grid points in order
 to compute LCSs. Like the strain eigenvalues, the strain eigenvectors were
-interpolated by means of cubic trivariate B-splines; though with a twist, in
-order to remove local orientational discontinuities.  In particular, the
+interpolated by means of cubic trivariate B-splines, through the
+\texttt{bspline\_3d} derived type from the Bspline-Fortran library
+\parencite{williams2018bspline} --- albeit with a twist, in
+order to remove local orientational discontinuities. In particular, the
 local stretch is equal in magnitude along any given negative $\vct{\xi}_{i}$
 axis as that of its positive counterpart, and there is no a priori reason to
 expect the SVD decomposition (cf.\ \cref{eq:jacobi_flow_map_svd}) to follow
