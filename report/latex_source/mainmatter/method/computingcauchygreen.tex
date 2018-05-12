@@ -71,11 +71,12 @@ grid points to any given coordinate $\vct{x}$ are identified. Choosing a
 vector at a corner of this local interpolation voxel, orientational
 discontinuities inbetween the grid elements are found by inspecting the
 inner products of the $\vct{\xi}_{i}$ vectors of the remaining grid points
-with the pivot. Rotations exceeding $90\si{\degree}$ are labelled as orientational
-discontinuities, and are corrected by flipping the corresponding vectors
-by $180\si{\degree}$. For each of $\vct{\xi}_{i}$'s three components, cubic
-B-spline interpolation is used within the interpolation voxel in order to
-find $\vct{\xi}_{i}(\vct{x})$, which is then normalized, like the
-$\vct{\xi}_{i}$ vectors defined at the grid points are a priori.
+with the pivot. Rotations exceeding $90\si{\degree}$ are identified by
+inner products with the pivot vector being negative, labelled as orientational
+discontinuities, and then corrected by reversing the sign of the corresponding
+vectors. For each of $\vct{\xi}_{i}$'s three components, cubic B-spline
+interpolation is used within the interpolation voxel in order to find
+$\vct{\xi}_{i}(\vct{x})$, which is then normalized, like the $\vct{\xi}_{i}$
+vectors defined at the grid points are a priori.
 
 

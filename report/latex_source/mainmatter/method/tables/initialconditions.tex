@@ -1,0 +1,24 @@
+\begin{table}[htpb]
+    \centering
+    \caption[Parameters choices for selecting LCS initial conditions]
+    {Parameters choices for selecting LCS initial conditions. $\varepsilon$ was
+    made to be one order of magnitude smaller than the grid spacing, and
+    $\nu$ was selected to be a common divisor of the number of grid points
+    along each Cartesian abscissa, cf.\ \cref{tab:gridparams}. Note that
+    $\varepsilon$ for the fjord model data is given in units of metre. Observe
+    how the reduced set of initial conditions contains orders of magnitude
+    fewer points than the total number of grid points which satisfy the LCS
+    existence criteria~\eqref{eq:lcs_condition_a},~\eqref{eq:lcs_condition_b}
+    and~\eqref{eq:lcs_condition_d}.}
+    \label{tab:initialconditionparams}
+    \begin{tabular}{ccc}
+        \toprule
+        & Analytical ABC flow & Fjord model data\\
+        \midrule
+        $\varepsilon$ & $5\cdot10^{.-3}$ & $10^{-1}$\\
+        $\nu$ & $8$ & $5$ \\[3pt]
+        \makecell[c]{\# initial conditions\\without $\nu$-filtering} & \makecell[c]{$340951$ (steady) \\ $361461$ (unsteady)} & $209945$\\[9pt]
+        \makecell[c]{\# initial conditions\\with $\nu$-filtering} & \makecell[c]{$618$ (steady)\\$676$ (unsteady)} & $1631$\\
+        \bottomrule
+    \end{tabular}
+\end{table}
