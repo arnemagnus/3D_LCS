@@ -2,8 +2,10 @@
 % Text-related packages
 % ---------------- %
 
-
-\usepackage[showframe]{geometry}
+%
+\usepackage[%
+showframe,% Show margins of document. Remember to remove prior to hand-in.
+]{geometry}
 
 % Margins
 %\usepackage[a4paper,margin=2.5cm]{geometry}
@@ -19,7 +21,9 @@
 \usepackage[main=english,norsk]{babel}
 
 % Choose Libertine font:
-\usepackage[]{libertine-type1}
+\usepackage[]{libertine}
+% Choose typewriter-family font which matches Libertine better than the default:
+\usepackage[scaled=0.96]{zi4}
 
 % Include author's affiliation
 \usepackage[]{authblk}
@@ -187,8 +191,6 @@ labelsep=colon%
 
 % Clever typesetting of SI units
 \usepackage[]{siunitx}
-
-
 
 %
 % Reference-related packages
