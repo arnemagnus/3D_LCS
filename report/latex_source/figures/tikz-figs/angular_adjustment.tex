@@ -3,7 +3,7 @@
 \usepackage[]{tikz-3dplot}
 \usepackage{pgfplots}
 \usepackage[]{amsmath}
-\usepackage[]{libertine-type1}
+\usepackage[]{libertine}
 \usepackage[libertine]{newtxmath}
 \usepackage[]{bm}
 \usepackage[]{physics}
@@ -140,9 +140,9 @@
     \end{scope}
 
     % Add nodes
-    \node at (i1) [below right] {$\mathcal{P}_{i-1,j}$};
-    \node at (o1) [below right] {$\mathcal{P}_{i,j}$};
-    \node at (n1) [below right= 3pt and -5pt] {$\mathcal{P}_{i+1,j}$};
+    \node at (i1) [below right] {$\mathcal{M}_{i-1,j}$};
+    \node at (o1) [below right] {$\mathcal{M}_{i,j}$};
+    \node at (n1) [below right= 3pt and -5pt] {$\mathcal{M}_{i+1,j}$};
 
     % Denote inner and outer parametrizations
     \node at ($(i3)!0.6!(i4)$) (innerpt) {};

@@ -19,7 +19,7 @@ The method is based on the concept of developing an unstable manifold from a
 local neighborhood of an initial condition $\vct{x}_{0}$ (how these initial
 conditions were chosen will be described in
 \cref{sub:identifying_suitable_initial_conditions_for_developing_lcss}).
-In particular, a small, closed curve $\mathcal{C}_{\delta}$ consisting
+In particular, a small, closed curve $\mathcal{C}_{1}$ consisting
 of points which all lie within the tangent plane defined by the coordinate
 $\vct{x}_{0}$ and the unit normal $\vct{\xi}_{3}(\vct{x}_{0})$, separated from
 $\vct{x}_{0}$ by a distance $\delta$, is assumed to consist of points which all
@@ -32,49 +32,5 @@ problems. During the computation, the interpolation error stays bounded by
 the density of mesh points, so that the overall quality of the mesh is
 preserved.
 
-
-\subsection{Identifying suitable initial conditions for developing LCSs}
-\label{sub:identifying_suitable_initial_conditions_for_developing_lcss}
-
-Inspired by the two-dimensional approach of \textcite{farazmand2012computing},
-in order to identify repelling LCSs, the first step was to identify the
-subdomain $\mathcal{U}_{0}\subset\mathcal{U}$ in which the existence conditions
-\eqref{eq:lcs_condition_a},~\eqref{eq:lcs_condition_b} and
-\eqref{eq:lcs_condition_d} are satisfied --- as these conditions can be
-verified for individual points, unlike criterion~\eqref{eq:lcs_condition_c}.
-All grid points which lie within $\mathcal{U}_{0}$ would then be valid initial
-conditions for repelling LCSs. Of the aforementioned criteria,
-condition~\eqref{eq:lcs_condition_d} is the least straightforward to implement
-numerically, as identifying the zeros of inner products is prone to numerical
-round-off error. Our approach is based on comparing the value of $\lambda_{3}$
-at a given grid point $\vct{x}_{0}$ to the values of $\lambda_{3}$ at the two
-points $\vct{x}_{0}\pm\varepsilon\vct{\xi}_{3}(\vct{x}_{0})$, where
-$\varepsilon$ is a number one order of magnitude smaller than the grid spacing.
-Should $\lambda_{3}(\vct{x}_{0})$ be the largest of the three, the point
-$\vct{x}_{0}$ would be flagged as satisfying criterion
-\eqref{eq:lcs_condition_d}.
-
-Using all of the points in $\mathcal{U}_{0}$ domain would invariably involve
-computing alot of LCSs several times over --- in particular, if two neighboring
-grid points are both located in the $\mathcal{U}_{0}$ domain, then they likely
-belong to the same manifold. In order to reduce the number of redundant
-calculations, the set of considered initial conditions was further reduced,
-by only checking whether every $\nu^{\text{th}}$ grid point along each axis
-belonged to $\mathcal{U}_{0}$, that is, only considering one in every
-$\nu^{3}$ grid points in the entire domain as possible initial conditions.
-Because the number of grid points was different for the different types of
-flow (cf.\ \cref{tab:gridparams}), so too was the pseudo-sampling frequency
-$\nu$. The values for $\varepsilon$, $\nu$ and the resulting number of initial
-conditions are given in \cref{tab:initialconditionparams}. Note that, using
-the given filtering parameters, the initial conditions reduced to a far more
-manageable number of grid points, than all of the grid points which satisfy
-the LCS conditions~\eqref{eq:lcs_condition_a},~\eqref{eq:lcs_condition_b} and~%
-\eqref{eq:lcs_condition_d}.
-
-\input{mainmatter/method/tables/initialconditions}
-
-\begin{framed}
-    Interpolasjonskurvene for hvert enkelt levelset er gitt av en
-    `parametric spline', hvor den frie parameteren, $s$, er valgt som en
-    normert pseudo-buelengdeparameter.
-\end{framed}
+\input{mainmatter/method/levelset_method_take_one/initial_conditions}
+\input{mainmatter/method/levelset_method_take_one/first_set_and_interpolation}

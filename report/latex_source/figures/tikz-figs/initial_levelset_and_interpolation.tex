@@ -1,0 +1,99 @@
+\documentclass[crop]{standalone}
+\usepackage{tikz}
+\usepackage[]{tikz-3dplot}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage[]{amsmath}
+\usepackage[]{libertine}
+\usepackage[libertine]{newtxmath}
+\usepackage[]{bm}
+\usepackage[]{physics}
+% Macros for greek letters in roman style, in math mode
+\DeclareRobustCommand{\mathup}[1]{%
+\begingroup\ensuremath\changegreek\mathrm{#1}\endgroup}
+\DeclareRobustCommand{\mathbfup}[1]{%
+\begingroup\ensuremath\changegreek\bm{\mathrm{#1}}\endgroup}
+
+
+\makeatletter
+\def\changegreek{\@for\next:={%
+        alpha,beta,gamma,delta,epsilon,zeta,eta,theta,iota,kappa,lambda,mu,nu,%
+        xi,pi,rho,sigma,tau,upsilon,phi,chi,psi,omega,varepsilon,varpi,%
+    varrho,varsigma,varphi}%
+\do{\expandafter\let\csname\next\expandafter\endcsname\csname\next up\endcsname}}
+\makeatother
+
+% Define vectors in bold, roman, lowercase font
+\newcommand{\vct}[1]{\ensuremath{\mathbfup{\MakeLowercase{#1}}}}
+
+% Define unit vectors in bold, roman, lowercase font, with hats
+\newcommand{\uvct}[1]{\ensuremath{\mathbfup{\hat{\MakeLowercase{#1}}}}}
+
+% Define matrices in bold, roman, uppercase font
+\newcommand{\mtrx}[1]{\ensuremath{\mathbfup{\MakeUppercase{#1}}}}
+\usetikzlibrary{%
+    angles,%
+    arrows.meta,%
+    backgrounds,%
+    calc,%
+    decorations,%
+    fit,%
+    hobby,%
+    patterns,%
+    positioning,%
+    quotes
+}
+
+
+\begin{document}
+
+\tdplotsetmaincoords{60}{120}
+
+\begin{tikzpicture}[tdplot_main_coords]
+    \pgfmathsetmacro{\radius}{2.5}
+    \pgfmathsetmacro{\size}{2.5}
+    % Shade initial tangent plane
+    \draw[fill=gray!25,draw opacity=0] ($({-1.2*\radius},{-1.2*\radius},0)$) -- ($({1.2*\radius},{-1.2*\radius},0)$) -- ($({1.2*\radius},{1.2*\radius},0)$) -- ($({-1.2*\radius},{1.2*\radius},0)$) -- cycle;
+    % Draw unit normal vector to surface
+    \draw[->,very thick,color=black!90] (0,0,0) -- (0,0,1.7) node[anchor=south]{$\vct{\xi}_{3}(\vct{x}_{0})$};
+    % Suggest initial radius
+    \draw[stroke=black!90,thin,dashed] (0,0,0) to ($({\radius*cos(-110)},{\radius*sin(-110)},0)$) coordinate (p);
+    % Place the set of initial points
+    \foreach [count = \i] \ang in {0,40,...,320}%
+    {%
+        \coordinate (\i) at ( {\radius*cos(\ang-90)}, {\radius*sin(\ang-90)}, {0} );
+    }
+    % Draw interpolation curve
+    \draw[stroke = black!80,thin,dotted] (1) to [curve through = {(2) .. (3) .. (4) .. (5) .. (6) .. (7) .. (8) .. (9)}] (1);
+    % Draw point given as initial condition
+    \draw[fill=gray!5,stroke=black!65,fill opacity=1] (0,0,0) circle (\size pt) coordinate (0);
+    % Draw points in initial level set
+    \foreach \i in {1,...,9}%
+    {%
+        \draw[fill=gray!10,stroke=black!65] (\i) circle (\size pt);
+    }
+    % Label initial condition
+    \node [below right] at (0) {$\vct{x}_{0}$};
+    % Label nodes
+    \node [below right] at (4) {$\mathcal{M}_{1,1}$};
+    \node [below right] at (5) {$\mathcal{M}_{1,2}$};
+    \node [right] at (6) {$\mathcal{M}_{1,3}$};
+    \node[below left = 0pt and -2pt] at (3) {$\mathcal{M}_{1,n}$};
+    \node[below left] at (2) {$\mathcal{M}_{1,n-1}$};
+    % Add pseudoarclength interpolation parameter labelling
+    \node[above right = 9pt and -14pt] at (4) {\footnotesize$s_{1}=0$,};
+    \node[above = 2pt] at (4) {\footnotesize$s=1$};
+    \node[above left] at (5) {\footnotesize$s_{2}$};
+    \node[above left = -2pt and 1pt] at (6) {\footnotesize$s_{3}$};
+    \node[above right = 0pt and -2pt] at (3) {\footnotesize$s_{n}$};
+    \node[above right = -5pt and 2pt] at (2) {\footnotesize$s_{n-1}$};
+    \node[below left,rotate=-30] at ($(0)!0.5!(p)$) {$\delta$};
+
+    % Add coordinate on interpolated circle, in order to denote it properly
+    \coordinate (q) at ($({\radius*cos(-190)},{\radius*sin(-190)},0)$);
+    % Add pivot coordinate on which to place interpolation circle label
+    \coordinate (r) at ($({1.4*\radius*cos(-190)},{1.4*\radius*sin(-190)},0)$);
+    \node at (r) {$\mathcal{C}_{1}$};
+    \draw[stroke=black!80] ($(q)!0.1!(r)$) to [out = 20,in=36] ($(q)!0.65!(r)$);
+\end{tikzpicture}
+\end{document}

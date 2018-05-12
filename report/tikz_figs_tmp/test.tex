@@ -3,11 +3,10 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.15}
 \usepackage[]{amsmath}
-\usepackage[]{libertine-type1}
+\usepackage[]{libertine}
 \usepackage[libertine]{newtxmath}
 \usepackage[]{bm}
 \usepackage[]{physics}
-\usepackage[]{xstring}
 % Macros for greek letters in roman style, in math mode
 \DeclareRobustCommand{\mathup}[1]{%
 \begingroup\ensuremath\changegreek\mathrm{#1}\endgroup}
@@ -32,97 +31,35 @@
 % Define matrices in bold, roman, uppercase font
 \newcommand{\mtrx}[1]{\ensuremath{\mathbfup{\MakeUppercase{#1}}}}
 \usetikzlibrary{%
-    angles,%
-    arrows.meta,%
-    backgrounds,%
-    calc,%
-    decorations,%
-    fit,%
-    hobby,%
-    patterns,%
+    shapes,%
+    arrows,%
     positioning,%
-    quotes
+    calc%
 }
 
 
 
 \begin{document}
 
+\tikzstyle{block} = [draw, rectangle, stroke = black!80,fill = gray!15, minimum height = 3em, minimum width = 6em]
+\tikzstyle{cloud} = [draw, stroke=black!80, fill=gray!15,ellipse, minimum height = 3em, minimum width = 6em]
+\tikzstyle{arr} = [single arrow, draw, ->]
 
 \begin{tikzpicture}
-    \coordinate (pivot) at (0,0);
-    % Form factors of the fluid cell
-    \pgfmathsetmacro{\sy}{2.2};
-    \pgfmathsetmacro{\sx}{1.618*\sy};
-    % Radii of fluid elements
-    \pgfmathsetmacro{\r}{0.2};
-
-    % Draw fluid elements in interpolation voxel
-    \foreach \i in {0,...,3}%
-    {%
-        \foreach \j in {0,...,3}%
-        {%
-            {\pgfmathtruncatemacro{\label}{\i-4*\j+13}
-            \node[circle,draw,fill=gray!60,stroke=black!80,minimum size =\r] (\i\j) at ($(pivot) + (\i*\sx,\j*\sy)$) {};}
-        }
-    }
-
-    % Connect fluid elements in interpolation voxel by dashed lines
-    \foreach \i in {0,...,3}%
-    {%
-        \foreach \j [count=\ji] in {0,...,2}%
-        {%
-            \draw[stroke=black!80,thin,loosely dashdotted] (\i\j)--(\i\ji) (\j\i) -- (\ji\i);
-        }
-    }
-
-    % Draw fluid element at which interpolated value is sought
-    \coordinate (pos) at ($(pivot) + (1.6*\sx,1.5*\sy)$);
-    \draw[circle,fill=gray!10,stroke=black!80,minimum size=0.3*\r] (pos) circle (0.3*\r);
-    \node at (pos) [below right=-1pt and -1pt] {$\vct{r}$};
-
-    % Indicate pivot vector
-    \node [below right = 6pt and 1pt of pivot] (pivotmrk) {$\mathcal{P}$};
-    \draw[stroke=black!80] ($(pivotmrk)!0.32!(pivot)$) to [out=135,in=-70] ($(pivotmrk)!0.65!(pivot)$);
-
-    % Draw unit vectors at background layer in order to reduce foreground clutter
-    \begin{scope}[on background layer]
-    % Define scale of unit eigenvectors
-    \pgfmathsetmacro{\vl}{1.5};
-    % Draw interpolated vector
-    \draw[->,stroke=black!80,thick] (pos) to ($(pos) + ({\vl*cos(24)},{\vl*sin(24)})$);
-
-    % Draw unit vector at pivot
-    \draw[->,stroke=black!80,densely dashed,thick] (pivot) to ($(pivot) + ({\vl*cos(30)},{\vl*sin(30)})$);
-
-    % Draw unit vectors at remaining grid points, some of which are
-    % rotated in advance
-    \draw[->,stroke=black!80,densely dashed,thick] (01) to ($(01) + ({\vl*cos(20)},{\vl*sin(20)})$);
-    \draw[->,stroke=black!80,dotted, thick] (02) to ($(02) + ({\vl*cos(190)},{\vl*sin(190)})$); % Needs to be flipped
-    \draw[->,stroke=black!80,densely dashed,thick] (02) to ($(02) + ({\vl*cos(10)},{\vl*sin(10)})$);
-    \draw[->,stroke=black!80,densely dashed,thick] (03) to ($(03) + ({\vl*cos(-10)},{\vl*sin(-10)})$);
-    \draw[->,stroke=black!80,densely dashed,thick] (10) to ($(10) + ({\vl*cos(37)},{\vl*sin(37)})$);
-    \draw[->,stroke=black!80,dotted,thick] (11) to ($(11) + ({\vl*cos(207)},{\vl*sin(207)})$); % Needs to be flipped
-    \draw[->,stroke=black!80,densely dashed,thick] (11) to ($(11) + ({\vl*cos(27)},{\vl*sin(27)})$);
-    \draw[->,stroke=black!80,densely dashed,thick] (12) to ($(12) + ({\vl*cos(17)},{\vl*sin(17)})$);
-    \draw[->,stroke=black!80,densely dashed,thick] (13) to ($(13) + ({\vl*cos(07)},{\vl*sin(07)})$);
-    \draw[->,stroke=black!80,densely dashed,thick] (20) to ($(20) + ({\vl*cos(60)},{\vl*sin(60)})$);
-    \draw[->,stroke=black!80,densely dashed,thick] (21) to ($(21) + ({\vl*cos(50)},{\vl*sin(50)})$);
-    \draw[->,stroke=black!80,densely dashed,thick] (22) to ($(22) + ({\vl*cos(42)},{\vl*sin(42)})$);
-    \draw[->,stroke=black!80,dotted,thick] (23) to ($(23) + ({\vl*cos(204)},{\vl*sin(204)})$); % Needs to be flipped
-    \draw[->,stroke=black!80,densely dashed,thick] (23) to ($(23) + ({\vl*cos(24)},{\vl*sin(24)})$);
-    \draw[->,stroke=black!80,dotted,thick] (30) to ($(30) + ({\vl*cos(190)},{\vl*sin(190)})$); % Needs to be flipped
-    \draw[->,stroke=black!80,densely dashed,thick] (30) to ($(30) + ({\vl*cos(10)},{\vl*sin(10)})$);
-    \draw[->,stroke=black!80,densely dashed,thick] (31) to ($(31) + ({\vl*cos(21)},{\vl*sin(21)})$);
-    \draw[->,stroke=black!80,densely dashed,thick] (32) to ($(32) + ({\vl*cos(38)},{\vl*sin(38)})$);
-    \draw[->,stroke=black!80,densely dashed,thick] (33) to ($(33) + ({\vl*cos(28)},{\vl*sin(28)})$);
-
-
-
-
-    \end{scope}
-
-
+    \node[align=center] (initial) [block] {Does the M{\"o}ller-Trumbore algorithm suggest that\\any ray emanating from a vertex of A, passing\\through another vertex of A, intersects B?};
+    \node[align=center,below right= and -75pt of initial] (deeper) [block] {Does at least one pair of vertices of A,\\which gave rise to such a ray, lie\\on opposite sides of the surface of B?};
+    \node[align=center,below left= 34.2pt and -75pt of initial] (nope) [block] {Triangles A and B do not intersect};
+    \node[align=center,below = 32.8pt of nope] (yep) [block] {Triangles A and B intersect};
+    \node[align=center,below = of deeper] (deepest) [block] {Do all intersection points lie\\ along the perimeter of B?};
+    \draw[arr] (initial.south) -- ++(0,-0.5) node [auto, swap, xshift = 50, yshift = 6] {Yes} -| (deeper.north);
+    \draw[arr] (initial.south) -- ++(0,-0.5) node [auto, swap, xshift = -50, yshift = 6] {No} -| (nope.north);
+    \draw[arr] (deeper.south) -- node [auto, swap, xshift = 30, yshift = 0] {Yes} (deepest.north);
+    \path[->] (deeper.west) edge (nope) node [auto, swap, xshift=-30, yshift=7.5] (q) {};
+    \node[align=center, right = 0pt of q] (k) {No};
+    \node[align=center, below = 30pt of k] (l)  {Yes};
+    \node[align=center, below left = 5pt and 15pt of l]  {No};
+    \draw[arr] (deepest.west) -- ++(-0.5,0) -| ($(q)+(0,-0.275)$);
+    \path[->]  (deepest.west) -- ++(-0.5,0) edge (yep.east);
 
 
 \end{tikzpicture}
