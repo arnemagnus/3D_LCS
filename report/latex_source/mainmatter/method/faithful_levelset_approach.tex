@@ -1,0 +1,73 @@
+\section[Legacy approach to computing new geodesic level sets]
+{Legacy approach to computing new geodesic\\\phantom{3.6} sets}
+\label{sec:legacy_approach_to_computing_new_geodesic_level_sets}
+
+As tentatively suggested in \cref{sub:parametrizing_the_innermost_level_set},
+each of the points in the first level set
+$\mathcal{M}_{1} = \{\mathcal{M}_{1,j}\}_{j=1}^{n}$ is used to compute a point
+in the ensuing level set $\mathcal{M}_{2}$. This notion extends to all of the
+subsequent level sets; namely, the points in level set $\mathcal{M}_{i+1}$
+are computed from the points in the prior level set $\mathcal{M}_{i}$.
+For reasons of brevity in the discussion to follow, denote the points
+$\{\mathcal{M}_{i,j}\}$ and $\{\mathcal{M}_{i+1,j}\}$ as \emph{ancestor} and
+\emph{descendant points}, respectively. Furthermore, the set of mesh points
+sharing a single ancestor is referred to as a \emph{point strain}. The
+considerations to follow rely on each mesh point $\mathcal{M}_{i,j}$ inheriting
+its tangential vector from its direct ancestor; that is,
+$\vct{t}_{i,j}:=\vct{t}_{i-1,j}$. The nuances of this inheritance-based approach
+will be described in greater detail in \emph{\textbf{SETT INN REF TIL
+AVSN OM ARV AV TANGENSVEKTOR}}.
+
+From the mesh point $\mathcal{M}_{i,j}$, we wish to place a new mesh point
+$\mathcal{M}_{i+1,j}$ at an intersection of the manifold $\mathcal{M}$ and the
+half-plane $\mathcal{H}_{i,j}$ located a distance $\Delta_{i}$ from
+$\mathcal{M}_{i,j}$. The aforementioned half-plane is defined by the coordinate
+$\vct{x}_{i,j}$, the unit normal $\vct{t}_{i,j}$ and the guidance vector
+$\vct{\rho}_{i,j}$ (cf.\ \cref{eq:innermost_prevvec,eq:general_prevvec}).
+Note that this intersection may occur anywhere on the half-circle within
+$\mathcal{H}_{i,j}$ of radius $\Delta_{i}$, centered at $\vct{x}_{i,j}$. The
+search for a new mesh point is conducted by defining an aim point
+$\vct{x}_{\text{aim}}$ within $\mathcal{H}_{i,j}$, computed by performing a
+single, classical, \nth{4}-order Runge-Kutta step (cf.\ \cref{tab:butcherrk4})
+of length $\Delta_{i}$ in the vector field locally defined as
+\begin{equation}
+    \label{eq:faithful_intermediary_aimpoint_vectorfield}
+    \vct{\psi}(\vct{x}) = %
+    \frac{\vct{\xi}_{3}(\vct{x})\times\vct{t}_{i,j}}%
+    {\norm{\vct{\xi}_{3}(\vct{x})\times\vct{t}_{i,j}}},
+\end{equation}
+starting at $\vct{x}_{i,j}$. Moreover, all of the vectors of the intermediary
+Runge-Kutta steps were corrected, if necessary, by continuous comparison with
+$\vct{\rho}_{i,j}$ and sign-reversion if an intermediary vector was directed
+radially inwards. Finally, the computed aim point was projected into the
+half-plane $\mathcal{H}_{i,j}$ as follows:
+\begin{equation}
+    \label{eq:aimpoint_planeprojection}
+\vct{x}_{\text{aim}} := \vct{x}_{\text{aim}} - \inp[]{\vct{t}_{i,j}}{\vct{x}_{\text{aim}}}\vct{t}_{i,j}.
+\end{equation}
+
+The idea is then to look for a new position within $\mathcal{H}_{i,j}$, in the
+vicinity of $\vct{x}_{\text{aim}}$, which lies a distance $\Delta_{i}$ from
+$\vct{x}_{i,j}$, by moving within the constraints of the manifold. Motivated by
+\cref{rmk:invariance_lcs}, this involves computing trajectories which everywhere
+lie within the plane spanned by the local $\vct{\xi}_{1}$- and
+$\vct{\xi}_{2}$-vectors. This was done by defining a local, normalized
+direction field as
+\begin{equation}
+    \label{eq:faithful_local_directionfield}
+    \vct{\zeta}(\vct{x},\vct{x}_{\text{aim}}) = %
+    \frac{\vct{x}_{\text{aim}}-\vct{x} - \inp[]{\vct{\xi}_{3}(\vct{x})}{\vct{x}_{\text{aim}}-\vct{x}}\vct{\xi}_{3}(\vct{x})}%
+    {\norm{\vct{x}_{\text{aim}}-\vct{x} - \inp[]{\vct{\xi}_{3}(\vct{x})}{\vct{x}_{\text{aim}}-\vct{x}}\vct{\xi}_{3}(\vct{x})}},
+\end{equation}
+that is, the normalized projection of the vector separating $\vct{x}$ and
+$\vct{x}_{\text{aim}}$ into the plane orthogonal to the local $\vct{\xi}_{3}$
+vector, in accordance with LCS existence criterion~\eqref{eq:lcs_condition_c}.
+A visual representation of this direction field is given in
+\cref{fig:aim_procedure}. The choice of initial conditions for computing
+trajectories within the manifold, with a view to expanding it, is the topic
+of (the immediately forthcoming)
+\cref{sub:selecting_initial_conditions_from_which_to_compute_new_mesh_points}.
+
+\input{mainmatter/method/figures/aim_procedure}
+
+\input{mainmatter/method/levelset_method_take_one/strain_initial_conditions}

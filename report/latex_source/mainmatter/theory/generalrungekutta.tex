@@ -151,10 +151,13 @@ adaptive time step. Although the \emph{local} errors of each integration
 step scale as per~\cref{eq:rungekuttaorder}, the bound on the \emph{global}
 (i.e.,\ observable) error suggested in~\cref{eq:globalrungekuttaerrorestimate}
 is invalid, as the time step is, in principle, different for each integration
-step. A Butcher tableau representation of the Dormand-Prince 8(7) method
-is available in~\cref{tab:butcherdopri87}, which has been typeset in
-landscape mode for the reader's convenience. Details on how the dynamic
-time step was implemented will be presented in
+step. Butcher tableau representations of the classical \nth{4}-order Runge-Kutta
+method and the embedded Dormand-Prince 8(7) method are available in
+is available in~\cref{tab:butcherrk4,tab:butcherdopri87}; where the latter of
+which has been typeset in landscape mode for the reader's convenience. Details
+on how the dynamic time step of the Dormand-Prince 8(7) method was implemented
+will be presented in
 \cref{sub:the_implementation_of_dynamic_runge_kutta_step_size}.
 
+\input{mainmatter/theory/butchertableaus/rk4}
 \input{mainmatter/theory/butchertableaus/dp87}

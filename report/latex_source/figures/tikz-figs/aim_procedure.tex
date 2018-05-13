@@ -139,10 +139,10 @@
 
     % Draw unit vectors
 	\getangle(r)(xi1)b;
-    \draw[->,very thick,color=black!90] (r) -- (xi1) node[midway,below,rotate=\angleb]{$\vct{\xi}_{1}(\vct{r})$};
+\draw[->,very thick,color=black!90] (r) -- (xi1) node[midway,below,rotate=\angleb]{$\vct{\xi}_{1}(\vct{x})$};
 	\getangle(r)(xi2)b;
-    \draw[->,very thick,color=black!90] (r) -- (xi2) node[above right=-0.25cm and -0.25cm,rotate=\angleb] {$\vct{\xi}_{2}(\vct{r})$};
-    \draw[->,very thick,color=black!90] (r) -- (xi3) node[midway,left]{$\vct{\xi}_{3}(\vct{r})$};
+    \draw[->,very thick,color=black!90] (r) -- (xi2) node[above right=-0.25cm and -0.25cm,rotate=\angleb] {$\vct{\xi}_{2}(\vct{x})$};
+    \draw[->,very thick,color=black!90] (r) -- (xi3) node[midway,left]{$\vct{\xi}_{3}(\vct{x})$};
 
     % Draw guide lines to orthogonal component of aim vector
     \draw[dashed,stroke=black!65] (ra) -- (rort);
@@ -154,15 +154,15 @@
     % Draw parallel component of aim vector
 	\getangle(r)(rpar)b;
     \draw[thick, stroke=black!90,dashed] (r) -- (rpar);
-    \draw[->,stroke=black!90,thick,middle segment = 0.3] (r) -- (rpar) node[midway,below left,rotate=\angleb]{$\vct{f}(\vct{r},\vct{r}_{\mathrm{aim}})$};
+    \draw[->,stroke=black!90,thick,middle segment = 0.3] (r) -- (rpar) node[midway,below left,rotate=\angleb]{$\vct{\zeta}(\vct{x},\vct{x}_{\mathrm{aim}})$};
 
     % Draw aim point
-    \draw[fill=gray!10,stroke=black!90] (ra) circle(2.5pt) node[right]{$\vct{r}_{\mathrm{aim}}$};
+    \draw[fill=gray!10,stroke=black!90] (ra) circle(2.5pt) node[right]{$\vct{x}_{\mathrm{aim}}$};
     % Draw nonmodified aim vector
     \draw[->,stroke=black!90,thick,densely dashed,middle segment = 1] (r) -- (ra);
 
     % Draw origin point
-    \draw[fill=gray!10,stroke=black!90,fill opacity=1] (r) circle(2.5pt) node[below left = 1pt and 1pt] {$\vct{r}$};
+    \draw[fill=gray!10,stroke=black!90,fill opacity=1] (r) circle(2.5pt) node[below left = 1pt and 1pt] {$\vct{x}$};
 
 
 \end{tikzpicture}
