@@ -1,6 +1,6 @@
 \documentclass[crop]{standalone}
 \usepackage{tikz}
-%\usepackage[]{tikz-3dplot}
+\usepackage[]{tikz-3dplot}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.15}
 \usepackage[]{amsmath}
@@ -42,7 +42,7 @@
 
 
 
-%\tdplotsetmaincoords{60}{90}
+\tdplotsetmaincoords{60}{90}
 
 \begin{document}
 
@@ -50,16 +50,40 @@
 \tikzstyle{cloud} = [draw, stroke=black!80, fill=gray!15,ellipse, minimum height = 3em, minimum width = 6em]
 \tikzstyle{arr} = [single arrow, draw, ->]
 
-\begin{tikzpicture}%[tdplot_main_coords]
-    % Define common vertices
-    \coordinate (v1) at (0,1);
-    \coordinate (v2) at (3,2);
-    % Define differing vertices
-    \coordinate (a) at (1.5,0.5);
-    \coordinate (b) at (-0.5,2.5);
+\begin{tikzpicture}[tdplot_main_coords]
+    % Define vertices of A:
+    \coordinate (a1) at (1,0,0);
+    \coordinate (a2) at (3,0,0);
+    \coordinate (a3) at (2,2,0);
+    % Define vertices of B:
+    \coordinate (b1) at (1.5,1,0.5);
+    \coordinate (b2) at (2.5,1,0.5);
+    \coordinate (b3) at (2,2,-1);
 
-    % Draw the triangles
-    \draw[pattern = north west lines, pattern color = gray!40, stroke = black!80, draw opacity = 1] (v1) -- (v2) -- (a) -- cycle;
-    \draw[fill = gray!30, stroke = black!80, draw opacity = 1] (v1) -- (v2) -- (b) -- cycle;
+    % Define intersection points
+    \coordinate(i1) at (5/3,4/3,0);
+    \coordinate(i2) at (7/3,4/3,0);
+
+
+    % Define help vertices for filling the triangles in a more aesthetically
+    % pleasing fashion
+    \coordinate (outerb) at (143/64,73/48,0);
+    \coordinate (outera) at (63/42,1,0);
+    \coordinate (innera) at (137/84,1,0);
+
+    % Shade triangle B
+    \draw[pattern = north west lines, pattern color = gray!40, stroke = black!80] (i1) -- (b1) -- (b2) -- (i2);
+    \draw[pattern = north west lines, pattern color = gray!40, stroke = black!80] (i2) -- (b3) -- (outerb);
+    % Shade triangle A
+    \draw[fill=gray!30,stroke=black!80] (a1) -- (a2) -- (i2) -- (innera) -- (outera) -- cycle;
+    \draw[fill=gray!30,draw opacity = 0] (i1) -- (i2) -- (a3) -- cycle;
+    \draw[stroke=black!80] (i1) -- (a3) -- (i2);
+    % Draw vertex segments which are partly obscured
+    \draw[stroke=black!80, densely dotted] (i1) -- (outera);
+    \draw[stroke=black!80, densely dotted] (i1) -- (outerb);
+
+    % Draw intersection points
+    \draw[fill=gray!10,stroke=black!80]  (i1) circle (1pt);
+    \draw[fill=gray!10,stroke=black!80]  (i2) circle (1pt);
 \end{tikzpicture}
 \end{document}
