@@ -7,6 +7,19 @@
 \usepackage[libertine]{newtxmath}
 \usepackage[]{bm}
 \usepackage[]{physics}
+% Typographical refinement
+\usepackage[activate={true,nocompatibility},% Let microtype do its magic
+%                                           % without trying to keep page breaks
+%                                           % etc.
+final=true,% Activate microtype even when in draft mode
+kerning=true,% Fixes kerning issues
+spacing=true,% Fixes spacing issues
+tracking=true,% Adds letter spacing for small caps
+shrink=30,% Characters are stretched or shrunk in order to improve justification
+stretch=30,% up to 3 %
+factor=0% Controls how much punctuation protrudes past the end of the line
+]{microtype}
+\microtypecontext{spacing=nonfrench} % <-- No spacing found for Linux Libertine
 % Macros for greek letters in roman style, in math mode
 \DeclareRobustCommand{\mathup}[1]{%
 \begingroup\ensuremath\changegreek\mathrm{#1}\endgroup}
