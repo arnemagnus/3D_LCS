@@ -1,0 +1,121 @@
+\documentclass[crop]{standalone}
+\usepackage{tikz}
+\usepackage[]{tikz-3dplot}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage[]{amsmath}
+\usepackage[]{libertine}
+\usepackage[libertine]{newtxmath}
+\usepackage[]{bm}
+\usepackage[]{physics}
+% Macros for greek letters in roman style, in math mode
+\DeclareRobustCommand{\mathup}[1]{%
+\begingroup\ensuremath\changegreek\mathrm{#1}\endgroup}
+\DeclareRobustCommand{\mathbfup}[1]{%
+\begingroup\ensuremath\changegreek\bm{\mathrm{#1}}\endgroup}
+
+
+\makeatletter
+\def\changegreek{\@for\next:={%
+        alpha,beta,gamma,delta,epsilon,zeta,eta,theta,iota,kappa,lambda,mu,nu,%
+        xi,pi,rho,sigma,tau,upsilon,phi,chi,psi,omega,varepsilon,varpi,%
+    varrho,varsigma,varphi}%
+\do{\expandafter\let\csname\next\expandafter\endcsname\csname\next up\endcsname}}
+\makeatother
+
+% Define vectors in bold, roman, lowercase font
+\newcommand{\vct}[1]{\ensuremath{\mathbfup{\MakeLowercase{#1}}}}
+
+% Define unit vectors in bold, roman, lowercase font, with hats
+\newcommand{\uvct}[1]{\ensuremath{\mathbfup{\hat{\MakeLowercase{#1}}}}}
+
+% Define matrices in bold, roman, uppercase font
+\newcommand{\mtrx}[1]{\ensuremath{\mathbfup{\MakeUppercase{#1}}}}
+\usetikzlibrary{%
+    angles,%
+    arrows.meta,%
+    backgrounds,%
+    calc,%
+    decorations,%
+    fit,%
+    hobby,%
+    patterns,%
+    positioning,%
+    quotes
+}
+
+
+\begin{document}
+
+\tdplotsetmaincoords{70}{120}
+
+\begin{tikzpicture}[tdplot_main_coords]
+    \pgfmathsetmacro{\radius}{5}
+    \pgfmathsetmacro{\size}{2.5}
+%    % Place the set of initial points
+    \foreach [count = \i] \ang in {205,240,260,280,165}%
+    {%
+        \coordinate (\i) at ( {\radius*cos(\ang-90)}, {\radius*sin(\ang-90)},{0} );
+    }
+
+    % Place coordinates giving the circle of positions at which one aims
+    \coordinate (tp) at ({\radius*cos(150)},{\radius*sin(150)},1);
+    \coordinate (bt) at ({\radius*cos(150)},{\radius*sin(150)},-1);
+
+
+    % Define coordinates of half-plane $\mathcal{H}_{i,j}$
+    \coordinate (lu) at ($(2)!2!(tp)$);
+    \coordinate (ld) at ($(2)!2!(bt)$);
+    \coordinate (ru) at ($(lu)+7*({-0.866},{0.5},0)$);
+    \coordinate (rd) at ($(ld)+7*({-0.866},{0.5},0)$);
+    % Shade half-plane
+    \draw[fill=gray!30,draw opacity=0] (lu) -- (ld) -- (rd) -- (ru) -- cycle;
+    % Draw interpolation curve
+    \draw[stroke=black!80,thin,dotted] (70:\radius) arc (70:200:\radius);
+    % Draw $\vct{rho}_{i,j}$ at $x_{i,j}$
+    \path[draw,stroke=black!65,->,thick,dashdotted ] (2) to ($(2) + 5*({-0.866},{0.5},0)$) coordinate (rhoend);
+    \node[below left = 7.5pt and 35pt of rhoend,rotate=12.5] {$\vct{\rho}_{i,j}$};
+    \node[above left = 0pt and 0pt of rd] {$\mathcal{H}_{i,j}$};
+
+    % Define coordinates of pivot for attaching $\mathcal{C}_{i}$ label
+    \coordinate (mrk) at ({\radius*cos(195)},{\radius*sin(195)},0);
+    % Attach label
+    \coordinate [above = 10pt of mrk] (lbl);
+    \node at (lbl) {$\mathcal{C}_{i}$};
+    \draw[stroke=black!80] ($(mrk)!0.1!(lbl)$) to[in= 270,out=20] ($(mrk)!0.55!(lbl)$);
+
+    % Draw points in initial level set
+    \foreach \i in {1,2,3,4,5}%
+    {%
+        \draw[fill=gray!10,stroke=black!65] (\i) circle (\size pt);
+    }
+    % Draw semicircle of radius $\Delta_{i}$, centered at $x_{i,j}$
+    \pic[densely dashed,draw,stroke=grey!80,angle radius=39] {angle = bt--2--tp};
+
+    % Label ancestor point
+    \coordinate[below left = 0pt and 30pt of 2] (plbl);
+    \node at (plbl) {$\mathcal{M}_{i,j}$};
+    \draw[stroke=black!80] ($(plbl)!0.4!(2)$) to[out = 20, in = 160]  ($(plbl)!0.85!(2)$);
+
+    % Suggest initial radius
+    \draw[decorate,decoration={brace,amplitude=5pt,raise=0pt},yshift=0pt] ($(2)!1.46!(bt)$) -- (2)   node [midway,left=2pt] {\footnotesize{$\Delta_{i}$}};
+
+    % Draw aim point
+    \draw[stroke=black!65,fill=gray!10] ($(2) + 1.2*({-0.866},{0.5},0) + (0,0,0.75)$) circle (\size pt) coordinate (aim);
+    \node[above right = 0pt and 0pt of aim]  {$\vct{x}_{\text{aim}}$};
+
+    % Draw some trajectories, the last of which manages to find aim point
+    \coordinate (p1i) at ($({\radius*cos(180)},{\radius*sin(180)},0)$);
+    \coordinate (p1f) at ($(2) + 2.8*({-0.866},{0.5},0) + (0,0,0.75)$);
+    \coordinate (p2i) at ($({\radius*cos(160)},{\radius*sin(160)},0)$);
+    \coordinate (p2f) at ($(2) + 1.1*({-0.866},{0.5},0) + 1.7*(0,0,0.75)$);
+    \coordinate (p3i) at ($({\radius*cos(140)},{\radius*sin(140)},0)$);
+    \coordinate (p3f) at ($(2) + 0.7*({-0.866},{0.5},0) + (0,0,0.75)$);
+    \coordinate (p4i) at ($({\radius*cos(125)},{\radius*sin(125)},0)$);
+    \path[draw,stroke=black!80,->] (p1i) to[out = 30, in = 150]  (p1f);
+    \path[draw,stroke=black!80,->] (p2i) to[out = 30, in = 140]  (p2f);
+    \path[draw,stroke=black!80,->] (p3i) to[out = 40, in = 30]  (p3f);
+    \path[draw,stroke=black!80,->] (p4i) to[out = 40, in = -70]  (aim);
+
+\end{tikzpicture}
+\end{document}

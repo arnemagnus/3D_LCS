@@ -1,6 +1,6 @@
-\section[Legacy approach to computing new geodesic level sets]
-{Legacy approach to computing new geodesic\\\phantom{3.6} sets}
-\label{sec:legacy_approach_to_computing_new_geodesic_level_sets}
+\section[Legacy approach to computing new mesh points]
+{Legacy approach to computing new mesh points}
+\label{sec:legacy_approach_to_computing_new_mesh_points}
 
 As tentatively suggested in \cref{sub:parametrizing_the_innermost_level_set},
 each of the points in the first level set
@@ -14,9 +14,9 @@ $\{\mathcal{M}_{i,j}\}$ and $\{\mathcal{M}_{i+1,j}\}$ as \emph{ancestor} and
 sharing a single ancestor is referred to as a \emph{point strain}. The
 considerations to follow rely on each mesh point $\mathcal{M}_{i,j}$ inheriting
 its tangential vector from its direct ancestor; that is,
-$\vct{t}_{i,j}:=\vct{t}_{i-1,j}$. The nuances of this inheritance-based approach
-will be described in greater detail in \emph{\textbf{SETT INN REF TIL
-AVSN OM ARV AV TANGENSVEKTOR}}.
+$\vct{t}_{i,j}:=\vct{t}_{i-1,j}$. The treatment of the special cases of this
+inheritance-based approach will be described in greater detail in \emph{\textbf{SETT INN REF TIL
+AVSN OM ARV AV TANGENSVEKTOR, EV AVSN OM INNSETTING OG FJERNING AV PUNKTER}}.
 
 From the mesh point $\mathcal{M}_{i,j}$, we wish to place a new mesh point
 $\mathcal{M}_{i+1,j}$ at an intersection of the manifold $\mathcal{M}$ and the
@@ -55,7 +55,7 @@ $\vct{\xi}_{2}$-vectors. This was done by defining a local, normalized
 direction field as
 \begin{equation}
     \label{eq:faithful_local_directionfield}
-    \vct{\zeta}(\vct{x},\vct{x}_{\text{aim}}) = %
+    \vct{\mu}(\vct{x},\vct{x}_{\text{aim}}) = %
     \frac{\vct{x}_{\text{aim}}-\vct{x} - \inp[]{\vct{\xi}_{3}(\vct{x})}{\vct{x}_{\text{aim}}-\vct{x}}\vct{\xi}_{3}(\vct{x})}%
     {\norm{\vct{x}_{\text{aim}}-\vct{x} - \inp[]{\vct{\xi}_{3}(\vct{x})}{\vct{x}_{\text{aim}}-\vct{x}}\vct{\xi}_{3}(\vct{x})}},
 \end{equation}
@@ -71,3 +71,5 @@ of (the immediately forthcoming)
 \input{mainmatter/method/figures/aim_procedure}
 
 \input{mainmatter/method/levelset_method_take_one/strain_initial_conditions}
+
+\input{mainmatter/method/levelset_method_take_one/computing_new_s_values}

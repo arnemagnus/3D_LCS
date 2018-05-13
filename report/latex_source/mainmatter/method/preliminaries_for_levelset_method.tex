@@ -135,9 +135,10 @@ determining the tangents $\vct{t}_{i,j}$ using the interpolation curve
 $\mathcal{C}_{i}$, by drawing a vector between two points equidistant to
 $\mathcal{M}_{i,j}$ in either direction along $\mathcal{C}_{i}$. However,
 an inheritance-based approach was found to yield more smoothly parametrized
-manifolds, which were less sensitive to numerical noise. This approach
-will be explained in greater detail in the sections to follow
-(in particular, \textbf{\emph{SETT INN REF TIL AVSNITT OM INNSETTING AV PKT}}).
+manifolds, which were less sensitive to numerical noise. This approach,
+along with the treatment of special cases, will be explained in greater detail
+in the sections to follow (in particular,
+\textbf{\emph{SETT INN REF TIL AVSNITT OM INNSETTING AV PKT}}).
 
 A \emph{guidance} vector $\vct{\rho}_{i,j}$ was computed for each of the
 mesh points $\{\mathcal{M}_{i,j}\}$, in order to keep track of the local
@@ -158,6 +159,6 @@ preceding level set, from which the new point was computed. That is,
 \end{equation}
 where the indices $j$ and $\hat{\jmath}$ generally need not be the same,
 as there is generally not a one-to-one correspondence between points
-in subsequent level sets; see \emph{\textbf{SEKSJON OM MESH MANAGEMENT; INNSETTING OG FJERNING AV PUNKTER OSV}}.
-
+in subsequent level sets; see \emph{\textbf{SEKSJON OM MESH MANAGEMENT; INNSETTING OG FJERNING AV PUNKTER OSV}}
+for details.
 

@@ -32,58 +32,90 @@
 % Define matrices in bold, roman, uppercase font
 \newcommand{\mtrx}[1]{\ensuremath{\mathbfup{\MakeUppercase{#1}}}}
 \usetikzlibrary{%
-    shapes,%
-    arrows,%
+    angles,%
+    arrows.meta,%
+    backgrounds,%
+    calc,%
+    decorations,%
+    fit,%
+    hobby,%
     patterns,%
     positioning,%
-    calc%
+    quotes
 }
 
 
-
-
-\tdplotsetmaincoords{60}{90}
-
 \begin{document}
 
-\tikzstyle{block} = [draw, rectangle, stroke = black!80,fill = gray!15, minimum height = 3em, minimum width = 6em]
-\tikzstyle{cloud} = [draw, stroke=black!80, fill=gray!15,ellipse, minimum height = 3em, minimum width = 6em]
-\tikzstyle{arr} = [single arrow, draw, ->]
+\tdplotsetmaincoords{70}{120}
 
 \begin{tikzpicture}[tdplot_main_coords]
-    % Define vertices of A:
-    \coordinate (a1) at (1,0,0);
-    \coordinate (a2) at (3,0,0);
-    \coordinate (a3) at (2,2,0);
-    % Define vertices of B:
-    \coordinate (b1) at (1.5,1,0.5);
-    \coordinate (b2) at (2.5,1,0.5);
-    \coordinate (b3) at (2,2,-1);
+    \pgfmathsetmacro{\radius}{5}
+    \pgfmathsetmacro{\size}{2.5}
+%    % Place the set of initial points
+    \foreach [count = \i] \ang in {200,240,260,280,165}%
+    {%
+        \coordinate (\i) at ( {\radius*cos(\ang-90)}, {\radius*sin(\ang-90)},{0} );
+    }
 
-    % Define intersection points
-    \coordinate(i1) at (5/3,4/3,0);
-    \coordinate(i2) at (7/3,4/3,0);
+    % Place coordinates giving the circle of positions at which one aims
+    \coordinate (tp) at ({\radius*cos(150)},{\radius*sin(150)},1);
+    \coordinate (bt) at ({\radius*cos(150)},{\radius*sin(150)},-1);
 
 
-    % Define help vertices for filling the triangles in a more aesthetically
-    % pleasing fashion
-    \coordinate (outerb) at (143/64,73/48,0);
-    \coordinate (outera) at (63/42,1,0);
-    \coordinate (innera) at (137/84,1,0);
+    % Define coordinates of half-plane $\mathcal{H}_{i,j}$
+    \coordinate (lu) at ($(2)!2!(tp)$);
+    \coordinate (ld) at ($(2)!2!(bt)$);
+    \coordinate (ru) at ($(lu)+7*({-0.866},{0.5},0)$);
+    \coordinate (rd) at ($(ld)+7*({-0.866},{0.5},0)$);
+    % Shade half-plane
+    \draw[fill=gray!30,draw opacity=0] (lu) -- (ld) -- (rd) -- (ru) -- cycle;
+    % Draw interpolation curve
+    \draw[stroke=black!80,thin,dotted] (70:\radius) arc (70:200:\radius);
+    % Draw $\vct{rho}_{i,j}$ at $x_{i,j}$
+    \path[draw,stroke=black!65,->,thick,dashdotted ] (2) to ($(2) + 3*({-0.866},{0.5},0)$) coordinate (rhoend);
+    \node[below left = 1pt and 7pt of rhoend,rotate=15] {$\vct{\rho}_{i,j}$};
+    \node[above left = 0pt and 0pt of rd] {$\mathcal{H}_{i,j}$};
 
-    % Shade triangle B
-    \draw[pattern = north west lines, pattern color = gray!40, stroke = black!80] (i1) -- (b1) -- (b2) -- (i2);
-    \draw[pattern = north west lines, pattern color = gray!40, stroke = black!80] (i2) -- (b3) -- (outerb);
-    % Shade triangle A
-    \draw[fill=gray!30,stroke=black!80] (a1) -- (a2) -- (i2) -- (innera) -- (outera) -- cycle;
-    \draw[fill=gray!30,draw opacity = 0] (i1) -- (i2) -- (a3) -- cycle;
-    \draw[stroke=black!80] (i1) -- (a3) -- (i2);
-    % Draw vertex segments which are partly obscured
-    \draw[stroke=black!80, densely dotted] (i1) -- (outera);
-    \draw[stroke=black!80, densely dotted] (i1) -- (outerb);
+    % Define coordinates of pivot for attaching $\mathcal{C}_{i}$ label
+    \coordinate (mrk) at ({\radius*cos(195)},{\radius*sin(195)},0);
+    % Attach label
+    \coordinate [above = 10pt of mrk] (lbl);
+    \node at (lbl) {$\mathcal{C}_{i}$};
+    \draw[stroke=black!80] ($(mrk)!0.1!(lbl)$) to[in= 270,out=20] ($(mrk)!0.55!(lbl)$);
 
-    % Draw intersection points
-    \draw[fill=gray!10,stroke=black!80]  (i1) circle (1pt);
-    \draw[fill=gray!10,stroke=black!80]  (i2) circle (1pt);
+    % Draw points in initial level set
+    \foreach \i in {1,2,3,4,5}%
+    {%
+        \draw[fill=gray!10,stroke=black!65] (\i) circle (\size pt);
+    }
+    % Draw semicircle of radius $\Delta_{i}$, centered at $x_{i,j}$
+    \pic[densely dashed,draw,stroke=grey!80,angle radius=39] {angle = bt--2--tp};
+
+    % Label ancestor point
+    \coordinate[below left = 0pt and 30pt of 2] (plbl);
+    \node at (plbl) {$\mathcal{M}_{i,j}$};
+    \draw[stroke=black!80] ($(plbl)!0.4!(2)$) to[out = 20, in = 160]  ($(plbl)!0.85!(2)$);
+
+    % Suggest initial radius
+    \draw[decorate,decoration={brace,amplitude=5pt,raise=0pt},yshift=0pt] ($(2)!1.46!(bt)$) -- (2)   node [midway,left=2pt] {\footnotesize{$\Delta_{i}$}};
+
+    % Draw aim point
+    \draw[stroke=black!65,fill=gray!10] ($(2) + 1.2*({-0.866},{0.5},0) + (0,0,0.75)$) circle (\size pt) coordinate (aim);
+    \node[above right = 0pt and 0pt of aim]  {$\vct{x}_{\text{aim}}$};
+
+    % Draw some trajectories, the last of which manages to find aim point
+    \coordinate (p1i) at ($({\radius*cos(180)},{\radius*sin(180)},0)$);
+    \coordinate (p1f) at ($(2) + 2.8*({-0.866},{0.5},0) + (0,0,0.75)$);
+    \coordinate (p2i) at ($({\radius*cos(160)},{\radius*sin(160)},0)$);
+    \coordinate (p2f) at ($(2) + 1.1*({-0.866},{0.5},0) + 1.7*(0,0,0.75)$);
+    \coordinate (p3i) at ($({\radius*cos(140)},{\radius*sin(140)},0)$);
+    \coordinate (p3f) at ($(2) + 0.7*({-0.866},{0.5},0) + (0,0,0.75)$);
+    \coordinate (p4i) at ($({\radius*cos(125)},{\radius*sin(125)},0)$);
+    \path[draw,stroke=black!80,->] (p1i) to[out = 30, in = 150]  (p1f);
+    \path[draw,stroke=black!80,->] (p2i) to[out = 30, in = 140]  (p2f);
+    \path[draw,stroke=black!80,->] (p3i) to[out = 40, in = 30]  (p3f);
+    \path[draw,stroke=black!80,->] (p4i) to[out = 40, in = -70]  (aim);
+
 \end{tikzpicture}
 \end{document}
