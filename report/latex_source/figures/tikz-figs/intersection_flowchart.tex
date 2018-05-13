@@ -59,10 +59,10 @@ factor=0% Controls how much punctuation protrudes past the end of the line
 
 \begin{tikzpicture}
     \node[align=center] (initial) [block] {Does the M{\"o}ller-Trumbore algorithm suggest that\\at least one ray emanating from a vertex of A,\\passing through another vertex of A, intersects B?};
-    \node[align=center,below right= and -75pt of initial] (deeper) [block] {Does at least one pair of vertices of A,\\which gave rise to such a ray, lie\\on opposite sides of the surface of B?};
+    \node[align=center,below right= and -75pt of initial] (deeper) [block] {Does at least one pair of vertices of A,\\which gave rise to such a ray, lie on\\opposite sides of the surface of B?};
     \node[align=center,below left= 34.2pt and -75pt of initial] (nope) [block] {Triangles A and B do not intersect};
     \node[align=center,below = 32.8pt of nope] (yep) [block] {Triangles A and B intersect};
-    \node[align=center,below = of deeper] (deepest) [block] {Do all intersection points lie\\ along the perimeter of B?};
+    \node[align=center,below = of deeper] (deepest) [block] {Do all intersection points\\ lie on the perimeter of B?};
     \draw[arr] (initial.south) -- ++(0,-0.5) node [auto, swap, xshift = 50, yshift = 6] {Yes} -| (deeper.north);
     \draw[arr] (initial.south) -- ++(0,-0.5) node [auto, swap, xshift = -50, yshift = 6] {No} -| (nope.north);
     \draw[arr] (deeper.south) -- node [auto, swap, xshift = 30, yshift = 0] {Yes} (deepest.north);
