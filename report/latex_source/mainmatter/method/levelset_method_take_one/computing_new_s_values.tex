@@ -8,13 +8,13 @@ from which to compute trajectories of the direction field given by
 mesh points --- rests on the assumption that
 \begin{equation}
     \label{eq:faithful_endpoint_separation}
-    \Delta(\breve{s}) := \norm{\vct{x}_{\text{end}}(\breve{s})-\vct{x}_{i,j}}, %
-    \quad \vct{x}_{\text{end}}\in\mathcal{H}_{i,j}
+    \Delta(\breve{s}) := \norm{\vct{x}_{\text{fin}}(\breve{s})-\vct{x}_{i,j}}, %
+    \quad \vct{x}_{\text{fin}}\in\mathcal{H}_{i,j}
 \end{equation}
 is a continuous function of $\breve{s}$. To this end, we keep track of
 why each computed trajectory is terminated. In particular, we first note whether
 or not each trajectory, corresponding to a start point $\vct{x}(\breve{s})$,
-ends up at some point $\vct{x}_{\text{end}}\in\mathcal{H}_{i,j}$.
+ends up at some point $\vct{x}_{\text{fin}}\in\mathcal{H}_{i,j}$.
 If this is the case, we also note whether the separation $\Delta(\breve{s})$
 (defined in \cref{eq:faithful_endpoint_separation}) corresponding was an
 over- or undershoot compared to the desired separation $\Delta_{i}$.

@@ -26,8 +26,9 @@ were considered.
 For computing trajectories whose initial conditions are given by
 \cref{eq:faithful_initialcondition_interval} and direction fields given by
 \cref{eq:faithful_local_directionfield}, the Dormand-Prince 8(7) adaptive
-ODE solver (cf.\ \cref{tab:butcherdopri87}) was the method of choice. In order
-to ensure that any trajectory did not overstep the half-plane
+ODE solver (cf.\ \cref{tab:butcherdopri87,%
+sub:the_implementation_of_dynamic_runge_kutta_step_size}) was the method of
+choice. In order to ensure that any trajectory did not overstep the half-plane
 $\mathcal{H}_{i,j}$ in passing, the step length was continuously limited from
 above by $\norm{\vct{x}_{\text{aim}}-\vct{x}}$. Moreover, in order to avoid
 spending unreasonable computational resources on trajectories which for
@@ -48,8 +49,8 @@ More precisely, a point $\vct{x}$ was said to lie within $\mathcal{H}_{i,j}$
 provided that
 \begin{equation}
     \label{eq:plane_tolerance}
-    \vct{\chi}: = \frac{\vct{x}-\vct{x}_{i,j}}{\norm{\vct{x}-\vct{x}_{i,j}}};%
-    \quad \abs{\inp[]{\vct{\chi}}{\vct{t}_{i,j}}} < \gamma_{\mathcal{H}},
+    \vct{\eta}: = \frac{\vct{x}-\vct{x}_{i,j}}{\norm{\vct{x}-\vct{x}_{i,j}}};%
+    \quad \abs{\inp[]{\vct{\eta}}{\vct{t}_{i,j}}} < \gamma_{\mathcal{H}},
 \end{equation}
 whereas
 \begin{equation}

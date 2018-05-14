@@ -1,0 +1,70 @@
+\subsection{Computing pseudoradial trajectories directly}
+\label{sub:computing_pseudoradial_trajectories_directly}
+
+Completely analogously to the legacy approach outlined in
+\cref{sec:legacy_approach_to_computing_new_mesh_points}, we define a local
+direction field as
+\begin{equation}
+    \label{eq:revised_direction_field}
+    \vct{\psi}(\vct{x}) = %
+    \frac{\vct{\xi}_{3}(\vct{x})\times\vct{t}_{i,j}}%
+    {\norm{\vct{\xi}_{3}(\vct{x}_{0})\times\vct{t}_{i,j}}},
+\end{equation}
+where $\vct{t}_{i,j}$ is the unit tangent associated with the mesh point
+$\mathcal{M}_{i,j}$. Here, however, we make explicit use of our previously
+mentioned additional degree of freedom --- namely that trajectories within
+the parametrized manifold are allowed arbitrary movements within the
+planes which are locally orthogonal to the $\vct{\xi}_{3}$ direction field,
+rather than being constrained to moving along a three-dimensional curve ---
+by computing the coordinates of the new mesh point $\mathcal{M}_{i+1,j}$
+as the end point of a \emph{single} trajectory.
+
+Any trajectory starting out within the half-plane $\mathcal{H}_{i,j}$ and
+moving in the direction field given by \cref{eq:revised_direction_field} is
+certain to remain within it, as the direction field is everywhere orthogonal
+to its unit normal $\vct{t}_{i,j}$. That is, as long as the direction field
+used in computing said trajectory is everywhere oriented radially outwards.
+Accordingly, we computed a single trajectory in the aforementioned
+direction field, starting out at $\vct{x}_{\text{init}}=\vct{x}_{i,j}$, using
+the Dormand-Prince 8(7) adaptive ODE solver (see \cref{tab:butcherdopri87,%
+sub:the_implementation_of_dynamic_runge_kutta_step_size}), where all of
+the vectors of the intermediary Runge-Kutta steps were corrected, if necessary,
+by continuous comparison with $\vct{\rho}_{i,j}$ and sign-reversion if an
+intermediary vector was directed radially inwards.
+
+Should the $\vct{\xi}_{3}$ direction be parallel to the unit tangent
+$\vct{t}_{i,j}$ locally along the trajectory, the direction field
+\cref{eq:revised_direction_field} would become undefined. In such regions,
+we allowed the Runge-Kutta solver to take a step in the previous direction
+as was used for the immediately preceding step. Numerically, such regions were
+recognized by
+\begin{equation}
+    \label{eq:revised_xi3_tan_parallel}
+    \norm{\vct{\xi}_{3}(\vct{x})\times\vct{t}_{i,j}} < \gamma_{\|},
+\end{equation}
+where $\gamma_{\|}$ is a small tolerance parameter. In order to
+avoid overstepping, the step length of the Dormand-Prince solver was
+continuously limited from above by $\norm{\vct{x}-\vct{x}_{i,j}}-\Delta_{i}$.
+Moreover, the total allowed integration arclength was limited to a scalar
+multiple of $\Delta_{i}$, allowing for the termination of any (hypothetical)
+trajectory which would end up in a stable orbit.
+
+The trajectory integration was immediately interrupted upon reaching a point
+$\vct{x}_{\text{fin}}$ separated from $\vct{x}_{i,j}$ by a distance
+$\Delta_{i}$. Like for the legacy approach, this criterion was checked by means
+of a tolerance parameter, seeing as directly comparing floating-point numbers
+is prone to numerical round-off error. In particular, if a point $\vct{x}$
+satisfied
+\begin{equation}
+    \label{eq:revised_dist_tol}
+    \abs{\frac{\norm{\vct{x}-\vct{x}_{i,j}}}{\Delta_{i}}-1} < \gamma_{\Delta},
+\end{equation}
+with $\gamma_{\Delta}$ being a small number, the point was flagged as lying a
+distance $\Delta_{i}$ from $\vct{x}_{i,j}$. Thus, upon reaching a point
+satisfying \cref{eq:revised_dist_tol}, the trajectory was terminated, and the
+new mesh point $\mathcal{M}_{i+1,j}$ was placed at the trajectory end point
+$\vct{x}_{\text{fin}}$. \Cref{fig:revised_point_generation} depicts a
+typical trajectory used to compute new mesh points in the fashion discussed
+in the above.
+
+\input{mainmatter/method/figures/revised_levelset_point_generation}

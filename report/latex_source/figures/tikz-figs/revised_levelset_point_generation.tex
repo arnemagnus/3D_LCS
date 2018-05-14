@@ -78,6 +78,12 @@
     \node[above left = 0pt and 0pt of rd] {$\mathcal{H}_{i,j}$};
 
 
+    % Define coordinates of pivot for attaching $\mathcal{C}_{i}$ label
+    \coordinate (mrk) at ({\radius*cos(195)},{\radius*sin(195)},0);
+    % Attach label
+    \coordinate [above = 10pt of mrk] (lbl);
+    \node at (lbl) {$\mathcal{C}_{i}$};
+    \draw[stroke=black!80] ($(mrk)!0.1!(lbl)$) to[in= 270,out=20] ($(mrk)!0.55!(lbl)$);
 
     % Draw points in initial level set
     \foreach \i in {1,2,3,4,5}%

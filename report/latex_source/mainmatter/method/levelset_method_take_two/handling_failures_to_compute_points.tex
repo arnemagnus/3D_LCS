@@ -1,0 +1,16 @@
+\subsection{Handling failures to compute satisfactory mesh points}
+\label{sub:handling_failures_to_compute_satisfactory_mesh_points}
+
+\begin{framed}
+Selv om det strengt tatt ikke lenger trenger å være nødvendig å finne
+alle punktene i et nytt levelset for en gitt dist, valgte vi likevel å
+beholde dette kravet fra den opprinnelige metoden.
+(Avsnitt \emph{\textbf{SETT INN REF TIL AVSN OM INNSETTING OG FJERNING AV PKT}}
+vil dog avsløre at dette var nødvendig selv for ny metode)
+
+Ellers mye det samme som for opprinnelig case -- med følgende asterisk:
+Vi slacket ikke progressivt på toleranseparametre. Spesielt siden det bare er
+dist\_tol vi \emph{kunne} slacket, fant vi det mer hensiktsmessig å simpelthen
+redusere dist direkte før vi prøvde på nytt.
+\end{framed}
+
