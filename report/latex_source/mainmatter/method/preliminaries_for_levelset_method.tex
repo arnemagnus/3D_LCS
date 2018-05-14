@@ -162,3 +162,13 @@ as there is generally not a one-to-one correspondence between points
 in subsequent level sets; see \emph{\textbf{SEKSJON OM MESH MANAGEMENT; INNSETTING OG FJERNING AV PUNKTER OSV}}
 for details.
 
+Note that, in computing new mesh points, organized in level sets, a descendant
+point $\mathcal{M}_{i+1,j}$ has to be computed for each ancestor point
+$\mathcal{M}_{i,j}$. This is due to the method being based on parametrizing
+manifolds as a series of smooth topological circles. Should this prove
+not to be possible, given a set of tolerance parameters which will be
+described in greater detail in the sections to come, the computation would
+stop abruptly, leaving the manifold parametrized by however many of its
+geodesic level sets were successfully completed. Further details on the
+stopping criteria for the generation of new geodesic level sets will be
+presented in \emph{\textbf{SETT INN REF TIL AVSN OM TERMINERINGSKRITERIER}}.
