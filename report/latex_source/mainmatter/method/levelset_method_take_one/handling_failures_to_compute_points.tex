@@ -1,0 +1,67 @@
+\subsection{Handling failures to compute satisfactory mesh points}
+\label{sub:handling_failures_to_compute_satisfactory_mesh_points}
+
+As mentioned in
+\cref{sub:selecting_initial_conditions_from_which_to_compute_new_mesh_points},
+it can never be guaranteed that any trajectories which start out at some point
+along the smooth curve $\mathcal{C}_{i}$ will be able to generate a new
+mesh point located within $\mathcal{H}_{i,j}$ which simultaneously satisfies all
+of our defined constraints. Missing out on points in any freshly generated
+level set prohibits the generation of more level sets --- in particular,
+partly dependent on the number of successfully computed points, the
+smoothness of the interpolation curve $\mathcal{C}_{i+1}$ exhibits a critical
+dependence on \emph{all} of the points used for its creation. Accordingly,
+handling tricky mesh points is crucial.
+
+Although it remains impossible to \emph{ensure} that the trajectory-based
+approach to compute new mesh points comes to fruition, the success rate can be
+increased significantly by responding appropriately to an initially failed
+search. Our strategy of choice is based upon adjusting the computed aim point
+incrementally. Specifically, given the initial angular offset $\alpha_{i,j}$ of
+$\vct{x}_{\text{aim}}$ along the semicircle of radius $\Delta_{i}$, with regards
+to the guidance vector $\vct{\rho}_{i,j}$ (see
+\cref{fig:faithful_point_generation}), we perturb
+$\vct{x}_{\text{aim}}$ along said semicircle by the forced alteration
+\begin{subequations}
+    \label{eq:angular_adjustment}
+    \begin{equation}
+        \label{eq:angular_adjustment_part_one}
+        \alpha_{i,j} := \alpha_{i,j} + \delta\alpha,
+    \end{equation}
+    with
+    \begin{equation}
+        \label{eq:angular_adjustment_part_two}
+        \abs{\delta\alpha} \leq \delta\alpha_{\max}.
+    \end{equation}
+\end{subequations}
+Note that the range of offsets --- determined by $\delta\alpha_{\max}$ ---
+should be chosen based on the expected geometry of the manifold as a whole;
+in contrast to the number of attempted angular offsets, which should be
+guided by considerations pertaining to the availability of computational
+resources.
+
+Repeating the iterative point search algorithm outlined in
+the entirety of the current section (that is,
+\cref{sec:legacy_approach_to_computing_new_mesh_points}) for all possible
+perturbation configurations of $\vct{x}_{\text{aim}}$, given by
+\cref{eq:angular_adjustment}, however, still does not guarantee that an
+acceptable mesh point is found. Should that be the case, the entire algorithm
+--- including angular perturbations as outlined in the above --- is then rerun
+with simultaneously and progressively relaxed point acceptance criteria.
+That is, the numerical tolerance parameters $\gamma_{\mathcal{H}}$ and
+$\gamma_{\Delta}$ (cf.\ \cref{eq:plane_tolerance,eq:dist_tolerance}) are
+gradually increased up to pre-set maximum values $\gamma_{\mathcal{H}}^{\max}$
+and $\gamma_{\Delta}^{\max}$.
+
+If, after having increased said tolerance
+parameters to their maximal permitted values without being able to find
+an `acceptable' mesh point, the incomplete level set was promptly discarded,
+and attempted to be computed anew with reduced $\Delta_{i}$ (more on the
+adjustment procedure for $\Delta_{i}$ to follow in
+\emph{\textbf{SETT INN REF TIL AVSN OM STEGLENGDEJUSTERING}}). Should an entire,
+new geodesic level set not be computable even with the minimum permitted step
+length, attempts at expanding the computed manifold further were abandoned;
+constrained by the given (maximal) tolerance parameters, the method simply would
+not be able to expand the computed manifold any further.
+
+

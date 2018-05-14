@@ -1,27 +1,13 @@
 \documentclass[crop]{standalone}
 \usepackage{tikz}
+\usepackage[]{tikz-3dplot}
 \usepackage{pgfplots}
-\usepackage[]{tkz-euclide}
-\usetkzobj{all}
 \pgfplotsset{compat=1.15}
 \usepackage[]{amsmath}
 \usepackage[]{libertine}
 \usepackage[libertine]{newtxmath}
 \usepackage[]{bm}
 \usepackage[]{physics}
-% Typographical refinement
-\usepackage[activate={true,nocompatibility},% Let microtype do its magic
-%                                           % without trying to keep page breaks
-%                                           % etc.
-final=true,% Activate microtype even when in draft mode
-kerning=true,% Fixes kerning issues
-spacing=true,% Fixes spacing issues
-tracking=true,% Adds letter spacing for small caps
-shrink=30,% Characters are stretched or shrunk in order to improve justification
-stretch=30,% up to 3 %
-factor=0% Controls how much punctuation protrudes past the end of the line
-]{microtype}
-\microtypecontext{spacing=nonfrench} % <-- No spacing found for Linux Libertine
 % Macros for greek letters in roman style, in math mode
 \DeclareRobustCommand{\mathup}[1]{%
 \begingroup\ensuremath\changegreek\mathrm{#1}\endgroup}
@@ -46,91 +32,108 @@ factor=0% Controls how much punctuation protrudes past the end of the line
 % Define matrices in bold, roman, uppercase font
 \newcommand{\mtrx}[1]{\ensuremath{\mathbfup{\MakeUppercase{#1}}}}
 \usetikzlibrary{%
-    shapes,%
-    arrows,%
+    angles,%
+    arrows.meta,%
+    backgrounds,%
+    calc,%
+    decorations,%
+    fit,%
+    hobby,%
+    patterns,%
     positioning,%
-    intersections,%
-    calc%
+    quotes
 }
-
 
 
 \begin{document}
 
-\tikzstyle{block} = [draw, rectangle, stroke = black!80,fill = gray!15, minimum height = 3em, minimum width = 6em]
-\tikzstyle{arr} = [single arrow, draw, ->]
+\tdplotsetmaincoords{70}{120}
 
-\begin{tikzpicture}
-    \node[align=center] (top) [block] {Choose a traversion direction (e.g.\ clockwise or counterclockwise) \\of $\mathcal{C}_{i}$, along which to find trajectory start points};
-    \node[align=center, below = 15pt of top] (ficticious) [block] {Use a ficticious trajectory starting at $\vct{x}_{i,j}$, instantly terminated and \\flagged as an undershoot due to $\vct{x}_{i,j}\in\mathcal{H}_{i,j}$ as the baseline. \\Initialize $\delta\breve{s}:=\pm\delta\breve{s}_{\min}$ (dep. on traversion direction) and $\breve{s}:=s_{j}$};
-    \node[align=center, below = 15pt of ficticious] (flipcheck) [block] {Update the arclength parameter by $\breve{s}:=\breve{s}+\delta\breve{s}$.\\Check whether or not $\breve{s} \in \{[s_{j}-\varsigma,s_{j})\cup(s_{j},s_{j}+\varsigma]\}$};
-    \node[align=center, below left = 20pt and 25pt of flipcheck] (flip) [block] {Attempt to start over with\\ reversed traversion direction};
-    \node[align=center, above = 22.5pt  of flip] (flip-terminate) [block] {Search aborted flagged as a failure; \\Unable to compute new mesh point\\ given current restrictions};
-    \node[align=center, below = 15pt of flipcheck] (launch) [block] {Compute trajectory starting at $\vct{x}_{\text{init}} = \mathcal{C}_{i}(\breve{s})$};
+\begin{tikzpicture}[tdplot_main_coords]
+    \pgfmathsetmacro{\radius}{5}
+    \pgfmathsetmacro{\size}{2.5}
+%    % Place the set of initial points
+    \foreach [count = \i] \ang in {205,240,260,280,165}%
+    {%
+        \coordinate (\i) at ( {\radius*cos(\ang-90)}, {\radius*sin(\ang-90)},{0} );
+    }
 
-    \node[align=center, above right =10pt and 50pt of flipcheck] (decrease-right) [block] {Decrease $\abs{\delta\breve{s}}$, not\\ beyond $\delta\breve{s}_{\min}$};
-    \node[align=center, below right = 10pt and 50pt of flipcheck] (increase-right) [block] {Increase $\abs{\delta\breve{s}}$, not\\ beyond $\delta\breve{s}_{\max}$};
-
-    \node[align=center, below left = 25pt and 5pt of launch] (accepted) [block] {Trajectory satisfies $\Delta(\breve{s})=\Delta_{i}$ \\ (cf. eq. (3.28))};
-    \node[align=center, below right = 10pt and -126pt of accepted] (hit-prevhit) [block] {Previous: Overshoot (undershoot)\\New: \phantom{xxx} Overshoot (undershoot)};
-    \node[align=center, below right = 10pt and -146pt of hit-prevhit] (hit-prevmiss) [block] {Previous: Overshoot (undershoot) (or miss)\\New: \phantom{xxx} Undershoot (overshoot) \phantom{xxxxxxx}};
+    % Place coordinates giving the circle of positions at which one aims
+    \coordinate (tp) at ({\radius*cos(150)},{\radius*sin(150)},1);
+    \coordinate (bt) at ({\radius*cos(150)},{\radius*sin(150)},-1);
 
 
-    \node[align=center, right = 40pt of accepted] (exit-success) [block] {New mesh point at $\vct{x}_{\text{end}}(\breve{s})$};
+    % Define coordinates of half-plane $\mathcal{H}_{i,j}$
+    \coordinate (lu) at ($(2)!2!(tp)$);
+    \coordinate (ld) at ($(2)!2!(bt)$);
+    \coordinate (ru) at ($(lu)+7*({-0.866},{0.5},0)$);
+    \coordinate (rd) at ($(ld)+7*({-0.866},{0.5},0)$);
+    % Shade half-plane
+    \draw[fill=gray!30,draw opacity=0] (lu) -- (ld) -- (rd) -- (ru) -- cycle;
+    % Draw interpolation curve
+    \draw[stroke=black!80,thin,dotted] (70:\radius) arc (70:200:\radius);
+    % Draw $\vct{rho}_{i,j}$ at $x_{i,j}$
+    \path[draw,stroke=black!65,->,thick,dashdotted ] (2) to ($(2) + 5*({-0.866},{0.5},0)$) coordinate (rhoend);
+    \node[below left = 7.5pt and 35pt of rhoend,rotate=12.5] {$\vct{\rho}_{i,j}$};
+    \node[above left = 0pt and 0pt of rd] {$\mathcal{H}_{i,j}$};
 
-    \node[align=center, below right = 25pt and 5pt of launch] (miss-prevhit) [block] {Previous: Miss};
-    \node[align=center, below right = 10pt and -61pt of miss-prevhit](miss-prevmiss) [block] {Previous: Hit};
-    \node[align=center, below right = 10pt and -67pt of miss-prevmiss] (backtrack-miss) [block] {Backtrack, set $\breve{s}=\breve{s}_ {\text{prev}}$};
+    % Define coordinates of pivot for attaching $\mathcal{C}_{i}$ label
+    \coordinate (mrk) at ({\radius*cos(195)},{\radius*sin(195)},0);
+    % Attach label
+    \coordinate [above = 10pt of mrk] (lbl);
+    \node at (lbl) {$\mathcal{C}_{i}$};
+    \draw[stroke=black!80] ($(mrk)!0.1!(lbl)$) to[in= 270,out=20] ($(mrk)!0.55!(lbl)$);
 
-    \draw[arr] (top.south) -- (ficticious.north);
-    \draw[arr] (ficticious.south) -- (flipcheck.north);
-    \draw[arr] (flipcheck.south) -- (launch.north) node [auto, swap, xshift = 10, yshift = 7.5] {Yes};
-    \draw[arr] (flipcheck.west) -- ++(-0.025,0) -| ($(flip.east)+(0.6,0)$)-- (flip.east) node [auto, swap, xshift = 27.5, yshift = 15] {No};
-    \draw[arr] (flip.west) --++(-0.75,0) --++(0,3.56) -- (ficticious.west) node [align=center, auto, swap, xshift=-65, yshift=0] {Only one direction\\ attempted; reverse};
-    \draw[arr] (flip.north) -- (flip-terminate.south) node [auto, swap, xshift = 9, yshift = -12.5] {Attempted both directions};
-    \draw[arr] (accepted.east) -- (exit-success.west);
+    % Draw points in initial level set
+    \foreach \i in {1,2,3,4,5}%
+    {%
+        \draw[fill=gray!10,stroke=black!65] (\i) circle (\size pt);
+    }
+    % Draw semicircle of radius $\Delta_{i}$, centered at $x_{i,j}$
+    \pic[densely dashed,draw,stroke=grey!80,angle radius=39] {angle = bt--2--tp};
 
-    \draw[arr] (launch.south) -- ++(0,-0.6) -- ++(6.2,0) -- ++(0,-0.81) -- (miss-prevhit.east) node [auto, swap, xshift = -65, yshift = 30] {Trajectory missed $\mathcal{H}_{i,j}$};
-    \draw[arr] (launch.south) -- ++(0,-0.6) -- ++(-8.5,0) -- ++(0,-0.81) -- (accepted.west) node [auto, swap, xshift = 150, yshift = 30] {Trajectory hit $\mathcal{H}_{i,j}$};
-    \draw[arr] (launch.south) -- ++(0,-0.6) -- ++(-8.5,0) -- ++(0,-2.23) -- (hit-prevhit.west);
-    \draw[arr] (launch.south) -- ++(0,-0.6) -- ++(-8.5,0) -- ++(0,-3.65) -- (hit-prevmiss.west);
 
-    \draw[arr] (hit-prevhit.east) -- ++(5,0) -- ++(0,0.719) -- ++(0.32,0);
 
-    \draw[arr] (hit-prevmiss.east) -- (backtrack-miss.west);
-    \draw[arr] (miss-prevmiss.west) -- ++(-0.5,0) -- ++(0,-1.42);
-    % Define start and end points for path 1 (downwards)
-    \coordinate (p0) at ($(launch.south) +(0,-0.6) +(6.2,0) + (0,-0.81)$);
-    \coordinate (p1) at ($(p0)+(0,-1.44)$);
+    % Label ancestor point
+    \coordinate[below left = 0pt and 30pt of 2] (plbl);
+    \node at (plbl) {$\mathcal{M}_{i,j}$};
+    \draw[stroke=black!80] ($(plbl)!0.4!(2)$) to[out = 20, in = 160]  ($(plbl)!0.85!(2)$);
 
-    % Compute path 1
-    \path[name path=line 1] (p0)--(p1);
 
-%    \draw[arr] (launch.south) -- ++(0,-0.6) -- ++(6.2,0) -- ++(0,-2.23) -- (miss-prevmiss.east);
+    % Define aim point
+    \coordinate (aim) at ($(2) + 1.2*({-0.866},{0.5},0) + (0,0,0.75)$);
 
-    % Draw path 2
-    \draw[arr,name path = line 2] (miss-prevhit.west) -- ++(-0.7,0) -- ++(0,-0.7) -- ++(4.2,0) -- (increase-right.south);
+    % Define support point in semicircle, to indicate radius
+    \coordinate (supp) at ($(2) + 1.57*({-0.866},{0.5},0)$);
+    % Draw semicircle to indicate angle offset of aim point
+    \pic[draw,stroke=gray!80,angle eccentricity = 1.7,angle radius=10] {angle = supp--2--aim};
+    % Add text node to explain the angle
+    \node[below right = 10pt and -2.5pt of 2] (mrk) {$\alpha_{i,j}$};
+    % Add anchor for line from node to within angle
+    \coordinate (inang) at ($(2) + 0.25*({-0.866},{0.5},0) + (0,0,0.25)$);
+    \path[draw,stroke=black!80,thin] ($(mrk)!0.1!(inang)$) to [out = 60, in = -180+60] ($(mrk)!0.8!(inang)$);
+    % Draw vector from start point to aim point
+    \draw[stroke=black!65,thin,dashed] (2) -- (aim);
+    % Redraw start point
+    \draw[fill=gray!19,stroke=black!65] (2) circle (\size pt);
+    % Draw aim point
+    \draw[stroke=black!65,fill=gray!10] (aim) circle (\size pt);
+    \node[above right = 0pt and 0pt of aim]  {$\vct{x}_{\text{aim}}$};
+    % Suggest initial radius
+    \draw[decorate,decoration={brace,amplitude=5pt,raise=0pt},yshift=0pt] ($(2)!1.46!(bt)$) -- (2)   node [midway,left=2pt] {\footnotesize{$\Delta_{i}$}};
 
-    % Find intersection of first and second paths
-    \path[name intersections={of = line 1 and line 2}];
-    \coordinate (S) at (intersection-1);
-    % Path a circle around this intersection for the arc
-    \path[name path = circle] (S) circle(5pt);
-
-    % Find intersections of first line and circle
-    \path[name intersections={of = circle and line 1}];
-    \coordinate (I1) at (intersection-1);
-    \coordinate (I2) at (intersection-2);
-
-    % Draw normal line segments
-    \draw (launch.south) -- ++(0,-0.6) -- ++(6.2,0) -- (p0) -- (I1);
-    \draw[arr] (I2) -- (p1) -- (miss-prevmiss.east);
-    \tkzDrawArc[color=black](S,I1)(I2);
-
-    \draw[arr] (backtrack-miss.east) -- ++(1.75,0) -- ++(0,7.804) -- (decrease-right.east);
-    \draw[arr] (decrease-right.west) -- ++(-0.5,0) -- ++(0,-1.42) -- (flipcheck.east);
-    \draw[arr] (increase-right.west) -- ++(-0.5,0) -- ++(0,1.42) ;
-
+    % Draw some trajectories, the last of which manages to find aim point
+    \coordinate (p1i) at ($({\radius*cos(180)},{\radius*sin(180)},0)$);
+    \coordinate (p1f) at ($(2) + 2.8*({-0.866},{0.5},0) + (0,0,0.75)$);
+    \coordinate (p2i) at ($({\radius*cos(160)},{\radius*sin(160)},0)$);
+    \coordinate (p2f) at ($(2) + 1.1*({-0.866},{0.5},0) + 1.7*(0,0,0.75)$);
+    \coordinate (p3i) at ($({\radius*cos(140)},{\radius*sin(140)},0)$);
+    \coordinate (p3f) at ($(2) + 0.7*({-0.866},{0.5},0) + (0,0,0.75)$);
+    \coordinate (p4i) at ($({\radius*cos(125)},{\radius*sin(125)},0)$);
+    \path[draw,stroke=black!80,->] (p1i) to[out = 30, in = 150]  (p1f);
+    \path[draw,stroke=black!80,->] (p2i) to[out = 30, in = 140]  (p2f);
+    \path[draw,stroke=black!80,->] (p3i) to[out = 40, in = 30]  (p3f);
+    \path[draw,stroke=black!80,->] (p4i) to[out = 40, in = -70]  (aim);
 
 \end{tikzpicture}
 \end{document}

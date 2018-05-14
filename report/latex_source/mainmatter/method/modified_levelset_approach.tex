@@ -1,3 +1,38 @@
 \section[Revised approach to computing new mesh points]
 {Revised approach to computing new mesh points}
 \label{sec:revised_approach_to_computing_new_mesh_points}
+
+The version of the method of geodesic level sets presented by
+\textcite{krauskopf2005survey} is centered around computing manifolds
+defined by being everywhere tangent to some three-dimensional vector field
+(as a concrete example of application, \citeauthor{krauskopf2005survey}
+seek to compute the strange attractor of the Lorenz system). As noted by
+\textcite{oettinger2016autonomous}, repelling LCSs in 3D consist of subsets
+of manifolds defined by being everywhere orthgonal to the $\vct{\xi}_{3}$
+direction field --- which is reflected in existence criterion
+\eqref{eq:lcs_condition_c}. Thus, compared to the type of systems considered
+by \citeauthor{krauskopf2005survey}, we have an extra degree of freedom
+when seeking to identify repelling LCSs in 3D; in particular, moving along
+a manifold in arbitrary directions within a planes orthogonal to the local
+$\vct{\xi}_{3}$ vector is allowed, in contrast to being constrained to moving
+back and forth along a curve. The paragraphs (and sections) to follow will
+reveal how we utilized the additional degree of freedom to reduce the number of
+calculations necessary to compute new mesh points.
+
+The overarching principles, nevertheless, remain the same. Like for the legacy
+approach presented in
+\cref{sec:legacy_approach_to_computing_new_mesh_points}, mesh points in
+level set $\mathcal{M}_{i+1}$ are computed from the points in the prior level
+set $\mathcal{M}_{i}$. Similarly, the considerations to follow rely on
+each mesh point $\mathcal{M}_{i,j}$ having inherited its tangential vector
+from its direct ancestor; namely, $\vct{t}_{i,j}:=\vct{t}_{i-1,j}$. How
+the special cases of this inheritance-based approach were treated, will be
+described in greater detail in
+\emph{\textbf{SETT INN REF TIL AVSN OM ARV AV TANGENSVEKTOR; EV AVSN OM INNSETTING OG FJERNING AV PUNKTER}}.
+Moreover, from the mesh point $\mathcal{M}_{i,j}$, we wish to place a new
+mesh point $\mathcal{M}_{i+1,j}$ at an intersection of the manifold
+$\mathcal{M}$ and the half-plane $\mathcal{H}_{i,j}$ located a distance
+$\Delta_{i}$ from $\mathcal{M}_{i,j}$. As usual, $\mathcal{H}_{i,j}$ is defined
+by the coordinate $\vct{x}_{i,j}$, the unit normal $\vct{t}_{i,j}$ and
+the guidance vector $\vct{\rho}_{i,j}$ (the latter of which is defined in
+\cref{eq:innermost_prevvec,eq:general_prevvec}).

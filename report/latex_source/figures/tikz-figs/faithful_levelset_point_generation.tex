@@ -92,17 +92,35 @@
     % Draw semicircle of radius $\Delta_{i}$, centered at $x_{i,j}$
     \pic[densely dashed,draw,stroke=grey!80,angle radius=39] {angle = bt--2--tp};
 
+
+
     % Label ancestor point
     \coordinate[below left = 0pt and 30pt of 2] (plbl);
     \node at (plbl) {$\mathcal{M}_{i,j}$};
     \draw[stroke=black!80] ($(plbl)!0.4!(2)$) to[out = 20, in = 160]  ($(plbl)!0.85!(2)$);
 
+
+    % Define aim point
+    \coordinate (aim) at ($(2) + 1.2*({-0.866},{0.5},0) + (0,0,0.75)$);
+
+    % Define support point in semicircle, to indicate radius
+    \coordinate (supp) at ($(2) + 1.57*({-0.866},{0.5},0)$);
+    % Draw semicircle to indicate angle offset of aim point
+    \pic[draw,stroke=gray!80,angle eccentricity = 1.7,angle radius=10] {angle = supp--2--aim};
+    % Add text node to explain the angle
+    \node[below right = 10pt and -2.5pt of 2] (mrk) {$\alpha_{i,j}$};
+    % Add anchor for line from node to within angle
+    \coordinate (inang) at ($(2) + 0.25*({-0.866},{0.5},0) + (0,0,0.25)$);
+    \path[draw,stroke=black!80,thin] ($(mrk)!0.1!(inang)$) to [out = 60, in = -180+60] ($(mrk)!0.8!(inang)$);
+    % Draw vector from start point to aim point
+    \draw[stroke=black!65,thin,dashed] (2) -- (aim);
+    % Redraw start point
+    \draw[fill=gray!19,stroke=black!65] (2) circle (\size pt);
+    % Draw aim point
+    \draw[stroke=black!65,fill=gray!10] (aim) circle (\size pt);
+    \node[above right = 0pt and 0pt of aim]  {$\vct{x}_{\text{aim}}$};
     % Suggest initial radius
     \draw[decorate,decoration={brace,amplitude=5pt,raise=0pt},yshift=0pt] ($(2)!1.46!(bt)$) -- (2)   node [midway,left=2pt] {\footnotesize{$\Delta_{i}$}};
-
-    % Draw aim point
-    \draw[stroke=black!65,fill=gray!10] ($(2) + 1.2*({-0.866},{0.5},0) + (0,0,0.75)$) circle (\size pt) coordinate (aim);
-    \node[above right = 0pt and 0pt of aim]  {$\vct{x}_{\text{aim}}$};
 
     % Draw some trajectories, the last of which manages to find aim point
     \coordinate (p1i) at ($({\radius*cos(180)},{\radius*sin(180)},0)$);
