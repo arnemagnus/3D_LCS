@@ -55,14 +55,17 @@ us to dynamically select new trajectory start points along $\mathcal{C}_{i}$.
 We do so by increasing the (quasi-)arclength increment $\delta\breve{s}$ as long
 as there is no change in trajectory termination status, and, conversely,
 backtracking and reducing $\delta\breve{s}$ when a status change is detected.
-This process is shown schematically in \emph{\textbf{SETT INN REF TIL FIGUR
-MED FLOWCHART}}. Note that our algorithm is not perfect; theoretical closed
-loops exist (left for the interested reader to find, as an exercise). However,
-in our experience, the iterative search process never became stuck beyond
-recovery; likely due to the direction field
-\cref{eq:faithful_local_directionfield} yielding well-behaved trajectories
+This process is shown schematically in \cref{fig:s_update_flowchart}. Note that
+our algorithm is not perfect; theoretical closed loops exist (left for the
+interested reader to find, as an exercise\footnote{Hint: What would happen
+if the very first computed trajectory failed to intersect with
+$\mathcal{H}_{i,j}$?}). However, in our experience, the iterative search process
+never became stuck beyond recovery; likely due to the direction field (see
+\cref{eq:faithful_local_directionfield}) yielding well-behaved trajectories
 (and, possibly, numerical round-off error). As we assume asymptotic behaviour
 close to any regions in which $\Delta(\breve{s})$ is not defined (that is,
 regions where no trajectories reach the half-plane $\mathcal{H}_{i,j}$, cf.\
 \cref{eq:faithful_endpoint_separation}), the adjustment of $\delta\breve{s}$
 is treated in the same fashion there.
+
+\input{mainmatter/method/figures/s_update_flowchart}
