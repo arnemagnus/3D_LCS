@@ -2,7 +2,6 @@
 \usepackage{tikz}
 \usepackage[]{tikz-3dplot}
 \usepackage{pgfplots}
-\pgfplotsset{compat=1.15}
 \usepackage[]{amsmath}
 \usepackage[]{libertine}
 \usepackage[libertine]{newtxmath}
@@ -13,7 +12,6 @@
 \begingroup\ensuremath\changegreek\mathrm{#1}\endgroup}
 \DeclareRobustCommand{\mathbfup}[1]{%
 \begingroup\ensuremath\changegreek\bm{\mathrm{#1}}\endgroup}
-
 
 \makeatletter
 \def\changegreek{\@for\next:={%
@@ -43,56 +41,126 @@
     positioning,%
     quotes
 }
+\makeatletter
+\tikzset{
+  fitting node/.style={
+    inner sep=0pt,
+    fill=none,
+    draw=none,
+    reset transform,
+    fit={(\pgf@pathminx,\pgf@pathminy) (\pgf@pathmaxx,\pgf@pathmaxy)}
+  },
+  reset transform/.code={\pgftransformreset}
+}
+\makeatother
+% A simple empty decoration, that is used to ignore the last bit of the path
+\pgfdeclaredecoration{ignore}{final}
+{
+\state{final}{}
+}
+
+% Declare the actual decoration.
+\pgfdeclaremetadecoration{middle}{initial}{
+    \state{initial}[
+        width={0pt},
+        next state=middle
+    ]
+    {\decoration{moveto}}
+
+    \state{middle}[
+        width={\pgfdecorationsegmentlength*\pgfmetadecoratedpathlength},
+        next state=final
+    ]
+    {\decoration{curveto}}
+
+    \state{final}
+    {\decoration{ignore}}
+}
+
+
+% Create a key for easy access to the decoration
+\tikzset{middle segment/.style={decoration={middle},decorate, segment length=#1}}
+
+\def\getangle(#1)(#2)#3{%
+  \begingroup%
+    \pgftransformreset%
+    \pgfmathanglebetweenpoints{\pgfpointanchor{#1}{center}}{\pgfpointanchor{#2}{center}}%
+    \expandafter\xdef\csname angle#3\endcsname{\pgfmathresult}%
+  \endgroup%
+}
 
 
 \begin{document}
 
-\tdplotsetmaincoords{60}{25}
+\tdplotsetmaincoords{70}{20}
 
 \begin{tikzpicture}[tdplot_main_coords]
-    \pgfmathsetmacro{\innerradius}{7.5}
-    \pgfmathsetmacro{\size}{2.5}
-    \pgfmathsetmacro{\innerarclowerangle}{35}
-    \pgfmathsetmacro{\innerarcupperangle}{100}
-
-    % Place the set of initial points which remain after deletion
-    \foreach [count=\i] \ang in {35,64,90}%
+	\pgfmathsetmacro{\innerxscl}{2.5}
+    \pgfmathsetmacro{\inneryscl}{2.5}
+	\pgfmathsetmacro{\outerxscl}{4.5}
+	\pgfmathsetmacro{\outeryscl}{4.5}
+    \pgfmathsetmacro{\innernum}{11} % = Degree span / separation, outer for loop
+    \pgfmathsetmacro{\outernum}{21}
+    % Inner geodesic level set
+    \foreach [count = \i] \a in {15,48,...,345}%
     {%
-        \draw[draw=black!80,fill=gray!20] ( {\innerradius*cos(\ang)}, {\innerradius*sin(\ang)}, 0 ) circle (\size pt) coordinate (i\i);
-    }
-    \draw[draw=gray!80,fill=gray!10] ( {\innerradius*cos(75)}, {\innerradius*sin(75)}, 0 ) circle (\size pt) coordinate (doomed);
+        \coordinate (i\i) at ( {\innerxscl*cos(\a)} , {\inneryscl*sin(\a)} , 0  ) ;
+    }%
+    \draw[stroke=black!80,thin,dotted] (i1) to [ curve through ={(i2) .. (i3) .. (i4) .. (i5) .. (i6) .. (i7) .. (i8) .. (i9) .. (i10) .. (i11) }] (i1);
+    \foreach \i in {1,...,\innernum}%
+    {%
+        \draw[stroke=black!80, fill=gray!20] (i\i) circle (3pt);
+    }%
 
-    % Place nodes of inner level set
-    \node[above right = 0pt and -5pt of i1] {\footnotesize $\mathcal{M}_{i,j-1}$};
-    \node[above right = 0pt and -5pt of i2] {\footnotesize $\mathcal{M}_{i,j}$};
-    \node[above right = -1pt and -3.5pt of doomed] {\footnotesize $\mathcal{M}_{i,j+1}$};
-    \node[above right = 0pt and -5pt of i3] {\footnotesize $\mathcal{M}_{i,j+2}$};
+    % Outer geodesic level set
+    \foreach [count = \i] \a in {10,27,...,350}%
+    {%
+        \coordinate (o\i) at ( {\outerxscl*cos(\a)} , {\outeryscl*sin(\a)} , 0 ) ;
+    }%
+    \draw[stroke=black!80,thin,dotted] (o1) to [ tension = 0.3, curve through ={(o2)  .. (o3)  .. (o4)  .. (o5)  .. (o6)  .. (o7)  ..
+                                                                 (o8)  .. (o9)  .. (o10) .. (o11) .. (o12) .. (o13) ..
+                                                             (o14) .. (o15) .. (o16) .. (o17) .. (o18) .. (o19) .. (o20) .. (o21)}] (o1);
 
-    % Define helper coordinates to place small bracket
-    \coordinate[above right = 0pt and 0pt of doomed] (sb1);
-    \coordinate[above right = 0pt and 0pt of i2] (sb2);
-    % Place small bracket
-    \draw[decorate,decoration={brace,amplitude=2.5pt,raise=5pt},yshift=0pt] (sb2) -- (sb1) node [midway,below right = -12pt and -35pt,rotate=-26] {\footnotesize $\norm{\vct{x}_{i+1,j+1}-\vct{x}_{i+1,j}} < \Delta_{\min}$};
+    \draw[stroke=black!80, fill=gray!20] (o1) circle (3pt);
+    \foreach \i in {3,...,\outernum}%
+    {%
+        \draw[stroke=black!80, fill=gray!20] (o\i) circle (3pt);
+    }%
+    \begin{scope}[on background layer]
+    % Draw line parallel to prev_vec
+    \draw[stroke=black!80,->,densely dashdotted,thick] (o1) to ($(i1)!1.25!(o1)$) coordinate (vf); % Draw 225 % of the path from (i1) to (o1)
+    \node[below left = 1.5pt and 3.5pt of vf,rotate=-7.5] {$\vct{\rho}_{i,j}$};
+    % Suggested new point
+    \coordinate (n1) at ( {5.2*cos(10)} , {5.1*cos(10)}, 0.1 );
+    \draw[stroke=black!80,fill=gray!20] (n1) circle (3pt) ;
+    % Draw prev_vec for new point
+    \draw[stroke=black!80,->,thick] (o1) to (n1) node [below left = 10pt and 5pt]};%($(o1)!0.95!(n1)$);
 
-    % Define helper coordinates to place first of two big brackets
-    \coordinate[below left = 0pt and 0pt of i3] (bb1);
-    \coordinate[below left = 0pt and 0pt of i2] (bb2);
-    % Place first bracket
-    \draw[decorate,decoration={brace,amplitude=2.5pt,raise=25pt},yshift=0pt] (bb2) -- (bb1) node [midway,below right = 12pt and -40pt,rotate=-20.8] {\footnotesize $\norm{\vct{x}_{i+1,j+2}-\vct{x}_{i+1,j}}$};
+    \pic [draw, stroke=black!80, angle radius = 15,angle eccentricity = 1.5] {angle= vf--o1--n1};
+    \node at (o1) [above right = -4pt and 14pt] {$\alpha_{i,j}$};
 
-    % Define helper coordinates to place second of two big brackets
-    \coordinate[above right = 0pt and 0pt of doomed] (gb1);
-    \coordinate[below left = 0pt and 0pt of i1] (gb2);
-    % Place second bracket
-    \draw[decorate,decoration={brace,amplitude=2.5pt,raise=25pt},yshift=0pt] (gb1) -- (gb2) node [midway,above right = 42pt and -8pt,rotate=-40.5] {\footnotesize $\norm{\vct{x}_{i+1,j+1}-\vct{x}_{i+1,j-1}}$};
+    \end{scope}
 
-%    % Define helper coordinates to place bracket
-%    \coordinate[above right = 3.5pt and 1.5pt of o3]  (b1);
-%    \coordinate[above right = 3.5pt and 1.5pt of o2]  (b2);
+    % Add nodes
+    \node at (i1) [below right] {$\mathcal{M}_{i-1,j}$};
+    \node at (o1) [below right] {$\mathcal{M}_{i,j}$};
+    \node at (n1) [below right= 3pt and -5pt] {$\mathcal{M}_{i+1,j}$};
 
-%    % Draw bracket
+    % Denote inner and outer parametrizations
+    \node at ($(i3)!0.6!(i4)$) (innerpt) {};
+    \node [below left =6pt and 1pt of innerpt] (innermrk) {$\mathcal{C}_{i-1}$};
+
+    \draw[stroke=black!80] ($(innerpt)!0.7!(innermrk)$) to [out=30,in=-60] ($(innermrk)!0.9!(innerpt)$);
+
+    \node at ($(o4)!0.6!(o5)$) (outerpt) {};
+    \node [below right=5pt and 1pt of outerpt] (outermrk) {$\mathcal{C}_{i}$};
+    \draw[stroke=black!80] ($(outerpt)!0.6!(outermrk)$) to [out=135,in=-70] ($(outermrk)!0.9!(outerpt)$);
+
+    % Add brace indicating separation between ancestor and descendant point
+    \draw[decorate,decoration={brace,amplitude=2.5pt,raise=7.5pt},yshift=0pt] (o1) -- (n1) node [midway,above right = 7.5pt and -12pt,rotate=30] {$\Delta_{i}$};
 
 
 
 \end{tikzpicture}
 \end{document}
+

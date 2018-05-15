@@ -3,33 +3,34 @@
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \resizebox{0.9\linewidth}{!}{\includestandalone{figures/tikz-figs/density_management_inserting_new_point}}
-        \caption[]{{\small View along the negative $z$-axis}}
-        \label{fig:u0_dom_err_bs32}
+        \caption[]{{\small Inserting a new mesh point inbetween a \\\phantom{(a)} pair of mesh points which are too far apart}}
+        \label{fig:mesh_management_pure_insertion}
     \end{subfigure}
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \resizebox{0.9\linewidth}{!}{\includestandalone{figures/tikz-figs/density_management_removing_point}}
-        \caption[]{{\small View along the positive $y$-axis}}
-        \label{fig:u0_dom_err_bs54}
+        \caption[]{{\small Removing a mesh point too close to another,\\\phantom{(b)} if the ensuing separations are acceptable}}
+        \label{fig:mesh_management_pure_deletion}
     \end{subfigure}
-    \caption[Visualization of a typical trajectory used to compute a new mesh point, using the revised approach]
-    {Visualization of a typical trajectory used to compute a new mesh point,
-        using the revised  approach. A trajectory is computed, starting
-        at $\vct{x}_{i,j}$ (that is, the coordinates corresponding to the mesh
-        point $\mathcal{M}_{i,j}$) and moving in the direction field given by
-        \cref{eq:revised_direction_field}, in order to find a new mesh point
-        at the intersection between the manifold $\mathcal{M}$ and the
-        half-plane $\mathcal{H}_{i,j}$ (shaded), located a distance
-        $\Delta_{i}$ from $\mathcal{M}_{i,j}$. $\mathcal{H}_{i,j}$ is defined
-        by the point $\vct{x}_{i,j}$, its unit normal $\vct{t}_{i,j}$ (not
-        shown) and the (quasi-)radial unit vector $\vct{\rho}_{i,j}$
-        (dashdotted). The half-circle of radius $\Delta_{i}$,
-        centered in $\vct{x}_{i,j}$ and lying within $\mathcal{H}_{i,j}$, on
-        which we seek to find a new mesh point, is dashed. As soon as a
-        trajectory reaches a point separated from $\mathcal{M}_{i,j}$ by
-        a distance $\Delta_{i}$ (per \cref{eq:revised_dist_tol}), the
-        integration is stopped, and a new mesh point $\mathcal{M}_{i+1,j}$
-        (not shown) is placed at the trajectory end point
-    $\vct{x}_{\text{fin}}$.}
+    \caption[Our approach to inserting new, or removing, mesh points to maintain
+    mesh point density]
+    {Our approach to inserting new, or removing, mesh points to maintain
+        mesh point density. When two neighboring mesh points in a freshly
+        computed level set are too far apart with regards to the given mesh
+        parameter $\Delta_{\max}$, we attempt to insert a new mesh point
+        between them. As shown in
+        (\subref*{fig:mesh_management_pure_insertion}), this is done by using
+        the method described in
+        \cref{sec:revised_approach_to_computing_new_mesh_points}, using a
+        ficticious initial condition midway inbetween the two ancestor mesh
+        points $\mathcal{M}_{i,j}$ and $\mathcal{M}_{i,j+1}$ along the
+        interpolated curve $\mathcal{C}_{i}$, indicated in the figure by
+        a lighter shade of gray. Should two neighboring mesh points
+        be too close together, and one of the two can be removed without the
+        resulting sets of neighboring points being too far apart, we remove
+        the one which results in the shortest interpoint separation (as shown
+        in (\subref*{fig:mesh_management_pure_deletion}), where the point
+        which is removed is indicated with a lighter shade of gray).
+    }
     \label{fig:mesh_management_insertion_and_deletion}
 \end{figure}
