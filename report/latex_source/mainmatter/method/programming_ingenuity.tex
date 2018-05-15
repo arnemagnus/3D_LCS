@@ -1,0 +1,18 @@
+\section{Programming ingenuities}
+\label{sec:programming_ingenuities}
+
+\begin{framed}
+    Poengter bruk av MPI for (triviell) parallellisering av mangfoldighetsgenerering,
+    og videre Pythons \texttt{multiprocessing} for seleksjon.
+
+    Understrek at alle numeriske rutiner som har med generering av nye punkter å
+    gjøre, ble skrevet i Cython for å minimere kjøretid. Spesifikt
+    benyttet vi høyt optimerte, lavnivå BLAS-rutiner når dette lot seg gjøre.
+
+    Likeså progget vi intersection-deteksjonsalgoritmen i samme språk,
+    pga jevnt økende behov for sammenligninger når mangfoldigheten spredte seg
+    utover.
+
+    Totalt sett medførte omskrivingen til Cython to størrelsesordeners reduksjon
+    i kjøretid.
+\end{framed}
