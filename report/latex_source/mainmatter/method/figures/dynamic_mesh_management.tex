@@ -1,0 +1,35 @@
+\begin{figure}[htpb]
+    \centering
+    \begin{subfigure}[b]{0.475\textwidth}
+        \centering
+        \resizebox{0.9\linewidth}{!}{\includestandalone{figures/tikz-figs/density_management_inserting_new_point}}
+        \caption[]{{\small View along the negative $z$-axis}}
+        \label{fig:u0_dom_err_bs32}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.475\textwidth}
+        \centering
+        \resizebox{0.9\linewidth}{!}{\includestandalone{figures/tikz-figs/density_management_removing_point}}
+        \caption[]{{\small View along the positive $y$-axis}}
+        \label{fig:u0_dom_err_bs54}
+    \end{subfigure}
+    \caption[Visualization of a typical trajectory used to compute a new mesh point, using the revised approach]
+    {Visualization of a typical trajectory used to compute a new mesh point,
+        using the revised  approach. A trajectory is computed, starting
+        at $\vct{x}_{i,j}$ (that is, the coordinates corresponding to the mesh
+        point $\mathcal{M}_{i,j}$) and moving in the direction field given by
+        \cref{eq:revised_direction_field}, in order to find a new mesh point
+        at the intersection between the manifold $\mathcal{M}$ and the
+        half-plane $\mathcal{H}_{i,j}$ (shaded), located a distance
+        $\Delta_{i}$ from $\mathcal{M}_{i,j}$. $\mathcal{H}_{i,j}$ is defined
+        by the point $\vct{x}_{i,j}$, its unit normal $\vct{t}_{i,j}$ (not
+        shown) and the (quasi-)radial unit vector $\vct{\rho}_{i,j}$
+        (dashdotted). The half-circle of radius $\Delta_{i}$,
+        centered in $\vct{x}_{i,j}$ and lying within $\mathcal{H}_{i,j}$, on
+        which we seek to find a new mesh point, is dashed. As soon as a
+        trajectory reaches a point separated from $\mathcal{M}_{i,j}$ by
+        a distance $\Delta_{i}$ (per \cref{eq:revised_dist_tol}), the
+        integration is stopped, and a new mesh point $\mathcal{M}_{i+1,j}$
+        (not shown) is placed at the trajectory end point
+    $\vct{x}_{\text{fin}}$.}
+    \label{fig:mesh_management_insertion_and_deletion}
+\end{figure}

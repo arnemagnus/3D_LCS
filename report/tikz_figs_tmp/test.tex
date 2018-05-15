@@ -47,66 +47,52 @@
 
 \begin{document}
 
-\tdplotsetmaincoords{70}{120}
+\tdplotsetmaincoords{60}{25}
 
 \begin{tikzpicture}[tdplot_main_coords]
-    \pgfmathsetmacro{\radius}{5}
+    \pgfmathsetmacro{\innerradius}{7.5}
     \pgfmathsetmacro{\size}{2.5}
-%    % Place the set of initial points
-    \foreach [count = \i] \ang in {205,240,260,280,165}%
+    \pgfmathsetmacro{\innerarclowerangle}{35}
+    \pgfmathsetmacro{\innerarcupperangle}{100}
+
+    % Place the set of initial points which remain after deletion
+    \foreach [count=\i] \ang in {35,64,90}%
     {%
-        \coordinate (\i) at ( {\radius*cos(\ang-90)}, {\radius*sin(\ang-90)},{0} );
+        \draw[draw=black!80,fill=gray!20] ( {\innerradius*cos(\ang)}, {\innerradius*sin(\ang)}, 0 ) circle (\size pt) coordinate (i\i);
     }
+    \draw[draw=gray!80,fill=gray!10] ( {\innerradius*cos(75)}, {\innerradius*sin(75)}, 0 ) circle (\size pt) coordinate (doomed);
 
-    % Place coordinates giving the circle of positions at which one aims
-    \coordinate (tp) at ({\radius*cos(150)},{\radius*sin(150)},1);
-    \coordinate (bt) at ({\radius*cos(150)},{\radius*sin(150)},-1);
+    % Place nodes of inner level set
+    \node[above right = 0pt and -5pt of i1] {\footnotesize $\mathcal{M}_{i,j-1}$};
+    \node[above right = 0pt and -5pt of i2] {\footnotesize $\mathcal{M}_{i,j}$};
+    \node[above right = -1pt and -3.5pt of doomed] {\footnotesize $\mathcal{M}_{i,j+1}$};
+    \node[above right = 0pt and -5pt of i3] {\footnotesize $\mathcal{M}_{i,j+2}$};
 
+    % Define helper coordinates to place small bracket
+    \coordinate[above right = 0pt and 0pt of doomed] (sb1);
+    \coordinate[above right = 0pt and 0pt of i2] (sb2);
+    % Place small bracket
+    \draw[decorate,decoration={brace,amplitude=2.5pt,raise=5pt},yshift=0pt] (sb2) -- (sb1) node [midway,below right = -12pt and -35pt,rotate=-26] {\footnotesize $\norm{\vct{x}_{i+1,j+1}-\vct{x}_{i+1,j}} < \Delta_{\min}$};
 
-    % Define coordinates of half-plane $\mathcal{H}_{i,j}$
-    \coordinate (lu) at ($(2)!2!(tp)$);
-    \coordinate (ld) at ($(2)!2!(bt)$);
-    \coordinate (ru) at ($(lu)+7*({-0.866},{0.5},0)$);
-    \coordinate (rd) at ($(ld)+7*({-0.866},{0.5},0)$);
-    % Shade half-plane
-    \draw[fill=gray!30,draw opacity=0] (lu) -- (ld) -- (rd) -- (ru) -- cycle;
-    % Draw interpolation curve
-    \draw[stroke=black!80,thin,dotted] (70:\radius) arc (70:200:\radius);
-    % Draw $\vct{rho}_{i,j}$ at $x_{i,j}$
-    \path[draw,stroke=black!65,->,thick,dashdotted ] (2) to ($(2) + 5*({-0.866},{0.5},0)$) coordinate (rhoend);
-    \node[below left = 7.5pt and 35pt of rhoend,rotate=12.5] {$\vct{\rho}_{i,j}$};
-    \node[above left = 0pt and 0pt of rd] {$\mathcal{H}_{i,j}$};
+    % Define helper coordinates to place first of two big brackets
+    \coordinate[below left = 0pt and 0pt of i3] (bb1);
+    \coordinate[below left = 0pt and 0pt of i2] (bb2);
+    % Place first bracket
+    \draw[decorate,decoration={brace,amplitude=2.5pt,raise=25pt},yshift=0pt] (bb2) -- (bb1) node [midway,below right = 12pt and -40pt,rotate=-20.8] {\footnotesize $\norm{\vct{x}_{i+1,j+2}-\vct{x}_{i+1,j}}$};
 
+    % Define helper coordinates to place second of two big brackets
+    \coordinate[above right = 0pt and 0pt of doomed] (gb1);
+    \coordinate[below left = 0pt and 0pt of i1] (gb2);
+    % Place second bracket
+    \draw[decorate,decoration={brace,amplitude=2.5pt,raise=25pt},yshift=0pt] (gb1) -- (gb2) node [midway,above right = 42pt and -8pt,rotate=-40.5] {\footnotesize $\norm{\vct{x}_{i+1,j+1}-\vct{x}_{i+1,j-1}}$};
 
+%    % Define helper coordinates to place bracket
+%    \coordinate[above right = 3.5pt and 1.5pt of o3]  (b1);
+%    \coordinate[above right = 3.5pt and 1.5pt of o2]  (b2);
 
-    % Draw points in initial level set
-    \foreach \i in {1,2,3,4,5}%
-    {%
-        \draw[fill=gray!10,stroke=black!65] (\i) circle (\size pt);
-    }
-    % Draw semicircle of radius $\Delta_{i}$, centered at $x_{i,j}$
-    \pic[densely dashed,draw,stroke=grey!80,angle radius=39] {angle = bt--2--tp};
-
-
-
-    % Label ancestor point
-    \coordinate[below left = 0pt and 30pt of 2] (plbl);
-    \node[below left = 0pt and 0pt of 2]  {$\mathcal{M}_{i,j}$};
+%    % Draw bracket
 
 
-    % Define aim point
-    \coordinate (aim) at ($(2) + 1.4*({-0.866},{0.5},0) - (0,0,0.9)$);
-
-    % Draw aim point
-    \draw[stroke=black!65,fill=gray!10] (aim) circle (\size pt);
-    \node[right = 0pt of aim]  {$\vct{x}_{\text{fin}}$};
-
-    % Draw some trajectories, the last of which manages to find aim point
-    \path[draw,stroke=black!80,->] (2) to[out = -80, in = -180+30]  (aim);
-    % Redraw start point
-    \draw[fill=gray!10,stroke=black!65] (2) circle (\size pt);
-    % Suggest initial radius
-    \draw[decorate,decoration={brace,amplitude=5pt,raise=0pt},yshift=0pt] (2) -- ($(2)!1.46!(tp)$)   node [midway,left=2pt] {\footnotesize{$\Delta_{i}$}};
 
 \end{tikzpicture}
 \end{document}
