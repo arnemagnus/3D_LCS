@@ -1,0 +1,45 @@
+\subsection{Maintaining mesh point density}
+\label{sub:maintaining_mesh_point_density}
+
+When expanding a manifold by computing new geodesic level sets, the distance
+separating neighboring mesh points within each subsequent level set generally
+increases. This is due to the mesh points being a parametrization of what is
+essentially an expanding topological circle. Having successfully computed
+a new geodesic level set --- that is, having found a descendant point
+$\mathcal{M}_{i+1,j}$ for each of the ancestor points $\{\mathcal{M}_{i,j}\}$
+--- by use of the method outlined in
+\cref{sec:revised_approach_to_computing_new_mesh_points}
+(or \cref{sec:legacy_approach_to_computing_new_mesh_points}), we then inspected
+all of the distances separating nearest neighbors.
+
+If any of the separations between nearest neighbors exceeded $\Delta_{\max}$,
+we sought to insert a new mesh point inbetween. Specifically, if
+$\norm{\vct{x}_{i+1,j}-\vct{x}_{i+1,j+1}}>\Delta_{\max}$, a new mesh point
+$\mathcal{M}_{i+1,j+\frac{1}{2}}$ was computed, using the method described
+in \cref{sec:revised_approach_to_computing_new_mesh_points} (or
+\cref{sec:legacy_approach_to_computing_new_mesh_points}), by launching
+a trajectory starting from a ficticious ancestor point
+$\mathcal{M}_{i,j+\frac{1}{2}}$, located midway inbetween $\mathcal{M}_{i,j}$
+and $\mathcal{M}_{i,j+1}$ along the interpolation curve $\mathcal{C}_{i}$. As
+the ficticious mesh point $\mathcal{M}_{i,j+\frac{1}{2}}$ does not itself have
+a direct ancestor from which to inherit a unit tangent,
+$\vct{t}_{i,j+\frac{1}{2}}$ was instead constructed by normalizing the
+arithmetic average of $\vct{t}_{i,j}$ and $\vct{t}_{i,j+1}$, and passed
+on to $\mathcal{M}_{i,j+\frac{1}{2}}$. This way, the interpolation error
+is limited; no new mesh points are generated using interpolations (in
+intermediary computations) over intervals of length exceeding
+$\Delta_{\max}$.
+
+Conversely, if any of the nearest neighbor separations became smaller than
+$\Delta_{\min}$, we sought to remove one of them, as long as the
+distance separating mesh points which would then become nearest neighbors
+did not exceed $\Delta_{\max}$. Accordingly, if any one of a pair of neighboring
+mesh points was to be removed, we chose to discard the one which would result
+in the smallest separation between the ensuing, \emph{new} pair of nearest
+neighbors. Our principles for inserting new mesh points inbetween others,
+and removing grid points which are too close together, are illustrated
+in \emph{\textbf{SETT INN REF TIL FIG}}.
+
+
+
+

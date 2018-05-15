@@ -27,8 +27,7 @@ set $\mathcal{M}_{i}$. Similarly, the considerations to follow rely on
 each mesh point $\mathcal{M}_{i,j}$ having inherited its tangential vector
 from its direct ancestor; namely, $\vct{t}_{i,j}:=\vct{t}_{i-1,j}$. How
 the special cases of this inheritance-based approach were treated, will be
-described in greater detail in
-\emph{\textbf{SETT INN REF TIL AVSN OM ARV AV TANGENSVEKTOR; EV AVSN OM INNSETTING OG FJERNING AV PUNKTER}}.
+described in greater detail in \cref{sub:maintaining_mesh_point_density}.
 Moreover, from the mesh point $\mathcal{M}_{i,j}$, we wish to place a new
 mesh point $\mathcal{M}_{i+1,j}$ at an intersection of the manifold
 $\mathcal{M}$ and the half-plane $\mathcal{H}_{i,j}$ located a distance
@@ -40,3 +39,5 @@ the guidance vector $\vct{\rho}_{i,j}$ (the latter of which is defined in
 \input{mainmatter/method/levelset_method_take_two/computing_trajectories}
 
 \input{mainmatter/method/levelset_method_take_two/handling_failures_to_compute_points}
+
+\input{mainmatter/method/levelset_method_take_two/summary_of_key_improvements}

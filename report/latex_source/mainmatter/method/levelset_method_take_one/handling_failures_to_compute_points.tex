@@ -1,5 +1,5 @@
 \subsection{Handling failures to compute satisfactory mesh points}
-\label{sub:handling_failures_to_compute_satisfactory_mesh_points}
+\label{sub:handling_failures_to_compute_satisfactory_mesh_points_legacy}
 
 As mentioned in
 \cref{sub:selecting_initial_conditions_from_which_to_compute_new_mesh_points},
@@ -54,14 +54,15 @@ gradually increased up to pre-set maximum values $\gamma_{\mathcal{H}}^{\max}$
 and $\gamma_{\Delta}^{\max}$.
 
 If, after having increased said tolerance
-parameters to their maximal permitted values without being able to find
+parameters to their maximal permitted values, we were unable able to find
 an `acceptable' mesh point, the incomplete level set was promptly discarded,
 and attempted to be computed anew with reduced $\Delta_{i}$ (more on the
 adjustment procedure for $\Delta_{i}$ to follow in
-\emph{\textbf{SETT INN REF TIL AVSN OM STEGLENGDEJUSTERING}}). Should an entire,
-new geodesic level set not be computable even with the minimum permitted step
-length, attempts at expanding the computed manifold further were abandoned;
-constrained by the given (maximal) tolerance parameters, the method simply would
-not be able to expand the computed manifold any further.
-
-
+\cref{sub:a_curvature_based_approach_to_determining_inter_set_separations}).
+Should an entire, new geodesic level set not be computable even with the
+minimum permitted step length, attempts at expanding the computed manifold
+further were abandoned; constrained by the given (maximal) tolerance parameters,
+the method simply would not be able to expand the computed manifold any further.
+The various other stopping criteria for the generation of manifolds will be
+described in detail in
+\cref{sec:stopping_criteria_for_the_expansion_of_computed_manifolds}.

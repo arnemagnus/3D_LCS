@@ -22,13 +22,13 @@ conditions were chosen will be described in
 In particular, a small, closed curve $\mathcal{C}_{1}$ consisting
 of points which all lie within the tangent plane defined by the coordinate
 $\vct{x}_{0}$ and the unit normal $\vct{\xi}_{3}(\vct{x}_{0})$, separated from
-$\vct{x}_{0}$ by a distance $\delta$, is assumed to consist of points which all
-lie within the same manifold as $\vct{x}_{0}$. The idea is then to compute
-the next geodesic circle in a local, dynamic coordinate system, defined by
-hyperplanes which are orthogonal to the most recently computed geodesic circle.
-A set of accuracy parameters governs the number of next points by which
-the next geodesic circle is approximated, in solving a set of boundary value
-problems. During the computation, the interpolation error stays bounded by
+$\vct{x}_{0}$ by a distance $\delta_{\text{init}}$, is assumed to consist of
+points which all lie within the same manifold as $\vct{x}_{0}$. The idea is then
+to compute the next geodesic circle in a local, dynamic coordinate system,
+defined by hyperplanes which are orthogonal to the most recently computed
+geodesic circle. A set of accuracy parameters governs the number of next points
+by which the next geodesic circle is approximated, in solving a set of boundary
+value problems. During the computation, the interpolation error stays bounded by
 the density of mesh points, so that the overall quality of the mesh is
 preserved.
 
@@ -70,7 +70,7 @@ manageable number of grid points, than all of the grid points which satisfy
 the LCS conditions~\eqref{eq:lcs_condition_a},~\eqref{eq:lcs_condition_b} and~%
 \eqref{eq:lcs_condition_d}.
 
-\input{mainmatter/method/tables/initialconditions}
+\input{mainmatter/method/tables/initial_conditions}
 
 \subsection{Parametrizing the innermost level set}
 \label{sub:parametrizing_the_innermost_level_set}
@@ -83,9 +83,9 @@ by $\vct{\xi}_{3}(\vct{x}_{0})$, as a consequence of LCS existence criterion~%
 \eqref{eq:lcs_condition_c}. Accordingly, the first geodesic level set is
 approximated by a set of $n$ points $\{\mathcal{M}_{1,j}\}_{j=1}^{n}$, which all
 lie within the aforementioned tangent plane, separated from $\vct{x}_{0}$ by a
-distance $\delta$; all of which assumed to lie within the same manifold. The
-parameter $\delta$ was chosen small compared to the grid spacing, in order to
-limit the inherent errors of this linearization.
+distance $\delta_{\text{init}}$; all of which assumed to lie within the same
+manifold. The parameter $\delta_{\text{init}}$ was chosen small compared to the
+grid spacing, in order to limit the inherent errors of this linearization.
 
 An interpolation curve $\mathcal{C}_{1}$ was then made, with a view to
 representing the innermost level set in a smoother fashion. In particular,
@@ -138,7 +138,7 @@ an inheritance-based approach was found to yield more smoothly parametrized
 manifolds, which were less sensitive to numerical noise. This approach,
 along with the treatment of special cases, will be explained in greater detail
 in the sections to follow (in particular,
-\textbf{\emph{SETT INN REF TIL AVSNITT OM INNSETTING AV PKT}}).
+\cref{sub:maintaining_mesh_point_density}).
 
 A \emph{guidance} vector $\vct{\rho}_{i,j}$ was computed for each of the
 mesh points $\{\mathcal{M}_{i,j}\}$, in order to keep track of the local
@@ -159,7 +159,7 @@ preceding level set, from which the new point was computed. That is,
 \end{equation}
 where the indices $j$ and $\hat{\jmath}$ generally need not be the same,
 as there is generally not a one-to-one correspondence between points
-in subsequent level sets; see \emph{\textbf{SEKSJON OM MESH MANAGEMENT; INNSETTING OG FJERNING AV PUNKTER OSV}}
+in subsequent level sets; see \cref{sub:maintaining_mesh_point_density}
 for details.
 
 Note that, in computing new mesh points, organized in level sets, a descendant
@@ -171,4 +171,5 @@ described in greater detail in the sections to come, the computation would
 stop abruptly, leaving the manifold parametrized by however many of its
 geodesic level sets were successfully completed. Further details on the
 stopping criteria for the generation of new geodesic level sets will be
-presented in \emph{\textbf{SETT INN REF TIL AVSN OM TERMINERINGSKRITERIER}}.
+presented in
+\cref{sec:stopping_criteria_for_the_expansion_of_computed_manifolds}.
