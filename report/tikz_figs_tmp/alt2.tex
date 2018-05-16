@@ -1,0 +1,113 @@
+\documentclass[crop]{standalone}
+\usepackage{tikz}
+\usepackage[]{tikz-3dplot}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage[]{amsmath}
+\usepackage[]{libertine}
+\usepackage[libertine]{newtxmath}
+\usepackage[]{bm}
+\usepackage[]{physics}
+% Macros for greek letters in roman style, in math mode
+\DeclareRobustCommand{\mathup}[1]{%
+\begingroup\ensuremath\changegreek\mathrm{#1}\endgroup}
+\DeclareRobustCommand{\mathbfup}[1]{%
+\begingroup\ensuremath\changegreek\bm{\mathrm{#1}}\endgroup}
+
+
+\makeatletter
+\def\changegreek{\@for\next:={%
+        alpha,beta,gamma,delta,epsilon,zeta,eta,theta,iota,kappa,lambda,mu,nu,%
+        xi,pi,rho,sigma,tau,upsilon,phi,chi,psi,omega,varepsilon,varpi,%
+    varrho,varsigma,varphi}%
+\do{\expandafter\let\csname\next\expandafter\endcsname\csname\next up\endcsname}}
+\makeatother
+
+% Define vectors in bold, roman, lowercase font
+\newcommand{\vct}[1]{\ensuremath{\mathbfup{\MakeLowercase{#1}}}}
+
+% Define unit vectors in bold, roman, lowercase font, with hats
+\newcommand{\uvct}[1]{\ensuremath{\mathbfup{\hat{\MakeLowercase{#1}}}}}
+
+% Define matrices in bold, roman, uppercase font
+\newcommand{\mtrx}[1]{\ensuremath{\mathbfup{\MakeUppercase{#1}}}}
+\usetikzlibrary{%
+    angles,%
+    arrows.meta,%
+    backgrounds,%
+    calc,%
+    decorations,%
+    fit,%
+    hobby,%
+    patterns,%
+    positioning,%
+    quotes
+}
+
+
+\begin{document}
+
+\tdplotsetmaincoords{60}{10}
+
+\begin{tikzpicture}[tdplot_main_coords]
+    \pgfmathsetmacro{\innerradius}{7.5}
+    \pgfmathsetmacro{\size}{2.5}
+    \pgfmathsetmacro{\innerarclowerangle}{35}
+    \pgfmathsetmacro{\innerarcupperangle}{100}
+
+    % Place the set of initial points
+    % Innermost level set
+    \foreach [count=\i] \ang in {45,60,75,90}%
+    {%
+        \draw[draw=black!80,fill=gray!20] ( {\innerradius*cos(\ang)}, {\innerradius*sin(\ang)}, 0 ) circle (\size pt) coordinate (i\i);
+    }
+%    % Outermost level set prior to insertion of new point
+%    \foreach [count=\i] \ang in {47,64,92}%
+%    {%
+%        \draw[draw=black!80,fill=gray!20] ( {\outerradius*cos(\ang)}, {\outerradius*sin(\ang)}, 0 ) circle (\size pt) coordinate (o\i);
+%    }
+    \begin{scope}[on background layer]
+	    % Draw inner interpolation curve
+	    \draw[draw=black!80,thin,dotted] (\innerarclowerangle:\innerradius) arc (\innerarclowerangle:\innerarcupperangle:\innerradius);
+    \end{scope}
+%    % Define start point for ghost trajectory
+%    \draw[draw=gray!70,fill=gray!10] ( {\innerradius*cos(76)}, {\innerradius*sin(76)}, 0) circle (\size pt) coordinate (ghost);
+
+
+    % Place nodes of inner level set
+    \node[below left = 0pt and -12.5pt of i1] {\footnotesize $\mathcal{M}_{i,j-1}$};
+    \node[below left = 0pt and -7.5pt of i2] {\footnotesize $\mathcal{M}_{i,j}$};
+    \node[below left = 0pt and -12.5pt of i3] {\footnotesize $\mathcal{M}_{i,j+k}$};
+    \node[below left = 0pt and -17.5pt of i4] {\footnotesize $\mathcal{M}_{i,j+k+1}$};
+
+    % Place points which are removed
+    \draw[draw=gray!70,fill=gray!10] ($(i2)+({-0.05},{1.05},0)$) circle (\size pt) coordinate (doomed1);
+    \draw[draw=gray!70,fill=gray!10] ($(doomed1)+({0.15},{1.1},0)$) circle (\size pt) coordinate (doomed2);
+    \draw[draw=gray!70,fill=gray!10] ($(doomed2)+({0.03},{1.3},0)$) circle (\size pt) coordinate (doomed3);
+    \draw[draw=gray!70,fill=gray!10] ($(doomed3)+(-{0.2},{1.2},0)$) circle (\size pt) coordinate (doomed4);
+    \draw[draw=gray!70,fill=gray!10] ($(doomed4)+(-{0.6},{0.25},0)$) circle (\size pt) coordinate (doomed5);
+    \draw[draw=gray!70,fill=gray!10] ($(doomed5)+(-{0.7},-{0.15},0)$) circle (\size pt) coordinate (doomed6);
+    \draw[draw=gray!70,fill=gray!10] ($(doomed6)+(-{0.3},-{0.9},0)$) circle (\size pt) coordinate (doomed7);
+    \draw[draw=gray!70,fill=gray!10] ($(doomed7)+(-{0.05},-{1.05},0)$) circle (\size pt) coordinate (doomed8);
+    \draw[draw=gray!70,fill=gray!10] ($(doomed8)+({0.15},-{1.15},0)$) circle (\size pt) coordinate (doomed9);
+
+    % Place nodes on some of the doomed nodes
+    \node[below right = -2.5pt and -2.5pt of doomed1,color=gray!80] {\footnotesize $\mathcal{M}_{i,j+1}$};
+    \node[below right = -2.5pt and -2.5pt of doomed2,color=gray!80] {\footnotesize $\mathcal{M}_{i,j+2}$};
+    \node[below right = -2.5pt and -2.5pt of doomed8,color=gray!80] {\footnotesize $\mathcal{M}_{i,j+k-2}$};
+    \node[below right = -2.5pt and -2.5pt of doomed9,color=gray!80] {\footnotesize $\mathcal{M}_{i,j+k-1}$};
+
+
+    % Define helper coordinates to place label for the interpolation curve
+    \coordinate (crv) at ( {\innerradius*cos(97.5)}, {\innerradius*sin(97.5)},  0);
+    \node[above right = 2.5pt and 0pt of crv] (lbl) {\footnotesize $\mathcal{C}_{i}$};
+    \path[draw=black!80] ($(crv)!0.7!(lbl)$) to [out = -120, in = 30] ($(crv)!0.05!(lbl)$);
+
+%
+    % Draw bracket
+    \draw[decorate,decoration={brace,amplitude=2.5pt,raise=17.5pt},yshift=0pt] (i2) -- (i3) node [midway,below left = 32.5pt and -40pt,rotate=-18] {\footnotesize $\norm{\vct{x}_{i,j+k}-\vct{x}_{i,j}} < \Delta_{\max}$};
+
+
+
+\end{tikzpicture}
+\end{document}

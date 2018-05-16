@@ -1,6 +1,54 @@
-\subsection{Limiting accumulation of numerical noise}
+\subsection{Limiting the accumulation of numerical noise}
 \label{sub:limiting_accumulation_of_numerical_noise}
 
-\begin{framed}
-    Fjerning av loops
-\end{framed}
+Early tests with regards to the generation of manifolds revealed that
+the compound numerical error over the course of many level sets often resulted
+in irregular behaviour. Specifically, small bulges in the mesh easily became
+amplified in the subsequent level sets, which frequently caused unwanted
+loops in the interpolation curves $\{\mathcal{C}_{i}\}$ which extended
+far from the manifold epicentre. Occasionally, this would lead to the generated
+manifold to fold into itself. This \emph{cannot} happen in repelling LCSs. In
+particular, self-intersecting manifolds indicate that, in a small neighborhood
+of  any intersection, there would not be a well-defined direction of strongest
+repulsion, which would violate LCS existence criterion
+\eqref{eq:lcs_condition_a}.
+
+As a countermeasure against the formation of undesired loops within a level set,
+we reviewed a recently computed (suggestion for a) geodesic level set, as
+follows: Consider a point $\mathcal{M}_{i+1,j}$ located at $\vct{x}_{i+1,j}$.
+If, for any point $\mathcal{M}_{i+1,j+k}$ with $k>1$, the
+interpoint distances satisfy
+\begin{subequations}
+    \label{eq:loop_removal_conditions}
+    \begin{equation}
+        \label{eq:loop_removal_condition_one}
+        \Delta_{\min} < \norm{\vct{x}_{i+1,j+k}-\vct{x}_{i+1,j}} < \Delta_{\max}
+    \end{equation}
+    and
+    \begin{equation}
+        \label{eq:loop_removal_condition_one}
+        \norm{\vct{x}_{i+1,j+k}-\vct{x}_{i+1,j}} < %
+        \gamma_{\circlearrowleft} \sum\limits_{\kappa=0}^{k-1}%
+        \norm{\vct{x}_{i+1,j+\kappa+1}-\vct{x}_{i+1,j+\kappa}},
+    \end{equation}
+\end{subequations}
+then all mesh points ${\{\mathcal{M}_{i+1,j+\kappa}\}}_{\kappa=1}^{k-1}$
+are removed. Here, $0 \leq \gamma_{\circlearrowleft} \leq 1$ is a bulge
+tolerance parameter, which essentially determines an upper limit for the extent
+(measured in cumulative arclength) of loop-like segments of any given
+interpolation curve $\mathcal{C}_{i}$. Specifically, a large
+$\gamma_{\circlearrowleft}$ facilitates removal of rounded loops, whereas a
+small $\gamma_{\circlearrowleft}$ restricts the removal process to sharp bulges.
+A characteristic example demonstrating this method of removing unwanted loops
+is shown in \cref{fig:loop_removal}. While possibly sacrificing some resolution
+of the manifold as a whole, adhering to criterion
+\eqref{eq:loop_removal_conditions} prevents the removal of any \emph{reasonable}
+bulge formations. As no new mesh points are \emph{added} as a direct consequence
+of this loop-removal algorithm, it does not introduce new errors. It is also
+worth mentioning that some of the removed mesh points were recovered in the
+ensuing level sets, then as constituents of an overall smoother level set.
+
+\input{mainmatter/method/figures/loop_deletion}
+%\begin{framed}
+%    Fjerning av loops
+%\end{framed}
