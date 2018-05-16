@@ -23,10 +23,14 @@ the ficticious mesh point $\mathcal{M}_{i,j+\frac{1}{2}}$ does not itself have
 a direct ancestor from which to inherit a unit tangent,
 $\vct{t}_{i,j+\frac{1}{2}}$ was instead constructed by normalizing the
 arithmetic average of $\vct{t}_{i,j}$ and $\vct{t}_{i,j+1}$, and passed
-on to $\mathcal{M}_{i,j+\frac{1}{2}}$. This way, the interpolation error
-is limited; no new mesh points are generated using interpolations (in
-intermediary computations) over intervals of length exceeding
-$\Delta_{\max}$.
+on to $\mathcal{M}_{i,j+\frac{1}{2}}$. The ficticious mesh point's guidance
+vector $\vct{\rho}_{i,j+\frac{1}{2}}$ was constructed in similar fashion ---
+its role in the dynamic update of the interset separation $\Delta_{i}$ will
+be described in detail in
+\cref{sub:a_curvature_based_approach_to_determining_interset_separations}.
+This way, the interpolation error is limited; no new mesh points are generated
+using interpolations (in intermediary computations) over intervals of length
+exceeding $\Delta_{\max}$.
 
 Conversely, if any of the nearest neighbor separations became smaller than
 $\Delta_{\min}$, we sought to remove one of them, as long as the

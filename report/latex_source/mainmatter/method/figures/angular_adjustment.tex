@@ -1,11 +1,23 @@
 \begin{figure}[htpb]
     \centering
     \resizebox{0.9\linewidth}{!}{\includestandalone{figures/tikz-figs/angular_adjustment}}
-    \caption[How we used angular offsets between the guidance vectors of
-    each ancestor and descendant point to continuously adjust the interset step]
-    {How we used angular offsets between the guidance vectors of each ancestor
-    and descendant point to continuously adjust the interset step length.
-    \emph{\textbf{SKRIV MER}}.
-}
+    \caption[The principles of curvature-guided interset step length adjustment]
+    {The principles of curvature-guided interset step length adjustment. For
+        each of the mesh points $\{\mathcal{M}_{i+1,j}\}$ constituting the
+        level set $\mathcal{M}_{i+1}$, the angular offsets $\alpha_{i,j}$
+        between the guidance vectors $\vct{\rho}_{i,j}$ (dashdotted) and
+        $\vct{\rho}_{i+1,j}$ (not shown, but parallel to the vector separating
+        $\mathcal{M}_{i,j}$ and $\mathcal{M}_{i+1,j}$, shown in solid) were
+        computed. These were used in conjunction with $\Delta_{i}$, the interset
+        step used to  compute the new mesh points, in order to determine whether
+        or not the suggested level set would have to be discarded due to the
+        local curvature along at least one point strain being sufficiently large
+        to comply with criterion~\eqref{eq:decrease_dist}. If the level set was
+        deemed acceptable, local curvature estimates $\{\alpha_{i,j}\}$ and
+        $\{\Delta_{i}\cdot\alpha_{i,j}\}$ were then used to determine if the
+        \emph{subsequent} level set $\mathcal{M}_{i+2}$ could be computed
+        using $\Delta_{i+1}>\Delta_{i}$; namely, if criterion
+        \eqref{eq:increase_dist} was satisfied.
+    }
     \label{fig:angular_adjustment}
 \end{figure}

@@ -75,10 +75,10 @@
 
 
     % Place nodes of inner level set
-    \node[below left = 0pt and -12.5pt of i1] {\footnotesize $\mathcal{M}_{i,j-1}$};
-    \node[below left = 0pt and -7.5pt of i2] {\footnotesize $\mathcal{M}_{i,j}$};
-    \node[below left = 0pt and -12.5pt of i3] {\footnotesize $\mathcal{M}_{i,j+k}$};
-    \node[below left = 0pt and -17.5pt of i4] {\footnotesize $\mathcal{M}_{i,j+k+1}$};
+    \node[below left = 0pt and -12.5pt of i1] {\scriptsize $\mathcal{M}_{i,j-1}$};
+    \node[below left = 0pt and -7.5pt of i2] {\scriptsize $\mathcal{M}_{i,j}$};
+    \node[below left = 0pt and -12.5pt of i3] {\scriptsize $\mathcal{M}_{i,j+k}$};
+    \node[below left = 0pt and -17.5pt of i4] {\scriptsize $\mathcal{M}_{i,j+k+1}$};
 
     % Place points which are removed
     \draw[draw=gray!70,fill=gray!10] ($(i2)+({-0.05},{1.05},0)$) circle (\size pt) coordinate (doomed1);
@@ -91,20 +91,20 @@
 %    \draw[draw=gray!70,fill=gray!10] ($(doomed8)+({0.15},-{0.85},0)$) circle (\size pt) coordinate (doomed9);
 
     % Place nodes on some of the doomed nodes
-    \node[below right = -2.5pt and -2.5pt of doomed1,color=gray!80] {\footnotesize $\mathcal{M}_{i,j+1}$};
-    \node[below right = -2.5pt and -2.5pt of doomed2,color=gray!80] {\footnotesize $\mathcal{M}_{i,j+2}$};
-    \node[below right = -2.5pt and -2.5pt of doomed6,color=gray!80] {\footnotesize $\mathcal{M}_{i,j+k-2}$};
-    \node[below right = -2.5pt and -2.5pt of doomed7,color=gray!80] {\footnotesize $\mathcal{M}_{i,j+k-1}$};
+    \node[below right = -2.5pt and -2.5pt of doomed1,color=gray!80] {\scriptsize $\mathcal{M}_{i,j+1}$};
+    \node[below right = -2.5pt and -2.5pt of doomed2,color=gray!80] {\scriptsize $\mathcal{M}_{i,j+2}$};
+    \node[below right = -2.5pt and -2.5pt of doomed6,color=gray!80] {\scriptsize $\mathcal{M}_{i,j+k-2}$};
+    \node[below right = -2.5pt and -2.5pt of doomed7,color=gray!80] {\scriptsize $\mathcal{M}_{i,j+k-1}$};
 
 
     % Define helper coordinates to place label for the interpolation curve
     \coordinate (crv) at ( {\innerradius*cos(92.5)}, {\innerradius*sin(92.5)},  0);
-    \node[above right = 2.5pt and 0pt of crv] (lbl) {\footnotesize $\mathcal{C}_{i}$};
+    \node[above right = 2.5pt and 0pt of crv] (lbl) {\scriptsize $\mathcal{C}_{i}$};
     \path[draw=black!80] ($(crv)!0.7!(lbl)$) to [out = -120, in = 30] ($(crv)!0.05!(lbl)$);
 
 %
     % Draw bracket
-    \draw[decorate,decoration={brace,amplitude=2.5pt,raise=17.5pt},yshift=0pt] (i2) -- (i3) node [midway,below left = 35pt and -45pt,rotate=-18] {\footnotesize $\Delta_{\min} < \norm{\vct{x}_{i,j+k}-\vct{x}_{i,j}} < \Delta_{\max}$};
+    \draw[decorate,decoration={brace,amplitude=2.5pt,raise=17.5pt},yshift=0pt] (i2) -- (i3) node [midway,below left = 35pt and -45pt,rotate=-18] {\scriptsize $\Delta_{\min} < \norm{\vct{x}_{i,j+k}-\vct{x}_{i,j}} < \Delta_{\max}$};
 
 
 

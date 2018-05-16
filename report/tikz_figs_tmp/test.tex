@@ -47,66 +47,63 @@
 
 \begin{document}
 
-\tdplotsetmaincoords{60}{10}
+\tdplotsetmaincoords{60}{25}
 
 \begin{tikzpicture}[tdplot_main_coords]
-    \pgfmathsetmacro{\innerradius}{10}
+    \pgfmathsetmacro{\innerradius}{5}
+    \pgfmathsetmacro{\outerradius}{7.5}
     \pgfmathsetmacro{\size}{2.5}
-    \pgfmathsetmacro{\innerarclowerangle}{40}
-    \pgfmathsetmacro{\innerarcupperangle}{95}
+    \pgfmathsetmacro{\outerarclowerangle}{35}
+    \pgfmathsetmacro{\outerarcupperangle}{100}
 
-    % Place the set of initial points
-    % Innermost level set
-    \foreach [count=\i] \ang in {48,60,75,87}%
+    % Place inner points in inner level set
+    \foreach [count=\i] \ang in {30,52,73,92}%
     {%
-        \draw[draw=black!80,fill=gray!20] ( {\innerradius*cos(\ang)}, {\innerradius*sin(\ang)}, 0 ) circle (\size pt) coordinate (i\i);
+        \draw[draw=black!80,fill=gray!20] ( {\innerradius*cos(\ang)}, {\innerradius*sin(\ang)}, 0) circle (\size pt) coordinate (i\i);
     }
-%    % Outermost level set prior to insertion of new point
-%    \foreach [count=\i] \ang in {47,64,92}%
-%    {%
-%        \draw[draw=black!80,fill=gray!20] ( {\outerradius*cos(\ang)}, {\outerradius*sin(\ang)}, 0 ) circle (\size pt) coordinate (o\i);
-%    }
-    \begin{scope}[on background layer]
-	    % Draw inner interpolation curve
-	    \draw[draw=black!80,thin,dotted] (\innerarclowerangle:\innerradius) arc (\innerarclowerangle:\innerarcupperangle:\innerradius);
-    \end{scope}
-%    % Define start point for ghost trajectory
-%    \draw[draw=gray!70,fill=gray!10] ( {\innerradius*cos(76)}, {\innerradius*sin(76)}, 0) circle (\size pt) coordinate (ghost);
 
+    % Place the set of initial points which remain after deletion
+    \foreach [count=\i] \ang in {32,68,89}%
+    {%
+        \draw[draw=black!80,fill=gray!20] ( {\outerradius*cos(\ang)}, {\outerradius*sin(\ang)}, 0 ) circle (\size pt) coordinate (o\i);
+    }
+    \draw[draw=gray!80,fill=gray!10] ( {\outerradius*cos(54)}, {\outerradius*sin(54)}, 0 ) circle (\size pt) coordinate (doomed);
+
+    % Place nodes of outer level set
+    \node[above right = 0pt and -5pt of o1] {\footnotesize $\mathcal{M}_{i+1,j-1}$};
+    \node[above right = 0pt and -5pt of o2] {\footnotesize $\mathcal{M}_{i+1,j+1}$};
+    \node[above right = -1pt and -3.5pt of doomed,color=gray!80] {\footnotesize $\mathcal{M}_{i+1,j}$};
+    \node[above right = 0pt and -5pt of o3] {\footnotesize $\mathcal{M}_{i+1,j+2}$};
 
     % Place nodes of inner level set
-    \node[below left = 0pt and -12.5pt of i1] {\footnotesize $\mathcal{M}_{i,j-1}$};
-    \node[below left = 0pt and -7.5pt of i2] {\footnotesize $\mathcal{M}_{i,j}$};
-    \node[below left = 0pt and -12.5pt of i3] {\footnotesize $\mathcal{M}_{i,j+k}$};
-    \node[below left = 0pt and -17.5pt of i4] {\footnotesize $\mathcal{M}_{i,j+k+1}$};
-
-    % Place points which are removed
-    \draw[draw=gray!70,fill=gray!10] ($(i2)+({-0.05},{1.05},0)$) circle (\size pt) coordinate (doomed1);
-    \draw[draw=gray!70,fill=gray!10] ($(doomed1)+({0.18},{1.4},0)$) circle (\size pt) coordinate (doomed2);
-    \draw[draw=gray!70,fill=gray!10] ($(doomed2)+(-{0.3},{1.7},0)$) circle (\size pt) coordinate (doomed3);
-    \draw[draw=gray!70,fill=gray!10] ($(doomed3)+(-{0.95},{1.15},0)$) circle (\size pt) coordinate (doomed4);
-    \draw[draw=gray!70,fill=gray!10] ($(doomed4)+(-{1.05},-{0.15},0)$) circle (\size pt) coordinate (doomed5);
-    \draw[draw=gray!70,fill=gray!10] ($(doomed5)+(-{0.3},-{1.4},0)$) circle (\size pt) coordinate (doomed6);
-    \draw[draw=gray!70,fill=gray!10] ($(doomed6)+({0.1},-{1.45},0)$) circle (\size pt) coordinate (doomed7);
-%    \draw[draw=gray!70,fill=gray!10] ($(doomed8)+({0.15},-{0.85},0)$) circle (\size pt) coordinate (doomed9);
-
-    % Place nodes on some of the doomed nodes
-    \node[below right = -2.5pt and -2.5pt of doomed1,color=gray!80] {\footnotesize $\mathcal{M}_{i,j+1}$};
-    \node[below right = -2.5pt and -2.5pt of doomed2,color=gray!80] {\footnotesize $\mathcal{M}_{i,j+2}$};
-    \node[below right = -2.5pt and -2.5pt of doomed6,color=gray!80] {\footnotesize $\mathcal{M}_{i,j+k-2}$};
-    \node[below right = -2.5pt and -2.5pt of doomed7,color=gray!80] {\footnotesize $\mathcal{M}_{i,j+k-1}$};
+    \node[below left = 0pt and -5pt of i1] {\footnotesize $\mathcal{M}_{i,j-1}$};
+    \node[below left = 0pt and -5pt of i2] {\footnotesize $\mathcal{M}_{i,j}$};
+    \node[below left = 0pt and -5pt of i3] {\footnotesize $\mathcal{M}_{i,j+1}$};
+    \node[below left = 0pt and -5pt of i4] {\footnotesize $\mathcal{M}_{i,j+2}$};
 
 
-    % Define helper coordinates to place label for the interpolation curve
-    \coordinate (crv) at ( {\innerradius*cos(92.5)}, {\innerradius*sin(92.5)},  0);
-    \node[above right = 2.5pt and 0pt of crv] (lbl) {\footnotesize $\mathcal{C}_{i}$};
-    \path[draw=black!80] ($(crv)!0.7!(lbl)$) to [out = -120, in = 30] ($(crv)!0.05!(lbl)$);
+    % Draw interpolation triangles
+    \begin{scope}[on background layer]
+        \draw[draw=none,pattern=north west lines, pattern color = gray!40] (i2) -- (o2) -- (o3) -- cycle;
+        \draw[draw=black!65,dashed] (i2) -- (o2) -- (o3) -- cycle;
+        \draw[draw=none,pattern=north west lines, pattern color = gray!40] (i1) -- (o1) -- (i2) -- cycle;
+        \draw[draw=black!65,dashed] (i1) -- (o1) -- (i2) -- cycle;
+        \draw[draw=none,pattern=north west lines, pattern color = gray!40] (i3) -- (o3) -- (i4) -- cycle;
+        \draw[draw=black!65,dashed] (i3) -- (o3) -- (i4) -- cycle;
 
+        \draw[draw=black!65,dashed,fill=gray!35] (i2) -- (o1) -- (o2) -- cycle;
+        \draw[draw=black!65,dashed,fill=gray!35] (i2) -- (o3) -- (i3) -- cycle;
+%    \draw[draw=none,pattern=north west lines, pattern color = gray!40] (i2) -- (o2) -- (new) -- cycle;
+%    \draw[draw=black!65,dashed] (i2) -- (o2) -- (new) -- cycle;
+%    \draw[draw=none,pattern=north west lines, pattern color = gray!40] (i3) -- (new) -- (o3) -- cycle;
+%    \draw[draw=black!65,dashed] (i3) -- (new) -- (o3) -- cycle;
+%    \draw[draw=black!65,dashed,fill=gray!35] (i2) -- (new) -- (i3) -- cycle;
 %
-    % Draw bracket
-    \draw[decorate,decoration={brace,amplitude=2.5pt,raise=17.5pt},yshift=0pt] (i2) -- (i3) node [midway,below left = 32.5pt and -40pt,rotate=-18] {\footnotesize $\norm{\vct{x}_{i,j+k}-\vct{x}_{i,j}} < \Delta_{\max}$};
+%    \draw[draw=none,pattern=north east lines, pattern color = gray!20] (i1) -- (o1) -- (o2) -- cycle;
+%    \draw[draw=black!55,dashed] (i1) -- (o1) -- (o2) -- cycle;
+%    \draw[draw=black!65,dashed,fill=gray!15] (i1) -- (o2) -- (i2) -- cycle;
 
-
+    \end{scope}
 
 \end{tikzpicture}
 \end{document}

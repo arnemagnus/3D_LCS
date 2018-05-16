@@ -83,28 +83,28 @@
 
 
     % Place nodes of inner level set
-    \node[below left = 0pt and -5pt of i1] {\footnotesize $\mathcal{M}_{i,j-1}$};
-    \node[below left = 0pt and -5pt of i2] {\footnotesize $\mathcal{M}_{i,j}$};
-    \node[below left = -1pt and -7.5pt of ghost,color=gray!80] {\footnotesize $\mathcal{M}_{i,j+\frac{1}{2}}$};
-    \node[below left = -2.5pt and -5pt of i3] {\footnotesize $\mathcal{M}_{i,j+1}$};
+    \node[below left = 0pt and -5pt of i1] {\small $\mathcal{M}_{i,j-1}$};
+    \node[below left = 4pt and -9pt of i2] {\small $\mathcal{M}_{i,j}$};
+    \node[below left = -1pt and -7.5pt of ghost,color=gray!80] {\small $\mathcal{M}_{i,j+\frac{1}{2}}$};
+    \node[below left = -2.5pt and -5pt of i3] {\small $\mathcal{M}_{i,j+1}$};
 
     % Place nodes of outer level set
-    \node[below left = 0pt and -5pt of o1] {\footnotesize $\mathcal{M}_{i+1,j-1}$};
-    \node[below left = 0pt and -5pt of o2] {\footnotesize $\mathcal{M}_{i+1,j}$};
-    \node[below right = 2.5pt and -20pt of new] {\footnotesize $\mathcal{M}_{i+1,j+\frac{1}{2}}$};
-    \node[below left = 0pt and -5pt of o3] {\footnotesize $\mathcal{M}_{i+1,j+1}$};
+    \node[below left = 0pt and -5pt of o1] {\small $\mathcal{M}_{i+1,j-1}$};
+    \node[below left = 0pt and -5pt of o2] {\small $\mathcal{M}_{i+1,j}$};
+    \node[below right = 2.5pt and -20pt of new] {\small $\mathcal{M}_{i+1,j+\frac{1}{2}}$};
+    \node[below left = 0pt and -5pt of o3] {\small $\mathcal{M}_{i+1,j+1}$};
 
     % Define helper coordinates to place label for the interpolation curve
     \coordinate (crv) at ( {\innerradius*cos(97.5)}, {\innerradius*sin(97.5)},  0);
-    \node[above right = 2.5pt and 0pt of crv] (lbl) {\footnotesize $\mathcal{C}_{i}$};
-    \path[draw=black!80] ($(crv)!0.7!(lbl)$) to [out = -120, in = 30] ($(crv)!0.05!(lbl)$);
+    \node[above right = 2.5pt and 0pt of crv] (lbl) {\small $\mathcal{C}_{i}$};
+    \path[draw=black!80] ($(crv)!0.6!(lbl)$) to [out = -120, in = 30] ($(crv)!0.1!(lbl)$);
 
     % Define helper coordinates to place bracket
     \coordinate[above right = 3.5pt and 1.5pt of o3]  (b1);
     \coordinate[above right = 3.5pt and 1.5pt of o2]  (b2);
 
     % Draw bracket
-    \draw[decorate,decoration={brace,amplitude=2.5pt,raise=5pt},yshift=0pt] (b1) -- (b2) node [midway,above right = 20pt and -30pt,rotate=-24.25] {\footnotesize $\norm{\vct{x}_{i+1,j}-\vct{x}_{i+1,j+1}} > \Delta_{\max}$};
+    \draw[decorate,decoration={brace,amplitude=2.5pt,raise=5pt},yshift=0pt] (b1) -- (b2) node [midway,above right = 20pt and -30pt,rotate=-24.25] {\small $\norm{\vct{x}_{i+1,j}-\vct{x}_{i+1,j+1}} > \Delta_{\max}$};
 
 
 

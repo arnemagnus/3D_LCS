@@ -1,10 +1,61 @@
-\subsection{A curvature-based approach to determining inter-set separations}
-\label{sub:a_curvature_based_approach_to_determining_inter_set_separations}
+\subsection{A curvature-based approach to determining interset separations}
+\label{sub:a_curvature_based_approach_to_determining_interset_separations}
 
+Given the interpoint separation constraints described in
+\cref{sub:maintaining_mesh_point_density}, we have some flexibility regarding
+the choice of interset step length $\Delta_{i}$. In an approach closely
+mirroring that of \textcite{krauskopf2005survey}, we used the (approximate)
+local curvatures along each point strain (i.e.,\ the set of mesh points
+which can be traced back to a common ancestor) in order to determine
+whether or not the local manifold dynamics were resolved to a satisfactory
+level of detail. Starting out with an initial interset separation
+$\Delta_{1}=2\Delta_{\min}$ for the second innermost level set (i.e.,\, the
+first level set which was computed using the method described in
+\cref{sec:revised_approach_to_computing_new_mesh_points}), we sought to
+ensure that the subsequent $\Delta_{i}$ resulted in the encapsulation of the
+finer details of the growing manifolds.
 
-\begin{framed}
-    Beskriv dynamisk justering av $\Delta_{i}$
-\end{framed}
-
+Specifically, once all mesh points which constitute a geodesic level set
+$\mathcal{M}_{i+1}$ have been identified, all a distance $\Delta_{i}$ away from
+their direct ancestor points in the previous level set $\mathcal{M}_{i}$, we
+computed the angular offsets $\alpha_{i,j}$ of each pair of guidance vectors
+$\vct{\rho}_{i,j}$ and $\vct{\rho}_{i+1,j}$ (as defined in
+\cref{eq:innermost_prevvec,eq:general_prevvec}). This is sketched in
+\cref{fig:angular_adjustment}. If
+\begin{equation}
+    \label{eq:decrease_dist}
+    \alpha_{i,j} > \alpha_{\downarrow} \quad \text{or} \quad %
+    \Delta_{i}\cdot\alpha_{i,j} > (\Delta\alpha)_{\downarrow} \quad %
+    \text{for at least one } j,
+\end{equation}
+where $\alpha_{\downarrow}$ and $(\Delta\alpha)_{\downarrow}$ are upper
+curvature tolerance parameters, was satisfied, the level set $\mathcal{M}_{i+1}$
+was discarded and recomputed with reduced $\Delta_{i}$. If $\Delta_{i}$ was
+already as low as the pre-set $\Delta_{\min}$, the manifold generation
+process was terminated, as a new level set $\mathcal{M}_{i+1}$ could not be
+computed under the given constraints on interpoint separation (cf.\
+\cref{sub:maintaining_mesh_point_density}). Conversely, if
+\begin{equation}
+    \label{eq:increase_dist}
+    \alpha_{i,j} < \alpha_{\uparrow} \quad \text{and} \quad %
+    \Delta_{i}\cdot\alpha_{i,j} < (\Delta\alpha)_{\uparrow} \quad %
+    \text{for all } j,
+\end{equation}
+where $\alpha_{\uparrow}$ and $(\Delta\alpha)_{\uparrow}$ are lower curvature
+tolerance parameters, was satisfied, the interset distance for computing the
+\emph{next} level set, $\Delta_{i+1}$, was made bigger than $\Delta_{i}$
+(although never beyond the pre-set $\Delta_{\max}$).
 
 \input{mainmatter/method/figures/angular_adjustment}
+
+As is evident from \cref{eq:decrease_dist,eq:increase_dist}, the parameters
+$\alpha_{\downarrow}$, $\alpha_{\uparrow}$, $(\Delta\alpha)_{\downarrow}$ and
+$(\Delta\alpha)_{\uparrow}$ determine the mesh adaption along point strains.
+Choosing appropriate bounds for the offsets $\{\Delta_{i}\cdot\alpha_{i,j}\}$
+allows for stricter requirements on angular offsets for large interstep lengths.
+Similarly, level sets computed using small interset lenghts are allowed
+(comparatively) larger angular offsets in general. In our experience, the
+interset step lenghts were rarely \emph{increased}  --- typically, there would
+be one or more subsets of the mesh points constituting any given level set which
+underwent sufficient curvature such that condition~\eqref{eq:increase_dist} did
+not hold.

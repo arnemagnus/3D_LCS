@@ -1,0 +1,106 @@
+\documentclass[crop]{standalone}
+\usepackage{tikz}
+\usepackage[]{tikz-3dplot}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage[]{amsmath}
+\usepackage[]{libertine}
+\usepackage[libertine]{newtxmath}
+\usepackage[]{bm}
+\usepackage[]{physics}
+% Macros for greek letters in roman style, in math mode
+\DeclareRobustCommand{\mathup}[1]{%
+\begingroup\ensuremath\changegreek\mathrm{#1}\endgroup}
+\DeclareRobustCommand{\mathbfup}[1]{%
+\begingroup\ensuremath\changegreek\bm{\mathrm{#1}}\endgroup}
+
+
+\makeatletter
+\def\changegreek{\@for\next:={%
+        alpha,beta,gamma,delta,epsilon,zeta,eta,theta,iota,kappa,lambda,mu,nu,%
+        xi,pi,rho,sigma,tau,upsilon,phi,chi,psi,omega,varepsilon,varpi,%
+    varrho,varsigma,varphi}%
+\do{\expandafter\let\csname\next\expandafter\endcsname\csname\next up\endcsname}}
+\makeatother
+
+% Define vectors in bold, roman, lowercase font
+\newcommand{\vct}[1]{\ensuremath{\mathbfup{\MakeLowercase{#1}}}}
+
+% Define unit vectors in bold, roman, lowercase font, with hats
+\newcommand{\uvct}[1]{\ensuremath{\mathbfup{\hat{\MakeLowercase{#1}}}}}
+
+% Define matrices in bold, roman, uppercase font
+\newcommand{\mtrx}[1]{\ensuremath{\mathbfup{\MakeUppercase{#1}}}}
+\usetikzlibrary{%
+    angles,%
+    arrows.meta,%
+    backgrounds,%
+    calc,%
+    decorations,%
+    fit,%
+    hobby,%
+    patterns,%
+    positioning,%
+    quotes
+}
+
+
+\begin{document}
+
+\tdplotsetmaincoords{60}{30}
+
+\begin{tikzpicture}[tdplot_main_coords]
+    \pgfmathsetmacro{\innerradius}{5}
+    \pgfmathsetmacro{\outerradius}{7.5}
+    \pgfmathsetmacro{\size}{2.5}
+    \pgfmathsetmacro{\innerarclowerangle}{35}
+    \pgfmathsetmacro{\innerarcupperangle}{100}
+    \pgfmathsetmacro{\outerarclowerangle}{35}
+    \pgfmathsetmacro{\outerarcupperangle}{95}
+
+    % Place the set of initial points
+    % Innermost level set
+    \foreach [count=\i] \ang in {48,65,87}%
+    {%
+        \draw[draw=black!80,fill=gray!20] ( {\innerradius*cos(\ang)}, {\innerradius*sin(\ang)}, 0 ) circle (\size pt) coordinate (i\i);
+    }
+    % Outermost level set prior to insertion of new point
+    \foreach [count=\i] \ang in {47,64,92}%
+    {%
+        \draw[draw=black!80,fill=gray!20] ( {\outerradius*cos(\ang)}, {\outerradius*sin(\ang)}, 0 ) circle (\size pt) coordinate (o\i);
+    }
+    % Define point for ghost trajectory
+    \draw[draw=black!80,fill=gray!15] ( {\outerradius*cos(78)}, {\outerradius*sin(78)}, 0) circle (\size pt) coordinate (new);
+
+
+
+    % Place nodes of inner level set
+    \node[below left = -2.5pt and -5pt of i1] {\footnotesize $\mathcal{M}_{i,j-1}$};
+    \node[below left = -2.5pt and -5pt of i2] {\footnotesize $\mathcal{M}_{i,j}$};
+    \node[below left = -2.5pt and -5pt of i3] {\footnotesize $\mathcal{M}_{i,j+1}$};
+
+    % Place nodes of outer level set
+    \node[above right = 0pt and -5pt of o1] {\footnotesize $\mathcal{M}_{i+1,j-1}$};
+    \node[above right = 0pt and -5pt of o2] {\footnotesize $\mathcal{M}_{i+1,j}$};
+    \node[above right = -2.5pt and -5pt of new] {\footnotesize $\mathcal{M}_{i+1,j+\frac{1}{2}}$};
+    \node[above right = -2.5pt and 0pt of o3] {\footnotesize $\mathcal{M}_{i+1,j+1}$};
+
+    % Draw interpolation triangles
+    \begin{scope}[on background layer]
+        \draw[draw=none,pattern=north east lines, pattern color = gray!20] (i3) -- (new) -- (o3) -- cycle;
+        \draw[draw=black!65,dashed] (i3) -- (new) -- (o3) -- cycle;
+
+        \draw[draw=none,pattern=north east lines, pattern color = gray!20] (i1) -- (o1) -- (o2) -- cycle;
+        \draw[draw=black!55,dashed] (i1) -- (o1) -- (o2) -- cycle;
+
+        \draw[draw=none,pattern=north west lines, pattern color = gray!20] (i1)--(o2)--(i2)--cycle;
+        \draw[draw=black!65,dashed] (i1) -- (o2) -- (i2) -- cycle;
+
+        % Triangles relevant for this special case
+        \draw[draw=black!65,dashed,fill=gray!30] (i2) -- (new) -- (i3) -- cycle;
+        \draw[draw=black!65,dashed,fill=gray!15] (i2) -- (o2) -- (new) -- cycle;
+
+    \end{scope}
+
+\end{tikzpicture}
+\end{document}

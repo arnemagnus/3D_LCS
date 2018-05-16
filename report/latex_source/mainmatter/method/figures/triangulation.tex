@@ -1,0 +1,36 @@
+\begin{figure}[htpb]
+    \centering
+    \begin{subfigure}[b]{0.475\textwidth}
+        \centering
+        \resizebox{0.9\linewidth}{!}{\includestandalone{figures/tikz-figs/triangulation_pointinserted}}
+        \caption[]{{\small Including mesh points with ficticious \\\phantom{(a)} ancestors in the triangulation}}
+        \label{fig:triangulation_pointinserted}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.475\textwidth}
+        \centering
+        \resizebox{0.9\linewidth}{!}{\includestandalone{figures/tikz-figs/triangulation_pointremoved}}
+        \caption[]{{\small Triangulating with the resulting nearest \\\phantom{(b)} neighbors, if a mesh point is removed}}
+        \label{fig:triangulation_pointremoved}
+    \end{subfigure}
+    \caption[How our triangulation algorithm handled the special cases arising
+    when the one-to-one correspondence between the points in subsequent level
+    sets was broken]
+    {How our triangulation algorithm handled the special cases arising when
+        the one-to-one correspondence between the points in subsequent level
+        sets was broken. In (\subref*{fig:triangulation_pointinserted}),
+        a mesh point is inserted inbetween the points $\mathcal{M}_{i+1,j}$
+        and $\mathcal{M}_{i+1,j+1}$, while, in (\subref*{fig:triangulation_pointremoved}),
+        the mesh point $\mathcal{M}_{i+1,j}$ is removed. Both of these
+        adjustments were made in order to maintain the density of mesh points
+        (cf.\ \cref{sub:maintaining_mesh_point_density}). The ensuing pair of
+        triangles which are computed when considering the triangulations from
+        $\mathcal{M}_{i,j}$, are shaded. The remaining triangles (patterned)
+        arise when triangulating from different points in level set
+        $\mathcal{M}_{i}$. Note that the removal of bundles of mesh points
+        in order to dampen the effect of numerical noise (which introduces
+        bulges, as described in
+        \cref{sub:limiting_the_accumulation_of_numerical_noise}) is treated
+        analogously to the case of single missing points.
+    }
+    \label{fig:triangulation_specialcases}
+\end{figure}

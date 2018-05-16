@@ -2,4 +2,92 @@
 {Continuously reconstructing manifold surfaces\\\phantom{3.9}  from point meshes in $3$D}
 \label{sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from_point_meshes}
 
+While expanding the point mesh parametrization of a manifold $\mathcal{M}$
+in bundles constituting geodesic level sets, we attempt to reproduce its
+fully three-dimensional structure by simultaneously interpolating inbetween the
+mesh points. Our main objective for representing manifolds as continuous
+interpolation objects is visual representation (in addition to the detection
+of self-intersections, as will be outlined in
+\cref{sub:self_intersection_checks})--- accordingly, we do not provide any form
+of analytical expression for $\mathcal{M}$'s surface. Moreover, as high order
+interpolation schemes are complicated considerably by the irregular structure
+inherent to the parametrization of $\mathcal{M}$ as a sequence of level sets,
+linear interpolation became our method of choice.
 
+To our knowledge, all three-dimensional plotting algorithms rely on some sort
+of triangulation method to regularize a pointwise parametrized surface.
+General-purpose routines for triangulation generation were found to be
+unsuitable, due to the specific mesh structure of $\mathcal{M}$, arising from
+the parametrization by geodesic level sets. For instance, Delaunay triangulation
+not only resulted in omitting triangles which, to the naked eye, were crucial
+for the overall manifold structure, but also generated a lot of undesirable
+surface triangles --- a problem which became increasingly prominent near
+creases. Accordingly, we made use of the fact that the \texttt{plot\_trisurf}
+routine from the Python plotting library \texttt{Matplotlib} accepts an optional
+input argument specifying a list of triangles to plot, given by their
+vertices, and made our own triangulation scheme based on the specific structure
+of the mesh point parametrization of the computed manifolds.
+
+We begin by fixing a traversion direction, specifying the order in which
+the triangles are created. Starting with the innermost level set, we then
+specify the sets of vertices for a set of triangles which together cover the
+(approximate) surface between the manifold epicentre $\vct{x}_{0}$
+and $\mathcal{C}_{1}$ (see \cref{fig:innermost_levelset}). When a new geodesic
+level set $\mathcal{M}_{i+1}$ satisfies the accuracy constraints outlined in
+\cref{sec:managing_mesh_accuracy}, we move along the mesh points
+constituting $\mathcal{C}_{i+1}$ in the selected direction, adding new
+triangles covering the (approximate) surface area between the interpolation
+curves $\mathcal{C}_{i}$ and $\mathcal{C}_{i+1}$.
+
+The surface area enclosed by the innermost level set was simply reconstructed by
+forming the triangles whose vertices are given as
+$\{\vct{x}_{0},\vct{x}_{1,j},\vct{x}_{1,j+1}\}$. Our treatment of the ensuing
+level sets is best described in terms of the local triangles formed around
+a single mesh point $\mathcal{M}_{i,j}$. The base case, that is, when no
+(nearby) points in the level set $\mathcal{M}_{i+1}$ have been removed nor added
+inbetween direct descendants in order to maintain the overall mesh point quality
+(cf.\  \cref{sub:maintaining_mesh_point_density,%
+sub:limiting_the_accumulation_of_numerical_noise}) is handled by demanding that
+the triangles associated with $\mathcal{M}_{i,j}$ cover the tetragon
+surface element with vertices given by
+$\{\vct{x}_{i,j},\vct{x}_{i,j+1},\vct{x}_{i+1,j+1},\vct{x}_{i+1,j}\}$.
+Accordingly, we add two triangles with vertices given by
+$\{\vct{x}_{i,j},\vct{x}_{i+1,j},\vct{x}_{i+1,j+1}\}$ and
+$\{\vct{x}_{i,j},\vct{x}_{i,j+1},\vct{x}_{i+1,j}\}$, respectively. Note that,
+in generating tetragons in this fashion for each point in each level set,
+triangles which connect the mesh point $\mathcal{M}_{i,j}$ to all of its
+neighbors are formed.
+
+The special cases not involving a one-to-one correspondence between the
+mesh points in $\mathcal{M}_{i}$ and $\mathcal{M}_{i+1}$ require special
+attention. This occurs whenever mesh points are inserted by making
+use of ficticious ancestors, or when mesh points are removed, in order
+to maintain the mesh point density (cf.\
+\cref{sub:maintaining_mesh_point_density}) --- or, when removing unwanted
+bulges in order to dampen the effects of compound numerical noise
+(as described in \cref{sub:limiting_the_accumulation_of_numerical_noise}).
+The treatment of these special cases is shown in
+\cref{fig:triangulation_specialcases}, and will be outlined in greater detail in
+the upcoming paragraph. In particular, note how all of $\mathcal{M}_{i,j}$'s
+nearest neighbors in the surrounding level set $\mathcal{M}_{i+1}$ are used in
+the triangulations.
+
+When an extra mesh point $\mathcal{M}_{i+1,j+\frac{1}{2}}$ is
+inserted inbetween $\mathcal{M}_{i+1,j}$ and $\mathcal{M}_{i+1,j+1}$, the
+tetragonal surface element whose vertices are located at
+$\{\vct{x}_{i,j},\vct{x}_{i,j+1},%
+\vct{x}_{i+1,j},\vct{x}_{i+1,j+\frac{1}{2}}\}$ is approximated
+by means of two triangles. Again expressed in terms of their vertices,
+these are $\{\vct{x}_{i,j},\vct{x}_{i+1,j},\vct{x}_{i+1,j+\frac{1}{2}}\}$ and
+$\{\vct{x}_{i,j},\vct{x}_{i+1,j},\vct{x}_{i,j+1}\}$. In the event that the
+mesh point $\mathcal{M}_{i+1,j}$ was removed, either as part of an undesired
+bulge or in order to preserve mesh density, the tetragonal surface with vertices
+at $\{\vct{x}_{i,j},\vct{x}_{i,j+1},\vct{x}_{i+1,j-1},\vct{x}_{i+1,j+1}\}$ is
+constructed using two triangles, with vertices at
+$\{\vct{x}_{i,j},\vct{x}_{i+1,j-1},\vct{x}_{i+1,j+1}\}$ and
+$\{\vct{x}_{i,j},\vct{x}_{i+1,j+1},\vct{x}_{i,j+1}\}$, respectively.
+If more than one intermittent mesh point is removed, the treatment is
+completely analogous, occasionally resulting in some triangle elements
+being significantly larger than its neighbors.
+
+\input{mainmatter/method/figures/triangulation}
