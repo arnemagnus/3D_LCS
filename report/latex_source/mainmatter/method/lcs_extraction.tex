@@ -1,5 +1,29 @@
 \section{Identifying LCSs as subsets of computed manifolds}
 \label{sec:identifying_lcss_as_subsets_of_computed_manifolds}
 
+\begin{framed}
+    \begin{itemize}
+        \item Gjør lokal sjekk; Ligger et meshpunkt i $\mathcal{U}_{0}$ tas
+            det med direkte
+        \item For alle punkter som ikke ble lagt til i første omgang;
+            ligger de tilstrekkelig nærme et allerede akseptert punkt tas
+            de med, fordi (1) de muligens ligger en \emph{tanke} over eller
+            under den faktiske mangfoldigheten og (2) de gir flere trekanter
+            for triangulering --- dermed en mer koherent representasjon
+        \item Henvis til figur som viser ekstrahering av mangfoldighet-del
+            som tilfredsstiller kravene for å være frastøtende LCS
+        \item Til hvert enkelt meshpunkt, tilegn en $\lambda_{3}$-verdi
+            og en vekting, gitt ved det omtrentlige arealet av $\mathcal{M}$
+            som ligger nærmere $\mathcal{M}_{i,j}$ enn alle andre punkter.
+
+
+        \item Analogt til Haller \& Farazmand, 2012computing, filtrerer vi ut
+            de minste LCSene (målt i sum av pseudo-areal for de aksepterte
+            meshpunktene), ettersom disse ventes å ha minst merkbar påvirkning
+            på makroskala-forhold i systemet --- og eventuelle LCSer som
+            i (pseudo-areal-)veiet middel har $\lambda_{3}$ mindre enn 1.
+    \end{itemize}
+\end{framed}
+\input{mainmatter/method/figures/conversion}
 
 

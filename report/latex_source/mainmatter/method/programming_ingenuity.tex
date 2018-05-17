@@ -1,9 +1,11 @@
-\section{Programming ingenuities}
-\label{sec:programming_ingenuities}
+\section{Making the most of the available computational resources}
+\label{sec:making_the_most_of_the_available_computational_resources}
 
 \begin{framed}
     Poengter bruk av MPI for (triviell) parallellisering av mangfoldighetsgenerering,
     og videre Pythons \texttt{multiprocessing} for seleksjon.
+
+    `Kodeprofilering avslørte at ... var den store tidstyven, derfor ...'
 
     Understrek at alle numeriske rutiner som har med generering av nye punkter å
     gjøre, ble skrevet i Cython for å minimere kjøretid. Spesifikt

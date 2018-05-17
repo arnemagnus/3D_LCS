@@ -1,0 +1,44 @@
+\section{Verifiying our method of generating manifolds}
+\label{sec:verifying_ourt_method_of_generating_manifolds}
+
+\begin{framed}
+    \begin{itemize}
+        \item Beskrivelse av tredimensjonal overflate og hvordan vi
+            fant et normalvektorfelt
+            \begin{equation}
+                \label{eq:sinusoidal_surface_function}
+                z = g(x,y) = A\sin(\omega_{x}x)\sin(\omega_{y}y) + z_{0}
+            \end{equation}
+            \begin{equation}
+                \label{eq:sinusoidal_implicit_surface_function}
+                f(\vct{x}) = g(x,y) - z
+            \end{equation}
+            \begin{equation}
+                \label{eq:sinusoidal_normal_vector_field}
+                \begin{gathered}
+                    \grad{}f(\vct{x}) = \begin{pmatrix}
+                        A\omega_{x}\cos(\omega_{x}x)\sin(\omega_{y}y)\\
+                        A\omega_{y}\sin(\omega_{x}x)\cos(\omega_{y}y)\\
+                        1
+                    \end{pmatrix}\\
+                    \vct{n}(\vct{x}) = \frac{\grad{}f(\vct{x})}{\norm{\grad{}f(\vct{x})}}
+                \end{gathered}
+            \end{equation}
+        \item Tabell som viser \emph{alle} parameterne vi brukte for å
+            generer sinusfelt
+        \item Ligning som beskriver hvordan RMS-feil ble beregnet
+            \begin{equation}
+                \label{eq:sinusoidal_rms}
+                \text{err} = \sqrt{\frac{1}{N}\sum\limits_{i,j}\norm{z_{i,j}-g(x,y)}^{2}}
+            \end{equation}
+        \item Henvisning til tabell i avsnitt om ABC-strømning som
+            viser \emph{alle} parameterne vi brukte på ABC-feltene
+        \item Henvisning til remark 1 om invarians for baner i vilkårlige
+            lineærkombinasjoner av $\vct{\xi}_{1,2}$.
+    \end{itemize}
+\end{framed}
+
+\input{mainmatter/results/figures/sinusoidalmanifolds.tex}
+\input{mainmatter/results/figures/sinusoidalerror.tex}
+\input{mainmatter/results/figures/convergence.tex}
+\input{mainmatter/results/figures/verification.tex}
