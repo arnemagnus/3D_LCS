@@ -47,63 +47,67 @@
 
 \begin{document}
 
-\tdplotsetmaincoords{60}{25}
+\tdplotsetmaincoords{45}{30}
 
 \begin{tikzpicture}[tdplot_main_coords]
-    \pgfmathsetmacro{\innerradius}{5}
-    \pgfmathsetmacro{\outerradius}{7.5}
+    \pgfmathsetmacro{\innerradius}{4.5}
+    \pgfmathsetmacro{\middleradius}{7.5}
+    \pgfmathsetmacro{\outerradius}{10}
     \pgfmathsetmacro{\size}{2.5}
-    \pgfmathsetmacro{\outerarclowerangle}{35}
-    \pgfmathsetmacro{\outerarcupperangle}{100}
 
     % Place inner points in inner level set
-    \foreach [count=\i] \ang in {30,52,73,92}%
+    \foreach [count=\i] \ang in {30,49,68}%
     {%
         \draw[draw=black!80,fill=gray!20] ( {\innerradius*cos(\ang)}, {\innerradius*sin(\ang)}, 0) circle (\size pt) coordinate (i\i);
     }
 
-    % Place the set of initial points which remain after deletion
-    \foreach [count=\i] \ang in {32,68,89}%
+    % Place points in middle level set
+    \foreach [count=\i] \ang in {31,49,67}%
+    {%
+        \draw[draw=black!80,fill=gray!20] ( {\middleradius*cos(\ang)}, {\middleradius*sin(\ang)}, 0 ) circle (\size pt) coordinate (m\i);
+    }
+
+    % Place points in outer level set
+    \foreach [count=\i] \ang in {32,49,66}%
     {%
         \draw[draw=black!80,fill=gray!20] ( {\outerradius*cos(\ang)}, {\outerradius*sin(\ang)}, 0 ) circle (\size pt) coordinate (o\i);
     }
-    \draw[draw=gray!80,fill=gray!10] ( {\outerradius*cos(54)}, {\outerradius*sin(54)}, 0 ) circle (\size pt) coordinate (doomed);
 
-    % Place nodes of outer level set
-    \node[above right = 0pt and -5pt of o1] {\footnotesize $\mathcal{M}_{i+1,j-1}$};
-    \node[above right = 0pt and -5pt of o2] {\footnotesize $\mathcal{M}_{i+1,j+1}$};
-    \node[above right = -1pt and -3.5pt of doomed,color=gray!80] {\footnotesize $\mathcal{M}_{i+1,j}$};
-    \node[above right = 0pt and -5pt of o3] {\footnotesize $\mathcal{M}_{i+1,j+2}$};
+    % Define helper coordinates to draw area surronding central mesh point
+    \coordinate (topmiddle) at ($(m2)!0.5!(o2)$);
+    \coordinate (bottommiddle) at ($(i2)!0.5!(m2)$);
+    \coordinate (rightmiddle) at ($(m2)!0.5!(m1)$);
+    \coordinate (leftmiddle) at ($(m2)!0.5!(m3)$);
+
+    \coordinate (corner1) at ($(topmiddle)+(rightmiddle)-(m2)$);
+    \coordinate (corner2) at ($(topmiddle)+(leftmiddle)-(m2)$);
+    \coordinate (corner3) at ($(bottommiddle)+(rightmiddle)-(m2)$);
+    \coordinate (corner4) at ($(bottommiddle)+(leftmiddle)-(m2)$);
+
+    \begin{scope}[on background layer]
+    \draw[draw=none,pattern=north west lines,pattern color=gray!15] (corner1) -- (corner2) -- (corner4) -- (corner3) -- cycle;
+    \draw[draw=black!60,dashed] (corner1) -- (corner2) -- (corner4) -- (corner3) -- cycle;
+    \end{scope}
 
     % Place nodes of inner level set
-    \node[below left = 0pt and -5pt of i1] {\footnotesize $\mathcal{M}_{i,j-1}$};
-    \node[below left = 0pt and -5pt of i2] {\footnotesize $\mathcal{M}_{i,j}$};
-    \node[below left = 0pt and -5pt of i3] {\footnotesize $\mathcal{M}_{i,j+1}$};
-    \node[below left = 0pt and -5pt of i4] {\footnotesize $\mathcal{M}_{i,j+2}$};
+    \node[below left = 0pt and -5pt of i1] {\scriptsize $\mathcal{M}_{i-1,j-1}$};
+    \node[below left = 0pt and -5pt of i2] {\scriptsize $\mathcal{M}_{i-1,j}$};
+    \node[below left = 0pt and -5pt of i3] {\scriptsize $\mathcal{M}_{i-1,j+1}$};
+
+    % Place nodes of middle level set
+    \node[below left = 0pt and -5pt of m1] {\scriptsize $\mathcal{M}_{i,j-1}$};
+    \node[below left = 0pt and -5pt of m2] {\scriptsize $\mathcal{M}_{i,j}$};
+    \node[below left = 0pt and -5pt of m3] {\scriptsize $\mathcal{M}_{i,j+1}$};
+
+    % Place nodes of outer level set
+    \node[below left = 0pt and -5pt of o1] {\scriptsize $\mathcal{M}_{i+1,j-1}$};
+    \node[below left = 0pt and -5pt of o2] {\scriptsize $\mathcal{M}_{i+1,j}$};
+    \node[below left = 0pt and -5pt of o3] {\scriptsize $\mathcal{M}_{i+1,j+1}$};
 
 
-    % Draw interpolation triangles
-    \begin{scope}[on background layer]
-        \draw[draw=none,pattern=north west lines, pattern color = gray!40] (i2) -- (o2) -- (o3) -- cycle;
-        \draw[draw=black!65,dashed] (i2) -- (o2) -- (o3) -- cycle;
-        \draw[draw=none,pattern=north west lines, pattern color = gray!40] (i1) -- (o1) -- (i2) -- cycle;
-        \draw[draw=black!65,dashed] (i1) -- (o1) -- (i2) -- cycle;
-        \draw[draw=none,pattern=north west lines, pattern color = gray!40] (i3) -- (o3) -- (i4) -- cycle;
-        \draw[draw=black!65,dashed] (i3) -- (o3) -- (i4) -- cycle;
-
-        \draw[draw=black!65,dashed,fill=gray!35] (i2) -- (o1) -- (o2) -- cycle;
-        \draw[draw=black!65,dashed,fill=gray!35] (i2) -- (o3) -- (i3) -- cycle;
-%    \draw[draw=none,pattern=north west lines, pattern color = gray!40] (i2) -- (o2) -- (new) -- cycle;
-%    \draw[draw=black!65,dashed] (i2) -- (o2) -- (new) -- cycle;
-%    \draw[draw=none,pattern=north west lines, pattern color = gray!40] (i3) -- (new) -- (o3) -- cycle;
-%    \draw[draw=black!65,dashed] (i3) -- (new) -- (o3) -- cycle;
-%    \draw[draw=black!65,dashed,fill=gray!35] (i2) -- (new) -- (i3) -- cycle;
-%
-%    \draw[draw=none,pattern=north east lines, pattern color = gray!20] (i1) -- (o1) -- (o2) -- cycle;
-%    \draw[draw=black!55,dashed] (i1) -- (o1) -- (o2) -- cycle;
-%    \draw[draw=black!65,dashed,fill=gray!15] (i1) -- (o2) -- (i2) -- cycle;
-
-    \end{scope}
+    % Add braces to indicate spatial extents
+    \draw[decorate,decoration={brace,amplitude=2.5pt,raise=2pt},yshift=0pt] (corner3) -- (corner4) node [midway,below left = 40pt and -15pt,rotate=-64] {\scriptsize $\frac{\norm{\vct{x}_{i,j+1}-\vct{x}_{i,j}}+\norm{\vct{x}_{i,j}-\vct{x}_{i,j-1}}}{2}$};
+    \draw[decorate,decoration={brace,amplitude=2.5pt,raise=2pt},yshift=0pt] (corner1) -- (corner3) node [midway,below left = 0pt and -15pt,rotate=13.7] {\scriptsize $\frac{\Delta_{i-1}+\Delta_{i}}{2}$};
 
 \end{tikzpicture}
 \end{document}

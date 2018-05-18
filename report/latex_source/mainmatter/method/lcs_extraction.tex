@@ -1,29 +1,115 @@
 \section{Identifying LCSs as subsets of computed manifolds}
 \label{sec:identifying_lcss_as_subsets_of_computed_manifolds}
 
-\begin{framed}
-    \begin{itemize}
-        \item Gjør lokal sjekk; Ligger et meshpunkt i $\mathcal{U}_{0}$ tas
-            det med direkte
-        \item For alle punkter som ikke ble lagt til i første omgang;
-            ligger de tilstrekkelig nærme et allerede akseptert punkt tas
-            de med, fordi (1) de muligens ligger en \emph{tanke} over eller
-            under den faktiske mangfoldigheten og (2) de gir flere trekanter
-            for triangulering --- dermed en mer koherent representasjon
-        \item Henvis til figur som viser ekstrahering av mangfoldighet-del
-            som tilfredsstiller kravene for å være frastøtende LCS
-        \item Til hvert enkelt meshpunkt, tilegn en $\lambda_{3}$-verdi
-            og en vekting, gitt ved det omtrentlige arealet av $\mathcal{M}$
-            som ligger nærmere $\mathcal{M}_{i,j}$ enn alle andre punkter.
+The collection of manifolds computed by means of the method
+outlined in the preceding sections, starting from an approximately
+even distribution of points in the $\mathcal{U}_{0}$ domain
+(cf.\
+\cref{sec:preliminaries_for_computing_repelling_lcss_in_3d_flow_by_means_of_geodesic_level_sets}
+and, in particular, \cref{tab:initialconditionparams}), are all surfaces which
+satisfy LCS existence criterion~\eqref{eq:lcs_condition_c} --- that is,
+they are everywhere perpendicular to the local direction of maximal repulsion.
+In order to extract repelling LCSs from these parametrized surfaces,
+we then identified the regions of the manifolds --- represented as a subset
+of the mesh points in their parametrization --- which also satisfy the
+remaining existence criteria; namely,~\eqref{eq:lcs_condition_a},
+\eqref{eq:lcs_condition_b} and~\eqref{eq:lcs_condition_d}. This was done
+completely analogously to how we identified the grid points belonging within the
+$\mathcal{U}_{0}$ domain, as outlined in
+\cref{sub:identifying_suitable_initial_conditions_for_developing_lcss}.
+In particular, each mesh point $\mathcal{M}_{i,j}$ of a computed manifold
+$\mathcal{M}$ was flagged as to whether or not it satsified all
+of the aforementioned existence criteria.
 
+We then proceded to construct a repelling LCS $\mathcal{L}$ from the mesh
+points of $\mathcal{M}$. Per
+\cref{sub:identifying_suitable_initial_conditions_for_developing_lcss},
+the mesh point at the centre of any given manifold always satisfies
+all the LCS existence criteria; accordingly, it was added as the first mesh
+point $\mathcal{L}_{0}$ of the extracted LCS. Going through the list of
+the remanining mesh points $\mathcal{M}_{i,j}$ which satsified all LCS
+criteria, we added a manifold mesh point to the set of LCS points provided
+that
+\begin{equation}
+    \label{eq:lcs_from_manifold_separation_criterion}
+    \norm{\vct{x}_{i,j}-\widetilde{\vct{x}}_{\kappa}} < %
+    \gamma_{\square}\Delta_{\max}
+\end{equation}
+holds for at least one $\kappa$, where $\vct{x}_{i,j}$ and
+$\widetilde{\vct{x}}_{\kappa}$ denote the coordinates of mesh point
+$\mathcal{M}_{i,j}$ and the already accepted LCS point
+$\mathcal{L}_{\kappa}\in\{\mathcal{L}_{k}\}$, respectively. $\Delta_{\max}$ is
+the maximum allowed mesh point separation used for computing the manifold (cf.\
+\cref{sub:maintaining_mesh_point_density}), while the scalar
+parameter $\gamma_{\square}\geq1$ allows for extracting smoother LCSs, more
+well-suited for visualization purposes --- as will be made clear shortly.
+Subsequently, all mesh points \emph{not} satisfying all of the LCS existence
+criteria were added to the set of LCS points, provided that they comply with a
+similar distance threshold as given in
+\cref{eq:lcs_from_manifold_separation_criterion}, where we only computed
+mesh point separations relative to the LCS points which satisfied all of
+the existence criteria (thus not to any point added to the LCS, for which
+this was not the case).
 
-        \item Analogt til Haller \& Farazmand, 2012computing, filtrerer vi ut
-            de minste LCSene (målt i sum av pseudo-areal for de aksepterte
-            meshpunktene), ettersom disse ventes å ha minst merkbar påvirkning
-            på makroskala-forhold i systemet --- og eventuelle LCSer som
-            i (pseudo-areal-)veiet middel har $\lambda_{3}$ mindre enn 1.
-    \end{itemize}
-\end{framed}
+The tolerance parameter $\gamma_{\square}$ thus allowed us to mitigate possible
+numerical error; in particular, if any given mesh point was slightly perturbed
+away from the underlying manifold, it could still end up being a part of the LCS.
+Finally, we looked at all of the surface elements pertaining to the
+triangulation of the manifold $\mathcal{M}$ (as described in
+\cref{sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from_point_meshes})
+in conjunction with the set of mesh points which had been recognized as
+belongning to the LCS $\mathcal{L}$. If mesh points corresponding to two
+of the three vertices defining a triangular surface element had been
+recognized as part of $\mathcal{L}$, we then added the mesh point corresponding
+to the last remaining vertex to the set of LCS points $\{\mathcal{L}_{k}\}$. Accordingly,
+the triangulations of the $\mathcal{M}$ were reused for $\mathcal{L}$. These
+slight relaxations of the LCS existence criteria facilitate the extraction
+of smoother LCS surfaces are favorable for the visual representation of
+LCSs. Moreover, they mitigate the possible effects of numerical error
+perturbing any given mesh point $\mathcal{M}_{i,j}$ away from the \emph{actual}
+manifold --- leaving it more than sufficiently close to the manifold for
+visualization purposes --- by possibly allowing it to be included as part
+of the LCS after all. \Cref{fig:manifold_lcs_conversion} shows an
+example of extracting a repelling LCS from a computed manifold.
+
 \input{mainmatter/method/figures/conversion}
 
+The extracted LCS surfaces $\mathcal{L}$, parametrized as a set of mesh points
+$\{\mathcal{L}_{k}\}$, represent three-dimensional surfaces which --- allowing
+for a little numerical error --- comply with all of the existence criteria
+for repelling LCSs, as originally proposed by \textcite{haller2011variational}.
+Inspired by the work of \textcite{farazmand2012computing}, we then sought to
+dispose of the smallest among the computed LCSs, as these are expected to
+be the least significant in terms of the overall flow within the system.
+In order to obtain a measure of the size of our three-dimensional surfaces,
+to each LCS point $\mathcal{L}_{k}$, we assigned a weighting given by the
+surface area approximating the region of the underlying manifold $\mathcal{M}$
+that is closer to the corresponding mesh point $\mathcal{M}_{i,j}$ than any
+others. That is,
+\begin{equation}
+    \label{eq:lcs_point_weight}
+    \mathcal{W}_{k} := \mathcal{A}_{i,j} \approx %
+    \frac{\Delta_{i}+\Delta_{i-1}}{2} \cdot %
+    \frac{\norm{\vct{x}_{i,j+1}-\vct{x}_{i,j}}%
+                +\norm{\vct{x}_{i,j}-\vct{x}_{i,j-1}}}{2},
+\end{equation}
+where, as always, $\vct{x}_{i,j}$ denotes the coordinates of mesh point
+$\mathcal{M}_{i,j}$. This surface approximation is illustrated in
+\cref{fig:lcs_point_weighting}. These weights were also used to compute
+a repulsion average $\overline{\lambda}_{3}$; in particular,
+\begin{equation}
+    \label{eq:lcs_lm3_weight}
+    \mathcal{W} = \sum\limits_{k}\mathcal{W}_{k},  \quad%
+    \overline{\lambda}_{3} = \frac{1}{\mathcal{W}} %
+    \sum\limits_{k}\lambda_{3}(\widetilde{\vct{x}}_{k})\mathcal{W}_{k},
+\end{equation}
+where the summation is over all mesh points in the parametrization of
+$\mathcal{L}$, and  $\widetilde{\vct{x}}_{k}$ denotes the coordinates of mesh
+point $\mathcal{L}_{k}$. Any LCS for which the computed total weight
+$\mathcal{W}$ was smaller than some pre-set limit $\mathcal{W}_{\min}$ or
+$\overline{\lambda}_{3} < 1$, the latter as a sanity
+check to ensure overall repulsion, per existence criterion
+\eqref{eq:lcs_condition_a}, were discarded.
+
+\input{mainmatter/method/figures/lcs_point_weights}
 
