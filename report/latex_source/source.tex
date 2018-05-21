@@ -1,26 +1,10 @@
-\documentclass[a4paper,%
-12pt,%
-onecolumn,%
-twoside,%
-titlepage,%
-openright,%
-%openbib
-]{memoir}
+%&preamble
 
-\abnormalparskip{12pt}
-
-\input{_setup_files/packages.tex}
-
-\addbibresource{bibliography/references.bib}
-\graphicspath{{./figures/}}
-
-\input{_setup_files/functions.tex}
-\pdfsuppresswarningpagegroup=1
-\raggedbottom % For å fylle sider med whitespace, heller enn vertikal strekk
 \begin{document}
 \urlstyle{same}
 % Title page
 \setcounter{page}{0}
+\input{titlepage/titlepage}
 
 % Front matter
 \begin{frontmatter}

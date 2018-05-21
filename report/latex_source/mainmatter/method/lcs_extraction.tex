@@ -32,11 +32,11 @@ criteria, we added a manifold mesh point to the set of LCS points provided
 that
 \begin{equation}
     \label{eq:lcs_from_manifold_separation_criterion}
-    \norm{\vct{x}_{i,j}-\widetilde{\vct{x}}_{\kappa}} < %
+    \norm{\vct{x}_{i,j}-\tilde{\vct{x}}_{\kappa}} < %
     \gamma_{\square}\Delta_{\max}
 \end{equation}
 holds for at least one $\kappa$, where $\vct{x}_{i,j}$ and
-$\widetilde{\vct{x}}_{\kappa}$ denote the coordinates of mesh point
+$\tilde{\vct{x}}_{\kappa}$ denote the coordinates of mesh point
 $\mathcal{M}_{i,j}$ and the already accepted LCS point
 $\mathcal{L}_{\kappa}\in\{\mathcal{L}_{k}\}$, respectively. $\Delta_{\max}$ is
 the maximum allowed mesh point separation used for computing the manifold (cf.\
@@ -56,20 +56,20 @@ numerical error; in particular, if any given mesh point was slightly perturbed
 away from the underlying manifold, it could still end up being a part of the LCS.
 Finally, we looked at all of the surface elements pertaining to the
 triangulation of the manifold $\mathcal{M}$ (as described in
-\cref{sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from_point_meshes})
-in conjunction with the set of mesh points which had been recognized as
-belongning to the LCS $\mathcal{L}$. If mesh points corresponding to two
-of the three vertices defining a triangular surface element had been
+\cref{sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from_%
+point_meshes}) in conjunction with the set of mesh points which had been
+recognized as belonging to the LCS $\mathcal{L}$. If mesh points corresponding
+to two of the three vertices defining a triangular surface element had been
 recognized as part of $\mathcal{L}$, we then added the mesh point corresponding
-to the last remaining vertex to the set of LCS points $\{\mathcal{L}_{k}\}$. Accordingly,
-the triangulations of the $\mathcal{M}$ were reused for $\mathcal{L}$. These
-slight relaxations of the LCS existence criteria facilitate the extraction
-of smoother LCS surfaces are favorable for the visual representation of
-LCSs. Moreover, they mitigate the possible effects of numerical error
-perturbing any given mesh point $\mathcal{M}_{i,j}$ away from the \emph{actual}
-manifold --- leaving it more than sufficiently close to the manifold for
-visualization purposes --- by possibly allowing it to be included as part
-of the LCS after all. \Cref{fig:manifold_lcs_conversion} shows an
+to the last remaining vertex to the set of LCS points $\{\mathcal{L}_{k}\}$.
+Accordingly, the triangulations of the $\mathcal{M}$ were reused for
+$\mathcal{L}$. These slight relaxations of the LCS existence criteria facilitate
+the extraction of smoother LCS surfaces are favorable for the visual
+representation of LCSs. Moreover, they mitigate the possible effects of
+numerical error perturbing any given mesh point $\mathcal{M}_{i,j}$ away from
+the \emph{actual} manifold --- leaving it more than sufficiently close to the
+manifold for visualization purposes --- by possibly allowing it to be included
+as part of the LCS after all. \Cref{fig:manifold_lcs_conversion} shows an
 example of extracting a repelling LCS from a computed manifold.
 
 \input{mainmatter/method/figures/conversion}
@@ -85,7 +85,10 @@ In order to obtain a measure of the size of our three-dimensional surfaces,
 to each LCS point $\mathcal{L}_{k}$, we assigned a weighting given by the
 surface area approximating the region of the underlying manifold $\mathcal{M}$
 that is closer to the corresponding mesh point $\mathcal{M}_{i,j}$ than any
-others. That is,
+others. To the mesh point located at the manifold epicentre
+$\vct{x}_{0}$, we assigned the weight
+$\mathcal{W}_{0} = \pi(\delta_{\text{init}}/2)^{2}$. The weights of all other
+mesh points were computed as
 \begin{equation}
     \label{eq:lcs_point_weight}
     \mathcal{W}_{k} := \mathcal{A}_{i,j} \approx %
@@ -101,10 +104,10 @@ a repulsion average $\overline{\lambda}_{3}$; in particular,
     \label{eq:lcs_lm3_weight}
     \mathcal{W} = \sum\limits_{k}\mathcal{W}_{k},  \quad%
     \overline{\lambda}_{3} = \frac{1}{\mathcal{W}} %
-    \sum\limits_{k}\lambda_{3}(\widetilde{\vct{x}}_{k})\mathcal{W}_{k},
+    \sum\limits_{k}\lambda_{3}(\tilde{\vct{x}}_{k})\mathcal{W}_{k},
 \end{equation}
 where the summation is over all mesh points in the parametrization of
-$\mathcal{L}$, and  $\widetilde{\vct{x}}_{k}$ denotes the coordinates of mesh
+$\mathcal{L}$, and  $\tilde{\vct{x}}_{k}$ denotes the coordinates of mesh
 point $\mathcal{L}_{k}$. Any LCS for which the computed total weight
 $\mathcal{W}$ was smaller than some pre-set limit $\mathcal{W}_{\min}$ or
 $\overline{\lambda}_{3} < 1$, the latter as a sanity

@@ -55,6 +55,7 @@ report/latex_source/figures/tikz-figs/*.pdf
 
 # Pseudohacky stuff
 bspline-fortran-arnes-mod/
+report/ltx_dickaround/
 
 # Temporary build folders and files
 cythonmagic/*/build/*
@@ -63,3 +64,4 @@ cythonmagic/*/src/*.html
 
 # Local LaTeX files
 *.sty
+

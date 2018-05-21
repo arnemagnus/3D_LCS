@@ -3,29 +3,43 @@
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \importpgf{figures/mpl-figs}{convergence-minsep=0.16-small.pgf}
-        \caption[]{{\small min\_sep = 0.16}}
-        \label{fig:u0_dom_err_bs32}
+        \caption[]{{\small $\Delta_{\min} = 0.16$}}
+        \label{fig:abc_manifold_minsep=0.16}
     \end{subfigure}
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \importpgf{figures/mpl-figs}{convergence-minsep=0.08-small.pgf}
-        \caption[]{{\small min\_sep = 0.08}}
-        \label{fig:u0_dom_err_bs54}
+        \caption[]{{\small $\Delta_{\min} = 0.08$}}
+        \label{fig:abc_manifold_minsep=0.08}
     \end{subfigure}
 
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \importpgf{figures/mpl-figs}{convergence-minsep=0.04-small.pgf}
-        \caption[]{{\small min\_sep = 0.04}}
-        \label{fig:u0_dom_err_dp54}
+        \caption[]{{\small $\Delta_{\min} = 0.04$}}
+        \label{fig:abc_anifold_minsep=0.04}
     \end{subfigure}
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \importpgf{figures/mpl-figs}{convergence-minsep=0.01-small.pgf}
-        \caption[]{{\small min\_sep = 0.01}}
-        \label{fig:u0_dom_err_dp87}
+        \caption[]{{\small $\Delta_{\min} = 0.01$}}
+        \label{fig:abc_manifold_minsep=0.01}
     \end{subfigure}
-    \caption[Veni, vidi, Aviici]{Numerical convergence as min\_sep decreases}
-    \label{fig:u0_dom_errs}
+    \caption[Geodesic level set approximations with varying mesh point
+    densities, for a manifold in the steady ABC flow]
+    {Geodesic level set approximations with varying mesh point densities, for
+        a manifold in the steady ABC flow (which is described in
+        \cref{sec:flow_systems_defined_by_analytical_velocity_fields}). The
+        manifolds were all computed using the parameters given in
+        \cref{tab:sinusoidal_manifold_params}, with varying mesh point densities
+        (here, given by the value of $\Delta_{\min}$). Each of the
+        approximations were grown from the same initial position $\vct{x}_{0}$.
+        Note how, although the microscale behaviour generally is more
+        well-resolved as the mesh point density increases, there appears to be
+        a threshold beneath which undesired numerical artifacts --- most
+        prevalently near the left edge of the manifold shown in
+        (\subref*{fig:abc_manifold_minsep=0.01}) --- manifest.
+    }
+    \label{fig:abc_manifold_convergence}
 \end{figure}
 

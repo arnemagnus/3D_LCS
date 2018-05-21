@@ -28,7 +28,10 @@ For computing trajectories whose initial conditions are given by
 \cref{eq:faithful_local_directionfield}, the Dormand-Prince 8(7) adaptive
 ODE solver (cf.\ \cref{tab:butcherdopri87,%
 sub:the_implementation_of_dynamic_runge_kutta_step_size}) was the method of
-choice. In order to ensure that any trajectory did not overstep the half-plane
+choice. In particular, the dynamic integration step size adjustment meant
+that we did not need to treat the integration step itself as a degree of
+freedom (of which there are many, as will be revealed shortly). However, in
+order to ensure that any trajectory did not overstep the half-plane
 $\mathcal{H}_{i,j}$ in passing, the step length was continuously limited from
 above by $\norm{\vct{x}_{\text{aim}}-\vct{x}}$. Moreover, in order to avoid
 spending unreasonable computational resources on trajectories which for

@@ -3,29 +3,41 @@
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \importpgf{figures/mpl-figs}{sinusoidal-minsep=0.2.pgf}
-        \caption[]{{\small min\_sep = 0.2}}
-        \label{fig:u0_dom_err_bs32}
+        \caption[]{{\small $\Delta_{\min}= 2.0\cdot10^{-1}$}}
+        \label{fig:sinusoidal_minsep=0.2}
     \end{subfigure}
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \importpgf{figures/mpl-figs}{sinusoidal-minsep=0.12.pgf}
-        \caption[]{{\small min\_sep = 0.12}}
-        \label{fig:u0_dom_err_bs54}
+        \caption[]{{\small $\Delta_{\min}=1.2\cdot10^{-1}$}}
+        \label{fig:sinusoidal_minsep=0.12}
     \end{subfigure}
 
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \importpgf{figures/mpl-figs}{sinusoidal-minsep=0.04.pgf}
-        \caption[]{{\small min\_sep = 0.04}}
-        \label{fig:u0_dom_err_dp54}
+        \caption[]{{\small $\Delta_{\min} = 4.0\cdot10^{-2}$}}
+        \label{fig:sinusoidal_minsep=0.04}
     \end{subfigure}
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \importpgf{figures/mpl-figs}{sinusoidal-minsep=0.01.pgf}
-        \caption[]{{\small min\_sep = 0.01}}
-        \label{fig:u0_dom_err_dp87}
+        \caption[]{{\small $\Delta_{\min} = 1.0\cdot10^{-2}$}}
+        \label{fig:sinusoidal_minsep=0.01}
     \end{subfigure}
-    \caption[Veni, vidi, Aviici]{Manifolds generated from analytically determined vector field.}
-    \label{fig:u0_dom_errs}
+    \caption[Geodesic level set approximation to analytically known three-dimensional surface]
+    {Geodesic level set approximation to analytically known three-dimensional surface.
+        The underlying sinusoidal surface is given by
+        \cref{eq:sinusoidal_definition,eq:sinusoidal_surface_params}. The
+        manifolds were all computed using the parameters given in
+        \cref{tab:sinusoidal_manifold_params}, with varying mesh point
+        densities (given by the value of $\Delta_{\min}$). Each of the
+        approximations were grown from the initial position
+        $\vct{x}_{0}=(\pi,\pi,\pi)$. Note how all of the manifolds are able
+        to capture the macroscale behaviour of the underlying surface,
+        although the microscale behaviour is increasingly well-resolved
+        when the mesh point density increases.
+    }
+    \label{fig:sinusoidal_manifolds}
 \end{figure}
 

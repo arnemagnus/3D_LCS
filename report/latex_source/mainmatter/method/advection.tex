@@ -40,24 +40,6 @@ applying a finite diffference scheme to the advected flow map
 grids of tracers was necessitated in order to accurately compute the flow map
 Jacobian \parencite{loken2017sensitivity,farazmand2012computing}.
 
-Nevertheless, simultaneously solving twelve coupled ODEs for the millions of
-initial conditions as suggested in \cref{tab:gridparams} quickly proved
-an unreasonably strenuous task for the author's own personal laptop. In order
-to accelerate the computational process, this computation was parallelized by
-means of MPI and run on NTNU's supercomputer, Vilje. The choice of MPI
-over alternative multiprocessing tools was mainly motivated by MPI facilitating
-access to multiple nodes within the Vilje cluster. Because the trajectories
-are independent, the parallelization process consisted of distributing an
-approximately even amount of tracers across all ranks, whereupon each
-rank advected (that is, simultaneously solved the twelve coupled ODEs for
-all of) its allocated tracers. In the end, all of the final state flow map
-Jacobians were collected by the designated main process (i.e.,
-$\text{rank}=0$), whereupon the Cauchy-Green strain eigenvalues and -vectors
-were computed --- which will be elaborated upon in
-\cref{sec:computing_cauchy_green_strain_eigenvalues_and_vectors}. The
-associated speedup (and increase in available memory) was crucial for this
-project.
-
 \subsection{The implementation of dynamic Runge-Kutta step size}
 \label{sub:the_implementation_of_dynamic_runge_kutta_step_size}
 

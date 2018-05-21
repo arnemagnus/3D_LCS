@@ -42,12 +42,17 @@ recognized by
     \label{eq:revised_xi3_tan_parallel}
     \norm{\vct{\xi}_{3}(\vct{x})\times\vct{t}_{i,j}} < \gamma_{\|},
 \end{equation}
-where $\gamma_{\|}$ is a small tolerance parameter. In order to
-avoid overstepping, the step length of the Dormand-Prince solver was
-continuously limited from above by $\norm{\vct{x}-\vct{x}_{i,j}}-\Delta_{i}$.
-Moreover, the total allowed integration arclength was limited to a scalar
-multiple of $\Delta_{i}$, allowing for the termination of any (hypothetical)
-trajectory which would end up in a stable orbit.
+where $\gamma_{\|}$ is a small tolerance parameter. Like for the legacy
+approach (as outlined in
+\cref{sec:legacy_approach_to_computing_new_mesh_points}, the self-correcting
+integration step length meant that we did not treat the integration
+step as a degree of freedom, and, in order to avoid overstepping, the step
+length of the Dormand-Prince solver was continuously limited from above by
+$\norm{\vct{x}-\vct{x}_{i,j}}-\Delta_{i}$. Moreover, the total allowed
+integration arclength was limited to an integer multiple --- that is,
+$\gamma_{\text{arc}}$--- of the interset step $\Delta_{i}$ allowing for the
+termination of any (hypothetical) trajectory which would end up in a stable
+orbit.
 
 The trajectory integration was immediately interrupted upon reaching a point
 $\vct{x}_{\text{fin}}$ separated from $\vct{x}_{i,j}$ by a distance

@@ -1,18 +1,37 @@
 \begin{figure}[htpb]
-\centering
+    \centering
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \importpgf{figures/mpl-figs}{blobtest-pre-small.pgf}
-        \caption[]{{\small $t=0$}}
-        \label{fig:u0_dom_err_dp54}
+        \caption[]{{\small Initial state, at $t=0$}}
+        \label{fig:blobtest-pre}
     \end{subfigure}
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \importpgf{figures/mpl-figs}{blobtest-post-small.pgf}
-        \caption[]{{\small $t=5$}}
-        \label{fig:u0_dom_err_dp87}
+        \caption[]{{\small Final state, at $t=5$}}
+        \label{fig:blobtest-post}
     \end{subfigure}
-\caption[Veni, vidi, Aviici]{Blob test for verifying expected LCS behaviour}
-    \label{fig:u0_dom_errs}
+    \caption[Advection of tracers in order to verify the repelling nature of
+    the computed LCSs]
+    {%
+        Advection of tracers in order to verify the repelling nature of the
+        computed LCSs. At $t=0$, two blobs of initial conditions are placed
+        at opposite sides of a repelling LCS identified in the
+        steady ABC flow --- more on which to follow in
+        \cref{sec:computed_lcss_in_the_abc_flow} --- as shown in
+        (\subref*{fig:blobtest-pre}). The two blobs, and the mesh points in
+        the parametrization of the LCS, are then advected by the velocity
+        field given by \cref{eq:abc_flow,eq:abc_params_stationary} using the
+        Dormand-Prince 8(7) ODE solver until $t=5$, for which the corresponding
+        state is shown in (\subref*{fig:blobtest-post}). Note that, although
+        the LCS triangulation breaks down under the advection, the two blobs
+        of particles remain on fairly compact, and remain on the opposite
+        sides of the LCS, never crossing the LCS surface. This indicates
+        that the local centre of strongest repulsion remains located
+        \emph{inbetween} the two blobs of particles throughout --- which
+        is the exact behaviour we expect for a repelling LCS.
+    }
+    \label{fig:blobtest}
 \end{figure}
 

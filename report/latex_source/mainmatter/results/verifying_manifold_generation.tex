@@ -1,44 +1,154 @@
 \section{Verifiying our method of generating manifolds}
-\label{sec:verifying_ourt_method_of_generating_manifolds}
+\label{sec:verifying_our_method_of_generating_manifolds}
 
-\begin{framed}
-    \begin{itemize}
-        \item Beskrivelse av tredimensjonal overflate og hvordan vi
-            fant et normalvektorfelt
-            \begin{equation}
-                \label{eq:sinusoidal_surface_function}
-                z = g(x,y) = A\sin(\omega_{x}x)\sin(\omega_{y}y) + z_{0}
-            \end{equation}
-            \begin{equation}
-                \label{eq:sinusoidal_implicit_surface_function}
-                f(\vct{x}) = g(x,y) - z
-            \end{equation}
-            \begin{equation}
-                \label{eq:sinusoidal_normal_vector_field}
-                \begin{gathered}
-                    \grad{}f(\vct{x}) = \begin{pmatrix}
-                        A\omega_{x}\cos(\omega_{x}x)\sin(\omega_{y}y)\\
-                        A\omega_{y}\sin(\omega_{x}x)\cos(\omega_{y}y)\\
-                        1
-                    \end{pmatrix}\\
-                    \vct{n}(\vct{x}) = \frac{\grad{}f(\vct{x})}{\norm{\grad{}f(\vct{x})}}
-                \end{gathered}
-            \end{equation}
-        \item Tabell som viser \emph{alle} parameterne vi brukte for å
-            generer sinusfelt
-        \item Ligning som beskriver hvordan RMS-feil ble beregnet
-            \begin{equation}
-                \label{eq:sinusoidal_rms}
-                \text{err} = \sqrt{\frac{1}{N}\sum\limits_{i,j}\norm{z_{i,j}-g(x,y)}^{2}}
-            \end{equation}
-        \item Henvisning til tabell i avsnitt om ABC-strømning som
-            viser \emph{alle} parameterne vi brukte på ABC-feltene
-        \item Henvisning til remark 1 om invarians for baner i vilkårlige
-            lineærkombinasjoner av $\vct{\xi}_{1,2}$.
-    \end{itemize}
-\end{framed}
+\subsection{An analytical test case}
+\label{sub:an_analytical_test_case}
+As a verification test case for (our variant of) the method of geodesic level
+sets to compute three-dimensional manifolds, we sought to reproduce a
+three-dimensional surface defined by
+\begin{subequations}
+    \label{eq:sinusoidal_definition}
+    \begin{equation}
+        \label{eq:sinusoidal_surface_function}
+        z = g(x,y) = A\sin(\omega_{x}x)\sin(\omega_{y}y) + z_{0},
+    \end{equation}
+    which can be expressed as the zeros of the scalar function
+    \begin{equation}
+        \label{eq:sinusoidal_implicit_surface_function}
+        f(\vct{x}) = g(x,y) - z,
+    \end{equation}
+    where $\vct{x}$ denotes the Cartesian coordinate vector $(x,y,z)$.
+\end{subequations}
+In order to do so, we computed its unit normal vector field as
+\begin{equation}
+    \label{eq:sinusoidal_normal_vector_field}
+    \vct{n}(\vct{x}) = \frac{\grad{f(\vct{x})}}{\norm{\grad{f(\vct{x})}}},
+\end{equation}
+which we then substituted for the $\vct{\xi}_{3}$-direction field
+in \cref{eq:revised_direction_field}. Here, we chose the parameters
+\begin{equation}
+    \label{eq:sinusoidal_surface_params}
+    A=1,\quad \omega_{x}=\omega_{y}=2, \quad z_{0} = \pi
+\end{equation}
+and used a single initial position $\vct{x}_{0} = (\pi,\pi,\pi)$ from which
+to develop the surface, by subsequently adding mesh points organized in level
+sets, as outlined in
+\cref{sec:revised_approach_to_computing_new_mesh_points,%
+    sec:managing_mesh_accuracy,%
+    sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from_point_meshes,%
+    sec:macroscale_stopping_criteria_for_the_expansion_of_computed_manifolds}.
+
+Specifically, we computed a total of seven surface approximations, using
+the parameter values provided in \cref{tab:sinusoidal_manifold_params} with
+different values of $\Delta_{\min}$, thereby different mesh point densities.
+Four of the resulting manifolds are shown in \cref{fig:sinusoidal_manifolds}.
+Although all of the presented manifolds successfully encapsulate the macroscale
+behaviour of the underlying surface (given by \cref{eq:sinusoidal_definition,%
+eq:sinusoidal_surface_params}), increasing the mesh point density clearly
+facilitates more accurate approximations. In particular, some of the visual
+discrepancies of \cref{fig:sinusoidal_manifolds} can be attributed to
+the linear interpolation inherent to our triangulation scheme
+(see \cref{sec:continuously_reconstructing_three_dimensional_manifold_surfaces_%
+from_point_meshes}).
+
+\input{mainmatter/results/tables/sinusoidal_params.tex}
 
 \input{mainmatter/results/figures/sinusoidalmanifolds.tex}
+
+In order to obtain a quantitative measure of how an increase in the mesh
+point density impacts the accuracy of the overall approximation, we
+computed the root mean square (hereafter abbreviated to RMS) error of each mesh
+point as
+\begin{equation}
+    \label{eq:sinusoidal_rms}
+    \text{err}_{\text{RMS}} = \sqrt{\frac{1}{N}\sum\limits_{i,j}\abs{z_{i,j}-g(x_{i},y_{j}}^{2}},
+\end{equation}
+where we sum over all of the $N$ computed points, with $g(x,y)$ given
+by \cref{eq:sinusoidal_definition} (and \cref{eq:sinusoidal_surface_params}).
+The RMS error is shown as a function of the mesh point density in
+\cref{fig:sinusoidal_manifold_errors}. It appears to scale quadratically
+with $\Delta_{\min}$, the smallest permitted separation between neighboring
+mesh points --- which doubles as a measurement of the overall mesh density.
+
 \input{mainmatter/results/figures/sinusoidalerror.tex}
+
+Note that, due to the local (pseudo-)planar nature of the parametrization of
+manifolds by means of points organized in level sets, the number of mesh points
+in the parametrization of a manifold \emph{increases} quadratically as
+$\Delta_{\min}$ decreases. Thus, the decrease in numerical error comes at the
+cost of an increased consumption of computational resources. For instance,
+the method's most computationally costly operations (namely, generating
+trajectories to identify new mesh points and checking for self-intersections,
+cf.\ sections~\ref{sec:revised_approach_to_computing_new_mesh_points} and
+\ref{sub:continuous_self_intersection_checks}, respectively) need to be
+performed far more frequently when the number of mesh points increase.
+Perhaps more crucially, an increased number of mesh points leads to an
+increase in the required memory. These considerations, together with the
+ones to follow in the immediately forthcoming section, became the foundation
+on which we based our choice of mesh point density for the computation of
+LCSs (which will be elaborated upon in \cref{sec:computed_lcss_in_the_abc_flow,%
+sec:computed_lcss_in_the_forde_fjord}).
+
+\subsection{Sample manifolds computed from the ABC flow}
+\label{sub:sample_manifolds_computed_from_the_abc_flow}
+
+\Cref{fig:abc_manifold_convergence} shows a sample manifold obtained for the
+steady ABC flow (cf.\
+\cref{sec:flow_systems_defined_by_analytical_velocity_fields}), computed for a
+few different mesh point densities, and otherwise similar parameters as were
+used in order to approximate the sinusoidal surface (see
+\cref{tab:sinusoidal_manifold_params,fig:sinusoidal_manifolds}). From
+\cref{fig:abc_manifold_convergence}, it is apparent that increasing the mesh
+point density generally results in increased resolution. However, there appears
+to be some density threshold, beneath which unwanted numerical artifacts
+start to emerge. This is particularly evident in
+\cref{fig:abc_manifold_minsep=0.01}, where the sharp indentation appears to be
+out of place. Such oddities could be due to accumulation of interpolation
+error when computing new mesh points from ficticious ancestor points
+(as described in \cref{sub:maintaining_mesh_point_density}) --- which naturally
+occurs more often with increased mesh point density. Accordingly, our
+choice of mesh point density for (both variants of) the ABC flow (which will be
+presented in \cref{tab:abc_manifold_params}) was guided by a desire to limit the
+amount of such oddities, in addition to the memory required in order to store
+each manifold (as described in \cref{sub:an_analytical_test_case}).
+
 \input{mainmatter/results/figures/convergence.tex}
+
+Motivated by \cref{rmk:invariance_lcs}, we sought to verify that our computed
+manifolds, by virtue of containing repelling LCSs, act as invariant manifolds
+for arbitrary linear combinations of the $\vct{\xi}_{1}$- and
+$\vct{\xi}_{2}$-direction fields. \Cref{fig:verification_of_manifold_invariance}
+shows a sample manifold obtained for the steady ABC flow (described in detail
+in \cref{sec:flow_systems_defined_by_analytical_velocity_fields}), using the
+parameter values provided in \cref{tab:abc_manifold_params} --- the very same
+that we used in order to compute LCSs in said flow (more to follow in
+\cref{sec:computed_lcss_in_the_abc_flow}). It also shows $200$ different
+trajectories launched from (a small circle laying within the manifold, centered
+in) the manifold epicentre $\vct{x}_{0}$ and computed using the Dormand-Prince
+8(7) adaptive ODE solver (see
+\cref{tab:butcherdopri87,%
+sub:the_implementation_of_dynamic_runge_kutta_step_size}). In
+\cref{fig:verification_forced_outwards}, the trajectories are solution
+curves of \cref{eq:revised_direction_field}, where $\vct{t}_{i,j}$ was kept
+constant along each trajectory. Meanwhile,
+\cref{fig:verification_pure_linear_combination} shows solution curves
+of \cref{eq:dynamialsystem_initialposition}, for $200$ different pairs of
+weights $(a,b)$ such that the initial trajectory directions were evenly
+distributed in the plane defined by the coordinate $\vct{x}_{0}$ and
+the unit normal $\vct{\xi}_{3}(\vct{x}_{0})$.
+
 \input{mainmatter/results/figures/verification.tex}
+
+Unsurprisingly, the  curves in \cref{fig:verification_forced_outwards} all lie
+within the computed manifold, as all of its constituent mesh points were
+computed as endpoints of trajectories in a similarly defined direction field
+(see \cref{sec:revised_approach_to_computing_new_mesh_points}). The same
+applies for the curves shown in \cref{fig:verification_pure_linear_combination};
+however, there seems to be some regions of the manifold which are particularly
+challenging to hit --- signified by a decreased trajectory density ---
+it appears that very specific weights $(a,b)$ are required to reach them.
+Regardless, none of the computed trajectories ever leave the computed
+surface, which confirms that the surface \emph{is} in fact an invariant
+manifold of the $\vct{\xi}_{1}$- and $\vct{\xi}_{2}$-direction fields, in
+compliance with LCS existence criterion~\eqref{eq:lcs_condition_c}.
+

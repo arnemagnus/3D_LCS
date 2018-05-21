@@ -1,22 +1,92 @@
-\section{Verification case for the extraction of repelling LCSs from manifolds}
+\section[Verifying our method of extracting repelling LCSs from the computed manifolds]
+{Verifying our method of extracting repelling LCSs from the computed manifolds}
+\label{sec:verifying_our_method_of_extracting_repelling_lcss_from_the_computed_manifolds}
 
-\begin{framed}
-    \begin{itemize}
-        \item Ligning som beskriver det gitte hastighetsfeltet
-            \begin{equation}
-                \label{eq:spherical_velocity_field}
-                \dot{\vct{x}}(t) = \frac{\vct{x}}{\norm{\vct{x}}}\sin(\pi(\norm{\vct{x}}-1))
-            \end{equation}
-        \item Henvis til tabell som oppgir parametre for sinusfelted,
-            i en ny tabell som inneholder alle de endrede parameterne
-        \item Figur som viser hvorfor vi forventer å finne en LCS i $\norm{\vct{x}}=1$
-        \item Figur som viser LCSen vi fant
-        \item Beskrivelse av blobtest for å verifisere at vi finner \emph{frastøtente} LCSer
-    \end{itemize}
-\end{framed}
+\subsection{An analytical test case}
+\label{sub:an_analytical_test_case}
 
-\label{sec:verification_case_for_the_extraction_of_repelling_lcss_from_manifolds}
-\input{mainmatter/results/figures/spherical_lcs.tex}
+As a verification test case for our way of extracting repelling LCSs from the
+computed manifolds (which is described in detail in
+\cref{sec:identifying_lcss_as_subsets_of_computed_manifolds}), we defined
+the purely radial velocity field
+\begin{equation}
+    \label{eq:spherical_velocity_field}
+    \dot{\vct{x}}(t) = \frac{\vct{x}}{\norm{\vct{x}}}\sin{\pi(\norm{\vct{x}}-r)},
+\end{equation}
+which is perfectly stationary on the sphere $\norm{\vct{x}}=r$. We then computed
+strain eigenvalues and -vectors over the time interval $\mathcal{I}=[0,10]$
+for an equidistant grid of $200\times200\times200$ tracers in the
+domain $\mathcal{U}=[-2,2]^{3}$, as outlined in
+\cref{sub:advecting_a_set_of_tracers,%
+sec:computing_cauchy_green_strain_eigenvalues_and_vectors}, for $r=1$.
+Moreover, we computed the arithmetic average of $\lambda_{3}(\vct{x}_{0})$
+across all solid angles in order to approximate it as a function of radius
+alone. The dependence of $\lambda_{3}$ as a function of radius is shown in
+\cref{fig:spherical_lm3}, which reveals a sharp repulsion peak at
+$\norm{\vct{x}}=r=1$. This agrees well with the underlying velocity field
+(\cref{eq:spherical_velocity_field}); in particular, in passing through
+$\norm{\vct{x}}=r$, the flow direction changes from radially inwards to
+radially outwards (or vice versa). Accordingly, we expect to find a single
+repelling LCS, forming a unit sphere.
+
 \input{mainmatter/results/figures/spherical_lm3.tex}
+
+Using a filtering frequency $\nu=20$ (see
+\cref{sub:identifying_suitable_initial_conditions_for_developing_lcss,%
+tab:initialconditionparams}) and otherwise the same parameters as given
+in \cref{tab:abc_manifold_params}, we developed manifolds from the set
+of $225$ grid points in the reduced $\mathcal{U}_{0}$ domain by the method
+described in
+\cref{sec:preliminaries_for_computing_repelling_lcss_in_3d_flow_by_means_of%
+    _geodesic_level_sets,sec:revised_approach_to_computing_new_mesh_points,%
+    sec:managing_mesh_accuracy,%
+    sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from_point_meshes,%
+    sec:macroscale_stopping_criteria_for_the_expansion_of_computed_manifolds}.
+Then, by means of the method outlined in
+\cref{sec:identifying_lcss_as_subsets_of_computed_manifolds}, we extracted
+repelling LCSs from the computed manifolds, using a tolerance parameter
+$\gamma_{\square}=1.2$, keeping only the LCSs with (pseudo-)surface area
+greater than or equal to $\mathcal{W}_{\min}=1$. The result was a total of
+$18$ identical (to numerical precision) spherical LCSs of radius $1$. These are
+shown in \cref{fig:spherical_lcs}. Seeing as the expected LCS was successfully
+reproduced without false positives, we concluded that our LCS extraction
+routine functions as intended.
+
+
+\input{mainmatter/results/figures/spherical_lcs.tex}
+
+\subsection{Verifying that the computed LCSs are in fact repelling}
+\label{sub:verifying_that_the_computed_lcss_are_in_fact_repelling}
+
+Per \cref{def:normal_repellence,def:repelling_lcs}, we expect lumps of particles
+which start out at opposite sides of a repelling LCS to quickly diverge under
+the advection of the underlying flow system. Moreover, courtesy of being
+material surfaces, no particles may ever cross a repelling LCS. In order to
+verify the impenetrable and repelling nature of the computed LCSs, we
+used a setup of two blobs of initial conditions, situated at opposite sides of
+an identified LCS surface in the steady ABC flow (more on which to follow in
+\cref{sec:computed_lcss_in_the_abc_flow}). We then advected the particle blobs
+and the points in the parametrization of the LCS for five units of time,
+in the velocity field given by \cref{eq:abc_flow,eq:abc_params_stationary},
+using the Dormand-Prince 8(7) ODE solver in similar fashion to how we
+`advected' the flow map Jacobian field in the first place
+(see \cref{sec:computing_the_flow_map_and_its_directional_derivatives}).
+The initial and final states are shown in \cref{fig:blobtest}.
+
 \input{mainmatter/results/figures/blobtest.tex}
 
+\Cref{fig:blobtest} shows that, while the triangulated structure of the LCS
+breaks down, the two blobs of particles have been far removed from eachother
+in the transition from \cref{fig:blobtest-pre} to \cref{fig:blobtest-post}.
+Furthermore, particles belonging to a single blob remain reasonably compact,
+indicating that the local repulsion centre was situated between the two
+blobs throughout --- i.e., along the LCS. One possible explanation
+for the relatively large amount of stretching of the mesh points in the
+parametrization of the LCS under the aforementioned advection, could be
+that (several of) the mesh points being slightly perturbed away from
+the \emph{actual} LCS surface, due to round-off errors (which are practically
+unavoidable, as LCSs are of infinitesimal width per existence criterion%
+~\eqref{eq:lcs_condition_b}). Finally, the fact that none of the particles
+belonging to either of the two blobs ever appear to move across the
+LCS mesh points, supports the notion that the computed LCSs do in fact act as
+repelling material surfaces.
