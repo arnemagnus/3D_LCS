@@ -52,6 +52,8 @@ notebooks/ABC_flow/stuff/*
 notebooks/tor-fjord/*
 report/latex_source/_pgfcache
 report/latex_source/figures/tikz-figs/*.pdf
+report/latex_source/titlepage/*.eps
+report/latex_source/titlepage/*.pdf
 
 # Pseudohacky stuff
 bspline-fortran-arnes-mod/
