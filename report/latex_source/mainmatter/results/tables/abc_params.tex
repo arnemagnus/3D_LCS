@@ -1,13 +1,10 @@
 \begin{table}[htpb]
     \centering
-    \caption[Parameter values used to approximate an analytically known
-    three-dimensional surface by the method of geodesic level sets]
-    {Parameter values used to approximate an analytically known
-        three-dimensional surface (see
-        \cref{eq:sinusoidal_definition,eq:sinusoidal_surface_params}) by
-        the method of geodesic level sets. Note that while we varied the
-        overall mesh point density by altering $\Delta_{\min}$ and
-        $\Delta_{\max}$, we kept the ratio between them constant.
+    \caption[Parameters used to compute manifolds, and subsequently
+    repelling LCSs, in the ABC flow (both variants)]
+    {Parameters used to compute manifolds, and subsequently repelling LCSs,
+        in both variants of the ABC flow (see
+        \cref{sec:flow_systems_defined_by_analytical_velocity_fields}).
     }
     \label{tab:abc_manifold_params}
     \begin{tabular}{ccc}
@@ -51,13 +48,29 @@
         \cref{sub:limiting_the_accumulation_of_numerical_noise})}
         \\[9pt]
         %
-        \makecell[c]{$\alpha_{\uparrow}$, $\alpha_{\downarrow}$ \\[1.5pt]%
+        \makecell[c]{$\alpha_{\uparrow}$\\ $\alpha_{\downarrow}$ \\[1.5pt]%
         ${(\Delta\alpha)}_{\uparrow}$, ${(\Delta\alpha)}_{\downarrow}$} &
-        \makecell[c]{$5\si{\degree}$, $25\si{\degree}$\\[1.5pt]%
+        \makecell[c]{$8.7\cdot10^{-2}\si{\radian}$ \phantom{2}$(5\si{\degree})$\\ %
+            $4.4\cdot10^{-1}\si{\radian}$ $(25\si{\degree})$\\[1.5pt]%
         $2\Delta_{\max}\alpha_{\uparrow}$, $2\Delta_{\min}\alpha_{\downarrow}$}%
         & \makecell[c]{Used in a curvature-based approach to adjust\\
         interset distances (outlined in
-    \cref{sub:a_curvature_based_approach_to_determining_interset_separations})}\\
+        \cref{sub:a_curvature_based_approach_to_determining_interset_separations})}
+        \\[18pt]
+        %
+        $\gamma_{\square}$ &
+        $1.75$ &
+        \makecell[c]{Relaxation parameter for extracting LCSs from\\ the
+            computed manifolds (see
+        \cref{sec:identifying_lcss_as_subsets_of_computed_manifolds})}
+        \\[9pt]
+        %
+        $\mathcal{W}_{\text{min}}$ &
+        $6.0$ &
+        \makecell[c]{Filters away the smallest LCSs measured in\\
+        (pseudo-)surface area (see
+        \cref{sec:identifying_lcss_as_subsets_of_computed_manifolds})}
+        \\
         \bottomrule
     \end{tabular}
 \end{table}

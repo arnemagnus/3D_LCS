@@ -1,14 +1,15 @@
 \begin{table}[htpb]
     \centering
-    \caption[Parameter values used to approximate an analytically known
-    three-dimensional surface by the method of geodesic level sets]
-    {Parameter values used to approximate an analytically known
-        three-dimensional surface (see
-        \cref{eq:sinusoidal_definition,eq:sinusoidal_surface_params}) by
-        the method of geodesic level sets. Note that while we varied the
-        overall mesh point density by altering $\Delta_{\min}$ and
-        $\Delta_{\max}$, we kept the ratio between them constant.
-    }
+    \caption[Parameter values used to compute manifolds, and subsequently
+    repelling LCSs, in the Førde fjord]
+    {
+        Parameter values used to compute manifolds, and subsequently repelling
+        LCSs, in the Førde fjord (see
+        \cref{sec:flow_systems_defined_by_gridded_velocity_data}). Note that,
+        as the domain of interest is scaled in units of metre, so too are
+        $\delta_{\text{init}}$, $\Delta_{\min}$, $\Delta_{\max}$ and
+        $\Delta_{1}$; whereas $\mathcal{W}_{\min}$ is given in square metre.
+}
     \label{tab:fjord_manifold_params}
     \begin{tabular}{ccc}
         \toprule
@@ -51,13 +52,29 @@
         \cref{sub:limiting_the_accumulation_of_numerical_noise})}
         \\[9pt]
         %
-        \makecell[c]{$\alpha_{\uparrow}$, $\alpha_{\downarrow}$ \\[1.5pt]%
-        ${(\Delta\alpha)}_{\uparrow}$, ${(\Delta\alpha)}_{\downarrow}$} &
-        \makecell[c]{$5\si{\degree}$, $25\si{\degree}$\\[1.5pt]%
-        $2\Delta_{\max}\alpha_{\uparrow}$, $2\Delta_{\min}\alpha_{\downarrow}$}%
+        \makecell[c]{$\alpha_{\uparrow}$\\ $\alpha_{\downarrow}$ \\[1.5pt]%
+        ${(\delta\alpha)}_{\uparrow}$, ${(\delta\alpha)}_{\downarrow}$} &
+        \makecell[c]{$8.7\cdot10^{-2}\si{\radian}$ \phantom{2}$(5\si{\degree})$\\ %
+            $4.4\cdot10^{-1}\si{\radian}$ $(25\si{\degree})$\\[1.5pt]%
+        $2\delta_{\max}\alpha_{\uparrow}$, $2\delta_{\min}\alpha_{\downarrow}$}%
         & \makecell[c]{Used in a curvature-based approach to adjust\\
         interset distances (outlined in
-    \cref{sub:a_curvature_based_approach_to_determining_interset_separations})}\\
+        \cref{sub:a_curvature_based_approach_to_determining_interset_separations})}
+        \\[18pt]
+        %
+        $\gamma_{\square}$ &
+        $1.2$ &
+        \makecell[c]{Relaxation parameter for extracting LCSs from\\ the
+            computed manifolds (see
+        \cref{sec:identifying_lcss_as_subsets_of_computed_manifolds})}
+        \\[9pt]
+        %
+        $\mathcal{W}_{\text{min}}$ &
+        \numprint{20000} &
+        \makecell[c]{Filters away the smallest LCSs measured in\\
+        (pseudo-)surface area (see
+        \cref{sec:identifying_lcss_as_subsets_of_computed_manifolds})}
+        \\
         \bottomrule
     \end{tabular}
 \end{table}
