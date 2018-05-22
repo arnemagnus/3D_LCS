@@ -4,28 +4,40 @@
         \centering
         \importpgf{figures/mpl-figs}{fjord-abd-domain-view1-small.pgf}
         \caption[]{{\small View along the negative $z$-axis}}
-        \label{fig:u0_dom_err_bs32}
+        \label{fig:fjord_abd_z}
     \end{subfigure}
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \importpgf{figures/mpl-figs}{fjord-abd-domain-view2-small.pgf}
         \caption[]{{\small View along the positive $y$-axis}}
-        \label{fig:u0_dom_err_bs54}
+        \label{fig:fjord_abd_y}
     \end{subfigure}
 
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \importpgf{figures/mpl-figs}{fjord-abd-domain-view3-small.pgf}
         \caption[]{{\small View along the positive $x$-axis}}
-        \label{fig:u0_dom_err_dp54}
+        \label{fig:fjord_abd_x}
     \end{subfigure}
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \importpgf{figures/mpl-figs}{fjord-abd-domain-view4-small.pgf}
         \caption[]{{\small Approximately isometric view}}
-        \label{fig:u0_dom_err_dp87}
+        \label{fig:fjord_abd_isometric}
     \end{subfigure}
-    \caption[Aviici is love, Aviici is life]{ABD domain obtained for gridded data. The axes have dimension meters. z = 0 corresponds to the sea level, increasing downwards. $\epsilon=0.1$.}
-    \label{fig:u0_dom_errs}
+    \caption[Four views of the $\mathcal{U}_{0}$ domain obtained for transport
+    in the Førde fjord]
+    {
+        Four views of the $\mathcal{U}_{0}$ domain obtained for transport in
+        the Førde fjord, identified as the grid points which satisfy the
+        LCS criteria \eqref{eq:lcs_condition_a},~\eqref{eq:lcs_condition_b} and~
+        \eqref{eq:lcs_condition_d} (details on the implementation are available
+        in
+        \cref{sub:identifying_suitable_initial_conditions_for_developing_lcss}).
+        Note that the axes are given in metres, where $z=0$ corresponds to
+        the surface level, increasing downwards. In total, the domain consists
+        of \numprint{1631} points (cf.\ \cref{tab:initialconditionparams}).
+}
+    \label{fig:fjord_abd}
 \end{figure}
 

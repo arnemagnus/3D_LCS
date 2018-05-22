@@ -4,28 +4,39 @@
         \centering
         \importpgf{figures/mpl-figs}{dep-abd-domain-view1-small.pgf}
         \caption[]{{\small View along the negative $z$-axis}}
-        \label{fig:u0_dom_err_bs32}
+        \label{fig:unsteady_abd_z}
     \end{subfigure}
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \importpgf{figures/mpl-figs}{dep-abd-domain-view2-small.pgf}
         \caption[]{{\small View along the positive $y$-axis}}
-        \label{fig:u0_dom_err_bs54}
+        \label{fig:unsteady_abd_y}
     \end{subfigure}
 
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \importpgf{figures/mpl-figs}{dep-abd-domain-view3-small.pgf}
         \caption[]{{\small View along the positive $x$-axis}}
-        \label{fig:u0_dom_err_dp54}
+        \label{fig:unsteady_abd_x}
     \end{subfigure}
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
         \importpgf{figures/mpl-figs}{dep-abd-domain-view4-small.pgf}
         \caption[]{{\small Approximately isometric view}}
-        \label{fig:u0_dom_err_dp87}
+        \label{fig:unsteady_abd_isometric}
     \end{subfigure}
-    \caption[Aviici is love, Aviici is life]{ABD domain obtained for dynamic flow. $\epsilon=0.005$.}
-    \label{fig:u0_dom_errs}
+    \caption[Four views of the $\mathcal{U}_{0}$ domain obtained for transport
+    in the unsteady ABC flow]
+    {
+        Four views of the $\mathcal{U}_{0}$ domain obtained for transport in the
+        unsteady ABC flow, identified as the grid points which satisfy the LCS
+        criteria \eqref{eq:lcs_condition_a},~\eqref{eq:lcs_condition_b} and~
+        \eqref{eq:lcs_condition_d} (details on the implementation are available
+        in
+        \cref{sub:identifying_suitable_initial_conditions_for_developing_lcss}).
+        In total, the domain consists of \numprint{361461} different points
+        (cf.\ \cref{tab:initialconditionparams}).
+}
+    \label{fig:unsteady_abd}
 \end{figure}
 

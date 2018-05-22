@@ -1,21 +1,81 @@
 \section{Computed LCSs in the ABC flow}
 \label{sec:computed_lcss_in_the_abc_flow}
 
-\begin{framed}
-    \begin{itemize}
-        \item Henvis til tidligere tabeller i ny tabell som oppgir alle
-            nye parameterverdier --- spesielt minste vekting og toleranseparameter for aksept av punkt
-        \item Henvis til tabell som oppgir antall punkter i $\mathcal{U}_{0}$ (opprinnelig så vel som redusert) (\cref{tab:initialconditionparams})
-        \item Tydeliggjør tidlig at samme innsynsvinkler er benyttet
-        \item Understrek hvordan både LCSer og $\mathcal{U}_{0}$-domener
-            ligner på hverandre --- vi kjenner igjen de to tilfellene som
-            varianter av den samme underliggende strømningen
-    \end{itemize}
-\end{framed}
+Having computed Cauchy-Green strain eigenvalues and -vectors for both
+variants of the ABC flow (as presented in
+\cref{sec:flow_systems_defined_by_analytical_velocity_fields}), we used
+the $\mathcal{U}_{0}$ domain --- i.e., the grid points satisfying the LCS
+existence criteria~ \eqref{eq:lcs_condition_a},~\eqref{eq:lcs_condition_b}
+and~\eqref{eq:lcs_condition_b} (the implementation of which are
+described in
+\cref{sub:identifying_suitable_initial_conditions_for_developing_lcss}) --- as a
+first approximation to where we may reasonably expect to find repelling LCSs.
+Four different views of the $\mathcal{U}_{0}$ domains for the steady
+and unsteady ABC flows are shown in \cref{fig:steady_abd,fig:unsteady_abd},
+respectively.
+
+\input{mainmatter/results/figures/indep-abd.tex}
+
+\input{mainmatter/results/figures/dep-abd.tex}
+
+Note that, although the $\mathcal{U}_{0}$ domains for the two
+flow variants do not contain the same number of points (cf.\
+\cref{tab:initialconditionparams}), the macroscopic trends remain the same. The
+difference lies in minute details, such as the topmost cavities in
+\cref{fig:steady_abd_z,fig:unsteady_abd_z} being of slightly different sizes,
+or the point densities along the north east `bands' in \cref{fig:steady_abd_y,%
+fig:unsteady_abd_y} being somewhat dissimilar. This is as expected, seeing
+as the two underlying transport systems are lightly perturbed versions of
+one another.
+
+Using an approximately evenly sampled subset of the $\mathcal{U}_{0}$ domain
+as initial conditions, \numprint{618} and \numprint{676} for the steady
+and unsteady variants of the ABC flow, respectively, we then computed manifolds
+and extracted LCSs using the parameters in \cref{tab:initialconditionparams,%
+tab:abc_manifold_params} and the method
+outlined in \cref{sec:preliminaries_for_computing_repelling_lcss_in_3d_flow_by_means_of_geodesic_level_sets,%
+    sec:revised_approach_to_computing_new_mesh_points,%
+    sec:managing_mesh_accuracy,%
+    sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from_%
+    point_meshes,%
+    sec:macroscale_stopping_criteria_for_the_expansion_of_computed_manifolds,%
+    sec:identifying_lcss_as_subsets_of_computed_manifolds}. This resulted
+in a total of \numprint{22} LCS surfaces for the steady flow, and
+\numprint{31} surfaces for the unsteady flow.
 
 \input{mainmatter/results/tables/abc_params}
 
-\input{mainmatter/results/figures/indep-abd.tex}
-\input{mainmatter/results/figures/dep-abd.tex}
+The LCSs present in the steady flow turn out to form two distinct,
+smooth and coherent structures, which are shown in \cref{fig:steady_lcss}. The
+structures lie close together, yet appear not to be connected --- accordingly,
+the two structures are highlighted by different colors for the purpose of
+facilitating visual comparisons. Note in particular the correspondence between
+the $\mathcal{U}_{0}$  domain, shown in \cref{fig:steady_abd}, and the computed
+LCSs, shown in \cref{fig:steady_lcss} --- where the perspective of each
+subfigure is the same as that of the corresponding subfigure in
+\cref{fig:steady_abd}. Two prominent similarities are the tunnel-like structure
+apparent in the middle right of \cref{fig:steady_abd_y,fig:steady_lcss_y}, and
+the indent which manifests near the bottom right corner of
+\cref{fig:steady_abd_x,fig:steady_lcss_x}.
+
 \input{mainmatter/results/figures/indep-lcss.tex}
+
+The computed LCSs in the unsteady flow constitute three distinct, smooth and
+coherent structures, which are shown in \cref{fig:unsteady_lcss}. Although
+the structures lie adjacent to eachother, they do not seem to be connected.
+Thus, the different structures are indicated using disparate colors, yet
+again to facilitate visual comparisons. Just like for the LCSs in the steady
+flow, the computed LCSs strongly resemble subsets of the $\mathcal{U}_{0}$,
+shown in \cref{fig:unsteady_abd} --- where the viewing angle of each
+$\mathcal{U}_{0}$ domain subfigure is the same as that of the corresponding
+subfigure in \cref{fig:unsteady_lcss}. The two largest structures apparent in
+\cref{fig:unsteady_lcss} harmonize with the two dominant structures found for
+the steady flow (see \cref{fig:steady_lcss}). The smallest structure appears
+reasonable when considered together with the $\mathcal{U}_{0}$ domain --- shown
+in \cref{fig:unsteady_abd} --- in particular, it further enhances the
+tubular structures manifesting in the middle right of \cref{fig:unsteady_abd_y,%
+    fig:unsteady_lcss_y}, and the middle top of \cref{fig:unsteady_abd_x,%
+fig:unsteady_lcss_x}.
+
 \input{mainmatter/results/figures/dep-lcss.tex}
+
