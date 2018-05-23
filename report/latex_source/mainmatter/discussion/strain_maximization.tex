@@ -1,0 +1,47 @@
+\section{On the process of identifying locally most normally repelling material
+surfaces}
+\label{sec:on_the_process_of_identifying_locally_most_normally_repelling_material_surfaces}
+
+\begin{framed}
+    Hvordan en skal implementere eksistenskriterium \eqref{eq:lcs_condition_d}
+    numerisk er, så vidt vi vet, ikke entydig bestemt enda.
+
+    Noen alternative fremgangsmåter:
+    \begin{itemize}
+        \item Foreta todimensjonal i en tettpakket planfamilie og stable
+            strainlines oppå hverandre for å oppnå (pseudo-)tredimensjonale
+            strukturer
+            \begin{itemize}
+                \item Drawback: Dette er ikke reell 3D. Så vidt vi vet har
+                    ingen undersøkt om resultater fra denne typen tilnærming er
+                    robuste hva gjelder planfamiliens orientering
+            \end{itemize}
+        \item Gjør seleksjon på samme måte som
+            \textcite{farazmand2012computing}, hvor nærliggende
+            materialoverflater sammenlignes basert på repulsion average, og
+            de sterkeste beholdes
+            \begin{itemize}
+                \item Drawback: Skiller ikke nødvendigvis på materialoverflater
+                    som er annerledes orientert i rommet, til tross for at de
+                    ligger ved siden av hverandre
+                \item Drawback: Hvordan definere nærliggende? Tredimensional
+                    analogi av \textcite{farazmand2012computing} ville vært å
+                    finne alle skjæringskurvene mellom hver materialoverflate
+                    og et sett med plan, for så å identifisere nærliggende
+                    mangfoldigheter ved at skjæringskurvene ligger
+                    tilstrekkelig nærme hverandre
+                    \begin{itemize}
+                        \item Nytt drawback: Hvordan velge disse linjene på
+                            hensiktsmessig vis?
+                    \end{itemize}
+            \end{itemize}
+            \item Bruk en clusteringalgoritme til å identifisere nærliggende
+                materialoverflater som både ligger nær hverandre og er nokså
+                likt orientert i rommet, og ekstraher den med sterkest
+                repulsion average
+                \begin{itemize}
+                    \item Utenfor denne oppgavens skop.
+                \end{itemize}
+    \end{itemize}
+\end{framed}
+
