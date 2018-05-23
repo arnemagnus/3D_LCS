@@ -1,0 +1,32 @@
+\section[Regarding the variational approach to computing the Cauchy-Green
+strain characteristics] {Regarding the variational approach to computing
+\\\phantom{4.1} the Cauchy-Green strain characteristics}
+\label{sec:regarding_the_variational_approach_to_computing_the_cauchy_green%
+_strain_characteristics}
+
+As outlined in
+\cref{sec:computing_the_flow_map_and_its_directional_derivatives,%
+sec:computing_cauchy_green_strain_eigenvalues_and_vectors}, we used an
+SVD decomposition of the flow map Jacobian to find the Cauchy-Green strain
+eigenvalues and -vectors, rather than computing these directly from the
+Cauchy-Green strain tensor field. This approach, suggested by
+\textcite{miron2012anisotropic} and endorsed by
+\textcite{oettinger2016autonomous}, boasts superior accuracy compared to the
+more conventional approach of approximating the directional derivatives of the
+flow map (i.e.,\ the components of the flow map Jacobian) by applying a finite
+difference method and then explicitly computing the Cauchy-Green strain
+tensor field --- as was done by \textcite{farazmand2012computing}. In addition
+to the increased mathematical complexity of directly transporting the flow map
+Jacobian field, the approach relies on bounded first spatial derivatives of the
+underlying velocity field, as is evident from inspecting
+\cref{eq:timederivative_flowmap_jacobian}. This should, however, not be an issue
+when considering smooth analytical test cases, or when using a high (quadratic
+or higher, cf.\ \cref{sub:spline_interpolation_of_discrete_data}) order
+interpolation method for gridded data. Alternatively, the derivatives can be
+approximated by e.g.\ a finite difference method. Should any of these
+approaches prove impractical, the method of \textcite{farazmand2012computing}
+could be sufficient.
+
+
+
+
