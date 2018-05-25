@@ -2,6 +2,21 @@
 {Computing the flow map and its directional\\ \phantom{3.2} derivatives}
 \label{sec:computing_the_flow_map_and_its_directional_derivatives}
 
+Computing the flow map Jacobian field is crucial, as it is used in our
+definition of the Cauchy-Green strain tensor field (cf.\
+\cref{eq:defn_cauchygreen}) --- whose eigenvalues and -vectors, in turn, form
+the basis of the LCS existence criteria, given in \cref{eq:lcs_conditions}. An
+outline of how we solved \cref{eq:consideredflow} in conjunction with
+\cref{eq:timederivative_flowmap_jacobian} in order to obtain the final state
+of the flow map Jacobian field is presented in
+\cref{sub:advecting_a_set_of_tracers}. Furthermore,
+\cref{sub:the_implementation_of_dynamic_runge_kutta_step_size} contains a
+detailed description of how the dynamic Runge-Kutta solver step size (see
+\cref{sub:the_runge_kutta_family_of_numerical_ode_solvers}) was
+implemented. How we then extracted the Cauchy-Green strain eigenvalues and
+-vectors from the final state flow map Jacobian field is the topic of
+\cref{sec:computing_cauchy_green_strain_eigenvalues_and_vectors}.
+
 \subsection{Advecting a set of tracers}
 \label{sub:advecting_a_set_of_tracers}
 
@@ -74,8 +89,10 @@ As a measure of the numerical error,
 \end{equation}
 is used. Then, $\mathrm{err}$ is compared to unity in order to find an optimal
 step size. From \cref{def:runge_kutta_order}, it follows that $\mathrm{err}$
-scales like $h^{q+1}$, where $q = \min(p,\widehat{p}\,)$. Under the assumption
-$1\approx{}Kh_{\mathrm{opt}}^{q+1}$, one finds the optimal step size from
+scales like $h^{q+1}$, where $q = \min(p,\widehat{p}\,)$. Accordingly, under
+the expected scaling $\mathrm{err}\approx{}Kh^{q+1}$, and the assumption
+$1\approx{}Kh_{\mathrm{opt}}^{q+1}$, one finds the optimal step size according
+to
 \begin{equation}
     \label{eq:adaptivetimestep_optimalstepsize}
     h_{\mathrm{opt}} = h\cdot\bigg(\frac{1}{\mathrm{err}}\bigg)^{\frac{1}{q+1}}.
