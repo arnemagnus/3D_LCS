@@ -49,9 +49,11 @@ round-off error. Our approach is based on comparing the value of $\lambda_{3}$
 at a given grid point $\vct{x}_{0}$ to the values of $\lambda_{3}$ at the two
 points $\vct{x}_{0}\pm\varepsilon\vct{\xi}_{3}(\vct{x}_{0})$, where
 $\varepsilon$ is a number one order of magnitude smaller than the grid spacing.
-Should $\lambda_{3}(\vct{x}_{0})$ be the largest of the three, the point
-$\vct{x}_{0}$ would be flagged as satisfying criterion
-\eqref{eq:lcs_condition_d}.
+Should $\lambda_{3}(\vct{x}_{0})$ be the largest of the three, signifying that
+$\vct{x}_{0}$ could be an approximate maximum of the $\lambda_{3}$ field
+along the (local) $\vct{\xi}_{3}$ direction (which compliance with condition~
+\eqref{eq:lcs_condition_b} would confirm), the point $\vct{x}_{0}$ would be
+flagged as satisfying criterion~\eqref{eq:lcs_condition_d}.
 
 Using all of the points in $\mathcal{U}_{0}$ domain would invariably involve
 computing alot of LCSs several times over --- in particular, if two neighboring

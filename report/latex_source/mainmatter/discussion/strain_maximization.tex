@@ -1,47 +1,111 @@
-\section{On the process of identifying locally most normally repelling material
-surfaces}
+\section[On the process of identifying locally most repelling material
+surfaces]{On the process of identifying locally most \\\phantom{5.3} repelling
+    material surfaces}
 \label{sec:on_the_process_of_identifying_locally_most_normally_repelling_material_surfaces}
 
-\begin{framed}
-    Hvordan en skal implementere eksistenskriterium \eqref{eq:lcs_condition_d}
-    numerisk er, så vidt vi vet, ikke entydig bestemt enda.
+To our knowledge, standardized algorithms for the detection of points which
+satisfy LCS existence criterion~\eqref{eq:lcs_condition_d} --- which is used to
+identify points that might be local repulsion maxima --- have not yet been
+found. The conditions given in \cref{eq:lcs_condition_a,eq:lcs_condition_b,%
+eq:lcs_condition_c} are quite unambiguous, in comparison. Numerical round-off
+error makes detecting the zeros of inner products, like the one in condition~%
+\eqref{eq:lcs_condition_d}, challenging. Moreover, while the concept of
+\emph{local} maxima for the normal repulsion is unambiguous for analytical
+systems, this is not the case for numerical simulations. In contrast to the
+infinitesimal neighborhoods one may consider for analytical flow, the discrete
+nature of numerics --- coupled with possible numerical round-off error ---
+means that the regions within which one looks for repulsion maxima must have
+finite extent. Accordingly, the scale at which one performs \emph{local}
+comparisons becomes significant. Our approach to finding points which satisfy
+LCS existence condition~\eqref{eq:lcs_condition_d} is outlined in
+\cref{sub:identifying_suitable_initial_conditions_for_developing_lcss}, where
+we used a small perturbance parameter $\varepsilon$ to define the extent of the
+nearby regions within which we sought local repulsion maxima.
 
-    Noen alternative fremgangsmåter:
-    \begin{itemize}
-        \item Foreta todimensjonal i en tettpakket planfamilie og stable
-            strainlines oppå hverandre for å oppnå (pseudo-)tredimensjonale
-            strukturer
-            \begin{itemize}
-                \item Drawback: Dette er ikke reell 3D. Så vidt vi vet har
-                    ingen undersøkt om resultater fra denne typen tilnærming er
-                    robuste hva gjelder planfamiliens orientering
-            \end{itemize}
-        \item Gjør seleksjon på samme måte som
-            \textcite{farazmand2012computing}, hvor nærliggende
-            materialoverflater sammenlignes basert på repulsion average, og
-            de sterkeste beholdes
-            \begin{itemize}
-                \item Drawback: Skiller ikke nødvendigvis på materialoverflater
-                    som er annerledes orientert i rommet, til tross for at de
-                    ligger ved siden av hverandre
-                \item Drawback: Hvordan definere nærliggende? Tredimensional
-                    analogi av \textcite{farazmand2012computing} ville vært å
-                    finne alle skjæringskurvene mellom hver materialoverflate
-                    og et sett med plan, for så å identifisere nærliggende
-                    mangfoldigheter ved at skjæringskurvene ligger
-                    tilstrekkelig nærme hverandre
-                    \begin{itemize}
-                        \item Nytt drawback: Hvordan velge disse linjene på
-                            hensiktsmessig vis?
-                    \end{itemize}
-            \end{itemize}
-            \item Bruk en clusteringalgoritme til å identifisere nærliggende
-                materialoverflater som både ligger nær hverandre og er nokså
-                likt orientert i rommet, og ekstraher den med sterkest
-                repulsion average
-                \begin{itemize}
-                    \item Utenfor denne oppgavens skop.
-                \end{itemize}
-    \end{itemize}
-\end{framed}
+An alternative way of checking if a point satisfies condition~%
+\eqref{eq:lcs_condition_d} could be extending the work of
+\textcite{farazmand2012computing} from two to three dimensions. A direct
+adaption would amount to finding all intersections between the computed
+surfaces and a family of planes, then, having organized the surfaces in bundles
+based on their intersections with any given plane being sufficiently close,
+flagging the most repulsive surface within each bundle as a local strain
+maximizer. This would not, however, \emph{solve} the challenge of translating
+the concept of locality to numerics. Furthermore, there does not appear to be
+an unambiguous way of selecting the aforementioned family of planes --- a
+notion which is supported by \citeauthor{farazmand2012computing} failing to
+mention any details on the sets of lines (the two-dimensional equivalent of
+the family of planes) they used for their applications. Lastly, as the
+intersection between any material surface and a plane generally forms a
+curve, rather than a unique intersection point, the process of identifying a
+material surface whose intersections with any given plane lie sufficiently
+close to those of any other material surface could easily become expensive in
+terms of computational resource consumption.
 
+Another option, similar to the approach of \textcite{farazmand2012computing},
+would be to simply divide the computational domain into a set of smaller
+domains, identifying the computed surfaces which (partially) lie within each
+such region and then flagging the most strongly repelling surface within each
+subdomain as a local repulsion maximizer. Like the selection of planes in the
+aforementioned adaption of the method of \citeauthor{farazmand2012computing},
+however, there does not (to our knowledge) exist an objective way to select
+the size nor locations of these subdomains. Moreover, the approach of
+comparisons within smaller sets of the computational domain does not take the
+orientation of the material surfaces into account --- a weakness which is
+shared with the adaption of \citeauthor{farazmand2012computing}'s method.
+Conceptually, using direct comparisons of material surfaces in order to detect
+the surfaces which form local repulsion maxima should not involve comparing
+surfaces with disparate orientations. Neither should two surfaces for which
+only a small subset of one lies anywhere near the other; such material surfaces
+would likely influence the overall flow patterns quite differently. Highly
+optimized algorithms would likely be needed in order to check such extra
+comparison criteria without excess consumption of the available computational
+resources.
+
+To our knowledge, computing LCSs in three-dimensional flow has not been
+attempted particularly frequently, rendering us without reliable reference
+cases. \textcite{blazevski2014hyperbolic} construct three-dimensional LCSs by
+dividing their computational domain into a set of planes. After computing LCSs
+within each plane as locally most repelling material lines, they consider these
+LCS curves as the projections of three-dimensional structures onto the plane
+family, whereupon they apply a curve fitting algorithm to connect the LCS
+curves and form three-dimensional structures. This approach is not, however,
+fully three-dimensional; moreover, \citeauthor{blazevski2014hyperbolic} do not
+provide any evidence as to whether or not their approach is robust with regards
+to the orientation (or density) of the plane family.
+\textcite{oettinger2016autonomous} seemingly do not even attempt to identify
+local repulsion or attraction maxima in their considerations of hyperbolic
+LCSs (see \cref{def:hyperbolic_lcs,def:attracting_lcs,def:repelling_lcs}).
+Notably, \citeauthor{oettinger2016autonomous} appear to be content with
+identifying invariant manifolds of the $\vct{\xi}_{2}$- and $\vct{\xi}_{3}$-
+(or, in the case of attracting LCSs, $\vct{\xi}_{1}$-) direction fields as
+regions where LCSs may reasonably be expected to exist (see
+\cref{rmk:invariance_lcs}).
+
+Although outside of the scope of this project, yet another alternative
+approach would be to identify all material surfaces which lie reasonably close
+to eachother, having similar spatial orientation and (preferably) size, by
+means of some numerical clustering algorithm. Then, the most strongly repellent
+surface segments within each bundle could reasonably be considered as the local
+repulsion maximizer. Possibly geared towards a project pertaining to machine
+learning, this sort of approach would benefit greatly from reliable reference
+cases. Moreover, basing the selection process solely on the computed manifolds'
+repulsion averages (as defined in \cref{eq:lcs_lm3_weight}), or other
+macroscale quantities, need not necessarily be the best possible approach in
+terms of extracting the most significant LCSs. In particular, subsets of large
+LCSs could exhibit significant repulsion, without necessarily resulting in large
+repulsion averages. Similarly, relatively small yet strongly repelling LCSs
+need not be particularly significant for the overall flow pattern.
+
+Compared with the aforementioned alternatives, one could argue that our
+approach of checking whether or not each \emph{point} in a computed material
+surface satisfies existence criterion~\eqref{eq:lcs_condition_d} by considering
+a small neighborhood around them (whose extent is defined by the perturbance
+parameter $\varepsilon$, cf.\
+\cref{sub:identifying_suitable_initial_conditions_for_developing_lcss}) is more
+faithful to the underlying theory. Note in particular that our approach is
+based on the local repulsion of small subsets (namely, the points constituting
+the parametrization) of the computed manifolds, in contrast to the global
+comparison of repulsion averages (or similar quantities) inherent to the other
+methods. However, put simply, there is certainly room for further research with
+regards to the numerical implementation of LCS existence criterion~%
+\eqref{eq:lcs_condition_d}.
