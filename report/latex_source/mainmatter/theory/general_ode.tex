@@ -29,7 +29,7 @@ However, all of the considerations also hold for $n>1$.
 
 Say that the solution of system \eqref{eq:ivpsystem} is sought at some time
 $t_{f}$. In order to approximate said solution numerically, the time variable
-must be discretized first. This is frequently done by defining
+must first be discretized. This is frequently done by defining
 \begin{equation}
     \label{eq:discretime}
     t_{j} = t_{0}+j\cdot{}h,
@@ -63,12 +63,12 @@ state at $t$, can be expressed as
 \end{subequations}
 is solved to find $x(t+h)$.
 
-In general, implicit methods require the solution of a linear system at every
-time step. Clearly, implicit methods are more computationally demanding than
-explicit methods. The main selling point of implicit methods is that they are
-more numerically stable than explicit methods. This property means that
-implicit methods are particularly well-suited for \emph{stiff} systems, i.e.,
-physical systems with highly disparate time scales
+In solving linear ODEs, implicit methods require the solution of a linear
+system at every time step. Typically, implicit methods are more computationally
+demanding than explicit methods. The main selling point of implicit methods is
+that they are more numerically stable than explicit methods. This property
+means that implicit methods are particularly well-suited for \emph{stiff}
+systems, i.e., physical systems with highly disparate time scales
 \parencite[p.2]{hairer1996solving}. For such systems, most explicit methods are
 unstable, unless the time step $h$ is made exceptionally small, rendering these
 methods practically useless. For \emph{nonstiff} systems, however, implicit
