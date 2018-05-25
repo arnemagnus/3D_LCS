@@ -1,0 +1,46 @@
+This chapter contains a complete description of our method of computing
+repelling LCSs. Details regarding the specific flow systems we used as test
+cases will be presented in
+\cref{sec:flow_systems_defined_by_analytical_velocity_fields,%
+sec:flow_systems_defined_by_gridded_velocity_data}. Our way of extracting
+the Cauchy-Green strain eigenvalues and -vectors (cf.\
+\cref{eq:cauchygreen_characteristics}) from the aforementioned flow systems
+then follows in
+\cref{sec:computing_the_flow_map_and_its_directional_derivatives,%
+sec:computing_cauchy_green_strain_eigenvalues_and_vectors}. As will be outlined
+in \cref{sec:preliminaries_for_computing_repelling_lcss_in_3d_flow_by_means%
+_of_geodesic_level_sets,%
+sec:legacy_approach_to_computing_new_mesh_points,%
+sec:revised_approach_to_computing_new_mesh_points,%
+sec:managing_mesh_accuracy,%
+sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from%
+_point_meshes,%
+sec:macroscale_stopping_criteria_for_the_expansion_of_computed_manifolds,%
+sec:identifying_lcss_as_subsets_of_computed_manifolds}, the Cauchy-Green
+strain eigenvalues and -vectors were then used to compute manifolds as
+three-dimensional surfaces --- parametrized in terms of points organized in
+\emph{geodesic level sets} --- of which subsets were extracted as repelling
+LCSs. Lastly,
+\cref{sec:making_the_most_of_the_available_computational_resources} contains a
+succint description of some optimization tweaks we introduced in order to limit
+the consumption of computational resources.
+
+Note that we present two variants of the method of geodesic level sets for
+expanding a manifold by the addition of mesh points.
+\Cref{sec:legacy_approach_to_computing_new_mesh_points} contains the framework
+for a level set approach which closely resembles the method introduced by
+\textcite{krauskopf2005survey} (see also \textcite{krauskopf2003computing}).
+However, by making use of the properties defining repelling LCSs (see
+\cref{eq:lcs_conditions}), we were able to simplify the method of generating
+new mesh points considerably, resulting in a great speedup in terms of
+computation runtimes. Our adaption of the method of geodesic level sets for the
+specific case of repelling LCSs will hereafter be referred to as the
+\emph{revised} approach to computing new mesh points, and is described in detail
+in \cref{sec:revised_approach_to_computing_new_mesh_points}. Although it was
+not used to generate any of our results (to follow in \cref{cha:results}), the
+method of \cref{sec:legacy_approach_to_computing_new_mesh_points} --- from now
+on denoted as the \emph{legacy} approach to computing new mesh points ---
+is included here, as our \emph{revised} approach is not necessarily applicable
+to analyses pertaining to different kinds of LCSs.
+
+

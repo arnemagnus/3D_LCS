@@ -7,7 +7,7 @@
 
 The variational framework for computing LCSs is based upon the advection of
 non-interacting tracers, as described in
-\cref{sub:the_type_of_flow_systems_considered}, by the systems mentioned in
+\cref{sec:the_type_of_flow_systems_considered}, by the systems mentioned in
 \cref{sec:flow_systems_defined_by_analytical_velocity_fields,%
 sec:flow_systems_defined_by_gridded_velocity_data}. The computational domains
 $\mathcal{U}$ were discretized by a set equidistant tracers, effectively
@@ -102,8 +102,9 @@ as follows:
     \end{cases}
 \end{equation}
 where $\mathrm{fac}$ and $\mathrm{fac}_{\mathrm{max}}$ are numerical safety
-factors, intended to prevent increasing the step size \emph{too} much. Here,
-the parameter values
+factors, intended to prevent increasing the step size \emph{too} much, in order
+to make it more likely that the next step is accepted. Here, the parameter
+values
 \begin{equation}
     \label{eq:adaptivetimetep_safetyfactors}
     \mathrm{fac}=0.8,\quad \mathrm{fac}_{\mathrm{max}} = 2.0,
