@@ -1,4 +1,61 @@
-\section{About the computation of material surfaces as invariant manifolds}
-\label{sec:about_the_computation_of_material_surfaces_as_invariant_manifolds}
+\section{Comments on the method of geodesic level sets}
+\label{sec:comments_on_the_method_of_geodesic_level_sets}
 
+\begin{framed}
+    \begin{itemize}
+        \item Vår tilpasning av metoden utnytter underliggende egenskaper ved
+            frastøtende LCS-flater. Dermed ikke universelt anvendbar.
+        \item Kort resym{\'e} av fordelene ved vår metode
+            \begin{itemize}
+                \item Konseptuelt enklere
+                \item Raskere
+            \end{itemize}
+        \item Svakheter:
+            \begin{itemize}
+                \item Å kreve at meshpunktene utgjør lukkede topologiske
+                    sirkler vanskeliggjør oppløsning av oppførsel nær
+                    domenekanter (for ikke-periodiske grensebetingelser, jf.\
+                    LCSene i Førdefjorden, som presentert i
+                    \cref{sec:computed_lcss_in_the_forde_fjord})
+                \item Å kreve at alle nye meshpunkt skal kunne beregnes fra
+                    hver forfader i foregående levelset gjør det vanskelig å
+                    beregne `hele' den invariante mangfoldigheten ut fra hvert
+                    arnepunkt. Mer spesifikt er dette umulig med mindre
+                    mangfoldigheten strekker steg utover som en perfekt
+                    sirkulær overflate.
+                \item Mange frihetsgrader (se
+                    \cref{tab:initialconditionparams,%
+                    tab:fjord_manifold_params}), hvorav kun noen kan velges fra
+                    direkte betraktninger av domenets romlige utstrekning.
+                    Blant annet utgjør intersection-lengde og
+                    loop-fjernings-toleranse nøkkelparametre som det ikke
+                    nødvendigvis er åpenbart hvordan en best bør velge.
+                    \begin{itemize}
+                        \item Parameterne tilhørende den krumningsbaserte
+                            metoden for å velge neste interset-distanse kan
+                            sløyfes; vår erfaring er at disse aldri økte
+                            distansen, snarere reduserte den så langt som mulig
+                            i løpet av ikke alt for mange levelset.
+
+                            Ikke helt uventet, fordi det holder med mye
+                            krumning \emph{ett} sted for å redusere
+                            steglengden.
+                    \end{itemize}
+            \end{itemize}
+            \item En videre revisjon, hvor en går lengre vekk fra ideen om å
+                organisere punkter i topologiske sirkler til fordel for
+                \emph{point strains} kan være hensiktsmessig --- spesielt hva
+                gjelder beregning av en mangfoldighet som ikke har uniform
+                utstrekning i alle retninger, sett fra arnesteded
+                \begin{itemize}
+                    \item Kan medføre innfløkt logikk hva gjelder å
+                        opprettholde meshpunkttetthet
+                \end{itemize}
+                \item Alternative fremgangsmåter finnes. Blant annet beskriver
+                    \textcite{krauskopf2005survey} X andre metoder for å
+                    beregne invariante mangfoldigheter av tredimensjonale
+                    vektorfelter. Ingen av disse ble undersøkt som en del av
+                    dette prosjektet. \emph{Forslag til videre arbeid}.
+    \end{itemize}
+\end{framed}
 
