@@ -12,7 +12,7 @@ For reasons of brevity in the discussion to follow, denote the points
 $\{\mathcal{M}_{i,j}\}$ and $\{\mathcal{M}_{i+1,j}\}$ as \emph{ancestor} and
 \emph{descendant points}, respectively. Furthermore, the set of mesh points
 which can be traced backwards to a single, common ancestor, is referred to as
-a \emph{point strain}. The considerations to follow rely on each mesh point
+a \emph{point train}. The considerations to follow rely on each mesh point
 $\mathcal{M}_{i,j}$ inheriting its tangential vector from its direct ancestor;
 that is, $\vct{t}_{i,j}:=\vct{t}_{i-1,j}$. The treatment of the special cases
 of this inheritance-based approach will be described in greater detail in
@@ -37,27 +37,32 @@ of length $\Delta_{i}$ in the vector field locally defined as
     {\norm{\vct{\xi}_{3}(\vct{x})\times\vct{t}_{i,j}}},
 \end{equation}
 starting at $\vct{x}_{i,j}$. Moreover, all of the vectors of the intermediary
-Runge-Kutta steps were corrected, if necessary, by continuous comparison with
-$\vct{\rho}_{i,j}$ and sign-reversion if an intermediary vector was directed
-radially inwards. Finally, the computed aim point was projected into the
-half-plane $\mathcal{H}_{i,j}$ as follows:
+Runge-Kutta evaluations of $\vct{\psi}(\vct{x})$ were corrected, if necessary,
+by continuous comparison with $\vct{\rho}_{i,j}$ and sign-reversion if an
+intermediary vector was directed radially inwards. Finally, the computed aim
+point was projected into the half-plane $\mathcal{H}_{i,j}$ as follows:
 \begin{equation}
     \label{eq:aimpoint_planeprojection}
-\vct{x}_{\text{aim}} := \vct{x}_{\text{aim}} - \inp[]{\vct{t}_{i,j}}{\vct{x}_{\text{aim}}}\vct{t}_{i,j}.
+    \vct{x}_{\text{aim}} := \vct{x}_{\text{aim}} - \inp[]{\vct{t}_{i,j}}%
+    {\vct{x}_{\text{aim}}}\vct{t}_{i,j}.
 \end{equation}
 
 The idea is then to look for a new position within $\mathcal{H}_{i,j}$, in the
 vicinity of $\vct{x}_{\text{aim}}$, which lies a distance $\Delta_{i}$ from
 $\vct{x}_{i,j}$, by moving within the constraints of the manifold. Motivated by
-\cref{rmk:invariance_lcs}, this involves computing trajectories which everywhere
-lie within the plane spanned by the local $\vct{\xi}_{1}$- and
+\cref{rmk:invariance_lcs} --- on the invariance of the time-$t_{0}$ image of
+repelling LCSs under perturbations in the local $\vct{\xi}_{1}$- and
+$\vct{\xi}_{2}$-direction fields --- this involves computing trajectories which
+everywhere lie within the plane spanned by the local $\vct{\xi}_{1}$- and
 $\vct{\xi}_{2}$-vectors. This was done by defining a local, normalized
 direction field as
 \begin{equation}
     \label{eq:faithful_local_directionfield}
     \vct{\mu}(\vct{x},\vct{x}_{\text{aim}}) = %
-    \frac{\vct{x}_{\text{aim}}-\vct{x} - \inp[]{\vct{\xi}_{3}(\vct{x})}{\vct{x}_{\text{aim}}-\vct{x}}\vct{\xi}_{3}(\vct{x})}%
-    {\norm{\vct{x}_{\text{aim}}-\vct{x} - \inp[]{\vct{\xi}_{3}(\vct{x})}{\vct{x}_{\text{aim}}-\vct{x}}\vct{\xi}_{3}(\vct{x})}},
+    \frac{\vct{x}_{\text{aim}}-\vct{x} - \inp[]{\vct{\xi}_{3}(\vct{x})}%
+    {\vct{x}_{\text{aim}}-\vct{x}}\vct{\xi}_{3}(\vct{x})}%
+    {\norm{\vct{x}_{\text{aim}}-\vct{x} - \inp[]{\vct{\xi}_{3}(\vct{x})}%
+    {\vct{x}_{\text{aim}}-\vct{x}}\vct{\xi}_{3}(\vct{x})}},
 \end{equation}
 that is, the normalized projection of the vector separating $\vct{x}$ and
 $\vct{x}_{\text{aim}}$ into the plane orthogonal to the local $\vct{\xi}_{3}$
@@ -74,4 +79,5 @@ of (the immediately forthcoming)
 
 \input{mainmatter/method/levelset_method_take_one/computing_new_s_values}
 
-\input{mainmatter/method/levelset_method_take_one/handling_failures_to_compute_points}
+\input{mainmatter/method/levelset_method_take_one/handling_failures_to_compute%
+_points}

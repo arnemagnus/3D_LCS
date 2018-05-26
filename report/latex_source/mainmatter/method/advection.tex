@@ -45,8 +45,8 @@ simultaneously, via the Dormand-Prince 8(7) method (see
 will be outlined in detail in
 \cref{sub:the_implementation_of_dynamic_runge_kutta_step_size}.
 
-In this framework, the tracer advection takes second stage to the `advection' of
-the components of the flow map Jacobian. As it turns out, the increase in
+In this framework, the tracer advection takes second stage to the `advection'
+of the components of the flow map Jacobian. As it turns out, the increase in
 mathematical complexity which the coupling terms introduces is a small price to
 pay for the increased precision compared to the straightforward approach of
 applying a finite diffference scheme to the advected flow map
@@ -66,7 +66,7 @@ the embedded Dormand-Prince 8(7) method, as described in
 \cref{sub:the_runge_kutta_family_of_numerical_ode_solvers,tab:butcherdopri87},
 yields the two approximations $x_{1}$ and $\widehat{x}_{1}$, from which the
 difference $x_{1}-\widehat{x}_{1}$ can be used as an estimate of the error
-of the less precise result. The idea is to enforce the error of the numerical
+of the less precise result. The idea is to force the error of the numerical
 solution to satisfy, componentwise:
 \begin{equation}
     \label{eq:adaptivetimestep_baseline}
@@ -85,7 +85,8 @@ were used throughout.
 As a measure of the numerical error,
 \begin{equation}
     \label{eq:adaptivetimestep_errorestimate}
-    \mathrm{err} = \sqrt{\frac{1}{n}\sum\limits_{i=1}^{n}\bigg(\frac{x_{1,i}-\widehat{x}_{1,i}}{\mathrm{sc}_{i}}\bigg)^{2}}
+    \mathrm{err} = \sqrt{\frac{1}{n}\sum\limits_{i=1}^{n}%
+    \bigg(\frac{x_{1,i}-\widehat{x}_{1,i}}{\mathrm{sc}_{i}}\bigg)^{2}}
 \end{equation}
 is used. Then, $\mathrm{err}$ is compared to unity in order to find an optimal
 step size. From \cref{def:runge_kutta_order}, it follows that $\mathrm{err}$
@@ -95,7 +96,8 @@ $1\approx{}Kh_{\mathrm{opt}}^{q+1}$, one finds the optimal step size according
 to
 \begin{equation}
     \label{eq:adaptivetimestep_optimalstepsize}
-    h_{\mathrm{opt}} = h\cdot\bigg(\frac{1}{\mathrm{err}}\bigg)^{\frac{1}{q+1}}.
+    h_{\mathrm{opt}} = h\cdot%
+    \bigg(\frac{1}{\mathrm{err}}\bigg)^{\frac{1}{q+1}}.
 \end{equation}
 If $\mathrm{err}\leq1$, the suggested solution step is accepted, the
 (pseudo-)time variable $t$ is increased by $h$, and the step length is modified
@@ -105,7 +107,7 @@ Which of the two approximations $x_{n+1}$ or $\widehat{x}_{n+1}$ is used to
 continue the integration generally depends on the embedded Runge-Kutta method
 in question. Continuing the integration with the higher order result is
 commonly referred to as \emph{local extrapolation}. The Dormand-Prince 8(7)
-method is tuned in order to minimize the order of the higher order result;
+method is tuned in order to minimize the error of the higher order result;
 accordingly, local extrapolation was used throughout. If $\mathrm{err} > 1$, the
 solution step is rejected, and the step length decreased before attempting
 another step. The procedure for updating the time step can be summarized
@@ -114,8 +116,11 @@ as follows:
     \label{eq:adaptivetimestep_timestepupdate}
     h_{\mathrm{new}} = %
     \begin{cases}
-        \min(\mathrm{fac}_{\mathrm{max}}\cdot{}h,\mathrm{fac}\cdot{}h_{\mathrm{opt}}) & \text{if the solution step is accepted,}\\
-        \mathrm{fac}\cdot{}h_{\mathrm{opt}}, & \text{if the solution step is rejected,}
+        \min(\mathrm{fac}_{\mathrm{max}}\cdot{}h,%
+        \mathrm{fac}\cdot{}h_{\mathrm{opt}}) %
+        & \text{if the solution step is accepted,}\\
+        \mathrm{fac}\cdot{}h_{\mathrm{opt}}, %
+        & \text{if the solution step is rejected,}
     \end{cases}
 \end{equation}
 where $\mathrm{fac}$ and $\mathrm{fac}_{\mathrm{max}}$ are numerical safety

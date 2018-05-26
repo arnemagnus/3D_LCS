@@ -1,16 +1,19 @@
 \begin{figure}[htpb]
     \centering
-    \resizebox{0.9\linewidth}{!}{\includestandalone{figures/tikz-figs/faithful_approach_s_update}}
+    \resizebox{0.9\linewidth}{!}%
+    {\includestandalone{figures/tikz-figs/faithful_approach_s_update}}
     \caption[Flowchart illustrating the algorithm for iteratively choosing new
     trajectory start points based on the termination status of the preceding
     trajectories, using the legacy approach.]
     {Flowchart illustrating the algorithm for iteratively choosing new
-    trajectory start points based on the termination status of the preceding
-trajectories, using the legacy approach. All possible trajectory start points
-are contained within a subset of $\mathcal{C}_{i}$, per
-\cref{eq:faithful_initialcondition_interval}. Whether or not a given trajectory
-intersected with the half-plane $\mathcal{H}_{i,j}$, and satisfied
-$\Delta(\breve{s})=\Delta_{i}$, was determined using
-\cref{eq:dist_tolerance,eq:plane_tolerance}.}
+        trajectory start points based on the termination status of the
+        preceding trajectories, using the legacy approach. All possible
+        trajectory start points are contained within a subset of
+        $\mathcal{C}_{i}$, per \cref{eq:faithful_initialcondition_interval}.
+        Whether or not a given trajectory intersected with the half-plane
+        $\mathcal{H}_{i,j}$, and satisfied $\Delta(\breve{s})=\Delta_{i}$, was
+        determined using
+        \cref{eq:dist_tolerance,eq:plane_tolerance}.
+    }
     \label{fig:s_update_flowchart}
 \end{figure}

@@ -5,30 +5,32 @@ Much like the legacy approach outlined in
 \cref{sec:legacy_approach_to_computing_new_mesh_points}, it can never be
 guaranteed that all of the computed trajectories will yield new, acceptable
 mesh points --- moreover, missing out on points in a level set prohibits
-the generation of more level set. In particular, our procedure for maintaining
+the generation of further level sets. In particular, our procedure for maintaining
 mesh accuracy (which will be outlined in
 \cref{sub:maintaining_mesh_point_density}) makes extensive use of the
 interpolation curves $\{\mathcal{C}_{i}\}$. As the smoothness of the
-interpolation curve $\mathcal{C}_{i+1}$ depends on \emph{all} of the points used
-for its creation, proper handling of tricky mesh points remains critically
+interpolation curve $\mathcal{C}_{i+1}$ depends on \emph{all} of the points
+used for its creation, proper handling of tricky mesh points remains critically
 important.
 
 Seeing as the only tolerance parameter involved in this method pertains to
 achieving the desired separation between a meshpoint and its direct descendant
 --- see \cref{eq:revised_dist_tol} --- we elected not to progressively relax
-this  constraint. Instead, we interpreted the failure of any trajectory to reach
+this constraint. Instead, we interpreted the failure of any trajectory to reach
 a point sufficiently far away, as the trajectory being coiled such that the
 required integration arc length to yield a point sufficiently far away from
-the ancestor mesh point pre-set allowed path length. Accordingly, the incomplete
-level set was discarded, and attempted to be recomputed with reduced
-$\Delta_{i}$ (for which the dynamic adjustment procedure will be described
-in detail in
+the ancestor mesh point, exceeded the maximum allowed integration path
+length (governed by $\gamma_{\text{arc}}$, cf.\
+\cref{sub:computing_pseudoradial_trajectories_directly}). Accordingly, the
+incomplete level set was discarded, and attempted to be recomputed with reduced
+$\Delta_{i}$ (for which the dynamic adjustment procedure will be described in
+detail in
 \cref{sub:a_curvature_based_approach_to_determining_interset_separations}).
 Should an entire, new geodesic level set prove incomputable even at the
 minimum permitted step length, attempts at further expansion of the computed
 manifold were abandoned. In such cases, this variant of the method of geodesic
 level sets simply did not suffice, for the given set of development parameters.
 Details on other stopping criteria for the generation of manifolds will be
-presented in
-\cref{sec:macroscale_stopping_criteria_for_the_expansion_of_computed_manifolds}.
+presented in \cref{sec:macroscale_stopping_criteria_for_the_expansion_of%
+_computed_manifolds}.
 

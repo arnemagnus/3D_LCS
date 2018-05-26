@@ -1,0 +1,115 @@
+\documentclass[crop]{standalone}
+\usepackage{tikz}
+\usepackage[]{tikz-3dplot}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage[]{amsmath}
+\usepackage[]{libertine}
+\usepackage[libertine]{newtxmath}
+\usepackage[]{bm}
+\usepackage[]{physics}
+% Macros for greek letters in roman style, in math mode
+\DeclareRobustCommand{\mathup}[1]{%
+\begingroup\ensuremath\changegreek\mathrm{#1}\endgroup}
+\DeclareRobustCommand{\mathbfup}[1]{%
+\begingroup\ensuremath\changegreek\bm{\mathrm{#1}}\endgroup}
+
+
+\makeatletter
+\def\changegreek{\@for\next:={%
+        alpha,beta,gamma,delta,epsilon,zeta,eta,theta,iota,kappa,lambda,mu,nu,%
+        xi,pi,rho,sigma,tau,upsilon,phi,chi,psi,omega,varepsilon,varpi,%
+    varrho,varsigma,varphi}%
+\do{\expandafter\let\csname\next\expandafter\endcsname\csname\next up\endcsname}}
+\makeatother
+
+% Define vectors in bold, roman, lowercase font
+\newcommand{\vct}[1]{\ensuremath{\mathbfup{\MakeLowercase{#1}}}}
+
+% Define unit vectors in bold, roman, lowercase font, with hats
+\newcommand{\uvct}[1]{\ensuremath{\mathbfup{\hat{\MakeLowercase{#1}}}}}
+
+% Define matrices in bold, roman, uppercase font
+\newcommand{\mtrx}[1]{\ensuremath{\mathbfup{\MakeUppercase{#1}}}}
+\usetikzlibrary{%
+    angles,%
+    arrows.meta,%
+    backgrounds,%
+    calc,%
+    decorations,%
+    fit,%
+    hobby,%
+    patterns,%
+    positioning,%
+    quotes
+}
+
+
+\begin{document}
+
+\tdplotsetmaincoords{65}{10}
+
+\begin{tikzpicture}[tdplot_main_coords]
+    \pgfmathsetmacro{\innerradius}{5}
+    \pgfmathsetmacro{\middleradius}{10}
+    \pgfmathsetmacro{\outerradius}{17}
+    \pgfmathsetmacro{\size}{2.5}
+    \pgfmathsetmacro{\innerarclowerangle}{25}
+    \pgfmathsetmacro{\innerarcupperangle}{95}
+    \pgfmathsetmacro{\middlearclowerangle}{25}
+    \pgfmathsetmacro{\middlearcupperangle}{95}
+    \pgfmathsetmacro{\outerarclowerangle}{25}
+    \pgfmathsetmacro{\outerarcupperangle}{95}
+
+    % Place the set of initial points
+    % Innermost level set
+    \foreach [count=\i] \ang in {40,60,80}%
+    {%
+        \draw[draw=black!80,fill=gray!50] ( {\innerradius*cos(\ang)}, {\innerradius*sin(\ang)}, 0 ) circle (\size pt) coordinate (i\i);
+    }
+    % Direct descendants in middle level set
+    \foreach [count=\i] \ang in {40,60,80}%
+    {%
+        \draw[draw=black!80,fill=gray!50] ( {\middleradius*cos(\ang)},
+            {\middleradius*sin(\ang)}, 0 ) circle (\size pt) coordinate (m\i);
+    }
+    % Inserted points in middle level set
+    \foreach [count=\i] \ang in {30,50,70,90}%
+    {%
+        \draw[draw=black!70,fill=gray!20] ( {\middleradius*cos(\ang)},
+            {\middleradius*sin(\ang)}, 0) circle (\size pt) coordinate (m\i);
+
+    }
+    % Direct descendants in outer level set
+    \foreach [count=\i] \ang in {30,40,...,90}%
+    {%
+        \draw[draw=black!80,fill=gray!50] ( {\outerradius*cos(\ang)},
+            {\outerradius*sin(\ang)}, 0) circle (\size pt) coordinate (o\i);
+    }
+    \foreach [count=\i] \ang in {30,50,70,90}%
+    {%
+        \draw[draw=gray!70,fill=gray!20] ( {\outerradius*cos(\ang)},
+            {\outerradius*sin(\ang)}, 0) circle (\size pt) coordinate (o\i);
+
+    }
+    % Inserted points for outer level set
+    \foreach [count=\i] \ang in {35,45,...,85}%
+    {%
+        \draw[draw=black!80,fill=white!10] ( {\outerradius*cos(\ang)},
+            {\outerradius*sin(\ang)}, 0) circle (\size pt) coordinate (o\i);
+    }
+
+    % Draw interpolation curves
+    \begin{scope}[on background layer]
+	    % Inner interpolation curve
+	    \draw[draw=black!80,thin,dotted] (\innerarclowerangle:\innerradius) arc (\innerarclowerangle:\innerarcupperangle:\innerradius);
+	    % Middle interpolation curve
+	    \draw[draw=black!80,thin,dotted] (\middlearclowerangle:\middleradius) arc (\middlearclowerangle:\middlearcupperangle:\middleradius);
+	    % Outer interpolation curve
+	    \draw[draw=black!80,thin,dotted] (\outerarclowerangle:\outerradius) arc (\outerarclowerangle:\outerarcupperangle:\outerradius);
+    \end{scope}
+
+
+
+\end{tikzpicture}
+\end{document}

@@ -1,19 +1,21 @@
 \begin{figure}[htpb]
     \centering
-    \resizebox{0.9\linewidth}{!}{\includestandalone{figures/tikz-figs/loop_removal}}
-    \caption[Our approach to limit the compound numerical error, by continuously
-    removing unwanted loops in the computed level sets]
+    \resizebox{0.9\linewidth}{!}%
+    {\includestandalone{figures/tikz-figs/loop_removal}}
+    \caption[Our approach to limit the compound numerical error, by
+    continuously removing unwanted loops in the computed level sets]
     {Our approach to limit the compound numerical error, by continuously
-    removing unwanted loops in the computed level sets. As the separation
-between the mesh points $\mathcal{M}_{i,j}$ and $\mathcal{M}_{i,j+k}$
-satisfies the restrictions regarding mesh point density
-(cf.\ \cref{sub:maintaining_mesh_point_density}), the mesh points
-${\{\mathcal{M}_{i,j+\kappa}\}}_{\kappa=1}^{k-1}$ (shown in a lighter
-shade of gray) are removed, provided that the cumulative neighbor separation
-around the bulge is sufficiently large (per the conditions presented in
-\cref{eq:loop_removal_conditions}) --- which is the case in the above.
-The resulting interpolation curve $\mathcal{C}_{i}$ becomes significantly
-more well-behaved without the superfluous mesh points.
-}
+        removing unwanted loops in the computed level sets. As the separation
+        between the mesh points $\mathcal{M}_{i,j}$ and $\mathcal{M}_{i,j+k}$
+        satisfies the restrictions regarding mesh point density
+        (cf.\ \cref{sub:maintaining_mesh_point_density}), the mesh points
+        ${\{\mathcal{M}_{i,j+\kappa}\}}_{\kappa=1}^{k-1}$ (shown in a lighter
+        shade of gray) are removed, provided that the cumulative neighbor
+        separation around the bulge is sufficiently large (per the conditions
+        presented in \cref{eq:loop_removal_conditions}) --- which is the case
+        in the above. The resulting interpolation curve $\mathcal{C}_{i}$
+        becomes significantly more well-behaved without the superfluous mesh
+        points.
+    }
     \label{fig:loop_removal}
 \end{figure}

@@ -1,7 +1,8 @@
 \section[Definition of Lagrangian coherent structures for three-dimensional
 flows]{Definition of Lagrangian coherent structures for\\\phantom{2.2}
 three-dimensional flows}
-\label{sec:definition_of_lagrangian_coherent_structures_for_three_dimensional_flows}
+\label{sec:definition_of_lagrangian_coherent_structures_for_three_dimensional%
+_flows}
 
 A necessary prerequisite for three-dimensional Lagrangian flow analysis is the
 concept of \emph{material surfaces}, which \textcite{oettinger2016autonomous}
@@ -71,9 +72,9 @@ surface, rather than being stretched along with it due to shear stress.
 \begin{defn}[Repelling LCS]
     \label{def:repelling_lcs}
     A \emph{repelling LCS} over the time interval $[t_{0},t_{1}]$ is a
-    normally repelling material surface $\mathcal{M}(t_{0})$ whose normal repulsion
-    admits a pointwise non-degenerate maximum relative to any nearby material
-    surface $\widehat{\mathcal{M}}(t_{0})$.
+    normally repelling material surface $\mathcal{M}(t_{0})$ whose normal
+    repulsion admits a pointwise non-degenerate maximum relative to any nearby
+    material surface $\widehat{\mathcal{M}}(t_{0})$.
 \end{defn}
 
 \begin{defn}[Attracting LCS]
@@ -117,7 +118,8 @@ These are given in \cref{thm:lcs_conditions}.
             &\lambda_{2}(\vct{x}_{0}) \neq \lambda_{3}(\vct{x}_{0}) > 1,\\
             \label{eq:lcs_condition_b}
             &\inp[\Big]{\vct{\xi}_{3}(\vct{x}_{0})}%
-            {\mtrx{H}_{\lambda_{3}}(\vct{x}_{0})\vct{\xi}_{3}(\vct{x}_{0})} < 0 \\
+            {\mtrx{H}_{\lambda_{3}}(\vct{x}_{0})\vct{\xi}_{3}(\vct{x}_{0})} %
+            < 0 \\
             \label{eq:lcs_condition_c}
             &\vct{\xi}_{3}(\vct{x}_{0}) \perp \mathcal{M}(t_{0}),\\
             \label{eq:lcs_condition_d}
@@ -127,10 +129,11 @@ These are given in \cref{thm:lcs_conditions}.
     \end{subequations}
 \end{thm}
 
-In \cref{thm:lcs_conditions}, $\inp{\cdot}{\cdot}$ signifies the Euclidean inner
-product, and $\mtrx{H}_{\lambda_{3}}$ denotes the Hessian matrix of the largest
-eigenvalues of the Cauchy-Green strain tensor field. Component-wise, the Hessian
-matrix of a general, smooth, scalar-valued function $f$ is defined as
+In \cref{thm:lcs_conditions}, $\inp{\cdot}{\cdot}$ signifies the Euclidean
+inner product, and $\mtrx{H}_{\lambda_{3}}$ denotes the Hessian matrix of the
+largest eigenvalues of the Cauchy-Green strain tensor field. Component-wise,
+the Hessian matrix of a general, smooth, scalar-valued function $f$ is defined
+as
 \begin{equation}
     \label{eq:defn_hessian}
     {(\mtrx{H}_{f})}_{i,j} = \pdv[2]{f}{x_{i}}{x_{j}},
@@ -166,9 +169,9 @@ linear combination of the $\vct{\xi}_{1}$- and $\vct{\xi}_{2}$-direction
 fields, launched from an arbitrary point of the surface $\mathcal{M}(t_{0})$,
 will never leave $\mathcal{M}(t_{0})$. Hence:
 
-\begin{rmrk}[Invariance of initial positions of repelling LCSs]
+\begin{rmrk}[Invariance of time-$t_{0}$ image of repelling LCSs]
     \label{rmk:invariance_lcs}
-    The initial position $\mathcal{M}(t_{0})$ of any repelling LCS
+    The time-$t_{0}$ image $\mathcal{M}(t_{0})$ of any repelling LCS
     (\cref{def:repelling_lcs}) is an invariant manifold of the autonomous
     dynamical system
     \begin{equation}
@@ -182,8 +185,8 @@ will never leave $\mathcal{M}(t_{0})$. Hence:
 \crefname{equation}{}{} % Suppress cref's <<equations>> locally.
 Note that the converse of~\cref{rmk:invariance_lcs} does not hold. That is,
 a material surface $\Xi(t_{0})$ which is an invariant manifold of all
-(normalized) linear combinations of $\vct{\xi}_{1}$ and $\vct{\xi}_{2}$ does not
-necessarily correspond to a repelling LCS $\mathcal{M}(t_{0})$ --- that is,
+(normalized) linear combinations of $\vct{\xi}_{1}$ and $\vct{\xi}_{2}$ does
+not necessarily correspond to a repelling LCS $\mathcal{M}(t_{0})$ --- that is,
 unless $\Xi(t_{0})$ also satisfies conditions%
 \cref{eq:lcs_condition_a,eq:lcs_condition_b,eq:lcs_condition_d}.
 \endgroup

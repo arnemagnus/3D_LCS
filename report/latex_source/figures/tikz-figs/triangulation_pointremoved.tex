@@ -86,8 +86,9 @@
     \begin{scope}[on background layer]
 
 
-        \draw[draw=none,pattern=north east lines, pattern color = gray!20] (i2) -- (o3) -- (i3) -- cycle;
-        \draw[draw=black!65,dashed] (i2) -- (o3) -- (i3) -- cycle;
+        \draw[draw=none,pattern=north east lines, pattern color = gray!20]
+               (i3) -- (o2) -- (o3) -- cycle;
+        \draw[draw=black!65,dashed] (i3) -- (o2) -- (o3) -- cycle;
 
         \draw[draw=none,pattern=north west lines, pattern color = gray!20] (i3) -- (o3) -- (i4) -- cycle;
         \draw[draw=black!65,dashed] (i3) -- (o3) -- (i4) -- cycle;
@@ -97,7 +98,8 @@
 
         % Triangles relevant for this special case
         \draw[draw=black!60,dashed,fill=gray!15] (i2) -- (o1) -- (o2) -- cycle;
-        \draw[draw=black!65,dashed,fill=gray!30] (i2) -- (o2) -- (o3) -- cycle;
+%        \draw[draw=black!65,dashed,fill=gray!30] (i2) -- (o2) -- (o3) -- cycle;
+        \draw[draw=black!65,dashed,fill=gray!30] (i2) -- (o2) -- (i3) -- cycle;
     \end{scope}
 
 \end{tikzpicture}

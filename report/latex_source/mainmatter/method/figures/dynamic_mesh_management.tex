@@ -2,18 +2,24 @@
     \centering
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
-        \resizebox{0.9\linewidth}{!}{\includestandalone{figures/tikz-figs/density_management_inserting_new_point}}
-        \caption[]{{\small Inserting a new mesh point inbetween a \\\phantom{(a)} pair of mesh points which are too far apart}}
+        \resizebox{0.9\linewidth}{!}%
+        {\includestandalone{figures/tikz-figs/density_management_inserting%
+        _new_point}}
+        \caption[]{{\small Inserting a new mesh point inbetween a
+        \\\phantom{(a)} pair of mesh points which are too far apart}}
         \label{fig:mesh_management_pure_insertion}
     \end{subfigure}
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
-        \resizebox{0.9\linewidth}{!}{\includestandalone{figures/tikz-figs/density_management_removing_point}}
-        \caption[]{{\small Removing a mesh point too close to another,\\\phantom{(b)} if the ensuing separations are acceptable}}
+        \resizebox{0.9\linewidth}{!}%
+        {\includestandalone{figures/tikz-figs/density_management%
+        _removing_point}}
+        \caption[]{{\small Removing a mesh point too close to another,
+        \\\phantom{(b)} if the ensuing separations are acceptable}}
         \label{fig:mesh_management_pure_deletion}
     \end{subfigure}
-    \caption[Our approach to inserting new, or removing, mesh points to maintain
-    mesh point density]
+    \caption[Our approach to inserting new, or removing, mesh points to
+    maintain mesh point density]
     {Our approach to inserting new, or removing, mesh points to maintain
         mesh point density. When two neighboring mesh points in a freshly
         computed level set are too far apart with regards to the given mesh

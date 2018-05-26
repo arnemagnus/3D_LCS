@@ -4,7 +4,12 @@
     repelling LCSs, in the ABC flow (both variants)]
     {Parameters used to compute manifolds, and subsequently repelling LCSs,
         in both variants of the ABC flow (see
-        \cref{sec:flow_systems_defined_by_analytical_velocity_fields}).
+        \cref{sec:flow_systems_defined_by_analytical_velocity_fields}). Note
+        that the interset distances $\Delta_{i}$ were dynamically altered, as
+        described in
+        \cref{sub:a_curvature_based_approach_to_determining_interset%
+        _separations}. Accordingly, only the \emph{first} interset distance,
+        $\Delta_{1}$, was set explicitly.
     }
     \label{tab:abc_manifold_params}
     \begin{tabular}{ccc}
@@ -27,6 +32,13 @@
         & \makecell{Interset distance used to compute the second \\ geodesic
         level set (see \cref{sec:revised_approach_to_computing_new_mesh_points,%
         sub:a_curvature_based_approach_to_determining_interset_separations})}%
+        \\[9pt]
+        %
+        $\gamma_{\|}$ %
+        & $10^{-4}$ %
+        & \makecell{Tolerance for detecting regions in which
+        $\vct{\xi}_{3}$\\ is (anti-)parallel to $\vct{t}_{i,j}$
+    (see \cref{eq:revised_xi3_tan_parallel})}
         \\[9pt]
         %
         $\gamma_{\Delta}$ %

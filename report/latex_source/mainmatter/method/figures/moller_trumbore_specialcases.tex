@@ -2,16 +2,18 @@
     \centering
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \resizebox{0.9\textwidth}{!}{\includestandalone{figures/tikz-figs/mollertrumbore_vertexshared}}
+        \resizebox{0.9\textwidth}{!%
+        }{\includestandalone{figures/tikz-figs/mollertrumbore_vertexshared}}
         \caption[]{Two triangles sharing an edge, normally\\\phantom{(a) }
         treated as a continuous intersection}
         \label{fig:mollertrumbore_vertexshared}
     \end{subfigure}
     \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \resizebox{0.9\textwidth}{!}{\includestandalone{figures/tikz-figs/mollertrumbore_dualisect}}
-        \caption[]{Two triangles whose edges intersect in\\\phantom{(b) } exactly
-            two unique points
+        \resizebox{0.9\textwidth}{!}%
+        {\includestandalone{figures/tikz-figs/mollertrumbore_dualisect}}
+        \caption[]{Two triangles whose edges intersect in\\\phantom{(b) }
+            exactly two unique points
         }
         \label{fig:mollertrumbore_dualisect}
     \end{subfigure}
@@ -19,16 +21,17 @@
     {How the intersection-detection algorithm handles special cases.
         Triangles which share a common edge, as illustrated in
         (\subref*{fig:mollertrumbore_vertexshared}), form the premise of our
-        triangulation algorithm; accordingly, this scenario does not get flagged
-        as an intersection. Neither does the case when two triangles are
-        identical (or one is contained within the other) --- which is not shown
-        here --- nor the case when the edges of two triangles intersect in
-        exactly two unique points, shown in
+        triangulation algorithm; accordingly, this scenario does not get
+        flagged as an intersection. Neither does the case when two triangles
+        are identical (or one is contained within the other) --- which is not
+        shown here --- nor the case when the edges of two triangles intersect
+        in exactly two unique points, shown in
         (\subref*{fig:mollertrumbore_dualisect}). The latter is a very marginal
         case which hardly ever occurs, and, for our purposes, would invariably
         coincide with another (nearby) pair of triangles intersecting in a
         different manner than these special cases; ensuring that the computed
-        level set as a whole would be flagged as self-intersecting.}
+        level set as a whole would be flagged as self-intersecting.
+    }
     \label{fig:mollertrumbore_specialcases}
 \end{figure}
 

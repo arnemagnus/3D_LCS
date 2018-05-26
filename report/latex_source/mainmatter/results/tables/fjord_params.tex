@@ -5,10 +5,15 @@
     {
         Parameters used to compute manifolds, and subsequently repelling
         LCSs, in the Førde fjord (see
-        \cref{sec:flow_systems_defined_by_gridded_velocity_data}). Note that,
-        as the domain of interest is scaled in units of metre, so too are
-        $\delta_{\text{init}}$, $\Delta_{\min}$, $\Delta_{\max}$ and
-        $\Delta_{1}$; whereas $\mathcal{W}_{\min}$ is given in square metre.
+        \cref{sec:flow_systems_defined_by_gridded_velocity_data}). Note that
+        the interset distances $\Delta_{i}$ were dynamically altered, as
+        described in
+        \cref{sub:a_curvature_based_approach_to_determining_interset%
+        _separations}. Accordingly, only the \emph{first} interset distance,
+        $\Delta_{1}$, was set explicitly.  Moreover, as the domain of interest
+        is scaled in units of metre, so too are $\delta_{\text{init}}$,
+        $\Delta_{\min}$, $\Delta_{\max}$ and $\Delta_{1}$; whereas
+        $\mathcal{W}_{\min}$ is given in square metre.
 }
     \label{tab:fjord_manifold_params}
     \begin{tabular}{ccc}
@@ -31,6 +36,13 @@
         & \makecell{Interset distance used to compute the second \\ geodesic
         level set (see \cref{sec:revised_approach_to_computing_new_mesh_points,%
         sub:a_curvature_based_approach_to_determining_interset_separations})}%
+        \\[9pt]
+        %
+        $\gamma_{\|}$ %
+        & $10^{-4}$ %
+        & \makecell{Tolerance for detecting regions in which
+        $\vct{\xi}_{3}$\\ is (anti-)parallel to $\vct{t}_{i,j}$
+    (see \cref{eq:revised_xi3_tan_parallel})}
         \\[9pt]
         %
         $\gamma_{\Delta}$ %

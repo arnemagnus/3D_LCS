@@ -1,32 +1,52 @@
 \begin{figure}[htpb]
     \centering
+    \begin{subfigure}[b]{0.55\textwidth}
+        \centering
+        \resizebox{0.9\linewidth}{!}%
+        {\includestandalone{figures/tikz-figs/triangulation_basecase}}
+        \caption[]{{\small The base case for our triangulation scheme}}
+        \label{fig:triangulation_basecase}
+    \end{subfigure}
+
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
-        \resizebox{0.9\linewidth}{!}{\includestandalone{figures/tikz-figs/triangulation_pointinserted}}
-        \caption[]{{\small Including mesh points with ficticious \\\phantom{(a)} ancestors in the triangulation}}
+        \resizebox{0.9\linewidth}{!}%
+        {\includestandalone{figures/tikz-figs/triangulation_pointinserted}}
+        \caption[]{{\small Including mesh points with ficticious
+        \\\phantom{(b)} ancestors in the triangulation}}
         \label{fig:triangulation_pointinserted}
     \end{subfigure}
     \begin{subfigure}[b]{0.475\textwidth}
         \centering
-        \resizebox{0.9\linewidth}{!}{\includestandalone{figures/tikz-figs/triangulation_pointremoved}}
-        \caption[]{{\small Triangulating with the resulting nearest \\\phantom{(b)} neighbors, if a mesh point is removed}}
+        \resizebox{0.9\linewidth}{!}%
+        {\includestandalone{figures/tikz-figs/triangulation_pointremoved}}
+        \caption[]{{\small Triangulating with the resulting nearest
+        \\\phantom{(c)} neighbors, if a mesh point is removed}}
         \label{fig:triangulation_pointremoved}
     \end{subfigure}
-    \caption[How our triangulation algorithm handled the special cases arising
-    when the one-to-one correspondence between the points in subsequent level
-    sets was broken]
-    {How our triangulation algorithm handled the special cases arising when
-        the one-to-one correspondence between the points in subsequent level
-        sets was broken. In (\subref*{fig:triangulation_pointinserted}),
-        a mesh point is inserted inbetween the points $\mathcal{M}_{i+1,j}$
-        and $\mathcal{M}_{i+1,j+1}$, while, in (\subref*{fig:triangulation_pointremoved}),
-        the mesh point $\mathcal{M}_{i+1,j}$ is removed. Both of these
-        adjustments were made in order to maintain the density of mesh points
-        (cf.\ \cref{sub:maintaining_mesh_point_density}). The ensuing pair of
-        triangles which are computed when considering the triangulations from
-        $\mathcal{M}_{i,j}$, are shaded. The remaining triangles (patterned)
-        arise when triangulating from different points in level set
-        $\mathcal{M}_{i}$. Note that the removal of bundles of mesh points
+    \caption[Conceptual illustrations of our triangulation algorithm]
+    {Conceptual illustrations of our triangulation algorithm. The standard
+        approach, which applies when there is a one-to-one correspondence
+        between the nearest neighbors of the point $\mathcal{M}_{i,j}$ in the
+        level set $\mathcal{M}_{i}$, and the and $\mathcal{M}_{i,j}$'s nearest
+        neighbors in the level set $\mathcal{M}_{i+1}$, is shown in
+        (\subref*{fig:triangulation_basecase}). Meanwhile,
+        (\subref*{fig:triangulation_pointinserted}) and
+        (\subref*{fig:triangulation_pointremoved}) illustrate our handling of
+        the special cases which arise when the one-to-one correspondence
+        between points in subsequent level sets is broken. In particular,
+        (\subref*{fig:triangulation_pointinserted}) shows how we include
+        a mesh point inserted inbetween the points $\mathcal{M}_{i+1,j}$
+        and $\mathcal{M}_{i+1,j+1}$ in the triangulation, while
+        (\subref*{fig:triangulation_pointremoved}) demonstrates how the removal
+        of mesh points affects the triangulation. $\mathcal{M}_{i+1,j}$ is
+        removed. Both of these adjustments were made in order to maintain the
+        density of mesh points (cf.\ %
+        \cref{sub:maintaining_mesh_point_density}). In all of the
+        illustrations, the pair of triangles which arise when triangulating
+        outwards from $\mathcal{M}_{i,j}$, are shaded. The remaining triangles
+        (patterned) originate from the triangulation of other points in level
+        set $\mathcal{M}_{i}$. Note that the removal of bundles of mesh points
         in order to dampen the effect of numerical noise (which introduces
         bulges, as described in
         \cref{sub:limiting_the_accumulation_of_numerical_noise}) is treated

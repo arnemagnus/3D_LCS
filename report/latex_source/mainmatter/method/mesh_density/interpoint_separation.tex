@@ -4,15 +4,19 @@
 When expanding a manifold by computing new geodesic level sets, the distance
 separating neighboring mesh points within each subsequent level set generally
 increases. This is due to the mesh points being a parametrization of what is
-essentially an expanding topological circle. Having successfully computed
-a new geodesic level set --- that is, having found a descendant point
-$\mathcal{M}_{i+1,j}$ for each of the ancestor points $\{\mathcal{M}_{i,j}\}$
---- by use of the method outlined in
-\cref{sec:revised_approach_to_computing_new_mesh_points}
+essentially an expanding topological circle, for which an increasing amount of
+sampling points are needed in order to maintain the point density. This concept
+is illustrated in \cref{fig:rationale_for_inserting_new_points}. Thus, having
+successfully computed a new geodesic level set --- that is, having found a
+descendant point $\mathcal{M}_{i+1,j}$ for each of the ancestor points
+$\{\mathcal{M}_{i,j}\}$ --- by use of the method outlined in
+\cref{sec:revised_approach_to_computing_new_mesh_points},
 we then inspected all of the distances separating nearest neighbors.
 
-If any of the separations between nearest neighbors exceeded $\Delta_{\max}$,
-we sought to insert a new mesh point inbetween. Specifically, if
+\input{mainmatter/method/figures/rationale_for_inserting_new_points}
+
+Specifically, if any of the separations between nearest neighbors exceeded
+$\Delta_{\max}$, we sought to insert a new mesh point between them. That is, if
 $\norm{\vct{x}_{i+1,j}-\vct{x}_{i+1,j+1}}>\Delta_{\max}$, a new mesh point
 $\mathcal{M}_{i+1,j+\frac{1}{2}}$ was computed, using the method described
 in \cref{sec:revised_approach_to_computing_new_mesh_points} by launching a
@@ -33,13 +37,13 @@ using interpolations (in intermediary computations) over intervals of length
 exceeding $\Delta_{\max}$.
 
 Conversely, if any of the nearest neighbor separations became smaller than
-$\Delta_{\min}$, we sought to remove one of them, as long as the
+$\Delta_{\min}$, we sought to remove one of the points, as long as the
 distance separating mesh points which would then become nearest neighbors
-did not exceed $\Delta_{\max}$. Accordingly, if any one of a pair of neighboring
-mesh points was to be removed, we chose to discard the one which would result
-in the smallest separation between the ensuing, \emph{new} pair of nearest
-neighbors. Our principles for inserting new mesh points inbetween others,
-and removing grid points which are too close together, are illustrated
+did not exceed $\Delta_{\max}$. Accordingly, if any one of a pair of
+neighboring mesh points was to be removed, we chose to discard the one which
+would result in the smallest separation between the ensuing, \emph{new} pair of
+nearest neighbors. Our principles for inserting new mesh points inbetween
+others, and removing grid points which are too close together, are illustrated
 in \cref{fig:mesh_management_insertion_and_deletion}.
 
 \input{mainmatter/method/figures/dynamic_mesh_management}

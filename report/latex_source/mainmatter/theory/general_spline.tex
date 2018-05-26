@@ -1,16 +1,16 @@
 \subsection{Spline interpolation of discrete data}
 \label{sub:spline_interpolation_of_discrete_data}
 
-As all naturally ocurring physical systems can only be known partially, either
-by means of partial measurements or grid based model output, interpolating
-(i.e.,\ estimating) the measurement data becomes a requirement when describing
-the dynamics of systems which depend on measurement data from inbetween the
-sampling or grid points. Spline interpolation involves approximating a
-discretely sampled function by a series of piecewise defined polynomials.
-According to \textcite[p.93]{stoer2002introduction}, spline interpolation
-is a popular tool within the field of numerical analysis, due to yielding
-smooth interpolation curves with limited interpolation error when using low
-degree polynomial pieces. Furthermore, the local nature of spline
+All naturally ocurring physical systems can only be known partially, either
+by means of partial measurements or grid based model output. Thus,
+interpolating (i.e.,\ estimating) the measurement data becomes a requirement
+when describing the dynamics of systems which depend on measurement data from
+inbetween the sampling or grid points. Spline interpolation involves
+approximating a discretely sampled function by a series of piecewise defined
+polynomials. According to \textcite[p.93]{stoer2002introduction}, spline
+interpolation is a popular tool within the field of numerical analysis, due to
+yielding smooth interpolation curves with limited interpolation error when
+using low degree polynomial pieces. Furthermore, the local nature of spline
 interpolated functions means that such functions are less prone to
 oscillatory behaviour when using high order polynomials. This is in stark
 constrast to regular, global polynomial interpolation, which exhibits
@@ -27,9 +27,9 @@ functions
 \end{equation}
 each of which characterized by the $n+1$ parameters $\{\beta_{i}\}$,
 with $\vct{x}$ containing the independent variables of the problem. Given
-a set of $n+1$ discrete measurements --- each defined by a set of coordinates and
-function values $(\vct{x}_{i},f_{i})$ where $\vct{x}_{i}\neq\vct{x}_{j}$ for
-$i\neq{}j$ and $f_{i}=f(\vct{x}_{i})$ --- the interpolation problem reduces
+a set of $n+1$ discrete measurements --- each defined by a set of coordinates
+and function values $(\vct{x}_{i},f_{i})$ where $\vct{x}_{i}\neq\vct{x}_{j}$
+for $i\neq{}j$ and $f_{i}=f(\vct{x}_{i})$ --- the interpolation problem reduces
 to finding parameters $\{\beta_{i}\}$ such that
 \begin{equation}
     \label{eq:interpolationrequirement}
@@ -105,8 +105,9 @@ continuous functions is readily apparent. Note, however, that higher order
 interpolation methods require more sampling points than lower order methods.
 In particular, at least $k+1$ samples are required in order to construct a
 $k^{\text{th}}$ order spline. In higher dimensions, that is, with data which
-depends on several other (independent) variables, the required amount of samples
-increases rapidly with the interpolation order. Consequently, the use of cubic
-B-splines constitutes a popular method for general-purpose interpolation,
-providing a good balance between numerical accuracy and computational complexity.
+depends on several other (independent) variables, the required amount of
+samples increases rapidly with the interpolation order. Consequently, the use
+of cubic B-splines constitutes a popular method for general-purpose
+interpolation, providing a good balance between numerical accuracy and
+computational complexity.
 

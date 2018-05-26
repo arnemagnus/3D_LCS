@@ -61,11 +61,25 @@ factor=0% Controls how much punctuation protrudes past the end of the line
 \tikzstyle{arr} = [single arrow, draw, ->]
 
 \begin{tikzpicture}
-    \node[align=center] (top) [block] {Choose a traversion direction (e.g.\ clockwise or counterclockwise) \\of $\mathcal{C}_{i}$, along which to find trajectory start points};
-    \node[align=center, below = 15pt of top] (ficticious) [block] {Use a ficticious trajectory starting at $\vct{x}_{i,j}$, instantly terminated and \\flagged as an undershoot due to $\vct{x}_{i,j}\in\mathcal{H}_{i,j}$ as the baseline. \\Initialize $\delta\breve{s}:=\pm\delta\breve{s}_{\min}$ (dep. on traversion direction) and $\breve{s}:=s_{j}$};
-    \node[align=center, below = 15pt of ficticious] (flipcheck) [block] {Update the arclength parameter by $\breve{s}:=\breve{s}+\delta\breve{s}$.\\Check whether or not $\breve{s} \in \{[s_{j}-\varsigma,s_{j})\cup(s_{j},s_{j}+\varsigma]\}$};
-    \node[align=center, below left = 20pt and 25pt of flipcheck] (flip) [block] {Attempt to start over with\\ reversed traversion direction};
-    \node[align=center, above = 22.5pt  of flip] (flip-terminate) [block] {Search aborted flagged as a failure; \\Unable to compute new mesh point\\ given current restrictions};
+    \node[align=center] (top) [block] {Choose a traversion direction (clockwise or counterclockwise) \\of $\mathcal{C}_{i}$, along which to find trajectory start points};
+    \node[align=center, below = 15pt of top] (ficticious) [block] {
+            Use a ficticious trajectory starting at $\vct{x}_{i,j}$ as the
+            baseline; \\
+            \phantom{xxx} an instantly terminated undershoot, as
+            $\vct{x}_{i,j}\in\mathcal{H}_{i,j}$. \\ Set
+    $\delta\breve{s}=\pm\delta\breve{s}_{\text{min}}$ (dep. on trav.
+    direction) and
+$\breve{s}:=s_{j}$.\phantom{xxxx}};
+    \node[align=center, below = 15pt of ficticious] (flipcheck) [block] {Update
+         $\breve{s}:=\breve{s}+\delta\breve{s}$.\\Check if $\breve{s} \in \{[s_{j}-\varsigma,s_{j})\cup(s_{j},s_{j}+\varsigma]\}$};
+    \node[align=center, below left = 7.5pt and 30pt of flipcheck] (flipboth)
+        [block] {Both traversion directions attempted;\\ neither yielding a new
+        mesh point};
+    \node[align=center, above = 7.5pt  of flipboth] (flip-terminate) [block]
+        {Search aborted, flagged as a failure; \\unable to compute new mesh point\\ given current restrictions};
+    \node[align=center, left = 12.5pt of ficticious] (flipone) [block]
+        {First traversion direction did not\\ yield an acceptable mesh point;\\
+            reverse direction and start over};
     \node[align=center, below = 15pt of flipcheck] (launch) [block] {Compute trajectory starting at $\vct{x}_{\text{init}} = \mathcal{C}_{i}(\breve{s})$};
 
     \node[align=center, above right =10pt and 50pt of flipcheck] (decrease-right) [block] {Decrease $\abs{\delta\breve{s}}$, not\\ beyond $\delta\breve{s}_{\min}$};
@@ -84,16 +98,19 @@ factor=0% Controls how much punctuation protrudes past the end of the line
 
     \draw[arr] (top.south) -- (ficticious.north);
     \draw[arr] (ficticious.south) -- (flipcheck.north);
-    \draw[arr] (flipcheck.south) -- (launch.north) node [auto, swap, xshift = 10, yshift = 7.5] {Yes};
-    \draw[arr] (flipcheck.west) -- ++(-0.025,0) -| ($(flip.east)+(0.6,0)$)-- (flip.east) node [auto, swap, xshift = 27.5, yshift = 15] {No};
-    \draw[arr] (flip.west) --++(-0.75,0) --++(0,3.56) -- (ficticious.west) node [align=center, auto, swap, xshift=-65, yshift=0] {Only one direction\\ attempted; reverse};
-    \draw[arr] (flip.north) -- (flip-terminate.south) node [auto, swap, xshift = 9, yshift = -12.5] {Attempted both directions};
+    \draw[arr] (flipcheck.south) -- (launch.north) node [auto, swap, xshift =
+        10, yshift = 7.5] {Yes};
+    \draw[arr] (flipcheck.west) -- ++(-0.65,0) -- ++(0,-2.05) -|
+        ($(flipboth.west)-(0.6,0)$) |- (flipboth.west) node [auto, swap, xshift = 180, yshift = 44] {No};
+    \draw[arr] (flipboth.west) --++(-0.6,0) --++(0,3.) |- (flipone.west);
+    \draw[arr] (flipboth.north) -- (flip-terminate.south);
     \draw[arr] (accepted.east) -- (exit-success.west);
 
-    \draw[arr] (launch.south) -- ++(0,-0.6) -- ++(6.2,0) -- ++(0,-0.81) -- (miss-prevhit.east) node [auto, swap, xshift = -65, yshift = 30] {Trajectory missed $\mathcal{H}_{i,j}$};
-    \draw[arr] (launch.south) -- ++(0,-0.6) -- ++(-8.5,0) -- ++(0,-0.81) -- (accepted.west) node [auto, swap, xshift = 150, yshift = 30] {Trajectory hit $\mathcal{H}_{i,j}$};
-    \draw[arr] (launch.south) -- ++(0,-0.6) -- ++(-8.5,0) -- ++(0,-2.23) -- (hit-prevhit.west);
-    \draw[arr] (launch.south) -- ++(0,-0.6) -- ++(-8.5,0) -- ++(0,-3.65) -- (hit-prevmiss.west);
+    \draw[arr] (launch.south) -- ++(0,-0.6) -- ++(6.2,0) -- ++(0,-0.81) |- (miss-prevhit.east) node [auto, swap, xshift = -65, yshift = 30] {Trajectory missed $\mathcal{H}_{i,j}$};
+    \draw[arr] (launch.south) -- ++(0,-0.6) -- ++(-8.5,0) -- ++(0,-0.81) |- (accepted.west) node [auto, swap, xshift = 150, yshift = 30] {Trajectory hit $\mathcal{H}_{i,j}$};
+    \draw[arr] (launch.south) -- ++(0,-0.6) -- ++(-8.5,0) -- ++(0,-2.23) |- (hit-prevhit.west);
+    \draw[arr] (launch.south) -- ++(0,-0.6) -- ++(-8.5,0) -- ++(0,-3.65) |- (hit-prevmiss.west);
+    \draw[arr] (flipone.east) -- (ficticious.west);
 
     \draw[arr] (hit-prevhit.east) -- ++(5,0) -- ++(0,0.719) -- ++(0.32,0);
 
@@ -109,7 +126,8 @@ factor=0% Controls how much punctuation protrudes past the end of the line
 %    \draw[arr] (launch.south) -- ++(0,-0.6) -- ++(6.2,0) -- ++(0,-2.23) -- (miss-prevmiss.east);
 
     % Draw path 2
-    \draw[arr,name path = line 2] (miss-prevhit.west) -- ++(-0.7,0) -- ++(0,-0.7) -- ++(4.2,0) -- (increase-right.south);
+    \draw[arr,name path = line 2] (miss-prevhit.west) -- ++(-0.7,0) --
+    ++(0,-0.7) -- ++(4.25,0) -- ++(0,1.75)  -| (increase-right.south);
 
     % Find intersection of first and second paths
     \path[name intersections={of = line 1 and line 2}];
@@ -124,11 +142,11 @@ factor=0% Controls how much punctuation protrudes past the end of the line
 
     % Draw normal line segments
     \draw (launch.south) -- ++(0,-0.6) -- ++(6.2,0) -- (p0) -- (I1);
-    \draw[arr] (I2) -- (p1) -- (miss-prevmiss.east);
+    \draw[arr] (I2) -- (p1) |- (miss-prevmiss.east);
     \tkzDrawArc[color=black](S,I1)(I2);
 
-    \draw[arr] (backtrack-miss.east) -- ++(1.75,0) -- ++(0,7.804) -- (decrease-right.east);
-    \draw[arr] (decrease-right.west) -- ++(-0.5,0) -- ++(0,-1.42) -- (flipcheck.east);
+    \draw[arr] (backtrack-miss.east) -- ++(0.75,0) |- (decrease-right.east);
+    \draw[arr] (decrease-right.south) |- (flipcheck.east);
     \draw[arr] (increase-right.west) -- ++(-0.5,0) -- ++(0,1.42) ;
 
 

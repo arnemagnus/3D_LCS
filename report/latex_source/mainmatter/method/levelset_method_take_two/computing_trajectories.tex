@@ -28,16 +28,15 @@ Accordingly, we computed a single trajectory in the aforementioned
 direction field, starting out at $\vct{x}_{\text{init}}=\vct{x}_{i,j}$, using
 the Dormand-Prince 8(7) adaptive ODE solver (see \cref{tab:butcherdopri87,%
 sub:the_implementation_of_dynamic_runge_kutta_step_size}), where all of
-the vectors of the intermediary Runge-Kutta steps were corrected, if necessary,
-by continuous comparison with $\vct{\rho}_{i,j}$ and sign-reversion if an
-intermediary vector was directed radially inwards.
+the vectors of the intermediary Runge-Kutta evaulations were corrected, if
+necessary, by continuous comparison with $\vct{\rho}_{i,j}$ and
+direction-reversion if an intermediary vector was pointing radially inwards.
 
 Should the $\vct{\xi}_{3}$ direction be parallel to the unit tangent
 $\vct{t}_{i,j}$ locally along the trajectory, the direction field
 \cref{eq:revised_direction_field} would become undefined. In such regions,
-we allowed the Runge-Kutta solver to take a step in the previous direction
-as was used for the immediately preceding step. Numerically, such regions were
-recognized by
+we allowed the Runge-Kutta solver to take a step in the direction used for the
+immediately preceding step. Numerically, such regions were recognized by
 \begin{equation}
     \label{eq:revised_xi3_tan_parallel}
     \norm{\vct{\xi}_{3}(\vct{x})\times\vct{t}_{i,j}} < \gamma_{\|},
@@ -49,10 +48,9 @@ integration step length meant that we did not treat the integration
 step as a degree of freedom, and, in order to avoid overstepping, the step
 length of the Dormand-Prince solver was continuously limited from above by
 $\norm{\vct{x}-\vct{x}_{i,j}}-\Delta_{i}$. Moreover, the total allowed
-integration arclength was limited to an integer multiple --- that is,
-$\gamma_{\text{arc}}$--- of the interset step $\Delta_{i}$ allowing for the
-termination of any (hypothetical) trajectory which would end up in a stable
-orbit.
+integration arclength was limited to an integer multiple $\gamma_{\text{arc}}$
+of the interset step $\Delta_{i}$ allowing for the termination of any
+(hypothetical) trajectory which would end up in a stable orbit.
 
 The trajectory integration was immediately interrupted upon reaching a point
 $\vct{x}_{\text{fin}}$ separated from $\vct{x}_{i,j}$ by a distance

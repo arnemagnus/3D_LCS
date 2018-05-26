@@ -21,8 +21,8 @@ bounded first spatial derivatives of the underlying velocity field, as is
 evident from inspecting \cref{eq:timederivative_flowmap_jacobian}. This should,
 however, not be an issue when considering smooth analytical test cases, or when
 using a high (quadratic or higher, cf.\
-\cref{sub:spline_interpolation_of_discrete_data}) order interpolation method for
-gridded data. Alternatively, the derivatives can be approximated by e.g.\ a
+\cref{sub:spline_interpolation_of_discrete_data}) order interpolation method
+for gridded data. Alternatively, the derivatives can be approximated by e.g.\ a
 finite difference method. Should any of these approaches prove impractical, the
 method of \textcite{farazmand2012computing} could be sufficient.
 
@@ -53,10 +53,10 @@ that is, cubic interpolation in time and all spatial direction. This involved
 us having to keep the model data pertaining to the region of interest (that is,
 the model data for a domain expanding beyond said region in all directions, in
 order to resolve the behaviour near the boundaries, cf.\
-\cref{sec:macroscale_stopping_criteria_for_the_expansion_of_computed_manifolds})
-for the entirety of the considered time interval. Because of our data set's
-disparate resolution in the horizontal and vertical directions (which is
-outlined in \cref{sec:flow_systems_defined_by_gridded_velocity_data}), in
+\cref{sec:macroscale_stopping_criteria_for_the_expansion_of_computed%
+_manifolds}) for the entirety of the considered time interval. Because of our
+data set's disparate resolution in the horizontal and vertical directions
+(as mentioned in \cref{sec:flow_systems_defined_by_gridded_velocity_data}), in
 addition to the small spatial region of interest (in comparison to the entire
 fjord), the use of quadrivariate interpolation was unproblematic regarding
 the consumption of working memory. For other applications, however, this is not

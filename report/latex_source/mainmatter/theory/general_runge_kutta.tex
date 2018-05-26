@@ -12,13 +12,16 @@ is now known as a Runge-Kutta method is as follows:
 \begin{defn}[Runge-Kutta methods]
     \label{def:runge_kutta_methods}
     Let $s$ be an integer and $\{a_{i,j}\}_{i,j=1}^{s}$, %_{\substack{i=1\\j=1}}^{s}$,
-    $\{b_{i}\}_{i=1}^{s}$ and $\{c_{i}\}_{i=1}^{s}$ be real coefficients.\hfill\newline
-    Let $h$ be the numerical step length used in the temporal discretization.\hfill\newline
+    $\{b_{i}\}_{i=1}^{s}$ and $\{c_{i}\}_{i=1}^{s}$ be real coefficients.%
+    \hfill\newline
+    Let $h$ be the numerical step length used in the temporal discretization.%
+    \hfill\newline
     Then, the method
     \begin{equation}
         \label{eq:generalrungekutta}
         \begin{aligned}
-        k_{i} &= f\bigg(t_{n} + c_{i}h, x_{n} + h\sum\limits_{j=1}^{s}a_{i,j}k_{j}\bigg), \quad{}i=1,\ldots,s,\\
+        k_{i} &= f\bigg(t_{n} + c_{i}h, x_{n} + %
+        h\sum\limits_{j=1}^{s}a_{i,j}k_{j}\bigg), \quad{}i=1,\ldots,s,\\
         x_{n+1} &= x_{n} + h\sum\limits_{i=1}^{s}b_{i}k_{i},
         \end{aligned}
     \end{equation}
@@ -65,8 +68,10 @@ use of~\cref{def:runge_kutta_order}, the global error is limited from above by
     \begin{aligned}
         \abs{E_{n}} &\leq C\sum\limits_{l=1}^{n}\abs{e_{l}} %
         \leq C\sum\limits_{l=1}^{n}\abs{K_{l}}\hspace{0.5ex}h^{p+1}%
-        \leq C\hspace{0.5ex}\max\limits_{l}\big\{\abs{K_{l}}\big\}\hspace{0.5ex}n\hspace{0.5ex}h^{p+1}\\
-        &\leq C\hspace{0.5ex}\max\limits_{l}\big\{\abs{K_{l}}\big\}\hspace{0.5ex}\frac{t_{n}-t_{0}}{h}\hspace{0.5ex}h^{p+1}
+        \leq C\hspace{0.5ex}\max\limits_{l}\big\{\abs{K_{l}}\big\}%
+        \hspace{0.5ex}n\hspace{0.5ex}h^{p+1}\\
+        &\leq C\hspace{0.5ex}\max\limits_{l}\big\{\abs{K_{l}}\big\}%
+        \hspace{0.5ex}\frac{t_{n}-t_{0}}{h}\hspace{0.5ex}h^{p+1}
         \leq \widetilde{K}\hspace{0.5ex}h^{p},
     \end{aligned}
 \end{equation}
@@ -78,9 +83,9 @@ In \cref{def:runge_kutta_methods}, the matrix $(a_{i,j})$ is commonly called
 the \emph{Runge-Kutta matrix}, while the coefficients $\{b_{i}\}$ and
 $\{c_{i}\}$ are known as the \emph{weights} and \emph{nodes}, respectively.
 Since the 1960s, it has been customary to represent Runge-Kutta methods, given
-by~\cref{eq:generalrungekutta}, symbolically, by means of mnemonic devices known
-as Butcher tableaus \parencite[p.134]{hairer1993solving}. The Butcher tableau
-for a general \emph{s}-stage Runge-Kutta method, as introduced in
+by~\cref{eq:generalrungekutta}, symbolically, by means of mnemonic devices
+known as Butcher tableaus \parencite[p.134]{hairer1993solving}. The Butcher
+tableau for a general \emph{s}-stage Runge-Kutta method, as introduced in
 \cref{def:runge_kutta_methods}, is presented in \cref{tab:generalbutcher}.
 For explicit Runge-Kutta methods, the Runge-Kutta matrix $(a_{i,j})$ is lower
 triangular. Similarly, for fully implicit Runge-Kutta methods, the Runge-Kutta
@@ -89,16 +94,16 @@ methods is outlined in~\cref{eq:exim}.
 
 \input{mainmatter/theory/butchertableaus/general_butcher}
 
-During the first half of the twentieth century, a substantial amount of research
-was conducted in order to develop numerically robust, high-order, explicit
-Runge-Kutta methods. The idea was that using such methods would mean one could
-resort to larger time increments $h$ without sacrificing precision in the
-computed solution. However, the required number of stages $s$ grows quicker than
-linearly as a function of the required order $p$. It has been proven that, for
-$p\geq5$, no explicit Runge-Kutta method of order $p$ with $s=p$ stages exists
-\parencite[p.173]{hairer1993solving}. This is one of the reasons for the
-attention shift from the latter half of the 1950s and onwards, towards so-called
-\emph{embedded} Runge-Kutta methods.
+During the first half of the twentieth century, a substantial amount of
+research was conducted in order to develop numerically robust, high-order,
+explicit Runge-Kutta methods. The idea was that using such methods would mean
+one could resort to larger time increments $h$ without sacrificing precision in
+the computed solution. However, the required number of stages $s$ grows quicker
+than linearly as a function of the required order $p$. It has been proven that,
+for $p\geq5$, no explicit Runge-Kutta method of order $p$ with $s=p$ stages
+exists \parencite[p.173]{hairer1993solving}. This is one of the reasons for the
+attention shift from the latter half of the 1950s and onwards, towards
+so-called \emph{embedded} Runge-Kutta methods.
 
 The basic idea of embedded Runge-Kutta methods is that they, aside from the
 numerical approximation $x_{n+1}$, yield a second approximation
@@ -139,10 +144,10 @@ Based on prior investigations --- such as the work done by
 \textcite{loken2017sensitivity} --- using explicit, high order, embedded
 Runge-Kutta methods to compute Lagrangian coherent structures
 (which will be elaborated upon in
-\cref{sec:definition_of_lagrangian_coherent_structures_for_three_dimensional_flows})
-consistently yields accurate solutions at lower computational cost than
-the most common fixed stepsize methods. Accordingly, the Dormand-Prince 8(7)
-method --- consisting of an eighth order solution with a seventh order
+\cref{sec:definition_of_lagrangian_coherent_structures_for_three_dimensional%
+_flows}) consistently yields accurate solutions at lower computational cost
+than the most common fixed stepsize methods. Accordingly, the Dormand-Prince
+8(7) method --- consisting of an eighth order solution with a seventh order
 interpolant --- was chosen as the single, multipurpose, numerical ODE solver
 for this project.
 

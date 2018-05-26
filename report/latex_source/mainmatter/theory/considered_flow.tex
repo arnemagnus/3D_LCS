@@ -16,10 +16,10 @@ not exist. The flow particles are assumed to be infinitesimal and massless,
 i.e., non-interacting \emph{tracers} of the overall circulation.
 
 Consider a finite time interval $[t_{0},t_{1}]\subset{}\mathcal{I}$ such that
-all tracer trajectories $\vct{x}(t;t_{0},\vct{x}_{0})$ --- denoting the time-$t$
-position of a tracer which was located at $\vct{x}_{0}$ at time $t_{0}$ --- in
-the system given by \cref{eq:consideredflow} are defined for all times
-$t\in[t_{0},t_{1}]$. Then, the flow map is defined as
+all tracer trajectories $\vct{x}(t;t_{0},\vct{x}_{0})$ --- denoting the
+time-$t$ position of a tracer which was located at $\vct{x}_{0}$ at time
+$t_{0}$ --- in the system given by \cref{eq:consideredflow} are defined for all
+times $t\in[t_{0},t_{1}]$. Then, the flow map is defined as
 \begin{equation}
     \label{eq:defn_flowmap}
     \vct{\phi}_{t_{0}}^{t}(\vct{x}_{0}) = \vct{x}(t;t_{0},\vct{x}_{0}),
@@ -29,8 +29,8 @@ to another mathematically. In general, the flow map is as smooth as the
 underlying velocity field (cf.\ system \eqref{eq:consideredflow})
 \parencite{farazmand2012computing}. In Lagrangian flow analysis, the
 \emph{Jacobian matrix} of the flow map $\vct{\phi}_{t_{0}}^{t}$ plays a
-significant role. Component-wise, the Jacobian matrix of a general vector-valued
-function $\vct{f}$ is defined as
+significant role. Component-wise, the Jacobian matrix of a general
+vector-valued function $\vct{f}$ is defined as
 \begin{equation}
     \label{eq:defn_jacobian}
     (\grad{\vct{f}})_{i,j} = \pdv{f_{i}}{x_{j}}, \quad %
@@ -104,9 +104,9 @@ right Cauchy-Green strain tensor field to be defined as
 \end{equation}
 where the asterisk refers to the adjoint operation, which, because the Jacobian
 $\grad\vct{\phi}_{t_{0}}^{t}$ is real-valued, equates to matrix transposition.
-Moreover, as the Jacobian of the flow map is invertible, the Cauchy-Green strain
-tensor $\mtrx{C}_{t_{0}}^{t}(\vct{x}_{0})$ is symmetric and positive definite
-\parencite{farazmand2012computing}. Thus, it has three real, positive
+Moreover, as the Jacobian of the flow map is invertible, the Cauchy-Green
+strain tensor $\mtrx{C}_{t_{0}}^{t}(\vct{x}_{0})$ is symmetric and positive
+definite \parencite{farazmand2012computing}. Thus, it has three real, positive
 eigenvalues and orthogonal, real eigenvectors. Its eigenvalues $\lambda_{i}$
 and corresponding unit eigenvectors $\vct{\xi}_{i}$ are defined by%
 \begin{equation}
@@ -114,7 +114,8 @@ and corresponding unit eigenvectors $\vct{\xi}_{i}$ are defined by%
     \begin{gathered}
         \mtrx{C}_{t_{0}}^{t}(\vct{x}_{0})\vct{\xi}_{i}(\vct{x}_{0}) = %
         \lambda_{i}\vct{\xi}_{i}(\vct{x}_{0}), \quad i = 1, 2, 3, \\
-    \inp[\big]{\vct{\xi}_{i}(\vct{x}_{0})}{\vct{\xi}_{j}(\vct{x}_{0})} = \delta_{ij}, %
+    \inp[\big]{\vct{\xi}_{i}(\vct{x}_{0})}{\vct{\xi}_{j}(\vct{x}_{0})} = %
+    \delta_{ij}, %
         \quad 0 < \lambda_{1}(\vct{x}_{0}) \leq \lambda_{2}(\vct{x}_{0}) %
         \leq \lambda_{3}(\vct{x}_{0}),
     \end{gathered}

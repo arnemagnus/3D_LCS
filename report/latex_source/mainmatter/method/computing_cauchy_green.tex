@@ -12,7 +12,8 @@ the Cauchy-Green strain eigenvalues and -vectors is based on performing an
 SVD decomposition of the Jacobian field of the flow map, i.e.,
 \begin{equation}
     \label{eq:jacobi_flow_map_svd}
-    \grad\vct{\phi}_{t_{0}}^{t}(\vct{x}_{0}) = \mtrx{U}\mtrx{\Sigma}\mtrx{V}^{\ast},
+    \grad\vct{\phi}_{t_{0}}^{t}(\vct{x}_{0}) = %
+    \mtrx{U}\mtrx{\Sigma}\mtrx{V}^{\ast},
 \end{equation}
 where the asterisk refers to the adjoint operation, $\mtrx{U}$ and $\mtrx{V}$
 are unitary matrices and $\mtrx{\Sigma}$ is a diagonal matrix
@@ -43,7 +44,7 @@ described in \cref{sub:interpolating_gridded_velocity_data}.
 \label{ssub:interpolating_the_cauchy_green_strain_eigenvectors}
 
 Just like the eigenvalues of the Cauchy-Green strain tensor field, its
-eigenvectors frequently need to be evaluated inbetween the grid points in order
+eigenvectors frequently need to be evaluated between the grid points in order
 to compute LCSs. Like the strain eigenvalues, the strain eigenvectors were
 interpolated by means of cubic trivariate B-splines, through the
 \texttt{bspline\_3d} derived type from the Bspline-Fortran library

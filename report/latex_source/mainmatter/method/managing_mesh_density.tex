@@ -2,17 +2,18 @@
 \label{sec:managing_mesh_accuracy}
 
 As will be described extensively in
-\cref{sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from_point_meshes},
+\cref{sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from%
+_point_meshes},
 the manifold $\mathcal{M}$ was extracted from its set of parametrization
 point $\{\mathcal{M}_{i,j}\}$ by means of linear interpolation. In order to
-keep the interpolation error in check, we sought to bind the distance
-separating neighboring mesh points by means pre-set upper and lower boundaries,
-in the following denoted $\Delta_{\min}$ and $\Delta_{\max}$, respectively.
-Considered as a holistic approximation of a manifold, the separations between
-the mesh points in each level set, combined with the inter-set step lengths
-$\{\Delta_{i}\}$, determine the overall accuracy. Our algorithmic approach
-to maintaining the overall mesh quality will be explained in the
-sections to follow.
+keep the interpolation error in check, we sought to limit the distance
+separating neighboring mesh points by means of pre-set upper and lower
+boundaries --- in the following denoted $\Delta_{\min}$ and $\Delta_{\max}$,
+respectively. Considered as a holistic approximation of a manifold, the
+separations between the mesh points in each level set, combined with the
+inter-set step lengths $\{\Delta_{i}\}$, determine the overall accuracy. Our
+algorithmic approach to maintaining the overall mesh quality will be explained
+in the sections to follow.
 
 \input{mainmatter/method/mesh_density/interpoint_separation}
 

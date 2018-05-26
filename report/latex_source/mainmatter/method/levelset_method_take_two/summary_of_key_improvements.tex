@@ -1,22 +1,25 @@
-\subsection{Key improvements of the revised algorithm for computing new mesh points}
-\label{sub:key_improvements_of_the_revised_algorithm_for_computing_new_mesh_points}
+\subsection{Key improvements of the revised algorithm for computing new mesh
+points}
+\label{sub:key_improvements_of_the_revised_algorithm_for_computing_new_mesh%
+_points}
 
 When compared to the convoluted way of computing new mesh points presented in
 \cref{sec:legacy_approach_to_computing_new_mesh_points}, it is readily apparent
 that the revised approach is significantly less complex. In particular, note
 how launching a single trajectory starting at the ancestor mesh point results
 in the legacy algorithm for computing new trajectory start points iteratively
-(cf. \cref{fig:s_update_flowchart}) is rendered entirely superfluous. Moreover,
-as all computed trajectories necessarily remain within the target half-planes,
-no tolerance parameter for detecting intersections between trajectories and
-half-planes is needed. In short, the revised algorithm is conceptually simpler,
-and involves a lesser number of free (tolerance) parameters.
+(cf. \cref{fig:s_update_flowchart}) being rendered entirely superfluous.
+Moreover, as all computed trajectories necessarily remain within the target
+half-planes, no tolerance parameter for detecting intersections between
+trajectories and half-planes is needed. In short, the revised algorithm is
+conceptually simpler, and involves a lesser number of free (tolerance)
+parameters.
 
 Simple numerical experiments confirmed that, given the same initial
 conditions and underlying direction fields, the two approaches yielded the
 same mesh points --- at least, within rounding error. Moreover, these tests
 also revealed that the revised algorithm is usually two orders of
-magnitude quicker (in terms of computational runtime). Unsurprisingly, the
+magnitude faster (in terms of computational runtime). Unsurprisingly, the
 main time expenditure of the legacy approach turned out to be the computation
 of elusive mesh points; often, several thousand computed trajectories were
 needed before a satisfactory new point was found. In paticular, the probability
@@ -27,9 +30,9 @@ the underlying manifold behaves erratically.
 For its superior speed and simplicity, the revised approach of forced
 pseudoradial trajectories became our method of choice. Accordingly, all
 of our results (which will be presented in \cref{cha:results}) were generated
-with this method. Note that, while deemed inferior in the context of identifying
-repelling LCSs in three-dimensional flow, the legacy approach of guided
-trajectories remains a valid way of computing three-dimensional manifolds.
-Thus, it can be used as a baseline for computing other kinds of
+with this method. Note that, while deemed inferior in the context of
+identifying repelling LCSs in three-dimensional flow, the legacy approach of
+guided trajectories remains a valid way of computing three-dimensional
+manifolds. Thus, it can be used as a baseline for computing other kinds of
 three-dimensional manifolds defined in a different manner than repelling LCSs
 --- which remains beyond the scope of this project.

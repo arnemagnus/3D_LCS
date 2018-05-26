@@ -15,13 +15,14 @@ interpolation curve $\mathcal{C}_{i}$ as initial conditions, as follows:
 \begin{equation}
     \label{eq:faithful_initialcondition_interval}
     \vct{x}_{\text{init}} = \mathcal{C}_{i}(\breve{s}),\quad %
-    \breve{s}\in\big\{[s_{j}-\varsigma,s_{j})\cup(s_{j},s_{j}+\varsigma]\big\},\quad%
+    \breve{s}\in%
+    \big\{[s_{j}-\varsigma,s_{j})\cup(s_{j},s_{j}+\varsigma]\big\},\quad%
     0<\varsigma\leq\frac{1}{2},
 \end{equation}
 where the inherent periodicity of the (quasi-)arclength parametrization of
 $\mathcal{C}_{i}$ is implicitly applied. Here, $\varsigma$ was set to $0.1$,
-ensuring that $20$ \% of all possible initial conditions along $\mathcal{C}_{i}$
-were considered.
+ensuring that $20$ \% of all possible initial conditions along
+$\mathcal{C}_{i}$ were available for consideration.
 
 For computing trajectories whose initial conditions are given by
 \cref{eq:faithful_initialcondition_interval} and direction fields given by
@@ -43,7 +44,7 @@ stable orbits around $\vct{x}_{\text{aim}}$ were not allowed to keep going
 indefinitely.
 
 If any trajectory terminated in a point $\vct{x}_{\text{fin}}$
-which lied within the half-plane $\mathcal{H}_{i,j}$ at a distance
+located in the half-plane $\mathcal{H}_{i,j}$ at a distance
 $\Delta_{i}$ from $\vct{x}_{i,j}$, then $\vct{x}_{\text{fin}}$ was used as
 coordinates for a new mesh point $\mathcal{M}_{i+1,j}$. Numerically, these
 checks were implemented by means of tolerance parameters, as comparing

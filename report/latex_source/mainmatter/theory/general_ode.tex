@@ -11,10 +11,11 @@ ordinary differential equation (hereafter abbreviated to ODE) of the form
 \end{equation}
 where $x$ is an unknown function (scalar or vector) of time $t$. The function
 $f$ is defined on an open subset $\Omega$ of $\mathbb{R}\times\mathbb{R}^{n}$,
-where $n$ is the number of spatial dimensions; that is, the number of components
-of $x$. The initial condition $(t_{0},x_{0})$ is a point in the domain of $f$,
-i.e.,\ $(t_{0},x_{0})\in\Omega$. In higher dimensions (namely, $n>1$), the
-differential \cref{eq:ivpsystem} generally extends to a coupled family of ODEs
+where $n$ is the number of spatial dimensions; that is, the number of
+components of $x$. The initial condition $(t_{0},x_{0})$ is a point in the
+domain of $f$, i.e.,\ $(t_{0},x_{0})\in\Omega$. In higher dimensions (namely,
+$n>1$), the differential \cref{eq:ivpsystem} generally extends to a coupled
+family of ODEs
 \begin{equation}
     \label{eq:ivpsystemhigherdimensions}
     \dot{x}_{i}(t) = f_{i}\big(t,x_{1}(t),x_{2}(t),\ldots,x_{n}(t)\big),%
@@ -88,5 +89,5 @@ the time step length $h$ used for the temporal discretization. One way
 of obtaining approximations of the true solution \emph{inbetween} the discrete
 time levels is by means of interpolation --- a numerical technique which will
 be elaborated upon in~\cref{sub:spline_interpolation_of_discrete_data}. For
-nonlinear systems, analytical solutions usually do not exist. Thus, such systems
-are often analyzed by means of numerical methods.
+nonlinear systems, analytical solutions usually do not exist. Thus, such
+systems are often analyzed by means of numerical methods.

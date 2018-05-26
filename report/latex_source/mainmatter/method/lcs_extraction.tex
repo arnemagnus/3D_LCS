@@ -4,21 +4,20 @@
 The collection of manifolds computed by means of the method
 outlined in the preceding sections, starting from an approximately
 even distribution of points in the $\mathcal{U}_{0}$ domain
-(cf.\
-\cref{sec:preliminaries_for_computing_repelling_lcss_in_3d_flow_by_means_of_geodesic_level_sets}
-and, in particular, \cref{tab:initialconditionparams}), are all surfaces which
-satisfy LCS existence criterion~\eqref{eq:lcs_condition_c} --- that is,
-they are everywhere perpendicular to the local direction of maximal repulsion.
-In order to extract repelling LCSs from these parametrized surfaces,
-we then identified the regions of the manifolds --- represented as a subset
-of the mesh points in their parametrization --- which also satisfy the
-remaining existence criteria; namely,~\eqref{eq:lcs_condition_a},
-\eqref{eq:lcs_condition_b} and~\eqref{eq:lcs_condition_d}. This was done
-completely analogously to how we identified the grid points belonging within the
-$\mathcal{U}_{0}$ domain, as outlined in
-\cref{sub:identifying_suitable_initial_conditions_for_developing_lcss}.
-In particular, each mesh point $\mathcal{M}_{i,j}$ of a computed manifold
-$\mathcal{M}$ was flagged as to whether or not it satsified all
+(cf.\ \cref{sec:preliminaries_for_computing_repelling_lcss_in_3d_flow_by_means%
+_of_geodesic_level_sets} and, in particular,
+\cref{tab:initialconditionparams}), are all surfaces which satisfy LCS
+existence criterion~\eqref{eq:lcs_condition_c} --- that is, they are everywhere
+perpendicular to the local direction of maximal repulsion. In order to extract
+repelling LCSs from these parametrized surfaces, we then identified the regions
+of the manifolds --- represented as a subset of the mesh points in their
+parametrization --- which also satisfy the remaining existence criteria;
+namely,~\eqref{eq:lcs_condition_a},~\eqref{eq:lcs_condition_b} and~%
+\eqref{eq:lcs_condition_d}. This was done completely analogously to how we
+identified the grid points belonging within the $\mathcal{U}_{0}$ domain, as
+outlined in \cref{sub:identifying_suitable_initial_conditions_for_developing%
+_lcss}. In particular, each mesh point $\mathcal{M}_{i,j}$ of a computed
+manifold $\mathcal{M}$ was flagged as to whether or not it satsified all
 of the aforementioned existence criteria.
 
 We then proceded to construct a repelling LCS $\mathcal{L}$ from the mesh
@@ -43,18 +42,19 @@ the maximum allowed mesh point separation used for computing the manifold (cf.\
 \cref{sub:maintaining_mesh_point_density}), while the scalar
 parameter $\gamma_{\square}\geq1$ allows for extracting smoother LCSs, more
 well-suited for visualization purposes --- as will be made clear shortly.
-Subsequently, all mesh points \emph{not} satisfying all of the LCS existence
-criteria were added to the set of LCS points, provided that they comply with a
+Subsequently, the remaining mesh points of $\mathcal{M}$ (i.e.,\ the ones
+which did \emph{not} satisfy all of the LCS existence criteria)
+were added to the set of LCS points --- provided that they comply with a
 similar distance threshold as given in
-\cref{eq:lcs_from_manifold_separation_criterion}, where we only computed
+\cref{eq:lcs_from_manifold_separation_criterion}; where we only computed
 mesh point separations relative to the LCS points which satisfied all of
-the existence criteria (thus not to any point added to the LCS, for which
-this was not the case).
+the existence criteria (thus not to any point added to the LCS purely for
+the purpose of enhanced visual representation).
 
 The tolerance parameter $\gamma_{\square}$ thus allowed us to mitigate possible
 numerical error; in particular, if any given mesh point was slightly perturbed
-away from the underlying manifold, it could still end up being a part of the LCS.
-Finally, we looked at all of the surface elements pertaining to the
+away from the underlying manifold, it could still end up being a part of the
+LCS. Finally, we looked at all of the surface elements pertaining to the
 triangulation of the manifold $\mathcal{M}$ (as described in
 \cref{sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from_%
 point_meshes}) in conjunction with the set of mesh points which had been
@@ -63,9 +63,9 @@ to two of the three vertices defining a triangular surface element had been
 recognized as part of $\mathcal{L}$, we then added the mesh point corresponding
 to the last remaining vertex to the set of LCS points $\{\mathcal{L}_{k}\}$.
 Accordingly, the triangulations of the $\mathcal{M}$ were reused for
-$\mathcal{L}$. These slight relaxations of the LCS existence criteria facilitate
-the extraction of smoother LCS surfaces are favorable for the visual
-representation of LCSs. Moreover, they mitigate the possible effects of
+$\mathcal{L}$. These slight relaxations of the LCS existence criteria
+facilitate the extraction of smoother LCS surfaces and are favorable for the
+visual representation of LCSs. Moreover, they mitigate the possible effects of
 numerical error perturbing any given mesh point $\mathcal{M}_{i,j}$ away from
 the \emph{actual} manifold --- leaving it more than sufficiently close to the
 manifold for visualization purposes --- by possibly allowing it to be included

@@ -1,19 +1,29 @@
-\section[Preliminaries for computing repelling LCSs in 3D flow by means of geodesic level sets]
-{Preliminaries for computing repelling LCSs in 3D\\\phantom{3.5} flow by means of geodesic level sets}
-\label{sec:preliminaries_for_computing_repelling_lcss_in_3d_flow_by_means_of_geodesic_level_sets}
+\section[Preliminaries for computing repelling LCSs in 3D flow by means of
+geodesic level sets]
+{Preliminaries for computing repelling LCSs in 3D\\\phantom{3.5} flow by means
+of geodesic level sets}
+\label{sec:preliminaries_for_computing_repelling_lcss_in_3d_flow_by_means_of%
+_geodesic_level_sets}
 
 Repelling LCSs in three spatial dimensions are quite challenging to compute.
-Straightforward numerical integration of the flow is insufficient ---
-in three dimensions, the existence criterion~\eqref{eq:lcs_condition_c} provides
-another degree of freedom, as, everywhere within such an LCS, one is
+Straightforward numerical integration of the flow in a strain eigendirection
+field suffices for Lagrangian analysis of two-dimensional systems
+\parencite{farazmand2012computing,loken2017sensitivity}. In three dimensions,
+however, this is not the case; LCS existence criterion~%
+\eqref{eq:lcs_condition_c} implies that three-dimensional repelling LCSs are
+everywhere simultaneously tangent to the $\vct{\xi}_{1}$- \emph{and}
+$\vct{\xi}_{2}$-direction fields (see \cref{rmk:invariance_lcs}). Another way
+to interpret this extra degree of freedom --- compared to the two-dimensional
+case --- is that everywhere within three-dimensional repelling LCS, one is
 allowed to move `freely' within a plane which is orthogonal to
-$\vct{\xi}_{3}(\vct{x})$. Dedicated algorithms are needed. Here, we consider
-a (variation of) the method of geodesic level sets for computing repelling
-LCSs as invariant manifolds of the $\vct{\xi}_{1}$ and $\vct{\xi}_{2}$ direction
-fields (cf.~\cref{rmk:invariance_lcs}), as presented by
-\textcite{krauskopf2005survey}. The short presentation to follow in the
-next paragraph will be explained further in depth in the subsequent
-subsections.
+$\vct{\xi}_{3}(\vct{x})$. Thus, more sophisticated algorithms are needed in
+order to compute three-dimensional LCSs, than their two-dimensional
+counterparts. Here, we consider a variation of the method of geodesic level
+sets for computing repelling LCSs as invariant manifolds of the
+$\vct{\xi}_{1}$ and $\vct{\xi}_{2}$ direction fields (cf.\ %
+\cref{rmk:invariance_lcs}), as presented by \textcite{krauskopf2005survey}. The
+short presentation to follow in the next paragraph will be explained further in
+depth in the subsequent sections.
 
 The method is based on the concept of developing an unstable manifold from a
 local neighborhood of an initial condition $\vct{x}_{0}$ (how these initial
@@ -23,14 +33,14 @@ In particular, a small, closed curve $\mathcal{C}_{1}$ consisting
 of points which all lie within the tangent plane defined by the coordinate
 $\vct{x}_{0}$ and the unit normal $\vct{\xi}_{3}(\vct{x}_{0})$, separated from
 $\vct{x}_{0}$ by a distance $\delta_{\text{init}}$, is assumed to consist of
-points which all lie within the same manifold as $\vct{x}_{0}$. The idea is then
-to compute the next geodesic circle in a local, dynamic coordinate system,
+points which all lie within the same manifold as $\vct{x}_{0}$. The idea is
+then to compute the next geodesic circle in a local, dynamic coordinate system,
 defined by hyperplanes which are orthogonal to the most recently computed
 geodesic circle. A set of accuracy parameters governs the number of next points
 by which the next geodesic circle is approximated, in solving a set of boundary
-value problems. During the computation, the interpolation error stays bounded by
-the density of mesh points, so that the overall quality of the mesh is
-preserved.
+value problems. During the computation, the interpolation error stays limited
+by the density of mesh points, so that the overall quality of the mesh is
+preserved \parencite{krauskopf2003computing}.
 
 \subsection{Identifying suitable initial conditions for developing LCSs}
 \label{sub:identifying_suitable_initial_conditions_for_developing_lcss}
@@ -83,43 +93,46 @@ outlined in
 corresponding LCS must locally be tangent to the plane with unit normal given
 by $\vct{\xi}_{3}(\vct{x}_{0})$, as a consequence of LCS existence criterion~%
 \eqref{eq:lcs_condition_c}. Accordingly, the first geodesic level set is
-approximated by a set of $n$ points $\{\mathcal{M}_{1,j}\}_{j=1}^{n}$, which all
-lie within the aforementioned tangent plane, separated from $\vct{x}_{0}$ by a
-distance $\delta_{\text{init}}$; all of which assumed to lie within the same
-manifold. The parameter $\delta_{\text{init}}$ was chosen small compared to the
-grid spacing, in order to limit the inherent errors of this linearization.
+approximated by a set of $n$ points $\{\mathcal{M}_{1,j}\}_{j=1}^{n}$, which
+all lie within the aforementioned tangent plane, separated from $\vct{x}_{0}$
+by a distance $\delta_{\text{init}}$; all of which are assumed to lie within
+the same manifold. \Cref{fig:innermost_levelset} shows where the points in the
+innermost level set are located, in relation to $\vct{x}_{0}$. The parameter
+$\delta_{\text{init}}$ was chosen small compared to the grid spacing, in order
+to limit the inherent errors of this linearization.
 
 An interpolation curve $\mathcal{C}_{1}$ was then made, with a view to
 representing the innermost level set in a smoother fashion. In particular,
 this interpolation curve was designed as a parametric spline. To this end,
-the points $\{\mathcal{M}_{1,j}\}_{j=1}^{n}$ were first ordered in clockwise
+the points $\{\mathcal{M}_{1,j}\}_{j=1}^{n+1}$, where
+$\mathcal{M}_{1,n+1}=\mathcal{M}_{1,1}$, were ordered in clockwise
 or counterclockwise --- merely a matter of perspective --- fashion. Then,
 each mesh point was assigned an independent variable $s$ based upon the
 cumulative interpoint distance along the ordered list of points, starting
 at $j=1$; estimated by means of the Euclidean norm, then normalized by dividing
-$s$ through by the total interpoint distance around the entire initial level
-set.
+through by the total interpoint distance around the entire initial level set.
+Consequently, there was a one-to-one correspondence between the $s$-values and
+the mesh points, aside from $\mathcal{M}_{1,1}$, to which both $s=0$ and $s=1$
+were mapped.
 
-In an intermediary step, the coordinates of the mesh point
-$\mathcal{M}_{1,1}$ was appended to a list containing the ordered coordinates
-of the mesh points $\{\mathcal{M}_{1,j}\}_{j=1}^{n}$, such that, aside from
-$\mathcal{M}_{1,1}$, which corresponded to both $s=0$ and $s=1$, there was a
-one-to-one correspondence between the $s$-values and the coordinates of the
-mesh points. Then, considering each of the lists containing the Cartesian
-coordinates of the mesh points as univariate functions of the pseudo-arclength
-parameter $s$, separate cubic B-splines were made for each set of coordinates,
-making use of the \texttt{bspline\_1d} extension type from the Bspline-Fortran
-library \parencite{williams2018bspline}, which was ported to Python as outlined
-in \cref{sub:interpolating_gridded_velocity_data}. The constructed innermost
-level set and its associated interpolation curve is illustrated in
-\cref{fig:innermost_levelset}. Interpolation curves for all subsequent level
-sets (the computation of which will be described in detail shortly) were
-made completely analogously to $\mathcal{C}_{1}$.
+Next, we made lists containing the coordinates of the ordered mesh points
+$\{\mathcal{M}_{i,j}\}_{j=1}^{n+1}$; i.e.,\ one list for each of the three
+Cartesian coordinates. Considering each of the lists of the mesh points'
+Cartesian coordinates as univariate functions of the pseudo-arclength
+parameter $s$, separate cubic B-splines were then made for each set of
+coordinates, making use of the \texttt{bspline\_1d} extension type from the
+Bspline-Fortran library \parencite{williams2018bspline}, which was ported to
+Python as outlined in \cref{sub:interpolating_gridded_velocity_data}. The
+constructed innermost level set and its associated interpolation curve is
+illustrated in \cref{fig:innermost_levelset}. Interpolation curves for all
+subsequent level sets (the computation of which will is described in detail
+in the sections to follow) were made completely analogously to
+$\mathcal{C}_{1}$.
 
 \input{mainmatter/method/figures/initial_levelset_and_interp}
 
 In the following, let $\vct{x}_{i,j}$ denote the location of mesh point
-$\mathcal{M}_{i,j}$. As suggested by \textcite{krauskopf2005survey}, we then
+$\mathcal{M}_{i,j}$. As suggested by \textcite{krauskopf2005survey}, we next
 sought to develop a new level set, parametrized by a new set of points
 $\{\mathcal{M}_{2,j}\}$ located in the family of half-planes
 $\{\mathcal{H}_{1,j}\}_{j=1}^{n}$, extending radially outwards from the
@@ -159,7 +172,8 @@ preceding level set, from which the new point was computed. That is,
 \begin{equation}
     \label{eq:general_prevvec}
     \vct{\rho}_{i,j} = %
-    \frac{\vct{x}_{i,j}-\vct{x}_{i-1,\hat{\jmath}}}{\norm{\vct{x}_{i,j}-\vct{x}_{i-1,\hat{\jmath}}}},
+    \frac{\vct{x}_{i,j}-\vct{x}_{i-1,\hat{\jmath}}}%
+    {\norm{\vct{x}_{i,j}-\vct{x}_{i-1,\hat{\jmath}}}},
 \end{equation}
 where the indices $j$ and $\hat{\jmath}$ generally need not be the same,
 as there is generally not a one-to-one correspondence between points
@@ -171,9 +185,9 @@ point $\mathcal{M}_{i+1,j}$ has to be computed for each ancestor point
 $\mathcal{M}_{i,j}$. This is due to the method being based on parametrizing
 manifolds as a series of smooth topological circles. Should this prove
 not to be possible, given a set of tolerance parameters which will be
-described in greater detail in the sections to come, the computation would
-stop abruptly, leaving the manifold parametrized by however many of its
+described in greater detail in the sections to come, the computation is stopped
+abruptly, leaving the manifold parametrized by however many of its
 geodesic level sets were successfully completed. Further details on the
 stopping criteria for the generation of new geodesic level sets will be
-presented in
-\cref{sec:macroscale_stopping_criteria_for_the_expansion_of_computed_manifolds}.
+presented in \cref{sec:macroscale_stopping_criteria_for_the_expansion_of%
+_computed_manifolds}.

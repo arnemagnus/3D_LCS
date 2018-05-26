@@ -1,6 +1,8 @@
 \section[Macroscale stopping criteria for the expansion of computed manifolds]
-{Macroscale stopping criteria for the expansion of \\\phantom{3.10} computed manifolds}
-\label{sec:macroscale_stopping_criteria_for_the_expansion_of_computed_manifolds}
+{Macroscale stopping criteria for the expansion of \\\phantom{3.10} computed
+manifolds}
+\label{sec:macroscale_stopping_criteria_for_the_expansion_of_computed%
+_manifolds}
 
 In principle, the process of developing manifold approximations by adding more
 and more mesh points, organized in geodesic level sets, would continue as long
@@ -8,14 +10,15 @@ as the overall mesh quality was conserved (cf.\
 \cref{sec:managing_mesh_accuracy}). The enforced (pseudo-)uniform expansion
 radially outwards, inherent to the method of geodesic level sets, would then
 yield a mesh providing a conservative estimate of the size of the
-\emph{actual} manifold, as there is no particular reason to expect it to
-expect the manifold to appear homogeneous, when viewed for the epicentre
-of the computed level sets. With reasonable parameter choices, we became
-able to generate large manifolds quite quickly. This lead us to enforce two
-additional types of stopping criteria, based on what would happen if the
-computed manifolds reached the edges of the computational domain, or folded
-into themselves --- where the latter of the two will be described in the
-imminent \cref{sub:continuous_self_intersection_checks}
+\emph{actual} manifold, as there is no particular reason to expect the manifold
+to appear homogeneous, when viewed from the epicentre of the computed level
+sets (i.e.\ the initial position $\vct{x}_{0}$, cf.\
+\cref{sub:identifying_suitable_initial_conditions_for_developing_lcss}). With
+reasonable parameter choices, we became able to generate large manifolds quite
+quickly. This lead us to enforce two additional types of stopping criteria,
+based on what would happen if the computed manifolds reached the edges of the
+computational domain, or folded into themselves --- where the latter of the two
+will be described in \cref{sub:continuous_self_intersection_checks}.
 
 The trajectories which are computed in order to identify new mesh points
 (per the method described in
@@ -37,12 +40,12 @@ to encompass at least one cycle along each direction).
 \subsection{Continuous self-intersection checks}
 \label{sub:continuous_self_intersection_checks}
 
-Per LCS existence criterion \eqref{eq:lcs_condition_a}, there must be a uniquely
-defined direction of strongest repellence everywhere along a repelling LCS.
-Furthermore, our method of expanding manifolds by adding mesh points organized
-in geodesic level sets (cf.\
+Per LCS existence criterion \eqref{eq:lcs_condition_a}, there must be a
+uniquely defined direction of strongest repulsion everywhere along a repelling
+LCS. Furthermore, our method of expanding manifolds by adding mesh points
+organized in geodesic level sets (cf.\
 \cref{sec:revised_approach_to_computing_new_mesh_points}) is based on
-continuous expansions(pseudo-)radially outwards from the manifold epicentre.
+continuous expansions (pseudo-)radially outwards from the manifold centre.
 Accordingly, the intersection of any manifold with itself was interpreted as
 a nonphysical artefact of accumulated numerical error. For that reason, we
 sought to terminate the expansion of a manifold when self-intersections
@@ -50,50 +53,52 @@ were detected.
 
 Our method of detecting manifold self-intersections is based on comparing the
 continuously computed interpolation triangles (as described in
-\cref{sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from_point_meshes})
---- in particular, we compared each triangle which was added together with the
-most recently computed level set, to all of the triangles which had been
-added with the preceding level sets. If at least one pair of triangles
-intersected, the newest level set was flagged as self-intersecting. Our way
-of determining whether or not two triangles intersect, is based on
-the Möller-Trumbore ray-triangle intersection algorithm, with a detection
-sensitivity parameter $\epsilon=10^{-8}$ \parencite{moller1997fast}. A visual
-representation of our triangle-intersection algorithm is available in
+\cref{sec:continuously_reconstructing_three_dimensional_manifold_surfaces%
+_from_point_meshes}) --- in particular, we compared each triangle which was
+added with the most recently computed level set, to all of the
+triangles which had been added with the preceding level sets. If at least one
+pair of triangles intersected, the newest level set was flagged as
+self-intersecting. Our way of determining whether or not two triangles
+intersect, is based on the Möller-Trumbore ray-triangle intersection algorithm,
+with a detection sensitivity parameter $\epsilon=10^{-8}$
+\parencite{moller1997fast}. A visual representation of our
+triangle-intersection detection algorithm is available in
 \cref{fig:intersection_flowchart}.
 
 \input{mainmatter/method/figures/intersection_algrthm_flowchart}
 
-Some special cases of intersecting triangles warrant special treatment.
-In particular, as our triangulation method (outlined in
-\cref{sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from_point_meshes})
-is based on generating triangles which share sides with its neighbors, we
-decided to allow triangles to intersect along the edges. Similarly, we allowed
-for two triangles to be identical --- which might happen if a manifold
-folds onto itself perfectly. Our algorithmic way of treating these cases
-resulted in a theoretical false negative; namely, the case of two triangles
-intersecting in exactly two points, laying along the edges of \emph{both}
-triangles. In our experience, however, this never proved problematic ---
-should one pair of triangles happen to intersect in this exact fashion
-(which is a rarity in itself due to numerical round-off errors), another
-pair of triangles would intersect in such a way that the most recently added
-set as a whole would be flagged as self-intersecting. Two of the aforementioned
-special cases --- that is, two triangles sharing an edge, and two triangles
-intersecting in exactly two points laying along the edges of both triangles ---
-are shown in \cref{fig:mollertrumbore_specialcases}.
+Some cases of intersecting triangles warrant special treatment. In particular,
+as our triangulation method (outlined in
+\cref{sec:continuously_reconstructing_three_dimensional_manifold_surfaces%
+_from_point_meshes}) is based on generating triangles which share sides with
+its neighbors, we decided to allow triangles to intersect along the edges.
+Similarly, we allowed for two triangles to be identical --- which might happen
+if a manifold folds onto itself perfectly. Our algorithmic way of treating
+these casesresulted in a theoretical false negative; namely, the case of two
+triangles intersecting in exactly two points, laying along the edges of
+\emph{both} triangles. In our experience, however, this never proved
+problematic --- should one pair of triangles happen to intersect in this exact
+fashion (which is a rarity in itself due to numerical round-off errors),
+another pair of triangles would intersect in such a way that the most recently
+added set as a whole would be flagged as self-intersecting. Two of the
+aforementioned special cases --- that is, two triangles sharing an edge, and
+two triangles intersecting in exactly two points laying along the edges of both
+triangles --- are shown in \cref{fig:mollertrumbore_specialcases}.
 
 \input{mainmatter/method/figures/moller_trumbore_specialcases}
 
 Initial tests revealed that some self-intersections were quite innocuous, in
 that, if the computed manifold was expanded by an additional level set,
 the newly added triangulations need not necessarily intersect with any of the
-preceding ones. This kind of insipid intersections could be a consequence of the
-linear nature of our triangulation method, possibly compounded by round-off
+preceding ones. This kind of insipid intersections could be a consequence of
+the linear nature of our triangulation method, possibly compounded by round-off
 error. Accordingly, we decided to stop the manifold expansion process
 if \emph{several consecutive} geodesic level sets introduced intersection
 triangulations. This was done by computing the sum of the interset distances
 $\{\Delta_{i}\}$ for each consecutive level set $\{\mathcal{M}_{i}\}$ which
 introduced new intersections. Whenever this pseudo-intersection length
-exceeded $5\cdot\Delta_{\min}$ (cf.\ \cref{sub:maintaining_mesh_point_density}),
+exceeded $5\cdot\Delta_{\min}$ (cf.\
+\cref{sub:maintaining_mesh_point_density}),
 we terminated the manifold computation process; empirical trials suggested
 that the intersection issue would then only worsen if more mesh points were
 added.

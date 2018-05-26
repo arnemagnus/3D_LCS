@@ -5,7 +5,7 @@ Given the interpoint separation constraints described in
 \cref{sub:maintaining_mesh_point_density}, we have some flexibility regarding
 the choice of interset step length $\Delta_{i}$. In an approach closely
 mirroring that of \textcite{krauskopf2005survey}, we used the (approximate)
-local curvatures along each point strain (i.e.,\ the set of mesh points
+local curvatures along each point train (i.e.,\ the set of mesh points
 which can be traced back to a common ancestor) in order to determine
 whether or not the local manifold dynamics were resolved to a satisfactory
 level of detail. Starting out with an initial interset separation
@@ -29,11 +29,11 @@ $\vct{\rho}_{i,j}$ and $\vct{\rho}_{i+1,j}$ (as defined in
     \text{for at least one } j,
 \end{equation}
 where $\alpha_{\downarrow}$ and $(\Delta\alpha)_{\downarrow}$ are upper
-curvature tolerance parameters, was satisfied, the level set $\mathcal{M}_{i+1}$
-was discarded and recomputed with reduced $\Delta_{i}$. If $\Delta_{i}$ was
-already as low as the pre-set $\Delta_{\min}$, the manifold generation
-process was terminated, as a new level set $\mathcal{M}_{i+1}$ could not be
-computed under the given constraints on interpoint separation (cf.\
+curvature tolerance parameters, was satisfied, the level set
+$\mathcal{M}_{i+1}$ was discarded and recomputed with reduced $\Delta_{i}$. If
+$\Delta_{i}$ was already as low as the pre-set $\Delta_{\min}$, the manifold
+generation process was terminated, as a new level set $\mathcal{M}_{i+1}$ could
+not be computed under the given constraints on interpoint separation (cf.\
 \cref{sub:maintaining_mesh_point_density}). Conversely, if
 \begin{equation}
     \label{eq:increase_dist}
@@ -50,12 +50,11 @@ tolerance parameters, was satisfied, the interset distance for computing the
 
 As is evident from \cref{eq:decrease_dist,eq:increase_dist}, the parameters
 $\alpha_{\downarrow}$, $\alpha_{\uparrow}$, $(\Delta\alpha)_{\downarrow}$ and
-$(\Delta\alpha)_{\uparrow}$ determine the mesh adaption along point strains.
-Choosing appropriate bounds for the offsets $\{\Delta_{i}\cdot\alpha_{i,j}\}$
-allows for stricter requirements on angular offsets for large interstep lengths.
-Similarly, level sets computed using small interset lenghts are allowed
-(comparatively) larger angular offsets in general. In our experience, the
-interset step lenghts were rarely \emph{increased}  --- typically, there would
-be one or more subsets of the mesh points constituting any given level set which
-underwent sufficient curvature such that condition~\eqref{eq:increase_dist} did
-not hold.
+$(\Delta\alpha)_{\uparrow}$ determine the mesh adaption along point trains.
+The bounds for the offsets $\{\Delta_{i}\cdot\alpha_{i,j}\}$ enforce stricter
+requirements on angular offsets for large interstep lengths. Conversely, level
+sets computed using small interset lenghts are generally allowed to exhibit
+(comparatively) larger angular offsets. In our experience, the interset step
+lengths were rarely \emph{increased}  --- typically, there would be one or more
+subsets of the mesh points constituting any given level set which underwent
+sufficient curvature such that condition~\eqref{eq:increase_dist} did not hold.
