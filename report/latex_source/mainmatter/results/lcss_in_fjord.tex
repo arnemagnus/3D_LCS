@@ -23,7 +23,8 @@ Using an approximately evenly sampled subset of the $\mathcal{U}_{0}$ domain
 --- yielding a total of \numprint{1631} grid points --- as initial conditions,
 we then computed manifolds and extracted LCSs using the parameters
 in \cref{tab:initialconditionparams,tab:fjord_manifold_params} and the method
-outlined in \cref{sec:preliminaries_for_computing_repelling_lcss_in_3d_flow_by_means_of_geodesic_level_sets,%
+outlined in \cref{sec:preliminaries_for_computing_repelling_lcss_in_3d_flow%
+    _by_means_of_geodesic_level_sets,%
     sec:revised_approach_to_computing_new_mesh_points,%
     sec:managing_mesh_accuracy,%
     sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from_%
@@ -38,13 +39,16 @@ version of) the ABC flow (see \cref{sec:computed_lcss_in_the_abc_flow}), we
 elected to assign each LCS a numerical value
 \begin{equation}
     \label{eq:fjord_lcs_colorscaling}
-    \mathcal{Q}_{i} = \frac{\log{{\big({\mkern2mu}\overline{\lambda}_{3}\big)}_{i}}}%
-    {\max\limits_{i}\big\{\log{{\big({\mkern2mu}\overline{\lambda}_{3}\big)}_{i}}\big\}},
+    \mathcal{Q}_{i} = %
+    \frac{\log{{\big({\mkern2mu}\overline{\lambda}_{3}\big)}_{i}}}%
+    {\max\limits_{i}%
+    \big\{\log{{\big({\mkern2mu}\overline{\lambda}_{3}\big)}_{i}}\big\}},
 \end{equation}
-where ${\big({\mkern2mu}\overline{\lambda}_{3}}\big)_{i}$, the repulsion average
-of LCS surface $i$, is defined in \cref{eq:lcs_lm3_weight}. We then used the
-(unit normalized) set of numbers $\big\{\mathcal{Q}_{i}\big\}$ to select a color
-for the corresponding LCSs, drawn from a perceptually uniform colormap.
+where ${\big({\mkern2mu}\overline{\lambda}_{3}}\big)_{i}$, the repulsion
+average of LCS surface $i$, is defined in \cref{eq:lcs_lm3_weight}. We then
+used the (unit normalized) set of numbers $\big\{\mathcal{Q}_{i}\big\}$ to
+select a color for the corresponding LCSs, drawn from a perceptually uniform
+colormap.
 
 \input{mainmatter/results/tables/fjord_params}
 

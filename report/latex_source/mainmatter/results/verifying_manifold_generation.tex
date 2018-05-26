@@ -32,10 +32,10 @@ in \cref{eq:revised_direction_field}. Here, we chose the parameters
 \end{equation}
 and used a single initial position $\vct{x}_{0} = (\pi,\pi,\pi)$ from which
 to develop the surface, by subsequently adding mesh points organized in level
-sets, as outlined in
-\cref{sec:revised_approach_to_computing_new_mesh_points,%
+sets, as outlined in \cref{sec:revised_approach_to_computing_new_mesh_points,%
     sec:managing_mesh_accuracy,%
-    sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from_point_meshes,%
+    sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from%
+    _point_meshes,%
     sec:macroscale_stopping_criteria_for_the_expansion_of_computed_manifolds}.
 
 Specifically, we computed a total of seven surface approximations, using
@@ -62,7 +62,8 @@ computed the root mean square (hereafter abbreviated to RMS) error of each mesh
 point as
 \begin{equation}
     \label{eq:sinusoidal_rms}
-    \text{err}_{\text{RMS}} = \sqrt{\frac{1}{N}\sum\limits_{i,j}\abs{z_{i,j}-g(x_{i},y_{j})}^{2}},
+    \text{err}_{\text{RMS}} = \sqrt{\frac{1}{N}%
+    \sum\limits_{i,j}\abs{z_{i,j}-g(x_{i},y_{j})}^{2}},
 \end{equation}
 where we sum over all of the $N$ computed points, with $g(x,y)$ given
 by \cref{eq:sinusoidal_definition} (and \cref{eq:sinusoidal_surface_params}).
@@ -87,8 +88,8 @@ Perhaps more crucially, an increased number of mesh points leads to an
 increase in the required memory. These considerations, together with the
 ones to follow in the immediately forthcoming section, became the foundation
 on which we based our choice of mesh point density for the computation of
-LCSs (which will be elaborated upon in \cref{sec:computed_lcss_in_the_abc_flow,%
-sec:computed_lcss_in_the_forde_fjord}).
+LCSs (which will be elaborated upon in
+\cref{sec:computed_lcss_in_the_abc_flow,sec:computed_lcss_in_the_forde_fjord}).
 
 \subsection{Sample manifolds computed from the steady ABC flow}
 \label{sub:sample_manifolds_computed_from_the_steady_abc_flow}
@@ -109,25 +110,26 @@ error when computing new mesh points from ficticious ancestor points
 (as described in \cref{sub:maintaining_mesh_point_density}) --- which naturally
 occurs more often with increased mesh point density. Accordingly, our
 choice of mesh point density for (both variants of) the ABC flow (which will be
-presented in \cref{tab:abc_manifold_params}) was guided by a desire to limit the
-amount of such oddities, in addition to the memory required in order to store
-each manifold (as described in \cref{sub:an_analytical_manifold_test_case}).
+presented in \cref{tab:abc_manifold_params}) was guided by a desire to limit
+the amount of such oddities, in addition to the memory required in order to
+store each manifold (as described in
+\cref{sub:an_analytical_manifold_test_case}).
 
 \input{mainmatter/results/figures/convergence.tex}
 
 Motivated by \cref{rmk:invariance_lcs}, we sought to verify that our computed
 manifolds, by virtue of containing repelling LCSs, act as invariant manifolds
 for arbitrary linear combinations of the $\vct{\xi}_{1}$- and
-$\vct{\xi}_{2}$-direction fields. \Cref{fig:verification_of_manifold_invariance}
-shows a sample manifold obtained for the steady ABC flow (described in detail
-in \cref{sec:flow_systems_defined_by_analytical_velocity_fields}), using the
+$\vct{\xi}_{2}$-direction fields.
+\Cref{fig:verification_of_manifold_invariance} shows a sample manifold obtained
+for the steady ABC flow (described in detail in
+\cref{sec:flow_systems_defined_by_analytical_velocity_fields}), using the
 parameter values provided in \cref{tab:abc_manifold_params} --- the very same
 that we used in order to compute LCSs in said flow (more to follow in
 \cref{sec:computed_lcss_in_the_abc_flow}). It also shows $200$ different
 trajectories launched from (a small circle laying within the manifold, centered
 in) the manifold epicentre $\vct{x}_{0}$ and computed using the Dormand-Prince
-8(7) adaptive ODE solver (see
-\cref{tab:butcherdopri87,%
+8(7) adaptive ODE solver (see \cref{tab:butcherdopri87,%
 sub:the_implementation_of_dynamic_runge_kutta_step_size}). In
 \cref{fig:verification_forced_outwards}, the trajectories are solution
 curves of \cref{eq:revised_direction_field}, where $\vct{t}_{i,j}$ was kept
@@ -144,12 +146,13 @@ Unsurprisingly, the  curves in \cref{fig:verification_forced_outwards} all lie
 within the computed manifold, as all of its constituent mesh points were
 computed as endpoints of trajectories in a similarly defined direction field
 (see \cref{sec:revised_approach_to_computing_new_mesh_points}). The same
-applies for the curves shown in \cref{fig:verification_pure_linear_combination};
-however, there seems to be some regions of the manifold which are particularly
-challenging to hit --- signified by a decreased trajectory density ---
-it appears that very specific weights $(a,b)$ are required to reach them.
-Regardless, none of the computed trajectories ever leave the computed
-surface, which confirms that the surface \emph{is} in fact an invariant
-manifold of the $\vct{\xi}_{1}$- and $\vct{\xi}_{2}$-direction fields, in
-compliance with LCS existence criterion~\eqref{eq:lcs_condition_c}.
+applies for the curves shown in
+\cref{fig:verification_pure_linear_combination}; however, there seems to be
+some regions of the manifold which are particularly challenging to hit ---
+signified by a decreased trajectory density --- it appears that very specific
+weights $(a,b)$ are required to reach them. Regardless, none of the computed
+trajectories ever leave the computed surface, which confirms that the surface
+\emph{is} in fact an invariant manifold of the $\vct{\xi}_{1}$- and
+$\vct{\xi}_{2}$-direction fields, in compliance with LCS existence criterion~%
+\eqref{eq:lcs_condition_c}.
 

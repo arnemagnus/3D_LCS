@@ -1,6 +1,8 @@
 \section[Verifying our method of extracting LCSs from the computed manifolds]
-{Verifying our method of extracting LCSs from the \\\phantom{4.2} computed manifolds}
-\label{sec:verifying_our_method_of_extracting_repelling_lcss_from_the_computed_manifolds}
+{Verifying our method of extracting LCSs from the \\\phantom{4.2} computed
+manifolds}
+\label{sec:verifying_our_method_of_extracting_repelling_lcss_from_the_computed%
+_manifolds}
 
 \subsection{An analytical test case}
 \label{sub:an_analytical_lcs_test_case}
@@ -11,12 +13,14 @@ computed manifolds (which is described in detail in
 the purely radial velocity field
 \begin{equation}
     \label{eq:spherical_velocity_field}
-    \dot{\vct{x}}(t) = \frac{\vct{x}}{\norm{\vct{x}}}\sin{\pi(\norm{\vct{x}}-r)},
+    \dot{\vct{x}}(t) = \frac{\vct{x}}{\norm{\vct{x}}}%
+    \sin{\pi(\norm{\vct{x}}-r)},
 \end{equation}
-which is zero on the sphere $\norm{\vct{x}}=r$. We then computed
-strain eigenvalues and -vectors over the time interval $\mathcal{I}=[0,10]$
-for an equidistant grid of $200\times200\times200$ tracers in the
-domain $\mathcal{U}=[-2,2]^{3}$, as outlined in
+which is changes from being directed radially inwards, to pointing radially
+outwards, on the sphere $\norm{\vct{x}}=r$ (on which the velocity field is
+zero). We then computed strain eigenvalues and -vectors over the time interval
+$\mathcal{I}=[0,10]$ for an equidistant grid of $200\times200\times200$ tracers
+in the domain $\mathcal{U}=[-2,2]^{3}$, as outlined in
 \cref{sub:advecting_a_set_of_tracers,%
 sec:computing_cauchy_green_strain_eigenvalues_and_vectors}, for $r=1$.
 Moreover, we computed the arithmetic average of $\lambda_{3}(\vct{x}_{0})$
@@ -40,7 +44,8 @@ described in
 \cref{sec:preliminaries_for_computing_repelling_lcss_in_3d_flow_by_means_of%
     _geodesic_level_sets,sec:revised_approach_to_computing_new_mesh_points,%
     sec:managing_mesh_accuracy,%
-    sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from_point_meshes,%
+    sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from%
+    _point_meshes,%
     sec:macroscale_stopping_criteria_for_the_expansion_of_computed_manifolds}.
 Then, by means of the method outlined in
 \cref{sec:identifying_lcss_as_subsets_of_computed_manifolds}, we extracted
@@ -58,11 +63,11 @@ routine functions as intended.
 \subsection{Verifying that the computed LCSs are in fact repelling}
 \label{sub:verifying_that_the_computed_lcss_are_in_fact_repelling}
 
-Per \cref{def:normal_repellence,def:repelling_lcs}, we expect lumps of particles
-which start out at opposite sides of a repelling LCS to quickly diverge under
-the advection of the underlying flow system. Moreover, courtesy of being
-material surfaces, no particle may ever cross a repelling LCS. In order to
-verify the impenetrable and repelling nature of the computed LCSs, we
+Per \cref{def:normal_repellence,def:repelling_lcs}, we expect lumps of
+particles which start out at opposite sides of a repelling LCS to quickly
+diverge under the advection of the underlying flow system. Moreover, courtesy
+of being material surfaces, no particle may ever cross a repelling LCS. In
+order to verify the impenetrable and repelling nature of the computed LCSs, we
 used a setup of two blobs of initial conditions, situated at opposite sides of
 an identified LCS surface in the steady ABC flow (more on which to follow in
 \cref{sec:computed_lcss_in_the_abc_flow}). We then advected the particle blobs
