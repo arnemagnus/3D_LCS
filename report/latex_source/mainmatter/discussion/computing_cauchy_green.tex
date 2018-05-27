@@ -1,7 +1,7 @@
-\section[Regarding our approach to computing the Cauchy-Green
-strain characteristics] {Regarding our approach to computing the%
+\section[On our approach to computing the Cauchy-Green
+strain characteristics] {On our approach to computing the%
     \\\phantom{5.1} Cauchy-Green strain characteristics}
-\label{sec:regarding_our_approach_to_computing_the_cauchy_green%
+\label{sec:on_our_approach_to_computing_the_cauchy_green%
 _strain_characteristics}
 
 We used an SVD decomposition of the flow map Jacobian to find the Cauchy-Green
@@ -69,12 +69,13 @@ is adequate), and instead opt for trivariate interpolation in space, generating
 an interpolation object for each time instance. This renders the use of
 ODE solvers of adaptive stepsize --- like the Dormand-Prince 8(7) method we
 wound up choosing (more on that to follow in
-\cref{sec:on_the_choice_of_numerical_ode_solver}) --- moot, as the solution
-time steps would then have to coincide with the time levels of the dataset.
-Using a lower order ODE solution method, such as the explicit trapezoidal rule
-(which does not require intermediary samples when moving from one time level to
-the next), yields inferior performance; high order embedded Runge-Kutta solvers
-are much less prone to numerical error \parencite{loken2017sensitivity}.
+\cref{sec:regarding_our_choice_of_numerical_ode_solver}) --- moot, as the
+solution time steps would then have to coincide with the time levels of the
+dataset. Using a lower order ODE solution method, such as the explicit
+trapezoidal rule (which does not require intermediary samples when moving from
+one time level to the next), yields inferior performance; high order embedded
+Runge-Kutta solvers are much less prone to numerical error
+\parencite{loken2017sensitivity}.
 
 
 

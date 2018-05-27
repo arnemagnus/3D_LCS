@@ -14,13 +14,13 @@ the purely radial velocity field
 \begin{equation}
     \label{eq:spherical_velocity_field}
     \dot{\vct{x}}(t) = \frac{\vct{x}}{\norm{\vct{x}}}%
-    \sin{\pi(\norm{\vct{x}}-r)},
+    \sin\big(\pi(\norm{\vct{x}}-r)\big),
 \end{equation}
 which is changes from being directed radially inwards, to pointing radially
 outwards, on the sphere $\norm{\vct{x}}=r$ (on which the velocity field is
 zero). We then computed strain eigenvalues and -vectors over the time interval
-$\mathcal{I}=[0,10]$ for an equidistant grid of $200\times200\times200$ tracers
-in the domain $\mathcal{U}=[-2,2]^{3}$, as outlined in
+$\mathcal{I}=[0,1]$ for an equidistant grid of $200\times200\times200$ tracers
+in the domain $\mathcal{U}=[-2.4,2.4]^{3}$, as outlined in
 \cref{sub:advecting_a_set_of_tracers,%
 sec:computing_cauchy_green_strain_eigenvalues_and_vectors}, for $r=1$.
 Moreover, we computed the arithmetic average of $\lambda_{3}(\vct{x}_{0})$
@@ -35,11 +35,11 @@ repelling LCS, forming a unit sphere.
 
 \input{mainmatter/results/figures/spherical_lm3.tex}
 
-Using a filtering frequency $\nu=20$ (see
+Using $\epsilon=5\cdot10^{-3}$, a filtering frequency $\nu=20$ (see
 \cref{sub:identifying_suitable_initial_conditions_for_developing_lcss,%
-tab:initialconditionparams}) and otherwise the same parameters as given
+tab:initialconditionparams}), and otherwise the same parameters as given
 in \cref{tab:abc_manifold_params}, we developed manifolds from the set
-of $225$ grid points in the reduced $\mathcal{U}_{0}$ domain by the method
+of $291$ grid points in the reduced $\mathcal{U}_{0}$ domain by the method
 described in
 \cref{sec:preliminaries_for_computing_repelling_lcss_in_3d_flow_by_means_of%
     _geodesic_level_sets,sec:revised_approach_to_computing_new_mesh_points,%
@@ -52,10 +52,10 @@ Then, by means of the method outlined in
 repelling LCSs from the computed manifolds, using a tolerance parameter
 $\gamma_{\square}=1.2$, keeping only the LCSs with (pseudo-)surface area
 greater than or equal to $\mathcal{W}_{\min}=1$. The result was a total of
-$18$ identical (to numerical precision) spherical LCSs of radius $1$. These are
-shown in \cref{fig:spherical_lcs}. Seeing as the expected LCS was successfully
-reproduced without false positives, we concluded that our LCS extraction
-routine functions as intended.
+three identical (to numerical precision) spherical LCSs of radius $1$. These
+are shown in \cref{fig:spherical_lcs}. Seeing as the expected LCS was
+successfully reproduced without false positives, we concluded that our LCS
+extraction routine functions as intended.
 
 
 \input{mainmatter/results/figures/spherical_lcs.tex}
