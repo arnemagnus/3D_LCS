@@ -48,10 +48,13 @@
 % LoF
 % Ghost section necessary in order for the hyperref package to link properly
 \phantomsection
+\begingroup
+\raggedbottom
 % Optional: Rename LoF
 %\renewcommand{\listfigurename}{List of Figures}
 \addcontentsline{toc}{chapter}{\listfigurename}
 \listoffigures*
+\endgroup
 \cleartorecto
 %\thispagestyle{empty}
 %\phantom{Blabla}

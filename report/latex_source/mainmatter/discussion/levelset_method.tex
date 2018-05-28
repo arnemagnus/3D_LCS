@@ -1,50 +1,94 @@
 \section{Comments on the method of geodesic level sets}
 \label{sec:comments_on_the_method_of_geodesic_level_sets}
 
+As mentioned in \cref{cha:method}, our take on the method of geodesic level
+sets (see \cref{sec:revised_approach_to_computing_new_mesh_points}) hinges on
+characteristic properties of hyperbolic LCSs (cf.\ \cref{def:hyperbolic_lcs}).
+For \emph{repelling} LCSs (see \cref{def:repelling_lcs}), which we concentrated
+on for this project, existence criterion \cref{eq:lcs_condition_c} states that
+these are everywhere \emph{orthogonal} to the local direction of strongest
+repulsion. The extra degree of freedom compared to manifolds defined as being
+everywhere tangent to some direction field (such as the strange attractor in
+the Lorenz system, as was considered by \textcite{krauskopf2005survey})
+facilitated a more effective (in terms of computational runtime) and
+conceptually simpler method of generating them, than the more direct adaption
+of \posscite{krauskopf2005survey} method (which is outlined in
+\cref{sec:legacy_approach_to_computing_new_mesh_points}). Note, however, that
+\citeauthor{krauskopf2005survey}'s method retains a greater degree of
+general applicability.
 
+Although useful for managing the mesh accuracy (see
+\cref{sec:managing_mesh_accuracy}), and central to our
+triangulation algorithm (outlined in detail in \cref{sec:continuously%
+_reconstructing_three_dimensional_manifold_surfaces_from_point_meshes}),
+exclusively arranging mesh points in closed topological circles has irrefutable
+weaknesses. In systems for which periodic boundary conditions are not
+applicable, the addition of further level sets is promptly terminated when one
+or more of the trajectories used to compute new mesh points (see
+\cref{sec:revised_approach_to_computing_new_mesh_points}) exits the
+computational domain. This impedes the ability to resolve LCS behaviour near
+the domain boundaries, which is evident from inspecting the LCSs in the Førde
+fjord (presented in \cref{sec:computed_lcss_in_the_forde_fjord}). Although this
+issue could be managed by computing strain eigenvalues and -vectors in a domain
+\emph{containing} the domain of interest and expanding from it in all
+directions, this workaround is computationally demanding. Depending on to what
+extent the underlying flow system is known (or modelled), and the location of
+the domain of interest, it might not even be possible.
+
+On a related note, demanding that a new geodesic level set is computed using
+a mesh point descending from \emph{each} of the mesh points in the preceding
+level set renders computing the underlying manifold in its entirety from a
+\emph{single} focal point $\vct{x}_{0}$ (see \cref{sec:preliminaries_for%
+_computing_repelling_lcss_in_3d_flow_by_means_of_geodesic_level_sets}) quite
+difficult. If a single point strand (that is, the set of mesh points which can
+be traced back to a single, common ancestor) is terminated --- either due to
+reaching the domain edges, or failure to compute a new mesh point (see
+\cref{sub:handling_failures_to_compute_satisfactory_mesh_points_revised}), so
+too is the addition of further level sets. Thus, unless the manifold as a whole
+expands as a perfect topological surface area, as seen from the focal point
+$\vct{x}_{0}$, encapsulating it in its entirety by means of geodesic level sets
+becomes impossible --- even when not accounting for the possibility of
+numerical error.
+
+Moreover, our variation of the method of geodesic level sets contains many
+degrees of freedom (see e.g.\
+\cref{tab:initialconditionparams,tab:abc_manifold_params}). Some of these
+parameters, mainly those governing the minimum and maximum allowed separations
+between neighboring mesh points, could reasonably be chosen based on
+considerations pertaining to the spatial extent of the computational domain;
+alternatively, to what extent the minute details of the LCSs are to be
+resolved. How to determine several other undeniably key parameter values ---
+such as the tolerances  for the detection of intersecting manifolds (see
+\cref{sec:macroscale_stopping_criteria_for_the_expansion_of_computed%
+_manifolds}), and the removal of mesh points which form undesired bulges (which
+is outlined in \cref{sub:limiting_the_accumulation_of_numerical_noise}) ---
+remains less obvious.
+
+That being said, the parameters related to the curvature-guided approach to
+dynamically adjust the interset separations were, in our experience, of less
+importance; as briefly mentioned in \cref{sec:a_curvature_based_approach_to%
+_determining_interset_separations}, the interset step length was rarely
+\emph{increased}. More often than not, the interset step length was quickly
+reduced to its lower limit, and remained at that level for the generation of
+all subsequent level sets. This is not entirely unexpected, as sufficiently
+large curvature within a \emph{single} region of any given level set sufficed
+to lower the step length (compare \cref{eq:increase_dist,eq:decrease_dist}).
+Moreover, as the geodesic level sets continuously expand, encoutering such a
+region becomes increasingly likely. As the accuracy of the computed mesh points
+is independent of the density of mesh points, the main use of the interset step
+size is to manage the interpolation error inherent to our linear triangulation
+scheme (see \cref{sec:continuously_reconstructing_three_dimensional_manifold%
+_surfaces_from_point_meshes}) \parencite{krauskopf2003computing}. Thus, it
+seems reasonable to forego the dynamic interset step length in favor of a
+fixed one, where the minute details of LCS surfaces are unimportant. As
+tentatively suggested in the above, doing so reduces the overall complexity of
+our method for generating mesh points, in addition to reducing the number of
+free parameters.
 
 
 \begin{framed}
     \begin{itemize}
-        \item Vår tilpasning av metoden utnytter underliggende egenskaper ved
-            frastøtende LCS-flater. Dermed ikke universelt anvendbar.
-        \item Kort resym{\'e} av fordelene ved vår metode
-            \begin{itemize}
-                \item Konseptuelt enklere
-                \item Raskere
-            \end{itemize}
         \item Svakheter:
-            \begin{itemize}
-                \item Å kreve at meshpunktene utgjør lukkede topologiske
-                    sirkler vanskeliggjør oppløsning av oppførsel nær
-                    domenekanter (for ikke-periodiske grensebetingelser, jf.\
-                    LCSene i Førdefjorden, som presentert i
-                    \cref{sec:computed_lcss_in_the_forde_fjord})
-                \item Å kreve at alle nye meshpunkt skal kunne beregnes fra
-                    hver forfader i foregående levelset gjør det vanskelig å
-                    beregne `hele' den invariante mangfoldigheten ut fra hvert
-                    arnepunkt. Mer spesifikt er dette umulig med mindre
-                    mangfoldigheten strekker steg utover som en perfekt
-                    sirkulær overflate.
-                \item Mange frihetsgrader (se
-                    \cref{tab:initialconditionparams,%
-                    tab:fjord_manifold_params}), hvorav kun noen kan velges fra
-                    direkte betraktninger av domenets romlige utstrekning.
-                    Blant annet utgjør intersection-lengde og
-                    loop-fjernings-toleranse nøkkelparametre som det ikke
-                    nødvendigvis er åpenbart hvordan en best bør velge.
-                    \begin{itemize}
-                        \item Parameterne tilhørende den krumningsbaserte
-                            metoden for å velge neste interset-distanse kan
-                            sløyfes; vår erfaring er at disse aldri økte
-                            distansen, snarere reduserte den så langt som mulig
-                            i løpet av ikke alt for mange levelset.
-
-                            Ikke helt uventet, fordi det holder med mye
-                            krumning \emph{ett} sted for å redusere
-                            steglengden.
-                    \end{itemize}
-            \end{itemize}
             \item En videre revisjon, hvor en går lengre vekk fra ideen om å
                 organisere punkter i topologiske sirkler til fordel for
                 \emph{point strains} kan være hensiktsmessig --- spesielt hva

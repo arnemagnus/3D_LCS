@@ -81,6 +81,7 @@ for repelling LCSs, as originally proposed by \textcite{haller2011variational}.
 Inspired by the work of \textcite{farazmand2012computing}, we then sought to
 dispose of the smallest among the computed LCSs, as these are expected to
 be the least significant in terms of the overall flow within the system.
+
 In order to obtain a measure of the size of our three-dimensional surfaces,
 to each LCS point $\mathcal{L}_{k}$, we assigned a weighting given by the
 surface area approximating the region of the underlying manifold $\mathcal{M}$
@@ -107,12 +108,41 @@ a repulsion average $\overline{\lambda}_{3}$; in particular,
     \sum\limits_{k}\lambda_{3}(\tilde{\vct{x}}_{k})\mathcal{W}_{k},
 \end{equation}
 where the summation is over all mesh points in the parametrization of
-$\mathcal{L}$, and  $\tilde{\vct{x}}_{k}$ denotes the coordinates of mesh
-point $\mathcal{L}_{k}$. Any LCS for which the computed total weight
+$\mathcal{L}$, and $\tilde{\vct{x}}_{k}$ denotes the coordinates of mesh
+point $\mathcal{L}_{k}$.
+
+To limit biasing from outlier mesh points (measured in terms of their
+$\lambda_{3}$ value) --- or, possibly, spurious interpolation artifacts --- in
+the computed repulsion average, we alternately removed the least and most
+repulsive mesh points from the averaging process, as long as this altered the
+resulting repulsion average significantly. In particular, denoting the adjusted
+repulsion average by $\widehat{\lambda}_{3}$, we iteratively removed outlier
+extrema provided that
+\begin{subequations}
+\begin{equation}
+    \label{eq:lcs_lm3_adjusted}
+    \abs{1-\frac{\widehat{\lambda}_{3}}{\overline{\lambda}_{3}}} > 0.1,
+\end{equation}
+whereupon we continuously accepted the most recently computed adjusted
+repulsion average as the new reference repulsion average --- that is,
+\begin{equation}
+    \label{eq:lcs_lm3_accept_iterate}
+    \overline{\lambda}_{3} := \widehat{\lambda}_{3}.
+\end{equation}
+\end{subequations}
+This process was repeated until the removal of the least or most strongly
+repelling mesh points did not alter the resulting repulsion average enough to
+trigger condition~\eqref{eq:lcs_lm3_adjusted}.
+
+Any LCS for which the computed total weight
 $\mathcal{W}$ was smaller than some pre-set limit $\mathcal{W}_{\min}$ or
 $\overline{\lambda}_{3} < 1$, the latter as a sanity
 check to ensure overall repulsion, per existence criterion
-\eqref{eq:lcs_condition_a}, were discarded.
+\eqref{eq:lcs_condition_a}, were discarded. As an aside, note that this method
+of identifying repelling LCSs can easily be adapted to the identification of
+\emph{attracting} LCSs, by computing Cauchy-Green strain eigenvalues and
+-vectors for the \emph{reversed} time interval $[t_{1},t_{0}]$ (see
+\cref{def:attracting_lcs}) and otherwise proceeding as discussed.
 
 \input{mainmatter/method/figures/lcs_point_weights}
 

@@ -47,14 +47,22 @@ tolerance parameter, which essentially determines an upper limit for the extent
 interpolation curve $\mathcal{C}_{i}$. Specifically, a large
 $\gamma_{\circlearrowleft}$ facilitates removal of rounded loops, whereas a
 small $\gamma_{\circlearrowleft}$ restricts the removal process to sharp
-bulges. A characteristic example demonstrating this method of removing unwanted
+bulges.
+
+A characteristic example demonstrating this method of removing unwanted
 loops is shown in \cref{fig:loop_removal}. While possibly sacrificing some
 resolution of the manifold as a whole, adhering to criterion
 \eqref{eq:loop_removal_conditions} prevents the removal of any \emph{reasonable}
-bulge formations. As no new mesh points are \emph{added} as a direct
-consequence of this loop-removal algorithm, it does not introduce new errors.
-It is also worth mentioning that some of the removed mesh points were recovered
-in the ensuing level sets, then as constituents of an overall smoother level
-set.
+bulge formations. The removal of several consecutive mesh
+points in the manner outlined may cause some triangle elements in the
+reconstruction of manifold surfaces from the resulting point meshes (see
+\cref{sec:continuously_reconstructing_three_dimensional_manifold_surfaces%
+_from_point_meshes}) to be somewhat larger than their neighbors, and, in some
+cases, partly overlapping triangles. However, as no new mesh points are
+\emph{added} as a direct consequence of this loop-removal algorithm, it does
+not introduce new errors. It is also worth mentioning that some of the removed
+mesh points were recovered in the ensuing level sets, then as constituents of
+an overall smoother level set. In our experience, the removal of
+loop-forming mesh points was rarely required.
 
 \input{mainmatter/method/figures/loop_deletion}

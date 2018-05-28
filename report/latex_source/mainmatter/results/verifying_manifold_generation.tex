@@ -1,6 +1,21 @@
 \section{Verifying our method of generating manifolds}
 \label{sec:verifying_our_method_of_generating_manifolds}
 
+To start things off, \cref{sec:verifying_our_method_of_generating_manifolds}
+outlines a series of geodesic level set approximations of an analytically known
+three-dimensional surface. From these, we extract key insight regarding which
+mesh point configurations might be reasonable for general application.
+In \cref{sub:sample_manifolds_computed_from_the_steady_abc_flow}, we
+illustrate how a sample manifold from the steady ABC flow (see
+\cref{sec:flow_systems_defined_by_analytical_velocity_fields}) depends on the
+mesh point parameters; which we then used to guide our parameter choices for
+the generation of manifolds in the general case. Lastly, we illustrate that the
+computed manifolds are in fact invariant for trajectories everywhere tangent to
+(arbitrary linear combinations of) the $\vct{\xi}_{1}$- and
+$\vct{\xi}_{2}$-direction fields (see \cref{rmk:invariance_lcs}) --- and,
+consequently, everywhere orthogonal to the $\vct{\xi}_{3}$-field, in compliance
+with existence criterion~\eqref{eq:lcs_condition_c}.
+
 \subsection{An analytical test case}
 \label{sub:an_analytical_manifold_test_case}
 As a verification test case for (our variant of) the method of geodesic level

@@ -1,0 +1,109 @@
+\begin{framed}
+Hentet direkte fra høstens prosjekt. Må sikkert tilpasses litt.
+\end{framed}
+When analyzing complex dynamical systems, such as the nonlinear many-body
+problems arising in transport phenomena by virtue of oceanic currents or
+atmospheric winds, the conventional approach to predicting future states
+by means of simulating the trajectories of phase points is frequently
+insufficient. This is due to the resulting predictions being very sensitive to
+small changes in time and initial positions. One way of addressing the delicate
+dependence on initial conditions is to run different models for the same
+underlying physical systems, of increasing spatial and temporal resolution. This
+sort of approach is made possible because the fundamental dynamics are known ---
+yet, for complex transport systems, the computational cost quickly grows beyond
+the available resources, in terms of computation time or memory. For many
+practical purposes, however, microscopic details matter little in comparison to
+the overarching trends in the system, which means that a less ambitious
+approach, merely aiming to understand the macroscopics of the transport
+phenomenon, is often justifiable.
+
+At the turn of the millennium, the concept of Lagrangian coherent structures
+saw the light of day, emerging from the intersection between nonlinear dynamics,
+that is, the underlying mathematical principles of chaos theory, and fluid
+dynamics \parencite{haller2000lagrangian}. These provide a new framework for
+understanding transport phenomena in conceptual fluid flow systems. Lagrangian
+coherent structures can be described as time-evolving `landscapes' in a
+multidimensional space, which dictate macroscopical flow patterns in dynamical
+systems. In particular, such structures define the interfaces of dynamically
+distinct, invariant regions. An invariant region in fluid dynamics is
+characterized as a domain where all particle trajectories that originate within
+the region, remain in it, although the region itself can move and deform with
+time. So, simply put; Lagrangian coherent structures enable us to make
+predictions regarding the future states of flow systems.
+
+There are two possible perspectives regarding the description of fluid flow.
+The Eulerian approach is to consider the properties of a flow field at a set of
+fixed points in time and space. An example is the concept of velocity fields,
+which produce the local and instantaneous velocities at all points within their
+domains. The Lagrangian point of view, on the other hand, concerns the
+developing velocity of each fluid element along their paths, as they are
+transported by the flow. Unlike the Eulerian perspective, the Lagrangian
+mindset is objective, as in frame-invariant. That is, properties of Lagrangian
+fields are unchanged by time-dependent translations and rotations of the
+reference frame. For unsteady flow systems, which are more common than steady
+flow systems in nature, there exists no self-evident preferred frame of
+reference. Thus, any transport-dictating dynamical structures should
+hold for \emph{any} choice of reference frame. This is the main
+rationale for which \emph{Lagrangian}, rather than \emph{Eulerian}, coherent
+structures have been pursued.
+
+A generic flow system can be described as a structure whose state depends on
+flowing streams of energy, material or information. Conventional examples of
+flow systems include the transport of physical properties such as pressure,
+temperature or matter in fluids, and the transport of charge in electrical
+currents. A large variety of phenomena can reasonably be modelled as flow
+systems, such as the classical harmonic oscillator, or the interaction between
+predator and prey in closed systems
+\parencite[parts I--II]{strogatz2014nonlinear}. In doing so, valuable pieces
+of insight can be obtained from well-understood properties of generic flows.
+In recent years, analyses based upon Lagrangian coherent structures have been
+conducted for a variety of naturally occuring phenomena which are not
+commonly considered as flow systems. Two prominent examples are how
+\textcite{olascoaga2008tracing} used Lagrangian coherent structures in order
+to forecast the development of toxic algae in the ocean, and
+\textcite{ali2007lagrangian} used Lagrangian coherent structures to predict
+the formation and stability of human crowd patterns. As these examples
+emphasize, the theory of Lagrangian coherent structures is applicable to a
+wide range of systems.
+
+Although the framework for detecting Lagrangian coherent structures is
+mathematically valid for any number of dimensions, the focus of this project
+work has been two-dimensional flow systems. Many natural processes can
+reasonably be described as two-dimensional, perhaps most notably the transport
+of debris and contaminations, such as garbage patches or the remnants of
+an oil spill, by means of oceanic surface currents. Being able to successfully
+predict where such particles will be taken by the flow could enable us to
+isolate them and accelerate the cleanup process before the particles are able
+to reach the coastline, thus mitigating potential humanitarian and natural
+calamities.
+
+%\newpage
+%
+At the heart of detecting Lagrangian coherent structures lies the advection
+of (generalized) fluid elements by means of a velocity field, which describes
+the system under consideration. This is true both for test cases, where the
+velocity profile is known analytically, and for real-life systems, typically
+described by means of some model for the instantaneous velocity field. For this
+project work, the topic of interest is how the detection of Lagrangian coherent
+structures depends on the choice of numerical integration method used in order
+to compute the aforementioned particle transport. In particular, four singlestep
+methods and four embedded, adaptive step length methods, each with different
+properties, were used in order to advect a collection of fluid elements by means
+of an analytically known, two-dimensional, unsteady velocity field.
+
+This thesis is structured based on the idea that readers possessing
+at least an undergraduate level of knowledge of physics and mathematics, in
+addition to a rudimentary understanding of programming, should be able to
+understand and repeat the numerical investigations which have been conducted.
+To this end, the immediately forthcoming chapter contains a description of the
+various numerical integration schemes that were utilized, in addition to a
+generic yet brief mathematical description of the kind of flow systems
+considered and the Lagrangian coherent structures situated therein, the latter
+based on variational theory. In the ensuing chapter, we present a transport
+model frequently used in literature --- whose Lagrangian coherent structures
+are documented --- in addition to a description of how the variational
+principles of Lagrangian coherent structure detection were implemented
+numerically. Lastly, the results are presented and discussed, before the
+conclusions of the project as a whole are drawn.
+
+

@@ -47,3 +47,13 @@ others, and removing grid points which are too close together, are illustrated
 in \cref{fig:mesh_management_insertion_and_deletion}.
 
 \input{mainmatter/method/figures/dynamic_mesh_management}
+
+Having completed the process of inserting and removing mesh points, the
+points in the level set were assigned consecutive integer indices. In
+particular, if a mesh point $\mathcal{M}_{i,j+\frac{1}{2}}$ was inserted
+inbetween $\mathcal{M}_{i,j}$ and $\mathcal{M}_{i,j+1}$, the respective indices
+were updated as $\mathcal{M}_{i,j+\frac{1}{2}}\to\mathcal{M}_{i,j+1}$,
+$\mathcal{M}_{i,j+1}\to\mathcal{M}_{i,j+2}$ and so forth. Conversely, if mesh
+point $\mathcal{M}_{i,j+1}$ was removed, then
+$\mathcal{M}_{i,j+2}\to\mathcal{M}_{i,j+1}$,
+$\mathcal{M}_{i,j+3}\to\mathcal{M}_{i,j+2}$ and so on.

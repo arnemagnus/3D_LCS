@@ -172,7 +172,7 @@
 
 % Table of Contents:
 
-\renewcommand\printtoctitle[1]{\vspace{-15.5ex}\chapter*{#1}}
+\renewcommand\printtoctitle[1]{\vspace{-15.6ex}\chapter*{#1}}
 
 \addto\captionsenglish{%
     \renewcommand{\contentsname}{Table of Contents}%
@@ -223,7 +223,8 @@
 \renewcommand\printloftitle[1]{\vspace{-15.5ex}\chapter*{#1}}
 
 \addto\captionsenglish{%
-    \renewcommand{\listfigurename}{List of Figures}%
+    \renewcommand{\listfigurename}{\protect\vphantom{T}List of
+    Figures}%
 }
 
 

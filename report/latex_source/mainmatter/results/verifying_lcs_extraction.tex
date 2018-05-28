@@ -4,6 +4,14 @@ manifolds}
 \label{sec:verifying_our_method_of_extracting_repelling_lcss_from_the_computed%
 _manifolds}
 
+In \cref{sub:an_analytical_lcs_test_case}, we present an analytical flow field
+defined to exhibit a single repelling LCS, and how we may use the accompanying
+$\lambda_{3}$ field (i.e.,\ the largest Cauchy-Green strain eigenvalues) to
+determine its location. We then show that, using the method outlined in
+\cref{cha:method}, we reproduce it exactly.
+\Cref{sub:verifying_that_the_computed_lcss_are_in_fact_repelling} contains a
+description of how we verified that the computed LCSs are, in fact, repelling.
+
 \subsection{An analytical test case}
 \label{sub:an_analytical_lcs_test_case}
 
@@ -20,7 +28,7 @@ which is changes from being directed radially inwards, to pointing radially
 outwards, on the sphere $\norm{\vct{x}}=r$ (on which the velocity field is
 zero). We then computed strain eigenvalues and -vectors over the time interval
 $\mathcal{I}=[0,1]$ for an equidistant grid of $200\times200\times200$ tracers
-in the domain $\mathcal{U}=[-2.4,2.4]^{3}$, as outlined in
+in the domain $\mathcal{U}=[-2,2]^{3}$, as outlined in
 \cref{sub:advecting_a_set_of_tracers,%
 sec:computing_cauchy_green_strain_eigenvalues_and_vectors}, for $r=1$.
 Moreover, we computed the arithmetic average of $\lambda_{3}(\vct{x}_{0})$

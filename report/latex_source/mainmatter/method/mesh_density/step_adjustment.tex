@@ -5,7 +5,7 @@ Given the interpoint separation constraints described in
 \cref{sub:maintaining_mesh_point_density}, we have some flexibility regarding
 the choice of interset step length $\Delta_{i}$. In an approach closely
 mirroring that of \textcite{krauskopf2005survey}, we used the (approximate)
-local curvatures along each point train (i.e.,\ the set of mesh points
+local curvatures along each point strand (i.e.,\ the set of mesh points
 which can be traced back to a common ancestor) in order to determine
 whether or not the local manifold dynamics were resolved to a satisfactory
 level of detail. Starting out with an initial interset separation
@@ -50,7 +50,7 @@ tolerance parameters, was satisfied, the interset distance for computing the
 
 As is evident from \cref{eq:decrease_dist,eq:increase_dist}, the parameters
 $\alpha_{\downarrow}$, $\alpha_{\uparrow}$, $(\Delta\alpha)_{\downarrow}$ and
-$(\Delta\alpha)_{\uparrow}$ determine the mesh adaption along point trains.
+$(\Delta\alpha)_{\uparrow}$ determine the mesh adaption along point strands.
 The bounds for the offsets $\{\Delta_{i}\cdot\alpha_{i,j}\}$ enforce stricter
 requirements on angular offsets for large interstep lengths. Conversely, level
 sets computed using small interset lenghts are generally allowed to exhibit
