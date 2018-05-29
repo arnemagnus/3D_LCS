@@ -1,2 +1,49 @@
 \section{Regarding our choice of numerical ODE solver}
 \label{sec:regarding_our_choice_of_numerical_ode_solver}
+
+As mentioned in \cref{sec:on_our_approach_to_computing_the_cauchy_green_strain%
+_characteristics}, the Dormand-Prince 8(7) method was used for both the tracer
+advection used to compute the Cauchy-Green strain eigenvalues and -vectors, and
+computing new mesh points in the expansion of computed manifolds (as described
+in  \cref{sec:computing_the_flow_map_and_its_directional_derivatives,%
+sec:computing_cauchy_green_strain_eigenvalues_and_vectors} and
+\cref{sec:revised_approach_to_computing_new_mesh_points}, respectively). Thus,
+any propagation of numerical round-off errors can reasonably be expected to
+have occurred in a consistent manner throughout. Moreover, courtesy of the
+adaptive step size adjustment routine outlined in
+\cref{sub:the_implementation_of_dynamic_runge_kutta_step_size}, using an
+embedded Runge-Kutta solver allows for dispensing with a particular numerical
+integration step size. Accordingly, the use of an embedded ODE solver --- like
+the Dormand-Prince 8(7) method --- involves one less degree of freedom than
+traditional singlestep methods such as the classical \nth{4}-order Runge-Kutta
+method (that is, subject to limiting the step size from above in order to avoid
+overshoots when computing manifold mesh points, briefly mentioned in
+\cref{sec:revised_approach_to_computing_new_mesh_points}). This is
+significant, because the present approach already involves a lot of free
+parameters (see \cref{sec:comments_on_the_method_of_geodesic_%
+level_sets}).
+
+\textcite{loken2017sensitivity} showed that the Dormand-Prince 8(7) method
+yields very accurate numerical approximations at a very low computational cost
+--- at least, that is, for smooth flow systems (see
+\cref{sec:the_type_of_flow_systems_considered}). As is apparent from
+\cref{def:runge_kutta_order}, pertaining to the order of accuracy of
+Runge-Kutta methods, the accuracy of numerical solutions obtained by using
+Runge-Kutta solvers depend on the order of the method itself, in addition to
+the smoothness of the underlying function. Although generally more accurate,
+higher-order ODE solvers yield increasingly diminishing returns compared to
+their lower-order siblings when the order of the ODE solver exceeds the
+function's number of smooth derivatives.
+
+Thus, for gridded model data --- both regarding the oceanic currents of the
+Førde fjord (\cref{sub:oceanic_currents_in_the_forde_fjord}), and the
+discretely sampled Cauchy-Green strain eigenvalue and -vector fields
+(\cref{sec:computing_the_flow_map_and_its_directional_derivatives,%
+sec:computing_cauchy_green_strain_eigenvalues_and_vectors}) --- the
+interpolation routine sets an upper bound in terms of the accuracy with which
+LCSs can be computed. For more complex systems than the ones investigated here,
+the interaction between the integration and interpolation schemes could be
+critical; both in terms of numerical precision and computational resource
+consumption. Independently of the scales at which well-resolved LCSs are sought
+in a given transport system, the aforementioned effects warrant further
+investigation, yet remain beyond the scope of this project.

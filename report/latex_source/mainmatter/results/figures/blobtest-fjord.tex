@@ -1,0 +1,38 @@
+\begin{figure}[htpb]
+    \centering
+    \begin{subfigure}[b]{0.475\textwidth}
+        \centering
+        \importpgf{figures/mpl-figs}{blobtest-fjord-pre-small.pgf}
+        \caption[]{{\small Initial state, June 1 2013, 00:00}}
+        \label{fig:blobtest-fjord-pre}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.475\textwidth}
+        \centering
+        \importpgf{figures/mpl-figs}{blobtest-fjord-post-small.pgf}
+        \caption[]{{\small Final state, June 1 2013, 12:00}}
+        \label{fig:blobtest-fjord-post}
+    \end{subfigure}
+    \caption[Advection of tracers in order to verify the repelling nature of
+    the computed LCSs in the Førde fjord]
+    {%
+        Advection of tracers in order to verify the repelling nature of the
+        computed LCSs in the Førde fjord. At midnight June 1, 2013, two blobs
+        of initial conditions are placed at opposite sides of the most strongly
+        repulsive LCS identified for flow in the Førde fjord (see
+        \cref{fig:fjord_lcss}) as shown in (\subref*{fig:blobtest-pre}). The
+        two blobs, and the mesh points in the parametrization of the LCS, are
+        then advected in the model data for the oceanic currents briefly
+        described in \cref{sub:oceanic_currents_in_the_forde_fjord}, using the
+        Dormand-Prince 8(7) ODE solver, for the 12 hour time interval of
+        interest, where the final state is shown in
+        (\subref*{fig:blobtest-post}). Note that, although the LCS
+        triangulation breaks down under the advection, the two blobs of
+        particles remain on fairly compact, and remain on the opposite sides of
+        the LCS, never crossing the LCS surface. This indicates that the local
+        centre of strongest repulsion remains located \emph{inbetween} the
+        two blobs of particles throughout --- which
+        is the exact behaviour we expect for a repelling LCS.
+    }
+    \label{fig:blobtest-fjord}
+\end{figure}
+

@@ -1,6 +1,6 @@
 \section{Comments on the method of geodesic level sets}
 \label{sec:comments_on_the_method_of_geodesic_level_sets}
-
+%
 As mentioned in \cref{cha:method}, our take on the method of geodesic level
 sets (see \cref{sec:revised_approach_to_computing_new_mesh_points}) hinges on
 characteristic properties of hyperbolic LCSs (cf.\ \cref{def:hyperbolic_lcs}).
@@ -66,7 +66,7 @@ remains less obvious.
 
 That being said, the parameters related to the curvature-guided approach to
 dynamically adjust the interset separations were, in our experience, of less
-importance; as briefly mentioned in \cref{sec:a_curvature_based_approach_to%
+importance; as briefly mentioned in \cref{sub:a_curvature_based_approach_to%
 _determining_interset_separations}, the interset step length was rarely
 \emph{increased}. More often than not, the interset step length was quickly
 reduced to its lower limit, and remained at that level for the generation of
@@ -85,24 +85,51 @@ tentatively suggested in the above, doing so reduces the overall complexity of
 our method for generating mesh points, in addition to reducing the number of
 free parameters.
 
+Another way of organizing the mesh points, which could circumvent some of the
+aforementioned limitations of the present approach, would be as a group of
+point strands, each associated with a particular unit tangent $\vct{t}$ ---
+determined using $\mathcal{C}_{1}$, the interpolation curve of the innermost
+level set, in similar fashion to that described in
+\cref{sub:parametrizing_the_innermost_level_set}. Treating the expansion along
+each point strand independently would then permit further expansion of a
+manifold even when one or more point strands would reach the domain boundaries;
+this would also solve the possible issue of computed trajectories along any
+given strand failing to yield acceptable mesh points (see
+\cref{sub:handling_failures_to_compute_satisfactory_mesh_points_revised}) ---
+in which case only the strands in question need to be terminated.
 
-\begin{framed}
-    \begin{itemize}
-        \item Svakheter:
-            \item En videre revisjon, hvor en går lengre vekk fra ideen om å
-                organisere punkter i topologiske sirkler til fordel for
-                \emph{point strains} kan være hensiktsmessig --- spesielt hva
-                gjelder beregning av en mangfoldighet som ikke har uniform
-                utstrekning i alle retninger, sett fra arnesteded
-                \begin{itemize}
-                    \item Kan medføre innfløkt logikk hva gjelder å
-                        opprettholde meshpunkttetthet
-                \end{itemize}
-                \item Alternative fremgangsmåter finnes. Blant annet beskriver
-                    \textcite{krauskopf2005survey} X andre metoder for å
-                    beregne invariante mangfoldigheter av tredimensjonale
-                    vektorfelter. Ingen av disse ble undersøkt som en del av
-                    dette prosjektet. \emph{Forslag til videre arbeid}.
-    \end{itemize}
-\end{framed}
+Aside from taking a step further away from the method of geodesic level set as
+originally proposed by \textcite{krauskopf2005survey}, organizing mesh
+points as a group of point strands would necessitate developing the mesh
+accuracy management method outlined in \cref{sec:managing_mesh_accuracy}
+further. In particular, the present approach utilizes the interpolation curve
+$\mathcal{C}_{i}$ in order to insert mesh points inbetween nearest neighbor
+mesh points in level set $\mathcal{M}_{i+1}$ which are deemed to lie too far
+away from eachother (see \cref{sub:maintaining_mesh_point_density}). A
+reasonable approach for the case of point strands could be to, having
+identified two strands inbetween which a new mesh point is needed, retrieve
+their respective ancestor points in the innermost level set, and then compute
+(the trajectories of a) new point strand starting out at a point on
+$\mathcal{C}_{1}$, midway inbetween said ancestors, keeping only the first
+point along the strand which is required to maintain the point density.
 
+Depending on the extent of the initial level set --- that is, the circumference
+of its interpolation curve $\mathcal{C}_{1}$ --- and the required mesh point
+density, however, this approach could be prone to errors arising from numerical
+round-off errors in computing the start points of new point strands. Moreover,
+in order to maintain an overall mesh structure suitable for triangulation
+purposes, the steps along each point strand should be equal; that is, mesh
+points $i$ and $i+1$ along all point strands should be separated by the same
+distance $\Delta_{i}$, whereas all interpoint step sizes $\{\Delta_{i}\}$ need
+not be the same. This way, a quasi-circular structure is maintained as the
+point strands expand --- that is, subject to one or more of them reaching the
+domain boundaries or being terminated due to ending up in (approximately)
+closed orbits (see \cref{sub:computing_pseudoradial_trajectories_directly}).
+
+Lastly, several other methods of computing invariant manifolds of vector fields
+exist; of whom some might be well-suited in the context of LCSs. For instance,
+the method of geodesic level sets is one of five methods presented by
+\textcite{krauskopf2005survey}; none of the others were pursued as part of this
+work. Exploring the strengths and weaknesses of other
+approaches to computing three-dimensional hyperbolic LCSs remains beyond the
+scope of this project.

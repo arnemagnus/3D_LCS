@@ -42,7 +42,10 @@ distance separating mesh points which would then become nearest neighbors
 did not exceed $\Delta_{\max}$. Accordingly, if any one of a pair of
 neighboring mesh points was to be removed, we chose to discard the one which
 would result in the smallest separation between the ensuing, \emph{new} pair of
-nearest neighbors. Our principles for inserting new mesh points inbetween
+nearest neighbors. In our experience, the removal of mesh points rarely
+occurred; however, it was crucial for generating the spherical LCS surface
+which will be presented in \cref{sub:an_analytical_lcs_test_case}.
+Our principles for inserting new mesh points inbetween
 others, and removing grid points which are too close together, are illustrated
 in \cref{fig:mesh_management_insertion_and_deletion}.
 
