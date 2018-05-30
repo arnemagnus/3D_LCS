@@ -1,9 +1,110 @@
-\begin{framed}
-    For future work: Siter abstractet til \parencite{haller2018material},
-    finnes på
-    \url{https://agu.confex.com/agu/os18/meetingapp.cgi/Paper/316654}.
-    Ev også \parencite{filippi2018detection} i tillegg til
-    \parencite{peacock2018targeted} --- se hhv. (\url{https://agu.confex.com/agu/os18/meetingapp.cgi/Paper/325803},
-    \url{http://mseas.mit.edu/Sea_exercises/NSF_ALPHA/2017/index.html}) og \url{https://agu.confex.com/agu/os18/meetingapp.cgi/Paper/317787}.
-    Alle 2D-overflate-eksperimenter.
-\end{framed}
+Our method for computing repelling LCSs in three-dimensional flow systems
+seems to yield reasonable results. Analytically constructed test cases indicate
+that our method of generating three-dimensional surfaces, in addition to
+extracting repelling LCSs as subsets of computed manifolds which satisfy all
+the necessary and sufficient existence criteria, work as intended. Moreover,
+the robustness of the LCSs obtained in the two variations of the
+Arnold-Beltrami-Childress flow considered here, suggests that the computed LCSs
+are not particularly sensitive to imperfect model data --- which is a
+characteristic property of \emph{Lagrangian} transport barriers. Accordingly,
+our computed LCSs for flow in the Førde fjord likely form reasonable
+approximations of the actual LCSs contained within.
+
+There is certainly room for further resarch with regards to the numerical
+implementation of one of the LCS existence conditions derived from their
+variational theory; in particular, that pertaining to the identification of
+locally most repelling material surfaces (the other conditions are quite
+unambiguous, in comparison). To our knowledge, a general, robust numerical
+routine is yet to be described in the literature. For instance, in a recent
+conducted by \textcite{oettinger2016autonomous}, who set out to compute
+quasi-three-dimensional hyperbolic LCSs, the authors seemingly did not attempt
+to implement the aforementioned criteria numerically, appearing to be satisfied
+with reasonable suggestions as to where such LCSs \emph{might} be located. Our
+approach, based on identifying which of the individual points constituting each
+manifold was locally repelling, involved one parameter which was determined by
+use of the  initial grid spacing, and another which filtered away the smallest
+LCS  surfaces --- as these were assumed not to impact the overall circulation
+significantly (originally suggested by \textcite{farazmand2012computing}).
+A suggested alternative approach, which was not investigated as part of this
+project, would be to utilize a sort of numerical clustering algorithm to
+extract LCSs as the most repelling material surfaces in small neighborhoods,
+where each of the considered sets of surfaces ideally would be of similar size
+and orientation.
+
+Seeing as our method of computing fully three-dimensional LCSs is significantly
+more complex and consumes more computational resources than well established
+routines for generating their two-dimensional counterparts (see e.g.\
+\textcite{onu2015lcstool}), strong arguments regarding the additional insight
+from three-dimensional anlysis are needed in order to substantiate a change in
+practices. Moreover, computing fully three-dimensional LCSs might not be
+necessary, depending on the type of transport phenomenon under consideration.
+For instance, regarding the spread of debris and contaminations such as garbage
+patches or oil spill remnants across the ocean surface, the underlying
+transport system can reasonably be considered two-dimensional. Meanwhile, for
+circulation in rivers or fjords, where the depth is of the same scale as the
+width, fully three-dimensional analysis might be more suitable. Simply put, for
+systems in which all three dimensions are of similar relevance --- i.e.,\
+systems which cannot reasonably be regarded as two-dimensional --- computing
+fully three-dimensional LCS surfaces might be prudent; in contrast to the
+quasi-three-dimensional approach of \textcite{oettinger2016autonomous} which
+loses out on the minute details of the extra dimension, and does not yield
+coherent surfaces favorable for further inquiries.
+
+\subsubsection{Suggestions for further work}
+\label{ssub:suggestions_for_further_work}
+
+Experimental methods for the verification of Lagrangian flow analysis have
+gained traction lately. Investigations are currently being conducted as to the
+usefulness of LCSs as predictors for diffusive flow patterns, for which
+analyzing tracer trajectories of the overall circulation might be insufficient
+\parencite{haller2018material}. Moreover, recent pilot studies indicate that
+Lagrangian analysis yields valid predictions for transport by oceanic currents
+\parencite{filippi2018detection} --- including the fully three-dimensional
+circulation patterns arising in off-shore currents
+\parencite{peacock2018targeted}. Accordingly, empirical studies pertaining to
+the validity of the LCSs computed by use of our variation of the geodesic level
+set method lays within the realm of feasibility.
+
+In addition to the aforementioned issue of implementing the LCS existence
+criteria which identifies LCSs as surfaces which are locally most repelling,
+further research aiming to enhance our approach for computing repelling LCSs
+could result in increased transparency and efficiency. Specifically,
+abandoning the strict ordering of mesh points in level sets forming topological
+circles could allow for an increase in the resolution of LCS behaviour near
+domain boundaries, and potentially yield more accurate surface approximations
+overall. Then again, other options for computing invariant manifolds of
+three-dimensional vector fields exist. Aside from the method of geodesic level
+sets, \textcite{krauskopf2005survey} present four others; investigating each of
+them in the context of computing hyperbolic LCSs could provide valuable
+insights. Moreover, another method less demanding in terms of resource
+consumption than the present approach would render the computation of
+three-dimensional LCSs a feasible task without the need of supercomputers.
+Courtesy of facilitating three-dimensional Lagrangian analysis for a wider
+audience, this could, in turn, accelerate the further development of LCS
+computing tools as a whole.
+
+Lastly, to our knowledge, little research has been conducted regarding the
+choice of interpolation and integration methods in order to simulate transport
+phenomena in real-world systems. High order adaptive step size integration
+methods are generally used in conjunction with interpolated velocity fields,
+seemingly with little awareness as to whether or not the use of higher-order
+methods are warranted. For instance, \textcite{vansebille2018lagrangian}
+provide a rigorous discussion of the currently available tools for computer
+simulated tracer advection, but lacks a detailed treatment of integration
+methods. The significance of the choice of interpolation scheme is generally
+recognized, though left largely unexplored. Whereas
+\textcite{lekien2005tricubic} developed a (locally) tricubic interpolation
+method intended for use in simulating three-dimensional flow (and computing
+three-dimensional LCSs) --- motivated by the observation that linear
+interpolation is largely insufficient in terms of yielding smooth velocity
+fields from model data --- the authors provide no arguments for preferring
+cubic methods over even higher order alternatives. A third example is the
+article by \textcite{gough2017persistent}, in which the authors report having
+used a high order adaptive step size Runge-Kutta solver together with a cubic
+interpolation routine --- much like what was done for this project --- in order
+to investigate oceanic transport patterns in the northwestern gulf of Mexico;
+yet fail to motivate their choices of integration and interpolation methods.
+Based on the above, investigations with regards to to the interaction between
+integration and interpolation schemes in the context of computing LCSs are
+appealing, due to their innate relation to application.
+

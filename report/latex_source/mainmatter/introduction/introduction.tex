@@ -1,6 +1,3 @@
-\begin{framed}
-Hentet direkte fra høstens prosjekt. Må sikkert tilpasses litt.
-\end{framed}
 When analyzing complex dynamical systems, such as the nonlinear many-body
 problems arising in transport phenomena by virtue of oceanic currents or
 atmospheric winds, the conventional approach to predicting future states
@@ -66,44 +63,72 @@ the formation and stability of human crowd patterns. As these examples
 emphasize, the theory of Lagrangian coherent structures is applicable to a
 wide range of systems.
 
-Although the framework for detecting Lagrangian coherent structures is
-mathematically valid for any number of dimensions, the focus of this project
-work has been two-dimensional flow systems. Many natural processes can
-reasonably be described as two-dimensional, perhaps most notably the transport
-of debris and contaminations, such as garbage patches or the remnants of
-an oil spill, by means of oceanic surface currents. Being able to successfully
-predict where such particles will be taken by the flow could enable us to
-isolate them and accelerate the cleanup process before the particles are able
-to reach the coastline, thus mitigating potential humanitarian and natural
-calamities.
+The focus of this project has been the computation of Lagrangian coherent
+structures in three-dimensional flow systems. Although the framework for
+detecting Lagrangian coherent structures is mathematically valid for any number
+of dimensions, little work has previously been dedicated to three-dimensional
+systems. The two-dimensional case has been treated extensively (consider, for
+instance, the works of \textcite{onu2015lcstool},
+\textcite{farazmand2012computing} and \textcite{haller2000lagrangian}), as many
+real-world transport systems --- such as the transport of garbage patches, or
+remnants of oil spills, by oceanic surface currents --- can reasonably be
+treated as two-dimensional. Two-dimensional analysis is, however, not always
+suffucient; the scattering of e.g.\ volcanic ashes by the Earth's wind systems
+is an example of an irrefutably three-dimensional transport phenomenon.
+As concrete areas of application, identifying the Lagrangian coherent
+structures present in the underlying circulation allows for prediction the
+spread of oil spills along the ocean surface in order to isolate them and
+accelerate the cleanup process before the particles are able to reach the
+coastline, or providing airline companies an opportunity to divert flights
+which would otherwise be exposed to volcanic ash clouds. Put simply, Lagrangian
+flow analysis could potentially mitigate humanitarian and natural calamities
+alike.
 
-%\newpage
-%
-At the heart of detecting Lagrangian coherent structures lies the advection
-of (generalized) fluid elements by means of a velocity field, which describes
-the system under consideration. This is true both for test cases, where the
-velocity profile is known analytically, and for real-life systems, typically
-described by means of some model for the instantaneous velocity field. For this
-project work, the topic of interest is how the detection of Lagrangian coherent
-structures depends on the choice of numerical integration method used in order
-to compute the aforementioned particle transport. In particular, four singlestep
-methods and four embedded, adaptive step length methods, each with different
-properties, were used in order to advect a collection of fluid elements by means
-of an analytically known, two-dimensional, unsteady velocity field.
+The limited extent to which analysis of three-dimensional flow systems with the
+intention of identifying Lagrangian coherent structures has previously
+conducted, is emphasized by the common practice being to compute a series of
+two-dimensional projections followed by joining them together using by use of
+some kind of interpolation method (see the works of
+\textcite{blazevski2014hyperbolic} and \textcite{oettinger2016autonomous}).
+Although yielding three-dimensional surfaces, this approach potentially
+neglects intricacies pertaining to fully three-dimensional transport phenomena.
+A plausible explanation for this approach is the increase in complexity when
+including the depth dimension, further increasing the amount of computational
+resources required for full-scale analysis. Moreover --- as previously
+mentioned --- many significant transport systems can reasonably be treated as
+two-dimensional. Hence, the extent to which it is appropriate to substitute
+analysis of two-dimensional Lagrangian coherent structures with that of their
+three-dimensional counterparts remains an open question.
+
+For this project, we aimed to adapt the method of geodesic level sets for
+computing manifolds of three-dimensional vector fields, as outlined by
+\textcite{krauskopf2005survey} (first introduced by
+\textcite{krauskopf2003computing}), to identify Lagrangian coherent structures
+as barriers to transport in three-dimensional flow systems. This involved
+extensive conceptual derivations, in addition to quite a bit of programming
+ingenuity. Accordingly, the project is best classified as one of
+\emph{computational physics}, which might be viewed as complementary to the
+more traditional branches of \emph{theoretical} and \emph{experimental}
+physics.
 
 This thesis is structured based on the idea that readers possessing
 at least an undergraduate level of knowledge of physics and mathematics, in
 addition to a rudimentary understanding of programming, should be able to
 understand and repeat the numerical investigations which have been conducted.
 To this end, the immediately forthcoming chapter contains a description of the
-various numerical integration schemes that were utilized, in addition to a
-generic yet brief mathematical description of the kind of flow systems
-considered and the Lagrangian coherent structures situated therein, the latter
-based on variational theory. In the ensuing chapter, we present a transport
-model frequently used in literature --- whose Lagrangian coherent structures
-are documented --- in addition to a description of how the variational
-principles of Lagrangian coherent structure detection were implemented
-numerically. Lastly, the results are presented and discussed, before the
-conclusions of the project as a whole are drawn.
-
-
+numerical integration and interpolation schemes which we used to simulate
+general transport phenomena, in addition to a generic yet brief mathematical
+description of the kind of flow systems considered --- and the Lagrangian
+coherent structures situated therein, based on their variational theory. in the
+ensuing chapter, we present the different transport models we considered,
+followed by a rigorous description of how we implemented the variational
+principles of Lagrangian coherent structures in a variation of the method of
+geodesic level sets, in addition to how we made sure to utilize the available
+computational resources in an efficient manner throghout. Then, we present a
+few tests we used in order to verify that the computed three-dimensional
+structures behave as expected for Lagrangian coherent structures, closely
+followed by a presentation of the Lagrangian coherent structures we identified
+in the various transport models. Lastly, we discuss the strengths and
+weaknesses of using our variation of the method of geodesic level sets to
+compute three-dimensional Lagrangian coherent structures, before drawing
+conclusions on the project as a whole.
