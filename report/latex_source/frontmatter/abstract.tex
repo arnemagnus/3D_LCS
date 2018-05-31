@@ -1,6 +1,6 @@
 A generic flow system can be described as a structure whose state depends on
 flowing streams of energy, material, or information. Traditional examples of
-such systems are the transport of properties such as pressure, temperature or
+such systems are the transport of properties such as pressure, temperature and
 matter in fluids, and the transport of charge in electrical currents. However,
 valuable insight into various phenomena, including, but not limited to, algal
 blooms in the ocean and crowd patterns formed by humans, can be obtained by
@@ -9,16 +9,42 @@ regarding them as flow systems.
 Lagrangian coherent structures (henceforth abbreviated to LCSs) can be
 described as `landscapes' within a multidimensional phase space, which exert a
 major influence upon the flow patterns in dynamical systems. Compared to the
-conventional approach of increasing the spatial and temporal resolution of the
-model(s) involved in numerical simulations, LCSs provide a simplified means of
-predicting the future states of complex systems. In this context, a complex
-system is a system which exhibits sensitive dependence on initial conditions.
-From their variational theory, hyperbolic LCSs are identified as locally most
-repelling or attracting material surfaces. Somewhat simplified, such surfaces
-can be considered as generalized trajectories, created by the underlying
-transport phenomenon. When investigating transport systems, hyperbolic LCSs are
-of particular interest, as they form the skeleton of observable flow patterns.
+conventional approach of increasing the resolution of the model(s) involved in
+numerical simulations, LCSs provide a simpler means of predicting future states
+of complex systems. In this context, a complex system is a system which
+exhibits sensitive dependence on initial conditions. From their variational
+theory, hyperbolic LCSs are identified as locally most repelling or attracting
+material surfaces. Somewhat simplified, such surfaces can be considered as
+generalized trajectories, created by the underlying transport phenomenon. When
+investigating transport systems, hyperbolic LCSs are of particular interest, as
+they form the skeleton of observable flow patterns.
 
-This project is centered around the computation of hyperbolic LCSs in
-three-dimensional flows, using an adapted version of the method of geodesic
-level sets for computing manifolds of three-dimensional vector fields.
+Several important, naturally occuring transport phenomena --- such as the
+spread of contaminations by oceanic surface currents --- can reasonably be
+approximated as planar. This is one possible reason why previous
+LCS research has mostly been conducted for two-dimensional systems. To the
+extent that LCS analysis for three-dimensional flows has hitherto been
+conducted, a common approach has been to combine a set of two-dimensional
+projections, resulting in quasi-three-dimensional surfaces. This project is
+centered around combining the underlying variational principles of hyperbolic
+LCSs with an acknowledged technique for computing invariant manifolds of vector
+fields, with a view to developing a robust framework for computing hyperbolic
+LCSs in three-dimensional flow systems.
+
+Our approach is described in detail, from its theoretical fundament, through
+how we incorporated the underlying LCS theory into the computation of manifolds
+and subsequent LCS surfaces, to some clever optimizations regarding
+computational resource management. Using a few reference cases, we demonstrate
+the efficacy of our method in reproducing simple three-dimensional manifolds
+and LCSs. Moreover, the LCSs obtained for a simple, yet chaotic flow
+system are shown to correspond well with those obtained for a time perturbed
+version of the same system. This suggests that the computed LCS surfaces are
+quite robust, and that the innate inaccuracies of model data for simulating
+transport phenomena need not be a hindrance for applying LCS analysis to
+real-world systems.
+
+It remains to be seen whether or not computing truly three-dimensional LCS
+surfaces yields a sufficient increase in descriptive power, compared to the
+aforementioned quasi-three-dimensional approach, to warrant the increase in
+conceptual complexity and computational resource consumption. This balancing
+act might be context sensitive.
