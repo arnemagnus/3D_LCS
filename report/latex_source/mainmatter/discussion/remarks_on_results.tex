@@ -16,7 +16,7 @@ _expansion_of_computed_manifolds}). Possibly caused by small numerical errors
 perturbing a small number of mesh points onto an adjacent manifold ---
 accompanied by the subsequent interpolation curves $\mathcal{C}_{i}$ being
 distorted, yielding compound errors when inserting mesh points from ficticious
-ancestor points (see \cref{sec:managing_mesh_accuracy}) --- this issue mightbe
+ancestor points (see \cref{sec:managing_mesh_accuracy}) --- this issue might be
 mitigated by organizing mesh points as bundles of point strands rather than
 geodesic circles (as outlined in
 \cref{sec:comments_on_the_method_of_geodesic_level_sets}).
@@ -25,7 +25,7 @@ Following manual bundling of overlapping surface elements, the LCSs in either
 variant of the ABC flow (see \cref{fig:steady_lcss,fig:unsteady_lcss}), were
 obtained as structures consisting of between \numprint{3} and \numprint{23}
 unique surface elements. Similarly, LCSs obtained in the Førde fjord (see
-\cref{fig:fjord_lcss}), were naturally largely grouped in a sequence of
+\cref{fig:fjord_lcss}), were largely grouped in a sequence of
 horizontal layers. Accordingly, we elected to color each surface element
 according to their relative repulsion average rather than assigning a single
 color to each layer, in order to investigate whether or not the repulsion
@@ -40,43 +40,42 @@ $\mathcal{U}_{0}$ domains (see \cref{sec:computed_lcss_in_the_abc_flow,%
 sec:computed_lcss_in_the_forde_fjord}). Interestingly, the conformity between
 the $\mathcal{U}_{0}$ domains and LCSs obtained for the steady and unsteady ABC
 flows (see \cref{sec:computed_lcss_in_the_abc_flow}) indicates that,
-although substantial, the time perturbation (illustrated in
-\cref{fig:abc_timedep_coeff}) distinguishing the unsteady flow did not
-significantly alter its underlying stretch and strain properties. This result
-is indicative of the robustness believed to be characteristic to LCSs.
-Moreover, considering the model velocity data to provide a reasonable
-approximation of the \emph{actual} oceanic circulation, this also suggests that
-our computed LCSs provide a good estimate of (some of) the underlying transport
-barriers in the Førde fjord --- a conjecture which warrants further
-investigation.
+although substantial, the time perturbation in the case of the unsteady flow
+(illustrated in \cref{fig:abc_timedep_coeff}) did not significantly alter its
+underlying stretch and strain properties. This result is indicative of the
+robustness believed to be characteristic to LCSs. Moreover, considering the
+model velocity data to provide a reasonable approximation of the \emph{actual}
+oceanic circulation, this also suggests that our computed LCSs provide a good
+estimate of (some of) the underlying transport barriers in the Førde fjord ---
+a conjecture which warrants further investigation.
 
 Seeing as computing LCSs in three dimensions is a considerably more convoluted
 process than for two-dimensional flows (compare our method, outlined in
 \cref{cha:method}, to that of e.g.\ \textcite{loken2017sensitivity}),
 investigating whether or not the conceptually simpler quasi-three-dimensional
-approaches of e.g.\ \textcite{blazevski2014hyperbolic} and
-\textcite{oettinger2016autonomous} --- elaborated upon in
+approach of e.g.\ \textcite{blazevski2014hyperbolic} (and, to a lesser
+extent, \textcite{oettinger2016autonomous}) --- elaborated upon in
 greater detail in
 \cref{sec:reflections_on_the_process_of_identifying_locally_most_normally%
 _repelling_material_surfaces} --- yields similar LCSs could certainly be
 worthwile. This could reduce the need for computational resources, which in
-turn would make detecting LCSs in three-dimensional flow systems more readily
-available. That being said, the quasi-three-dimensional approaches will likely
-never be fully capable of encapsulating the peculiarities of three-dimensional
-surfaces, regardless of which curve fitting algorithm is used in order to
-extract them.
+turn would make the detection of LCSs in three-dimensional flow systems more
+readily available. That being said, the quasi-three-dimensional approaches will
+likely never be fully capable of encapsulating the peculiarities of
+three-dimensional surfaces, regardless of which curve fitting algorithm is used
+in order to extract them.
 
 Overall, strong situational arguments in terms of accuracy requirements or a
 desire for insight in the fully three-dimensional structure of transport
-barriers in a given system in order to justify computing LCSs in three
+barriers in a given system are required in order to justify computing LCSs in three
 dimensions rather than two. Generally, we would advise computing LCSs in three
 dimensions only for systems in which all three dimensions are of similar
 relevance; flow in the Førde fjord (a subset of which was considered here)
-constitutes an example of such systems, as its depth and width are typically
-similar in magnitude. Conversely, transport along oceanic surface currents ---
-within which contaminations such as garbage patches or oil spill remnants are
-frequently transferred --- can reasonably be approximated as being
-two-dimensional.
+constitutes an example of such a system, as its depth and width are typically
+similar in magnitude, and significant vertical transport can be observed.
+Conversely, transport along oceanic surface currents --- within which
+contaminations such as garbage patches or oil spill remnants are frequently
+transferred --- can reasonably be approximated as being two-dimensional.
 
 Pilot studies pertaining to the use of LCSs as predictors for transport by
 oceanic currents have recently been conducted. For instance,

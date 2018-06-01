@@ -4,7 +4,7 @@
 
 %
 \usepackage[%
-showframe,% Show margins of document. Remember to remove prior to hand-in.
+%showframe,% Show margins of document. Remember to remove prior to hand-in.
 ]{geometry}
 
 % Margins
@@ -18,7 +18,7 @@ showframe,% Show margins of document. Remember to remove prior to hand-in.
 \usepackage[]{setspace}
 
 % Manage culturally-determined typographical, and other, rules:
-\usepackage[main=english,norsk]{babel}
+\usepackage[main=english,norsk,USenglish]{babel}
 
 % Choose Libertine font:
 \usepackage[]{libertine}
@@ -236,8 +236,8 @@ linkcolor={red!50!black},%
 citecolor={blue!50!black},%
 urlcolor={blue!80!black},%
 pdfauthor={Arne Magnus Tveita Løken},%
-pdftitle={Computing Lagrangian Coherent Structures in Three-Dimensional Flow
-Systems from their Variational Theory},%
+pdftitle={Computing Hyperbolic Lagrangian Coherent Structures in
+Three-Dimensional Flow Systems},%
 pdfsubject={Computational nonlinear physics},%
 pdfkeywords={Computational physics, Nonlinear dynamics, Lagrangian coherent structures, Numerical integration}%
 }
@@ -281,3 +281,7 @@ pdfkeywords={Computational physics, Nonlinear dynamics, Lagrangian coherent stru
 
 \crefname{figure}{figure}{figures}
 \crefname{equation}{equation}{equations}
+
+% Set document date to deadline day, rather than \today
+\usepackage[nodayofweek,level]{datetime}
+\newcommand{\mydate}{\formatdate{11}{6}{2018}}

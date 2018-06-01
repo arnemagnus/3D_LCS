@@ -5,17 +5,18 @@ As mentioned in \cref{cha:method}, our take on the method of geodesic level
 sets (see \cref{sec:revised_approach_to_computing_new_mesh_points}) hinges on
 characteristic properties of hyperbolic LCSs (cf.\ \cref{def:hyperbolic_lcs}).
 For \emph{repelling} LCSs (see \cref{def:repelling_lcs}), which we concentrated
-on for this project, existence criterion \cref{eq:lcs_condition_c} states that
-these are everywhere \emph{orthogonal} to the local direction of strongest
-repulsion. The extra degree of freedom compared to manifolds defined as being
-everywhere tangent to some direction field (such as the strange attractor in
-the Lorenz system, as was considered by \textcite{krauskopf2005survey})
-facilitated a more effective (in terms of computational runtime) and
-conceptually simpler method of generating them, than the more direct adaption
-of \posscite{krauskopf2005survey} method (which is outlined in
+on for this project, the existence criterion given in \cref{eq:lcs_condition_c}
+states that these are everywhere \emph{orthogonal} to the local direction of
+strongest repulsion. The extra degree of freedom compared to manifolds defined
+as being everywhere tangent to some direction field (such as the strange
+attractor in the Lorenz system, as was considered by
+\textcite{krauskopf2005survey}) facilitated a more effective (in terms of
+computational runtime) and conceptually simpler method of generating such
+manifolds, than the more direct adaption of \posscite{krauskopf2005survey}
+method (which is outlined in
 \cref{sec:legacy_approach_to_computing_new_mesh_points}). Note, however, that
-\citeauthor{krauskopf2005survey}'s method retains a greater degree of
-general applicability.
+\citeauthor{krauskopf2005survey}'s method retains a greater degree of general
+applicability.
 
 Although useful for managing the mesh accuracy (see
 \cref{sec:managing_mesh_accuracy}), and central to our
@@ -43,18 +44,41 @@ _computing_repelling_lcss_in_3d_flow_by_means_of_geodesic_level_sets}) quite
 difficult. If a single point strand (that is, the set of mesh points which can
 be traced back to a single, common ancestor) is terminated --- either due to
 reaching the domain edges, or failure to compute a new mesh point (see
-\cref{sub:handling_failures_to_compute_satisfactory_mesh_points_revised}), so
-too is the addition of further level sets. Thus, unless the manifold as a whole
-expands as a perfect topological surface area, as seen from the focal point
-$\vct{x}_{0}$, encapsulating it in its entirety by means of geodesic level sets
-becomes impossible --- even when not accounting for the possibility of
-numerical error.
+\cref{sub:handling_failures_to_compute_satisfactory_mesh_points_revised}) ---
+so too is the addition of further level sets. Thus, unless the manifold as a
+whole expands as a perfect topological surface area, as seen from the focal
+point $\vct{x}_{0}$, encapsulating it in its entirety by means of geodesic
+level sets becomes impossible --- even when not accounting for the possibility
+of numerical error.
 
-Moreover, our variation of the method of geodesic level sets contains many
+As mentioned in \cref{sec:revised_approach_to_computing_new_mesh_points}, we
+let each computed mesh point \emph{inherit} its unit tangent $\vct{t}$ from
+its direct ancestor, rather than computing new unit tangents using the
+interpolation curve $\mathcal{C}_{i}$ (a generalization of
+\posscite{krauskopf2005survey} original suggestion of simply using the mesh
+point's nearest neighbors for this purpose). This was a conscious choice. In
+our experience, the computed level sets quickly started to form fully
+three-dimensional topological circles, leading to notable local curvature along
+the interpolation curves. This rendered selecting how far either side of a
+given mesh point to move, in order to approximate the local tangent vector by a
+finite coordinate difference, hard to do in a consistent manner. Failure to do
+so often lead neighboring point strands to form intersections, yielding
+disorderly meshes which in turn frequently lead the points constituting a level
+set to \emph{not} form a topological circle. These issues are not present in
+our aforementioned inheritance-based approach. However, if a computed manifold
+were to twist itself in such a way that a unit tangent $\vct{t}$ lied
+\emph{within} it, this could result in failure to compute one or more new mesh
+points, which would then lead to terminating process of adding new level sets
+(alternatively, terminating the process of expanding one or more point strands,
+cf.\ the preceding paragraphs) prematurely. Attempts to address this issue were
+not considered here.
+
+Our variation of the method of geodesic level sets contains many
 degrees of freedom (see e.g.\
 \cref{tab:initialconditionparams,tab:abc_manifold_params}). Some of these
 parameters, mainly those governing the minimum and maximum allowed separations
-between neighboring mesh points, could reasonably be chosen based on
+between neighboring mesh points (see
+\cref{sub:maintaining_mesh_point_density}), could reasonably be chosen based on
 considerations pertaining to the spatial extent of the computational domain;
 alternatively, to what extent the minute details of the LCSs are to be
 resolved. How to determine several other undeniably key parameter values ---
@@ -80,10 +104,10 @@ size is to manage the interpolation error inherent to our linear triangulation
 scheme (see \cref{sec:continuously_reconstructing_three_dimensional_manifold%
 _surfaces_from_point_meshes}) \parencite{krauskopf2003computing}. Thus, it
 seems reasonable to forego the dynamic interset step length in favor of a
-fixed one, where the minute details of LCS surfaces are unimportant. As
-tentatively suggested in the above, doing so reduces the overall complexity of
-our method for generating mesh points, in addition to reducing the number of
-free parameters.
+fixed one, in cases where the minute details of LCS surfaces are unimportant.
+As tentatively suggested in the above, doing so reduces the overall complexity
+of our method for generating mesh points, in addition to reducing the number
+of free parameters.
 
 Another way of organizing the mesh points, which could circumvent some of the
 aforementioned limitations of the present approach, would be as a group of
@@ -116,12 +140,12 @@ point along the strand which is required to maintain the point density.
 Depending on the extent of the initial level set --- that is, the circumference
 of its interpolation curve $\mathcal{C}_{1}$ --- and the required mesh point
 density, however, this approach could be prone to errors arising from numerical
-round-off errors in computing the start points of new point strands. Moreover,
-in order to maintain an overall mesh structure suitable for triangulation
-purposes, the steps along each point strand should be equal; that is, mesh
-points $i$ and $i+1$ along all point strands should be separated by the same
-distance $\Delta_{i}$, whereas all interpoint step sizes $\{\Delta_{i}\}$ need
-not be the same. This way, a quasi-circular structure is maintained as the
+round-off errors in computing the start points of new point strands. In order
+to maintain an overall mesh structure suitable for triangulation purposes, the
+steps along each point strand should be equal; that is, mesh points $i$ and
+$i+1$ along all point strands should be separated by the same distance
+$\Delta_{i}$, whereas all interpoint step sizes $\{\Delta_{i}\}$ need
+not be equal. This way, a quasi-circular structure is maintained as the
 point strands expand --- that is, subject to one or more of them reaching the
 domain boundaries or being terminated due to ending up in (approximately)
 closed orbits (see \cref{sub:computing_pseudoradial_trajectories_directly}).

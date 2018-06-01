@@ -23,7 +23,7 @@ $\mathcal{W}_{\min}$. Our preference --- in the following referred to as the
 \emph{clustering} approach --- involves selecting (relatively) small values for
 both $\gamma_{\square}$ and $\mathcal{W}_{\min}$, and then treating clusters of
 overlapping LCS surface elements as single entities. This necessitates a way of
-sorting the surface elements in bundles of interconnected surfaces (manual or
+sorting the surface elements into bundles of interconnected surfaces (manual or
 otherwise), yet yields LCSs which are not particularly dependent on the
 parameter values. The other way --- in the following referred to as the
 \emph{carve-out} approach --- involves the use of large values for both
@@ -32,8 +32,8 @@ surface element as a standalone LCS. While this approach would generally yield
 smoother and more aesthetically pleasing LCS surfaces, it may easily involve
 significant bias towards the largest material surfaces --- without there being
 an obvious way of determining whether or not these form the most significant
-barriers to transport a priori --- and depends sensitively on the parameter
-choices.
+barriers to transport \emph{a priori} --- and depends sensitively on the
+parameter choices.
 
 Whether the clustering approach is the better choice in the general case, or if
 an intermediate approach might be more sensible, remains to be seen. Moreover,
@@ -41,7 +41,7 @@ for some applications, the assumption that only sufficiently large repelling
 LCSs influence the overall flow patterns significantly (originally suggested
 by \textcite{farazmand2012computing}) might not hold; in particular where
 small, yet very strongly repelling material surfaces are concerned. In such
-cases, using $\mathcal{W}_{\min}$ to filter away the supposed least coherent
-(i.e.,\ most affected by numerical noise) LCS surfaces at all is problematic.
+cases, the use $\mathcal{W}_{\min}$ to filter away the supposed least coherent
+(i.e.,\ most affected by numerical noise) LCS surfaces is problematic.
 Investigations pertaining to the general case, however, remain beyond the scope
 of this project.

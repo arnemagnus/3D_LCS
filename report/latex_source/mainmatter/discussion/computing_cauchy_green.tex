@@ -15,8 +15,10 @@ more conventional approach of approximating the directional derivatives of the
 flow map (i.e.,\ the components of the flow map Jacobian) by applying a finite
 difference method and then explicitly computing the Cauchy-Green strain
 tensor field (which \textcite{farazmand2012computing} did in order to find LCSs
-in two-dimensional flow). In addition to the increased mathematical complexity
-of directly transporting the flow map Jacobian field, our approach relies on
+in two-dimensional flow). As a consequence of the increased mathematical
+complexity, directly transporting the flow map Jacobian field is considerably
+more expensive in terms of computational resources, compared to methods based
+upon the application of finite differences. Moreover, our approach relies on
 bounded first spatial derivatives of the underlying velocity field, as is
 evident from inspecting \cref{eq:timederivative_flowmap_jacobian}. This should,
 however, not be an issue when considering smooth analytical test cases, or when
@@ -37,9 +39,9 @@ reduced number of initial conditions satisfying LCS existence conditions~
 \eqref{eq:lcs_condition_a},~\eqref{eq:lcs_condition_b}
 and~\eqref{eq:lcs_condition_d} (see
 \cref{sub:identifying_suitable_initial_conditions_for_developing_lcss}).
-Difficulties arose with such a sparse grid of tracers that no initial
-conditions for the generation of manifolds layed sufficiently close to the
-strongly repulsive unit sphere (see \cref{fig:spherical_lm3}). To our
+Difficulties arose using excessively sparse grids of tracers such that no
+initial conditions for the generation of manifolds were sufficiently close to
+the strongly repulsive unit sphere (see \cref{fig:spherical_lm3}). To our
 knowledge, there is no way to determine \emph{a priori} what density of tracers
 will suffice for any flow system. Thus, even though educated guesses based on
 the scale at which one is interested in the microscopic behaviour in the system
@@ -48,7 +50,7 @@ within the constraints set by the available computational resources.
 
 As mentioned in \cref{sec:flow_systems_defined_by_gridded_velocity_data}, we
 interpolated the model velocity field using quadrivariate, cubic B-splines ---
-that is, cubic interpolation in time and all spatial direction. This involved
+that is, cubic interpolation in time and all spatial directions. This involved
 us having to keep the model data pertaining to the region of interest (that is,
 the model data for a domain expanding beyond said region in all directions, in
 order to resolve the behaviour near the boundaries, cf.\
@@ -72,8 +74,8 @@ wound up choosing (more on that to follow in
 solution time steps would then have to coincide with the time levels of the
 dataset. Using a lower order ODE solution method, such as the explicit
 trapezoidal rule (which does not require intermediary samples when moving from
-one time level to the next), yields inferior performance; high order embedded
-Runge-Kutta solvers are much less prone to numerical error
+one time level to the next), does, however, yield inferior performance, as
+high-order embedded Runge-Kutta solvers are much less prone to numerical error
 \parencite{loken2017sensitivity}.
 
 

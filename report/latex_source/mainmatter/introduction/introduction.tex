@@ -4,35 +4,37 @@ atmospheric winds, the conventional approach to predicting future states
 by means of simulating the trajectories of phase points is frequently
 insufficient. This is due to the resulting predictions being very sensitive to
 small changes in time and initial positions. One way of addressing the delicate
-dependence on initial conditions is to run different models for the same
-underlying physical systems, of increasing spatial and temporal resolution. This
-sort of approach is made possible because the fundamental dynamics are known ---
-yet, for complex transport systems, the computational cost quickly grows beyond
-the available resources, in terms of computation time or memory. For many
-practical purposes, however, microscopic details matter little in comparison to
-the overarching trends in the system, which means that a less ambitious
-approach, merely aiming to understand the macroscopics of the transport
-phenomenon, is often justifiable.
+dependence on initial conditions is to run ensembles of different models for
+the same underlying physical systems, with increasing spatial and temporal
+resolution. Another is to run ensembles of simulations for the same physical
+model, using perturbed initial conditions. These sorts of approaches are made
+possible because the fundamental dynamics are known --- yet, for complex
+transport systems, the computational cost quickly grows beyond the available
+resources, in terms of computation time or memory. For many practical purposes,
+however, microscopic details matter little in comparison to the overarching
+trends in the system, which means that a less ambitious approach, merely aiming
+to understand the macroscopics of the transport phenomenon, is often
+justifiable.
 
 At the turn of the millennium, the concept of Lagrangian coherent structures
-saw the light of day, emerging from the intersection between nonlinear dynamics,
-that is, the underlying mathematical principles of chaos theory, and fluid
-dynamics \parencite{haller2000lagrangian}. These provide a new framework for
-understanding transport phenomena in conceptual fluid flow systems. Lagrangian
-coherent structures can be described as time-evolving `landscapes' in a
-multidimensional space, which dictate macroscopical flow patterns in dynamical
-systems. In particular, such structures define the interfaces of dynamically
-distinct, invariant regions. An invariant region in fluid dynamics is
-characterized as a domain where all particle trajectories that originate within
-the region, remain in it, although the region itself can move and deform with
-time. So, simply put; Lagrangian coherent structures enable us to make
+saw the light of day, emerging from the intersection between nonlinear
+dynamics, that is, the underlying mathematical principles of chaos theory, and
+fluid dynamics \parencite{haller2000lagrangian}. These provide a new framework
+for understanding transport phenomena in conceptual fluid flow systems.
+Lagrangian coherent structures can be described as time-evolving `landscapes'
+in a multidimensional space, which dictate macroscopic flow patterns in
+dynamical systems. In particular, such structures define the interfaces of
+dynamically distinct, invariant regions. An invariant region in fluid dynamics
+is characterized as a domain where all particle trajectories that originate
+within the region, remain in it, although the region itself can move and deform
+with time. So, simply put; Lagrangian coherent structures enable us to make
 predictions regarding the future states of flow systems.
 
 There are two possible perspectives regarding the description of fluid flow.
 The Eulerian approach is to consider the properties of a flow field at a set of
 fixed points in time and space. An example is the concept of velocity fields,
-which produce the local and instantaneous velocities at all points within their
-domains. The Lagrangian point of view, on the other hand, concerns the
+which describe the local and instantaneous velocities at all points within
+their domains. The Lagrangian point of view, on the other hand, concerns the
 developing velocity of each fluid element along their paths, as they are
 transported by the flow. Unlike the Eulerian perspective, the Lagrangian
 mindset is objective, as in frame-invariant. That is, properties of Lagrangian
@@ -68,17 +70,17 @@ structures in three-dimensional flow systems. Although the framework for
 detecting Lagrangian coherent structures is mathematically valid for any number
 of dimensions, little work has previously been dedicated to three-dimensional
 systems. The two-dimensional case has been treated extensively (consider, for
-instance, the works of \textcite{onu2015lcstool},
-\textcite{farazmand2012computing} and \textcite{haller2000lagrangian}), as many
+instance, the works of \textcite{haller2000lagrangian},
+\textcite{farazmand2012computing} and \textcite{onu2015lcstool}), as many
 real-world transport systems --- such as the transport of garbage patches, or
 remnants of oil spills, by oceanic surface currents --- can reasonably be
 treated as two-dimensional. Two-dimensional analysis is, however, not always
 suffucient; the scattering of e.g.\ volcanic ashes by the Earth's wind systems
 is an example of an irrefutably three-dimensional transport phenomenon.
 As concrete areas of application, identifying the Lagrangian coherent
-structures present in the underlying circulation allows for prediction the
-spread of oil spills along the ocean surface in order to isolate them and
-accelerate the cleanup process before the particles are able to reach the
+structures present in the underlying circulation allows for predicting the
+spread of oil spills on the ocean surface in order to isolate them and
+accelerate the cleanup process before the oil is able to reach the
 coastline, or providing airline companies an opportunity to divert flights
 which would otherwise be exposed to volcanic ash clouds. Put simply, Lagrangian
 flow analysis could potentially mitigate humanitarian and natural calamities
@@ -92,13 +94,13 @@ some kind of interpolation method (see the works of
 \textcite{blazevski2014hyperbolic} and \textcite{oettinger2016autonomous}).
 Although yielding three-dimensional surfaces, this approach potentially
 neglects intricacies pertaining to fully three-dimensional transport phenomena.
-A plausible explanation for this approach is the increase in complexity when
-including the depth dimension, further increasing the amount of computational
-resources required for full-scale analysis. Moreover --- as previously
-mentioned --- many significant transport systems can reasonably be treated as
-two-dimensional. Hence, the extent to which it is appropriate to substitute
-analysis of two-dimensional Lagrangian coherent structures with that of their
-three-dimensional counterparts remains an open question.
+A plausible justification for using this approach is the increase in complexity
+when including the depth dimension, further increasing the amount of
+computational resources required for full-scale analysis. Moreover --- as
+previously mentioned --- many significant transport systems can reasonably be
+treated as two-dimensional. Hence, the extent to which it is appropriate to
+substitute analysis of two-dimensional Lagrangian coherent structures with that
+of their three-dimensional counterparts remains an open question.
 
 For this project, we aimed to adapt the method of geodesic level sets for
 computing manifolds of three-dimensional vector fields, as outlined by
@@ -119,12 +121,12 @@ To this end, the immediately forthcoming chapter contains a description of the
 numerical integration and interpolation schemes which we used to simulate
 general transport phenomena, in addition to a generic yet brief mathematical
 description of the kind of flow systems considered --- and the Lagrangian
-coherent structures situated therein, based on their variational theory. in the
+coherent structures situated therein, based on their variational theory. In the
 ensuing chapter, we present the different transport models we considered,
 followed by a rigorous description of how we implemented the variational
 principles of Lagrangian coherent structures in a variation of the method of
 geodesic level sets, in addition to how we made sure to utilize the available
-computational resources in an efficient manner throghout. Then, we present a
+computational resources in an efficient manner throughout. Then, we present a
 few tests we used in order to verify that the computed three-dimensional
 structures behave as expected for Lagrangian coherent structures, closely
 followed by a presentation of the Lagrangian coherent structures we identified
