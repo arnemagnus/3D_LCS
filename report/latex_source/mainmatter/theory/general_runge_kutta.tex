@@ -72,7 +72,7 @@ use of~\cref{def:runge_kutta_order}, the global error is limited from above by
         \hspace{0.5ex}n\hspace{0.5ex}h^{p+1}\\
         &\leq C\hspace{0.5ex}\max\limits_{l}\big\{\abs{K_{l}}\big\}%
         \hspace{0.5ex}\frac{t_{n}-t_{0}}{h}\hspace{0.5ex}h^{p+1}
-        \leq \widetilde{K}\hspace{0.5ex}h^{p},
+        \leq \widetilde{K}{\mkern2mu}h^{p},
     \end{aligned}
 \end{equation}
 where $\widetilde{K}$ is a numerical constant.
@@ -160,7 +160,7 @@ is invalid, as the time step is, in principle, different for each integration
 step.
 
 Butcher tableau representations of the classical \nth{4}-order Runge-Kutta
-method and the embedded Dormand-Prince 8(7) method are available in~
+method and the embedded Dormand-Prince 8(7) method are available in
 \cref{tab:butcherrk4,tab:butcherdopri87}; where the latter has been typeset in
 landscape mode for the reader's convenience. Details on how the dynamic time
 step of the Dormand-Prince 8(7) method was implemented will be presented in

@@ -80,14 +80,14 @@ have ficticious ancestors. This ensures (approximate) coverage of the entire
 surface area inbetween each level set, and thus the computed manifold as a
 whole.
 
-When an extra mesh point $\mathcal{M}_{i+1,j+\frac{1}{2}}$ is
+When an extra mesh point $\mathcal{M}_{i+1,j+1/2}$ is
 inserted inbetween $\mathcal{M}_{i+1,j}$ and $\mathcal{M}_{i+1,j+1}$, the
 tetragonal surface element whose vertices are located at
 $\{\vct{x}_{i,j},\vct{x}_{i,j+1},%
-\vct{x}_{i+1,j},\vct{x}_{i+1,j+\frac{1}{2}}\}$ is approximated
+\vct{x}_{i+1,j},\vct{x}_{i+1,j+1/2}\}$ is approximated
 by means of two triangles. Again expressed in terms of their vertices,
-these are $\{\vct{x}_{i,j},\vct{x}_{i+1,j},\vct{x}_{i+1,j+\frac{1}{2}}\}$ and
-$\{\vct{x}_{i,j},\vct{x}_{i,j+1},\vct{x}_{i+1,j+\frac{1}{2}}\}$. In the event
+these are $\{\vct{x}_{i,j},\vct{x}_{i+1,j},\vct{x}_{i+1,j+1/2}\}$ and
+$\{\vct{x}_{i,j},\vct{x}_{i,j+1},\vct{x}_{i+1,j+1/2}\}$. In the event
 that the mesh point $\mathcal{M}_{i+1,j}$ was removed, either as part of an
 undesired bulge or in order to preserve mesh density, the tetragonal surface
 with vertices at

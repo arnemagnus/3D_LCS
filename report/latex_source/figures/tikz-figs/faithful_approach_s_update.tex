@@ -53,13 +53,11 @@ factor=0% Controls how much punctuation protrudes past the end of the line
     calc%
 }
 
-
-
+\tikzset{
+    block/.style = {draw, rectangle, stroke = black!80,fill = gray!15, minimum height = 3em, minimum width = 6em},
+    arr/.style = {single arrow, draw, ->}
+}
 \begin{document}
-
-\tikzstyle{block} = [draw, rectangle, stroke = black!80,fill = gray!15, minimum height = 3em, minimum width = 6em]
-\tikzstyle{arr} = [single arrow, draw, ->]
-
 \begin{tikzpicture}
     \node[align=center] (top) [block] {Choose a traversion direction (clockwise or counterclockwise) \\of $\mathcal{C}_{i}$, along which to find trajectory start points};
     \node[align=center, below = 15pt of top] (ficticious) [block] {

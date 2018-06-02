@@ -1,23 +1,23 @@
 \begin{table}[htpb]
     \centering
-    \caption[Butcher tableau representation of a generic, embedded, explicit
-    Runge-Kutta method]
-    {Butcher tableau representation a generic, embedded, explicit Runge-Kutta
-    method.}
+    \caption[Butcher tableau representation of generic, embedded, explicit
+    Runge-Kutta methods]
+    {Butcher tableau representation of generic, embedded, explicit Runge-Kutta
+    methods.}
     \label{tab:genericembeddedbutcher}
-    \[\renewcommand{\arraystretch}{1.25}
+    \[\renewcommand{\arraystretch}{1}
     \begin{array}{c|ccccc}
     \toprule
     0 \\
     c_{2} & a_{2,1} \\
     c_{3} & a_{3,1} & a_{3,2} \\
-    \vdots & \vdots & \vdots & \ddots\\
-    c_{s} & a_{s,1} & a_{s,2} & \ldots & a_{s,s-1}\\
+    \vdots & \vdots & \vdots & \ddots \\
+    c_{s} & a_{s,1} & a_{s,2} & \cdots & a_{s,s-1}\\
     \hline
-    & b_{1} & b_{2} & \ldots & b_{s-1} & b_{s} \\
+    & b_{1} & b_{2} & \cdots & b_{s-1} & b_{s} \\
     \hline
-    & \widehat{b}_{1} & \widehat{b}_{2} & \ldots & \widehat{b}_{s-1} %
-    & \widehat{b}_{s}\\
+    \rule{0pt}{16pt} & \widehat{b}_{1} & \widehat{b}_{2} & \cdots & \widehat{b}_{s-1} %
+    & \widehat{b}_{s} \\
     \bottomrule
     \end{array}
 \]

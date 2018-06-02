@@ -18,7 +18,7 @@
 \usepackage[]{setspace}
 
 % Manage culturally-determined typographical, and other, rules:
-\usepackage[main=english,norsk,USenglish]{babel}
+\usepackage[main=english,norsk]{babel}
 
 % Choose Libertine font:
 \usepackage[]{libertine}
@@ -156,12 +156,27 @@ factor=0% Controls how much punctuation protrudes past the end of the line
 % Rotation tools for floats. Default: Clockwise rotation
 \usepackage[figuresright]{rotating}
 
+% Place float barriers between sections
+\usepackage[section]{placeins}
+% Ensure that float barriers are placed between subsections as well
+\makeatletter
+\AtBeginDocument{%
+  \expandafter\renewcommand\expandafter\subsection\expandafter{%
+    \expandafter\@fb@secFB\subsection
+  }%
+}
+\makeatother
+
+% Enable \afterpage{\clearpage} command in order to combat bad page breaks
+\usepackage[]{afterpage}
+
 % Format float captions any which way you want.
-% My preference:    No more than 90 % of the overall textwidth
+% My preference:    No more than 95 % of the overall textwidth
 %                   Slightly smaller fontsize than the text otherwise
 %                   Label typeset in bold
 %                   Separate label from caption with colon
 \usepackage[%format={\fontsize{11}{13}\selectfont},%
+font={small},%
 width=0.9\textwidth,%
 labelfont=bf,%
 labelsep=colon%
@@ -183,6 +198,8 @@ labelsep=colon%
 % Necessary for most kinds of mathematical typesetting:
 \usepackage[]{amsmath,amssymb}
 
+% Nice typesetting of fractions (math and text mode)
+\usepackage[]{xfrac}
 
 % Package containing useful macros for typsetting vector calculus, linear
 % algebra etc.
@@ -282,6 +299,6 @@ pdfkeywords={Computational physics, Nonlinear dynamics, Lagrangian coherent stru
 \crefname{figure}{figure}{figures}
 \crefname{equation}{equation}{equations}
 
-% Set document date to deadline day, rather than \today
-\usepackage[nodayofweek,level]{datetime}
-\newcommand{\mydate}{\formatdate{11}{6}{2018}}
+\usepackage[en-US]{datetime2}
+
+

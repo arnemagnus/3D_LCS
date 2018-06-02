@@ -43,13 +43,11 @@
 
 
 \tdplotsetmaincoords{60}{90}
-
+\tikzset{
+    block/.style = {draw, rectangle, stroke = black!80,fill = gray!15, minimum height = 3em, minimum width = 6em}
+    arr/.style = {single arrow, draw, ->}
+}
 \begin{document}
-
-\tikzstyle{block} = [draw, rectangle, stroke = black!80,fill = gray!15, minimum height = 3em, minimum width = 6em]
-\tikzstyle{cloud} = [draw, stroke=black!80, fill=gray!15,ellipse, minimum height = 3em, minimum width = 6em]
-\tikzstyle{arr} = [single arrow, draw, ->]
-
 \begin{tikzpicture}[tdplot_main_coords]
     % Define vertices of A:
     \coordinate (a1) at (1,0,0);

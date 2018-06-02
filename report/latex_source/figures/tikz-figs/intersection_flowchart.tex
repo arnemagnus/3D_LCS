@@ -50,13 +50,12 @@ factor=0% Controls how much punctuation protrudes past the end of the line
     calc%
 }
 
-
-
+\tikzset{
+    block/.style = {draw, rectangle, stroke = black!80,fill = gray!15, minimum
+    height = 3em, minimum width = 6em},
+    arr/.style = {single arrow, draw, ->}
+}
 \begin{document}
-
-\tikzstyle{block} = [draw, rectangle, stroke = black!80,fill = gray!15, minimum height = 3em, minimum width = 6em]
-\tikzstyle{arr} = [single arrow, draw, ->]
-
 \begin{tikzpicture}
     \node[align=center] (initial) [block] {Does the M{\"o}ller-Trumbore algorithm suggest \\that at least one ray starting at a vertex of A,\\passing through another vertex of A, intersects B?};
     \node[align=center,below right= and -75pt of initial] (deeper) [block] {Does at least one pair of vertices of A,\\which gave rise to such a ray, lie on\\opposite sides of the surface of B?};

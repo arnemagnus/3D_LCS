@@ -8,6 +8,7 @@
 \usepackage[libertine]{newtxmath}
 \usepackage[]{bm}
 \usepackage[]{physics}
+\usepackage[]{xfrac}
 % Macros for greek letters in roman style, in math mode
 \DeclareRobustCommand{\mathup}[1]{%
 \begingroup\ensuremath\changegreek\mathrm{#1}\endgroup}
@@ -45,10 +46,8 @@
 }
 
 
-\begin{document}
-
 \tdplotsetmaincoords{60}{30}
-
+\begin{document}
 \begin{tikzpicture}[tdplot_main_coords]
     \pgfmathsetmacro{\innerradius}{5}
     \pgfmathsetmacro{\outerradius}{7.5}
@@ -85,13 +84,13 @@
     % Place nodes of inner level set
     \node[below left = 0pt and -5pt of i1] {\small $\mathcal{M}_{i,j-1}$};
     \node[below left = 4pt and -9pt of i2] {\small $\mathcal{M}_{i,j}$};
-    \node[below left = -1pt and -7.5pt of ghost,color=gray!80] {\small $\mathcal{M}_{i,j+\frac{1}{2}}$};
+    \node[below left = -1pt and -7.5pt of ghost,color=gray!80] {\small $\mathcal{M}_{i,j+\sfrac{1}{2}}$};
     \node[below left = -2.5pt and -5pt of i3] {\small $\mathcal{M}_{i,j+1}$};
 
     % Place nodes of outer level set
     \node[below left = 0pt and -5pt of o1] {\small $\mathcal{M}_{i+1,j-1}$};
     \node[below left = 0pt and -5pt of o2] {\small $\mathcal{M}_{i+1,j}$};
-    \node[below right = 2.5pt and -20pt of new] {\small $\mathcal{M}_{i+1,j+\frac{1}{2}}$};
+    \node[below right = 2.5pt and -20pt of new] {\small $\mathcal{M}_{i+1,j+\sfrac{1}{2}}$};
     \node[below left = 0pt and -5pt of o3] {\small $\mathcal{M}_{i+1,j+1}$};
 
     % Define helper coordinates to place label for the interpolation curve

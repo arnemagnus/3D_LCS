@@ -1,16 +1,23 @@
 %&preamble
 
-\renewcommand{\today}{\month June \number 11, \number 2018}
+\renewcommand{\topfraction}{0.8}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\floatpagefraction}{0.7}
+\setlength{\textfloatsep}{1.2\baselineskip plus 0.2\baselineskip minus
+0.5\baselineskip}
+\setlength{\intextsep}{1.2\baselineskip plus 0.2\baselineskip minus
+0.5\baselineskip}
+\setlength{\abovedisplayskip}{2pt plus 1pt minus 2pt}
+\setlength{\belowdisplayskip}{5pt plus 2pt minus 3pt}
+\setlength{\abovedisplayshortskip}{2pt plus 1pt minus 2pt}
+\setlength{\belowdisplayshortskip}{5pt plus 2pt minus 3pt}
+\raggedbottom
 \begin{document}
 \urlstyle{same}
 % Title page
 \setcounter{page}{0}
 \input{titlepage/titlepage}
 
-%\newdimen\height
-%\setbox0=\hbox{\fontsize{16pt}{16pt}\selectfont\bfseries{Test}}
-%\height = \ht0 \advance\height by \dp0
-%The height is: \the\height
 
 
 % Front matter
