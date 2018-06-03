@@ -1,18 +1,21 @@
 \begin{figure}[htpb]
     \centering
-    \begin{subfigure}[b]{0.475\textwidth}
+    \hspace*{\fill}
+    \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \importpgf{figures/mpl-figs}{verification-forced-small.pgf}
+        \resizebox{0.9\linewidth}{!}{\importpgf{figures/mpl-figs}{verification-forced-small.pgf}}
         \caption[]{{\small Trajectories computed in the direction \\\phantom{(a)} field given by \cref{eq:revised_direction_field}}}
         \label{fig:verification_forced_outwards}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.475\textwidth}
+    \end{subfigure}\hfill%
+    \begin{subfigure}[b]{0.45\textwidth}
         \centering
-        \importpgf{figures/mpl-figs}{verification-notforced-small.pgf}
-        \caption[]{{\small Trajectories of the direction field given \\\phantom{(b)} by \cref{eq:dynamialsystem_initialposition},
-        for different weights $(a,b)$}}
+        \resizebox{0.9\linewidth}{!}{\importpgf{figures/mpl-figs}{verification-notforced-small.pgf}}
+        \caption[]{{\small Trajectories of the direction field given by
+                \\\phantom{(b)} \cref{eq:dynamialsystem_initialposition},
+        for various weights $(a,b)$}}
         \label{fig:verification_pure_linear_combination}
     \end{subfigure}
+    \hspace*{\fill}
     \caption[Trajectories orthogonal to the $\vct{\xi}_{3}$-direction field,
     superimposed onto a computed manifold surface in the steady ABC flow]
     {Trajectories orthogonal to the $\vct{\xi}_{3}$-direction field,
@@ -31,9 +34,9 @@
         trajectories shown in
         (\subref*{fig:verification_pure_linear_combination}) never leave
         the manifold, but face difficulties reaching certain regions of it,
-        as can be seen from locally reduced density of trajectories. Such
-        regions are likely only accessible for trajectories starting
-        out at $\vct{x}_{0}$ with very particular weights $(a,b)$.
+        as can be seen from locally reduced density of trajectories. For
+        trajectories passing through $\vct{x}_{0}$, such
+        regions are likely only accessible for very particular weights $(a,b)$.
     }
     \label{fig:verification_of_manifold_invariance}
 \end{figure}

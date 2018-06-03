@@ -172,14 +172,14 @@
 
 % Table of Contents:
 
-\renewcommand\printtoctitle[1]{\vspace{-15.6ex}\chapter*{#1}}
+\renewcommand\printtoctitle[1]{\vspace{-15.0ex}\chapter*{#1}}
 
 \addto\captionsenglish{%
     \renewcommand{\contentsname}{Table of Contents}%
 }
 
 \newlength{\aftertocskip}
-\setlength{\aftertocskip}{0ex}
+\setlength{\aftertocskip}{-16pt}
 \renewcommand{\aftertoctitle}{\par\nobreak\vskip\aftertocskip}
 
 % Chapters:
@@ -220,7 +220,7 @@
 %\renewcommand{\cftsubsecafterpnum}{\cftparfillskip}
 
 % List of Figures:
-\renewcommand\printloftitle[1]{\vspace{-15.5ex}\chapter*{#1}}
+\renewcommand\printloftitle[1]{\vspace{-15.0ex}\chapter*{#1}}
 
 \addto\captionsenglish{%
     \renewcommand{\listfigurename}{\protect\vphantom{T}List of
@@ -228,16 +228,22 @@
 }
 
 
-\addtocontents{lof}{\vspace{-2ex}}
+%\addtocontents{lof}{\vspace{-2ex}}
+\newlength{\afterlofskip}
+\setlength{\afterlofskip}{16pt}
+\renewcommand{\afterloftitle}{\par\nobreak\vskip\afterlofskip}
 
 % List of Tables:
-\renewcommand\printlottitle[1]{\vspace{-15.5ex}\chapter*{#1}}
+\renewcommand\printlottitle[1]{\vspace{-15.0ex}\chapter*{#1}}
 
 \addto\captionsenglish{%
     \renewcommand{\listtablename}{List of Tables}%
 }
 
-\addtocontents{lot}{\vspace{-2ex}}
+%\addtocontents{lot}{\vspace{-2ex}}
+\newlength{\afterlotskip}
+\setlength{\afterlotskip}{16pt}
+\renewcommand{\afterlottitle}{\par\nobreak\vskip\afterlotskip}
 
 %
 % "Function" definitions for front-, main- and backmatter

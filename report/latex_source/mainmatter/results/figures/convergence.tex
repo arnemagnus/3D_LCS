@@ -1,44 +1,49 @@
 \begin{figure}[htpb]
     \centering
-    \begin{subfigure}[b]{0.475\textwidth}
+    \hspace*{\fill}
+    \begin{subfigure}[b]{0.43\textwidth}
         \centering
-        \importpgf{figures/mpl-figs}{convergence-minsep=0.16-small.pgf}
+        \resizebox{0.9\linewidth}{!}{\importpgf{figures/mpl-figs}{convergence-minsep=0.16-small.pgf}}
         \caption[]{{\small $\Delta_{\min} = 0.16$}}
         \label{fig:abc_manifold_minsep=0.16}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.475\textwidth}
+    \end{subfigure}\hfill%
+    \begin{subfigure}[b]{0.43\textwidth}
         \centering
-        \importpgf{figures/mpl-figs}{convergence-minsep=0.08-small.pgf}
+        \resizebox{0.9\linewidth}{!}{\importpgf{figures/mpl-figs}{convergence-minsep=0.08-small.pgf}}
         \caption[]{{\small $\Delta_{\min} = 0.08$}}
         \label{fig:abc_manifold_minsep=0.08}
     \end{subfigure}
+    \hspace*{\fill}
 
-    \begin{subfigure}[b]{0.475\textwidth}
+    \hspace*{\fill}
+    \begin{subfigure}[b]{0.43\textwidth}
         \centering
-        \importpgf{figures/mpl-figs}{convergence-minsep=0.04-small.pgf}
+        \resizebox{0.9\linewidth}{!}{\importpgf{figures/mpl-figs}{convergence-minsep=0.04-small.pgf}}
         \caption[]{{\small $\Delta_{\min} = 0.04$}}
         \label{fig:abc_anifold_minsep=0.04}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.475\textwidth}
+    \end{subfigure}\hfill%
+    \begin{subfigure}[b]{0.43\textwidth}
         \centering
-        \importpgf{figures/mpl-figs}{convergence-minsep=0.01-small.pgf}
+        \resizebox{0.9\linewidth}{!}{\importpgf{figures/mpl-figs}{convergence-minsep=0.01-small.pgf}}
         \caption[]{{\small $\Delta_{\min} = 0.01$}}
         \label{fig:abc_manifold_minsep=0.01}
     \end{subfigure}
+    \hspace*{\fill}
     \caption[Geodesic level set approximations with varying mesh point
     densities, for a manifold in the steady ABC flow]
     {Geodesic level set approximations with varying mesh point densities, for
-        a manifold in the steady ABC flow (which is described in
+        a manifold in the steady ABC flow (see
         \cref{sec:flow_systems_defined_by_analytical_velocity_fields}). The
         manifolds were all computed using the parameters given in
         \cref{tab:sinusoidal_manifold_params}, with varying mesh point densities
-        (here, given by the value of $\Delta_{\min}$). Each of the
-        approximations were grown from the same initial position $\vct{x}_{0}$.
-        Note how, although the microscale behaviour generally is more
-        well-resolved as the mesh point density increases, there appears to be
-        a threshold beneath which undesired numerical artifacts --- most
-        prevalently near the left edge of the manifold shown in
-        (\subref*{fig:abc_manifold_minsep=0.01}) --- manifest.
+        (here, given by the value of $\Delta_{\min}$), where the mesh outlines
+        are shown explicitly for clarity. Each of the approximations were grown
+        from the same initial position $\vct{x}_{0}$. Note how, although the
+        microscale behaviour generally is more well-resolved as the mesh point
+        density increases, there appears to be a threshold beneath which
+        undesired numerical artifacts --- most prevalently near the left edge
+        of the manifold shown in (\subref*{fig:abc_manifold_minsep=0.01}) ---
+        manifest.
     }
     \label{fig:abc_manifold_convergence}
 \end{figure}

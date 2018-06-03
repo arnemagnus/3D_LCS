@@ -1,17 +1,19 @@
 \begin{figure}[htpb]
     \centering
-    \begin{subfigure}[b]{0.475\textwidth}
+    \hspace*{\fill}
+    \begin{subfigure}[b]{0.43\textwidth}
         \centering
-        \importpgf{figures/mpl-figs}{blobtest-pre-small.pgf}
+        \resizebox{0.9\linewidth}{!}{\importpgf{figures/mpl-figs}{blobtest-pre-small.pgf}}
         \caption[]{{\small Initial state, at $t=0$}}
         \label{fig:blobtest-pre}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.475\textwidth}
+    \end{subfigure}\hfill%
+    \begin{subfigure}[b]{0.43\textwidth}
         \centering
-        \importpgf{figures/mpl-figs}{blobtest-post-small.pgf}
+        \resizebox{0.9\linewidth}{!}{\importpgf{figures/mpl-figs}{blobtest-post-small.pgf}}
         \caption[]{{\small Final state, at $t=5$}}
         \label{fig:blobtest-post}
-    \end{subfigure}
+    \end{subfigure}%
+    \hspace*{\fill}
     \caption[Advection of tracers in order to verify the repelling nature of
     the computed LCSs]
     {%

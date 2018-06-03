@@ -1,17 +1,19 @@
 \begin{figure}[htpb]
     \centering
-    \begin{subfigure}[b]{0.475\textwidth}
+    \hspace*{\fill}
+    \begin{subfigure}[b]{0.43\textwidth}
         \centering
-        \importpgf{figures/mpl-figs}{blobtest-fjord-pre-small.pgf}
+        \resizebox{0.9\linewidth}{!}{\importpgf{figures/mpl-figs}{blobtest-fjord-pre-small.pgf}}
         \caption[]{{\small Initial state, June 1 2013, 00:00}}
         \label{fig:blobtest-fjord-pre}
-    \end{subfigure}
-    \begin{subfigure}[b]{0.475\textwidth}
+    \end{subfigure}\hfill%
+    \begin{subfigure}[b]{0.43\textwidth}
         \centering
-        \importpgf{figures/mpl-figs}{blobtest-fjord-post-small.pgf}
+        \resizebox{0.9\linewidth}{!}{\importpgf{figures/mpl-figs}{blobtest-fjord-post-small.pgf}}
         \caption[]{{\small Final state, June 1 2013, 12:00}}
         \label{fig:blobtest-fjord-post}
     \end{subfigure}
+    \hspace*{\fill}
     \caption[Advection of tracers in order to verify the repelling nature of
     the computed LCSs in the Førde fjord]
     {%
