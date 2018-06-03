@@ -33,27 +33,27 @@ of $\mathcal{U}$. The grid parameters are summarized in~\cref{tab:gridparams}.
 
 In order to increase the precision of the computed Cauchy-Green strain tensor
 field, it is necessary to increase the accuracy with which one computes the
-Jacobian of the flow map, as their accuracies are intrinsically linked;
-which follows from \cref{eq:defn_cauchygreen}. Accordingly, the flow map
+Jacobian of the flow map, as their accuracies are intrinsically linked.
+This follows from \cref{eq:defn_cauchygreen}. Accordingly, the flow map
 Jacobian was computed directly, by means of simultaneously solving the
 twelve coupled ODEs given by
-\cref{eq:consideredflow,eq:timederivative_flowmap_jacobian} while letting the
+\cref{eq:consideredflow,eq:timederivative_flowmap_jacobian}, letting the
 underlying velocity field transport the tracers. All twelve ODEs were solved
-simultaneously, via the Dormand-Prince 8(7) method (see
+simultaneously, using the Dormand-Prince 8(7) method (see
 \cref{sub:the_runge_kutta_family_of_numerical_ode_solvers} and, in particular,
 \cref{tab:butcherdopri87}). The dynamic step length adjustment procedure
 will be outlined in detail in
 \cref{sub:the_implementation_of_dynamic_runge_kutta_step_size}.
 
-In this framework, the tracer advection takes second stage to the `advection'
+In this framework, the tracer advection takes second stage to the ``advection''
 of the components of the flow map Jacobian. As it turns out, the increase in
 mathematical complexity which the coupling terms introduces is a small price to
 pay for the increased precision compared to the straightforward approach of
 applying a finite diffference scheme to the advected flow map
 \parencite{oettinger2016autonomous}. This is also evident from previous
-`finite difference-based' LCS computing endeavors, in which the use of several
-grids of tracers was necessitated in order to accurately compute the flow map
-Jacobian \parencite{loken2017sensitivity,farazmand2012computing}.
+``finite difference-based'' LCS computing endeavors, in which the use of
+several grids of tracers was necessitated in order to accurately compute the
+flow map Jacobian \parencite{loken2017sensitivity,farazmand2012computing}.
 
 \subsection{The implementation of dynamic Runge-Kutta step size}
 \label{sub:the_implementation_of_dynamic_runge_kutta_step_size}

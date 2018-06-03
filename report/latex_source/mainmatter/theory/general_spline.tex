@@ -2,7 +2,7 @@
 \label{sub:spline_interpolation_of_discrete_data}
 
 All naturally ocurring physical systems can only be known partially, either
-by means of partial measurements or grid based model output. Thus,
+by means of limited measurements or grid based model output. Thus,
 interpolating (i.e.,\ estimating) the measurement data becomes a requirement
 when describing the dynamics of systems which depend on measurement data from
 inbetween the sampling or grid points. Spline interpolation involves
@@ -16,8 +16,8 @@ oscillatory behaviour when using high order polynomials. This is in stark
 constrast to regular, global polynomial interpolation, which exhibits
 strong global dependence on local properties. In particular, if the
 function to be approximated is badly behaved anywhere within the interval of
-approximation, then the approximation by polynomial interpolation is poor
-everywhere \parencite[p.17]{deboor1978practical}. \vfill{}
+approximation, then the approximation by global polynomial interpolation is
+poor everywhere \parencite[p.17]{deboor1978practical}. \vfill{}
 
 A generic interpolation problem can be described in terms of a family of
 functions

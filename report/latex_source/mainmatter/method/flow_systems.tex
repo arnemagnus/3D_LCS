@@ -3,13 +3,12 @@
 
 Within all branches of computational science --- perhaps particularly for the
 analysis of nonlinear systems of the form suggested in
-\cref{sec:the_type_of_flow_systems_considered} --- the use of analytical test
-cases are very useful. Especially as far as reproducibility is concerned.
-Accordingly, we chose two variants of the three-dimensional flow system
-commonly referred to as the \emph{Arnold-Beltrami-Childress flow}, which
-has previously been subject to Lagrangian analysis
-\parencite{blazevski2014hyperbolic,oettinger2016autonomous}, as our base case.
-We present a steady variant in
+\cref{sec:the_type_of_flow_systems_considered} --- analytical test cases are
+very useful. Especially as far as reproducibility is concerned. Accordingly, we
+chose two variants of the three-dimensional flow system commonly referred to as
+the \emph{Arnold-Beltrami-Childress flow}, which has previously been subject to
+Lagrangian analysis \parencite{blazevski2014hyperbolic,%
+oettinger2016autonomous}, as our base case. We present a steady variant in
 \cref{sub:steady_arnold_beltrami_childress_flow}, and an unsteady one in
 \cref{sub:unsteady_arnold_beltrami_childress_flow}, with the intention of
 investigating to what extent the introduction of time dependence results in
@@ -138,16 +137,16 @@ Fisheries and Aquaculture, based on the SINMOD oceanic model
 \parencite{slagstad2005modeling}. The data set considered here contains velocity
 data for the time period between June 1 2013, 00:00 and June 2 2013, 23:40,
 sampled in intervals of 20 minutes, with a horizontal resolution of
-of approximately $50\si{\meter}$ and vertical resolution varying from
-$25\si{\meter}$ in the fjord depths, to $1\si{\meter}$ near the surface. For our
-simulations, the time interval of interest was the 12 hour time window between
-00:00 and 12:00 on June 1 2013 --- practically ensuring the encapsulation of a
-tidal cycle.
+of approximately $50\,\si{\meter}$ and vertical resolution varying from
+$25\,\si{\meter}$ in the fjord depths, to $1\,\si{\meter}$ near the surface.
+For our simulations, the time interval of interest was the 12 hour time window
+between 00:00 and 12:00 on June 1 2013 --- practically ensuring the
+encapsulation of a tidal cycle.
 
 We concentrated our analysis on the depths of the fjord. Therefore, we looked
 for LCSs in a region of water which was neither particularly close to the
-oceanic surface, nor hit the coastline when advected for the 12 hour duration
-of the time interval of interest. This limited our research to a
+oceanic surface, nor reached the coastline when advected for the 12 hour
+duration of the time interval of interest. This limited our research to a
 $500\,\si{\meter}\times500\,\si{\meter}\times250\,\si{\meter}$ region, with
 depths ranging from $50\,\si{\meter}$ to $300\,\si{\meter}$ below the
 surface. A bird's-eye view of the region is shown in white in
@@ -172,13 +171,13 @@ the Bspline-Fortran library, partly motivated by its extensive documentation
 \parencite{williams2018bspline}. In particular, we made use of the
 \texttt{bspline\_4d} derived type, which we, along with a subset of its
 type-bound procedures, made available in C making use of the Fortran standard
-interoperability with C-languages, that is, the \texttt{iso\_c\_binding} module
---- which is shipped with most modern Fortran compilers. From there, we wrote a
-thin wrapper class in C++, which was exposed to Python via Cython.
+interoperability with C-languages --- that is, the \texttt{iso\_c\_binding}
+module, which is shipped with most modern Fortran compilers. From there,
+we wrote a thin wrapper class in C++, which was exposed to Python via Cython.
 
 The choice of Python as our main programming language was made partly due to
 its relatively low development costs, in addition to its beneficial properties
-as a `glue language' --- as examplified by the above, and the ease of
+as a ``glue language'' --- as examplified by the above --- and the ease of
 parallelization by means of e.g. MPI (the use of which will be outlined in
 greater detail in
 \cref{sec:making_the_most_of_the_available_computational_resources}).
