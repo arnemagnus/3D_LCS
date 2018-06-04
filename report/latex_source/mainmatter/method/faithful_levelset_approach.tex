@@ -8,7 +8,7 @@ $\mathcal{M}_{1} = \{\mathcal{M}_{1,j}\}_{j=1}^{n}$ is used to compute a point
 in the ensuing level set $\mathcal{M}_{2}$. This notion extends to all of the
 subsequent level sets; namely, the points in level set $\mathcal{M}_{i+1}$
 are computed from the points in the prior level set $\mathcal{M}_{i}$.
-For reasons of brevity in the discussion to follow, denote the points
+For reasons of brevity in the discussion to follow, we denote the points
 $\{\mathcal{M}_{i,j}\}$ and $\{\mathcal{M}_{i+1,j}\}$ as \emph{ancestor} and
 \emph{descendant points}, respectively. Furthermore, the set of mesh points
 which can be traced backwards to a single, common ancestor, is referred to as
@@ -44,7 +44,7 @@ point was projected into the half-plane $\mathcal{H}_{i,j}$ as follows:
 \begin{equation}
     \label{eq:aimpoint_planeprojection}
     \vct{x}_{\text{aim}} := \vct{x}_{\text{aim}} - \inp[]{\vct{t}_{i,j}}%
-    {\vct{x}_{\text{aim}}}\vct{t}_{i,j}.
+    {\vct{x}_{\text{aim}}-\vct{x}}\vct{t}_{i,j}.
 \end{equation}
 
 The idea is then to look for a new position within $\mathcal{H}_{i,j}$, in the

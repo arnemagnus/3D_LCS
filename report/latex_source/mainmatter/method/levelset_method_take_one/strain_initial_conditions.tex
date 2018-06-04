@@ -45,9 +45,9 @@ indefinitely.
 
 If any trajectory terminated in a point $\vct{x}_{\text{fin}}$
 located in the half-plane $\mathcal{H}_{i,j}$ at a distance
-$\Delta_{i}$ from $\vct{x}_{i,j}$, then $\vct{x}_{\text{fin}}$ was used as
-coordinates for a new mesh point $\mathcal{M}_{i+1,j}$. Numerically, these
-checks were implemented by means of tolerance parameters, as comparing
+$\Delta_{i}$ from $\vct{x}_{i,j}$, then the new mesh point
+$\mathcal{M}_{i+1,j}$ was placed at $\vct{x}_{\text{fin}}$. Numerically, these
+conditions were implemented by means of tolerance parameters, as comparing
 floating-point numbers for equivalence is prone to numerical round-off error.
 More precisely, a point $\vct{x}$ was said to lie within $\mathcal{H}_{i,j}$
 provided that

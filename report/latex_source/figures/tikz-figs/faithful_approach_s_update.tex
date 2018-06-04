@@ -146,11 +146,12 @@ $\breve{s}:=s_{j}$.\phantom{xxxx}};
     \tkzDrawArc[color=black](S,I1)(I2);
 
     \draw[arr] (decrease-right.south) |- (flipcheck.east);
+    \draw[arr] (decrease-right.south) -- ++(0,-0.88);
     \draw[arr] (increase-right.west) -- ++(-0.5,0) -- ++(0,1.42) ;
 
     % Draw main line segment
     \draw (hit-prevmiss.east) -- ++(1.,0) -- ++(0,-0.7) -- ++(8.2,0) --
-    ++(0,7.2225) coordinate (q1);
+    ++(0,7.225) coordinate (q1);
     \node[auto, below right = 5pt and -187.5pt of backtrack-miss.east]
     {$\abs{\delta\breve{s}}=\delta\breve{s}_{\min}$};
     \coordinate (q2) at ($(q1)+(-5,0)$);

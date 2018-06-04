@@ -9,7 +9,7 @@ that the revised approach is significantly less complex. In particular, note
 how launching a single trajectory starting at the ancestor mesh point results
 in the legacy algorithm for computing new trajectory start points iteratively
 (cf. \cref{fig:s_update_flowchart}) being rendered entirely superfluous.
-Moreover, as all computed trajectories necessarily remain within the target
+Furthermore, as all computed trajectories necessarily remain within the target
 half-planes, no tolerance parameter for detecting intersections between
 trajectories and half-planes is needed. In short, the revised algorithm is
 conceptually simpler, and involves a lesser number of free (tolerance)
@@ -22,13 +22,13 @@ also revealed that the revised algorithm is usually two orders of
 magnitude faster (in terms of computational runtime). Unsurprisingly, the
 main time expenditure of the legacy approach turned out to be the computation
 of elusive mesh points; often, several thousand computed trajectories were
-needed before a satisfactory new point was found. In paticular, the probability
-of finding an acceptable mesh point depends sensitively on choosing an
-appropriate aim point --- leading to significant slowdowns in regions wherein
-the underlying manifold behaves erratically.
+needed before a satisfactory new point was found. In particular, the
+probability of finding an acceptable mesh point depends sensitively on
+choosing an appropriate aim point --- leading to significant slowdowns in
+regions wherein the underlying manifold behaves erratically.
 
-For its superior speed and simplicity, the revised approach of forced
-pseudoradial trajectories became our method of choice. Accordingly, all
+As a consequence of its superior speed and simplicity, the revised approach of
+forced pseudoradial trajectories became our method of choice. Accordingly, all
 of our results (which will be presented in \cref{cha:results}) were generated
 with this method. Note that, while deemed inferior in the context of
 identifying repelling LCSs in three-dimensional flow, the legacy approach of

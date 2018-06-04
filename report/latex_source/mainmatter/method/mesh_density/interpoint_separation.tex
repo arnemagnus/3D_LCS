@@ -18,17 +18,17 @@ we then inspected all of the distances separating nearest neighbors.
 Specifically, if any of the separations between nearest neighbors exceeded
 $\Delta_{\max}$, we sought to insert a new mesh point between them. That is, if
 $\norm{\vct{x}_{i+1,j}-\vct{x}_{i+1,j+1}}>\Delta_{\max}$, a new mesh point
-$\mathcal{M}_{i+1,j+\frac{1}{2}}$ was computed, using the method described
+$\mathcal{M}_{i+1,j+1/2}$ was computed, using the method described
 in \cref{sec:revised_approach_to_computing_new_mesh_points} by launching a
 trajectory starting from a ficticious ancestor point
-$\mathcal{M}_{i,j+\frac{1}{2}}$, located midway inbetween $\mathcal{M}_{i,j}$
+$\mathcal{M}_{i,j+1/2}$, located midway inbetween $\mathcal{M}_{i,j}$
 and $\mathcal{M}_{i,j+1}$ along the interpolation curve $\mathcal{C}_{i}$. As
-the ficticious mesh point $\mathcal{M}_{i,j+\frac{1}{2}}$ does not itself have
+the ficticious mesh point $\mathcal{M}_{i,j+1/2}$ does not itself have
 a direct ancestor from which to inherit a unit tangent,
-$\vct{t}_{i,j+\frac{1}{2}}$ was instead constructed by normalizing the
+$\vct{t}_{i,j+1/2}$ was instead constructed by normalizing the
 arithmetic average of $\vct{t}_{i,j}$ and $\vct{t}_{i,j+1}$, and passed
-on to $\mathcal{M}_{i,j+\frac{1}{2}}$. The ficticious mesh point's guidance
-vector $\vct{\rho}_{i,j+\frac{1}{2}}$ was constructed in similar fashion ---
+on to $\mathcal{M}_{i,j+1/2}$. The ficticious mesh point's guidance
+vector $\vct{\rho}_{i,j+1/2}$ was constructed in similar fashion ---
 its role in the dynamic update of the interset separation $\Delta_{i}$ will
 be described in detail in
 \cref{sub:a_curvature_based_approach_to_determining_interset_separations}.
@@ -52,11 +52,11 @@ in \cref{fig:mesh_management_insertion_and_deletion}.
 \input{mainmatter/method/figures/dynamic_mesh_management}
 
 Having completed the process of inserting and removing mesh points, the
-points in the level set were assigned consecutive integer indices. In
-particular, if a mesh point $\mathcal{M}_{i,j+\frac{1}{2}}$ was inserted
+points in the level set were assigned consecutive integer indices.
+Specifically, if a mesh point $\mathcal{M}_{i,j+1/2}$ was inserted
 inbetween $\mathcal{M}_{i,j}$ and $\mathcal{M}_{i,j+1}$, the respective indices
-were updated as $\mathcal{M}_{i,j+\frac{1}{2}}\to\mathcal{M}_{i,j+1}$,
-$\mathcal{M}_{i,j+1}\to\mathcal{M}_{i,j+2}$ and so forth. Conversely, if mesh
+were updated as $\mathcal{M}_{i,j+1/2}\to\mathcal{M}_{i,j+1}$,
+$\mathcal{M}_{i,j+1}\to\mathcal{M}_{i,j+2}$ and so on. Conversely, if mesh
 point $\mathcal{M}_{i,j+1}$ was removed, then
 $\mathcal{M}_{i,j+2}\to\mathcal{M}_{i,j+1}$,
-$\mathcal{M}_{i,j+3}\to\mathcal{M}_{i,j+2}$ and so on.
+$\mathcal{M}_{i,j+3}\to\mathcal{M}_{i,j+2}$ and so forth.

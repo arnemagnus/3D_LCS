@@ -1,7 +1,7 @@
 \section{Verifying our method of generating manifolds}
 \label{sec:verifying_our_method_of_generating_manifolds}
 
-To start things off, \cref{sec:verifying_our_method_of_generating_manifolds}
+To start things off, \cref{sub:an_analytical_manifold_test_case}
 outlines a series of geodesic level set approximations of an analytically known
 three-dimensional surface. From these, we extract key insight regarding which
 mesh point configurations might be reasonable for general application.
@@ -81,7 +81,7 @@ point as
     \sum\limits_{i,j}\abs{z_{i,j}-g(x_{i},y_{j})}^{2}},
 \end{equation}
 where we sum over all of the $N$ computed points, with $g(x,y)$ given
-by \cref{eq:sinusoidal_definition} (and \cref{eq:sinusoidal_surface_params}).
+by \cref{eq:sinusoidal_definition,eq:sinusoidal_surface_params}.
 The RMS error is shown as a function of the mesh point density in
 \cref{fig:sinusoidal_manifold_errors}. It appears to scale quadratically
 with $\Delta_{\min}$, the smallest permitted separation between neighboring
@@ -98,7 +98,7 @@ the method's most computationally costly operations (namely, generating
 trajectories to identify new mesh points and checking for self-intersections,
 cf.\ sections~\ref{sec:revised_approach_to_computing_new_mesh_points} and
 \ref{sub:continuous_self_intersection_checks}, respectively) need to be
-performed far more frequently when the number of mesh points increase.
+performed far more frequently when the number of mesh points increases.
 Perhaps more crucially, an increased number of mesh points leads to an
 increase in the required memory. These considerations, together with the
 ones to follow in the immediately forthcoming section, became the foundation

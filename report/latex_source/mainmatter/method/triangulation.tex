@@ -53,21 +53,18 @@ added inbetween direct descendants in order to maintain the overall mesh point
 quality (cf.\  \cref{sub:maintaining_mesh_point_density,%
 sub:limiting_the_accumulation_of_numerical_noise}) --- is handled by demanding
 that the triangles associated with $\mathcal{M}_{i,j}$ cover the tetragonal
-surf ce element with vertices given by
+surface element with vertices given by
 $\{\vct{x}_{i,j},\vct{x}_{i,j+1},\vct{x}_{i+1,j+1},\vct{x}_{i+1,j}\}$.
 Accordingly, we add two triangles with vertices given by
 $\{\vct{x}_{i,j},\vct{x}_{i+1,j},\vct{x}_{i+1,j+1}\}$ and
 $\{\vct{x}_{i,j},\vct{x}_{i,j+1},\vct{x}_{i+1,j}\}$, respectively. This is
-shown in \cref{fig:triangulation_basecase}. Note that, in generating tetragons
-in this fashion for each point in each level set, triangles which connect the
-mesh point $\mathcal{M}_{i,j}$ to all of its neighbors are formed.
+shown in \cref{fig:triangulation_basecase}.
 
-The special cases not involving a one-to-one correspondence between the
-mesh points in $\mathcal{M}_{i}$ and $\mathcal{M}_{i+1}$ require special
-attention. This occurs whenever mesh points are inserted by making
-use of ficticious ancestors, or when mesh points are removed, in order
-to maintain the mesh point density (cf.\
-\cref{sub:maintaining_mesh_point_density}) --- or, when removing unwanted
+The cases not involving a one-to-one correspondence between the mesh points in
+$\mathcal{M}_{i}$ and $\mathcal{M}_{i+1}$ require special attention. This
+occurs whenever mesh points are inserted by making use of ficticious ancestors,
+or when mesh points are removed, in order to maintain the mesh point density
+(cf.\ \cref{sub:maintaining_mesh_point_density}) --- or, when removing unwanted
 bulges in order to dampen the effects of compound numerical noise
 (as described in \cref{sub:limiting_the_accumulation_of_numerical_noise}).
 The treatment of these special cases is shown in
