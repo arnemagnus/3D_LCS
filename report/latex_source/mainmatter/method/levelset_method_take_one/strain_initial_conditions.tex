@@ -7,10 +7,10 @@ point not equal to $\vct{x}_{i,j}$ along the parametrized curve
 $\mathcal{C}_{i}$. However, trajectories starting out at points along
 $\mathcal{C}_{i}$ which are far removed from $\vct{x}_{i,j}$ are likely to
 require a long integration path, which would result in an increase in the
-accumulated numerical round-off error. Subject to such errors, these
-trajectories might not even get close to $\vct{x}_{\text{aim}}$ with
-a reasonable computational resource consumption. Accordingly, we limited the
-potential number of trajectories to compute by only considering a subset of the
+accumulated numerical error. Subject to this kind of error, these trajectories
+might not even get close to $\vct{x}_{\text{aim}}$ with a reasonable
+computational resource consumption. Accordingly, we limited the potential
+number of trajectories to compute by only considering a subset of the
 interpolation curve $\mathcal{C}_{i}$ as initial conditions, as follows:
 \begin{equation}
     \label{eq:faithful_initialcondition_interval}
@@ -37,11 +37,11 @@ $\mathcal{H}_{i,j}$ in passing, the step length was continuously limited from
 above by $\norm{\vct{x}_{\text{aim}}-\vct{x}}$. Moreover, in order to avoid
 spending unreasonable computational resources on trajectories which for
 practical purposes never would result in acceptable, new mesh points, the
-total allowed integration arclength was limited by a scalar multiple of
-the initial separation $\norm{\vct{x}_{\text{init}}-\vct{x}_{\text{aim}}}$.
-In particular, this limitation meant that trajectories which ended in
-stable orbits around $\vct{x}_{\text{aim}}$ were not allowed to keep going
-indefinitely.
+total allowed integration arclength was limited by a scalar multiple
+$\gamma_{\text{arc}}$ of the initial separation
+$\norm{\vct{x}_{\text{init}}-\vct{x}_{\text{aim}}}$. In particular, this
+limitation meant that trajectories which ended in stable orbits around
+$\vct{x}_{\text{aim}}$ were not allowed to keep going indefinitely.
 
 If any trajectory terminated in a point $\vct{x}_{\text{fin}}$
 located in the half-plane $\mathcal{H}_{i,j}$ at a distance
@@ -61,9 +61,9 @@ whereas
     \label{eq:dist_tolerance}
     \abs{\frac{\norm{\vct{x}-\vct{x}_{i,j}}}{\Delta_{i}}-1} < \gamma_{\Delta}
 \end{equation}
-sufficed for it to be flagged as lying a distance $\Delta_{i}$ from
-$\vct{x}_{i,j}$, with $\gamma_{\mathcal{H}}$ and $\gamma_{\Delta}$ small
-numbers. When a trajectory first intersected $\mathcal{H}_{i,j}$, the
+sufficed for it to be flagged as laying a distance $\Delta_{i}$ from
+$\vct{x}_{i,j}$, with $\gamma_{\mathcal{H}}$ and $\gamma_{\Delta}$ chosen as
+small numbers. When a trajectory first intersected $\mathcal{H}_{i,j}$, the
 integration was stopped abrubtly, leaving its endpoint $\vct{x}_{\text{fin}}$
 as its suggested coordinates for the new mesh point. As briefly mentioned in
 \cref{sub:parametrizing_the_innermost_level_set}, the unit tangent vectors

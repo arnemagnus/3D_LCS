@@ -65,21 +65,21 @@ along the (local) $\vct{\xi}_{3}$ direction (which compliance with condition
 \eqref{eq:lcs_condition_b} would confirm), the point $\vct{x}_{0}$ would be
 flagged as satisfying criterion~\eqref{eq:lcs_condition_d}.
 
-Using all of the points in $\mathcal{U}_{0}$ domain would invariably involve
-computing alot of LCSs several times over --- in particular, if two neighboring
-grid points are both located in the $\mathcal{U}_{0}$ domain, then they likely
-belong to the same manifold. In order to reduce the number of redundant
-calculations, the set of considered initial conditions was further reduced,
-by only checking whether every $\nu^{\text{th}}$ grid point along each axis
-belonged to $\mathcal{U}_{0}$, that is, only considering one in every
-$\nu^{3}$ grid points in the entire domain as possible initial conditions.
-Because the number of grid points was different for the different types of
-flow (cf.\ \cref{tab:gridparams}), so too was the pseudo-sampling frequency
-$\nu$. The values for $\varepsilon$, $\nu$ and the resulting number of initial
-conditions are given in \cref{tab:initialconditionparams}. Note that, using
-the given filtering parameters, the initial conditions reduced to a far more
-manageable number of grid points, than all of the grid points which satisfy
-the LCS conditions~\eqref{eq:lcs_condition_a},~\eqref{eq:lcs_condition_b} and~%
+Using all of the points in $\mathcal{U}_{0}$ would invariably involve computing
+a lot of LCSs several times over --- in particular, if two neighboring grid
+points are both part of $\mathcal{U}_{0}$, then they likely belong to the same
+manifold. In order to reduce the number of redundant calculations, the set of
+considered initial conditions was further reduced, by only checking whether
+every $\nu^{\text{th}}$ grid point along each axis belonged to
+$\mathcal{U}_{0}$, that is, only considering one in every $\nu^{3}$ grid points
+in the entire domain as possible initial conditions. Because the number of grid
+points was different for the different types of flow (cf.\
+\cref{tab:gridparams}), so too was the pseudo-sampling frequency $\nu$. The
+values for $\varepsilon$, $\nu$ and the resulting number of initial conditions
+are given in \cref{tab:initialconditionparams}. Note that, using the given
+filtering parameters, the initial conditions reduced to a far more manageable
+number of grid points, than all of the grid points which satisfy the LCS
+conditions~\eqref{eq:lcs_condition_a},~\eqref{eq:lcs_condition_b} and~%
 \eqref{eq:lcs_condition_d}.
 
 \input{mainmatter/method/tables/initial_conditions}
@@ -87,7 +87,7 @@ the LCS conditions~\eqref{eq:lcs_condition_a},~\eqref{eq:lcs_condition_b} and~%
 \subsection{Parametrizing the innermost level set}
 \label{sub:parametrizing_the_innermost_level_set}
 
-For an initial condition $\vct{x}_{0}$ identified by means of the method
+For an initial condition $\vct{x}_{0}$, identified by means of the method
 outlined in
 \cref{sub:identifying_suitable_initial_conditions_for_developing_lcss}, the
 corresponding LCS must locally be tangent to the plane with unit normal given
@@ -126,7 +126,7 @@ Bspline-Fortran library \parencite{williams2018bspline}, which was ported to
 Python as outlined in \cref{sub:interpolating_gridded_velocity_data}. The
 constructed innermost level set and its associated interpolation curve is
 illustrated in \cref{fig:innermost_levelset}. Interpolation curves for all
-subsequent level sets (the computation of which will is described in detail
+subsequent level sets (the computation of which will be described in detail
 in the sections to follow) were made completely analogously to
 $\mathcal{C}_{1}$.
 

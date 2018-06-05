@@ -28,14 +28,12 @@ are defined in order to compute mesh points on or near the domain
 boundaries. Thus, in order to resolve the behaviour of manifolds near the
 edges of the domain of interest, the aforementioned strain characteristics
 need to be computed in a region which \emph{contains} the domain of interest,
-expanding beyond it in all directions. This is how we treated the case of
-tidal flow in the Førde fjord (which is described in
-\cref{sec:flow_systems_defined_by_gridded_velocity_data}). For perfectly
-periodic flow systems, such  as (either variant of) the ABC flow --- described
-in \cref{sec:flow_systems_defined_by_analytical_velocity_fields} --- this
-reduces to the trivial exercise of utilizing the inherent periodicity
-(that is, provided that the computational domain is sufficiently large
-to encompass at least one cycle along each direction).
+expanding beyond it in all directions. For perfectly periodic flow systems,
+such as (either variant of) the ABC flow --- described in
+\cref{sec:flow_systems_defined_by_analytical_velocity_fields} --- this reduces
+to the trivial exercise of utilizing the inherent periodicity (that is,
+provided that the computational domain is sufficiently large to encompass at
+least one cycle along each direction).
 
 \subsection{Continuous self-intersection checks}
 \label{sub:continuous_self_intersection_checks}
@@ -74,7 +72,7 @@ _from_point_meshes}) is based on generating triangles which share sides with
 its neighbors, we decided to allow triangles to intersect along the edges.
 Similarly, we allowed for two triangles to be identical --- which might happen
 if a manifold folds onto itself perfectly. Our algorithmic way of treating
-these casesresulted in a theoretical false negative; namely, the case of two
+these cases resulted in a theoretical false negative; namely, the case of two
 triangles intersecting in exactly two points, laying along the edges of
 \emph{both} triangles. In our experience, however, this never proved
 problematic --- should one pair of triangles happen to intersect in this exact

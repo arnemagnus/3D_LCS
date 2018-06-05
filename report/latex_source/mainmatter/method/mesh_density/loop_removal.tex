@@ -8,7 +8,7 @@ amplified in the subsequent level sets, which frequently caused unwanted
 loops in the interpolation curves $\{\mathcal{C}_{i}\}$ which extended
 far from the manifold epicentre (namely $\vct{x}_{0}$, cf.\
 \cref{sub:identifying_suitable_initial_conditions_for_developing_lcss}).
-Occasionally, this would lead to the generated manifold to fold into itself.
+Occasionally, this would lead the generated manifold to fold into itself.
 Per their definition, this is never permitted for repelling LCSs. In
 particular, self-intersecting manifolds indicate that, in a small neighborhood
 of  any intersection, there would not be a well-defined direction of strongest
@@ -23,7 +23,7 @@ $\mathcal{M}_{i+1,j}$ and $\mathcal{M}_{i+1,j+k}$ satisfies the pre-set bounds
 for the mesh point density (cf.\ \cref{sub:maintaining_mesh_point_density}),
 and is significantly smaller than the cumulative nearest neighbor separations
 in the mesh point sequence $\{\mathcal{M}_{i+1,j+\kappa}\}_{\kappa=0}^{k}$,
-we would remove the intermittent mesh points. In more mathematical terms; if
+we would remove the intermediate mesh points. In more mathematical terms; if
 the interpoint distances satisfy
 \begin{subequations}
     \label{eq:loop_removal_conditions}
@@ -60,9 +60,7 @@ reconstruction of manifold surfaces from the resulting point meshes (see
 _from_point_meshes}) to be somewhat larger than their neighbors, and, in some
 cases, some triangles may partly overlap. However, as no new mesh points are
 \emph{added} as a direct consequence of this loop-removal algorithm, it does
-not introduce new errors. It is also worth mentioning that some of the removed
-mesh points were recovered in the ensuing level sets, then as constituents of
-an overall smoother level set. In our experience, the removal of
+not introduce new errors. In our experience, the removal of
 loop-forming mesh points was rarely required.
 
 \input{mainmatter/method/figures/loop_deletion}

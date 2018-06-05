@@ -30,11 +30,8 @@ $\vct{\rho}_{i,j}$ and $\vct{\rho}_{i+1,j}$ (as defined in
 \end{equation}
 where $\alpha_{\downarrow}$ and $(\Delta\alpha)_{\downarrow}$ are upper
 curvature tolerance parameters, was satisfied, the level set
-$\mathcal{M}_{i+1}$ was discarded and recomputed with reduced $\Delta_{i}$. If
-$\Delta_{i}$ was already as low as the pre-set $\Delta_{\min}$, the manifold
-generation process was terminated, as a new level set $\mathcal{M}_{i+1}$ could
-not be computed under the given constraints on interpoint separation (cf.\
-\cref{sub:maintaining_mesh_point_density}). Conversely, if
+$\mathcal{M}_{i+1}$ was discarded and recomputed with reduced $\Delta_{i}$.
+However, $\Delta_{i}$ was never reduced below $\Delta_{\min}$. Conversely, if
 \begin{equation}
     \label{eq:increase_dist}
     \alpha_{i,j} < \alpha_{\uparrow} \quad \text{and} \quad %

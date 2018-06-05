@@ -47,7 +47,7 @@ perturbation configurations of $\vct{x}_{\text{aim}}$ (given by
 \cref{eq:angular_adjustment}) does not \emph{guarantee} that an
 acceptable mesh point is found. In an attempt to find particularly elusive mesh
 points, the entire algorithm --- including angular perturbations as outlined in
-the above --- was then reran with simultaneously and progressively relaxed
+the above --- was then rerun with simultaneously and progressively relaxed
 point acceptance criteria. That is, the numerical tolerance parameters
 $\gamma_{\mathcal{H}}$ and $\gamma_{\Delta}$ (cf.\
 \cref{eq:plane_tolerance,eq:dist_tolerance}) were gradually increased up to
@@ -57,8 +57,8 @@ $\gamma_{\Delta}^{\max}$.
 If, after having increased said tolerance parameters to their maximal
 permitted values, we were unable able to find an ``acceptable'' mesh point, the
 incomplete level set was promptly discarded, and attempted to be computed
-anew with reduced $\Delta_{i}$ (more on the adjustment procedure for
-$\Delta_{i}$ to follow in
+anew with $\Delta_{i}$ reduced to $\Delta_{\min}$ (more on the general
+adjustment procedure for $\Delta_{i}$ to follow in
 \cref{sub:a_curvature_based_approach_to_determining_interset_separations}).
 Should an entire, new geodesic level set not be computable even with the
 minimum permitted step length, attempts at expanding the computed manifold

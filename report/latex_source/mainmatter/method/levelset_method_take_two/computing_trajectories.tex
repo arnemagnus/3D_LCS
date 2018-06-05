@@ -1,7 +1,7 @@
 \subsection{Computing pseudoradial trajectories directly}
 \label{sub:computing_pseudoradial_trajectories_directly}
 
-Completely analogously to the legacy approach outlined in
+Just like in the legacy approach outlined in
 \cref{sec:legacy_approach_to_computing_new_mesh_points}, we define a local
 direction field as
 \begin{equation}
@@ -36,7 +36,7 @@ direction-reversion if an intermediary vector was pointing radially inwards.
 Should the $\vct{\xi}_{3}$ direction be parallel to the unit tangent
 $\vct{t}_{i,j}$ locally along the trajectory, the direction field
 \cref{eq:revised_direction_field} would become undefined. In such regions,
-we allowed the Runge-Kutta solver to take a step in the direction used for the
+we allowed the Runge-Kutta solver to step in the direction used for the
 immediately preceding step. Numerically, such regions were recognized by
 \begin{equation}
     \label{eq:revised_xi3_tan_parallel}
@@ -62,7 +62,7 @@ satisfied
     \label{eq:revised_dist_tol}
     \abs{\frac{\norm{\vct{x}-\vct{x}_{i,j}}}{\Delta_{i}}-1} < \gamma_{\Delta},
 \end{equation}
-with $\gamma_{\Delta}$ being a small number, the point was flagged as lying a
+with $\gamma_{\Delta}$ being a small number, the point was flagged as laying a
 distance $\Delta_{i}$ from $\vct{x}_{i,j}$. Thus, upon reaching a point
 satisfying \cref{eq:revised_dist_tol}, the trajectory was terminated, and the
 new mesh point $\mathcal{M}_{i+1,j}$ was placed at the trajectory end point

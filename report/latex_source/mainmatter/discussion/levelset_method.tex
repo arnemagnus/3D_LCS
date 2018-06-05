@@ -14,9 +14,10 @@ attractor in the Lorenz system, as was considered by
 computational runtime) and conceptually simpler method of generating such
 manifolds, than the more direct adaption of \posscite{krauskopf2005survey}
 method (which is outlined in
-\cref{sec:legacy_approach_to_computing_new_mesh_points}). Note, however, that
-\citeauthor{krauskopf2005survey}'s method retains a greater degree of general
-applicability.
+\cref{sec:legacy_approach_to_computing_new_mesh_points}).
+%Note, however, that
+%\citeauthor{krauskopf2005survey}'s method retains a greater degree of general
+%applicability.
 
 Although useful for managing the mesh accuracy (see
 \cref{sec:managing_mesh_accuracy}), and central to our
@@ -54,24 +55,27 @@ of numerical error.
 As mentioned in \cref{sec:revised_approach_to_computing_new_mesh_points}, we
 let each computed mesh point \emph{inherit} its unit tangent $\vct{t}$ from
 its direct ancestor, rather than computing new unit tangents using the
-interpolation curve $\mathcal{C}_{i}$ (a generalization of
-\posscite{krauskopf2005survey} original suggestion of simply using the mesh
-point's nearest neighbors for this purpose). This was a conscious choice. In
+interpolation curve $\mathcal{C}_{i}$. This was a conscious choice. In
 our experience, the computed level sets quickly started to form fully
 three-dimensional topological circles, leading to notable local curvature along
-the interpolation curves. This rendered selecting how far either side of a
+the interpolation curves. This rendered selecting how far to either side of a
 given mesh point to move, in order to approximate the local tangent vector by a
-finite coordinate difference, hard to do in a consistent manner. Failure to do
-so often lead neighboring point strands to form intersections, yielding
-disorderly meshes which in turn frequently lead the points constituting a level
-set to \emph{not} form a topological circle. These issues are not present in
-our aforementioned inheritance-based approach. However, if a computed manifold
-were to twist itself in such a way that a unit tangent $\vct{t}$ laid
+finite coordinate difference, hard to do in a consistent manner. Simply using
+the coordinates of the mesh point's nearest neighbors (as originaly suggested
+by \textcite{krauskopf2005survey}) for this purpose was found to be
+inconsistent. Failure to compute tangent vectors consistently often lead
+neighboring point strands to form intersections, yielding disorderly meshes
+which in turn frequently lead the points constituting a level set to
+\emph{not} form a topological circle. These issues are not present in our
+aforementioned inheritance-based approach. However, if a computed manifold were
+to twist itself in such a way that a unit tangent $\vct{t}$ laid
 \emph{within} it, this could result in failure to compute one or more new mesh
-points, which would then lead to terminating process of adding new level sets
-(alternatively, terminating the process of expanding one or more point strands,
-cf.\ the preceding paragraphs) prematurely. Attempts to address this issue were
-not considered here.
+points, which would then lead to terminating the process of adding new level
+sets (alternatively, terminating the process of expanding one or more point
+strands, cf.\ the preceding paragraphs) prematurely. We addressed this issue
+using the tolerance parameter $\gamma_{\|}$; see
+\cref{sec:revised_approach_to_computing_new_mesh_points} and, in particular,
+\cref{eq:revised_xi3_tan_parallel} for details.
 
 Our variation of the method of geodesic level sets contains many
 degrees of freedom (see e.g.\
@@ -97,12 +101,12 @@ reduced to its lower limit, and remained at that level for the generation of
 all subsequent level sets. This is not entirely unexpected, as sufficiently
 large curvature within a \emph{single} region of any given level set sufficed
 to lower the step length (compare \cref{eq:increase_dist,eq:decrease_dist}).
-Moreover, as the geodesic level sets continuously expand, encoutering such a
+Moreover, as the geodesic level sets continuously expand, encountering such a
 region becomes increasingly likely. As the accuracy of the computed mesh points
 is independent of the density of mesh points, the main use of the interset step
 size is to manage the interpolation error inherent to our linear triangulation
 scheme (see \cref{sec:continuously_reconstructing_three_dimensional_manifold%
-_surfaces_from_point_meshes}) \parencite{krauskopf2003computing}. Thus, it
+_surfaces_from_point_meshes} and \textcite{krauskopf2003computing}). Thus, it
 seems reasonable to forego the dynamic interset step length in favor of a
 fixed one, in cases where the minute details of LCS surfaces are unimportant.
 As tentatively suggested in the above, doing so reduces the overall complexity
@@ -120,7 +124,8 @@ manifold even when one or more point strands would reach the domain boundaries;
 this would also solve the possible issue of computed trajectories along any
 given strand failing to yield acceptable mesh points (see
 \cref{sub:handling_failures_to_compute_satisfactory_mesh_points_revised}) ---
-in which case only the strands in question need to be terminated.
+in which case only the strands in question need to be terminated, rather than
+prohibiting the addition of further geodesic level sets entirely.
 
 Aside from taking a step further away from the method of geodesic level set as
 originally proposed by \textcite{krauskopf2005survey}, organizing mesh
@@ -133,7 +138,7 @@ away from eachother (see \cref{sub:maintaining_mesh_point_density}). A
 reasonable approach for the case of point strands could be to, having
 identified two strands inbetween which a new mesh point is needed, retrieve
 their respective ancestor points in the innermost level set, and then compute
-(the trajectories of a) new point strand starting out at a point on
+(the trajectory of a) new point strand starting out at a point on
 $\mathcal{C}_{1}$, midway inbetween said ancestors, keeping only the first
 point along the strand which is required to maintain the point density.
 

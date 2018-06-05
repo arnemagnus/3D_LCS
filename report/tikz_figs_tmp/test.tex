@@ -8,7 +8,6 @@
 \usepackage[libertine]{newtxmath}
 \usepackage[]{bm}
 \usepackage[]{physics}
-\usepackage[]{xfrac}
 % Macros for greek letters in roman style, in math mode
 \DeclareRobustCommand{\mathup}[1]{%
 \begingroup\ensuremath\changegreek\mathrm{#1}\endgroup}
@@ -46,66 +45,96 @@
 }
 
 
-\tdplotsetmaincoords{60}{30}
+\tdplotsetmaincoords{70}{120}
 \begin{document}
 \begin{tikzpicture}[tdplot_main_coords]
-    \pgfmathsetmacro{\innerradius}{5}
-    \pgfmathsetmacro{\outerradius}{7.5}
+    \pgfmathsetmacro{\radius}{7}
     \pgfmathsetmacro{\size}{2.5}
-    \pgfmathsetmacro{\innerarclowerangle}{35}
-    \pgfmathsetmacro{\innerarcupperangle}{100}
-    \pgfmathsetmacro{\outerarclowerangle}{35}
-    \pgfmathsetmacro{\outerarcupperangle}{95}
-
-    % Place the set of initial points
-    % Innermost level set
-    \foreach [count=\i] \ang in {48,65,87}%
+%    % Place the set of initial points
+    \foreach [count = \i] \ang in {165,185,225,250,270,287.5}%
     {%
-        \draw[draw=black!80,fill=gray!20] ( {\innerradius*cos(\ang)}, {\innerradius*sin(\ang)}, 0 ) circle (\size pt) coordinate (i\i);
+        \coordinate (\i) at ( {\radius*cos(\ang-90)}, {\radius*sin(\ang-90)},{0} );
     }
-    % Outermost level set prior to insertion of new point
-    \foreach [count=\i] \ang in {47,64,92}%
+
+    % Place coordinates giving the circle of positions at which one aims
+    \coordinate (tp) at ({\radius*cos(140)},{\radius*sin(140)},1);
+    \coordinate (bt) at ({\radius*cos(140)},{\radius*sin(140)},-1);
+
+
+    % Define coordinates of half-plane $\mathcal{H}_{i,j}$
+    \coordinate (lu) at ($(3)!2!(tp)$);
+    \coordinate (ld) at ($(3)!2!(bt)$);
+    \coordinate (ru) at ($(lu)+7*({-0.866},{0.5},0)$);
+    \coordinate (rd) at ($(ld)+7*({-0.866},{0.5},0)$);
+    % Shade half-plane
+    \draw[fill=gray!30,draw opacity=0] (lu) -- (ld) -- (rd) -- (ru) -- cycle;
+    % Draw interpolation curve
+    \draw[stroke=black!80,thin,dotted] (70:\radius) arc (70:200:\radius);
+    % Draw $\vct{rho}_{i,j}$ at $x_{i,j}$
+    \path[draw,stroke=black!65,->,thick,dashdotted ] (3) to ($(3) + 5*({-0.866},{0.5},0)$) coordinate (rhoend);
+    \node[below left = 7.5pt and 35pt of rhoend,rotate=12.5] {$\vct{\rho}_{i,j}$};
+    \node[above left = 0pt and 0pt of rd] {$\mathcal{H}_{i,j}$};
+
+    % Define coordinates of pivot for attaching $\mathcal{C}_{i}$ label
+    \coordinate (mrk) at ({\radius*cos(195)},{\radius*sin(195)},0);
+    % Attach label
+    \coordinate [above = 10pt of mrk] (lbl);
+    \node at (lbl) {$\mathcal{C}_{i}$};
+    \draw[stroke=black!80] ($(mrk)!0.1!(lbl)$) to[in= 270,out=20] ($(mrk)!0.55!(lbl)$);
+
+    % Draw points in initial level set
+    \foreach \i in {1,2,3,4,5}%
     {%
-        \draw[draw=black!80,fill=gray!20] ( {\outerradius*cos(\ang)}, {\outerradius*sin(\ang)}, 0 ) circle (\size pt) coordinate (o\i);
+        \draw[fill=gray!10,stroke=black!65] (\i) circle (\size pt);
     }
-    \begin{scope}[on background layer]
-	    % Draw inner interpolation curve
-	    \draw[draw=black!80,thin,dotted] (\innerarclowerangle:\innerradius) arc (\innerarclowerangle:\innerarcupperangle:\innerradius);
-    \end{scope}
-    % Define start point for ghost trajectory
-    \draw[draw=gray!70,fill=gray!10] ( {\innerradius*cos(76)}, {\innerradius*sin(76)}, 0) circle (\size pt) coordinate (ghost);
-    % Define point for ghost trajectory
-    \draw[draw=black!80,fill=gray!20] ( {\outerradius*cos(78)}, {\outerradius*sin(78)}, 0) circle (\size pt) coordinate (new);
-
-    % Draw ghost trajectory
-    \path[draw=black!80,->] (ghost) to[out=30,in=-170] (new);
+    % Draw semicircle of radius $\Delta_{i}$, centered at $x_{i,j}$
+    \pic[densely dashed,draw,stroke=grey!80,angle radius=39] {angle = bt--3--tp};
 
 
-    % Place nodes of inner level set
-    \node[below left = 0pt and -5pt of i1] {\small $\mathcal{M}_{i,j-1}$};
-    \node[below left = 4pt and -9pt of i2] {\small $\mathcal{M}_{i,j}$};
-    \node[below left = -1pt and -10.5pt of ghost,color=gray!80] {\small $\mathcal{M}_{i,j+1/2}$};
-    \node[below left = -2.5pt and -5pt of i3] {\small $\mathcal{M}_{i,j+1}$};
 
-    % Place nodes of outer level set
-    \node[below left = 0pt and -5pt of o1] {\small $\mathcal{M}_{i+1,j-1}$};
-    \node[below left = 0pt and -5pt of o2] {\small $\mathcal{M}_{i+1,j}$};
-    \node[below right = 2.5pt and -20pt of new] {\small $\mathcal{M}_{i+1,j+1/2}$};
-    \node[below left = 0pt and -5pt of o3] {\small $\mathcal{M}_{i+1,j+1}$};
-
-    % Define helper coordinates to place label for the interpolation curve
-    \coordinate (crv) at ( {\innerradius*cos(97.5)}, {\innerradius*sin(97.5)},  0);
-    \node[above right = 2.5pt and 0pt of crv] (lbl) {\small $\mathcal{C}_{i}$};
-    \path[draw=black!80] ($(crv)!0.6!(lbl)$) to [out = -120, in = 30] ($(crv)!0.1!(lbl)$);
-
-    % Define helper coordinates to place bracket
-    \coordinate[above right = 3.5pt and 1.5pt of o3]  (b1);
-    \coordinate[above right = 3.5pt and 1.5pt of o2]  (b2);
-
-    % Draw bracket
-    \draw[decorate,decoration={brace,amplitude=2.5pt,raise=5pt},yshift=0pt] (b1) -- (b2) node [midway,above right = 20pt and -30pt,rotate=-24.25] {\small $\norm{\vct{x}_{i+1,j}-\vct{x}_{i+1,j+1}} > \Delta_{\max}$};
+    % Label ancestor point
+    \coordinate[below left = 0pt and 30pt of 3] (plbl);
+    \node at (plbl) {$\mathcal{M}_{i,j}$};
+    \draw[stroke=black!80] ($(plbl)!0.4!(3)$) to[out = 20, in = 160]
+        ($(plbl)!0.85!(3)$);
 
 
+    % Define aim point
+    \coordinate (aim) at ($(3) + 1.2*({-0.866},{0.5},0) + (0,0,0.75)$);
+
+    % Define support point in semicircle, to indicate radius
+    \coordinate (supp) at ($(3) + 1.57*({-0.866},{0.5},0)$);
+    % Draw semicircle to indicate angle offset of aim point
+    \pic[draw,stroke=gray!80,angle eccentricity = 1.7,angle radius=10] {angle =
+    supp--3--aim};
+    % Add text node to explain the angle
+    \node[below right = 10pt and -2.5pt of 3] (mrk) {$\alpha_{i,j}$};
+    % Add anchor for line from node to within angle
+    \coordinate (inang) at ($(3) + 0.25*({-0.866},{0.5},0) + (0,0,0.25)$);
+    \path[draw,stroke=black!80,thin] ($(mrk)!0.1!(inang)$) to [out = 60, in = -180+60] ($(mrk)!0.8!(inang)$);
+    % Draw vector from start point to aim point
+    \draw[stroke=black!65,thin,dashed] (3) -- (aim);
+    % Redraw start point
+    \draw[fill=gray!10,stroke=black!65] (3) circle (\size pt);
+    % Draw aim point
+    \draw[stroke=black!65,fill=gray!10] (aim) circle (\size pt);
+    \node[above right = 0pt and 0pt of aim]  {$\vct{x}_{\text{aim}}$};
+    % Suggest initial radius
+    \draw[decorate,decoration={brace,amplitude=5pt,raise=0pt},yshift=0pt]
+    ($(3)!1.46!(bt)$) -- (3)   node [midway,left=2pt] {\footnotesize{$\Delta_{i}$}};
+
+    % Draw some trajectories, the last of which manages to find aim point
+    \coordinate (p1i) at ($({\radius*cos(180)},{\radius*sin(180)},0)$);
+    \coordinate (p1f) at ($(3) + 2.8*({-0.866},{0.5},0) + (0,0,0.75)$);
+    \coordinate (p2i) at ($({\radius*cos(160)},{\radius*sin(160)},0)$);
+    \coordinate (p2f) at ($(3) + 1.1*({-0.866},{0.5},0) + 1.7*(0,0,0.75)$);
+    \coordinate (p3i) at ($({\radius*cos(140)},{\radius*sin(140)},0)$);
+    \coordinate (p3f) at ($(3) + 0.7*({-0.866},{0.5},0) + (0,0,0.75)$);
+    \coordinate (p4i) at ($({\radius*cos(125)},{\radius*sin(125)},0)$);
+    \path[draw,stroke=black!80,->] (p1i) to[out = 30, in = 150]  (p1f);
+    \path[draw,stroke=black!80,->] (p2i) to[out = 30, in = 140]  (p2f);
+    \path[draw,stroke=black!80,->] (p3i) to[out = 40, in = 30]  (p3f);
+    \path[draw,stroke=black!80,->] (p4i) to[out = 40, in = -70]  (aim);
 
 \end{tikzpicture}
 \end{document}

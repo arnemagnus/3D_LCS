@@ -14,10 +14,10 @@ mesh points --- rests on the assumption that
 is a continuous function of $\breve{s}$. To this end, we keep track of
 why each computed trajectory is terminated. In particular, we first note
 whether or not each trajectory, corresponding to a start point
-$\vct{x}(\breve{s})$ ends up at some point
+$\vct{x}(\breve{s})$, ends up at some point
 $\vct{x}_{\text{fin}}\in\mathcal{H}_{i,j}$. If this is the case, we also note
-whether the separation $\Delta(\breve{s})$ (defined in
-\cref{eq:faithful_endpoint_separation}) corresponding was an over- or
+whether the corresponding separation $\Delta(\breve{s})$ (defined in
+\cref{eq:faithful_endpoint_separation}) was an over- or
 undershoot with regards to the desired separation $\Delta_{i}$.
 
 Based on the premises outlined above, we then make use of the intermediate
@@ -44,14 +44,13 @@ $\Delta(\breve{s}) = \Delta_{i}$. However, when a subinterval of
 $\mathcal{C}_{i}$ is identified, within which the intermediate value theorem
 suggests that a trajectory may fulfill our requirements, we decrease the
 (quasi-)arclength increment $\delta\breve{s}$ in order to increase our odds of
-finding said trajectory. The increment $\delta\breve{s}$ was not allowed
-to decrease beyond a pre-set $\delta\breve{s}_{\text{min}}$, nor to increase
-beyond a pre-set $\delta\breve{s}_{\text{max}}$. The latter limitation was made
-in order to avoid bypassing subsets of $\mathcal{C}_{i}$ from which two
-or more trajectories satisfy $\Delta(\breve{s}) = \Delta_{i}$. Overstepping
-any region containing an even number of such intersections could render it
-undetectable using our intermediate value theorem-based approach, as no change
-in trajectory termination status need be detected.
+finding said trajectory. While the purpose of $\delta\breve{s}_{\min}$ was to
+manage resource requirements, $\delta\breve{s}_{\max}$ was used in order to
+avoid bypassing subsets of $\mathcal{C}_{i}$ from which two or more
+trajectories satisfy $\Delta(\breve{s}) = \Delta_{i}$. Overstepping a region
+containing an even number of such intersections could render it undetectable
+using our algorithm (see \cref{fig:s_update_flowchart}), as no change in
+trajectory termination status need be detected.
 
 The feedback received by tracking why each trajectory is terminated, allows
 us to dynamically select new trajectory start points along $\mathcal{C}_{i}$.

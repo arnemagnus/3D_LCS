@@ -41,33 +41,33 @@ maximizer. This would not, however, \emph{fully} solve the challenge of
 translating the concept of locality to numerics. Furthermore, there does not
 appear to be an unambiguous way of selecting the aforementioned family of
 planes --- a notion which is supported by \textcite{farazmand2012computing}
-failing to mention any details on the sets of lines (the two-dimensional
+failing to mention any details on the set of lines (the two-dimensional
 equivalent of the family of planes) they used for their applications. Lastly,
 as the intersection between any material surface and a plane generally forms a
 curve, rather than a unique intersection point, the process of identifying a
 material surface whose intersections with any given plane lie sufficiently
 close to those of any other material surface could easily become expensive in
 terms of computational resources.
-
-Another option, similar to the approach of \textcite{farazmand2012computing},
-would be to simply divide the computational domain into a set of smaller
-domains, identifying the computed surfaces which (partially) lie within each
-such region and then flagging the most strongly repelling surface within each
-subdomain as a local repulsion maximizer. Like the selection of planes in the
-aforementioned adaption of the method of \citeauthor{farazmand2012computing},
-however, there does not (to our knowledge) exist an objective way to select
-the size nor locations of these subdomains. Moreover, the approach of
-comparisons within smaller sets of the computational domain does not take the
-orientation of the material surfaces into account --- a weakness which is
-shared with the adaption of \citeauthor{farazmand2012computing}'s method.
-Conceptually, using direct comparisons of material surfaces in order to detect
-the surfaces which form local repulsion maxima should not involve comparing
-surfaces with disparate orientations. Neither should two surfaces for which
-only a small subset of one lies anywhere near the other; such material surfaces
-would likely influence the overall flow patterns quite differently. Highly
-optimized algorithms would likely be needed in order to check such extra
-comparison criteria without excess consumption of the available computational
-resources.
+\clearpage
+Another option, somewhat similar to the approach of
+\textcite{farazmand2012computing}, would be to simply divide the computational
+domain into a set of smaller domains, identifying the computed surfaces which
+(partially) lie within each such region and then flagging the most strongly
+repelling surface within each subdomain as a local repulsion maximizer. Like
+the selection of planes in the aforementioned adaption of the method of
+\citeauthor{farazmand2012computing}, however, there does not (to our knowledge)
+exist an objective way to select the size nor locations of these subdomains.
+Moreover, the approach of comparisons within smaller sets of the computational
+domain does not take the orientation of the material surfaces into account ---
+a weakness which is shared with the adaption of
+\citeauthor{farazmand2012computing}'s method. Conceptually, using direct
+comparisons of material surfaces in order to detect the surfaces which form
+local repulsion maxima should not involve comparing surfaces with disparate
+orientations. Neither should two surfaces for which only a small subset of one
+lies anywhere near the other; such material surfaces would likely influence the
+overall flow patterns quite differently. Highly optimized algorithms would
+likely be needed in order to check such extra comparison criteria without
+excess consumption of the available computational resources.
 
 To our knowledge, computing LCSs in three-dimensional flow has not been
 attempted particularly frequently, rendering us without reliable reference

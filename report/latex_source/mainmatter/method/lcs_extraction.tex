@@ -26,9 +26,9 @@ points of $\mathcal{M}$. Per
 the mesh point at the centre of any given manifold always satisfies
 all the LCS existence criteria; accordingly, it was added as the first mesh
 point $\mathcal{L}_{0}$ of the extracted LCS. Going through the list of
-the remanining mesh points $\mathcal{M}_{i,j}$ which satsified all LCS
-criteria, we added a manifold mesh point to the set of LCS points provided
-that
+the remanining mesh points $\mathcal{M}_{i,j}$ which satisfied all LCS
+criteria, clockwise around the level sets in the order they were added, we
+added a manifold mesh point to the set of LCS points provided that
 \begin{equation}
     \label{eq:lcs_from_manifold_separation_criterion}
     \norm{\vct{x}_{i,j}-\tilde{\vct{x}}_{\kappa}} < %
@@ -112,7 +112,7 @@ $\mathcal{L}$, and $\tilde{\vct{x}}_{k}$ denotes the coordinates of mesh
 point $\mathcal{L}_{k}$.
 
 To limit biasing from outlier mesh points (measured in terms of their
-$\lambda_{3}$ value) --- or, possibly, spurious interpolation artifacts --- in
+$\lambda_{3}$ value) --- due to spurious interpolation artifacts --- in
 the computed repulsion average, we alternately removed the least and most
 repulsive mesh points from the averaging process, as long as this altered the
 resulting repulsion average significantly. In particular, denoting the adjusted
@@ -134,8 +134,8 @@ This process was repeated until the removal of the least or most strongly
 repelling mesh points did not alter the resulting repulsion average enough to
 trigger condition~\eqref{eq:lcs_lm3_adjusted}.
 
-Any LCS for which the computed total weight
-$\mathcal{W}$ was smaller than some pre-set limit $\mathcal{W}_{\min}$ or
+Any LCS for which the computed total weight $\mathcal{W}$ (a measure of
+its surface area) was smaller than some pre-set limit $\mathcal{W}_{\min}$ or
 $\overline{\lambda}_{3} < 1$, the latter as a sanity
 check to ensure overall repulsion, per existence criterion
 \eqref{eq:lcs_condition_a}, were discarded. As an aside, note that this method
