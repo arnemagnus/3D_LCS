@@ -21,7 +21,7 @@ decomposition (as outlined in \cref{sec:computing_cauchy_green_strain%
 _eigenvalues_and_vectors}).
 
 Regarding the generation of manifolds, code profiling (unsurprisingly) revealed
-that the generation of new mesh points by computing (pseudo-)radial
+that the generation of new mesh points by computing (quasi-)radial
 trajectories orthogonal to the $\vct{\xi}_{3}$-direction field was a great
 source of time expenditure. Accordingly, we rewrote all numerical routines
 pertaining to the generation of new mesh points in Cython. In particular, we
@@ -44,9 +44,10 @@ of the computed manifolds to accelerate their computation by means of MPI
 parallelization across the Vilje cluster. We elected to make a one-to-one
 correspondence between the number of MPI threads and the number of manifolds to
 generate (as described in
-\cref{sub:identifying_suitable_initial_conditions_for_developing_lcss}),
-thus allowing each manifold to grow as large as possible before being stopped
-due to the one of the criteria imposed in \cref{sec:macroscale_stopping%
+\cref{sub:identifying_suitable_initial_conditions_for_developing_lcss}) such
+that each manifold was allotted as much working memory as possible,
+facilitating each manifold to grow as large as possible before being stopped
+due to the one of the criteria proposed in \cref{sec:macroscale_stopping%
 _criteria_for_the_expansion_of_computed_manifolds}. Compared to the advection
 of tracers, or the expansion of manifolds, the extraction of repelling LCSs as
 subsets of the computed manifolds (cf.\ \cref{sec:identifying_lcss_as_subsets%

@@ -25,7 +25,7 @@ ensuring that $20$ \% of all possible initial conditions along
 $\mathcal{C}_{i}$ were available for consideration.
 
 For computing trajectories whose initial conditions are given by
-\cref{eq:faithful_initialcondition_interval} and direction fields given by
+\cref{eq:faithful_initialcondition_interval}, and direction fields are given by
 \cref{eq:faithful_local_directionfield}, the Dormand-Prince 8(7) adaptive
 ODE solver (cf.\ \cref{tab:butcherdopri87,%
 sub:the_implementation_of_dynamic_runge_kutta_step_size}) was the method of
@@ -39,7 +39,7 @@ spending unreasonable computational resources on trajectories which for
 practical purposes never would result in acceptable, new mesh points, the
 total allowed integration arclength was limited by a scalar multiple
 $\gamma_{\text{arc}}$ of the initial separation
-$\norm{\vct{x}_{\text{init}}-\vct{x}_{\text{aim}}}$. In particular, this
+$\norm{\vct{x}_{\text{aim}}-\vct{x}_{\text{init}}}$. In particular, this
 limitation meant that trajectories which ended in stable orbits around
 $\vct{x}_{\text{aim}}$ were not allowed to keep going indefinitely.
 
@@ -48,7 +48,7 @@ located in the half-plane $\mathcal{H}_{i,j}$ at a distance
 $\Delta_{i}$ from $\vct{x}_{i,j}$, then the new mesh point
 $\mathcal{M}_{i+1,j}$ was placed at $\vct{x}_{\text{fin}}$. Numerically, these
 conditions were implemented by means of tolerance parameters, as comparing
-floating-point numbers for equivalence is prone to numerical round-off error.
+floating-point numbers for equality is prone to numerical round-off error.
 More precisely, a point $\vct{x}$ was said to lie within $\mathcal{H}_{i,j}$
 provided that
 \begin{equation}

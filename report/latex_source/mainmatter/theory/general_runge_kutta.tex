@@ -8,7 +8,8 @@ like~\eqref{eq:ivpsystem}. The German mathematicians C. Runge and M.W. Kutta
 developed the first of the family's methods at the turn of the twentieth
 century~\parencite[p.134]{hairer1993solving}. The general outline of what
 is now known as a Runge-Kutta method is as follows:
-\clearpage
+%\clearpage
+
 \begin{defn}[Runge-Kutta methods]
     \label{def:runge_kutta_methods}
     Let $s$ be an integer and $\{a_{i,j}\}_{i,j=1}^{s}$, %_{\substack{i=1\\j=1}}^{s}$,
@@ -146,17 +147,17 @@ Runge-Kutta methods to compute Lagrangian coherent structures
 (which will be elaborated upon in
 \cref{sec:definition_of_lagrangian_coherent_structures_for_three_dimensional%
 _flows}) consistently yields accurate solutions at lower computational cost
-than the most common fixed stepsize methods. Accordingly, the Dormand-Prince
+than the most common fixed step size methods. Accordingly, the Dormand-Prince
 8(7) method --- consisting of an eighth order solution with a seventh order
 interpolant --- was chosen as the single, multipurpose, numerical ODE solver
 for this project.
 
 Note that the concept of \emph{order} is less well-defined for embedded
-methods than for fixed stepsize methods, as a direct consequence of the
+methods than for fixed step size methods, as a direct consequence of the
 adaptive time step. Although the \emph{local} errors of each integration
 step scale as per~\cref{eq:rungekuttaorder}, the bound on the \emph{global}
 (i.e.,\ observable) error suggested in~\cref{eq:globalrungekuttaerrorestimate}
-is invalid, as the time step is, in principle, different for each integration
+is invalid, as the time step is, in general, different for each integration
 step.
 
 Butcher tableau representations of the classical \nth{4}-order Runge-Kutta

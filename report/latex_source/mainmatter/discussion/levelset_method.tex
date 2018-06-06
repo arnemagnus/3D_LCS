@@ -47,9 +47,9 @@ be traced back to a single, common ancestor) is terminated --- either due to
 reaching the domain edges, or failure to compute a new mesh point (see
 \cref{sub:handling_failures_to_compute_satisfactory_mesh_points_revised}) ---
 so too is the addition of further level sets. Thus, unless the manifold as a
-whole expands as a perfect topological surface area, as seen from the focal
+whole expands as a perfectly planar, circular surface, as seen from the focal
 point $\vct{x}_{0}$, encapsulating it in its entirety by means of geodesic
-level sets becomes impossible --- even when not accounting for the possibility
+level sets becomes impossible --- even when ignoring the possibility
 of numerical error.
 
 As mentioned in \cref{sec:revised_approach_to_computing_new_mesh_points}, we
@@ -62,7 +62,7 @@ the interpolation curves. This rendered selecting how far to either side of a
 given mesh point to move, in order to approximate the local tangent vector by a
 finite coordinate difference, hard to do in a consistent manner. Simply using
 the coordinates of the mesh point's nearest neighbors (as originaly suggested
-by \textcite{krauskopf2005survey}) for this purpose was found to be
+by \textcite{krauskopf2005survey}) for this purpose was also found to be
 inconsistent. Failure to compute tangent vectors consistently often lead
 neighboring point strands to form intersections, yielding disorderly meshes
 which in turn frequently lead the points constituting a level set to
@@ -84,7 +84,7 @@ parameters, mainly those governing the minimum and maximum allowed separations
 between neighboring mesh points (see
 \cref{sub:maintaining_mesh_point_density}), could reasonably be chosen based on
 considerations pertaining to the spatial extent of the computational domain;
-alternatively, to what extent the minute details of the LCSs are to be
+alternatively, to what extent the small-scale details of the LCSs are to be
 resolved. How to determine several other undeniably key parameter values ---
 such as the tolerances  for the detection of intersecting manifolds (see
 \cref{sec:macroscale_stopping_criteria_for_the_expansion_of_computed%
@@ -117,7 +117,7 @@ Another way of organizing the mesh points, which could circumvent some of the
 aforementioned limitations of the present approach, would be as a group of
 point strands, each associated with a particular unit tangent $\vct{t}$ ---
 determined using $\mathcal{C}_{1}$, the interpolation curve of the innermost
-level set, in similar fashion to that described in
+level set, in similar fashion to that which is described in
 \cref{sub:parametrizing_the_innermost_level_set}. Treating the expansion along
 each point strand independently would then permit further expansion of a
 manifold even when one or more point strands would reach the domain boundaries;
@@ -134,7 +134,7 @@ accuracy management method outlined in \cref{sec:managing_mesh_accuracy}
 further. In particular, the present approach utilizes the interpolation curve
 $\mathcal{C}_{i}$ in order to insert mesh points inbetween nearest neighbor
 mesh points in level set $\mathcal{M}_{i+1}$ which are deemed to lie too far
-away from eachother (see \cref{sub:maintaining_mesh_point_density}). A
+away from each other (see \cref{sub:maintaining_mesh_point_density}). A
 reasonable approach for the case of point strands could be to, having
 identified two strands inbetween which a new mesh point is needed, retrieve
 their respective ancestor points in the innermost level set, and then compute

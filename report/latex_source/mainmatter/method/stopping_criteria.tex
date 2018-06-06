@@ -1,3 +1,4 @@
+\clearpage
 \section[Macroscale stopping criteria for the expansion of computed manifolds]
 {Macroscale stopping criteria for the expansion of \\\phantom{3.10} computed
 manifolds}
@@ -8,11 +9,11 @@ In principle, the process of developing manifold approximations by adding more
 and more mesh points, organized in geodesic level sets, would continue as long
 as the overall mesh quality was conserved (cf.\
 \cref{sec:managing_mesh_accuracy}). The enforced (pseudo-)uniform expansion
-radially outwards, inherent to our take on the method of geodesic level sets,
-would then yield a mesh providing a conservative estimate of the size of the
-\emph{actual} manifold, as there is no particular reason to expect the manifold
-to appear homogeneous, when viewed from the epicentre of the computed level
-sets (i.e.\ the initial position $\vct{x}_{0}$, cf.\
+(quasi-)radially outwards, inherent to our take on the method of geodesic level
+sets, would then yield a mesh providing a conservative estimate of the extent
+of the \emph{actual} manifold, as there is no particular reason to expect the
+manifold to appear homogeneous, when viewed from the epicentre of the computed
+level sets (i.e.\ the initial position $\vct{x}_{0}$, cf.\
 \cref{sub:identifying_suitable_initial_conditions_for_developing_lcss}). With
 reasonable parameter choices, we became able to generate large manifolds quite
 quickly. This lead us to enforce two additional types of stopping criteria,
@@ -28,10 +29,12 @@ are defined in order to compute mesh points on or near the domain
 boundaries. Thus, in order to resolve the behaviour of manifolds near the
 edges of the domain of interest, the aforementioned strain characteristics
 need to be computed in a region which \emph{contains} the domain of interest,
-expanding beyond it in all directions. For perfectly periodic flow systems,
-such as (either variant of) the ABC flow --- described in
-\cref{sec:flow_systems_defined_by_analytical_velocity_fields} --- this reduces
-to the trivial exercise of utilizing the inherent periodicity (that is,
+expanding beyond it in all directions. This is how we treated the case of tidal
+flow in the Førde fjord (as outlined in
+\cref{sec:flow_systems_defined_by_gridded_velocity_data}). For perfectly
+periodic flow systems, such as (either variant of) the ABC flow --- described
+in \cref{sec:flow_systems_defined_by_analytical_velocity_fields} --- this
+reduces to the trivial exercise of utilizing the inherent periodicity (that is,
 provided that the computational domain is sufficiently large to encompass at
 least one cycle along each direction).
 
@@ -43,7 +46,7 @@ uniquely defined direction of strongest repulsion everywhere along a repelling
 LCS. Furthermore, our method of expanding manifolds by adding mesh points
 organized in geodesic level sets (cf.\
 \cref{sec:revised_approach_to_computing_new_mesh_points}) is based on
-continuous expansions (pseudo-)radially outwards from the manifold centre.
+continuous expansions (quasi-)radially outwards from the manifold centre.
 Accordingly, the intersection of any manifold with itself was interpreted as
 a nonphysical artefact of accumulated numerical error. For that reason, we
 sought to terminate the expansion of a manifold when self-intersections
@@ -64,6 +67,7 @@ triangle-intersection detection algorithm is available in
 \cref{fig:intersection_flowchart}.
 
 \input{mainmatter/method/figures/intersection_algrthm_flowchart}
+\input{mainmatter/method/figures/moller_trumbore_specialcases}
 
 Some cases of intersecting triangles warrant special treatment. In particular,
 as our triangulation method (outlined in
@@ -83,8 +87,6 @@ aforementioned special cases --- that is, two triangles sharing an edge, and
 two triangles intersecting in exactly two points laying along the edges of both
 triangles --- are shown in \cref{fig:mollertrumbore_specialcases}.
 
-\input{mainmatter/method/figures/moller_trumbore_specialcases}
-\clearpage
 Initial tests revealed that some self-intersections were quite innocuous, in
 that, if the computed manifold was expanded by an additional level set,
 the newly added triangulations need not necessarily intersect with any of the

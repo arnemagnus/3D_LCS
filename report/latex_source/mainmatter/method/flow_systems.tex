@@ -44,7 +44,7 @@ mathematically as
         C\sin(y) + B\cos(x)
     \end{pmatrix},
 \end{equation}
-where $A$, $B$ and $C$ are parameters which dictate the nature of the flow
+where $A$, $B$, and $C$ are parameters which dictate the nature of the flow
 pattern. The inherent periodicity with regards to the Cartesian axes naturally
 leads to a domain of interest $\mathcal{U} = [0,2\pi]^{3}$, with
 periodic boundary conditions imposed in $x$, $y$ and $z$.
@@ -52,7 +52,7 @@ periodic boundary conditions imposed in $x$, $y$ and $z$.
 Here, the parameter values
 \begin{equation}
     \label{eq:abc_params_stationary}
-    A = \sqrt{3},\quad B = \sqrt{2},\quad C = 1
+    A = \sqrt{3},\quad B = \sqrt{2},\quad C = 1,
 \end{equation}
 were used, as has been common in litterature (e.g.\ by
 \textcite{oettinger2016autonomous}); these values are known to result in
@@ -71,7 +71,7 @@ modification of the ABC flow (\cref{eq:abc_flow}) was made by the replacements
     C\to{}\widetilde{C}(t) = C + C\cdot{}k_{0}\tanh(k_{1}t)\sin({({k_{3}t})}^{2}),
     \end{gathered}
 \end{equation}
-with $A$, $B$ and $C$ given by \cref{eq:abc_params_stationary}, where the
+with $A$, $B$, and $C$ given by \cref{eq:abc_params_stationary}, where the
 parameters values
 \begin{equation}
     \label{eq:abc_params_nonstationary_frequencies}
@@ -94,7 +94,7 @@ illustrated in \cref{fig:abc_timedep_coeff}.
 
 As suggested in \cref{sub:spline_interpolation_of_discrete_data}, most kinds of
 computational science pertaining to the simulation of natural phenomena rely on
-some physical model for the generation of data which can then be used to
+some physical model for the generation of data, which can then be used to
 predict future states by solving appropriate differential equations. In order
 to demonstrate the applicability of Lagrangian analysis to real-life systems,
 we thus considered particle transport by oceanic currents in the Førde fjord.
@@ -127,7 +127,7 @@ into the fjord, emphasizing the potentially severe negative consequences
 for marine life \parencite{haugan2015sjodeponi}. Not only is the surrounding
 area a significant spawning ground for cod, there is always a possibility of
 particles being transported by the water currents such that they contaminate
-the outer edges of the fjord, or even into the ocean. Accordingly, the use of
+the outer edges of the fjord, or even the ocean. Accordingly, the use of
 LCSs in order to predict possible flow patterns for contaminants resulting from
 the deposit of mine tailings would be of great environmental interest.
 
@@ -137,7 +137,7 @@ Fisheries and Aquaculture, based on the SINMOD oceanic model
 \parencite{slagstad2005modeling}. The data set considered here contains velocity
 data for the time period between June 1 2013, 00:00 and June 2 2013, 23:40,
 sampled in intervals of 20 minutes, with a horizontal resolution of
-of approximately $50\,\si{\meter}$ and vertical resolution varying from
+of approximately $50\,\si{\meter}$ and a vertical resolution varying from
 $25\,\si{\meter}$ in the fjord depths, to $1\,\si{\meter}$ near the surface.
 For our simulations, the time interval of interest was the 12 hour time window
 between 00:00 and 12:00 on June 1 2013 --- practically ensuring the
@@ -168,9 +168,9 @@ quadrivariate function of time and the three spatial coordinates.
 Several multidimensional B-spline interpolation libraries are publically
 available under open source licensing. For this project, we elected to use
 the Bspline-Fortran library, partly motivated by its extensive documentation
-\parencite{williams2018bspline}. In particular, we made use of the
+\parencite{williams2018bspline}. In particular, we made use of its
 \texttt{bspline\_4d} derived type, which we, along with a subset of its
-type-bound procedures, made available in C making use of the Fortran standard
+type-bound procedures, made available in C by means of the Fortran standard
 interoperability with C-languages --- that is, the \texttt{iso\_c\_binding}
 module, which is shipped with most modern Fortran compilers. From there,
 we wrote a thin wrapper class in C++, which was exposed to Python via Cython.
@@ -178,7 +178,7 @@ we wrote a thin wrapper class in C++, which was exposed to Python via Cython.
 The choice of Python as our main programming language was made partly due to
 its relatively low development costs, in addition to its beneficial properties
 as a ``glue language'' --- as examplified by the above --- and the ease of
-parallelization by means of e.g. MPI (the use of which will be outlined in
+parallelization by means of e.g.\ MPI (the use of which will be outlined in
 greater detail in
 \cref{sec:making_the_most_of_the_available_computational_resources}).
 Moreover, by utilizing Fortran's reference-based subroutine call structure, in

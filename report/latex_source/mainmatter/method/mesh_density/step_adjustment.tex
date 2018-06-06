@@ -18,10 +18,12 @@ finer details of the growing manifolds.
 Specifically, once all mesh points which constitute a geodesic level set
 $\mathcal{M}_{i+1}$ have been identified, all a distance $\Delta_{i}$ away from
 their direct ancestor points in the previous level set $\mathcal{M}_{i}$, we
-computed the angular offsets $\alpha_{i,j}$ of each pair of guidance vectors
-$\vct{\rho}_{i,j}$ and $\vct{\rho}_{i+1,j}$ (as defined in
+computed the angular offsets $\alpha_{i,j}$ between each pair of guidance
+vectors $\vct{\rho}_{i,j}$ and $\vct{\rho}_{i+1,j}$ (as defined in
 \cref{eq:innermost_prevvec,eq:general_prevvec}). This is sketched in
-\cref{fig:angular_adjustment}. If
+\cref{fig:angular_adjustment}.  Note, however, that angular offsets for mesh
+points computed from ficticious ancestors in order to maintain the mesh point
+density (see \cref{sub:maintaining_mesh_point_density}), were not computed. If
 \begin{equation}
     \label{eq:decrease_dist}
     \alpha_{i,j} > \alpha_{\downarrow} \quad \text{or} \quad %
@@ -50,7 +52,7 @@ $\alpha_{\downarrow}$, $\alpha_{\uparrow}$, $(\Delta\alpha)_{\downarrow}$ and
 $(\Delta\alpha)_{\uparrow}$ determine the mesh adaption along point strands.
 The bounds for the offsets $\{\Delta_{i}\cdot\alpha_{i,j}\}$ enforce stricter
 requirements on angular offsets for large interstep lengths. Conversely, level
-sets computed using small interset lenghts are generally allowed to exhibit
+sets computed using small interset lengths are generally allowed to exhibit
 (comparatively) larger angular offsets. In our experience, the interset step
 lengths were rarely \emph{increased}  --- typically, there would be one or more
 subsets of the mesh points constituting any given level set which underwent

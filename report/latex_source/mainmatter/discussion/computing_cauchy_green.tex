@@ -40,18 +40,18 @@ and~\eqref{eq:lcs_condition_d} --- in the transport system governed by
 \cref{eq:spherical_velocity_field} were sufficiently close to the strongly
 repulsive unit sphere (see \cref{sub:an_analytical_lcs_test_case,%
 fig:spherical_lcs}). To our knowledge, there is no way to determine
-\emph{a priori} what density of tracers will suffice for any flow system. Thus,
-even though educated guesses based on the scale at which one is interested in
-the microscopic behaviour in the system might be prudent, we recommend to use
-as fine a grid of tracers as possible, within the constraints set by the
-available computational resources.
+\emph{a priori} what density of tracers will suffice for any given flow system.
+Thus, even though educated guesses based on the scale at which one is
+interested in the microscopic behaviour in the system might be prudent, we
+recommend to use as fine a grid of tracers as possible, within the constraints
+set by the available computational resources.
 
 As mentioned in \cref{sec:flow_systems_defined_by_gridded_velocity_data}, we
 interpolated the model velocity field using quadrivariate, cubic B-splines ---
-that is, cubic interpolation in time and all spatial directions. This involved
-us having to keep the model data pertaining to the region of interest (that is,
-the model data for a domain expanding beyond said region in all directions, in
-order to resolve the behaviour near the boundaries, cf.\
+that is, cubic spline interpolation in time and all spatial directions. This
+involved us having to keep the model data pertaining to the region of interest
+(that is, the model data for a domain expanding beyond said region in all
+directions, in order to resolve the behaviour near the boundaries, cf.\
 \cref{sec:macroscale_stopping_criteria_for_the_expansion_of_computed%
 _manifolds}) for the entirety of the considered time interval. Because of our
 data set's disparate resolution in the horizontal and vertical directions
@@ -66,7 +66,7 @@ Should memory consumption be an issue for a discrete dataset, it is possible
 to forego temporal interpolation entirely (provided that the sampling rate
 is adequate), and instead opt for trivariate interpolation in space, generating
 an interpolation object for each time instance. This renders the use of
-ODE solvers of adaptive stepsize --- like the Dormand-Prince 8(7) method we
+ODE solvers with adaptive step size --- like the Dormand-Prince 8(7) method we
 wound up choosing (more on that to follow in
 \cref{sec:regarding_our_choice_of_numerical_ode_solver}) --- moot, as the
 solution time steps would then have to coincide with the time levels of the

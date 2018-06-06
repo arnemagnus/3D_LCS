@@ -22,12 +22,16 @@ define as
     extended phase space $\mathcal{U}\times\mathcal{I}$, called a
     \emph{material surface}.
 \end{defn}
-In the following, the entire material surface will be referred to by the
-notation $\mathcal{M}(t)$. Although no material surfaces can be crossed by
-tracers, only special material surfaces create coherence in the phase space
-$\mathcal{U}$ and thus act as observable transport barriers. Such material
-surfaces are generally referred to as \emph{Lagrangian coherent structures}
-(henceforth abbreviated to LCSs).
+From here on, the entire material surface will be referred to by the
+notation $\mathcal{M}(t)$. In the extended phase space
+$\mathcal{U}\times\mathcal{I}$, the dynamical system governed by
+\cref{eq:advected_materialsurface} is autonomous. In autonomous systems,
+different trajectories never intersect; thus, no material surfaces can be
+crossed by tracers \parencite[p.150]{strogatz2014nonlinear}. However, only
+special material surfaces create coherence in the phase space $\mathcal{U}$ and
+thus act as observable transport barriers. Such material surfaces are generally
+referred to as \emph{Lagrangian coherent structures} (henceforth abbreviated to
+LCSs).
 
 Subsequently, LCSs can be described as time-evolving surfaces which shape
 coherent trajectory patterns in dynamical systems, defined over a finite time
@@ -91,7 +95,7 @@ surface, rather than being stretched along with it due to shear stress.
 
 Note that the above definitions associate LCSs with the time interval
 $\mathcal{I}$ over which the dynamical system under consideration is known, or,
-at the very least, where information regarding the behaviour of tracers, is
+at the very least, where information regarding the behaviour of tracers is
 sought. Generally, LCSs obtained over a time interval $\mathcal{I}$ do not
 necessarily exist over different time intervals
 \parencite{farazmand2012computing}.
@@ -153,16 +157,16 @@ which, for our three-dimensional flow, reduces to
 \endgroup
 
 Condition~\eqref{eq:lcs_condition_a} ensures that the normal repulsion rate is
-larger than the tangential stretch due to shear strain along the LCS, in
-accordance with \cref{def:normal_repellence}. Conditions%
-~\eqref{eq:lcs_condition_c} and~\eqref{eq:lcs_condition_d} suffice to enforce
+larger than the tangential stretch arising due to shear strain along the LCS,
+in accordance with \cref{def:normal_repellence}. Conditions
+\eqref{eq:lcs_condition_c} and~\eqref{eq:lcs_condition_d} suffice to enforce
 that the normal repulsion rate attains a local extremum along the LCS, relative
 to all nearby material surfaces. Lastly, condition~\eqref{eq:lcs_condition_b}
 ensures that this is a strict local maximum.
 
 From condition~\eqref{eq:lcs_condition_c} and the orthormality of the
 Cauchy-Green strain eigenvectors (cf.\ \cref{eq:cauchygreen_characteristics}),
-it follows that any initial (that is, time-$t_{0}$) image of LCS surface is
+it follows that any initial (that is, time-$t_{0}$) image of an LCS surface is
 everywhere tangent to the planes locally spanned by $\vct{\xi}_{1}(\vct{x}_{0})$
 and $\vct{\xi}_{2}(\vct{x}_{0})$. Thus, an integral curve of any (normalized)
 linear combination of the $\vct{\xi}_{1}$- and $\vct{\xi}_{2}$-direction
@@ -176,7 +180,7 @@ will never leave $\mathcal{M}(t_{0})$. Hence:
     dynamical system
     \begin{equation}
         \label{eq:dynamialsystem_initialposition}
-        \vct{x}^{\prime} = a\vct{\xi}_{1}(\vct{x})+b\vct{\xi}_{2}(\vct{x}),%
+        \dot{\vct{x}} = a\vct{\xi}_{1}(\vct{x})+b\vct{\xi}_{2}(\vct{x}),%
         \quad a^{2}+b^{2}=1.
     \end{equation}
 \end{rmrk}

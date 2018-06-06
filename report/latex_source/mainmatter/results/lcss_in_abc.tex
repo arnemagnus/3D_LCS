@@ -16,23 +16,21 @@ respectively.
 
 \input{mainmatter/results/figures/indep-abd.tex}
 
-\input{mainmatter/results/figures/dep-abd.tex}
-
 Note that although the $\mathcal{U}_{0}$ domains for the two
 flow variants do not contain the same number of points (cf.\
 \cref{tab:initialconditionparams}), the macroscopic trends remain the same. The
-difference lies in minute details, such as the topmost cavities in
+differences consist of minute details, such as the topmost cavities in
 \cref{fig:steady_abd_z,fig:unsteady_abd_z} being of slightly different sizes,
 or the point densities along the north east ``bands'' in
 \cref{fig:steady_abd_y,fig:unsteady_abd_y} being somewhat dissimilar. This is
 as expected, seeing as the two underlying transport systems are lightly
 perturbed versions of one another.
 
-Using the filtering parameters provided in \cref{tab:gridparams}, we identified
-initial conditions for the development of manifolds as a subsets of the
-$\mathcal{U}_{0}$ domains --- yielding a total of \numprint{618} and
+Using the filtering parameters provided in \cref{tab:initialconditionparams},
+we identified initial conditions for the development of manifolds as a subsets
+of the $\mathcal{U}_{0}$ domains --- yielding a total of \numprint{618} and
 \numprint{676} points for the steady and unsteady variants of the ABC flow,
-respectively.  Then, we computed manifolds and extracted LCSs using the
+respectively. Then, we computed manifolds and extracted LCSs using the
 parameters in \cref{tab:initialconditionparams,%
 tab:abc_manifold_params} and the method outlined in \cref{sec:preliminaries%
 _for_computing_repelling_lcss_in_3d_flow_by_means_of_geodesic_level_sets,%
@@ -44,10 +42,9 @@ _for_computing_repelling_lcss_in_3d_flow_by_means_of_geodesic_level_sets,%
     sec:identifying_lcss_as_subsets_of_computed_manifolds}. This resulted
 in a total of \numprint{22} LCS surfaces for the steady flow, and
 \numprint{31} surfaces for the unsteady flow.
-
-\input{mainmatter/results/tables/abc_params}
-
-The LCSs present in the steady flow turn out to form two distinct,
+\clearpage
+\input{mainmatter/results/figures/dep-abd.tex}
+The LCSs present in the steady flow turn out to form two distinct, fairly
 smooth and coherent structures, which are shown in \cref{fig:steady_lcss}.
 Completely analogous tests to that which is outlined in
 \cref{sub:verifying_that_the_computed_lcss_are_in_fact_repelling} verify that
@@ -63,11 +60,9 @@ apparent in the middle right of \cref{fig:steady_abd_y,fig:steady_lcss_y}, and
 the indent which manifests near the bottom right corner of
 \cref{fig:steady_abd_x,fig:steady_lcss_x}.
 
-\input{mainmatter/results/figures/indep-lcss.tex}
-
 The computed LCSs in the unsteady flow constitute three distinct, smooth and
 coherent structures, which are shown in \cref{fig:unsteady_lcss}. Although
-the structures lie adjacent to eachother, they do not seem to be connected.
+the structures lie adjacent to each other, they do not seem to be connected.
 Thus, the different structures are indicated using disparate colors, yet
 again to facilitate visual comparisons. Just like for the LCSs in the steady
 flow, the computed LCSs strongly resemble subsets of the $\mathcal{U}_{0}$,
@@ -82,5 +77,7 @@ tubular structures manifesting in the middle right of
 \cref{fig:unsteady_abd_y,fig:unsteady_lcss_y}, and the middle top of
 \cref{fig:unsteady_abd_x,fig:unsteady_lcss_x}.
 
+\input{mainmatter/results/figures/indep-lcss.tex}
 \input{mainmatter/results/figures/dep-lcss.tex}
+\input{mainmatter/results/tables/abc_params}
 

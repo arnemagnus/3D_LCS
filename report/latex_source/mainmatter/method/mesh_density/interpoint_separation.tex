@@ -18,8 +18,8 @@ we then inspected all of the distances separating nearest neighbors.
 Specifically, if any of the separations between nearest neighbors exceeded
 $\Delta_{\max}$, we sought to insert a new mesh point between them. That is, if
 $\norm{\vct{x}_{i+1,j}-\vct{x}_{i+1,j+1}}>\Delta_{\max}$, a new mesh point
-$\mathcal{M}_{i+1,j+1/2}$ was computed, using the method described
-in \cref{sec:revised_approach_to_computing_new_mesh_points} by launching a
+$\mathcal{M}_{i+1,j+1/2}$ was computed using the method described
+in \cref{sec:revised_approach_to_computing_new_mesh_points}, by launching a
 trajectory starting from a ficticious ancestor point
 $\mathcal{M}_{i,j+1/2}$, located midway inbetween $\mathcal{M}_{i,j}$
 and $\mathcal{M}_{i,j+1}$ along the interpolation curve $\mathcal{C}_{i}$. As
@@ -28,10 +28,10 @@ a direct ancestor from which to inherit a unit tangent,
 $\vct{t}_{i,j+1/2}$ was instead constructed by normalizing the
 arithmetic average of $\vct{t}_{i,j}$ and $\vct{t}_{i,j+1}$, and passed
 on to $\mathcal{M}_{i,j+1/2}$. The ficticious mesh point's guidance
-vector $\vct{\rho}_{i,j+1/2}$ was constructed in similar fashion ---
-its role in the dynamic update of the interset separation $\Delta_{i}$ will
+vector $\vct{\rho}_{i,j+1/2}$ was constructed in similar fashion (the guidance
+vectors' role in the dynamic update of the interset separation $\Delta_{i}$ will
 be described in detail in
-\cref{sub:a_curvature_based_approach_to_determining_interset_separations}.
+\cref{sub:a_curvature_based_approach_to_determining_interset_separations}).
 This way, the interpolation error is limited; no new mesh points are generated
 using interpolations (in intermediary computations) over intervals of length
 exceeding $\Delta_{\max}$.

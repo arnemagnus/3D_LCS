@@ -6,11 +6,11 @@ meshes in 3D}
 _from_point_meshes}
 
 While expanding the point mesh parametrization of a manifold $\mathcal{M}$
-in bundles constituting geodesic level sets, we attempt to reproduce its
-fully three-dimensional structure by simultaneously interpolating inbetween the
-mesh points. Our main objective for representing manifolds as continuous
-interpolation objects is visual representation (in addition to the detection
-of self-intersections, as will be outlined in
+in bundles of mesh points constituting geodesic level sets, we attempted to
+reproduce its fully three-dimensional structure by simultaneously interpolating
+inbetween the mesh points. Our main objective for representing manifolds as
+continuous interpolation objects is visual representation (in addition to the
+detection of self-intersections, as will be outlined in
 \cref{sub:continuous_self_intersection_checks}) --- accordingly, we do not
 provide any form of analytical expression for $\mathcal{M}$'s surface.
 Moreover, as high order interpolation schemes are complicated considerably by
@@ -34,7 +34,7 @@ computed manifolds.
 
 We begin by fixing a traversion direction, specifying the order in which
 the triangles are created. Starting with the innermost level set, we then
-specify the sets of vertices for a set of triangles which together cover the
+specify the vertices for a set of triangles which together cover the
 (approximate) surface between the manifold epicentre $\vct{x}_{0}$
 and $\mathcal{C}_{1}$ (see \cref{fig:innermost_levelset}). When a new geodesic
 level set $\mathcal{M}_{i+1}$ satisfies the accuracy constraints outlined in
@@ -64,10 +64,11 @@ The cases not involving a one-to-one correspondence between the mesh points in
 $\mathcal{M}_{i}$ and $\mathcal{M}_{i+1}$ require special attention. This
 occurs whenever mesh points are inserted by making use of ficticious ancestors,
 or when mesh points are removed, in order to maintain the mesh point density
-(cf.\ \cref{sub:maintaining_mesh_point_density}) --- or, when removing unwanted
-bulges in order to dampen the effects of compound numerical noise
-(as described in \cref{sub:limiting_the_accumulation_of_numerical_noise}).
-The treatment of these special cases is shown in
+(cf.\ \cref{sub:maintaining_mesh_point_density}) --- alternatively, when
+removing unwanted bulges in order to dampen the effects of compound numerical
+noise (as described in
+\cref{sub:limiting_the_accumulation_of_numerical_noise}). The treatment of
+these special cases is shown in
 \cref{fig:triangulation_pointinserted,fig:triangulation_pointremoved}, and will
 be outlined in greater detail in the upcoming paragraph. In particular, note
 how all of $\mathcal{M}_{i,j}$'s nearest neighbors in the surrounding level set

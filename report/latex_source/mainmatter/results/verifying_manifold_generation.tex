@@ -117,7 +117,7 @@ used in order to approximate the sinusoidal surface (see
 \cref{tab:sinusoidal_manifold_params,fig:sinusoidal_manifolds}). From
 \cref{fig:abc_manifold_convergence}, it is apparent that increasing the mesh
 point density generally results in increased resolution. However, there appears
-to be some density threshold, beneath which unwanted numerical artifacts
+to be some density threshold, beneath which unwanted numerical artefacts
 start to emerge. This is particularly evident in
 \cref{fig:abc_manifold_minsep=0.01}, where the sharp indentation appears to be
 out of place. Such oddities could be due to accumulation of numerical
@@ -127,10 +127,11 @@ occurs more often with increased mesh point density. Accordingly, our
 choice of mesh point density for (both variants of) the ABC flow (which will be
 presented in \cref{tab:abc_manifold_params}) was guided by a desire to limit
 the amount of such oddities, in addition to the memory required in order to
-store each manifold (as described in
+store each manifold (as mentioned in
 \cref{sub:an_analytical_manifold_test_case}).
 
 \input{mainmatter/results/figures/convergence.tex}
+\input{mainmatter/results/figures/verification.tex}
 
 Motivated by \cref{rmk:invariance_lcs}, we sought to verify that our computed
 manifolds, by virtue of containing repelling LCSs, act as invariant manifolds
@@ -155,9 +156,7 @@ weights $(a,b)$ such that the initial trajectory directions were evenly
 distributed in the plane defined by the coordinate $\vct{x}_{0}$ and
 the unit normal $\vct{\xi}_{3}(\vct{x}_{0})$.
 
-\input{mainmatter/results/figures/verification.tex}
-
-Unsurprisingly, the  curves in \cref{fig:verification_forced_outwards} all lie
+Unsurprisingly, the curves in \cref{fig:verification_forced_outwards} all stay
 within the computed manifold, as all of its constituent mesh points were
 computed as endpoints of trajectories in a similarly defined direction field
 (see \cref{sec:revised_approach_to_computing_new_mesh_points}). The same
@@ -169,5 +168,5 @@ weights $(a,b)$ are required to reach them. Regardless, none of the computed
 trajectories ever leave the computed surface, which confirms that the surface
 \emph{is} in fact an invariant manifold of the $\vct{\xi}_{1}$- and
 $\vct{\xi}_{2}$-direction fields, in compliance with LCS existence criterion~%
-\eqref{eq:lcs_condition_c}.
+\eqref{eq:lcs_condition_c} (see also \cref{rmk:invariance_lcs}).
 

@@ -73,23 +73,25 @@ extraction routine functions as intended.
 
 Per \cref{def:normal_repellence,def:repelling_lcs}, we expect lumps of
 particles which start out at opposite sides of a repelling LCS to quickly
-diverge under the advection of the underlying flow system. Moreover, courtesy
-of being material surfaces, no particle may ever cross a repelling LCS. In
-order to verify the impenetrable and repelling nature of the computed LCSs, we
-used a setup of two blobs of initial conditions, situated at opposite sides of
-an identified LCS surface in the steady ABC flow (more on which to follow in
-\cref{sec:computed_lcss_in_the_abc_flow}). We then advected the particle blobs
-and the points in the parametrization of the LCS for five units of time,
-in the velocity field given by \cref{eq:abc_flow,eq:abc_params_stationary},
-using the Dormand-Prince 8(7) ODE solver in similar fashion to how we
-``advected'' the flow map Jacobian field in the first place
-(see \cref{sec:computing_the_flow_map_and_its_directional_derivatives}).
-The initial and final states are shown in \cref{fig:blobtest}.
+diverge under transport in the underlying flow system. Moreover, courtesy
+of being material surfaces, no particle may ever cross a repelling LCS (see
+\cref{sec:definition_of_lagrangian_coherent_structures_for_three_dimensional%
+_flows}). In order to verify the impenetrable and repelling nature of the
+computed LCSs, we used a setup of two blobs of initial conditions, situated at
+opposite sides of an identified LCS surface in the steady ABC flow (more on
+which to follow in \cref{sec:computed_lcss_in_the_abc_flow}). We then advected
+the particle blobs and the points in the parametrization of the LCS for five
+units of time, in the velocity field given by
+\cref{eq:abc_flow,eq:abc_params_stationary}, using the Dormand-Prince 8(7) ODE
+solver in similar fashion to how we ``advected'' the flow map Jacobian field in
+the first place (see
+\cref{sec:computing_the_flow_map_and_its_directional_derivatives}). The initial
+and final states are shown in \cref{fig:blobtest}.
 
 \input{mainmatter/results/figures/blobtest.tex}
 
 \Cref{fig:blobtest} shows that, while the triangulated structure of the LCS
-breaks down, the two blobs of particles have been far removed from eachother
+breaks down, the two blobs of particles have been far removed from each other
 in the transition from \cref{fig:blobtest-pre} to \cref{fig:blobtest-post}.
 Furthermore, particles belonging to a single blob remain reasonably compact,
 indicating that the local repulsion centre was situated between the two

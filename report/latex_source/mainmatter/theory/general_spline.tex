@@ -17,7 +17,7 @@ constrast to regular, global polynomial interpolation, which exhibits
 strong global dependence on local properties. In particular, if the
 function to be approximated is badly behaved anywhere within the interval of
 approximation, then the approximation by global polynomial interpolation is
-poor everywhere \parencite[p.17]{deboor1978practical}. \vfill{}
+poor everywhere \parencite[p.17]{deboor1978practical}.
 
 A generic interpolation problem can be described in terms of a family of
 functions
@@ -33,7 +33,7 @@ for $i\neq{}j$ and $f_{i}=f(\vct{x}_{i})$ --- the interpolation problem reduces
 to finding parameters $\{\beta_{i}\}$ such that
 \begin{equation}
     \label{eq:interpolationrequirement}
-    \Theta(\vct{x};\beta_{0},\ldots,\beta_{n}) = f_{i}, \quad i=0,\ldots,n
+    \Theta(\vct{x}_{i};\beta_{0},\ldots,\beta_{n}) = f_{i}, \quad i=0,\ldots,n
 \end{equation}
 is satisfied. According to \textcite[pp.38--39]{stoer2002introduction},
 spline interpolation problems (amongst others) can be classified as linear
@@ -45,8 +45,8 @@ interpolation problems, meaning that the family of interpolation functions
     \sum\limits_{i=0}^{n} \beta_{i}\Theta_{i}(\vct{x}).
 \end{equation}
 In the following, let the coordinates $\{\vct{x}_{i}\}$, function values
-$\{f_{i}\}$ and sampling points $\{(\vct{x}_{i},f_{i})\}$ be denoted by
-\emph{support abscissas}, \emph{support ordinates} and \emph{support points},
+$\{f_{i}\}$, and sampling points $\{(\vct{x}_{i},f_{i})\}$ be denoted by
+\emph{support abscissas}, \emph{support ordinates}, and \emph{support points},
 respectively.
 
 Solving an interpolation problem by means of spline interpolation is done
@@ -71,10 +71,10 @@ of splines, are called \emph{knots}.
 \begin{defn}[Piecewise polynomial functions]
     \label{def:piecewise_polynomial}
     A real-valued function $f$ is called a \emph{piecewise polynomial function}
-    of \emph{order} $r$, or \emph{degree} $r-1$, if, for each $i=0,\ldots,n-1$,
-    when restricted to the subinterval $(x_{i},x_{i+1})$ of the partition given
-    in~\cref{eq:interpolationpartition}, corresponds to a polynomial
-    $p_{i}(x)$ of degree less than or equal to $r-1$.
+    of \emph{order} $k$, or \emph{degree} $k-1$, if it, for each
+    $i=0,\ldots,n-1$, when restricted to the subinterval $(x_{i},x_{i+1})$ of
+    the partition given in~\cref{eq:interpolationpartition}, corresponds to a
+    polynomial $p_{i}(x)$ of degree less than or equal to $k-1$.
 
     \vspace{-0.8\baselineskip}
     In order to obtain a one-to-one correspondence between the function $f$ and
@@ -83,12 +83,14 @@ of splines, are called \emph{knots}.
     function becomes continuous from the right.
 \end{defn}
 
-Accordingly, spline functions $\mathcal{S}_{\Delta}$ of degree $k$ are
-polynomial functions of degree $k$ which are $k-1$ times continuously
-differentiable at the interior knots, that is, $\{x_{i}\}_{i=1}^{n-1}$ , of the
-partition $\Delta$. These $k^{\text{th}}$-order polynomials are uniquely
-determined by $k+1$ coefficients, of which $k$ are given by the $(k-1)$
-derivatives and function values at their left bordering knot.
+Accordingly, spline functions $\mathcal{S}_{\Delta}$ of order $k$ are piecewise
+polynomial functions which are $k-1$ times continuously differentiable at the
+interior knots --- that is, $\{x_{i}\}_{i=1}^{n-1}$, of the partition $\Delta$.
+These $k^{\text{th}}$-order piecewise polynomials are uniquely determined by
+$k+1$ coefficients, of which $k$ are given by the $k-1$ derivatives and the
+function value at their left bordering knot, and the last coefficient is given
+by the function value at the right bordering knot, for each interval in the
+partition $\Delta$ \parencite[pp.107--108]{stoer2002introduction}.
 
 \input{mainmatter/theory/figures/interpolant_order}
 
@@ -99,12 +101,12 @@ of B-splines of the same degree
 \parencite[pp.107--110]{stoer2002introduction}. Therefore, B-splines provide
 the foundation of efficient and numerically stable computations of splines.
 A selection of commonly used interpolation methods applied to a discretely
-sampled, high order polynomial is shown in~\cref{fig:itp_multi}. From the
+sampled, high degree polynomial is shown in \cref{fig:itp_multi}. From the
 figure, the increased precision of higher order splines when applied to
 continuous functions is readily apparent. Note, however, that higher order
 interpolation methods require more sampling points than lower order methods.
 In particular, at least $k+1$ samples are required in order to construct a
-$k^{\text{th}}$ order spline. In higher dimensions, that is, with data which
+$k^{\text{th}}$-order spline. In higher dimensions, that is, with data which
 depends on several other (independent) variables, the required amount of
 samples increases rapidly with the interpolation order. Consequently, the use
 of cubic B-splines constitutes a popular method for general-purpose

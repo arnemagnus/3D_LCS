@@ -37,7 +37,7 @@ must first be discretized. This is frequently done by defining
 \end{equation}
 where $t_{j}$ is the time level $j$ for integer $j$, and $h$ is some increment
 which is smaller than $t_{f}-t_{0}$. Typically, the time increment is chosen
-such that an integer number of step lengts $h$ equals the difference
+such that an integer number of step lengths $h$ equals the difference
 $t_{f}-t_{0}$. With the discretized time, the numerical solution of
 system~\eqref{eq:ivpsystem} is found by successive applications of some
 numerical integration method. The Runge-Kutta family of numerical methods for
@@ -50,8 +50,8 @@ of the system at a later time, based on the state of the system at the current
 time (in some cases, the state at earlier times are also considered). Implicit
 methods, however, involve the solution of an equation in which both the
 current and the later state of the system are involved. Thus, a generic,
-explicit method for computing the state of the system at time $t+h$, given its
-state at $t$, can be expressed as
+explicit method for computing an approximation of the system's state at time
+$t+h$, given its state at $t$, can be expressed as
 \begin{subequations}
     \label{eq:exim}
     \begin{align}
@@ -62,7 +62,7 @@ state at $t$, can be expressed as
         G\big(x(t),x(t+h)\big)&=0,
     \end{align}
 \end{subequations}
-is solved to find $x(t+h)$.
+is solved to find an approximation of $x(t+h)$.
 
 In solving linear ODEs, implicit methods require the solution of a linear
 system at every time step. Typically, implicit methods are more computationally
@@ -76,16 +76,18 @@ methods practically useless. For \emph{nonstiff} systems, however, implicit
 methods behave similarly to their explicit analogues in terms of numerical
 accuracy and convergence properties.
 
-Irrespective of which numerical integration method is employed, one obtains
-an approximation of the true solution of the system~\eqref{eq:ivpsystem}
-\emph{at} the discrete time levels, that is,
+Irrespective of which kind of numerical integration method is employed (see
+\cref{eq:exim}), one obtains an approximation of the true solution of system
+\eqref{eq:ivpsystem} \emph{at} the discrete time levels, that is,
 \begin{equation}
     \label{eq:num_int_approx_sol}
     x_{j} \approx x(t_{j}),
 \end{equation}
 where $x(t)$ is the exact solution at time $t$. The accuracy of the
 approximation, however, depends on both the numerical integration method and
-the time step length $h$ used for the temporal discretization. One way
-of obtaining approximations of the true solution \emph{inbetween} the discrete
-time levels is by means of interpolation --- a numerical technique which will
-be elaborated upon in~\cref{sub:spline_interpolation_of_discrete_data}.
+the time step length $h$ used for the temporal discretization. Given the
+discrete nature of numerical methods, approximate solutions are not known at
+arbitrary times $t$. One way of obtaining approximations of the true solution
+\emph{inbetween} the discrete time levels is by means of interpolation --- a
+numerical technique which will be elaborated upon in
+\cref{sub:spline_interpolation_of_discrete_data}.
