@@ -117,14 +117,14 @@ where the summation is over all mesh points in the parametrization of
 $\mathcal{L}$, and $\tilde{\vct{x}}_{k}$ denotes the coordinates of mesh
 point $\mathcal{L}_{k}$.
 
-In practice, it was found that some mesh points exhibited $\lambda_{3}$-values
-which were significantly different to others in their surrounding
-neighborhoods. We interpreted these $\lambda_{3}$-values as spurious
-interpolation artefacts. To limit biasing from outlier mesh points (measured in
-terms of their $\lambda_{3}$ value) in the computed repulsion average, we
-alternately removed the least and most repulsive mesh points from the averaging
-process, as long as this altered the resulting repulsion average significantly.
-In particular, denoting the adjusted repulsion average by
+In practice, we found that some mesh points exhibited $\lambda_{3}$-values
+which were significantly different to others in their vicinities. We
+interpreted these disparate $\lambda_{3}$-values as spurious interpolation
+artefacts. Therefore, in order to limit biasing from outlier mesh points
+(measured in terms of their $\lambda_{3}$ value) in the computed repulsion
+average, we alternately removed the least and most repulsive mesh points from
+the averaging process, as long as this altered the resulting repulsion average
+significantly. In particular, denoting the adjusted repulsion average by
 $\widehat{\lambda}_{3}$, we iteratively removed outlier extrema provided that
 \begin{subequations}
 \begin{equation}

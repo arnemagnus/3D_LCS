@@ -179,12 +179,10 @@ we wrote a thin wrapper class in C++, which was exposed to Python via Cython.
 
 The choice of Python as our main programming language was made partly due to
 its relatively low development costs, in addition to its beneficial properties
-as a ``glue language'' --- as examplified by the above --- and the ease of
-parallelization by means of e.g.\ MPI (the use of which will be outlined in
-greater detail in
-\cref{sec:making_the_most_of_the_available_computational_resources}).
-Moreover, by utilizing Fortran's reference-based subroutine call structure, in
-addition to pointers at C-level (typed memoryviews in Cython), we were able to
-minimize memory duplication. This could otherwise have been a significant
-bottleneck.
+as a multi-paradigm language, and the ease of parallelization by means of e.g.\
+MPI (the use of which will be outlined in greater detail in
+\cref{sec:making_the_most_of_the_available_computational_resources}). Moreover,
+by utilizing Fortran's reference-based subroutine call structure, in addition
+to pointers at C-level (typed memoryviews in Cython), we were able to minimize
+memory duplication. This could otherwise have been a significant bottleneck.
 

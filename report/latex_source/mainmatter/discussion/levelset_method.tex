@@ -31,7 +31,7 @@ or more of the trajectories used to compute new mesh points (see
 computational domain. This impedes the ability to resolve LCS behaviour near
 the domain boundaries. Although this issue could be managed by computing strain
 eigenvalues and -vectors in a domain \emph{containing} the domain of interest
-and expanding from it in all directions --- which is how we were able to
+and extending beyond it in all directions --- which is how we were able to
 resolve the boundary behaviour for the LCSs in the Førde fjord (presented in
 \cref{sec:computed_lcss_in_the_forde_fjord}) --- this workaround is
 computationally demanding. Depending on to what extent the underlying flow
@@ -57,24 +57,24 @@ As mentioned in \cref{sec:revised_approach_to_computing_new_mesh_points}, we
 let each computed mesh point \emph{inherit} its unit tangent $\vct{t}$ from
 its direct ancestor, rather than computing new unit tangents using the
 interpolation curve $\mathcal{C}_{i}$. This was a conscious choice. In
-our experience, the computed level sets quickly started to form fully
-three-dimensional topological circles, leading to notable local curvature along
-the interpolation curves. This rendered selecting how far to either side of a
-given mesh point to move, in order to approximate the local tangent vector by a
-finite coordinate difference, hard to do in a consistent manner. Simply using
-the coordinates of the mesh point's nearest neighbors (as originaly suggested
-by \textcite{krauskopf2005survey}) for this purpose was also found to be
-inconsistent. Failure to compute tangent vectors consistently often lead
-neighboring point strands to form intersections, yielding disorderly meshes
-which in turn frequently lead the points constituting a level set to
-\emph{not} form a topological circle. These issues are not present in our
-aforementioned inheritance-based approach. However, if a computed manifold were
-to twist itself in such a way that a unit tangent $\vct{t}$ laid
-\emph{within} it, this could result in failure to compute one or more new mesh
-points, which would then lead to terminating the process of adding new level
-sets (alternatively, terminating the process of expanding one or more point
-strands, cf.\ the preceding paragraphs) prematurely. We addressed this issue
-using the tolerance parameter $\gamma_{\|}$; see
+our experience, the computed level sets quickly started to develop bulges,
+leading to notable local curvature along the interpolation curves. This
+rendered selecting how far to either side of a given mesh point to move, in
+order to approximate the local tangent vector by a finite coordinate
+difference, hard to do in a consistent manner. Simply using the coordinates
+of the mesh point's nearest neighbors (as originaly suggested by
+\textcite{krauskopf2005survey}) for this purpose was also found to be
+inconsistent. Failure to compute tangent vectors consistently lead neighboring
+point strands to form intersections, yielding disorderly meshes which in turn
+frequently lead the points constituting a level set to \emph{not} form a
+topological circle. These issues are not present in our aforementioned
+inheritance-based approach. However, if a computed manifold were to twist
+itself in such a way that a unit tangent $\vct{t}$ laid \emph{within} it, this
+could result in failure to compute one or more new mesh points, which would
+then lead to terminating the process of adding new level sets (alternatively,
+terminating the process of expanding one or more point strands, cf.\ the
+preceding paragraphs) prematurely. We addressed this issue using the tolerance
+parameter $\gamma_{\|}$; see
 \cref{sec:revised_approach_to_computing_new_mesh_points} and, in particular,
 \cref{eq:revised_xi3_tan_parallel} for details.
 
@@ -109,10 +109,9 @@ size is to manage the interpolation error inherent to our linear triangulation
 scheme (see \cref{sec:continuously_reconstructing_three_dimensional_manifold%
 _surfaces_from_point_meshes} and \textcite{krauskopf2003computing}). Thus, it
 seems reasonable to forego the dynamic interset step length in favor of a
-fixed one, in cases where the minute details of LCS surfaces are unimportant.
-As tentatively suggested in the above, doing so reduces the overall complexity
-of our method for generating mesh points, in addition to reducing the number
-of free parameters.
+fixed one. As tentatively suggested in the above, doing so reduces the overall
+complexity of our method for generating mesh points, in addition to reducing
+the number of free parameters.
 
 Another way of organizing the mesh points, which could circumvent some of the
 aforementioned limitations of the present approach, would be as a group of

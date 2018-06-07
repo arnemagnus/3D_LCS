@@ -36,12 +36,12 @@ _geodesic_level_sets}).
 yields very accurate numerical approximations at a very low computational cost
 --- at least, that is, for smooth flow systems (see
 \cref{sec:the_type_of_flow_systems_considered}). As is apparent from
-\cref{def:runge_kutta_order}, the accuracy of numerical solutions obtained by
-using Runge-Kutta solvers depend on the order of the method itself, in addition
-to the smoothness of the underlying function. Although generally more accurate,
-higher-order ODE solvers yield increasingly diminishing returns compared to
-their lower-order siblings when the order of the ODE solver exceeds the
-function's number of smooth derivatives.
+\cref{def:runge_kutta_order}, however, the accuracy of numerical solutions
+obtained by using Runge-Kutta solvers depend not only on the order of the
+method itself, but also the smoothness of the underlying function. Although
+generally more accurate, higher-order ODE solvers yield increasingly
+diminishing  returns compared to their lower-order siblings when the order of
+the ODE solver exceeds the function's number of smooth derivatives.
 
 Thus, for gridded model data --- both regarding the oceanic currents of the
 Førde fjord (\cref{sub:oceanic_currents_in_the_forde_fjord}), and the
