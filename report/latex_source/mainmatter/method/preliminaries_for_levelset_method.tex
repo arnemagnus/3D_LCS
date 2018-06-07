@@ -30,10 +30,10 @@ local neighborhood of an initial condition $\vct{x}_{0}$ (how the initial
 conditions are selected will be described in
 \cref{sub:identifying_suitable_initial_conditions_for_developing_lcss}).
 In particular, a small, closed curve $\mathcal{C}_{1}$ forming a geodesic
-circle, consisting of mesh points which all lie within the tangent plane
+circle, consisting of mesh points which are all located in the tangent plane
 defined by the coordinate $\vct{x}_{0}$ and the unit normal
 $\vct{\xi}_{3}(\vct{x}_{0})$, separated from $\vct{x}_{0}$ by a distance
-$\delta_{\text{init}}$, is assumed to lie within the same manifold as
+$\delta_{\text{init}}$, is assumed to be a part of the same manifold as
 $\vct{x}_{0}$. The idea is then to compute the next geodesic circle in a local,
 dynamic coordinate system, defined by hyperplanes which are orthogonal to the
 most recently computed geodesic circle. A set of accuracy parameters governs
@@ -51,7 +51,7 @@ subdomain $\mathcal{U}_{0}\subset\mathcal{U}$ in which existence conditions
 \eqref{eq:lcs_condition_a},~\eqref{eq:lcs_condition_b} and
 \eqref{eq:lcs_condition_d} are satisfied --- as these conditions can be
 verified for individual points, unlike criterion~\eqref{eq:lcs_condition_c}.
-All grid points which lie within $\mathcal{U}_{0}$ would then be valid initial
+All grid points in $\mathcal{U}_{0}$ would then be valid initial
 conditions for repelling LCSs. Of the aforementioned criteria,
 condition~\eqref{eq:lcs_condition_d} is the least straightforward to implement
 numerically, as identifying the zeros of inner products is prone to numerical
@@ -94,9 +94,9 @@ corresponding LCS must locally be tangent to the plane with unit normal given
 by $\vct{\xi}_{3}(\vct{x}_{0})$, as a consequence of LCS existence criterion~%
 \eqref{eq:lcs_condition_c}. Accordingly, the first geodesic level set is
 approximated by a set of $n$ mesh points $\{\mathcal{M}_{1,j}\}_{j=1}^{n}$,
-which all lie within the aforementioned tangent plane, evenly distributed along
+placed in the aforementioned tangent plane, evenly distributed along
 a circle centered at $\vct{x}_{0}$ with radius $\delta_{\text{init}}$. All
-of these points are assumed to lie within the same manifold.
+of these points are assumed to be contained within the same manifold.
 \Cref{fig:innermost_levelset} shows where the points in the innermost level set
 are located, in relation to $\vct{x}_{0}$. The parameter $\delta_{\text{init}}$
 was chosen small compared to the grid spacing, in order to limit the inherent

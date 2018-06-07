@@ -29,13 +29,14 @@ applicable, the addition of further level sets is promptly terminated when one
 or more of the trajectories used to compute new mesh points (see
 \cref{sec:revised_approach_to_computing_new_mesh_points}) exits the
 computational domain. This impedes the ability to resolve LCS behaviour near
-the domain boundaries, which is evident from inspecting the LCSs in the Førde
-fjord (presented in \cref{sec:computed_lcss_in_the_forde_fjord}). Although this
-issue could be managed by computing strain eigenvalues and -vectors in a domain
-\emph{containing} the domain of interest and expanding from it in all
-directions, this workaround is computationally demanding. Depending on to what
-extent the underlying flow system is known (or modelled), and the location of
-the domain of interest, it might not even be possible.
+the domain boundaries. Although this issue could be managed by computing strain
+eigenvalues and -vectors in a domain \emph{containing} the domain of interest
+and expanding from it in all directions --- which is how we were able to
+resolve the boundary behaviour for the LCSs in the Førde fjord (presented in
+\cref{sec:computed_lcss_in_the_forde_fjord}) --- this workaround is
+computationally demanding. Depending on to what extent the underlying flow
+system is known (or modelled), and the location of the domain of interest, it
+might not even be possible.
 
 On a related note, demanding that a new geodesic level set is computed using
 a mesh point descending from \emph{each} of the mesh points in the preceding
