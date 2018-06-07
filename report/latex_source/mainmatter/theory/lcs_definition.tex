@@ -7,7 +7,6 @@ _flows}
 A necessary prerequisite for three-dimensional Lagrangian flow analysis is the
 concept of \emph{material surfaces}, which \textcite{oettinger2016autonomous}
 define as
-
 \begin{defn}[Material surfaces]
     \label{def:material_surface}
     Consider a set of initial positions forming a two-dimensional surface
@@ -19,12 +18,12 @@ define as
     \end{equation}
     The union of \emph{all} time-$t$ images,
     $\cup_{t\in[t_{0},t_{1}]}\mathcal{M}(t)$, is a hypersurface in the
-    extended phase space $\mathcal{U}\times\mathcal{I}$, called a
+    extended phase space $\mathcal{I}\times\mathcal{U}$, called a
     \emph{material surface}.
 \end{defn}
 From here on, the entire material surface will be referred to by the
 notation $\mathcal{M}(t)$. In the extended phase space
-$\mathcal{U}\times\mathcal{I}$, the dynamical system governed by
+$\mathcal{I}\times\mathcal{U}$, the dynamical system governed by
 \cref{eq:advected_materialsurface} is autonomous. In autonomous systems,
 different trajectories never intersect; thus, no material surfaces can be
 crossed by tracers \parencite[p.150]{strogatz2014nonlinear}. However, only
@@ -172,7 +171,6 @@ and $\vct{\xi}_{2}(\vct{x}_{0})$. Thus, an integral curve of any (normalized)
 linear combination of the $\vct{\xi}_{1}$- and $\vct{\xi}_{2}$-direction
 fields, launched from an arbitrary point of the surface $\mathcal{M}(t_{0})$,
 will never leave $\mathcal{M}(t_{0})$. Hence:
-
 \begin{rmrk}[Invariance of time-$t_{0}$ images of repelling LCSs]
     \label{rmk:invariance_lcs}
     The time-$t_{0}$ image $\mathcal{M}(t_{0})$ of any repelling LCS
