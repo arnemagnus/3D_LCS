@@ -17,15 +17,8 @@ difference method and then explicitly computing the Cauchy-Green strain
 tensor field (which \textcite{farazmand2012computing} did in order to find LCSs
 in two-dimensional flow) --- at the cost of added mathematical complexity in
 having to solve a set of twelve \emph{coupled} transport equations, rather than
-three \emph{independent} ones.
-%The added complexity of solving a set of twelve
-%coupled ODEs rather than three is a small price to pay for the overall increase
-%in the accuracy of the computed eigenvalues and -vectors, compared to methods
-%based upon the application of finite differences. In particular, we found our
-%approach to yield smoother eigenvalue- and eigenvectorfields than the method of
-%\textcite{farazmand2012computing}.
-Note that our approach relies on bounded
-first spatial derivatives of the underlying velocity field, as is evident from
+three \emph{independent} ones. Note that our approach relies on bounded first
+spatial derivatives of the underlying velocity field, as is evident from
 inspecting \cref{eq:timederivative_flowmap_jacobian}. This should, however, not
 be an issue when considering smooth analytical test cases, or when using a high
 (quadratic or higher, cf.\ \cref{sub:spline_interpolation_of_discrete_data})
