@@ -14,7 +14,7 @@ however, this is not the case; LCS existence criterion~%
 everywhere simultaneously tangent to the $\vct{\xi}_{1}$- \emph{and}
 $\vct{\xi}_{2}$-direction fields (see \cref{rmk:invariance_lcs}). Another way
 to interpret this extra degree of freedom --- compared to the two-dimensional
-case --- is that everywhere within three-dimensional repelling LCS, one is
+case --- is that everywhere a within three-dimensional repelling LCS, one is
 allowed to move ``freely'' within a plane which is orthogonal to
 $\vct{\xi}_{3}(\vct{x})$. Thus, more sophisticated algorithms are needed in
 order to compute three-dimensional LCSs, than their two-dimensional
@@ -37,8 +37,8 @@ $\delta_{\text{init}}$, is assumed to be a part of the same manifold as
 $\vct{x}_{0}$. The idea is then to compute the next geodesic circle in a local,
 dynamic coordinate system, defined by hyperplanes which are orthogonal to the
 most recently computed geodesic circle. A set of accuracy parameters governs
-the number of next points by which the next geodesic circle is approximated, in
-solving a set of boundary value problems. During the computation, the
+the number of points by which the next geodesic circle is approximated, in
+solving a set of initial value problems. During the computation, the
 interpolation error stays limited by the density of mesh points, so that the
 overall quality of the mesh is preserved \parencite{krauskopf2003computing}.
 
@@ -122,7 +122,7 @@ Cartesian coordinates. Considering each of the lists of the mesh points'
 Cartesian coordinates as univariate functions of the pseudo-arclength
 parameter $s$, separate cubic B-splines were then made for each set of
 coordinates, making use of the \texttt{bspline\_1d} extension type from the
-Bspline-Fortran library \parencite{williams2018bspline}, which was ported to
+Bspline-Fortran library \parencite{williams2018bspline}, which was exposed to
 Python as outlined in \cref{sub:interpolating_gridded_velocity_data}. The
 constructed innermost level set and its associated interpolation curve is
 illustrated in \cref{fig:innermost_levelset}. Interpolation curves for all

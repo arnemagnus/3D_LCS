@@ -19,10 +19,11 @@ interpolation curve $\mathcal{C}_{i}$ as initial conditions, as follows:
     \big\{[s_{j}-\varsigma,s_{j})\cup(s_{j},s_{j}+\varsigma]\big\},\quad%
     0<\varsigma\leq\frac{1}{2},
 \end{equation}
-where the inherent periodicity of the (quasi-)arclength parametrization of
-$\mathcal{C}_{i}$ is implicitly applied. Here, $\varsigma$ was set to $0.1$,
-ensuring that $20$ \% of all possible initial conditions along
-$\mathcal{C}_{i}$ were available for consideration.
+where $s_{j}$ is the (quasi-)arclength parameter corresponding to the mesh
+point located at $\vct{x}_{i,j}$, and the inherent periodicity of the
+(quasi-)arclength parametrization of $\mathcal{C}_{i}$ is implicitly applied.
+Here, $\varsigma$ was set to $0.1$, ensuring that $20$ \% of all possible
+initial conditions along $\mathcal{C}_{i}$ were available for consideration.
 
 For computing trajectories whose initial conditions are given by
 \cref{eq:faithful_initialcondition_interval}, and direction fields are given by
@@ -30,7 +31,7 @@ For computing trajectories whose initial conditions are given by
 ODE solver (cf.\ \cref{tab:butcherdopri87,%
 sub:the_implementation_of_dynamic_runge_kutta_step_size}) was the method of
 choice. In particular, the dynamic integration step size adjustment meant
-that we did not need to treat the integration step itself as a degree of
+that we did not need to treat the integration step length itself as a degree of
 freedom (of which there are many, as will be revealed shortly). However, in
 order to ensure that any trajectory did not overstep the half-plane
 $\mathcal{H}_{i,j}$ in passing, the step length was continuously limited from

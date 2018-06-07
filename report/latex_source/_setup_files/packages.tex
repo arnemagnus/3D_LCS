@@ -170,13 +170,13 @@ factor=0% Controls how much punctuation protrudes past the end of the line
 % Place float barriers between sections
 \usepackage[section]{placeins}
 % Ensure that float barriers are placed between subsections as well
-\makeatletter
-\AtBeginDocument{%
-  \expandafter\renewcommand\expandafter\subsection\expandafter{%
-    \expandafter\@fb@secFB\subsection
-  }%
-}
-\makeatother
+%\makeatletter
+%\AtBeginDocument{%
+%  \expandafter\renewcommand\expandafter\subsection\expandafter{%
+%    \expandafter\@fb@secFB\subsection
+%  }%
+%}
+%\makeatother
 
 % Enable \afterpage{\clearpage} command in order to combat bad page breaks
 \usepackage[]{afterpage}

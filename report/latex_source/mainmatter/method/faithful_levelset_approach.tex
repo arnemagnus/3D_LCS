@@ -22,14 +22,15 @@ From the mesh point $\mathcal{M}_{i,j}$, we wish to place a new mesh point
 $\mathcal{M}_{i+1,j}$ at an intersection of the manifold $\mathcal{M}$ and the
 half-plane $\mathcal{H}_{i,j}$ located a distance $\Delta_{i}$ from
 $\mathcal{M}_{i,j}$. The aforementioned half-plane is defined by the coordinate
-$\vct{x}_{i,j}$, the unit normal $\vct{t}_{i,j}$ and the guidance vector
-$\vct{\rho}_{i,j}$ (cf.\ \cref{eq:innermost_prevvec,eq:general_prevvec}).
-Note that this intersection may occur anywhere on the half-circle within
-$\mathcal{H}_{i,j}$ of radius $\Delta_{i}$, centered at $\vct{x}_{i,j}$. The
-search for a new mesh point is conducted by defining an aim point
-$\vct{x}_{\text{aim}}$ within $\mathcal{H}_{i,j}$, computed by performing a
-single, classical, \nth{4}-order Runge-Kutta step (cf.\ \cref{tab:butcherrk4})
-of length $\Delta_{i}$ in the vector field locally defined as
+$\vct{x}_{i,j}$, the unit tangent $\vct{t}_{i,j}$ which doubles as a unit
+normal for the half-plane, and the guidance vector $\vct{\rho}_{i,j}$ (cf.\
+\cref{eq:innermost_prevvec,eq:general_prevvec}). Note that this intersection
+may occur anywhere on the half-circle within $\mathcal{H}_{i,j}$ of radius
+$\Delta_{i}$, centered at $\vct{x}_{i,j}$. The search for a new mesh point is
+conducted by defining an aim point $\vct{x}_{\text{aim}}$ within
+$\mathcal{H}_{i,j}$, computed by performing a single, classical,
+\nth{4}-order Runge-Kutta step (cf.\ \cref{tab:butcherrk4}) of length
+$\Delta_{i}$ in the vector field locally defined as
 \begin{equation}
     \label{eq:faithful_intermediary_aimpoint_vectorfield}
     \vct{\psi}(\vct{x}) = %
@@ -80,7 +81,6 @@ of (the immediately forthcoming)
 \input{mainmatter/method/levelset_method_take_one/computing_new_s_values}
 
 %\afterpage{\clearpage}
-\clearpage
 
 \input{mainmatter/method/levelset_method_take_one/handling_failures_to_compute%
 _points}
