@@ -35,31 +35,27 @@ added a manifold mesh point to the set of LCS points provided that
     \norm{\vct{x}_{i,j}-\tilde{\vct{x}}_{\kappa}} < %
     \gamma_{\blacktriangleright}\Delta_{\max}
 \end{equation}
-holds for at least one $\kappa$, where $\vct{x}_{i,j}$ and
+held for at least one $\kappa$, where $\vct{x}_{i,j}$ and
 $\tilde{\vct{x}}_{\kappa}$ denote the coordinates of mesh point
 $\mathcal{M}_{i,j}$ and the already accepted LCS point
 $\mathcal{L}_{\kappa}\in\{\mathcal{L}_{k}\}$, respectively. $\Delta_{\max}$ is
 the maximum allowed mesh point separation used for computing the manifold (cf.\
 \cref{sub:maintaining_mesh_point_density}), while the scalar
-parameter $\gamma_{\blacktriangleright}\geq1$ allows for extracting smoother LCSs, more
-well-suited for visualization purposes --- as will be made clear shortly.
-Subsequently, the mesh points in the parametrization of $\mathcal{M}$ which
-did \emph{not} satisfy all of the LCS existence criteria were added to the set
-of LCS points for the purpose of enhanced visual representation --- provided
-that they comply with a similar distance threshold as given in
-\cref{eq:lcs_from_manifold_separation_criterion}. Note, however, that these
+parameter $\gamma_{\blacktriangleright}\geq1$ allows for extracting smoother
+LCSs, more well-suited for visualization purposes --- as will be made clear
+shortly. Subsequently, the mesh points in the parametrization of $\mathcal{M}$
+which did \emph{not} satisfy all of the LCS existence criteria were added to
+the set of LCS points for the purpose of enhanced visual representation ---
+provided that they complied with a similar distance threshold as the one given
+in \cref{eq:lcs_from_manifold_separation_criterion}. Note, however, that these
 mesh points were only added if they were sufficiently close to a point
 in $\{\mathcal{L}_{k}\}$ which satisfied \emph{all} of the LCS existence
 criteria.
-%where we only computed
-%mesh point separations relative to the LCS points which satisfied all of
-%the existence criteria (thus not to any point added to the LCS purely for
-%the purpose of enhanced visual representation).
 
-The tolerance parameter $\gamma_{\blacktriangleright}$ thus allowed us to mitigate possible
-numerical error; in particular, if any given mesh point was slightly perturbed
-away from the underlying manifold, it could still end up being a part of the
-LCS. Finally, we looked at all of the surface elements pertaining to the
+The tolerance parameter $\gamma_{\blacktriangleright}$ thus allowed us to mitigate
+possible numerical error; in particular, if any given mesh point was slightly
+perturbed away from the underlying manifold, it could still end up being a part
+of the LCS. Finally, we looked at all of the surface elements pertaining to the
 triangulation of the manifold $\mathcal{M}$ (as described in
 \cref{sec:continuously_reconstructing_three_dimensional_manifold_surfaces_from_%
 point_meshes}) in conjunction with the set of mesh points which had been

@@ -43,7 +43,7 @@ intersections with $\mathcal{H}_{i,j}$ are far from fulfilling
 $\Delta(\breve{s}) = \Delta_{i}$. However, when a subinterval of
 $\mathcal{C}_{i}$ is identified, within which the intermediate value theorem
 suggests that a trajectory may fulfill our requirements, we decrease the
-(quasi-)arclength increment $\delta\breve{s}$ in order to increase our odds of
+pseudo-arclength increment $\delta\breve{s}$ in order to increase our odds of
 finding said trajectory. While the purpose of $\delta\breve{s}_{\min}$ was to
 manage resource requirements, $\delta\breve{s}_{\max}$ was used in order to
 avoid bypassing subsets of $\mathcal{C}_{i}$ from which two or more
@@ -54,7 +54,7 @@ trajectory termination status need be detected.
 
 The feedback received by tracking why each trajectory is terminated, allows
 us to dynamically select new trajectory start points along $\mathcal{C}_{i}$.
-We do so by increasing the (quasi-)arclength increment $\delta\breve{s}$ as
+We do so by increasing the pseudo-arclength increment $\delta\breve{s}$ as
 long as there is no change in trajectory termination status, and, conversely,
 backtracking and reducing $\delta\breve{s}$ when a status change is detected.
 This process is shown schematically in \cref{fig:s_update_flowchart}. As we

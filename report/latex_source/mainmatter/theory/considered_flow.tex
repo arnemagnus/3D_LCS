@@ -51,8 +51,8 @@ which, for our three-dimensional flow, reduces to
 \endgroup
 \clearpage
 Making use of the definition of the flow map (cf.\ \cref{eq:defn_flowmap})
-in conjunction with \cref{eq:consideredflow}, one finds the following ordinary
-differential equation which describes the time evolution of the flow map:
+in conjunction with \cref{eq:consideredflow}, one finds the following ODE
+which describes the time evolution of the flow map:
 \begin{equation}
     \label{eq:timederivative_flowmap}
     \dot{\vct{\phi}} = \vct{v}(t,\vct{\phi}),
@@ -60,8 +60,8 @@ differential equation which describes the time evolution of the flow map:
 where $t_{0}$, $t$ and $\vct{x}_{0}$ have been omitted in order to avoid
 notational clutter. These are, however, implicit by context. As the nabla
 operator is time-independent, \cref{eq:timederivative_flowmap} immediately
-yields an ODE for the time development of the directional derivatives of the
-flow map, namely
+yields a set of ODEs for the time development of the directional derivatives of
+the flow map, namely
 \begin{equation}
     \label{eq:timederivative_directionalderivative_flowmap}
     \dv{\phantom{}}{t}\big(\vct{u}\cdot\grad\big)\vct{\phi} = %

@@ -26,7 +26,7 @@ is now known as a Runge-Kutta method is as follows:
         x_{n+1} &= x_{n} + h\sum\limits_{i=1}^{s}b_{i}k_{i},
         \end{aligned}
     \end{equation}
-    is called an \emph{s-stage Runge-Kutta method} for the system
+    is called an \emph{s-stage Runge-Kutta method} for system
     \eqref{eq:ivpsystem}.
 \end{defn}
 
@@ -41,7 +41,7 @@ Runge-Kutta method can be defined as follows:
     the local error $e_{n}$ scales as $h^{p+1}$. That is:
     \begin{equation}
         \label{eq:rungekuttaorder}
-        e_{n} = \norm{x_{n}-u_{n-1}(t_{n})} \leq K{\mkern2mu}h^{p+1}
+        e_{n} = \norm{x_{n}-u_{n-1}(t_{n})} \leq K{\mkern2mu}h^{p+1},
     \end{equation}
     where $u_{n-1}(t)$ is the exact solution of the ODE in system
     \eqref{eq:ivpsystem} at time $t$, subject to the initial condition

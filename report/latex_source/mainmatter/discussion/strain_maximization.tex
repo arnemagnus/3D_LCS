@@ -48,7 +48,7 @@ curve, rather than a unique intersection point, the process of identifying a
 material surface whose intersections with any given plane lie sufficiently
 close to those of any other material surface could easily become expensive in
 terms of computational resources.
-\clearpage
+
 Another option, somewhat similar to the approach of
 \textcite{farazmand2012computing}, would be to simply divide the computational
 domain into a set of smaller domains, identifying the computed surfaces which
@@ -93,17 +93,18 @@ reasonably be expected to exist (see \cref{rmk:invariance_lcs}).
 Although outside of the scope of this project, yet another alternative
 approach would be to identify all material surfaces which lie reasonably close
 to each other, having similar spatial orientation and (preferably) size, by
-means of some numerical clustering algorithm. Then, the most strongly repellent
-surface segments within each cluster could reasonably be considered as the local
-repulsion maximizer. Possibly geared towards a project pertaining to machine
-learning, this sort of approach would benefit greatly from reliable reference
-cases. Furthermore, basing the selection process solely on the computed
-manifolds' repulsion averages (as defined in \cref{eq:lcs_lm3_weight}), or
-other macroscale quantities, need not necessarily be the best possible approach
-in terms of extracting the most significant LCSs. In particular, subsets of
-large LCSs could exhibit significant repulsion, without necessarily resulting
-in large repulsion averages. Similarly, relatively small yet strongly repelling
-LCSs need not be particularly significant for the overall flow pattern.
+means of some numerical clustering algorithm. Then, the most strongly repulsive
+surface segments within each cluster could reasonably be considered as the
+local repulsion maximizer. Possibly geared towards a project pertaining to
+machine learning, this sort of approach would benefit greatly from reliable
+reference cases. Furthermore, basing the selection process solely on the
+computed manifolds' repulsion averages (as defined in
+\cref{eq:lcs_lm3_weight}), or other macroscale quantities, need not necessarily
+be the best possible approach in terms of extracting the most significant LCSs.
+In particular, subsets of large LCSs could exhibit significant repulsion,
+without necessarily resulting in large repulsion averages. Similarly,
+relatively small yet strongly repelling LCSs need not be particularly
+significant for the overall flow pattern.
 
 Compared with the aforementioned alternatives, one could argue that our
 approach of checking whether or not each \emph{point} in a computed material

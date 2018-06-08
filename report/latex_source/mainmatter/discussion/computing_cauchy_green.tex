@@ -17,18 +17,26 @@ difference method and then explicitly computing the Cauchy-Green strain
 tensor field (which \textcite{farazmand2012computing} did in order to find LCSs
 in two-dimensional flow) --- at the cost of added mathematical complexity in
 having to solve a set of twelve \emph{coupled} transport equations, rather than
-three \emph{independent} ones. Note that our approach relies on bounded first
-spatial derivatives of the underlying velocity field, as is evident from
-inspecting \cref{eq:timederivative_flowmap_jacobian}. This should, however, not
-be an issue when considering smooth analytical test cases, or when using a high
-(quadratic or higher, cf.\ \cref{sub:spline_interpolation_of_discrete_data})
-order interpolation method for gridded data. Alternatively, the derivatives can
-be approximated by e.g.\ a finite difference method. Should any of these
-approaches prove impractical, the method of \textcite{farazmand2012computing}
-could be sufficient.
+three \emph{independent} ones. In particular, simple tests revealed that the
+property pertaining to the Cauchy-Green strain eigenvalues for incompressible
+flows (such as either variant of the ABC flow, cf.\ %
+\cref{sec:flow_systems_defined_by_analytical_velocity_fields}) given in
+\cref{eq:cauhygreen_incompressibility} was conserved when computing the final
+state flow map Jacobian directly, but lost when it was approximated using
+finite differences.
 
-Note that the resolution of the grid of tracers, on which the Cauchy-Green
-strain eigenvalues and -vectors are computed (see
+Note that computing the time evolution of the flow map Jacobian directly,
+relies on bounded first spatial derivatives of the underlying velocity field
+--- as is evident from inspecting \cref{eq:timederivative_flowmap_jacobian}.
+This should, however, not be an issue when considering smooth analytical test
+cases, or when using a high (quadratic or higher, cf.\
+\cref{sub:spline_interpolation_of_discrete_data}) order interpolation method
+for gridded data. Alternatively, the derivatives can be approximated by e.g.\
+a finite difference method. Should any of these approaches prove impractical,
+the method of \textcite{farazmand2012computing} could be sufficient.
+
+The resolution of the grid of tracers, on which the Cauchy-Green strain
+eigenvalues and -vectors are computed (see
 \cref{sec:computing_the_flow_map_and_its_directional_derivatives,%
 sec:computing_cauchy_green_strain_eigenvalues_and_vectors}), plays a critically
 important role in the successful detection of LCSs. For instance, difficulties
@@ -45,20 +53,22 @@ might be prudent, we recommend to use as fine a grid of tracers as possible,
 within the constraints set by the available computational resources.
 
 As mentioned in \cref{sec:flow_systems_defined_by_gridded_velocity_data}, we
-interpolated the model velocity field using quadrivariate, cubic B-splines ---
-that is, cubic spline interpolation in time and all spatial directions. This
-involved us having to keep the model data pertaining to the region of interest
-(that is, the model data for a domain extending beyond said region in all
-directions, in order to resolve the behaviour near the boundaries, cf.\
+interpolated the velocity field modelling flow in the Førde fjord using
+quadrivariate, cubic B-splines --- that is, cubic spline interpolation in time
+and all spatial directions. This involved us having to keep the model data
+pertaining to the region of interest (that is, the model data for a domain
+extending beyond said region in all directions, in order to resolve the
+behaviour near the boundaries, cf.\
 \cref{sec:macroscale_stopping_criteria_for_the_expansion_of_computed%
-_manifolds}) for the entirety of the considered time interval. Because of our
-data set's disparate resolution in the horizontal and vertical directions
-(as mentioned in \cref{sec:flow_systems_defined_by_gridded_velocity_data}), in
-addition to the small spatial region of interest (in comparison to the entire
-fjord), the use of quadrivariate interpolation was unproblematic regarding
-the consumption of working memory. For other applications, however, this is not
-necessarily the case, depending on the problem's scale (temporal and spatial)
-and the resolution of the model data.
+_manifolds}) for the entirety of the considered time interval in working
+memory.  Because of our data set's disparate resolution in the horizontal and
+vertical directions (as mentioned in
+\cref{sec:flow_systems_defined_by_gridded_velocity_data}), in addition to the
+small spatial region of interest (in comparison to the entire fjord), the use
+of quadrivariate interpolation was unproblematic regarding the consumption of
+working memory. For other applications, however, this is not necessarily the
+case, depending on the problem's scale (temporal and spatial) and the
+resolution of the model data.
 
 Should memory consumption be an issue for a discrete data set, it is possible
 to forego temporal interpolation entirely (provided that the sampling rate
@@ -68,10 +78,10 @@ ODE solvers with adaptive step size --- like the Dormand-Prince 8(7) method we
 wound up choosing (more on that to follow in
 \cref{sec:regarding_our_choice_of_numerical_ode_solver}) --- moot, as the
 solution time steps would then have to coincide with the time levels of the
-data set. Using a lower order ODE solution method, such as the explicit
-trapezoidal rule (which does not require intermediary samples when moving from
-one time level to the next), does, however, yield inferior performance, as
-high-order embedded Runge-Kutta solvers are generally much more efficient
+data set. Using a lower order ODE solver, such as the explicit trapezoidal rule
+(which does not require intermediary samples when moving from one time level to
+the next), does, however, yield inferior performance, as high-order embedded
+Runge-Kutta solvers are generally much more efficient
 \parencite{loken2017sensitivity}.
 
 
